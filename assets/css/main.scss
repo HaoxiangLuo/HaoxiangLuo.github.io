@@ -476,3 +476,51 @@ body {
     font-size: 0.98rem;
   }
 }
+
+
+/* Graphite refinement: more depth without using a flat black portrait panel. */
+:root {
+  --apple-blue: #242426;
+  --apple-blue-hover: #55555a;
+}
+
+.page {
+  border-top: 3px solid #2c2c2e;
+}
+
+.sidebar {
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #f5f5f7;
+  background: linear-gradient(145deg, #3a3a3e 0%, #262628 100%);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.16);
+}
+
+.sidebar .author__name,
+.sidebar .author__urls a,
+.sidebar .author__urls i,
+.sidebar .author__urls .svg-inline--fa {
+  color: #f5f5f7;
+}
+
+.sidebar .author__bio {
+  color: #d1d1d6;
+}
+
+.sidebar .author__urls a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .author__avatar img {
+  border-color: rgba(255, 255, 255, 0.88);
+}
+
+.page__footer {
+  color: #d1d1d6;
+  background: #2c2c2e;
+}
+
+.page__footer a,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: #f5f5f7;
+}
