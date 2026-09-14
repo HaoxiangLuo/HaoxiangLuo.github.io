@@ -402,3 +402,77 @@ body {
   color: #74716b;
   background: #e7e4de;
 }
+
+
+/* Balanced monochrome layout: a stronger profile panel and neutral grays. */
+body {
+  background: #f2f2f4;
+}
+
+.masthead {
+  background: rgba(250, 250, 250, 0.9);
+}
+
+.page {
+  border-color: rgba(0, 0, 0, 0.07);
+  background: #fff;
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.055);
+}
+
+.sidebar {
+  border-color: rgba(0, 0, 0, 0.07);
+  color: #242426;
+  background: #dedee2;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.09);
+}
+
+.sidebar .author__name,
+.sidebar .author__urls a,
+.sidebar .author__urls i,
+.sidebar .author__urls .svg-inline--fa {
+  color: #242426;
+}
+
+.sidebar .author__bio {
+  color: #5f5f63;
+}
+
+.page__content blockquote {
+  background: #f2f2f4;
+}
+
+.page__footer {
+  color: #68686d;
+  background: #e4e4e7;
+}
+
+@media screen and (min-width: 1024px) {
+  #main {
+    grid-template-columns: minmax(270px, 300px) minmax(0, 1fr);
+    gap: clamp(2rem, 3vw, 3rem);
+  }
+
+  .sidebar.sticky {
+    padding: 1.75rem;
+  }
+
+  .sidebar .author__avatar {
+    display: block;
+    width: 100%;
+    max-width: 230px;
+    margin: 0 auto 1.4rem;
+  }
+
+  .sidebar .author__avatar img {
+    width: 100%;
+  }
+
+  .sidebar .author__name {
+    font-size: 1.45rem;
+  }
+
+  .sidebar .author__bio,
+  .sidebar .author__urls {
+    font-size: 0.98rem;
+  }
+}
