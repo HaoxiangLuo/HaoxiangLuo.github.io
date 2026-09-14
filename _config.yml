@@ -23,7 +23,7 @@ repository               : "HaoxiangLuo/HaoxiangLuo.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/2026证件照-罗昊翔.jpg"
+  avatar           : "2026证件照-罗昊翔.jpg"
   name             : "Haoxiang Luo"
   pronouns         : # example: "she/her"  
   bio              : "PhD Student in Journalism and Communication"
