@@ -476,3 +476,185 @@ body.inner-page:has(.site-timeline) .page__title {
   .site-log-entry__content { padding: 1.15rem; border-radius: 18px; }
   .site-auto-updates__list { grid-template-columns: 1fr; }
 }
+
+/* Phone-only composition: prevent horizontal overflow without changing desktop. */
+@media (max-width: 767px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  body .masthead__inner-wrap {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.35rem 0.3rem;
+  }
+
+  body .greedy-nav .visible-links {
+    display: grid !important;
+    grid-template-columns: 0.72fr 1.25fr 1.18fr 0.92fr 4.15rem;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    gap: 0.08rem;
+    align-items: center;
+  }
+
+  body .greedy-nav .visible-links > li {
+    min-width: 0;
+    margin: 0;
+  }
+
+  body .greedy-nav .visible-links > li > a {
+    min-width: 0;
+    padding: 0.45rem 0.08rem;
+    overflow: hidden;
+    font-size: 0.64rem;
+    text-align: center;
+    text-overflow: clip;
+  }
+
+  body .language-toggle__control {
+    width: 4.15rem;
+    box-sizing: border-box;
+    padding: 0.16rem;
+  }
+
+  body .greedy-nav .visible-links > li.language-toggle .language-toggle__control > .language-toggle__option {
+    min-height: 1.45rem;
+    font-size: 0.58rem;
+  }
+
+  body.home-page #main {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1.25rem 1rem 2rem !important;
+  }
+
+  body.home-page .sidebar,
+  body.home-page .page {
+    position: static !important;
+    float: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box;
+    transform: none !important;
+  }
+
+  body.home-page .sidebar {
+    margin: 0 0 1rem;
+    padding: 1rem !important;
+    border-radius: 22px;
+  }
+
+  body.home-page .sidebar > div[itemscope] {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 0 0.85rem;
+    align-items: center;
+  }
+
+  body.home-page .sidebar .author__avatar {
+    display: block;
+    width: 56px;
+    margin: 0;
+  }
+
+  body.home-page .sidebar .author__avatar img {
+    display: block;
+    width: 56px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  body.home-page .sidebar .author__content {
+    display: block;
+    min-width: 0;
+    padding: 0;
+  }
+
+  body.home-page .sidebar .author__name {
+    margin: 0 0 0.18rem;
+    font-size: 1.05rem;
+    line-height: 1.12;
+  }
+
+  body.home-page .sidebar .author__bio {
+    margin: 0;
+    font-size: 0.7rem;
+    line-height: 1.35;
+  }
+
+  body.home-page .sidebar .author__urls-wrapper {
+    display: block;
+    grid-column: 1 / -1;
+    margin-top: 0.7rem;
+  }
+
+  body.home-page .sidebar .author__urls-wrapper > button {
+    display: none !important;
+  }
+
+  body.home-page .sidebar .author__urls {
+    position: static;
+    z-index: auto;
+    display: flex !important;
+    gap: 0.3rem;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  body.home-page .sidebar .author__urls li {
+    display: inline-flex;
+    margin: 0;
+    font-size: 0.64rem;
+  }
+
+  body.home-page .sidebar .author__urls a {
+    padding: 0.3rem 0.45rem;
+  }
+
+  body.home-page .page {
+    margin: 0;
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 22px;
+  }
+
+  body.home-page .page__inner-wrap,
+  body.home-page .page__content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+
+  body.home-page .page__content > h1:first-child {
+    margin: 0 0 1rem;
+    font-size: clamp(2.1rem, 12vw, 2.7rem) !important;
+    line-height: 1;
+    overflow-wrap: anywhere;
+  }
+
+  body.home-page .page__content h2 {
+    margin-top: 2rem;
+    font-size: 1.35rem;
+  }
+
+  body.home-page .page__content p,
+  body.home-page .page__content li {
+    max-width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+  }
+}
