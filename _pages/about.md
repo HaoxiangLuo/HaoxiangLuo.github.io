@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to My World"
+title: ""
 author_profile: true
 redirect_from:
   - /about/
@@ -21,9 +21,3 @@ My research interests focus on inequality in global communication, as well as th
 
 - Inequality in Global Communication
 - The Spread and Instrumentalization of Misinformation
-
-## Contact
-
-You can contact me by email: [1063538512@qq.com](mailto:1063538512@qq.com)
-
-> Something for nothing.
