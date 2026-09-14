@@ -1,3 +1,6 @@
+/opt/homebrew/Library/Homebrew/cmd/shellenv.sh: line 18: /bin/ps: Operation not permitted
+pyenv: cannot rehash: /Users/zhuanmima0000/.pyenv/shims isn't writable
+pyenv: cannot rehash: /Users/zhuanmima0000/.pyenv/shims isn't writable
 {% include base_path %}
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -5,7 +8,7 @@
       <nav id="site-nav" class="greedy-nav">
         <button><span class="navicon"></span></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' or page.url == '/zh/' %}selected{% endif %}">
+          <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
             <a href="{{ base_path }}{% if page.lang == 'zh' %}/zh/{% else %}/{% endif %}">{% if page.lang == 'zh' %}首页{% else %}Home{% endif %}</a>
           </li>
           {% if page.lang == 'zh' %}
@@ -19,15 +22,12 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
+            <li class="masthead__menu-item persist {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
           <li class="masthead__menu-item persist language-toggle">
             <a href="{{ base_path }}{{ page.translation_url | default: '/zh/' }}" lang="{% if page.lang == 'zh' %}en{% else %}zh-CN{% endif %}" aria-label="{% if page.lang == 'zh' %}Switch to English{% else %}切换至中文{% endif %}">{% if page.lang == 'zh' %}EN{% else %}中文{% endif %}</a>
-          </li>
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
