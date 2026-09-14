@@ -10,13 +10,16 @@ redirect_from:
   - /wordpress/blog-posts/
 ---
 
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+<p class="notes-intro">A focused space for methods, intelligent communication, and global communication. New material can be added as a file or a web link.</p>
+
+<div class="notes-actions" aria-label="Add study notes">
+  <div><span class="notes-actions__eyebrow">YOUR LIBRARY</span><strong>Add a new note</strong><small>Files remain in your GitHub repository.</small></div>
+  <a class="notes-action" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/upload/master/files">Upload file</a>
+  <a class="notes-action notes-action--dark" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/new/master/_posts">Add link</a>
+</div>
+
+<div class="notes-grid">
+  <section class="notes-topic notes-topic--methods"><span class="notes-topic__number">01</span><h2>Research Methods</h2><p>Research design, computational methods, data analysis, and methodological reflections.</p><span class="notes-topic__status">Ready for notes</span></section>
+  <section class="notes-topic notes-topic--intelligent"><span class="notes-topic__number">02</span><h2>Intelligent Communication</h2><p>Artificial intelligence, platforms, algorithms, and the changing ecology of communication.</p><span class="notes-topic__status">Ready for notes</span></section>
+  <section class="notes-topic notes-topic--global"><span class="notes-topic__number">03</span><h2>Global Communication</h2><p>Global flows, structural inequalities, misinformation, and cross-cultural communication.</p><span class="notes-topic__status">Ready for notes</span></section>
+</div>

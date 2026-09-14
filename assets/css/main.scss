@@ -674,6 +674,8 @@ body {
   }
 }
 
+@import "content-refinements";
+
 /* Publication reading pass: denser first view, calmer hierarchy, faster scanning. */
 body.inner-page:has(.publication-board) #main {
   max-width: 1280px;

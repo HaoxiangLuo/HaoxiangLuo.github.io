@@ -7,13 +7,16 @@ lang: zh
 translation_url: /study-notes/
 ---
 
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+<p class="notes-intro">围绕研究方法、智能传播与全球传播建立持续更新的知识空间，支持通过文件或网页链接添加笔记。</p>
+
+<div class="notes-actions" aria-label="添加学习札记">
+  <div><span class="notes-actions__eyebrow">个人知识库</span><strong>添加新笔记</strong><small>上传内容保存在你的 GitHub 仓库中。</small></div>
+  <a class="notes-action" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/upload/master/files">上传文件</a>
+  <a class="notes-action notes-action--dark" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/new/master/_posts">添加链接</a>
+</div>
+
+<div class="notes-grid">
+  <section class="notes-topic notes-topic--methods"><span class="notes-topic__number">01</span><h2>研究方法</h2><p>研究设计、计算方法、数据分析，以及方法论层面的学习与反思。</p><span class="notes-topic__status">等待添加笔记</span></section>
+  <section class="notes-topic notes-topic--intelligent"><span class="notes-topic__number">02</span><h2>智能传播</h2><p>人工智能、平台、算法，以及传播生态变化相关的观察与研究。</p><span class="notes-topic__status">等待添加笔记</span></section>
+  <section class="notes-topic notes-topic--global"><span class="notes-topic__number">03</span><h2>全球传播</h2><p>全球信息流动、结构性不平等、虚假信息与跨文化传播。</p><span class="notes-topic__status">等待添加笔记</span></section>
+</div>
