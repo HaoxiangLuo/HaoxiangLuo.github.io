@@ -282,3 +282,71 @@ html[data-theme="dark"] .sidebar {
     border-radius: 22px;
   }
 }
+
+ 
+/* Precision pass: aligned grid, restrained depth, monochrome details. */
+.page {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.045);
+}
+
+.author__avatar img {
+  border-radius: 20px;
+  box-shadow: none;
+}
+
+.page__content blockquote {
+  border-left: 0;
+  border-radius: 16px;
+  color: var(--global-text-color);
+  background: #f5f5f7;
+}
+
+.page__content > *:last-child {
+  margin-bottom: 0;
+}
+
+.page__footer {
+  color: #6e6e73;
+  background: #e8e8ed;
+}
+
+@media screen and (min-width: 1024px) {
+  #main {
+    display: grid;
+    grid-template-columns: minmax(220px, 250px) minmax(0, 1fr);
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: start;
+  }
+
+  .sidebar,
+  .page {
+    float: none;
+  }
+
+  .sidebar.sticky {
+    position: sticky;
+    top: 6.25rem;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: calc(100vh - 7.75rem);
+    margin: 0;
+    padding: 1.4rem;
+  }
+
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: clamp(2.4rem, 4vw, 4.25rem);
+  }
+}
+
+html[data-theme="dark"] .page__content blockquote {
+  color: var(--global-text-color);
+  background: #3a3a3c;
+}
+
+html[data-theme="dark"] .page__footer {
+  color: #aeaeb2;
+  background: #1c1c1e;
+}
