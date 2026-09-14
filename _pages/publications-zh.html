@@ -1,3 +1,6 @@
+/opt/homebrew/Library/Homebrew/cmd/shellenv.sh: line 18: /bin/ps: Operation not permitted
+pyenv: cannot rehash: /Users/zhuanmima0000/.pyenv/shims isn't writable
+pyenv: cannot rehash: /Users/zhuanmima0000/.pyenv/shims isn't writable
 ---
 layout: archive
 title: "论文发表"
@@ -7,22 +10,21 @@ lang: zh
 translation_url: /publications/
 ---
 
-{% include base_path %}
+<p class="publication-intro">以下为部分著作与期刊论文。收录及分区信息按照成果发表时的情况标注。</p>
 
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}{% continue %}{% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<div class="publication-board">
+  <section class="publication-column publication-column--book">
+    <div class="publication-section-heading"><span>01</span><h2>著作</h2></div>
+    <article class="publication-card publication-card--featured"><div class="publication-cover publication-cover--book" aria-hidden="true"><span>研究报告</span><strong>中国传媒<br>社会责任</strong><small>2023—2024</small></div><div class="publication-card__body"><span class="publication-badge">著作</span><h3>《中国传媒社会责任研究报告（2023—2024）》</h3><p>参与编撰约一万字。</p><p class="publication-meta">中国新闻出版研究院传媒 · 黄晓新</p></div></article>
+  </section>
+  <section class="publication-column publication-column--articles">
+    <div class="publication-section-heading"><span>02</span><h2>期刊论文</h2></div>
+    <div class="publication-card-list">
+      <article class="publication-card"><div class="publication-cover publication-cover--q1" aria-hidden="true"><span>Q1</span><strong>TECH</strong></div><div class="publication-card__body"><span class="publication-badge">SSCI 一区</span><h3>Digital Platforms and Smart City Synergies: Unlocking Cross-Sector Innovation and Governance in Urban Transformation</h3><p class="publication-meta"><em>Technovation</em></p></div></article>
+      <article class="publication-card"><div class="publication-cover" aria-hidden="true"><span>EI</span><strong>AI</strong></div><div class="publication-card__body"><span class="publication-badge">EI 源刊</span><h3>The Influence of Social Media Users’ Pre-understanding on Polarization Behavior in the Process of International Information “Backflow” Assisted by Artificial Intelligence: A Study Based on a Structural Equation Model</h3><p class="publication-meta"><em>Membrane Technology</em></p></div></article>
+      <article class="publication-card"><div class="publication-cover" aria-hidden="true"><span>CSSCI</span><strong>GAI</strong></div><div class="publication-card__body"><span class="publication-badge">CSSCI 扩展版</span><h3>广电媒体从业者对生成式人工智能的采纳过程与困境</h3><p class="publication-meta">《新闻爱好者》</p></div></article>
+      <article class="publication-card"><div class="publication-cover" aria-hidden="true"><span>国际</span><strong>UTAUT</strong></div><div class="publication-card__body"><span class="publication-badge">国际期刊</span><h3>Factors Influencing the Adoption of Generative AI by Chinese Mainstream Media Journalists: A Multidimensional Analysis Based on the UTAUT Model and TOE Framework</h3><p class="publication-meta"><em>Eurasia Journal of Science and Technology</em></p></div></article>
+      <article class="publication-card"><div class="publication-cover" aria-hidden="true"><span>AMI</span><strong>MEDIA</strong></div><div class="publication-card__body"><span class="publication-badge">AMI 收录期刊</span><h3>社交媒体场域下容貌焦虑性别鸿沟的生成机理及补偿行为</h3><p class="publication-meta">《新闻知识》</p></div></article>
+    </div>
+  </section>
+</div>
