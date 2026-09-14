@@ -193,3 +193,92 @@ a:focus {
     border-radius: 22%;
   }
 }
+
+
+/* Three-tone layout: graphite profile, white content, soft-gray canvas. */
+body {
+  padding-bottom: 0;
+  background: #f5f5f7;
+}
+
+.masthead {
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.page {
+  box-sizing: border-box;
+  padding: clamp(1.6rem, 3vw, 3.25rem);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar {
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 28px;
+  color: #f5f5f7;
+  background: #1d1d1f;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.12);
+}
+
+.sidebar .author__name,
+.sidebar .author__urls a,
+.sidebar .author__urls i,
+.sidebar .author__urls .svg-inline--fa {
+  color: #f5f5f7;
+}
+
+.sidebar .author__bio {
+  color: #d2d2d7;
+}
+
+.sidebar .author__avatar img {
+  background: #fff;
+}
+
+.page__footer {
+  position: relative;
+  bottom: auto;
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar.sticky {
+    top: 5.5rem;
+    height: auto;
+    max-height: calc(100vh - 7rem);
+    padding-top: 1.5rem;
+  }
+}
+
+html[data-theme="dark"] body {
+  background: #111113;
+}
+
+html[data-theme="dark"] .masthead {
+  background: rgba(29, 29, 31, 0.86);
+}
+
+html[data-theme="dark"] .page {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: #2c2c2e;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
+}
+
+html[data-theme="dark"] .sidebar {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #000;
+}
+
+@media (max-width: 1023px) {
+  .sidebar {
+    margin-bottom: 1.5rem;
+    border-radius: 22px;
+  }
+
+  .page {
+    border-radius: 22px;
+  }
+}
