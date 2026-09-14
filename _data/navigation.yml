@@ -6,9 +6,15 @@ main:
   - title: "Study Notes"
     url: /study-notes/
 
+  - title: "Site Log"
+    url: /site-log/
+
 main_zh:
   - title: "论文发表"
     url: /zh/publications/
 
   - title: "学习札记"
     url: /zh/study-notes/
+
+  - title: "网站日志"
+    url: /zh/site-log/
