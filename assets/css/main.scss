@@ -1,3 +1,6 @@
+/opt/homebrew/Library/Homebrew/cmd/shellenv.sh: line 18: /bin/ps: Operation not permitted
+pyenv: cannot rehash: /Users/zhuanmima0000/.pyenv/shims isn't writable
+pyenv: cannot rehash: /Users/zhuanmima0000/.pyenv/shims isn't writable
 ---
 ---
 
@@ -194,7 +197,6 @@ a:focus {
   }
 }
 
-
 /* Three-tone layout: graphite profile, white content, soft-gray canvas. */
 body {
   padding-bottom: 0;
@@ -253,231 +255,6 @@ body {
   }
 }
 
-html[data-theme="dark"] body {
-  background: #111113;
-}
-
-html[data-theme="dark"] .masthead {
-  background: rgba(29, 29, 31, 0.86);
-}
-
-html[data-theme="dark"] .page {
-  border-color: rgba(255, 255, 255, 0.08);
-  background: #2c2c2e;
-  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
-}
-
-html[data-theme="dark"] .sidebar {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: #000;
-}
-
-@media (max-width: 1023px) {
-  .sidebar {
-    margin-bottom: 1.5rem;
-    border-radius: 22px;
-  }
-
-  .page {
-    border-radius: 22px;
-  }
-}
-
- 
-/* Precision pass: aligned grid, restrained depth, monochrome details. */
-.page {
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.045);
-}
-
-.author__avatar img {
-  border-radius: 20px;
-  box-shadow: none;
-}
-
-.page__content blockquote {
-  border-left: 0;
-  border-radius: 16px;
-  color: var(--global-text-color);
-  background: #f5f5f7;
-}
-
-.page__content > *:last-child {
-  margin-bottom: 0;
-}
-
-.page__footer {
-  color: #6e6e73;
-  background: #e8e8ed;
-}
-
-@media screen and (min-width: 1024px) {
-  #main {
-    display: grid;
-    grid-template-columns: minmax(220px, 250px) minmax(0, 1fr);
-    gap: clamp(2rem, 4vw, 4rem);
-    align-items: start;
-  }
-
-  .sidebar,
-  .page {
-    float: none;
-  }
-
-  .sidebar.sticky {
-    position: sticky;
-    top: 6.25rem;
-    width: 100%;
-    max-width: none;
-    height: auto;
-    max-height: calc(100vh - 7.75rem);
-    margin: 0;
-    padding: 1.4rem;
-  }
-
-  .page {
-    width: 100%;
-    margin: 0;
-    padding: clamp(2.4rem, 4vw, 4.25rem);
-  }
-}
-
-html[data-theme="dark"] .page__content blockquote {
-  color: var(--global-text-color);
-  background: #3a3a3c;
-}
-
-html[data-theme="dark"] .page__footer {
-  color: #aeaeb2;
-  background: #1c1c1e;
-}
-
-
-/* Warm mineral palette: refined, calm, and culturally neutral. */
-body {
-  background: #f2f1ee;
-}
-
-.masthead {
-  background: rgba(250, 249, 247, 0.88);
-}
-
-.page {
-  border-color: rgba(79, 74, 66, 0.08);
-  background: #fffefa;
-  box-shadow: 0 12px 38px rgba(65, 59, 50, 0.055);
-}
-
-.sidebar {
-  border: 1px solid rgba(79, 74, 66, 0.08);
-  color: #2f302f;
-  background: #e5e2dc;
-  box-shadow: 0 14px 40px rgba(65, 59, 50, 0.09);
-}
-
-.sidebar .author__name,
-.sidebar .author__urls a,
-.sidebar .author__urls i,
-.sidebar .author__urls .svg-inline--fa {
-  color: #2f302f;
-}
-
-.sidebar .author__bio {
-  color: #6b6862;
-}
-
-.sidebar .author__urls a:hover {
-  background: rgba(255, 255, 255, 0.52);
-}
-
-.sidebar .author__avatar img {
-  border: 3px solid rgba(255, 255, 255, 0.78);
-  background: #fff;
-}
-
-.page__content blockquote {
-  background: #f1efeb;
-}
-
-.page__footer {
-  color: #74716b;
-  background: #e7e4de;
-}
-
-
-/* Balanced monochrome layout: a stronger profile panel and neutral grays. */
-body {
-  background: #f2f2f4;
-}
-
-.masthead {
-  background: rgba(250, 250, 250, 0.9);
-}
-
-.page {
-  border-color: rgba(0, 0, 0, 0.07);
-  background: #fff;
-  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.055);
-}
-
-.sidebar {
-  border-color: rgba(0, 0, 0, 0.07);
-  color: #242426;
-  background: #dedee2;
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.09);
-}
-
-.sidebar .author__name,
-.sidebar .author__urls a,
-.sidebar .author__urls i,
-.sidebar .author__urls .svg-inline--fa {
-  color: #242426;
-}
-
-.sidebar .author__bio {
-  color: #5f5f63;
-}
-
-.page__content blockquote {
-  background: #f2f2f4;
-}
-
-.page__footer {
-  color: #68686d;
-  background: #e4e4e7;
-}
-
-@media screen and (min-width: 1024px) {
-  #main {
-    grid-template-columns: minmax(270px, 300px) minmax(0, 1fr);
-    gap: clamp(2rem, 3vw, 3rem);
-  }
-
-  .sidebar.sticky {
-    padding: 1.75rem;
-  }
-
-  .sidebar .author__avatar {
-    display: block;
-    width: 100%;
-    max-width: 230px;
-    margin: 0 auto 1.4rem;
-  }
-
-  .sidebar .author__avatar img {
-    width: 100%;
-  }
-
-  .sidebar .author__name {
-    font-size: 1.45rem;
-  }
-
-  .sidebar .author__bio,
-  .sidebar .author__urls {
-    font-size: 0.98rem;
-  }
-}
-
-
 /* Graphite refinement: more depth without using a flat black portrait panel. */
 :root {
   --apple-blue: #242426;
@@ -524,7 +301,6 @@ body {
 .page__footer-follow .social-icons .svg-inline--fa {
   color: #f5f5f7;
 }
-
 
 /* 2026 interface system: Apple-like hierarchy with focused academic reading. */
 :root {
@@ -610,6 +386,300 @@ body {
   }
 }
 
+/* Global navigation: flush to the viewport, centered like apple.com. */
+body {
+  padding-top: 0 !important;
+}
+
+.masthead {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  min-height: 48px;
+}
+
+.masthead__inner-wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.masthead__menu,
+.greedy-nav {
+  width: 100%;
+}
+
+.greedy-nav .visible-links {
+  justify-content: space-between;
+  min-height: 48px;
+  gap: clamp(0.5rem, 3vw, 3rem);
+}
+
+.masthead__menu-item,
+.masthead__menu-item--lg {
+  padding-right: 0;
+  background: transparent;
+}
+
+.greedy-nav a {
+  padding: 0.55rem 0.7rem;
+  font-size: 0.82rem;
+  font-weight: 450;
+  letter-spacing: -0.01em;
+}
+
+.masthead__menu-item.selected a {
+  border-bottom: 0;
+  font-weight: 600;
+}
+
+.language-toggle {
+  margin-left: 0;
+}
+
+/* Always-visible navigation and editorial publication cards. */
+.greedy-nav .visible-links {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.greedy-nav .visible-links > li {
+  display: block !important;
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.greedy-nav .visible-links > li a {
+  display: block;
+  width: 100%;
+}
+
+.greedy-nav > button,
+.greedy-nav .hidden-links {
+  display: none !important;
+}
+
+.publication-intro {
+  max-width: 720px;
+  margin: -0.5rem 0 3rem;
+  color: #6e6e73;
+  font-size: 1.05rem;
+}
+
+.publication-board {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.45fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: start;
+}
+
+.publication-section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(29, 29, 31, 0.12);
+}
+
+.publication-section-heading span {
+  color: #86868b;
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+}
+
+.publication-section-heading h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.45rem;
+}
+
+.publication-card-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: 108px minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.85rem;
+  overflow: hidden;
+  border: 1px solid rgba(29, 29, 31, 0.09);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.045);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.075);
+}
+
+.publication-card--featured {
+  display: block;
+}
+
+.publication-cover {
+  position: relative;
+  display: flex;
+  min-height: 132px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.8rem;
+  overflow: hidden;
+  border-radius: 12px;
+  color: #f5f5f7;
+  background: linear-gradient(145deg, #55555a, #1d1d1f);
+}
+
+.publication-cover::after {
+  content: "";
+  position: absolute;
+  right: -35%;
+  bottom: -45%;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.publication-cover > * {
+  position: relative;
+  z-index: 1;
+}
+
+.publication-cover span,
+.publication-cover small {
+  font-size: 0.62rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+}
+
+.publication-cover strong {
+  font-size: 1.05rem;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.publication-cover--q1 {
+  color: #1d1d1f;
+  background: linear-gradient(145deg, #f5f5f7, #c7c7cc);
+}
+
+.publication-cover--book {
+  min-height: 250px;
+  padding: 1.35rem;
+  background: linear-gradient(150deg, #48484a, #1d1d1f 72%);
+}
+
+.publication-cover--book strong {
+  font-size: 2rem;
+}
+
+.publication-card__body {
+  align-self: center;
+  padding: 0.15rem 0.1rem;
+}
+
+.publication-card--featured .publication-card__body {
+  padding: 1.2rem 0.3rem 0.45rem;
+}
+
+.publication-badge {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  color: #6e6e73;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}
+
+.publication-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  letter-spacing: -0.018em;
+}
+
+.publication-card p {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.publication-meta {
+  color: #6e6e73;
+}
+
+@media (max-width: 820px) {
+  .publication-board {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-cover--book {
+    min-height: 210px;
+  }
+}
+
+@media (max-width: 560px) {
+  .greedy-nav .visible-links {
+    max-width: none;
+  }
+
+  .greedy-nav .visible-links > li a {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    font-size: 0.7rem;
+  }
+
+  .publication-card {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .publication-cover {
+    min-height: 118px;
+  }
+}
+
+.language-toggle a {
+  min-width: 2.75rem;
+  border: 1px solid rgba(29, 29, 31, 0.14);
+  border-radius: 999px;
+  text-align: center;
+}
+
+.language-toggle a:hover {
+  border-color: rgba(29, 29, 31, 0.3);
+  background: rgba(29, 29, 31, 0.06);
+}
+
+#theme-toggle.tail {
+  margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .masthead__inner-wrap {
+    padding: 0 0.45rem;
+  }
+
+  .greedy-nav .visible-links {
+    gap: 0.1rem;
+  }
+
+  .greedy-nav a {
+    padding: 0.5rem 0.45rem;
+    font-size: 0.76rem;
+  }
+}
+
+.language-toggle {
+  margin-left: 0;
+}
 
 /* Apple-style composition pass: one grid, quiet depth, decisive typography. */
 .masthead__inner-wrap,
@@ -729,8 +799,228 @@ body {
   }
 }
 
+html[data-theme="dark"] body {
+  background: #111113;
+}
 
-/* Global navigation: flush to the viewport, centered like apple.com. */
+html[data-theme="dark"] .masthead {
+  background: rgba(29, 29, 31, 0.86);
+}
+
+html[data-theme="dark"] .page {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: #2c2c2e;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.22);
+}
+
+html[data-theme="dark"] .sidebar {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #000;
+}
+
+@media (max-width: 1023px) {
+  .sidebar {
+    margin-bottom: 1.5rem;
+    border-radius: 22px;
+  }
+
+  .page {
+    border-radius: 22px;
+  }
+}
+
+/* Precision pass: aligned grid, restrained depth, monochrome details. */
+.page {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.045);
+}
+
+.author__avatar img {
+  border-radius: 20px;
+  box-shadow: none;
+}
+
+.page__content blockquote {
+  border-left: 0;
+  border-radius: 16px;
+  color: var(--global-text-color);
+  background: #f5f5f7;
+}
+
+.page__content > *:last-child {
+  margin-bottom: 0;
+}
+
+.page__footer {
+  color: #6e6e73;
+  background: #e8e8ed;
+}
+
+@media screen and (min-width: 1024px) {
+  #main {
+    display: grid;
+    grid-template-columns: minmax(220px, 250px) minmax(0, 1fr);
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: start;
+  }
+
+  .sidebar,
+  .page {
+    float: none;
+  }
+
+  .sidebar.sticky {
+    position: sticky;
+    top: 6.25rem;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: calc(100vh - 7.75rem);
+    margin: 0;
+    padding: 1.4rem;
+  }
+
+  .page {
+    width: 100%;
+    margin: 0;
+    padding: clamp(2.4rem, 4vw, 4.25rem);
+  }
+}
+
+html[data-theme="dark"] .page__content blockquote {
+  color: var(--global-text-color);
+  background: #3a3a3c;
+}
+
+html[data-theme="dark"] .page__footer {
+  color: #aeaeb2;
+  background: #1c1c1e;
+}
+
+/* Warm mineral palette: refined, calm, and culturally neutral. */
+body {
+  background: #f2f1ee;
+}
+
+.masthead {
+  background: rgba(250, 249, 247, 0.88);
+}
+
+.page {
+  border-color: rgba(79, 74, 66, 0.08);
+  background: #fffefa;
+  box-shadow: 0 12px 38px rgba(65, 59, 50, 0.055);
+}
+
+.sidebar {
+  border: 1px solid rgba(79, 74, 66, 0.08);
+  color: #2f302f;
+  background: #e5e2dc;
+  box-shadow: 0 14px 40px rgba(65, 59, 50, 0.09);
+}
+
+.sidebar .author__name,
+.sidebar .author__urls a,
+.sidebar .author__urls i,
+.sidebar .author__urls .svg-inline--fa {
+  color: #2f302f;
+}
+
+.sidebar .author__bio {
+  color: #6b6862;
+}
+
+.sidebar .author__urls a:hover {
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.sidebar .author__avatar img {
+  border: 3px solid rgba(255, 255, 255, 0.78);
+  background: #fff;
+}
+
+.page__content blockquote {
+  background: #f1efeb;
+}
+
+.page__footer {
+  color: #74716b;
+  background: #e7e4de;
+}
+
+/* Balanced monochrome layout: a stronger profile panel and neutral grays. */
+body {
+  background: #f2f2f4;
+}
+
+.masthead {
+  background: rgba(250, 250, 250, 0.9);
+}
+
+.page {
+  border-color: rgba(0, 0, 0, 0.07);
+  background: #fff;
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.055);
+}
+
+.sidebar {
+  border-color: rgba(0, 0, 0, 0.07);
+  color: #242426;
+  background: #dedee2;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.09);
+}
+
+.sidebar .author__name,
+.sidebar .author__urls a,
+.sidebar .author__urls i,
+.sidebar .author__urls .svg-inline--fa {
+  color: #242426;
+}
+
+.sidebar .author__bio {
+  color: #5f5f63;
+}
+
+.page__content blockquote {
+  background: #f2f2f4;
+}
+
+.page__footer {
+  color: #68686d;
+  background: #e4e4e7;
+}
+
+@media screen and (min-width: 1024px) {
+  #main {
+    grid-template-columns: minmax(270px, 300px) minmax(0, 1fr);
+    gap: clamp(2rem, 3vw, 3rem);
+  }
+
+  .sidebar.sticky {
+    padding: 1.75rem;
+  }
+
+  .sidebar .author__avatar {
+    display: block;
+    width: 100%;
+    max-width: 230px;
+    margin: 0 auto 1.4rem;
+  }
+
+  .sidebar .author__avatar img {
+    width: 100%;
+  }
+
+  .sidebar .author__name {
+    font-size: 1.45rem;
+  }
+
+  .sidebar .author__bio,
+  .sidebar .author__urls {
+    font-size: 0.98rem;
+  }
+}
+
+/* Final navigation placement overrides. */
 body {
   padding-top: 0 !important;
 }
@@ -786,11 +1076,6 @@ body {
   border: 1px solid rgba(29, 29, 31, 0.14);
   border-radius: 999px;
   text-align: center;
-}
-
-.language-toggle a:hover {
-  border-color: rgba(29, 29, 31, 0.3);
-  background: rgba(29, 29, 31, 0.06);
 }
 
 #theme-toggle.tail {
