@@ -609,3 +609,122 @@ body {
     border-radius: 20px;
   }
 }
+
+
+/* Apple-style composition pass: one grid, quiet depth, decisive typography. */
+.masthead__inner-wrap,
+#main {
+  max-width: 1180px;
+}
+
+.masthead__inner-wrap {
+  box-sizing: border-box;
+  padding: 0.62rem 1.25rem;
+}
+
+.masthead__menu,
+.greedy-nav,
+.greedy-nav .visible-links {
+  width: 100%;
+}
+
+.greedy-nav .visible-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.greedy-nav .visible-links .tail {
+  margin-left: auto;
+}
+
+.greedy-nav a {
+  padding-right: 0.85rem;
+  padding-left: 0.85rem;
+  border-radius: 999px;
+}
+
+.greedy-nav a:hover {
+  background: rgba(29, 29, 31, 0.055);
+}
+
+.home-page #main {
+  padding-top: clamp(2.25rem, 5vw, 4.5rem);
+}
+
+.home-page .sidebar,
+.home-page .page {
+  border-radius: 30px;
+}
+
+.home-page .sidebar {
+  align-self: start;
+  padding: 1.65rem;
+  background: linear-gradient(155deg, #48484a 0%, #2c2c2e 70%, #242426 100%);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.15);
+}
+
+.home-page .sidebar .author__avatar {
+  max-width: 205px;
+  margin-bottom: 1.2rem;
+}
+
+.home-page .sidebar .author__avatar img {
+  border-width: 2px;
+  border-radius: 22px;
+}
+
+.home-page .sidebar .author__name {
+  margin-top: 0;
+  font-size: 1.35rem;
+}
+
+.home-page .page {
+  padding: clamp(2.75rem, 5vw, 4.75rem);
+  box-shadow: 0 22px 65px rgba(0, 0, 0, 0.052);
+}
+
+.home-page .page__content > h1:first-child {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.65rem, 4.8vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+}
+
+.home-page .page__content h2 {
+  margin-top: 3.5rem;
+  font-size: clamp(1.55rem, 2.4vw, 2rem);
+}
+
+.home-page .page__content p,
+.home-page .page__content li {
+  max-width: 720px;
+  color: #3a3a3c;
+}
+
+.inner-page .page__title {
+  font-size: clamp(2.7rem, 5vw, 4.6rem);
+}
+
+@media screen and (min-width: 1024px) {
+  .home-page #main {
+    grid-template-columns: 285px minmax(0, 1fr);
+    gap: 2.75rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .masthead__inner-wrap {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .home-page .sidebar,
+  .home-page .page {
+    border-radius: 22px;
+  }
+
+  .home-page .page__content > h1:first-child {
+    font-size: 2.45rem;
+  }
+}
