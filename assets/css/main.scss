@@ -524,3 +524,88 @@ body {
 .page__footer-follow .social-icons .svg-inline--fa {
   color: #f5f5f7;
 }
+
+
+/* 2026 interface system: Apple-like hierarchy with focused academic reading. */
+:root {
+  --ui-canvas: #f5f5f7;
+  --ui-surface: rgba(255, 255, 255, 0.92);
+  --ui-ink: #1d1d1f;
+  --ui-secondary: #6e6e73;
+  --ui-line: rgba(29, 29, 31, 0.1);
+  --ui-radius: 24px;
+}
+
+body {
+  color: var(--ui-ink);
+  background: var(--ui-canvas);
+}
+
+.masthead {
+  border-bottom-color: var(--ui-line);
+  background: rgba(245, 245, 247, 0.78);
+  box-shadow: none;
+}
+
+.masthead__inner-wrap {
+  max-width: 1280px;
+}
+
+.greedy-nav .visible-links a::before {
+  height: 2px;
+  background: var(--ui-ink);
+}
+
+.page,
+.archive {
+  border: 1px solid var(--ui-line);
+  border-top: 1px solid var(--ui-line);
+  border-radius: var(--ui-radius);
+  background: var(--ui-surface);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.055);
+}
+
+.page__title {
+  color: var(--ui-ink);
+}
+
+.page__content h2,
+.archive h2 {
+  border-bottom-color: var(--ui-line);
+}
+
+.sidebar {
+  background: linear-gradient(145deg, #424245 0%, #2c2c2e 100%);
+}
+
+.page__footer {
+  background: #1d1d1f;
+}
+
+@media screen and (min-width: 1024px) {
+  .home-page #main {
+    grid-template-columns: minmax(280px, 310px) minmax(0, 1fr);
+    gap: clamp(2rem, 3.5vw, 3.5rem);
+  }
+
+  .inner-page #main {
+    display: block;
+    max-width: 1180px;
+  }
+
+  .inner-page .page,
+  .inner-page .archive {
+    float: none;
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 5vw, 5rem);
+  }
+}
+
+@media (max-width: 1023px) {
+  .page,
+  .archive {
+    border-radius: 20px;
+  }
+}
