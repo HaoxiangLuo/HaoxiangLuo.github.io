@@ -24,10 +24,15 @@
             </li>
           {% endfor %}
           <li class="masthead__menu-item persist language-toggle">
-            <a href="{{ base_path }}{{ page.translation_url | default: '/zh/' }}" lang="{% if page.lang == 'zh' %}en{% else %}zh-CN{% endif %}" aria-label="{% if page.lang == 'zh' %}Switch to English{% else %}切换至中文{% endif %}">
-              <span class="language-toggle__option{% if page.lang == 'zh' %} is-active{% endif %}">中</span>
-              <span class="language-toggle__option{% unless page.lang == 'zh' %} is-active{% endunless %}">EN</span>
-            </a>
+            <div class="language-toggle__control" role="group" aria-label="Language / 语言">
+              {% if page.lang == 'zh' %}
+                <span class="language-toggle__option is-active" lang="zh-CN" aria-current="page">中</span>
+                <a class="language-toggle__option" href="{{ base_path }}{{ page.translation_url | default: '/' }}" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+              {% else %}
+                <a class="language-toggle__option" href="{{ base_path }}{{ page.translation_url | default: '/zh/' }}" lang="zh-CN" hreflang="zh-CN" aria-label="切换至中文">中</a>
+                <span class="language-toggle__option is-active" lang="en" aria-current="page">EN</span>
+              {% endif %}
+            </div>
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>

@@ -3,6 +3,55 @@
   max-width: 840px;
 }
 
+.language-toggle__control {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 6rem;
+  padding: 0.2rem;
+  border: 1px solid rgba(29, 29, 31, 0.1);
+  border-radius: 999px;
+  background: #e8e8ed;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.42);
+}
+
+.greedy-nav .visible-links > li.language-toggle .language-toggle__control > .language-toggle__option {
+  display: grid !important;
+  width: auto !important;
+  min-width: 0;
+  min-height: 1.8rem;
+  box-sizing: border-box;
+  place-items: center;
+  padding: 0 !important;
+  border: 0;
+  border-radius: 999px;
+  color: #86868b;
+  background: transparent;
+  box-shadow: none;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.greedy-nav .visible-links > li.language-toggle .language-toggle__control > a.language-toggle__option:hover {
+  color: #1d1d1f;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.greedy-nav .visible-links > li.language-toggle .language-toggle__control > a.language-toggle__option:focus-visible {
+  outline: 2px solid #0071e3;
+  outline-offset: 2px;
+}
+
+.greedy-nav .visible-links > li.language-toggle .language-toggle__control > .language-toggle__option.is-active {
+  cursor: default;
+  color: #f5f5f7;
+  background: #2c2c2e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
 body.inner-page:has(.notes-grid) #main,
 body.inner-page:has(.site-timeline) #main {
   max-width: 1280px;
