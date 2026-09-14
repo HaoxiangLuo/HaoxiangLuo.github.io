@@ -350,3 +350,55 @@ html[data-theme="dark"] .page__footer {
   color: #aeaeb2;
   background: #1c1c1e;
 }
+
+
+/* Warm mineral palette: refined, calm, and culturally neutral. */
+body {
+  background: #f2f1ee;
+}
+
+.masthead {
+  background: rgba(250, 249, 247, 0.88);
+}
+
+.page {
+  border-color: rgba(79, 74, 66, 0.08);
+  background: #fffefa;
+  box-shadow: 0 12px 38px rgba(65, 59, 50, 0.055);
+}
+
+.sidebar {
+  border: 1px solid rgba(79, 74, 66, 0.08);
+  color: #2f302f;
+  background: #e5e2dc;
+  box-shadow: 0 14px 40px rgba(65, 59, 50, 0.09);
+}
+
+.sidebar .author__name,
+.sidebar .author__urls a,
+.sidebar .author__urls i,
+.sidebar .author__urls .svg-inline--fa {
+  color: #2f302f;
+}
+
+.sidebar .author__bio {
+  color: #6b6862;
+}
+
+.sidebar .author__urls a:hover {
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.sidebar .author__avatar img {
+  border: 3px solid rgba(255, 255, 255, 0.78);
+  background: #fff;
+}
+
+.page__content blockquote {
+  background: #f1efeb;
+}
+
+.page__footer {
+  color: #74716b;
+  background: #e7e4de;
+}
