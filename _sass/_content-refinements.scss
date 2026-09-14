@@ -3,6 +3,28 @@
   max-width: 840px;
 }
 
+body.inner-page:has(.notes-grid) #main,
+body.inner-page:has(.site-timeline) #main {
+  max-width: 1280px;
+  padding-top: clamp(1.25rem, 2.5vw, 2rem);
+  padding-bottom: clamp(2rem, 4vw, 4rem);
+}
+
+body.inner-page:has(.notes-grid) .archive,
+body.inner-page:has(.site-timeline) .archive {
+  max-width: none;
+  padding: clamp(2rem, 3.5vw, 3.5rem);
+  border-radius: 26px;
+}
+
+body.inner-page:has(.notes-grid) .page__title,
+body.inner-page:has(.site-timeline) .page__title {
+  margin: 0 0 0.85rem;
+  font-size: clamp(2.8rem, 5vw, 4.35rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
 .publication-column--articles .publication-card-list {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.75rem;
@@ -16,6 +38,12 @@
   border-radius: 16px;
 }
 
+.publication-column--articles .publication-card__body {
+  position: relative;
+  align-self: stretch;
+  padding-top: 1.55rem;
+}
+
 .publication-column--articles .publication-cover--nature {
   width: 76px;
   min-height: 106px;
@@ -23,7 +51,7 @@
 }
 
 .publication-column--articles .publication-card h3 {
-  margin: 0.34rem 0 0.28rem;
+  margin: 0 0 0.28rem;
   font-size: clamp(0.69rem, 0.78vw, 0.78rem);
   line-height: 1.26;
 }
@@ -33,7 +61,10 @@
 }
 
 .publication-column--articles .publication-badge--rank {
-  margin-bottom: 0.15rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
   padding: 0.24rem 0.45rem;
   font-size: 0.57rem;
 }
@@ -123,6 +154,39 @@
   color: #6e6e73;
   font-size: 1rem;
   line-height: 1.55;
+}
+
+.site-log-toolbar {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2.75rem;
+}
+
+.site-log-toolbar .site-log-intro {
+  margin-bottom: 0;
+}
+
+.site-log-write {
+  display: inline-flex;
+  min-height: 40px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  color: #fff !important;
+  background: #1d1d1f;
+  font-size: 0.74rem;
+  font-weight: 650;
+  text-decoration: none !important;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.site-log-write:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
 }
 
 .site-timeline {
@@ -219,6 +283,77 @@
   line-height: 1.45;
 }
 
+.site-auto-updates {
+  max-width: 900px;
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(29, 29, 31, 0.08);
+  border-radius: 22px;
+  background: #f5f5f7;
+}
+
+.site-auto-updates__heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.site-auto-updates__heading span,
+.site-auto-updates__heading small {
+  color: #86868b;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}
+
+.site-auto-updates__heading h2 {
+  margin: 0.2rem 0 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.15rem;
+}
+
+.site-auto-updates__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-auto-updates__list a {
+  display: grid;
+  min-height: 70px;
+  align-content: space-between;
+  padding: 0.75rem;
+  border: 1px solid rgba(29, 29, 31, 0.07);
+  border-radius: 14px;
+  color: #1d1d1f !important;
+  background: #fff;
+  text-decoration: none !important;
+}
+
+.site-auto-updates__list strong {
+  overflow: hidden;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-auto-updates__list time {
+  color: #86868b;
+  font-size: 0.6rem;
+}
+
+.site-auto-updates__list .is-loading {
+  grid-column: 1 / -1;
+  color: #86868b;
+  font-size: 0.72rem;
+}
+
 .notes-topic {
   position: relative;
   min-height: 250px;
@@ -279,10 +414,14 @@
   .publication-column--articles .publication-card-list { grid-template-columns: 1fr; }
 
   .site-log-intro { margin-bottom: 2rem; }
+  .site-log-toolbar { display: grid; margin-bottom: 2rem; }
+  .site-log-toolbar .site-log-intro { margin-bottom: 0; }
+  .site-log-write { justify-self: start; }
   .site-timeline::before { left: 24px; }
   .site-log-entry { grid-template-columns: 48px minmax(0, 1fr); gap: 0.75rem; }
   .site-log-entry time { width: 48px; height: 82px; border-radius: 14px; }
   .site-log-entry time strong { font-size: 1.5rem; }
   .site-log-entry time span, .site-log-entry time small { font-size: 0.46rem; letter-spacing: 0.04em; }
   .site-log-entry__content { padding: 1.15rem; border-radius: 18px; }
+  .site-auto-updates__list { grid-template-columns: 1fr; }
 }
