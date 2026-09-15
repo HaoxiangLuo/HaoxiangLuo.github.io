@@ -15,10 +15,6 @@ translation_url: /
 
 {% include daily-news-widget.html %}
 
-## 教育背景
-
-- 南京大学新闻传播学博士研究生
-
 ## 研究兴趣
 
 - 全球传播中的不平等

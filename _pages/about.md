@@ -17,10 +17,6 @@ Let's take a look at what's happening in the world today！
 
 {% include daily-news-widget.html %}
 
-## Education
-
-- PhD Student in Journalism and Communication, Nanjing University
-
 ## Research Interests
 
 - Inequality in Global Communication
