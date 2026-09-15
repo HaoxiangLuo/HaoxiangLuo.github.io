@@ -9,6 +9,9 @@ main:
   - title: "Site Log"
     url: /site-log/
 
+  - title: "Daily News"
+    url: /daily-news/
+
 main_zh:
   - title: "论文发表"
     url: /zh/publications/
@@ -18,3 +21,6 @@ main_zh:
 
   - title: "网站日志"
     url: /zh/site-log/
+
+  - title: "每日新闻"
+    url: /zh/daily-news/

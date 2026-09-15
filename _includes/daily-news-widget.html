@@ -1,0 +1,21 @@
+{% assign today_key = site.time | date: "%Y-%m-%d" %}
+{% assign today_news = site.data.daily_news[today_key] %}
+<aside class="news-window" aria-labelledby="news-window-title">
+  <div class="news-window__header">
+    <div>
+      <span class="news-window__live"><i aria-hidden="true"></i>{% if page.lang == 'zh' %}今日简讯{% else %}TODAY'S BRIEF{% endif %}</span>
+      <h2 id="news-window-title">{% if page.lang == 'zh' %}全球要闻{% else %}Global News{% endif %}</h2>
+    </div>
+    <a href="{{ base_path }}{% if page.lang == 'zh' %}/zh/daily-news/{% else %}/daily-news/{% endif %}">{% if page.lang == 'zh' %}查看全部{% else %}View all{% endif %}<span aria-hidden="true"> ↗</span></a>
+  </div>
+  {% if today_news and today_news.size > 0 %}
+    <ol class="news-window__list">
+      {% for item in today_news limit:5 %}
+        <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}</span><small>{{ item.source | escape }}</small></a></li>
+      {% endfor %}
+    </ol>
+  {% else %}
+    <p class="news-window__empty">{% if page.lang == 'zh' %}今日简讯正在整理中，请稍后再来。{% else %}Today's briefing is being prepared. Please check back shortly.{% endif %}</p>
+  {% endif %}
+  <div class="news-window__footer"><time datetime="{{ today_key }}">{{ today_key }}</time><span>{% if page.lang == 'zh' %}每小时自动更新{% else %}Updated hourly{% endif %}</span></div>
+</aside>

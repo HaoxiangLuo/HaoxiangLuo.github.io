@@ -1,0 +1,47 @@
+name: Update daily news
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - "scripts/fetch_daily_news.py"
+      - ".github/workflows/daily-news.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-news
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect world headlines
+        run: python scripts/fetch_daily_news.py
+
+      - name: Save the daily archive
+        run: |
+          if git diff --quiet -- _data/daily_news.json; then
+            echo "No news changes to save."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/daily_news.json
+          git commit -m "Update daily news $(TZ=Asia/Shanghai date +%F)"
+          git push origin HEAD:master

@@ -15,6 +15,8 @@ Hello! I am **Haoxiang Luo**, a PhD student in Journalism and Communication at N
 
 My research interests focus on inequality in global communication, as well as the spread and instrumentalization of misinformation. This website records my academic experience, research, publications, teaching, and other projects.
 
+{% include daily-news-widget.html %}
+
 ## Education
 
 - PhD Student in Journalism and Communication, Nanjing University

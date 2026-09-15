@@ -1,0 +1,30 @@
+---
+layout: archive
+permalink: /zh/daily-news/
+title: "每日新闻"
+author_profile: false
+lang: zh
+translation_url: /daily-news/
+---
+
+<p class="daily-news-intro">每小时从公开新闻源整理全球重要标题，并按日期留存。点击来源链接可阅读完整报道。</p>
+
+{% assign news_days = site.data.daily_news | sort | reverse %}
+<div class="daily-news-archive">
+  {% if news_days.size > 0 %}
+    {% for day in news_days %}
+      <section class="daily-news-day">
+        <header><time datetime="{{ day[0] }}">{{ day[0] | date: "%Y年%-m月%-d日" }}</time><span>{{ day[1].size }} 条简讯</span></header>
+        <ol>
+          {% for item in day[1] %}
+            <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+          {% endfor %}
+        </ol>
+      </section>
+    {% endfor %}
+  {% else %}
+    <p class="daily-news-empty">自动新闻任务运行后，第一期简讯将显示在这里。</p>
+  {% endif %}
+</div>
+
+<p class="daily-news-note">新闻标题与链接归原发布机构所有；收录不代表本站赞同其观点。</p>
