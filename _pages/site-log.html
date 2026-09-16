@@ -8,80 +8,23 @@ translation_url: /zh/site-log/
 ---
 
 <div class="site-log-toolbar">
-  <p class="site-log-intro">A record of how this small corner of the web continues to take shape.</p>
-  <a class="site-log-write" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_pages/site-log.html">Write an update</a>
+  <p class="site-log-intro">A concise record of each published website update.</p>
+  <a class="site-log-write" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_data/site_updates.json" target="_blank" rel="noopener noreferrer">Add manually</a>
 </div>
-
 <div class="site-timeline">
-  <!-- When adding an entry: put the newest one first, then refresh the #L line number at the end of each "Edit" link so it points at that entry's <article> tag. -->
-
-  <article class="site-log-entry" id="log-003">
-    <time datetime="2026-09-15"><span>SEP</span><strong>15</strong><small>2026</small></time>
-    <div class="site-log-entry__content">
-      <div class="site-log-entry__head">
-        <span class="site-log-entry__issue">LOG 003 · INTERACTION DETAILS</span>
-        <a class="site-log-entry__edit" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_pages/site-log.html#L18" target="_blank" rel="noopener noreferrer" title="Edit this entry on GitHub"><svg class="site-log-entry__edit-icon" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true" focusable="false"><path d="M10.7 2.3l3 3M2.8 13.2l3-.5 7-7-2.5-2.5-7 7-.5 3z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Edit</span></a>
+  {% for entry in site.data.site_updates %}
+    <article class="site-log-entry" id="update-{{ entry.sha }}">
+      <time datetime="{{ entry.date }}"><span>{{ entry.date | date: "%b" }}</span><strong>{{ entry.date | date: "%d" }}</strong><small>{{ entry.date | date: "%Y" }}</small></time>
+      <div class="site-log-entry__content">
+        <div class="site-log-entry__head">
+          <span class="site-log-entry__issue">{{ entry.sha }}</span>
+          <a class="site-log-entry__edit" href="{{ entry.url }}" target="_blank" rel="noopener noreferrer"><span>View commit</span></a>
+        </div>
+        <h2>{{ entry.title_en }}</h2>
+        <p>{{ entry.message }}</p>
       </div>
-      <h2>Making every entry editable</h2>
-      <p>The site has reached the point where its own log needs revising from time to time. Until now, a single correction meant rewriting the whole page and hunting through a long file. Each entry now carries an "Edit" link beside its heading, which opens that entry's source in GitHub so a change can be made and committed in one step.</p>
-      <p>The vertical rhythm of Study Notes has also been rearranged. The three topic cards are taller than before, with more room to breathe, and each card can now be clicked open to reveal what the topic will collect and the space reserved for future notes.</p>
-      <p>None of this alters the overall look. The colours, rounded corners, spacing, and type hierarchy remain as they were. The difference is only in the places that ask to be used: the heading brightens when a pointer passes over a card, the panel slides open to its own height, and it retreats just as quietly.</p>
-      <ul class="site-log-entry__changes">
-        <li>Every site-log entry now has an "Edit" link that opens its exact location.</li>
-        <li>The three Study Notes cards can be opened by clicking, with their scope described inside.</li>
-        <li>Card height and vertical spacing were increased, with a short note added to the page.</li>
-        <li>Restrained motion was added for opening and hovering, keeping the original calm rhythm.</li>
-      </ul>
-    </div>
-  </article>
-
-  <article class="site-log-entry" id="log-002">
-    <time datetime="2026-09-14"><span>SEP</span><strong>14</strong><small>2026</small></time>
-    <div class="site-log-entry__content">
-      <div class="site-log-entry__head">
-        <span class="site-log-entry__issue">LOG 002 · DESIGN NOTES</span>
-        <a class="site-log-entry__edit" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_pages/site-log.html#L38" target="_blank" rel="noopener noreferrer" title="Edit this entry on GitHub"><svg class="site-log-entry__edit-icon" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true" focusable="false"><path d="M10.7 2.3l3 3M2.8 13.2l3-.5 7-7-2.5-2.5-7 7-.5 3z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Edit</span></a>
-      </div>
-      <h2>Giving every page the same visual language</h2>
-      <p>As the site gained more content, today was a chance to gather all the design decisions made so far. The aim was not to make the pages busier, but to give them a shared order: quiet at first glance, clear in use, and free from decoration that interrupts reading.</p>
-      <p>Black, white, and gray remain the foundation. System blue is reserved for publication labels, links, and interaction feedback. Rounded corners, fine borders, soft shadows, and generous spacing form the visual structure. On the home page, the profile panel and main content create a measured contrast without relying on a harsh solid black. The profile appears only on the home page, leaving the other pages focused on their content.</p>
-      <p>The navigation stays close to the top, with Home, Publications, Study Notes, and Site Log distributed evenly. The language control is now a true two-option segmented control: the current language remains selected, while the other option can be clicked independently and opens the matching translation of the current page.</p>
-      <p>Publications uses separate columns for the book and journal articles. The book receives a larger natural-landscape cover, while journal articles use a denser two-column card grid. Labels such as SSCI Q1, EI (JA), CSSCI, CSSCI Extended, and AMI stay in a consistent position at the top of each card. Unranked journals show no label while preserving the same visual rhythm.</p>
-      <p>Study Notes provides three cards for Research Methods, Intelligent Communication, and Global Communication, together with entrances for uploading files and adding links. Site Log uses a timeline for written entries and also reads recent GitHub commits automatically, so smaller changes can be traced without becoming full articles.</p>
-      <ul class="site-log-entry__changes">
-        <li>Unified content width, spacing, corners, and type hierarchy across the site.</li>
-        <li>Completed bilingual navigation and a genuinely interactive language selector.</li>
-        <li>Established one coherent card system for publications, notes, and site logs.</li>
-        <li>Added both manual log writing and automatic update synchronization.</li>
-        <li>Refined responsive reading for desktop, tablet, and mobile screens.</li>
-      </ul>
-    </div>
-  </article>
-
-  <article class="site-log-entry" id="log-001">
-    <time datetime="2026-09-14"><span>SEP</span><strong>14</strong><small>2026</small></time>
-    <div class="site-log-entry__content">
-      <div class="site-log-entry__head">
-        <span class="site-log-entry__issue">LOG 001 · THE FIRST DAY</span>
-        <a class="site-log-entry__edit" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_pages/site-log.html#L61" target="_blank" rel="noopener noreferrer" title="Edit this entry on GitHub"><svg class="site-log-entry__edit-icon" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true" focusable="false"><path d="M10.7 2.3l3 3M2.8 13.2l3-.5 7-7-2.5-2.5-7 7-.5 3z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Edit</span></a>
-      </div>
-      <h2>Building a place of my own</h2>
-      <p>Today, this website began to look like a real place rather than an untouched template.</p>
-      <p>It started with the basic things: my name, portrait, university, and research interests. Some changes were small, but they still took time. A title appeared twice. A photograph hid behind the navigation bar. The bottom of a page stretched farther than expected. Each problem was fixed, one at a time.</p>
-      <p>Later, the pages found their own order. The home page became quieter. Publications were arranged into books and journal articles. Study Notes gained three spaces for research methods, intelligent communication, and global communication. Chinese and English could finally stand beside each other and lead to the right page.</p>
-      <p>By evening, the website was still not finished—and that felt right. It now has enough room for future papers, notes, and changes. Today was simply the day the door opened.</p>
-      <ul class="site-log-entry__changes">
-        <li>Established the bilingual home page and navigation.</li>
-        <li>Designed the profile, publication cards, and Study Notes hub.</li>
-        <li>Added publication labels, natural landscape covers, and responsive layouts.</li>
-      </ul>
-    </div>
-  </article>
+    </article>
+  {% else %}
+    <p class="site-log-intro">The first automatic entry will appear after the next publication.</p>
+  {% endfor %}
 </div>
-
-<section class="site-auto-updates" data-language="en">
-  <div class="site-auto-updates__heading"><div><span>AUTOMATIC</span><h2>Recent site updates</h2></div><small>Synced from GitHub</small></div>
-  <ol class="site-auto-updates__list" aria-live="polite"><li class="is-loading">Loading recent updates…</li></ol>
-</section>
-
-<script src="{{ base_path }}/assets/js/site-log.js" defer></script>

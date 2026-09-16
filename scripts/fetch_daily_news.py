@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import html
+import argparse
 import json
 import re
 import sys
@@ -67,6 +68,32 @@ def interleave(groups: list[list[dict[str, str]]]) -> list[dict[str, str]]:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--migrate-only", action="store_true")
+    args = parser.parse_args()
+
+    raw_archive = json.loads(OUTPUT.read_text(encoding="utf-8")) if OUTPUT.exists() else {}
+    if isinstance(raw_archive, dict) and isinstance(raw_archive.get("days"), list):
+        days = raw_archive["days"]
+    elif isinstance(raw_archive, dict):
+        # Migrate the original date-keyed object without losing its history.
+        days = [
+            {"date": date, "items": entries}
+            for date, entries in raw_archive.items()
+            if isinstance(entries, list)
+        ]
+    else:
+        days = []
+
+    if args.migrate_only:
+        archive = {
+            "updated_at": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(timespec="seconds"),
+            "days": sorted(days, key=lambda day: day.get("date", ""), reverse=True)[:MAX_DAYS],
+        }
+        OUTPUT.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"migrated {len(archive['days'])} archived days")
+        return 0
+
     groups: list[list[dict[str, str]]] = []
     for source, url in SOURCES:
         try:
@@ -79,10 +106,14 @@ def main() -> int:
         print("error: no news items were collected", file=sys.stderr)
         return 1
 
-    archive = json.loads(OUTPUT.read_text(encoding="utf-8")) if OUTPUT.exists() else {}
     today = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
-    archive[today] = items
-    archive = dict(sorted(archive.items(), reverse=True)[:MAX_DAYS])
+    days = [day for day in days if day.get("date") != today]
+    days.append({"date": today, "items": items})
+    days = sorted(days, key=lambda day: day.get("date", ""), reverse=True)[:MAX_DAYS]
+    archive = {
+        "updated_at": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(timespec="seconds"),
+        "days": days,
+    }
     OUTPUT.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"saved {len(items)} headlines for {today}")
     return 0

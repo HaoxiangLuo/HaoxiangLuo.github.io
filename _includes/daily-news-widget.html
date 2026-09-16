@@ -1,5 +1,7 @@
 {% assign today_key = site.time | date: "%Y-%m-%d" %}
-{% assign today_news = site.data.daily_news[today_key] %}
+{% assign today_news_day = site.data.daily_news.days | where: "date", today_key | first %}
+{% unless today_news_day %}{% assign today_news_day = site.data.daily_news.days | first %}{% endunless %}
+{% assign today_news = today_news_day.items %}
 <aside class="news-window" aria-labelledby="news-window-title">
   <div class="news-window__header">
     <div>
@@ -17,5 +19,5 @@
   {% else %}
     <p class="news-window__empty">{% if page.lang == 'zh' %}今日简讯正在整理中，请稍后再来。{% else %}Today's briefing is being prepared. Please check back shortly.{% endif %}</p>
   {% endif %}
-  <div class="news-window__footer"><time datetime="{{ today_key }}">{{ today_key }}</time><span>{% if page.lang == 'zh' %}每小时自动更新{% else %}Updated hourly{% endif %}</span></div>
+  <div class="news-window__footer"><time datetime="{{ today_news_day.date }}">{{ today_news_day.date }}</time><span>{% if page.lang == 'zh' %}每小时自动更新{% else %}Updated hourly{% endif %}</span></div>
 </aside>

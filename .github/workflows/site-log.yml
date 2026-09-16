@@ -1,0 +1,58 @@
+name: Record site update
+
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      - "_data/daily_news.json"
+      - "_data/site_updates.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-update-log
+  cancel-in-progress: false
+
+jobs:
+  record:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Record this website update
+        run: python scripts/update_site_log.py --sha "${{ github.sha }}"
+
+      - name: Save the site log
+        run: |
+          if git diff --quiet -- _data/site_updates.json; then
+            echo "No new website update to record."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/site_updates.json
+          git commit -m "Record site update ${{ github.sha }}"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            echo "Refreshing site log after a concurrent update (attempt $attempt)."
+            git pull --rebase -X theirs origin master
+            python scripts/update_site_log.py --sha "${{ github.sha }}"
+            git add _data/site_updates.json
+            git commit --amend --no-edit
+          done
+          echo "Unable to save the site log after three attempts." >&2
+          exit 1

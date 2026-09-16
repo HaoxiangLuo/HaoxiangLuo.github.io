@@ -1,0 +1,122 @@
+[
+  {
+    "date": "2026-09-16",
+    "title_zh": "更新：界面样式",
+    "title_en": "Updated interface styling",
+    "message": "Refine desktop homepage information hierarchy",
+    "sha": "aee39e7",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/aee39e7802133f72bbabb0ecf2cda09aab7c4cc3"
+  },
+  {
+    "date": "2026-09-15",
+    "title_zh": "更新：首页",
+    "title_en": "Updated Home",
+    "message": "Remove Education section from home pages",
+    "sha": "b01a7f0",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/b01a7f0bd0e4b6e80e5b4197915a8e56925331f7"
+  },
+  {
+    "date": "2026-09-15",
+    "title_zh": "更新：每日新闻、导航、首页、界面样式",
+    "title_en": "Updated Daily News, navigation, Home, interface styling",
+    "message": "Add automated daily global news briefing",
+    "sha": "a78f0f0",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/a78f0f0668e7ab685205e170ed2dc03f4e347c75"
+  },
+  {
+    "date": "2026-09-15",
+    "title_zh": "更新：论文发表、界面样式",
+    "title_en": "Updated Publications, interface styling",
+    "message": "Add year filter to publications pages",
+    "sha": "971e279",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/971e2794a79bb22c122b2372c79e03c4d6de9ca6"
+  },
+  {
+    "date": "2026-09-15",
+    "title_zh": "更新：网站日志、学习札记、界面样式",
+    "title_en": "Updated Site Log, Study Notes, interface styling",
+    "message": "Add per-entry edit links to site log and expandable study-note cards",
+    "sha": "91c641f",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/91c641fb60fdd2c6b8ab2cbaaa2eb7f395ac2d31"
+  },
+  {
+    "date": "2026-09-15",
+    "title_zh": "更新：首页",
+    "title_en": "Updated Home",
+    "message": "Update homepage intro copy",
+    "sha": "800a3b6",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/800a3b60d698e8a5e1c31344e756e00402433579"
+  },
+  {
+    "date": "2026-09-14",
+    "title_zh": "更新：导航、论文发表、网站日志、学习札记",
+    "title_en": "Updated navigation, Publications, Site Log, Study Notes",
+    "message": "Add bilingual site log and refine notes",
+    "sha": "b396395",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/b396395de0b0b7b0ff0bae6fff7e75938187bfce"
+  },
+  {
+    "date": "2026-09-14",
+    "title_zh": "更新：网站日志、界面样式",
+    "title_en": "Updated Site Log, interface styling",
+    "message": "Align content pages and automate site log",
+    "sha": "aefd27c",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/aefd27c40b34c9a18cf445bd782b31b2e3fa5c59"
+  },
+  {
+    "date": "2026-09-14",
+    "title_zh": "更新：导航、论文发表、界面样式",
+    "title_en": "Updated navigation, Publications, interface styling",
+    "message": "Refine homepage layout, language switch, and publication badges",
+    "sha": "888298d",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/888298d38fc31ce1af1af6ecdda505b619823cde"
+  },
+  {
+    "date": "2026-09-14",
+    "title_zh": "更新：导航、界面样式",
+    "title_en": "Updated navigation, interface styling",
+    "message": "Make language selector truly interactive",
+    "sha": "78d3b00",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/78d3b0099b0e64ad0058caabe8d00760f4a52157"
+  },
+  {
+    "date": "2026-09-14",
+    "title_zh": "更新：界面样式",
+    "title_en": "Updated interface styling",
+    "message": "Fix mobile home layout and navigation",
+    "sha": "7459446",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/745944641f44dbb01111015d92a17979d2943b79"
+  },
+  {
+    "date": "2026-09-14",
+    "title_zh": "更新：论文发表、学习札记、界面样式",
+    "title_en": "Updated Publications, Study Notes, interface styling",
+    "message": "Refine publications and add study note hub",
+    "sha": "622448f",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/622448f80fa3487f5a11bcf996edb59de5191ac0"
+  },
+  {
+    "date": "2026-09-14",
+    "title_zh": "更新：论文发表、界面样式",
+    "title_en": "Updated Publications, interface styling",
+    "message": "Refine publication reading experience",
+    "sha": "6033b1f",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/6033b1fcf127744ab068017e879c53fd81abd229"
+  },
+  {
+    "date": "2026-09-14",
+    "title_zh": "更新：论文发表、界面样式",
+    "title_en": "Updated Publications, interface styling",
+    "message": "Improve profile contrast and publication covers",
+    "sha": "2e6d31b",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/2e6d31b6e33fb397318edd00c69b12ffbf63fa33"
+  },
+  {
+    "date": "2026-09-14",
+    "title_zh": "更新：网站日志、界面样式",
+    "title_en": "Updated Site Log, interface styling",
+    "message": "Document the site design system",
+    "sha": "0ddd9ab",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/0ddd9abb897d60758adbffa3ed87adc6262c4043"
+  }
+]
