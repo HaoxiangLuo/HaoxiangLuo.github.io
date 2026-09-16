@@ -1,23 +1,28 @@
 {
-  "updated_at": "2026-09-16T18:42:22+08:00",
+  "updated_at": "2026-09-16T19:36:17+08:00",
   "days": [
     {
       "date": "2026-09-16",
       "items": [
+        {
+          "title": "EU chief backs plan for Canada to become 'associate member'",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "EU's Ursula von der Leyen says she wants Canada to become an associate member",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/16/nx-s1-5970985/canada-become-eu-associate-member"
+        },
         {
           "title": "OpenAI boss says world 'right to be afraid' but should trust AI firms",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cqx2zpj4y525o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Turkish habit of stashing gold \"under the pillow' hurts economy, government says",
+          "title": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/15/g-s1-143414/turkey-gold-economy"
-        },
-        {
-          "title": "Security Council LIVE: Rising violence triggers emergency meeting on Yemen",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168343"
+          "url": "https://www.npr.org/2026/09/16/g-s1-143560/kosovo-former-president-war-crimes"
         },
         {
           "title": "All support acts on Ed Sheeran's US tour quit after Macklemore dropped",
@@ -25,29 +30,24 @@
           "url": "https://www.bbc.co.uk/news/articles/c3vgyn49y4l7o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Turks often keep gold as a hedge against inflation. It may be hurting Turkey's future",
+          "title": "Saudi Arabia calls an attempted Mecca attack a 'red line' as Houthis deny they did it",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/15/nx-s1-5949212/turks-often-keep-gold-as-a-hedge-against-inflation-it-may-be-hurting-turkeys-future"
+          "url": "https://www.npr.org/2026/09/16/g-s1-143554/saudi-arabia-attempted-mecca-attack"
         },
         {
-          "title": "UNICEF says thousands of children require mental health support after Nepal floods",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168340"
-        },
-        {
-          "title": "Three killed after LA news helicopter crashes while covering deadly bus collision",
+          "title": "At least 20 killed after war-damaged Gaza building collapses",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw4gq0j5jg10o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "State of U.S. democracy reaches new low, report finds",
+          "title": "Turkish habit of stashing gold \"under the pillow' hurts economy, government says",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/15/nx-s1-5969741/state-of-u-s-democracy-reaches-new-low-report-finds"
+          "url": "https://www.npr.org/2026/09/15/g-s1-143414/turkey-gold-economy"
         },
         {
-          "title": "Escalating conflict drives new displacement in Yemen",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168339"
+          "title": "Iran war has led to US munitions shortfalls, Pentagon inspector confirms",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c9gk58xgng0vo?at_medium=RSS&at_campaign=rss"
         }
       ]
     },
