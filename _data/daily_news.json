@@ -1,4 +1,51 @@
 {
+  "2026-09-16": [
+    {
+      "title": "All support acts on Ed Sheeran's US tour quit after Macklemore dropped",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c3vgyn49y4l7o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Turkish habit of stashing gold \"under the pillow' hurts economy, government says",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/09/15/g-s1-143414/turkey-gold-economy"
+    },
+    {
+      "title": "Denmark says Russian warship fired flares at military helicopter",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "Turks often keep gold as a hedge against inflation. It may be hurting Turkey's future",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/09/15/nx-s1-5949212/turks-often-keep-gold-as-a-hedge-against-inflation-it-may-be-hurting-turkeys-future"
+    },
+    {
+      "title": "What weapon could the US have put into space?",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cmy4zqgk97wlo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "State of U.S. democracy reaches new low, report finds",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/09/15/nx-s1-5969741/state-of-u-s-democracy-reaches-new-low-report-finds"
+    },
+    {
+      "title": "South African president vows justice as more women's bodies found near Johannesburg",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/crgqde1nex2vo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "SCOTUS rejects Trump's mail voting limits. And, the Kennedy Center financial crisis",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/09/15/g-s1-143294/up-first-newsletter-bernie-sanders-steve-bannon-ai-mail-in-ballots-kennedy-center-emmys"
+    },
+    {
+      "title": "Two sailors missing after tanker attacked in Strait of Hormuz, Oman says",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c3n07ydqdzlvo?at_medium=RSS&at_campaign=rss"
+    }
+  ],
   "2026-09-15": [
     {
       "title": "Trump says AI safety fears a 'hoax' as he rejects calls for greater safeguards",
@@ -11,14 +58,9 @@
       "url": "https://www.npr.org/2026/09/15/g-s1-143294/up-first-newsletter-bernie-sanders-steve-bannon-ai-mail-in-ballots-kennedy-center-emmys"
     },
     {
-      "title": "Six UN staff killed in Gaza school strike; Lebanon violations mount",
-      "source": "UN News",
-      "url": "https://news.un.org/feed/view/en/story/2026/09/1168333"
-    },
-    {
-      "title": "AI regulation faces political deadlock as calls grow for Congress to act",
+      "title": "Denmark says Russian warship fired flares at military helicopter",
       "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/ck20989806e9o?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss"
     },
     {
       "title": "Trump says Ukraine and Russia agreed to stop attacks on energy sites",
@@ -26,14 +68,9 @@
       "url": "https://www.npr.org/2026/09/15/nx-s1-5968728/trump-says-ukraine-and-russia-agreed-to-stop-attacks-on-energy-sites"
     },
     {
-      "title": "UN agencies warn humanitarian system in Sudan ‘could collapse’",
-      "source": "UN News",
-      "url": "https://news.un.org/feed/view/en/story/2026/09/1168331"
-    },
-    {
-      "title": "Denmark says Russian warship fired flares at military helicopter",
+      "title": "What weapon could the US have put into space?",
       "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss"
+      "url": "https://www.bbc.co.uk/news/articles/cmy4zqgk97wlo?at_medium=RSS&at_campaign=rss"
     },
     {
       "title": "Air pollution spiked after the Trump administration stopped embassy monitoring",
@@ -41,9 +78,19 @@
       "url": "https://www.npr.org/2026/09/15/nx-s1-5966503/air-pollution-spiked-after-the-trump-administration-stopped-embassy-monitoring"
     },
     {
-      "title": "Money sent home by migrants nearly doubles in a decade",
-      "source": "UN News",
-      "url": "https://news.un.org/feed/view/en/story/2026/09/1168330"
+      "title": "Suspected sabotage causes major Netherlands rail disruption",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c8ly49w9g1edo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+      "title": "NATO jets shoot down a drone in Lithuanian airspace",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/09/15/g-s1-143284/nato-jets-down-drone-in-lithuanian-airspace"
+    },
+    {
+      "title": "Two sailors missing after tanker attacked in Strait of Hormuz, Oman says",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c3n07ydqdzlvo?at_medium=RSS&at_campaign=rss"
     }
   ]
 }
