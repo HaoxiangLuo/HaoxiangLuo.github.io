@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T00:25:38+08:00",
+  "updated_at": "2026-09-17T01:23:14+08:00",
   "days": [
     {
       "date": "2026-09-17",
@@ -15,6 +15,11 @@
           "url": "https://www.npr.org/2026/09/16/nx-s1-5971125/how-jared-kushner-is-mixing-u-s-diplomacy-with-his-billion-dollar-business"
         },
         {
+          "title": "AI, climate and conflicts top Guterres’s agenda ahead of General Assembly",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168348"
+        },
+        {
           "title": "Eight children among 21 killed after war-damaged Gaza building collapses, rescuers say",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss"
@@ -23,6 +28,11 @@
           "title": "Russia seizes Ukrainian POWs, then it demands favors from their relatives",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/16/nx-s1-5904423/russia-seizes-ukrainian-pows-then-it-demands-favors-from-their-relatives"
+        },
+        {
+          "title": "Security Council LIVE: ‘Being a woman is a crime in Afghanistan,’ civil society briefer declares",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168347"
         },
         {
           "title": "US accuses Russia of trying to kill Ukrainian allies overseas",
@@ -35,19 +45,9 @@
           "url": "https://www.npr.org/2026/09/16/g-s1-143569/up-first-newsletter-fed-reserve-interest-rates-iran-war-kennedy-center-contraception"
         },
         {
-          "title": "OpenAI boss says world 'right to be afraid' but should trust AI firms",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqx2zpj4y525o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "EU's Ursula von der Leyen says she wants Canada to become an associate member",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/16/nx-s1-5970985/canada-become-eu-associate-member"
-        },
-        {
-          "title": "Eight German state premiers back Merz amid speculation over future",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6dj4nn0n97ro?at_medium=RSS&at_campaign=rss"
+          "title": "UN report warns of reprisals against those who collaborate in defence of human rights",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168345"
         }
       ]
     },
