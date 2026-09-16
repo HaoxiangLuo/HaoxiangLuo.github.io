@@ -70,9 +70,11 @@ def interleave(groups: list[list[dict[str, str]]]) -> list[dict[str, str]]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--migrate-only", action="store_true")
+    parser.add_argument("--migrate-from", type=Path)
     args = parser.parse_args()
 
-    raw_archive = json.loads(OUTPUT.read_text(encoding="utf-8")) if OUTPUT.exists() else {}
+    source_file = args.migrate_from or OUTPUT
+    raw_archive = json.loads(source_file.read_text(encoding="utf-8")) if source_file.exists() else {}
     if isinstance(raw_archive, dict) and isinstance(raw_archive.get("days"), list):
         days = raw_archive["days"]
     elif isinstance(raw_archive, dict):
