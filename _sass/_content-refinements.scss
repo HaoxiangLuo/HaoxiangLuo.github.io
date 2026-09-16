@@ -1180,3 +1180,106 @@ body.inner-page:has(.notes-grid) .archive {
     transition: none;
   }
 }
+
+/* Desktop home refinement: editorial rhythm without altering the phone layout. */
+@media (min-width: 1024px) {
+  body.home-page #main {
+    align-items: start;
+  }
+
+  body.home-page .page {
+    align-self: start;
+    min-height: 0;
+    padding: clamp(2.35rem, 3.6vw, 3.6rem) clamp(2.8rem, 4.6vw, 4.9rem) 2.6rem;
+  }
+
+  body.home-page .page__content > p {
+    max-width: 800px;
+    font-size: clamp(0.94rem, 1vw, 1.04rem);
+    line-height: 1.62;
+  }
+
+  body.home-page .page__content h2 {
+    margin-top: 2.35rem;
+  }
+
+  body.home-page .news-window {
+    max-width: 880px;
+    margin: 1.55rem 0 1.8rem;
+    padding: 1rem;
+    border-radius: 22px;
+  }
+
+  body.home-page .news-window__header {
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  body.home-page .news-window__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+
+  body.home-page .news-window__list li {
+    min-width: 0;
+    border: 0;
+  }
+
+  body.home-page .news-window__list li:first-child {
+    grid-column: 1 / -1;
+  }
+
+  body.home-page .news-window__list a {
+    height: 100%;
+    min-height: 66px;
+    box-sizing: border-box;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: space-between;
+    gap: 0.45rem;
+    padding: 0.7rem 0.78rem;
+    border: 1px solid rgba(29, 29, 31, 0.07);
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.78);
+    font-size: 0.68rem;
+    line-height: 1.35;
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  }
+
+  body.home-page .news-window__list li:first-child a {
+    min-height: 72px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    padding: 0.82rem 0.9rem;
+    border-color: rgba(29, 29, 31, 0.12);
+    background: #fff;
+    font-size: 0.76rem;
+    font-weight: 650;
+  }
+
+  body.home-page .news-window__list a:hover,
+  body.home-page .news-window__list a:focus-visible {
+    transform: translateY(-1px);
+    border-color: rgba(0, 113, 227, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.055);
+  }
+
+  body.home-page .news-window__list a:focus-visible {
+    outline: 2px solid #0071e3;
+    outline-offset: 2px;
+  }
+
+  body.home-page .news-window__list small {
+    justify-self: start;
+    font-size: 0.54rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  body.home-page .news-window__list li:first-child small {
+    justify-self: end;
+  }
+
+  body.home-page .news-window__footer {
+    margin-top: 0.7rem;
+  }
+}
