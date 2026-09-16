@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T06:23:52+08:00",
+  "updated_at": "2026-09-17T07:23:10+08:00",
   "days": [
     {
       "date": "2026-09-17",
@@ -15,6 +15,11 @@
           "url": "https://www.npr.org/2026/09/16/nx-s1-5971043/eu-canada-carney-tariffs-trump"
         },
         {
+          "title": "World News in Brief: Shipping alert from IMO, democracy vanishing in Nicaragua, alert over political ‘denialism’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168352"
+        },
+        {
           "title": "Photos show widespread damage at US sites from Iranian attacks",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c8g49e0gwxeno?at_medium=RSS&at_campaign=rss"
@@ -23,6 +28,11 @@
           "title": "How Jared Kushner is mixing U.S. diplomacy with his billion-dollar business",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/16/nx-s1-5971125/how-jared-kushner-is-mixing-u-s-diplomacy-with-his-billion-dollar-business"
+        },
+        {
+          "title": "Repression continues in Venezuela in the face of ‘appalling’ human rights violations",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168351"
         },
         {
           "title": "EU chief backs plan for Canada to become 'associate member'",
@@ -35,19 +45,9 @@
           "url": "https://www.npr.org/2026/09/16/nx-s1-5904423/russia-seizes-ukrainian-pows-then-it-demands-favors-from-their-relatives"
         },
         {
-          "title": "Eight children among 21 killed after war-damaged Gaza building collapses, rescuers say",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Fed expected to raise interest rates. And, board votes to close Kennedy Center",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/16/g-s1-143569/up-first-newsletter-fed-reserve-interest-rates-iran-war-kennedy-center-contraception"
-        },
-        {
-          "title": "US House votes to hold billionaire Epstein associate Leon Black in contempt",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c62l8g8qlr0ko?at_medium=RSS&at_campaign=rss"
+          "title": "AI, climate and conflicts top Guterres’s agenda ahead of General Assembly",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168348"
         }
       ]
     },
