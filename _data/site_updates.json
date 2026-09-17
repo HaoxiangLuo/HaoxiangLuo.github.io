@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-17",
+    "title_zh": "调整了页面结构、网站日志、界面样式",
+    "title_en": "Refined page structure, Site Log, interface styling",
+    "message": "Rebalance home and group site log by date",
+    "story_zh": "页面还可以更清楚、更顺手。这次重新整理了页面结构、网站日志、界面样式的视觉与交互。",
+    "story_en": "The site could feel clearer and easier to use, so I refined the visual design and interaction of page structure, Site Log, interface styling.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Rebalance home and group site log by date",
+    "details_zh": "调整网站日志的归档内容、呈现方式或自动记录。优化页面的排版、间距与响应式视觉效果。调整页面组件与内容结构。",
+    "details_en": "Refined the site-log archive, presentation, or automatic record. Improved typography, spacing, and responsive visual presentation. Adjusted page components and content structure.",
+    "sha": "32e18d9",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/32e18d9a9c5d8e25ca411fd36ee6ec66ebe21a5c"
+  },
+  {
     "date": "2026-09-16",
     "title_zh": "首页读起来更轻松",
     "title_en": "A calmer home page",
