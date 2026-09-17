@@ -1,9 +1,19 @@
 {
-  "updated_at": "2026-09-17T21:26:08+08:00",
+  "updated_at": "2026-09-17T22:26:52+08:00",
   "days": [
     {
       "date": "2026-09-17",
       "items": [
+        {
+          "title": "Ninth woman's body found as South African police investigate string of deaths",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Greetings from Beijing, where baozi are worth the wait in line",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/17/g-s1-142416/china-beijing-buns-baozi"
+        },
         {
           "title": "Assad regime planned US journalist's kidnap for weeks, BBC finds",
           "source": "BBC World",
@@ -25,24 +35,14 @@
           "url": "https://www.npr.org/2026/09/17/g-s1-143783/up-first-newsletter-federal-reserve-interest-rates-gas-prices-war-canada-european-union"
         },
         {
-          "title": "Ninth woman's body found as South African police investigate string of deaths",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Pressure on global chokepoints drives Asia's increased use of Arctic Trade Routes",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/g-s1-143712/pressure-on-global-chokepoints-drives-asias-increased-use-of-arctic-trade-routes"
-        },
-        {
           "title": "Swedish PM Kristersson resigns after election loss",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cxr50l3d762po?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Big questions - and key logistical details - loom ahead of China-U.S. summit",
+          "title": "Pressure on global chokepoints drives Asia's increased use of Arctic Trade Routes",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/nx-s1-5971293/trump-xi-summit-china"
+          "url": "https://www.npr.org/2026/09/17/g-s1-143712/pressure-on-global-chokepoints-drives-asias-increased-use-of-arctic-trade-routes"
         },
         {
           "title": "EU announces plan to restrict social media access for under-15s",
