@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T13:24:43+08:00",
+  "updated_at": "2026-09-17T14:31:16+08:00",
   "days": [
     {
       "date": "2026-09-17",
@@ -15,6 +15,11 @@
           "url": "https://www.npr.org/2026/09/16/nx-s1-5971043/eu-canada-carney-tariffs-trump"
         },
         {
+          "title": "Who should set the rules for AI? The UN is pushing for a safer digital future",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168353"
+        },
+        {
           "title": "US interest rates raised for first time in three years",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cw4gmlyvj422o?at_medium=RSS&at_campaign=rss"
@@ -23,6 +28,11 @@
           "title": "How Jared Kushner is mixing U.S. diplomacy with his billion-dollar business",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/16/nx-s1-5971125/how-jared-kushner-is-mixing-u-s-diplomacy-with-his-billion-dollar-business"
+        },
+        {
+          "title": "World News in Brief: Shipping alert from IMO, democracy vanishing in Nicaragua, alert over political ‘denialism’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168352"
         },
         {
           "title": "Snapchat open to putting time limits on teens, boss tells BBC",
@@ -35,19 +45,9 @@
           "url": "https://www.npr.org/2026/09/16/nx-s1-5904423/russia-seizes-ukrainian-pows-then-it-demands-favors-from-their-relatives"
         },
         {
-          "title": "Rosenberg: Russia's elections will have few surprises, but for the Kremlin they matter",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck62m0r4r1y3o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Fed expected to raise interest rates. And, board votes to close Kennedy Center",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/16/g-s1-143569/up-first-newsletter-fed-reserve-interest-rates-iran-war-kennedy-center-contraception"
-        },
-        {
-          "title": "Photos show widespread damage at US sites from Iranian attacks",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c8g49e0gwxeno?at_medium=RSS&at_campaign=rss"
+          "title": "Repression continues in Venezuela in the face of ‘appalling’ human rights violations",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168351"
         }
       ]
     },
