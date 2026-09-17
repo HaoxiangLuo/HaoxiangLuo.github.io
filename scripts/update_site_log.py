@@ -81,6 +81,26 @@ def details(files: list[str]) -> tuple[str, str]:
     return "".join(zh), " ".join(en)
 
 
+def story(files: list[str], zh_labels: list[str], en_labels: list[str]) -> tuple[str, str]:
+    """Write one brief, public-facing sentence about the change."""
+    scope_zh = "、".join(zh_labels)
+    scope_en = ", ".join(en_labels)
+    if any("daily-news" in path or "daily_news" in path for path in files):
+        return (
+            f"为了更方便地了解世界动态，我调整了{scope_zh}，让信息更新与归档更可靠。",
+            f"To make world events easier to follow, I refined {scope_en} so updates and archives remain reliable.",
+        )
+    if any(path.startswith(("_sass/", "assets/css/")) or "masthead" in path for path in files):
+        return (
+            f"页面还可以更清楚、更顺手。这次重新整理了{scope_zh}的视觉与交互。",
+            f"The site could feel clearer and easier to use, so I refined the visual design and interaction of {scope_en}.",
+        )
+    return (
+        f"为了让内容更完整、查找更轻松，这次更新了{scope_zh}。",
+        f"To make the content more complete and easier to find, I updated {scope_en}.",
+    )
+
+
 def make_entry(sha: str) -> dict[str, object] | None:
     message = git("show", "-s", "--format=%s", sha)
     if message.startswith(("Update daily news ", "Record site update ", "Merge branch ")):
@@ -89,14 +109,17 @@ def make_entry(sha: str) -> dict[str, object] | None:
     files = changed_files(sha)
     zh, en = labels(files)
     details_zh, details_en = details(files)
+    story_zh, story_en = story(files, zh, en)
     raw_date = git("show", "-s", "--format=%cI", sha)
     date = datetime.fromisoformat(raw_date).astimezone(ZoneInfo("Asia/Shanghai"))
     short_sha = git("rev-parse", "--short=7", sha)
     return {
         "date": date.strftime("%Y-%m-%d"),
-        "title_zh": "更新：" + "、".join(zh),
-        "title_en": "Updated " + ", ".join(en),
+        "title_zh": "调整了" + "、".join(zh),
+        "title_en": "Refined " + ", ".join(en),
         "message": message,
+        "story_zh": story_zh,
+        "story_en": story_en,
         "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
         "purpose_en": message,
         "details_zh": details_zh,
@@ -128,7 +151,7 @@ def main() -> int:
     }
     for sha in reversed(shas):
         entry = make_entry(sha)
-        if entry:
+        if entry and entry["sha"] not in by_sha:
             by_sha[entry["sha"]] = entry
 
     entries = sorted(by_sha.values(), key=lambda entry: (entry["date"], entry["sha"]), reverse=True)

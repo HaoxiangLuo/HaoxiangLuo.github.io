@@ -8,7 +8,7 @@ translation_url: /zh/site-log/
 ---
 
 <div class="site-log-toolbar">
-  <p class="site-log-intro">A concise record of why each published update was made and what changed.</p>
+  <p class="site-log-intro">A few clear lines for each step as the site grows.</p>
   <a class="site-log-write" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_data/site_updates.json" target="_blank" rel="noopener noreferrer">Add manually</a>
 </div>
 {% include archive-date-filter.html %}
@@ -22,10 +22,7 @@ translation_url: /zh/site-log/
           <a class="site-log-entry__edit" href="{{ entry.url }}" target="_blank" rel="noopener noreferrer"><span>View commit</span></a>
         </div>
         <h2>{{ entry.title_en }}</h2>
-        <div class="site-log-entry__summary">
-          <p><strong>Purpose</strong>{{ entry.purpose_en | default: entry.message }}</p>
-          <p><strong>Changes</strong>{{ entry.details_en | default: entry.title_en }}</p>
-        </div>
+        <p class="site-log-entry__story">{{ entry.story_en | default: entry.details_en | default: entry.message }}</p>
       </div>
     </article>
   {% else %}

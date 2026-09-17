@@ -9,13 +9,18 @@ redirect_from:
   - /about.html
 ---
 
-# About Me
+<section class="home-intro-panel">
+<h1>About Me</h1>
 
-Hello! I am **Haoxiang Luo**, a PhD student in Journalism and Communication at Nanjing University.
+<p>Hello! I am <strong>Haoxiang Luo</strong>, a PhD student in Journalism and Communication at Nanjing University.</p>
 
-## Research Interests
+<p>My research focuses on inequality in global communication and on how misinformation spreads and is instrumentalized. This website records my academic journey, research, publications, and study notes.</p>
 
-- Inequality in Global Communication
-- The Spread and Instrumentalization of Misinformation
+<h2>Research Interests</h2>
+<ul>
+  <li>Inequality in Global Communication</li>
+  <li>The Spread and Instrumentalization of Misinformation</li>
+</ul>
+</section>
 
 {% include daily-news-widget.html %}

@@ -52,13 +52,15 @@
 
 - `_pages/about.md`、`_pages/about-zh.md`：首页。
 - `_pages/publications.html`、`_pages/publications-zh.html`：著作和期刊论文。
-- `_pages/study-notes.html`、`_pages/study-notes-zh.html`：研究方法、智能传播、全球传播三类札记。
+- `_pages/year-archive.html`、`_pages/study-notes-zh.html`：研究方法、智能传播、全球传播三类札记。
 - `_pages/site-log.html`、`_pages/site-log-zh.html`：网站修改记录。
 - `_pages/daily-news.html`、`_pages/daily-news-zh.html`：按日期归档的新闻简讯。
 - `_data/navigation.yml`：导航项目。
 - `_includes/masthead.html`：顶部导航和语言控件。
 - `_sass/_content-refinements.scss`：当前主要页面组件和响应式样式。
 - `assets/css/main.scss`：全站基础样式及历史覆盖规则。
+
+注意：英文 Study Notes 为兼容模板历史链接，源文件仍名为 `_pages/year-archive.html`，但其正式网址是 `/study-notes/`。不要因为文件名而误删或另建重复页面。修改双语路由后运行 `python3 scripts/check_bilingual_pages.py`。
 
 ## 5. 首页内容规则
 

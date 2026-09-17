@@ -8,7 +8,7 @@ translation_url: /site-log/
 ---
 
 <div class="site-log-toolbar">
-  <p class="site-log-intro">记录每次发布的更新目的，以及具体修改了哪些内容。</p>
+  <p class="site-log-intro">网站一边生长，一边留下几句清楚的记录。</p>
   <a class="site-log-write" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_data/site_updates.json" target="_blank" rel="noopener noreferrer">手动补充</a>
 </div>
 {% include archive-date-filter.html %}
@@ -22,10 +22,7 @@ translation_url: /site-log/
           <a class="site-log-entry__edit" href="{{ entry.url }}" target="_blank" rel="noopener noreferrer"><span>查看提交</span></a>
         </div>
         <h2>{{ entry.title_zh }}</h2>
-        <div class="site-log-entry__summary">
-          <p><strong>更新目的</strong>{{ entry.purpose_zh | default: entry.message }}</p>
-          <p><strong>具体内容</strong>{{ entry.details_zh | default: entry.title_zh }}</p>
-        </div>
+        <p class="site-log-entry__story">{{ entry.story_zh | default: entry.details_zh | default: entry.message }}</p>
       </div>
     </article>
   {% else %}
