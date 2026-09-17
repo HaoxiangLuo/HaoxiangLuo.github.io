@@ -8,12 +8,13 @@ translation_url: /site-log/
 ---
 
 <div class="site-log-toolbar">
-  <p class="site-log-intro">简要记录网站每次发布的修改。</p>
+  <p class="site-log-intro">记录每次发布的更新目的，以及具体修改了哪些内容。</p>
   <a class="site-log-write" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_data/site_updates.json" target="_blank" rel="noopener noreferrer">手动补充</a>
 </div>
+{% include archive-date-filter.html %}
 <div class="site-timeline">
   {% for entry in site.data.site_updates %}
-    <article class="site-log-entry" id="update-{{ entry.sha }}">
+    <article class="site-log-entry" id="update-{{ entry.sha }}" data-filter-date="{{ entry.date }}">
       <time datetime="{{ entry.date }}"><span>{{ entry.date | date: "%m月" }}</span><strong>{{ entry.date | date: "%d" }}</strong><small>{{ entry.date | date: "%Y" }}</small></time>
       <div class="site-log-entry__content">
         <div class="site-log-entry__head">
@@ -21,7 +22,10 @@ translation_url: /site-log/
           <a class="site-log-entry__edit" href="{{ entry.url }}" target="_blank" rel="noopener noreferrer"><span>查看提交</span></a>
         </div>
         <h2>{{ entry.title_zh }}</h2>
-        <p>{{ entry.message }}</p>
+        <div class="site-log-entry__summary">
+          <p><strong>更新目的</strong>{{ entry.purpose_zh | default: entry.message }}</p>
+          <p><strong>具体内容</strong>{{ entry.details_zh | default: entry.title_zh }}</p>
+        </div>
       </div>
     </article>
   {% else %}

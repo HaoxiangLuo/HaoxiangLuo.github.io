@@ -251,6 +251,48 @@ body.home-page .page__content .news-window h2 {
 .daily-news-note, .daily-news-empty { color: #86868b; font-size: 0.68rem; }
 .daily-news-note { margin-top: 1.25rem; }
 
+/* Date filters shared by the two generated archives. */
+.archive-date-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 1.15rem;
+}
+
+.archive-date-filter__label {
+  margin-right: 0.2rem;
+  color: #6e6e73;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.archive-date-filter__select {
+  min-height: 34px;
+  padding: 0.3rem 1.85rem 0.3rem 0.72rem;
+  border: 1px solid rgba(29, 29, 31, 0.12);
+  border-radius: 999px;
+  color: #1d1d1f;
+  background: rgba(255, 255, 255, 0.78);
+  font: 650 0.7rem/1 inherit;
+  cursor: pointer;
+}
+
+.archive-date-filter__select:focus-visible {
+  outline: 2px solid #0071e3;
+  outline-offset: 2px;
+}
+
+.archive-date-filter__empty {
+  margin: 1.5rem 0;
+  color: #86868b;
+  font-size: 0.78rem;
+}
+
+[data-filter-date][hidden] { display: none !important; }
+
 .publication-column--articles .publication-card {
   grid-template-columns: 76px minmax(0, 1fr);
   min-height: 126px;
@@ -493,6 +535,19 @@ body.home-page .page__content .news-window h2 {
   font-size: 0.92rem;
   line-height: 1.75;
 }
+
+/* Site log: compact cards keep the archive scannable without losing detail. */
+.site-timeline { gap: 0.85rem; max-width: 980px; }
+.site-log-entry { grid-template-columns: 72px minmax(0, 1fr); gap: clamp(0.9rem, 2vw, 1.5rem); }
+.site-timeline::before { left: 36px; }
+.site-log-entry time { width: 72px; height: 86px; border-radius: 18px; }
+.site-log-entry time strong { font-size: 1.7rem; }
+.site-log-entry time span, .site-log-entry time small { font-size: 0.5rem; letter-spacing: 0.08em; }
+.site-log-entry__content { padding: clamp(0.9rem, 1.8vw, 1.25rem); border-radius: 19px; }
+.site-log-entry__content h2 { margin: 0.42rem 0 0.7rem; font-size: clamp(1rem, 1.7vw, 1.32rem); line-height: 1.2; letter-spacing: -0.025em; }
+.site-log-entry__summary { display: grid; gap: 0.42rem; }
+.site-log-entry__summary p { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 0.7rem; max-width: none; margin: 0; color: #48484a; font-size: 0.76rem; line-height: 1.55; }
+.site-log-entry__summary strong { color: #6e6e73; font-size: 0.62rem; font-weight: 720; letter-spacing: 0.04em; text-transform: uppercase; }
 
 .site-log-entry__changes {
   display: grid;
@@ -854,6 +909,10 @@ body.home-page .page__content .news-window h2 {
   .daily-news-day { padding: 1rem; border-radius: 18px; }
   .daily-news-day a { grid-template-columns: 1fr; gap: 0.2rem; }
   .daily-news-day small { white-space: normal; }
+  .site-timeline { gap: 0.7rem; }
+  .site-log-entry__content { padding: 0.9rem; }
+  .site-log-entry__content h2 { margin-bottom: 0.6rem; }
+  .site-log-entry__summary p { grid-template-columns: 1fr; gap: 0.12rem; font-size: 0.72rem; }
 }
 
 /* Site log: a per-entry edit entry point, kept as quiet as the rest of the page. */

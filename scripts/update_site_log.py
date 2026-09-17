@@ -59,6 +59,28 @@ def labels(files: list[str]) -> tuple[list[str], list[str]]:
     return zh[:4], en[:4]
 
 
+def details(files: list[str]) -> tuple[str, str]:
+    """Describe changed areas in language suited to the public log."""
+    descriptions = (
+        (lambda path: path.startswith("_pages/about"), "调整首页介绍、研究兴趣或全球要闻卡片。", "Refined the home introduction, research interests, or global-news card."),
+        (lambda path: "publications" in path, "调整论文发表页面的内容或筛选浏览方式。", "Refined publication content or its browsing controls."),
+        (lambda path: "study-notes" in path, "调整学习札记的内容或展开交互。", "Refined study-note content or its expandable interaction."),
+        (lambda path: "site-log" in path or "site_log" in path, "调整网站日志的归档内容、呈现方式或自动记录。", "Refined the site-log archive, presentation, or automatic record."),
+        (lambda path: "daily-news" in path or "daily_news" in path, "调整每日新闻的归档内容、呈现方式或自动更新。", "Refined the daily-news archive, presentation, or automatic update."),
+        (lambda path: path.startswith(("_sass/", "assets/css/")), "优化页面的排版、间距与响应式视觉效果。", "Improved typography, spacing, and responsive visual presentation."),
+        (lambda path: path.startswith("assets/js/"), "优化页面筛选或其他交互体验。", "Improved page filtering or other interactions."),
+        (lambda path: path.startswith(("_includes/", "_layouts/")), "调整页面组件与内容结构。", "Adjusted page components and content structure."),
+    )
+    zh, en = [], []
+    for matches, zh_text, en_text in descriptions:
+        if any(matches(path) for path in files) and zh_text not in zh:
+            zh.append(zh_text)
+            en.append(en_text)
+    if not zh:
+        return "更新网站内容与信息呈现。", "Updated website content and information presentation."
+    return "".join(zh), " ".join(en)
+
+
 def make_entry(sha: str) -> dict[str, object] | None:
     message = git("show", "-s", "--format=%s", sha)
     if message.startswith(("Update daily news ", "Record site update ", "Merge branch ")):
@@ -66,6 +88,7 @@ def make_entry(sha: str) -> dict[str, object] | None:
 
     files = changed_files(sha)
     zh, en = labels(files)
+    details_zh, details_en = details(files)
     raw_date = git("show", "-s", "--format=%cI", sha)
     date = datetime.fromisoformat(raw_date).astimezone(ZoneInfo("Asia/Shanghai"))
     short_sha = git("rev-parse", "--short=7", sha)
@@ -74,6 +97,10 @@ def make_entry(sha: str) -> dict[str, object] | None:
         "title_zh": "更新：" + "、".join(zh),
         "title_en": "Updated " + ", ".join(en),
         "message": message,
+        "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+        "purpose_en": message,
+        "details_zh": details_zh,
+        "details_en": details_en,
         "sha": short_sha,
         "url": f"https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/{sha}",
     }

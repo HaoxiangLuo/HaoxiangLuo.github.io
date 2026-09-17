@@ -13,11 +13,9 @@ redirect_from:
 
 Hello! I am **Haoxiang Luo**, a PhD student in Journalism and Communication at Nanjing University.
 
-Let's take a look at what's happening in the world today！
-
-{% include daily-news-widget.html %}
-
 ## Research Interests
 
 - Inequality in Global Communication
 - The Spread and Instrumentalization of Misinformation
+
+{% include daily-news-widget.html %}

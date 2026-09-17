@@ -1,0 +1,72 @@
+<div class="archive-date-filter" data-date-filter data-language="{{ page.lang }}" data-all-label="{% if page.lang == 'zh' %}全部{% else %}All{% endif %}" data-year-label="{% if page.lang == 'zh' %}年份{% else %}Year{% endif %}" data-month-label="{% if page.lang == 'zh' %}月份{% else %}Month{% endif %}">
+  <span class="archive-date-filter__label">{% if page.lang == 'zh' %}筛选归档{% else %}Filter archive{% endif %}</span>
+</div>
+<p class="archive-date-filter__empty" hidden>{% if page.lang == 'zh' %}没有符合当前筛选条件的记录。{% else %}No entries match the selected period.{% endif %}</p>
+<script>
+  (function () {
+    "use strict";
+    var filter = document.querySelector("[data-date-filter]");
+    if (!filter) return;
+    var items = Array.prototype.slice.call(document.querySelectorAll("[data-filter-date]"));
+    var empty = document.querySelector(".archive-date-filter__empty");
+    var language = filter.getAttribute("data-language") === "zh" ? "zh-CN" : "en";
+    var allLabel = filter.getAttribute("data-all-label");
+    var yearLabel = filter.getAttribute("data-year-label");
+    var monthLabel = filter.getAttribute("data-month-label");
+    var dates = items.map(function (item) { return item.getAttribute("data-filter-date"); });
+    var years = Array.from(new Set(dates.map(function (date) { return date.slice(0, 4); }))).sort().reverse();
+    if (!years.length) return;
+    function makeSelect(label, className) {
+      var wrapper = document.createElement("label");
+      var text = document.createElement("span");
+      var select = document.createElement("select");
+      wrapper.className = "archive-date-filter__field";
+      text.textContent = label;
+      text.className = "screen-reader-text";
+      select.className = className;
+      wrapper.appendChild(text);
+      wrapper.appendChild(select);
+      filter.appendChild(wrapper);
+      return select;
+    }
+    var yearSelect = makeSelect(yearLabel, "archive-date-filter__select archive-date-filter__year");
+    var monthSelect = makeSelect(monthLabel, "archive-date-filter__select archive-date-filter__month");
+    function addOption(select, value, label) {
+      var option = document.createElement("option");
+      option.value = value;
+      option.textContent = label;
+      select.appendChild(option);
+    }
+    addOption(yearSelect, "all", allLabel + " " + yearLabel);
+    years.forEach(function (year) { addOption(yearSelect, year, year); });
+    function populateMonths() {
+      var current = monthSelect.value;
+      var year = yearSelect.value;
+      var months = Array.from(new Set(dates.filter(function (date) {
+        return year === "all" || date.slice(0, 4) === year;
+      }).map(function (date) { return date.slice(5, 7); }))).sort().reverse();
+      monthSelect.textContent = "";
+      addOption(monthSelect, "all", allLabel + " " + monthLabel);
+      months.forEach(function (month) {
+        var label = new Intl.DateTimeFormat(language, { month: "long" }).format(new Date(2000, Number(month) - 1, 1));
+        addOption(monthSelect, month, label);
+      });
+      monthSelect.value = months.indexOf(current) !== -1 ? current : "all";
+    }
+    function applyFilter() {
+      var year = yearSelect.value;
+      var month = monthSelect.value;
+      var visibleCount = 0;
+      items.forEach(function (item) {
+        var date = item.getAttribute("data-filter-date");
+        var visible = (year === "all" || date.slice(0, 4) === year) && (month === "all" || date.slice(5, 7) === month);
+        item.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+      if (empty) empty.hidden = visibleCount !== 0;
+    }
+    yearSelect.addEventListener("change", function () { populateMonths(); applyFilter(); });
+    monthSelect.addEventListener("change", applyFilter);
+    populateMonths();
+  }());
+</script>

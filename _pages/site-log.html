@@ -8,12 +8,13 @@ translation_url: /zh/site-log/
 ---
 
 <div class="site-log-toolbar">
-  <p class="site-log-intro">A concise record of each published website update.</p>
+  <p class="site-log-intro">A concise record of why each published update was made and what changed.</p>
   <a class="site-log-write" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_data/site_updates.json" target="_blank" rel="noopener noreferrer">Add manually</a>
 </div>
+{% include archive-date-filter.html %}
 <div class="site-timeline">
   {% for entry in site.data.site_updates %}
-    <article class="site-log-entry" id="update-{{ entry.sha }}">
+    <article class="site-log-entry" id="update-{{ entry.sha }}" data-filter-date="{{ entry.date }}">
       <time datetime="{{ entry.date }}"><span>{{ entry.date | date: "%b" }}</span><strong>{{ entry.date | date: "%d" }}</strong><small>{{ entry.date | date: "%Y" }}</small></time>
       <div class="site-log-entry__content">
         <div class="site-log-entry__head">
@@ -21,7 +22,10 @@ translation_url: /zh/site-log/
           <a class="site-log-entry__edit" href="{{ entry.url }}" target="_blank" rel="noopener noreferrer"><span>View commit</span></a>
         </div>
         <h2>{{ entry.title_en }}</h2>
-        <p>{{ entry.message }}</p>
+        <div class="site-log-entry__summary">
+          <p><strong>Purpose</strong>{{ entry.purpose_en | default: entry.message }}</p>
+          <p><strong>Changes</strong>{{ entry.details_en | default: entry.title_en }}</p>
+        </div>
       </div>
     </article>
   {% else %}

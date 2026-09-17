@@ -13,9 +13,9 @@ translation_url: /
 
 我的研究兴趣主要关注全球传播中的不平等，以及虚假信息的扩散与工具化应用。本网站用于记录我的学术经历、研究成果、论文发表和学习札记。
 
-{% include daily-news-widget.html %}
-
 ## 研究兴趣
 
 - 全球传播中的不平等
 - 虚假信息的扩散与工具化应用
+
+{% include daily-news-widget.html %}

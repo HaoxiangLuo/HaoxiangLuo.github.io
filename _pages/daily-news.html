@@ -10,10 +10,11 @@ translation_url: /zh/daily-news/
 <p class="daily-news-intro">A concise record of major world headlines, collected hourly from public news feeds. Follow each source link for the full report.</p>
 
 {% assign news_days = site.data.daily_news.days %}
+{% include archive-date-filter.html %}
 <div class="daily-news-archive">
   {% if news_days.size > 0 %}
     {% for day in news_days %}
-      <section class="daily-news-day">
+      <section class="daily-news-day" data-filter-date="{{ day.date }}">
         <header><time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time><span>{{ day.items.size }} headlines</span></header>
         <ol>
           {% for item in day.items %}

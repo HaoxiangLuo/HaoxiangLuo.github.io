@@ -10,10 +10,11 @@ translation_url: /daily-news/
 <p class="daily-news-intro">每小时从公开新闻源整理全球重要标题，并按日期留存。点击来源链接可阅读完整报道。</p>
 
 {% assign news_days = site.data.daily_news.days %}
+{% include archive-date-filter.html %}
 <div class="daily-news-archive">
   {% if news_days.size > 0 %}
     {% for day in news_days %}
-      <section class="daily-news-day">
+      <section class="daily-news-day" data-filter-date="{{ day.date }}">
         <header><time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time><span>{{ day.items.size }} 条简讯</span></header>
         <ol>
           {% for item in day.items %}
