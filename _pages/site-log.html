@@ -13,16 +13,27 @@ translation_url: /zh/site-log/
 </div>
 {% include archive-date-filter.html %}
 <div class="site-timeline">
-  {% for entry in site.data.site_updates %}
-    <article class="site-log-entry" id="update-{{ entry.sha }}" data-filter-date="{{ entry.date }}">
-      <time datetime="{{ entry.date }}"><span>{{ entry.date | date: "%b" }}</span><strong>{{ entry.date | date: "%d" }}</strong><small>{{ entry.date | date: "%Y" }}</small></time>
-      <div class="site-log-entry__content">
-        <div class="site-log-entry__head">
-          <span class="site-log-entry__issue">{{ entry.sha }}</span>
-          <a class="site-log-entry__edit" href="{{ entry.url }}" target="_blank" rel="noopener noreferrer"><span>View commit</span></a>
+  {% assign updates_by_date = site.data.site_updates | group_by: "date" %}
+  {% for day in updates_by_date %}
+    <article class="site-log-day" id="updates-{{ day.name }}" data-filter-date="{{ day.name }}">
+      <time datetime="{{ day.name }}"><span>{{ day.name | date: "%b" }}</span><strong>{{ day.name | date: "%d" }}</strong><small>{{ day.name | date: "%Y" }}</small></time>
+      <div class="site-log-day__card">
+        <header class="site-log-day__header">
+          <h2>{{ day.name | date: "%B %d, %Y" }}</h2>
+          <span>{{ day.items | size }} {% if day.items.size == 1 %}update{% else %}updates{% endif %}</span>
+        </header>
+        <div class="site-log-day__items">
+          {% for entry in day.items %}
+            <section class="site-log-entry" id="update-{{ entry.sha }}">
+              <div class="site-log-entry__head">
+                <span class="site-log-entry__issue">{{ entry.sha }}</span>
+                <a class="site-log-entry__edit" href="{{ entry.url }}" target="_blank" rel="noopener noreferrer"><span>View commit</span></a>
+              </div>
+              <h3>{{ entry.title_en }}</h3>
+              <p class="site-log-entry__story">{{ entry.story_en | default: entry.details_en | default: entry.message }}</p>
+            </section>
+          {% endfor %}
         </div>
-        <h2>{{ entry.title_en }}</h2>
-        <p class="site-log-entry__story">{{ entry.story_en | default: entry.details_en | default: entry.message }}</p>
       </div>
     </article>
   {% else %}

@@ -5,6 +5,7 @@
 <script>
   (function () {
     "use strict";
+    function initializeDateFilter() {
     var filter = document.querySelector("[data-date-filter]");
     if (!filter) return;
     var items = Array.prototype.slice.call(document.querySelectorAll("[data-filter-date]"));
@@ -68,5 +69,12 @@
     yearSelect.addEventListener("change", function () { populateMonths(); applyFilter(); });
     monthSelect.addEventListener("change", applyFilter);
     populateMonths();
+    applyFilter();
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initializeDateFilter, { once: true });
+    } else {
+      initializeDateFilter();
+    }
   }());
 </script>

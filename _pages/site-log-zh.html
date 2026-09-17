@@ -13,16 +13,27 @@ translation_url: /site-log/
 </div>
 {% include archive-date-filter.html %}
 <div class="site-timeline">
-  {% for entry in site.data.site_updates %}
-    <article class="site-log-entry" id="update-{{ entry.sha }}" data-filter-date="{{ entry.date }}">
-      <time datetime="{{ entry.date }}"><span>{{ entry.date | date: "%m月" }}</span><strong>{{ entry.date | date: "%d" }}</strong><small>{{ entry.date | date: "%Y" }}</small></time>
-      <div class="site-log-entry__content">
-        <div class="site-log-entry__head">
-          <span class="site-log-entry__issue">{{ entry.sha }}</span>
-          <a class="site-log-entry__edit" href="{{ entry.url }}" target="_blank" rel="noopener noreferrer"><span>查看提交</span></a>
+  {% assign updates_by_date = site.data.site_updates | group_by: "date" %}
+  {% for day in updates_by_date %}
+    <article class="site-log-day" id="updates-{{ day.name }}" data-filter-date="{{ day.name }}">
+      <time datetime="{{ day.name }}"><span>{{ day.name | date: "%m月" }}</span><strong>{{ day.name | date: "%d" }}</strong><small>{{ day.name | date: "%Y" }}</small></time>
+      <div class="site-log-day__card">
+        <header class="site-log-day__header">
+          <h2>{{ day.name | date: "%Y年%m月%d日" }}</h2>
+          <span>共 {{ day.items | size }} 项更新</span>
+        </header>
+        <div class="site-log-day__items">
+          {% for entry in day.items %}
+            <section class="site-log-entry" id="update-{{ entry.sha }}">
+              <div class="site-log-entry__head">
+                <span class="site-log-entry__issue">{{ entry.sha }}</span>
+                <a class="site-log-entry__edit" href="{{ entry.url }}" target="_blank" rel="noopener noreferrer"><span>查看提交</span></a>
+              </div>
+              <h3>{{ entry.title_zh }}</h3>
+              <p class="site-log-entry__story">{{ entry.story_zh | default: entry.details_zh | default: entry.message }}</p>
+            </section>
+          {% endfor %}
         </div>
-        <h2>{{ entry.title_zh }}</h2>
-        <p class="site-log-entry__story">{{ entry.story_zh | default: entry.details_zh | default: entry.message }}</p>
       </div>
     </article>
   {% else %}
