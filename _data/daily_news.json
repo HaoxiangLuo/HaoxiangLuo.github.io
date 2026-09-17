@@ -1,6 +1,56 @@
 {
-  "updated_at": "2026-09-17T23:25:26+08:00",
+  "updated_at": "2026-09-18T00:25:44+08:00",
   "days": [
+    {
+      "date": "2026-09-18",
+      "items": [
+        {
+          "title": "Canada welcomes EU proposal to become 'associate member'",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Greetings from Beijing, where baozi are worth the wait in line",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/17/g-s1-142416/china-beijing-buns-baozi"
+        },
+        {
+          "title": "Yemen escalation displaces more than 57,000 children: UNICEF",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168354"
+        },
+        {
+          "title": "Ninth woman's body found as South African police investigate string of deaths",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes"
+        },
+        {
+          "title": "As freshwater reserves shrink, countries must prepare for a new water reality",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168350"
+        },
+        {
+          "title": "Assad regime planned US journalist's kidnap for weeks, BBC finds",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cv0lrxw6ygl2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "The Fed raises interest rates. And, EU proposes Canada become an 'associate member'",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/17/g-s1-143783/up-first-newsletter-federal-reserve-interest-rates-gas-prices-war-canada-european-union"
+        },
+        {
+          "title": "Who should set the rules for AI? The UN is pushing for a safer digital future",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168353"
+        }
+      ]
+    },
     {
       "date": "2026-09-17",
       "items": [
