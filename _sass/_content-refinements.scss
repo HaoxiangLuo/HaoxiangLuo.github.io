@@ -1637,3 +1637,56 @@ body.home-page .news-window {
   .site-log-day__header span { white-space: nowrap; }
   .site-log-day .site-log-entry { padding: 0.85rem; }
 }
+
+/* Navigation: make the current location visible without adding visual noise. */
+.greedy-nav .visible-links > li.masthead__menu-item.selected > a {
+  position: relative;
+  color: #1d1d1f;
+  background: rgba(29, 29, 31, 0.055);
+  font-weight: 650;
+}
+
+.greedy-nav .visible-links > li.masthead__menu-item.selected > a::after {
+  content: "";
+  position: absolute;
+  right: 34%;
+  bottom: 0.22rem;
+  left: 34%;
+  height: 2px;
+  border-radius: 999px;
+  background: #1d1d1f;
+}
+
+@media (max-width: 767px) {
+  .greedy-nav .visible-links > li.masthead__menu-item.selected > a::after {
+    right: 39%;
+    bottom: 0.16rem;
+    left: 39%;
+  }
+}
+
+/* Home: align both columns at the top and shorten the introduction surface. */
+@media (min-width: 1024px) {
+  body.home-page .sidebar,
+  body.home-page .page {
+    align-self: start;
+    margin-top: 0;
+  }
+
+  body.home-page .home-intro-panel {
+    padding-top: clamp(1.9rem, 2.6vw, 2.65rem);
+    padding-bottom: clamp(1.8rem, 2.5vw, 2.5rem);
+  }
+
+  body.home-page .home-intro-panel h1 {
+    margin-bottom: 0.9rem;
+  }
+
+  body.home-page .home-intro-panel h2 {
+    margin-top: 1.55rem;
+  }
+
+  body.home-page .home-intro-panel ul {
+    margin-bottom: 0;
+  }
+}
