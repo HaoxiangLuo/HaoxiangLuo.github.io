@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T12:24:46+08:00",
+  "updated_at": "2026-09-18T13:05:57+08:00",
   "days": [
     {
       "date": "2026-09-18",
@@ -7,47 +7,56 @@
         {
           "title": "Canada welcomes EU proposal to become 'associate member'",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "加拿大欢迎欧盟提出的“准成员”地位方案"
         },
         {
           "title": "Behind the overture from the European Union to Canada",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/nx-s1-5973029/behind-the-overture-from-the-european-union-to-canada"
+          "url": "https://www.npr.org/2026/09/17/nx-s1-5973029/behind-the-overture-from-the-european-union-to-canada",
+          "title_zh": "欧盟向加拿大示好背后的考量"
         },
         {
           "title": "New UN system platform puts millions of data points at users’ fingertips, says Guterres",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168363"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168363",
+          "title_zh": "古特雷斯：联合国系统新平台让数百万数据触手可及"
         },
         {
           "title": "Ninth woman's body found as South African police investigate string of deaths",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "南非警方调查连环死亡案，发现第九具女性遗体"
         },
         {
           "title": "To prevent deaths in childbirth, Kenyan moms turn to an AI powered chatbot",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/nx-s1-5962840/artificial-intelligence-ai-chatbot-pregnancy-maternal-health"
+          "url": "https://www.npr.org/2026/09/17/nx-s1-5962840/artificial-intelligence-ai-chatbot-pregnancy-maternal-health",
+          "title_zh": "为避免分娩死亡，肯尼亚妈妈们转向 AI 聊天机器人求助"
         },
         {
           "title": "World News in Brief: Winter aid for Gaza, West Bank; Haiti food production; migrant deaths at sea; human rights funding",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168362"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168362",
+          "title_zh": "世界新闻简讯：加沙与约旦河西岸冬季援助；海地粮食生产；海上移民警亡；人权资金"
         },
         {
           "title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "联合国专家称有理由认定美国对伊朗的打击构成战争罪"
         },
         {
           "title": "Greetings from Beijing, where baozi are worth the wait in line",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/g-s1-142416/china-beijing-buns-baozi"
+          "url": "https://www.npr.org/2026/09/17/g-s1-142416/china-beijing-buns-baozi",
+          "title_zh": "来自北京的问候：值得排队等候的包子"
         },
         {
           "title": "Gender equality woefully off track, new UN report reveals",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168360"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168360",
+          "title_zh": "联合国新报告：性别平等目标严重偏离轨道"
         }
       ]
     },
@@ -57,47 +66,56 @@
         {
           "title": "Ninth woman's body found as South African police investigate string of deaths",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "南非警方调查连环死亡案，发现第九具女性遗体"
         },
         {
           "title": "Greetings from Beijing, where baozi are worth the wait in line",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/g-s1-142416/china-beijing-buns-baozi"
+          "url": "https://www.npr.org/2026/09/17/g-s1-142416/china-beijing-buns-baozi",
+          "title_zh": "来自北京的问候：值得排队等候的包子"
         },
         {
           "title": "Yemen escalation displaces more than 57,000 children: UNICEF",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168354"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168354",
+          "title_zh": "联合国儿童基金会：也门局势升级致逾5.7万名儿童流离失所"
         },
         {
           "title": "Assad regime planned US journalist's kidnap for weeks, BBC finds",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cv0lrxw6ygl2o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cv0lrxw6ygl2o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "BBC 调查发现：阿萨德政权策划绑架美国记者数周之久"
         },
         {
           "title": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes"
+          "url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes",
+          "title_zh": "联合国支持的专家指出美国在伊朗可能犯下战争罪，包括袭击一所学校"
         },
         {
           "title": "As freshwater reserves shrink, countries must prepare for a new water reality",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168350"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168350",
+          "title_zh": "淡水储备日益缩减，各国须为新的水资源现实做好准备"
         },
         {
           "title": "Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "微软警告：不受控的 AI 可能催生与人类匹敌的“硅基物种”"
         },
         {
           "title": "The Fed raises interest rates. And, EU proposes Canada become an 'associate member'",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/g-s1-143783/up-first-newsletter-federal-reserve-interest-rates-gas-prices-war-canada-european-union"
+          "url": "https://www.npr.org/2026/09/17/g-s1-143783/up-first-newsletter-federal-reserve-interest-rates-gas-prices-war-canada-european-union",
+          "title_zh": "美联储加息；欧盟提议加拿大成为“准成员”"
         },
         {
           "title": "Who should set the rules for AI? The UN is pushing for a safer digital future",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168353"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168353",
+          "title_zh": "谁来为 AI 制定规则？联合国推动构建更安全的数字未来"
         }
       ]
     },
@@ -107,47 +125,56 @@
         {
           "title": "EU chief backs plan for Canada to become 'associate member'",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss",
+          "title_zh": "欧盟领导人支持加拿大成为“准成员”的方案"
         },
         {
           "title": "Russia seizes Ukrainian POWs, then it demands favors from their relatives",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/16/nx-s1-5904423/russia-seizes-ukrainian-pows-then-it-demands-favors-from-their-relatives"
+          "url": "https://www.npr.org/2026/09/16/nx-s1-5904423/russia-seizes-ukrainian-pows-then-it-demands-favors-from-their-relatives",
+          "title_zh": "俄罗斯扣押乌克兰战俘，随后向战俘亲属索要好处"
         },
         {
           "title": "Eight children among 21 killed after war-damaged Gaza building collapses, rescuers say",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "救援人员称加沙一栋受战损建筑倒塌致 21 人死亡，其中包括 8 名儿童"
         },
         {
           "title": "Fed expected to raise interest rates. And, board votes to close Kennedy Center",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/16/g-s1-143569/up-first-newsletter-fed-reserve-interest-rates-iran-war-kennedy-center-contraception"
+          "url": "https://www.npr.org/2026/09/16/g-s1-143569/up-first-newsletter-fed-reserve-interest-rates-iran-war-kennedy-center-contraception",
+          "title_zh": "美联储预计加息；董事会投票决定关闭肯尼迪中心"
         },
         {
           "title": "US accuses Russia of trying to kill Ukrainian allies overseas",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cjp3077led9qo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cjp3077led9qo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国指称俄罗斯试图在海外杀害乌克兰盟友"
         },
         {
           "title": "EU's Ursula von der Leyen says she wants Canada to become an associate member",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/16/nx-s1-5970985/canada-become-eu-associate-member"
+          "url": "https://www.npr.org/2026/09/16/nx-s1-5970985/canada-become-eu-associate-member",
+          "title_zh": "欧盟的冯德莱恩表示希望加拿大成为准成员"
         },
         {
           "title": "OpenAI boss says world 'right to be afraid' but should trust AI firms",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqx2zpj4y525o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqx2zpj4y525o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "OpenAI 负责人称世人“有理由感到担忧”，但应信任 AI 企业"
         },
         {
           "title": "Kosovo's ex-President Thaci convicted of war crimes, sentenced to 25 years in prison",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/16/g-s1-143560/kosovo-former-president-war-crimes"
+          "url": "https://www.npr.org/2026/09/16/g-s1-143560/kosovo-former-president-war-crimes",
+          "title_zh": "科索沃前总统塔奇因战争罪被判处 25 年监禁"
         },
         {
           "title": "Eight German state premiers back Merz amid speculation over future",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6dj4nn0n97ro?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c6dj4nn0n97ro?at_medium=RSS&at_campaign=rss",
+          "title_zh": "德国八位州长支持默茨，外界猜测其政治前途"
         }
       ]
     },
@@ -157,47 +184,56 @@
         {
           "title": "Trump says AI safety fears a 'hoax' as he rejects calls for greater safeguards",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw980n0nd0qjo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cw980n0nd0qjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普称对 AI 安全的担忧是“骗局”，拒绝加强监管的呼声"
         },
         {
           "title": "SCOTUS rejects Trump's mail voting limits. And, the Kennedy Center financial crisis",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/15/g-s1-143294/up-first-newsletter-bernie-sanders-steve-bannon-ai-mail-in-ballots-kennedy-center-emmys"
+          "url": "https://www.npr.org/2026/09/15/g-s1-143294/up-first-newsletter-bernie-sanders-steve-bannon-ai-mail-in-ballots-kennedy-center-emmys",
+          "title_zh": "美国最高法院否决特朗普的邮寄投票限制；肯尼迪中心陷入财务危机"
         },
         {
           "title": "Denmark says Russian warship fired flares at military helicopter",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cwn8mjl31p5yo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "丹麦称俄罗斯军舰向军用直升机发射照明弹"
         },
         {
           "title": "Trump says Ukraine and Russia agreed to stop attacks on energy sites",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/15/nx-s1-5968728/trump-says-ukraine-and-russia-agreed-to-stop-attacks-on-energy-sites"
+          "url": "https://www.npr.org/2026/09/15/nx-s1-5968728/trump-says-ukraine-and-russia-agreed-to-stop-attacks-on-energy-sites",
+          "title_zh": "特朗普称乌克兰与俄罗斯同意停止袭击能源设施"
         },
         {
           "title": "What weapon could the US have put into space?",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmy4zqgk97wlo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cmy4zqgk97wlo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国可能在太空部署了什么武器？"
         },
         {
           "title": "Air pollution spiked after the Trump administration stopped embassy monitoring",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/15/nx-s1-5966503/air-pollution-spiked-after-the-trump-administration-stopped-embassy-monitoring"
+          "url": "https://www.npr.org/2026/09/15/nx-s1-5966503/air-pollution-spiked-after-the-trump-administration-stopped-embassy-monitoring",
+          "title_zh": "特朗普政府停止使馆监测后空气污染指数飙升"
         },
         {
           "title": "Suspected sabotage causes major Netherlands rail disruption",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c8ly49w9g1edo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c8ly49w9g1edo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "疑似蓄意破坏致荷兰铁路大面积中断"
         },
         {
           "title": "NATO jets shoot down a drone in Lithuanian airspace",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/15/g-s1-143284/nato-jets-down-drone-in-lithuanian-airspace"
+          "url": "https://www.npr.org/2026/09/15/g-s1-143284/nato-jets-down-drone-in-lithuanian-airspace",
+          "title_zh": "北约战机在立陶宛领空击落一架无人机"
         },
         {
           "title": "Two sailors missing after tanker attacked in Strait of Hormuz, Oman says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c3n07ydqdzlvo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c3n07ydqdzlvo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "阿曼称霍尔木兹海峡一艘油轮遇袭，两名船员失踪"
         }
       ]
     }
