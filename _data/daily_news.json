@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-18T20:29:08+08:00",
+  "updated_at": "2026-09-18T21:24:06+08:00",
   "days": [
     {
       "date": "2026-09-18",
       "items": [
         {
-          "title": "Three dead and eight injured in Philippines school shooting",
+          "title": "Russian hybrid attacks against Europe intensifying, says Macron",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6x2z4dlzyr0o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "菲律宾校园枪击案三死八伤"
+          "url": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "马克龙表示，俄罗斯对欧洲的混合攻击正在加剧"
         },
         {
           "title": "Judge says Trump can't demolish Kennedy Center. And, lawsuits target voter intimidation",
@@ -17,16 +17,10 @@
           "title_zh": "法官称特朗普不能拆除肯尼迪中心。而且，诉讼的目标是恐吓选民"
         },
         {
-          "title": "New UN system platform puts millions of data points at users’ fingertips, says Guterres",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168363",
-          "title_zh": "古特雷斯表示，新的联合国系统平台让数百万个数据点触手可及"
-        },
-        {
-          "title": "Police begin operation to move migrants from Ceuta beaches",
+          "title": "Three dead and eight injured in Philippines school shooting",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6vgy80ge1z7o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "警方开始行动从休达海滩转移移民"
+          "url": "https://www.bbc.co.uk/news/articles/c6x2z4dlzyr0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "菲律宾校园枪击案三死八伤"
         },
         {
           "title": "Ms. Rachel has entered her album era, and she is so happy about it",
@@ -35,16 +29,10 @@
           "title_zh": "Rachel女士进入了她的专辑时代，她对此感到非常高兴"
         },
         {
-          "title": "World News in Brief: Winter aid for Gaza, West Bank; Haiti food production; migrant deaths at sea; human rights funding",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168362",
-          "title_zh": "世界新闻简讯：对加沙和约旦河西岸的冬季援助；海地粮食生产；移民在海上死亡；人权资助"
-        },
-        {
-          "title": "Lindsay Clancy holdout juror had no doubt she deliberately killed her children",
+          "title": "Police begin operation to move migrants from Ceuta beaches",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "林赛·克兰西坚持不懈的陪审员毫不怀疑她故意杀害了自己的孩子"
+          "url": "https://www.bbc.co.uk/news/articles/c6vgy80ge1z7o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "警方开始行动从休达海滩转移移民"
         },
         {
           "title": "South Africa 'feels like a prison' for women amid spate of femicides",
@@ -53,10 +41,22 @@
           "title_zh": "南非发生大量女性杀戮事件，女性“感觉就像一座监狱"
         },
         {
-          "title": "Gender equality woefully off track, new UN report reveals",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168360",
-          "title_zh": "联合国新报告显示，性别平等严重偏离正轨"
+          "title": "Lindsay Clancy holdout juror says he had no doubt she deliberately killed her children",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "林赛·克兰西坚持不懈的陪审员表示，他毫不怀疑她故意杀害了自己的孩子"
+        },
+        {
+          "title": "Poland's prime minister warns of Russian 'accidental' attacks on Ukraine's allies",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/18/nx-s1-5973265/poland-nato-russia",
+          "title_zh": "波兰总理警告俄罗斯“意外”袭击乌克兰盟友"
+        },
+        {
+          "title": "At least 16 killed after vehicle loaded with explosives rams into Pakistan mosque",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "巴基斯坦清真寺遭满载炸药车辆冲撞 至少16人死亡"
         }
       ]
     },
