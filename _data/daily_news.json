@@ -1,53 +1,62 @@
 {
-  "updated_at": "2026-09-19T05:23:34+08:00",
+  "updated_at": "2026-09-19T06:23:12+08:00",
   "days": [
     {
       "date": "2026-09-19",
       "items": [
         {
-          "title": "Russian hybrid attacks against Europe intensifying, says Macron",
+          "title": "US and Denmark reach deal over Greenland's security",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国和丹麦就格陵兰岛安全达成协议"
         },
         {
           "title": "When Trump and Xi meet they will discuss AI. 'Track Two' talks are already buzzing",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/18/nx-s1-5971481/trump-xi-meeting-ai-track-two-talks"
+          "url": "https://www.npr.org/2026/09/18/nx-s1-5971481/trump-xi-meeting-ai-track-two-talks",
+          "title_zh": "特朗普和习近平会面时将讨论人工智能。 “第二轨”谈判已经热闹非凡"
         },
         {
-          "title": "Trump says he is banning CNN and Politico from White House",
+          "title": "‘Violence will only defer a problem’: UN Assembly President on trust, AI and lessons from the Rohingya crisis",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168375",
+          "title_zh": "暴力只会推迟问题的解决”：联合国大会主席谈信任、人工智能和罗辛亚危机的教训"
+        },
+        {
+          "title": "Russian hybrid attacks against Europe intensifying, says Macron",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "马克龙表示，俄罗斯对欧洲的混合攻击正在加剧"
         },
         {
           "title": "Syrian regime planned American journalist's kidnapping for weeks",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/18/nx-s1-5974166/assad-austin-tice-kidnapping-bbc-embedded"
+          "url": "https://www.npr.org/2026/09/18/nx-s1-5974166/assad-austin-tice-kidnapping-bbc-embedded",
+          "title_zh": "叙利亚政权策划绑架美国记者数周"
         },
         {
-          "title": "Is the Kennedy Center losing 'hundreds of millions of dollars'?",
+          "title": "Security Council LIVE: UN peacekeeping under pressure",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168376",
+          "title_zh": "安理会直播：联合国维和行动面临压力"
+        },
+        {
+          "title": "Trump says he is banning CNN and Politico from White House",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/cqy4zw4xr717o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普表示，他将禁止 CNN 和 Politico 进入白宫"
         },
         {
           "title": "Will even one of the U.N.'s 17 'sustainable development goals' be met by 2030?",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/18/g-s1-143738/united-nations-sustainable-development-goals-hunger-climate-gender"
+          "url": "https://www.npr.org/2026/09/18/g-s1-143738/united-nations-sustainable-development-goals-hunger-climate-gender",
+          "title_zh": "到 2030 年，联合国 17 个“可持续发展目标”之一能否实现？"
         },
         {
-          "title": "At least 21 killed after vehicle loaded with explosives rams Pakistan mosque",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Judge says Trump can't demolish Kennedy Center. And, lawsuits target voter intimidation",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/18/g-s1-143913/up-first-newsletter-kennedy-center-trump-voter-intimidation-lawsuit-poland-russia-ukraine"
-        },
-        {
-          "title": "Lindsay Clancy holdout juror says he had no doubt she deliberately killed her children",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss"
+          "title": "Sexual violence against civilians and POW’s in Ukraine widespread and ‘abhorrent’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168374",
+          "title_zh": "乌克兰针对平民和战俘的性暴力现象普遍且“令人憎恶"
         }
       ]
     },
