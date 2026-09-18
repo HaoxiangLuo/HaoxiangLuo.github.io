@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T02:26:14+08:00",
+  "updated_at": "2026-09-19T03:22:40+08:00",
   "days": [
     {
       "date": "2026-09-19",
@@ -11,10 +11,16 @@
           "title_zh": "马克龙表示，俄罗斯对欧洲的混合攻击正在加剧"
         },
         {
-          "title": "Will even one of the U.N.'s 17 'sustainable development goals' be met by 2030?",
+          "title": "When Trump and Xi meet they will discuss AI. 'Track Two' talks are already buzzing",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/18/g-s1-143738/united-nations-sustainable-development-goals-hunger-climate-gender",
-          "title_zh": "到 2030 年，联合国 17 个“可持续发展目标”之一能否实现？"
+          "url": "https://www.npr.org/2026/09/18/nx-s1-5971481/trump-xi-meeting-ai-track-two-talks",
+          "title_zh": "特朗普和习近平会面时将讨论人工智能。 “第二轨”谈判已经热闹非凡"
+        },
+        {
+          "title": "Sexual violence against civilians and POW’s in Ukraine widespread and ‘abhorrent’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168374",
+          "title_zh": "乌克兰针对平民和战俘的性暴力现象普遍且“令人憎恶"
         },
         {
           "title": "Three dead and eight injured in Philippines school shooting",
@@ -23,40 +29,34 @@
           "title_zh": "菲律宾校园枪击案三死八伤"
         },
         {
-          "title": "Judge says Trump can't demolish Kennedy Center. And, lawsuits target voter intimidation",
+          "title": "Syrian regime planned American journalist's kidnapping for weeks",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/18/g-s1-143913/up-first-newsletter-kennedy-center-trump-voter-intimidation-lawsuit-poland-russia-ukraine",
-          "title_zh": "法官称特朗普不能拆除肯尼迪中心。而且，诉讼的目标是恐吓选民"
+          "url": "https://www.npr.org/2026/09/18/nx-s1-5974166/assad-austin-tice-kidnapping-bbc-embedded",
+          "title_zh": "叙利亚政权策划绑架美国记者数周"
         },
         {
-          "title": "Police begin operation to move migrants from Ceuta beaches",
+          "title": "Less than 4 years from development goals deadline, progress shows what’s possible",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168371",
+          "title_zh": "距离发展目标截止日期还有不到 4 年的时间，进展表明一切皆有可能"
+        },
+        {
+          "title": "Shots heard as police start moving migrants from Ceuta beaches",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c6vgy80ge1z7o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "警方开始行动从休达海滩转移移民"
+          "title_zh": "当警察开始从休达海滩转移移民时听到枪声"
         },
         {
-          "title": "Ms. Rachel has entered her album era, and she is so happy about it",
+          "title": "Will even one of the U.N.'s 17 'sustainable development goals' be met by 2030?",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/18/nx-s1-5938847/ms-rachel-mr-aron-new-album-im-so-happy",
-          "title_zh": "Rachel女士进入了她的专辑时代，她对此感到非常高兴"
+          "url": "https://www.npr.org/2026/09/18/g-s1-143738/united-nations-sustainable-development-goals-hunger-climate-gender",
+          "title_zh": "到 2030 年，联合国 17 个“可持续发展目标”之一能否实现？"
         },
         {
-          "title": "Lindsay Clancy holdout juror says he had no doubt she deliberately killed her children",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "林赛·克兰西坚持不懈的陪审员表示，他毫不怀疑她故意杀害了自己的孩子"
-        },
-        {
-          "title": "South Africa 'feels like a prison' for women amid spate of femicides",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/18/nx-s1-5973822/south-africa-feels-like-a-prison-for-women-amid-spate-of-femicides",
-          "title_zh": "南非发生大量女性杀戮事件，女性“感觉就像一座监狱"
-        },
-        {
-          "title": "At least 21 killed after vehicle loaded with explosives rams Pakistan mosque",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "巴基斯坦清真寺遭满载炸药车辆冲撞 至少21人死亡"
+          "title": "Women and girls pay high price in DR Congo Ebola outbreak",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168368",
+          "title_zh": "妇女和女童在刚果民主共和国埃博拉疫情中付出高昂代价"
         }
       ]
     },
