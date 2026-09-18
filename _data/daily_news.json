@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T22:24:49+08:00",
+  "updated_at": "2026-09-18T23:24:27+08:00",
   "days": [
     {
       "date": "2026-09-18",
@@ -17,6 +17,12 @@
           "title_zh": "法官称特朗普不能拆除肯尼迪中心。而且，诉讼的目标是恐吓选民"
         },
         {
+          "title": "Haiti: Child malnutrition crisis worsens amid escalating violence",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168366",
+          "title_zh": "海地：暴力升级导致儿童营养不良危机加剧"
+        },
+        {
           "title": "Three dead and eight injured in Philippines school shooting",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c6x2z4dlzyr0o?at_medium=RSS&at_campaign=rss",
@@ -27,6 +33,12 @@
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/18/nx-s1-5938847/ms-rachel-mr-aron-new-album-im-so-happy",
           "title_zh": "Rachel女士进入了她的专辑时代，她对此感到非常高兴"
+        },
+        {
+          "title": "Nepal floods: ‘Apocalyptic’ destruction signals wider climate threat across Himalayas",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168365",
+          "title_zh": "尼泊尔洪水：“世界末日”的破坏预示着喜马拉雅山脉更广泛的气候威胁"
         },
         {
           "title": "Police begin operation to move migrants from Ceuta beaches",
@@ -41,22 +53,10 @@
           "title_zh": "南非发生大量女性杀戮事件，女性“感觉就像一座监狱"
         },
         {
-          "title": "Lindsay Clancy holdout juror says he had no doubt she deliberately killed her children",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c54g7jdmw032o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "林赛·克兰西坚持不懈的陪审员表示，他毫不怀疑她故意杀害了自己的孩子"
-        },
-        {
-          "title": "Poland's prime minister warns of Russian 'accidental' attacks on Ukraine's allies",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/18/nx-s1-5973265/poland-nato-russia",
-          "title_zh": "波兰总理警告俄罗斯“意外”袭击乌克兰盟友"
-        },
-        {
-          "title": "At least 16 killed after vehicle loaded with explosives rams into Pakistan mosque",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "巴基斯坦清真寺遭满载炸药车辆冲撞 至少16人死亡"
+          "title": "Yemen’s humanitarian crisis growing by the hour amid spike in displacement",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168364",
+          "title_zh": "由于流离失所人数激增，也门的人道主义危机日益加剧"
         }
       ]
     },
