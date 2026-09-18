@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-18",
+    "title_zh": "调整了每日新闻",
+    "title_en": "Refined Daily News",
+    "message": "Backfill Chinese titles into daily news archive",
+    "story_zh": "为了更方便地了解世界动态，我调整了每日新闻，让信息更新与归档更可靠。",
+    "story_en": "To make world events easier to follow, I refined Daily News so updates and archives remain reliable.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Backfill Chinese titles into daily news archive",
+    "details_zh": "调整每日新闻的归档内容、呈现方式或自动更新。",
+    "details_en": "Refined the daily-news archive, presentation, or automatic update.",
+    "sha": "7645c80",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/7645c803ce427c7353327b6f3c90c72168c213fd"
+  },
+  {
     "date": "2026-09-17",
     "title_zh": "调整了导航、首页、界面样式",
     "title_en": "Refined navigation, Home, interface styling",
