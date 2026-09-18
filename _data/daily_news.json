@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-18T15:24:54+08:00",
+  "updated_at": "2026-09-18T16:25:51+08:00",
   "days": [
     {
       "date": "2026-09-18",
@@ -7,47 +7,56 @@
         {
           "title": "Canada welcomes EU proposal to become 'associate member'",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "加拿大欢迎欧盟提出成为“准成员"
         },
         {
-          "title": "Behind the overture from the European Union to Canada",
+          "title": "What to know after a week of Houthi attacks that threaten Saudi oil",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/nx-s1-5973029/behind-the-overture-from-the-european-union-to-canada"
+          "url": "https://www.npr.org/2026/09/18/nx-s1-5973810/houthi-attacks-saudi-oil-world-markets",
+          "title_zh": "威胁沙特石油的胡塞武装袭击一周后需要了解什么"
+        },
+        {
+          "title": "New UN system platform puts millions of data points at users’ fingertips, says Guterres",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168363",
+          "title_zh": "古特雷斯表示，新的联合国系统平台让数百万个数据点触手可及"
         },
         {
           "title": "Ninth woman's body found as South African police investigate string of deaths",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "南非警方调查一系列死亡事件时发现第九具女性尸体"
         },
         {
-          "title": "To prevent deaths in childbirth, Kenyan moms turn to an AI powered chatbot",
+          "title": "Behind the overture from the European Union to Canada",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/nx-s1-5962840/artificial-intelligence-ai-chatbot-pregnancy-maternal-health"
+          "url": "https://www.npr.org/2026/09/17/nx-s1-5973029/behind-the-overture-from-the-european-union-to-canada",
+          "title_zh": "欧盟向加拿大示好的背后"
+        },
+        {
+          "title": "World News in Brief: Winter aid for Gaza, West Bank; Haiti food production; migrant deaths at sea; human rights funding",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168362",
+          "title_zh": "世界新闻简讯：对加沙和约旦河西岸的冬季援助；海地粮食生产；移民在海上死亡；人权资助"
         },
         {
           "title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "联合国专家表示有理由相信美国在伊朗袭击中犯下了战争罪"
         },
         {
-          "title": "Greetings from Beijing, where baozi are worth the wait in line",
+          "title": "To prevent deaths in childbirth, Kenyan moms turn to an AI powered chatbot",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/g-s1-142416/china-beijing-buns-baozi"
+          "url": "https://www.npr.org/2026/09/17/nx-s1-5962840/artificial-intelligence-ai-chatbot-pregnancy-maternal-health",
+          "title_zh": "为了防止分娩死亡，肯尼亚妈妈们求助于人工智能聊天机器人"
         },
         {
-          "title": "US to allow Iran delegation to attend UN meetings in New York as war passes half-year mark",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6n8m72r13ngo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes"
-        },
-        {
-          "title": "Wife of US scholar jailed in China asks Trump to raise arrest at Xi meeting",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c9j3d2rr6g24o?at_medium=RSS&at_campaign=rss"
+          "title": "Gender equality woefully off track, new UN report reveals",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168360",
+          "title_zh": "联合国新报告显示，性别平等严重偏离正轨"
         }
       ]
     },
