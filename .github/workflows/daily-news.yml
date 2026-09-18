@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  models: read
 
 concurrency:
   group: daily-news
@@ -33,11 +34,15 @@ jobs:
           python-version: "3.12"
 
       - name: Collect world headlines
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git pull --ff-only origin master
           python scripts/fetch_daily_news.py
 
       - name: Save the daily archive
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if git diff --quiet -- _data/daily_news.json; then
             echo "No news changes to save."

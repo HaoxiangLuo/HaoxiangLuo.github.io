@@ -13,7 +13,9 @@
   {% if today_news and today_news.size > 0 %}
     <ol class="news-window__list">
       {% for item in today_news limit:5 %}
-        <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}</span><small>{{ item.source | escape }}</small></a></li>
+        {% assign headline = item.title %}
+        {% if page.lang == 'zh' %}{% assign headline = item.title_zh | default: item.title %}{% endif %}
+        <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ headline | escape }}</span><small>{{ item.source | escape }}</small></a></li>
       {% endfor %}
     </ol>
   {% else %}
