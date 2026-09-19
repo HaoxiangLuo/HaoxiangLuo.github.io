@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T07:23:14+08:00",
+  "updated_at": "2026-09-19T08:30:43+08:00",
   "days": [
     {
       "date": "2026-09-19",
@@ -17,12 +17,6 @@
           "title_zh": "俄罗斯人前往投票站选举议会议员"
         },
         {
-          "title": "‘Violence will only defer a problem’: UN Assembly President on trust, AI and lessons from the Rohingya crisis",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168375",
-          "title_zh": "暴力只会推迟问题的解决”：联合国大会主席谈信任、人工智能和罗辛亚危机的教训"
-        },
-        {
           "title": "Russian hybrid attacks against Europe intensifying, says Macron",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cm2dw1w9d3yjo?at_medium=RSS&at_campaign=rss",
@@ -33,12 +27,6 @@
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/18/nx-s1-5971481/trump-xi-meeting-ai-track-two-talks",
           "title_zh": "特朗普和习近平会面时将讨论人工智能。 “第二轨”谈判已经热闹非凡"
-        },
-        {
-          "title": "Security Council LIVE: UN peacekeeping under pressure",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168376",
-          "title_zh": "安理会直播：联合国维和行动面临压力"
         },
         {
           "title": "Trump says he is banning CNN and Politico from White House",
@@ -53,10 +41,22 @@
           "title_zh": "叙利亚政权策划绑架美国记者数周"
         },
         {
-          "title": "Sexual violence against civilians and POW’s in Ukraine widespread and ‘abhorrent’",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168374",
-          "title_zh": "乌克兰针对平民和战俘的性暴力现象普遍且“令人憎恶"
+          "title": "Is the Kennedy Center losing 'hundreds of millions of dollars'?",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cqy4zw4xr717o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "肯尼迪中心是否损失了“数亿美元”？"
+        },
+        {
+          "title": "Will even one of the U.N.'s 17 'sustainable development goals' be met by 2030?",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/18/g-s1-143738/united-nations-sustainable-development-goals-hunger-climate-gender",
+          "title_zh": "到 2030 年，联合国 17 个“可持续发展目标”之一能否实现？"
+        },
+        {
+          "title": "At least 21 killed after vehicle loaded with explosives rams Pakistan mosque",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckn9wenz8wjwo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "巴基斯坦清真寺遭满载炸药车辆冲撞 至少21人死亡"
         }
       ]
     },
