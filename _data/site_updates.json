@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-19",
+    "title_zh": "调整了论文发表、界面样式",
+    "title_en": "Refined Publications, interface styling",
+    "message": "Add password-protected publications export feature",
+    "story_zh": "页面还可以更清楚、更顺手。这次重新整理了论文发表、界面样式的视觉与交互。",
+    "story_en": "The site could feel clearer and easier to use, so I refined the visual design and interaction of Publications, interface styling.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Add password-protected publications export feature",
+    "details_zh": "调整论文发表页面的内容或筛选浏览方式。优化页面的排版、间距与响应式视觉效果。优化页面筛选或其他交互体验。",
+    "details_en": "Refined publication content or its browsing controls. Improved typography, spacing, and responsive visual presentation. Improved page filtering or other interactions.",
+    "sha": "a3825c6",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/a3825c6701942df0a364cbdd198cc4bb1126d0ae"
+  },
+  {
     "date": "2026-09-18",
     "title_zh": "调整了每日新闻",
     "title_en": "Refined Daily News",
