@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-09-19",
+    "title_zh": "调整了学习札记、界面样式",
+    "title_en": "Refined Study Notes, interface styling",
+    "message": "Add CiteSpace download/install study note to Research Methods",
+    "story_zh": "页面还可以更清楚、更顺手。这次重新整理了学习札记、界面样式的视觉与交互。",
+    "story_en": "The site could feel clearer and easier to use, so I refined the visual design and interaction of Study Notes, interface styling.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Add CiteSpace download/install study note to Research Methods",
+    "details_zh": "调整学习札记的内容或展开交互。优化页面的排版、间距与响应式视觉效果。",
+    "details_en": "Refined study-note content or its expandable interaction. Improved typography, spacing, and responsive visual presentation.",
+    "sha": "b96d518",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/b96d518ffefc9f6ef0ce22ece3716f679dbbf004"
+  },
+  {
+    "date": "2026-09-19",
     "title_zh": "调整了论文发表、界面样式",
     "title_en": "Refined Publications, interface styling",
     "message": "Add password-protected publications export feature",
