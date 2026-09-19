@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-19T22:22:52+08:00",
+  "updated_at": "2026-09-19T23:22:57+08:00",
   "days": [
     {
       "date": "2026-09-19",
       "items": [
         {
-          "title": "US and Denmark reach deal over Greenland after Trump annexation threats",
+          "title": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "在特朗普吞并威胁后，美国和丹麦就格陵兰岛达成协议"
+          "title_zh": "北约欢迎格陵兰岛协议，特朗普称该协议将赋予美国“永久安全控制权"
         },
         {
           "title": "France, Poland and European allies warn of escalating Russian 'hybrid' attacks",
@@ -23,10 +23,10 @@
           "title_zh": "特朗普表示，他将禁止 CNN 和 Politico 进入白宫"
         },
         {
-          "title": "Russia holds parliamentary vote in areas it seized from Ukraine in the war",
+          "title": "Life in Kabul 5 years after the Taliban's return",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/g-s1-144169/russia-holds-parliamentary-vote-in-areas-it-seized-from-ukraine",
-          "title_zh": "俄罗斯就其在战争中从乌克兰手中夺取的地区举行议会投票"
+          "url": "https://www.npr.org/2026/09/19/nx-s1-5961263/life-in-kabul-5-years-after-the-talibans-return",
+          "title_zh": "塔利班回归五年后喀布尔的生活"
         },
         {
           "title": "Google's Gemini AI hacked three companies in security test",
@@ -35,10 +35,10 @@
           "title_zh": "谷歌Gemini AI在安全测试中入侵了三家公司"
         },
         {
-          "title": "As Europe warms, Italy sees West Nile virus spread",
+          "title": "Russia holds parliamentary vote in areas it seized from Ukraine in the war",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/g-s1-144162/as-europe-warms-italy-sees-west-nile-virus-spread",
-          "title_zh": "随着欧洲变暖，意大利看到西尼罗河病毒传播"
+          "url": "https://www.npr.org/2026/09/19/g-s1-144169/russia-holds-parliamentary-vote-in-areas-it-seized-from-ukraine",
+          "title_zh": "俄罗斯就其在战争中从乌克兰手中夺取的地区举行议会投票"
         },
         {
           "title": "Trump signs sweeping Russia sanctions bill",
@@ -47,10 +47,10 @@
           "title_zh": "特朗普签署全面制裁俄罗斯法案"
         },
         {
-          "title": "U.S. and Denmark reach deal to build U.S. military presence in Greenland",
+          "title": "As Europe warms, Italy sees West Nile virus spread",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/g-s1-144158/us-and-denmark-reach-deal",
-          "title_zh": "美国和丹麦达成协议，在格陵兰岛建立美国军事存在"
+          "url": "https://www.npr.org/2026/09/19/g-s1-144162/as-europe-warms-italy-sees-west-nile-virus-spread",
+          "title_zh": "随着欧洲变暖，意大利看到西尼罗河病毒传播"
         },
         {
           "title": "Grim discoveries of murdered women spark fear in South Africa",
