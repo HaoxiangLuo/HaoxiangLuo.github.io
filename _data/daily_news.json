@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T04:23:04+08:00",
+  "updated_at": "2026-09-20T05:22:34+08:00",
   "days": [
     {
       "date": "2026-09-20",
@@ -11,10 +11,16 @@
           "title_zh": "北约欢迎格陵兰岛协议，特朗普称该协议将赋予美国“永久安全控制权"
         },
         {
-          "title": "The new lines of southern Lebanon",
+          "title": "Persecuted Chinese religious leader finds refuge in the U.S.",
           "source": "NPR World",
-          "url": "https://www.npr.org/sections/the-picture-show/2026/09/19/g-s1-139752/the-new-lines-of-southern-lebanon",
-          "title_zh": "黎巴嫩南部新线"
+          "url": "https://www.npr.org/2026/09/19/nx-s1-5960427/persecuted-chinese-religious-leader-finds-refuge-in-the-u-s",
+          "title_zh": "受迫害的中国宗教领袖在美国寻求庇护"
+        },
+        {
+          "title": "The race to build a pandemic-proof world",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168377",
+          "title_zh": "建立一个抵御大流行病的世界的竞赛"
         },
         {
           "title": "Houthis say they targeted Saudi capital with ballistic missiles",
@@ -23,10 +29,16 @@
           "title_zh": "胡塞武装称他们用弹道导弹瞄准沙特首都"
         },
         {
-          "title": "France, Poland and European allies warn of escalating Russian 'hybrid' attacks",
+          "title": "Could Germany's far-right AfD party gain ground in liberal Berlin?",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/nx-s1-5974215/france-poland-and-european-allies-warn-of-escalating-russian-hybrid-attacks",
-          "title_zh": "法国、波兰和欧洲盟友警告俄罗斯“混合”袭击升级"
+          "url": "https://www.npr.org/2026/09/19/nx-s1-5972995/could-germanys-far-right-afd-party-gain-ground-in-liberal-berlin",
+          "title_zh": "德国极右翼政党选择党能否在自由主义的柏林取得进展？"
+        },
+        {
+          "title": "Why the UN General Assembly still matters",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168361",
+          "title_zh": "为什么联合国大会仍然重要"
         },
         {
           "title": "Journalists denied White House access after Trump banned some media outlets",
@@ -35,28 +47,16 @@
           "title_zh": "特朗普禁止一些媒体后，记者被拒绝进入白宫"
         },
         {
-          "title": "Life in Kabul 5 years after the Taliban's return",
+          "title": "Taiwan's lost films hold the sounds and stories of a vanishing era",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/nx-s1-5961263/life-in-kabul-5-years-after-the-talibans-return",
-          "title_zh": "塔利班回归五年后喀布尔的生活"
+          "url": "https://www.npr.org/2026/09/19/nx-s1-5944374/taiwans-lost-films-hold-the-sounds-and-stories-of-a-vanishing-era",
+          "title_zh": "台湾失落的电影承载着一个消失时代的声音和故事"
         },
         {
-          "title": "Converse pulls 'deeply upsetting' advert after backlash",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/crwyzj53pl1lo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "匡威在强烈反对后撤下了“令人深感不安”的广告"
-        },
-        {
-          "title": "Russia holds parliamentary vote in areas it seized from Ukraine in the war",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/g-s1-144169/russia-holds-parliamentary-vote-in-areas-it-seized-from-ukraine",
-          "title_zh": "俄罗斯就其在战争中从乌克兰手中夺取的地区举行议会投票"
-        },
-        {
-          "title": "Google's Gemini AI hacked three companies in security test",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "谷歌Gemini AI在安全测试中入侵了三家公司"
+          "title": "UN Crime Congress: Technology is transforming crime – and the response to it",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168370",
+          "title_zh": "联合国犯罪大会：技术正在改变犯罪行为及其应对措施"
         }
       ]
     },
