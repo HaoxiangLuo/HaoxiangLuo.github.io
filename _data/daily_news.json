@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T01:21:47+08:00",
+  "updated_at": "2026-09-20T02:25:32+08:00",
   "days": [
     {
       "date": "2026-09-20",
@@ -17,10 +17,16 @@
           "title_zh": "法国、波兰和欧洲盟友警告俄罗斯“混合”袭击升级"
         },
         {
-          "title": "Trump says he is banning CNN and Politico from White House",
+          "title": "The race to build a pandemic-proof world",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168377",
+          "title_zh": "建立一个抵御大流行病的世界的竞赛"
+        },
+        {
+          "title": "Houthis claim attack on Saudi capital after smoke seen rising near Riyadh airport",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6e30580jqjpo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普表示，他将禁止 CNN 和 Politico 进入白宫"
+          "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "利雅得机场附近冒烟后，胡塞武装声称袭击了沙特首都"
         },
         {
           "title": "Life in Kabul 5 years after the Taliban's return",
@@ -29,10 +35,16 @@
           "title_zh": "塔利班回归五年后喀布尔的生活"
         },
         {
-          "title": "Google's Gemini AI hacked three companies in security test",
+          "title": "Why the UN General Assembly still matters",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168361",
+          "title_zh": "为什么联合国大会仍然重要"
+        },
+        {
+          "title": "Journalists denied White House access after Trump banned some media outlets",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "谷歌Gemini AI在安全测试中入侵了三家公司"
+          "url": "https://www.bbc.co.uk/news/articles/cj4gklz9dxplo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普禁止一些媒体后，记者被拒绝进入白宫"
         },
         {
           "title": "Russia holds parliamentary vote in areas it seized from Ukraine in the war",
@@ -41,22 +53,10 @@
           "title_zh": "俄罗斯就其在战争中从乌克兰手中夺取的地区举行议会投票"
         },
         {
-          "title": "Trump signs sweeping Russia sanctions bill",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqvgy34ndj4eo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普签署全面制裁俄罗斯法案"
-        },
-        {
-          "title": "As Europe warms, Italy sees West Nile virus spread",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/g-s1-144162/as-europe-warms-italy-sees-west-nile-virus-spread",
-          "title_zh": "随着欧洲变暖，意大利看到西尼罗河病毒传播"
-        },
-        {
-          "title": "Grim discoveries of murdered women spark fear in South Africa",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cjkg71e67k17o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "被谋杀妇女的可怕发现在南非引发恐惧"
+          "title": "UN Crime Congress: Technology is transforming crime – and the response to it",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168370",
+          "title_zh": "联合国犯罪大会：技术正在改变犯罪行为及其应对措施"
         }
       ]
     },
