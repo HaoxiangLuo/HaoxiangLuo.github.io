@@ -27,11 +27,17 @@
     card.classList.toggle("is-open", open);
     if (p.toggle) p.toggle.setAttribute("aria-expanded", open ? "true" : "false");
     if (p.cueText) p.cueText.textContent = open ? labels.close : labels.open;
+    grid.classList.toggle("has-open-topic", cards.some(function (topic) {
+      return topic.classList.contains("is-open");
+    }));
   }
 
   function open(card) {
     var p = parts(card);
     if (!p.panel || card.classList.contains("is-open")) return;
+    cards.forEach(function (other) {
+      if (other !== card && other.classList.contains("is-open")) close(other);
+    });
     if (p.panel._closeTimer) {
       window.clearTimeout(p.panel._closeTimer);
       p.panel._closeTimer = null;
