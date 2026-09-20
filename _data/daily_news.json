@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T04:22:57+08:00",
+  "updated_at": "2026-09-21T05:23:01+08:00",
   "days": [
     {
       "date": "2026-09-21",
@@ -11,16 +11,10 @@
           "title_zh": "德国总理默茨称州选举对其政党来说是一场“灾难”，但誓言继续留任"
         },
         {
-          "title": "Germany's Merz vows to press ahead with reforms after historic state election defeat",
+          "title": "Defining global leadership in AI at Trump-Xi summit",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/20/g-s1-144211/germanys-merz-vows-to-press-ahead-with-reforms-after-historic-state-election-defeat",
-          "title_zh": "德国默茨誓言在历史性的州选举失败后继续推进改革"
-        },
-        {
-          "title": "The right to development: Why equity, not charity, is a human right",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168367",
-          "title_zh": "发展权：为什么平等而非慈善才是人权"
+          "url": "https://www.npr.org/2026/09/20/nx-s1-5973116/defining-global-leadership-in-ai-at-trump-xi-summit",
+          "title_zh": "特习峰会定义人工智能的全球领导地位"
         },
         {
           "title": "Largest attack on Moscow sees Ukraine fire hundreds of drones, mayor says",
@@ -29,16 +23,10 @@
           "title_zh": "市长称，乌克兰发射了数百架无人机，这是对莫斯科最大规模的袭击"
         },
         {
-          "title": "PHOTOS: The precarious life of fisherfolk",
+          "title": "Germany's Merz vows to press ahead with reforms after historic state election defeat",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/20/g-s1-143447/photos-fishermen-sea-india",
-          "title_zh": "照片：渔民不稳定的生活"
-        },
-        {
-          "title": "The race to build a pandemic-proof world",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168377",
-          "title_zh": "建立一个抵御大流行病的世界的竞赛"
+          "url": "https://www.npr.org/2026/09/20/g-s1-144211/germanys-merz-vows-to-press-ahead-with-reforms-after-historic-state-election-defeat",
+          "title_zh": "德国默茨誓言在历史性的州选举失败后继续推进改革"
         },
         {
           "title": "Ed Sheeran admits 'mistakes' at first show since Macklemore controversy",
@@ -47,16 +35,28 @@
           "title_zh": "艾德·希兰 (Ed Sheeran) 在麦克莫尔争议后的首秀中承认“错误"
         },
         {
+          "title": "PHOTOS: The precarious life of fisherfolk",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/20/g-s1-143447/photos-fishermen-sea-india",
+          "title_zh": "照片：渔民不稳定的生活"
+        },
+        {
+          "title": "Trump says triumphal arch will be military complex with drones and snipers",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqdj4pez00dzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普称凯旋门将成为配备无人机和狙击手的军事综合体"
+        },
+        {
           "title": "Ukraine fires over 1,000 drones at Russia, including hundreds launched at Moscow",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/20/nx-s1-5975372/ukraine-fires-drones-at-russia-moscow",
           "title_zh": "乌克兰向俄罗斯发射了1000多架无人机，其中数百架是在莫斯科发射的"
         },
         {
-          "title": "Why the UN General Assembly still matters",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168361",
-          "title_zh": "为什么联合国大会仍然重要"
+          "title": "Man, 82, dies after beach fight with 76-year-old over sunlounger in Greece",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqm27pnyd294o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "希腊82岁男子与76岁男子因躺椅发生海滩打斗身亡"
         }
       ]
     },
