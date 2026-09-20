@@ -1,53 +1,62 @@
 {
-  "updated_at": "2026-09-20T16:24:46+08:00",
+  "updated_at": "2026-09-20T17:23:39+08:00",
   "days": [
     {
       "date": "2026-09-20",
       "items": [
         {
-          "title": "Two killed in 'massive' Ukrainian drone attack on Moscow region, says Russia",
+          "title": "Two killed in 'massive' Ukrainian drone attack on Moscow region, Russia says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "俄罗斯称，乌克兰无人机对莫斯科地区发动“大规模”袭击，造成两人死亡"
         },
         {
           "title": "Saudi Arabia says Houthis tried to attack its capital",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/nx-s1-5974980/saudi-arabia-houthis-attempted-attack-capital"
+          "url": "https://www.npr.org/2026/09/19/nx-s1-5974980/saudi-arabia-houthis-attempted-attack-capital",
+          "title_zh": "沙特阿拉伯称胡塞武装试图袭击其首都"
         },
         {
           "title": "The race to build a pandemic-proof world",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168377"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168377",
+          "title_zh": "建立一个抵御大流行病的世界的竞赛"
         },
         {
           "title": "Ed Sheeran admits 'mistakes' at first show since Macklemore controversy",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm780ll1de18o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cm780ll1de18o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "艾德·希兰 (Ed Sheeran) 在麦克莫尔争议后的首秀中承认“错误"
         },
         {
           "title": "The new lines of southern Lebanon",
           "source": "NPR World",
-          "url": "https://www.npr.org/sections/the-picture-show/2026/09/19/g-s1-139752/the-new-lines-of-southern-lebanon"
+          "url": "https://www.npr.org/sections/the-picture-show/2026/09/19/g-s1-139752/the-new-lines-of-southern-lebanon",
+          "title_zh": "黎巴嫩南部新线"
         },
         {
           "title": "Why the UN General Assembly still matters",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168361"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168361",
+          "title_zh": "为什么联合国大会仍然重要"
         },
         {
           "title": "German elections under way which could decide fate of Chancellor Merz",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cme8xj6g2ny7o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cme8xj6g2ny7o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "德国大选正在进行，可能决定总理梅尔茨的命运"
         },
         {
           "title": "France, Poland and European allies warn of escalating Russian 'hybrid' attacks",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/nx-s1-5974215/france-poland-and-european-allies-warn-of-escalating-russian-hybrid-attacks"
+          "url": "https://www.npr.org/2026/09/19/nx-s1-5974215/france-poland-and-european-allies-warn-of-escalating-russian-hybrid-attacks",
+          "title_zh": "法国、波兰和欧洲盟友警告俄罗斯“混合”袭击升级"
         },
         {
           "title": "UN Crime Congress: Technology is transforming crime – and the response to it",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168370"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168370",
+          "title_zh": "联合国犯罪大会：技术正在改变犯罪行为及其应对措施"
         }
       ]
     },
