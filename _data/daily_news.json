@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-20T13:22:59+08:00",
+  "updated_at": "2026-09-20T14:28:23+08:00",
   "days": [
     {
       "date": "2026-09-20",
@@ -7,56 +7,48 @@
         {
           "title": "Ed Sheeran admits 'mistakes' as he addresses Macklemore controversy at Philadelphia show",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm780ll1de18o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "艾德·希兰在费城秀上解决麦克莫尔争议时承认“错误"
+          "url": "https://www.bbc.co.uk/news/articles/cm780ll1de18o?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Saudi Arabia says Houthis tried to attack its capital",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/nx-s1-5974980/saudi-arabia-houthis-attempted-attack-capital",
-          "title_zh": "沙特阿拉伯称胡塞武装试图袭击其首都"
+          "url": "https://www.npr.org/2026/09/19/nx-s1-5974980/saudi-arabia-houthis-attempted-attack-capital"
         },
         {
-          "title": "Houthis say they targeted Saudi capital with ballistic missiles",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "胡塞武装称他们用弹道导弹瞄准沙特首都"
-        },
-        {
-          "title": "The new lines of southern Lebanon",
-          "source": "NPR World",
-          "url": "https://www.npr.org/sections/the-picture-show/2026/09/19/g-s1-139752/the-new-lines-of-southern-lebanon",
-          "title_zh": "黎巴嫩南部新线"
+          "title": "The race to build a pandemic-proof world",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168377",
+          "title_zh": "建立一个抵御大流行病的世界的竞赛"
         },
         {
           "title": "Two killed in 'massive' Ukrainian drone attack on Moscow region, says Russia",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "俄罗斯称，乌克兰无人机对莫斯科地区发动“大规模”袭击，造成两人死亡"
+          "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "The new lines of southern Lebanon",
+          "source": "NPR World",
+          "url": "https://www.npr.org/sections/the-picture-show/2026/09/19/g-s1-139752/the-new-lines-of-southern-lebanon"
+        },
+        {
+          "title": "Why the UN General Assembly still matters",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168361"
+        },
+        {
+          "title": "Houthis say they targeted Saudi capital with ballistic missiles",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwly5d9v7r43o?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "France, Poland and European allies warn of escalating Russian 'hybrid' attacks",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/nx-s1-5974215/france-poland-and-european-allies-warn-of-escalating-russian-hybrid-attacks",
-          "title_zh": "法国、波兰和欧洲盟友警告俄罗斯“混合”袭击升级"
+          "url": "https://www.npr.org/2026/09/19/nx-s1-5974215/france-poland-and-european-allies-warn-of-escalating-russian-hybrid-attacks"
         },
         {
-          "title": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "北约欢迎格陵兰岛协议，特朗普称该协议将赋予美国“永久安全控制权"
-        },
-        {
-          "title": "Life in Kabul 5 years after the Taliban's return",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/19/nx-s1-5961263/life-in-kabul-5-years-after-the-talibans-return",
-          "title_zh": "塔利班回归五年后喀布尔的生活"
-        },
-        {
-          "title": "Our head teacher was an abuser. We joined forces to get justice - now we're married",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cg4d9vly636o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "我们的班主任是个施虐者。我们联手伸张正义——现在我们结婚了"
+          "title": "UN Crime Congress: Technology is transforming crime – and the response to it",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168370"
         }
       ]
     },
