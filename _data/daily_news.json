@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T01:21:36+08:00",
+  "updated_at": "2026-09-22T02:27:25+08:00",
   "days": [
     {
       "date": "2026-09-22",
@@ -17,6 +17,12 @@
           "title_zh": "世界领导人齐聚联合国大会。而且，特朗普表示华盛顿拱门将成为一个“军事综合体"
         },
         {
+          "title": "‘Nowhere is safe’: UN experts detail Ukraine war’s toll and Russia’s reach beyond its borders",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168386",
+          "title_zh": "没有地方是安全的”：联合国专家详细介绍了乌克兰战争造成的伤亡和俄罗斯的影响力超出其边界"
+        },
+        {
           "title": "CNN, MS NOW and Politico file lawsuit against Trump's White House ban",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cm0e32rwvrryo?at_medium=RSS&at_campaign=rss",
@@ -27,6 +33,12 @@
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/21/nx-s1-5974141/former-un-deputy-secretary-general-on-the-role-of-the-un-in-todays-biggest-conflicts",
           "title_zh": "联合国前副秘书长谈联合国在当今最大冲突中的作用"
+        },
+        {
+          "title": "‘We are not powerless’: UN chief urges world leaders to invest in peace",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168383",
+          "title_zh": "我们并非无能为力”：联合国秘书长敦促世界领导人投资于和平"
         },
         {
           "title": "Merz vows to keep coalition together for Germany's 'democratic future'",
@@ -41,22 +53,10 @@
           "title_zh": "世界领导人本周齐聚联合国，需要了解什么"
         },
         {
-          "title": "First UK charges brought over 1994 Rwanda genocide",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cr2092216nywo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "英国首次指控 1994 年卢旺达种族灭绝事件"
-        },
-        {
-          "title": "Germany's leader stands his ground after his party loses in state elections",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/21/g-s1-144231/germany-state-elections-merz",
-          "title_zh": "德国领导人在其政党在州选举中失利后坚持自己的立场"
-        },
-        {
-          "title": "Millions urged to evacuate as powerful Typhoon Dujuan hits Japan",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm3wj2lexl97o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "强台风“杜鹃”袭击日本，数百万人敦促撤离"
+          "title": "Why climate action now comes down to speed, finance and cooperation",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168382",
+          "title_zh": "为什么气候行动现在归结为速度、资金和合作"
         }
       ]
     },
