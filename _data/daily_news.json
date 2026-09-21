@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T13:24:41+08:00",
+  "updated_at": "2026-09-21T14:32:26+08:00",
   "days": [
     {
       "date": "2026-09-21",
@@ -17,12 +17,6 @@
           "title_zh": "坦桑尼亚野生动物保护区十头狮子疑似中毒身亡"
         },
         {
-          "title": "The right to development: Why equity, not charity, is a human right",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168367",
-          "title_zh": "发展权：为什么平等而非慈善才是人权"
-        },
-        {
           "title": "Largest attack on Moscow sees Ukraine fire hundreds of drones, mayor says",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c34gdjk1ne8yo?at_medium=RSS&at_campaign=rss",
@@ -33,12 +27,6 @@
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/20/nx-s1-5973116/defining-global-leadership-in-ai-at-trump-xi-summit",
           "title_zh": "特习峰会定义人工智能的全球领导地位"
-        },
-        {
-          "title": "The race to build a pandemic-proof world",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168377",
-          "title_zh": "建立一个抵御大流行病的世界的竞赛"
         },
         {
           "title": "Ed Sheeran admits 'mistakes' at first show since Macklemore controversy",
@@ -53,10 +41,22 @@
           "title_zh": "德国默茨誓言在历史性的州选举失败后继续推进改革"
         },
         {
-          "title": "Why the UN General Assembly still matters",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168361",
-          "title_zh": "为什么联合国大会仍然重要"
+          "title": "Trump says triumphal arch will be military complex with drones and snipers",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqdj4pez00dzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普称凯旋门将成为配备无人机和狙击手的军事综合体"
+        },
+        {
+          "title": "PHOTOS: The precarious life of fisherfolk",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/20/g-s1-143447/photos-fishermen-sea-india",
+          "title_zh": "照片：渔民不稳定的生活"
+        },
+        {
+          "title": "Man, 82, dies after beach fight with 76-year-old over sunlounger in Greece",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqm27pnyd294o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "希腊82岁男子与76岁男子因躺椅发生海滩打斗身亡"
         }
       ]
     },
