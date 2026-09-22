@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T04:23:44+08:00",
+  "updated_at": "2026-09-23T05:22:58+08:00",
   "days": [
     {
       "date": "2026-09-23",
@@ -17,16 +17,10 @@
           "title_zh": "斯里兰卡法院对 2019 年复活节爆炸事件中的 15 人定罪"
         },
         {
-          "title": "Qatar: Absence of a regional collective security system is fuelling crisis in the Gulf",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168400",
-          "title_zh": "卡塔尔：缺乏区域集体安全体系正在加剧海湾危机"
-        },
-        {
-          "title": "Sri Lanka court convicts 15 men over deadly Easter Sunday bombings",
+          "title": "How Ceuta, football and Israel are shaping Morocco's election",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqy7z275yx65o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "斯里兰卡法院判处 15 名复活节周日爆炸案男子有罪"
+          "url": "https://www.bbc.co.uk/news/articles/c8r4v7n6py97o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "休达、足球和以色列如何影响摩洛哥的选举"
         },
         {
           "title": "CNN, MS NOW and Politico sue Trump. And, Paramount settles in massive merger lawsuit",
@@ -35,16 +29,10 @@
           "title_zh": "CNN、MS NOW 和 Politico 起诉特朗普。并且，派拉蒙在大规模合并诉讼中达成和解"
         },
         {
-          "title": "UN rendered unable to fulfil its mission, Turkish President laments before world leaders",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168399",
-          "title_zh": "土耳其总统在世界领导人面前哀叹联合国无法履行其使命"
-        },
-        {
-          "title": "Developing El Niño becomes strongest on record weeks before expected peak",
+          "title": "Sri Lanka court convicts 15 men over deadly Easter Sunday bombings",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/weather/articles/cmvgy4nv9d62o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "发展中的厄尔尼诺现象在预期峰值前几周达到创纪录的最强"
+          "url": "https://www.bbc.co.uk/news/articles/cqy7z275yx65o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "斯里兰卡法院判处 15 名复活节周日爆炸案男子有罪"
         },
         {
           "title": "Houthis try to push deeper into western Yemen, upending life, witnesses tell NPR",
@@ -53,10 +41,22 @@
           "title_zh": "目击者告诉美国国家公共广播电台，胡塞武装试图深入也门西部，颠覆人们的生活"
         },
         {
-          "title": "Trump defends military action against Iran, Venezuela, and calls for rebrand of AI",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168397",
-          "title_zh": "特朗普为针对伊朗、委内瑞拉的军事行动辩护，并呼吁重塑人工智能品牌"
+          "title": "Developing El Niño becomes strongest on record weeks before expected peak",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/weather/articles/cmvgy4nv9d62o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "发展中的厄尔尼诺现象在预期峰值前几周达到创纪录的最强"
+        },
+        {
+          "title": "A journalist once barred from the White House says this media ban is different",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/22/nx-s1-5976755/jim-acosta-white-house-media-ban",
+          "title_zh": "一名曾被禁止进入白宫的记者表示，这次媒体禁令是不同的"
+        },
+        {
+          "title": "Ukraine anger as EU removes Russian oligarchs from sanctions list",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6dj4k98107do?at_medium=RSS&at_campaign=rss",
+          "title_zh": "欧盟将俄罗斯寡头从制裁名单中删除，乌克兰愤怒"
         }
       ]
     },
