@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T00:25:43+08:00",
+  "updated_at": "2026-09-23T01:23:41+08:00",
   "days": [
     {
       "date": "2026-09-23",
@@ -17,28 +17,10 @@
           "title_zh": "斯里兰卡法院对 2019 年复活节爆炸事件中的 15 人定罪"
         },
         {
-          "title": "Time to accept ‘hard truths’ so trust can be rebuilt: General Assembly president",
+          "title": "Trump defends military action against Iran, Venezuela, and calls for rebrand of AI",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168394",
-          "title_zh": "是时候接受“残酷的事实”以便重建信任：大会主席"
-        },
-        {
-          "title": "Lithuania ready to 'fight back' but has evacuation plans in face of Russia threats, PM tells BBC",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck5yw8npxzrlo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "立陶宛总理告诉BBC，立陶宛已准备好“反击”，但面对俄罗斯威胁已有撤离计划"
-        },
-        {
-          "title": "CNN, MS NOW and Politico sue Trump. And, Paramount settles in massive merger lawsuit",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/22/g-s1-144512/up-first-newsletter-press-lawsuit-cnn-msnow-politico-unga-trump-speech-paramount-deal",
-          "title_zh": "CNN、MS NOW 和 Politico 起诉特朗普。并且，派拉蒙在大规模合并诉讼中达成和解"
-        },
-        {
-          "title": "Guterres: ‘Cracks have become canyons’ as world faces four tests of power",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168392",
-          "title_zh": "古特雷斯：“裂缝已成为峡谷”，世界面临四次权力考验"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168397",
+          "title_zh": "特朗普为针对伊朗、委内瑞拉的军事行动辩护，并呼吁重塑人工智能品牌"
         },
         {
           "title": "Developing El Niño becomes strongest on record weeks before expected peak",
@@ -47,16 +29,34 @@
           "title_zh": "发展中的厄尔尼诺现象在预期峰值前几周达到创纪录的最强"
         },
         {
+          "title": "CNN, MS NOW and Politico sue Trump. And, Paramount settles in massive merger lawsuit",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/22/g-s1-144512/up-first-newsletter-press-lawsuit-cnn-msnow-politico-unga-trump-speech-paramount-deal",
+          "title_zh": "CNN、MS NOW 和 Politico 起诉特朗普。并且，派拉蒙在大规模合并诉讼中达成和解"
+        },
+        {
+          "title": "Diplomacy is the way to address global challenges, Brazil tells General Assembly",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168395",
+          "title_zh": "巴西告诉大会，外交是应对全球挑战的途径"
+        },
+        {
+          "title": "Eleven injured in shooting outside Turkish school",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6y0z4gv0le4o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "土耳其学校外发生枪击事件 11人受伤"
+        },
+        {
           "title": "Houthis try to push deeper into western Yemen, upending life, witnesses tell NPR",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/22/g-s1-144261/yemen-houthis-saudi-iran-humanitarian-crisis",
           "title_zh": "目击者告诉美国国家公共广播电台，胡塞武装试图深入也门西部，颠覆人们的生活"
         },
         {
-          "title": "Millions of children return to schools that still can’t provide clean water or a working toilet",
+          "title": "Time to accept ‘hard truths’ so trust can be rebuilt: General Assembly president",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168393",
-          "title_zh": "数百万儿童重返学校，但学校仍无法提供干净的水或可用的厕所"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168394",
+          "title_zh": "是时候接受“残酷的事实”以便重建信任：大会主席"
         }
       ]
     },
