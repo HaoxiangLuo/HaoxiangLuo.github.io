@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T17:24:15+08:00",
+  "updated_at": "2026-09-22T18:25:56+08:00",
   "days": [
     {
       "date": "2026-09-22",
@@ -17,12 +17,6 @@
           "title_zh": "经历了艰难的一周后，特朗普前往联合国寻求胜利"
         },
         {
-          "title": "In Tanzania, the sea is moving inland – and taking livelihoods with it",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168389",
-          "title_zh": "在坦桑尼亚，海洋正在向内陆移动——并带走了人们的生计"
-        },
-        {
           "title": "Lithuania ready to 'fight back' but has evacuation plans in face of Russia threats, PM tells BBC",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/ck5yw8npxzrlo?at_medium=RSS&at_campaign=rss",
@@ -33,12 +27,6 @@
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/22/nx-s1-5975528/leaders-set-ambitious-goals-to-better-the-world-by-2030-theyve-made-little-progress",
           "title_zh": "领导人制定了到 2030 年让世界变得更美好的雄心勃勃的目标，但进展甚微"
-        },
-        {
-          "title": "UN condemns attempted Houthi strike on Riyadh as Yemen displacement surges past 130,000",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168387",
-          "title_zh": "也门流离失所者激增超过13万人，联合国谴责胡塞武装袭击利雅得的企图"
         },
         {
           "title": "Iran must stop arming Houthis in Yemen, G7 says ahead of UN General Assembly",
@@ -53,10 +41,22 @@
           "title_zh": "政治学家探讨特朗普在联大与世界​​领导人讲话时面临的利害关系"
         },
         {
-          "title": "‘Nowhere is safe’: UN experts detail Ukraine war’s toll and Russia’s reach beyond its borders",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168386",
-          "title_zh": "没有地方是安全的”：联合国专家详细介绍了乌克兰战争造成的伤亡和俄罗斯的影响力超出其边界"
+          "title": "Eleven injured in shooting outside Turkish school",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6y0z4gv0le4o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "土耳其学校外发生枪击事件 11人受伤"
+        },
+        {
+          "title": "New book by Princess Diana's brother prompts war of words with King Charles III",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/22/g-s1-144505/princess-diana-brother-book",
+          "title_zh": "戴安娜王妃弟弟的新书引发与国王查理三世的口水战"
+        },
+        {
+          "title": "Sri Lankan court to deliver verdict on deadly Easter bombings",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw8r687nedzgo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "斯里兰卡法院将对致命复活节爆炸案作出判决"
         }
       ]
     },
