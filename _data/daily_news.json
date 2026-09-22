@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T19:24:16+08:00",
+  "updated_at": "2026-09-22T20:29:37+08:00",
   "days": [
     {
       "date": "2026-09-22",
@@ -17,6 +17,12 @@
           "title_zh": "CNN、MS NOW 和 Politico 起诉特朗普。并且，派拉蒙在大规模合并诉讼中达成和解"
         },
         {
+          "title": "Displacement on the rise in Yemen as fighting continues",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168390",
+          "title_zh": "随着战斗的继续，也门的流离失所者不断增加"
+        },
+        {
           "title": "Lithuania ready to 'fight back' but has evacuation plans in face of Russia threats, PM tells BBC",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/ck5yw8npxzrlo?at_medium=RSS&at_campaign=rss",
@@ -27,6 +33,12 @@
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/22/g-s1-144261/yemen-houthis-saudi-iran-humanitarian-crisis",
           "title_zh": "目击者告诉美国国家公共广播电台，胡塞武装试图深入也门西部，颠覆人们的生活"
+        },
+        {
+          "title": "In Tanzania, the sea is moving inland – and taking livelihoods with it",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168389",
+          "title_zh": "在坦桑尼亚，海洋正在向内陆移动——并带走了人们的生计"
         },
         {
           "title": "Iran must stop arming Houthis in Yemen, G7 says ahead of UN General Assembly",
@@ -41,22 +53,10 @@
           "title_zh": "经历了艰难的一周后，特朗普前往联合国寻求胜利"
         },
         {
-          "title": "Eleven injured in shooting outside Turkish school",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6y0z4gv0le4o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "土耳其学校外发生枪击事件 11人受伤"
-        },
-        {
-          "title": "Leaders set ambitious goals to better the world by 2030. They've made little progress",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/22/nx-s1-5975528/leaders-set-ambitious-goals-to-better-the-world-by-2030-theyve-made-little-progress",
-          "title_zh": "领导人制定了到 2030 年让世界变得更美好的雄心勃勃的目标，但进展甚微"
-        },
-        {
-          "title": "Sri Lankan court to deliver verdict on deadly Easter bombings",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw8r687nedzgo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "斯里兰卡法院将对致命复活节爆炸案作出判决"
+          "title": "UN condemns attempted Houthi strike on Riyadh as Yemen displacement surges past 130,000",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168387",
+          "title_zh": "也门流离失所者激增超过13万人，联合国谴责胡塞武装袭击利雅得的企图"
         }
       ]
     },
