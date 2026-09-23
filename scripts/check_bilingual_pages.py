@@ -14,6 +14,7 @@ PAIRS = (
     ("_pages/year-archive.html", "_pages/study-notes-zh.html", "/study-notes/", "/zh/study-notes/"),
     ("_pages/site-log.html", "_pages/site-log-zh.html", "/site-log/", "/zh/site-log/"),
     ("_pages/daily-news.html", "_pages/daily-news-zh.html", "/daily-news/", "/zh/daily-news/"),
+    ("_pages/opportunities.html", "_pages/opportunities-zh.html", "/opportunities/", "/zh/opportunities/"),
 )
 
 

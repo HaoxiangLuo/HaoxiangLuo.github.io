@@ -1,0 +1,57 @@
+---
+layout: archive
+permalink: /zh/opportunities/
+title: "资讯"
+author_profile: false
+lang: zh
+translation_url: /opportunities/
+---
+
+<p class="daily-news-intro">每天自动从官方渠道收录联合国与知名外企的实习信息，以及 QS 前 50 高校新闻传播院系发布的博士交换、访学、联合培养项目资讯。两个板块按日期留存，未搜集到新信息时不更新。</p>
+
+{% assign opps = site.data.opportunities %}
+{% include archive-date-filter.html %}
+
+<div class="opps-archive">
+  <section class="opps-section" aria-labelledby="opps-intern-title">
+    <h2 id="opps-intern-title" class="opps-section__title">实习资讯</h2>
+    <div class="daily-news-archive">
+      {% if opps.internships.size > 0 %}
+        {% for day in opps.internships %}
+          <article class="daily-news-day" data-filter-date="{{ day.date }}">
+            <header><time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time><span>新增 {{ day.items.size }} 条</span></header>
+            <ol>
+              {% for item in day.items %}
+                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}{% if item.detail %} <em>· {{ item.detail | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+              {% endfor %}
+            </ol>
+          </article>
+        {% endfor %}
+      {% else %}
+        <p class="daily-news-empty">自动任务运行后，第一批实习信息将显示在这里。</p>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="opps-section" aria-labelledby="opps-academia-title">
+    <h2 id="opps-academia-title" class="opps-section__title">院校资讯</h2>
+    <div class="daily-news-archive">
+      {% if opps.academia.size > 0 %}
+        {% for day in opps.academia %}
+          <article class="daily-news-day" data-filter-date="{{ day.date }}">
+            <header><time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time><span>新增 {{ day.items.size }} 条</span></header>
+            <ol>
+              {% for item in day.items %}
+                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+              {% endfor %}
+            </ol>
+          </article>
+        {% endfor %}
+      {% else %}
+        <p class="daily-news-empty">自动任务运行后，第一批院校项目资讯将显示在这里。</p>
+      {% endif %}
+    </div>
+  </section>
+</div>
+
+<p class="daily-news-note">条目由机器自动从各机构官方招聘页与院系官网收录，标题保留来源语言原文；截止日期、申请资格等细节以官方公告为准。标题与链接归原发布机构所有；收录不代表本站赞同其观点。</p>

@@ -54,7 +54,8 @@
 
 body.inner-page:has(.notes-grid) #main,
 body.inner-page:has(.site-timeline) #main,
-body.inner-page:has(.daily-news-archive) #main {
+body.inner-page:has(.daily-news-archive) #main,
+body.inner-page:has(.opps-archive) #main {
   max-width: 1280px;
   padding-top: clamp(1.25rem, 2.5vw, 2rem);
   padding-bottom: clamp(2rem, 4vw, 4rem);
@@ -70,7 +71,8 @@ body.inner-page:has(.daily-news-archive) .archive {
 
 body.inner-page:has(.notes-grid) .page__title,
 body.inner-page:has(.site-timeline) .page__title,
-body.inner-page:has(.daily-news-archive) .page__title {
+body.inner-page:has(.daily-news-archive) .page__title,
+body.inner-page:has(.opps-archive) .page__title {
   margin: 0 0 0.85rem;
   font-size: clamp(2.8rem, 5vw, 4.35rem);
   line-height: 0.98;
@@ -250,6 +252,27 @@ body.home-page .page__content .news-window h2 {
 .daily-news-day small b { color: #0071e3; font-weight: 600; }
 .daily-news-note, .daily-news-empty { color: #86868b; font-size: 0.68rem; }
 .daily-news-note { margin-top: 1.25rem; }
+
+/* Opportunities page (internships + academic exchange). */
+.opps-archive { display: grid; gap: 2.4rem; }
+.opps-section { display: grid; gap: 1rem; }
+.opps-section__title {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.4vw, 1.95rem);
+  font-weight: 720;
+  letter-spacing: -0.03em;
+  color: #1d1d1f;
+}
+.opps-section__title::after {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 2px;
+  margin-top: 0.45rem;
+  border-radius: 2px;
+  background: #0071e3;
+}
+.opps-section .daily-news-day em { font-style: normal; color: #6e6e73; }
 
 /* Date filters shared by the two generated archives. */
 .archive-date-filter {
@@ -901,7 +924,8 @@ body.home-page .page__content .news-window h2 {
 
   .news-window__list small { white-space: normal; }
 
-  body.inner-page:has(.daily-news-archive) .archive {
+  body.inner-page:has(.daily-news-archive) .archive,
+  body.inner-page:has(.opps-archive) .archive {
     padding: 1.5rem 1rem;
     border-radius: 20px;
   }

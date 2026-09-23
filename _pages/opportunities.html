@@ -1,0 +1,57 @@
+---
+layout: archive
+permalink: /opportunities/
+title: "Opportunities"
+author_profile: false
+lang: en
+translation_url: /zh/opportunities/
+---
+
+<p class="daily-news-intro">A daily-updated record of internships at the United Nations and leading global companies, together with PhD exchange, visiting and joint-training opportunities announced by journalism and communication departments at QS top-50 universities. Sections are collected automatically from official sources; entries stay in the archive below.</p>
+
+{% assign opps = site.data.opportunities %}
+{% include archive-date-filter.html %}
+
+<div class="opps-archive">
+  <section class="opps-section" aria-labelledby="opps-intern-title">
+    <h2 id="opps-intern-title" class="opps-section__title">Internships</h2>
+    <div class="daily-news-archive">
+      {% if opps.internships.size > 0 %}
+        {% for day in opps.internships %}
+          <article class="daily-news-day" data-filter-date="{{ day.date }}">
+            <header><time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time><span>{{ day.items.size }} new</span></header>
+            <ol>
+              {% for item in day.items %}
+                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}{% if item.detail %} <em>· {{ item.detail | escape }}</em>{% endif %}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+              {% endfor %}
+            </ol>
+          </article>
+        {% endfor %}
+      {% else %}
+        <p class="daily-news-empty">The first batch of internships will appear after the automated collection task runs.</p>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="opps-section" aria-labelledby="opps-academia-title">
+    <h2 id="opps-academia-title" class="opps-section__title">Academic Exchange &amp; Visiting Programmes</h2>
+    <div class="daily-news-archive">
+      {% if opps.academia.size > 0 %}
+        {% for day in opps.academia %}
+          <article class="daily-news-day" data-filter-date="{{ day.date }}">
+            <header><time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time><span>{{ day.items.size }} new</span></header>
+            <ol>
+              {% for item in day.items %}
+                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+              {% endfor %}
+            </ol>
+          </article>
+        {% endfor %}
+      {% else %}
+        <p class="daily-news-empty">The first batch of academic opportunities will appear after the automated collection task runs.</p>
+      {% endif %}
+    </div>
+  </section>
+</div>
+
+<p class="daily-news-note">Entries are indexed automatically from the official career pages and department sites of the listed organisations. Titles and links belong to the original publishers; details such as deadlines and eligibility are subject to the official announcements. Inclusion does not imply endorsement.</p>

@@ -44,7 +44,8 @@
 3. Study Notes／学习札记
 4. Site Log／网站日志
 5. Daily News／每日新闻
-6. 中／EN 分段式语言切换
+6. Opportunities／资讯
+7. 中／EN 分段式语言切换
 
 语言切换必须进入当前页面对应的译文。每组双语页面通过 Front Matter 中的 `lang` 和 `translation_url` 对应。
 
@@ -170,6 +171,20 @@
 - 工作区无测试缓存、临时文件或私人简历。
 - 明确告知用户是否仍需点击 `Push origin`。
 
-## 13. 当前迁移注意事项
+## 13. 资讯页自动化
+
+- 数据文件：`_data/opportunities.json`
+- 抓取脚本：`scripts/fetch_opportunities.py`
+- 自动任务：`.github/workflows/opportunities.yml`
+- 页面：`_pages/opportunities.html`、`_pages/opportunities-zh.html`
+
+任务每天从官方信息源收集两个板块，按上海时区日期去重后追加保存，最多保留 180 天：
+
+1. 实习资讯：联合国（UNICEF、UN Women）与知名外企（Amazon、Airbnb、Stripe、Anthropic、Cloudflare）的官方招聘接口，仅保留标题含 "intern" 的职位。
+2. 院校资讯：QS 前 50 高校新闻传播院系官方页面（牛津 RISJ、剑桥 POLIS、哈佛 Shorenstein、NYU、斯坦福、USC Annenberg、香港大学 JMSC、威斯康星麦迪逊、南洋理工 WKWSCI），提取含 visiting、exchange、joint、fellowship、studentship 等关键词的条目。
+
+某天没有新信息时，脚本不修改数据文件，工作流检测到无差异即跳过提交。已收录的条目按 URL 去重，不会重复出现。新增信息源时编辑脚本顶部的 `INTERN_SOURCES` / `ACADEMIA_SOURCES` 列表即可。
+
+## 14. 当前迁移注意事项
 
 换电脑前必须确保旧电脑上的本地提交全部推送。只有出现在 GitHub 仓库中的内容，才能在新电脑克隆后完整恢复。Codex 对话记录不会随仓库迁移，但本文件和 `AGENTS.md` 已保存足够的项目背景。
