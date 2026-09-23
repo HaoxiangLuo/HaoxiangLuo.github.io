@@ -1,6 +1,6 @@
 /* Publication grid and Study Notes components. Loaded last to avoid legacy overrides. */
 .greedy-nav .visible-links {
-  max-width: 840px;
+  max-width: 100%;
 }
 
 .language-toggle__control {
@@ -769,6 +769,7 @@ body.home-page .page__content .news-window h2 {
     min-width: 0;
     gap: 0.08rem;
     align-items: center;
+    justify-content: center;
   }
 
   body .greedy-nav .visible-links > li {

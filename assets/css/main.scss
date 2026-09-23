@@ -436,13 +436,14 @@ body {
 
 /* Always-visible navigation and editorial publication cards. */
 .greedy-nav .visible-links {
-  max-width: 720px;
+  max-width: 100%;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .greedy-nav .visible-links > li {
   display: block !important;
-  flex: 1 1 0;
+  flex: 0 0 auto;
   text-align: center;
 }
 
@@ -974,11 +975,12 @@ body.home-page .sidebar .author__urls a:hover {
 .greedy-nav .visible-links {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  justify-content: center;
+  gap: clamp(0.15rem, 1.1vw, 1.1rem);
 }
 
 .greedy-nav .visible-links .tail {
-  margin-left: auto;
+  margin-left: 0;
 }
 
 .greedy-nav a {
@@ -1306,7 +1308,7 @@ body {
 }
 
 .masthead__inner-wrap {
-  max-width: 1024px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 1.25rem;
 }
@@ -1317,9 +1319,9 @@ body {
 }
 
 .greedy-nav .visible-links {
-  justify-content: space-between;
+  justify-content: center;
   min-height: 48px;
-  gap: clamp(0.5rem, 3vw, 3rem);
+  gap: clamp(0.15rem, 1.1vw, 1.1rem);
 }
 
 .masthead__menu-item,
@@ -1329,7 +1331,7 @@ body {
 }
 
 .greedy-nav a {
-  padding: 0.55rem 0.7rem;
+  padding: 0.55rem 0.85rem;
   font-size: 0.82rem;
   font-weight: 450;
   letter-spacing: -0.01em;
@@ -1341,7 +1343,7 @@ body {
 }
 
 .language-toggle {
-  margin-left: 0;
+  margin-left: 0.4rem;
 }
 
 .language-toggle a {
@@ -1367,5 +1369,9 @@ body {
   .greedy-nav a {
     padding: 0.5rem 0.45rem;
     font-size: 0.76rem;
+  }
+
+  .language-toggle {
+    margin-left: 0;
   }
 }
