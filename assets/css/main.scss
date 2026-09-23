@@ -1298,32 +1298,37 @@ body {
    PRIMARY NAVIGATION
    ==========================================================================
 
-   One authority for the whole nav bar. Everything the theme does to
-   .visible-links is replaced here rather than patched over, because the theme
-   uses `display: table` with table-cell columns and every later override of
-   that layout had to fight the table sizing.
+   One authority for the whole nav bar. The theme lays `.visible-links` out
+   as a table, so any override of its sizing has to fight table-cell widths;
+   this block replaces the layout outright rather than patching it.
 
-   Layout model
-   ------------
-   The row holds six menu items followed by the language pill. The six items
-   share the full width equally (flex: 1 1 0) and each label is centred inside
-   its own share, so the menu block always spans the container and therefore
-   its centre is the container's centre. The pill is positioned separately
-   (position: absolute, right) so it never takes space away from the menu and
-   never shifts the menu's centre.
+   The model
+   ---------
+   The six menu items are sized by their own labels and centred as a group.
+   The language pill is taken out of the flow (position: absolute; right: 0)
+   so it contributes no width to that group. That is the crux: a row that is
+   centred while still containing the pill centres the *pair*, which leaves
+   the menu half a pill off the axis.
 
-   Why the old approach kept failing
-   ---------------------------------
-   Previous revisions centred the whole row, then tried to cancel the pill's
-   extra width with a spacer of the same size. That can never work: the spacer
-   is itself part of the row, so widening it moves both centres together and
-   the offset between them stays. The menu block only looks centred when it
-   spans the container on its own terms - which is what flex: 1 1 0 gives. */
+   Why labels are content sized, not equal shares
+   ----------------------------------------------
+   Equal shares (flex: 1 1 0) give every label the same width, so the widest
+   one sets the requirement and the narrow ones waste the difference. Worse,
+   the share is capped by the widest label: wherever one sixth of the row is
+   narrower than "Opportunities" plus its padding, that single label is the
+   first thing clipped - and it fails in a band of widths in the *middle* of
+   the range, not at the narrow end, so it is easy to miss. Content sizing
+   removes both problems.
+
+   Consequence worth keeping in mind: with content sizing the group's width
+   is the SUM of the labels, so the fit check is a sum. Under equal shares
+   the binding constraint is the widest label alone. Checking the wrong one
+   is how a clipped label gets past verification. */
 
 :root {
-  --nav-pill-w: 4.6rem;         /* language pill outer width */
-  --nav-side: clamp(0.6rem, 1.4vw, 1.05rem);   /* link horizontal padding */
-  --nav-pill-reserve: calc(var(--nav-pill-w) + var(--nav-side) + 0.5rem);
+  --nav-pill-w: 4.6rem;                        /* language pill outer width */
+  --nav-side: clamp(0.5rem, 1.1vw, 1rem);      /* link horizontal padding */
+  --nav-gap: clamp(0.55rem, 1.1vw, 1.1rem);    /* space between labels */
 }
 
 .masthead__inner-wrap {
@@ -1337,40 +1342,40 @@ body {
   width: 100%;
 }
 
-/* The row is the positioning context for the pill. */
+/* The row centres the menu group and is the positioning context for the
+   pill. `justify-content: center` acts on in-flow items only, and the pill
+   is out of flow, so the group is centred on its own terms. */
 .greedy-nav .visible-links {
   position: relative;
   display: flex !important;
   align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
   list-style: none;
   min-height: 48px;
-  gap: clamp(0.15rem, 0.6vw, 0.5rem);
+  gap: var(--nav-gap);
 }
 
-/* Six equal shares. `min-width: 0` lets a share shrink below its label's
-   natural width instead of forcing the row to overflow on narrow screens. */
+/* Sized by its own label. Nothing here clips: no overflow, no ellipsis, and
+   no zero minimum that could squeeze a long label. */
 .greedy-nav .visible-links > li {
   display: block !important;
-  flex: 1 1 0;
-  min-width: 0;
+  flex: 0 0 auto;
   text-align: center;
 }
 
 .greedy-nav .visible-links > li > a {
   display: block;
-  width: 100%;
   padding: 0.55rem var(--nav-side);
   font-size: 0.82rem;
   font-weight: 450;
   letter-spacing: -0.01em;
   text-align: center;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   border-radius: 999px;
 }
 
@@ -1378,28 +1383,15 @@ body {
   font-weight: 600;
 }
 
-/* The pill lives outside the equal-share flow. The row reserves the pill's
-   strip on BOTH sides rather than just the right: reserving it only on the
-   right would squeeze the menu leftwards by half a pill (measured 49px at
-   1280px), which is the same kind of offset as the original problem, just in
-   the other direction. Reserving symmetrically keeps the menu block's centre
-   exactly on the container axis, while the pill itself sits in the right-hand
-   strip. */
+/* Out of the flow, pinned to the right end of the row. Because it takes no
+   space in the flex line, the centred menu stays on the container axis. */
 .greedy-nav .visible-links > li.language-toggle {
   position: absolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  flex: 0 0 auto;
   width: var(--nav-pill-w);
   margin: 0;
-}
-
-.greedy-nav .visible-links {
-  padding-right: 0;
-  padding-left: 0;
-  border-right: var(--nav-pill-reserve) solid transparent;
-  border-left: var(--nav-pill-reserve) solid transparent;
 }
 
 .language-toggle,
@@ -1471,55 +1463,75 @@ body {
   margin-left: 0;
 }
 
-/* Narrower than a tablet the six shares get tight, so reserve less room and
-   use slightly smaller labels. The reserve shrinks before the labels do:
-   the pill is a fixed target and does not need the full gutter beside it. */
-@media (max-width: 980px) {
+/* Tighten the gaps and the labels before the centred group could reach the
+   pill. The group is only ~760px wide at 1280px, so this has plenty of
+   headroom; the tiers exist for the narrow end. */
+@media (max-width: 1040px) {
   :root {
-    --nav-side: 0.5rem;
-    --nav-pill-reserve: calc(var(--nav-pill-w) + var(--nav-side) + 0.35rem);
+    --nav-side: clamp(0.45rem, 1vw, 0.85rem);
+    --nav-gap: clamp(0.5rem, 1vw, 0.95rem);
   }
 
   .greedy-nav .visible-links > li > a {
-    font-size: 0.78rem;
+    font-size: 0.8rem;
   }
 }
 
-/* 860-980px is the last band where six equal shares can still hold the widest
-   English label ("Opportunities") beside the pill. Measured: the row needs
-   535px of label ink, and at 860px the usable width is 560px - a 25px margin.
-   Below that the measured requirement exceeds the row, so the pill drops out
-   of the right-hand strip and flows inline instead of squeezing the labels. */
-@media (max-width: 860px) {
-  :root {
-    --nav-pill-reserve: calc(var(--nav-pill-w) + 0.35rem);
-  }
-
+@media (max-width: 900px) {
   .greedy-nav .visible-links > li > a {
     font-size: 0.76rem;
   }
 }
 
-/* Phone widths: the same two-row model as above, just tighter. The nav is
-   deliberately always-visible (see the note beside `.greedy-nav > button`),
-   so the burger stays off and the labels shrink instead. */
-@media (max-width: 600px) {
+/* Below the width at which a centred single row would run into the pill, the
+   items wrap into two rows of three and the pill takes a row of its own.
+   Giving the pill `flex-basis: 100%` keeps every row an even three, instead
+   of letting six items and the pill pile into ragged rows of mixed counts. */
+@media (max-width: 820px) {
   .masthead__inner-wrap {
-    padding: 0 0.4rem;
+    padding: 0 0.6rem;
   }
 
   .greedy-nav .visible-links {
-    column-gap: 0.1rem;
-    row-gap: 0.2rem;
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+    column-gap: 0.2rem;
   }
 
+  .greedy-nav .visible-links > li {
+    flex: 0 1 calc((100% - 0.4rem) / 3);
+  }
+
+  .greedy-nav .visible-links > li > a {
+    padding: 0.45rem 0.3rem;
+    font-size: 0.76rem;
+    letter-spacing: 0;
+  }
+
+  .greedy-nav .visible-links > li.language-toggle {
+    position: static;
+    transform: none;
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0.3rem 0 0.15rem;
+  }
+
+  .language-toggle__control {
+    width: 4.6rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
   .greedy-nav .visible-links > li {
     flex: 0 1 calc((100% - 0.2rem) / 3);
   }
 
   .greedy-nav .visible-links > li > a {
     padding: 0.4rem 0.2rem;
-    font-size: 0.68rem;
+    font-size: 0.7rem;
   }
 
   .language-toggle__control {
@@ -1530,65 +1542,5 @@ body {
     min-height: 1.4rem;
     padding: 0 0.15rem;
     font-size: 0.56rem;
-  }
-}
-
-/* Below ~860px the six equal shares can no longer hold the widest English
-   label next to the pill, so the pill drops out of the right-hand strip and
-   flows inline with the labels. */
-@media (max-width: 859px) {
-  .masthead__inner-wrap {
-    padding: 0 0.6rem;
-  }
-
-  /* Two rows of three. A 30% basis with no column gap left the extra 10% to
-     be shared out by flex-grow, which read as uneven gaps; three per row is
-     what the percentages were really expressing, so say it directly and keep
-     a real gap between columns. */
-  .greedy-nav .visible-links {
-    flex-wrap: wrap;
-    border-right: 0;
-    border-left: 0;
-    row-gap: 0.3rem;
-    column-gap: 0.2rem;
-  }
-
-  .greedy-nav .visible-links > li {
-    flex: 0 1 calc((100% - 0.4rem) / 3);
-    min-width: 0;
-  }
-
-  /* The pill keeps a row to itself so it can never unbalance a row of
-     labels. */
-  .greedy-nav .visible-links > li.language-toggle {
-    position: static;
-    transform: none;
-    flex: 0 0 100%;
-    width: 100%;
-    margin: 0.3rem 0 0.15rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  .greedy-nav .visible-links > li > a {
-    padding: 0.45rem 0.3rem;
-    font-size: 0.76rem;
-    letter-spacing: 0;
-  }
-
-  .language-toggle,
-  .language-toggle__control {
-    justify-content: center;
-  }
-
-  .language-toggle__control {
-    width: 4.6rem;
-    margin: 0 auto;
-  }
-
-  .language-toggle__control > .language-toggle__option {
-    min-height: 1.55rem;
-    padding: 0 0.25rem;
-    font-size: 0.62rem;
   }
 }
