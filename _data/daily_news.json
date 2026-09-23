@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T04:25:23+08:00",
+  "updated_at": "2026-09-24T05:24:21+08:00",
   "days": [
     {
       "date": "2026-09-24",
@@ -11,22 +11,40 @@
           "title_zh": "伊朗总统告诉特朗普，伊朗永远不会“屈服"
         },
         {
-          "title": "Trump set to greet Xi for high-stakes state visit",
+          "title": "What painter Sliman Mansour told NPR about Palestinian rights and art before he died",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/nx-s1-5978733/trump-xi-meeting-china",
-          "title_zh": "特朗普将迎接习近平进行高风险国事访问"
+          "url": "https://www.npr.org/2026/09/23/nx-s1-5949930/what-painter-sliman-mansour-told-npr-about-palestinian-rights-and-art-before-he-died",
+          "title_zh": "画家斯利曼·曼苏尔 (Sliman Mansour) 在去世前向 NPR 讲述了巴勒斯坦权利和艺术的事"
         },
         {
-          "title": "LIVE: OpenAI and Anthropic to brief Security Council as AI guardrails debate intensifies",
+          "title": "Zelenskyy urges stronger pressure on Russia, warns war’s impact is spreading beyond Ukraine",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168414",
-          "title_zh": "直播：随着人工智能护栏辩论的加剧，OpenAI 和 Anthropic 向安理会通报情况"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168416",
+          "title_zh": "泽伦斯基敦促对俄罗斯施加更大压力，警告战争的影响正在蔓延至乌克兰以外"
         },
         {
           "title": "Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&at_campaign=rss",
           "title_zh": "埃塞俄比亚和提格雷指责各自发动攻势，加剧了对新战争的担忧"
+        },
+        {
+          "title": "Trump set to greet Xi for high-stakes state visit",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/23/nx-s1-5978733/trump-xi-meeting-china",
+          "title_zh": "特朗普将迎接习近平进行高风险国事访问"
+        },
+        {
+          "title": "LIVE: OpenAI and Anthropic brief Security Council amid ‘real and imminent’ threat posed by runaway AI",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168414",
+          "title_zh": "直播：OpenAI 和 Anthropic 向安理会通报失控人工智能带来的“真实且迫在眉睫”的威胁"
+        },
+        {
+          "title": "Trump's Board of Peace unveils $2.45bn plan to begin Gaza's reconstruction",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwlyke0mm0x3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普和平委员会公布24.5亿美元开始加沙重建计划"
         },
         {
           "title": "Iran's president gives a rare wartime speech at the U.N.",
@@ -39,24 +57,6 @@
           "source": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168372",
           "title_zh": "直播：气候变化已经到来 - 接下来会发生什么仍然掌握在我们手中"
-        },
-        {
-          "title": "White House rolling out red carpet for historic Xi Jinping visit",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6n9w410v3vzo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "白宫为习近平历史性访问铺上红地毯"
-        },
-        {
-          "title": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/nx-s1-5978691/from-cybersecurity-to-ai-what-at-stake-in-trumps-meeting-with-and-president-xiwhy-the-us-and-china-are-at-a-precarious-moment-in-their-relationship",
-          "title_zh": "从网络安全到人工智能再到台湾，特朗普与习近平的峰会利害攸关"
-        },
-        {
-          "title": "UN’s ‘sacred covenant has been broken’, Argentina’s Milei tells General Assembly",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168415",
-          "title_zh": "阿根廷的米莱告诉大会，联合国的“神圣盟约已经被打破"
         }
       ]
     },
