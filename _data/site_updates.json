@@ -1,5 +1,33 @@
 [
   {
+    "date": "2026-09-23",
+    "title_zh": "调整了资讯、导航、界面样式",
+    "title_en": "Refined Opportunities, navigation, interface styling",
+    "message": "Add Opportunities page with daily internship and academia collectors",
+    "story_zh": "新增资讯页面，用于汇总实习与海外高校交流资讯；接入每日自动采集，使信息按日归档、无需手动维护。",
+    "story_en": "Added an Opportunities page that gathers internships and academic-exchange news, backed by daily automatic collection.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Add Opportunities page with daily internship and academia collectors",
+    "details_zh": "新增中英双语资讯页与导航入口，实习板块区分联合国与企业两类来源；添加去重归档脚本与每日定时采集工作流。",
+    "details_en": "Added the bilingual Opportunities page with a navigation entry, split UN and company internship boards, plus deduping collection scripts and a daily workflow.",
+    "sha": "1d0aa0f",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/1d0aa0f775e68809c984cbac0381bd5d4fb8c2a1"
+  },
+  {
+    "date": "2026-09-19",
+    "title_zh": "调整了学习札记、界面样式",
+    "title_en": "Refined Study Notes, interface styling",
+    "message": "Add CiteSpace download/install study note to Research Methods",
+    "story_zh": "新增 CiteSpace 下载与安装教程札记，覆盖官方入口与 2026 年订阅制变化，使读者入门少走弯路。",
+    "story_en": "Added a CiteSpace download-and-install guide covering official sources and the 2026 subscription change, making setup easier to follow.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Add CiteSpace download/install study note to Research Methods",
+    "details_zh": "在学习札记新增中英双语教程文章，收录官方下载入口、安装步骤与付费订阅说明。",
+    "details_en": "Added bilingual guide posts under Study Notes with official download links, setup steps, and subscription notes.",
+    "sha": "b96d518",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/b96d518ffefc9f6ef0ce22ece3716f679dbbf004"
+  },
+  {
     "date": "2026-09-19",
     "title_zh": "调整了论文发表、界面样式",
     "title_en": "Refined Publications, interface styling",
