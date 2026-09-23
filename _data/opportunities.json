@@ -8,70 +8,80 @@
           "title": "Internship: Venture Fund Internship (Multiple Interns) - GPD/Office of Innovation, Sweden, 6 months (Part-time) - In person or remote",
           "url": "https://jobs.unicef.org/cw/en-us/job/595661",
           "source": "UNICEF",
-          "source_zh": "联合国儿童基金会"
+          "source_zh": "联合国儿童基金会",
+          "group": "un"
         },
         {
           "title": "Sales Rep Intern",
           "url": "https://www.amazon.jobs/en/jobs/10481964/sales-rep-intern",
           "detail": "Mexico City, Mexico City, MEX",
           "source": "Amazon",
-          "source_zh": "亚马逊"
+          "source_zh": "亚马逊",
+          "group": "company"
         },
         {
           "title": "Integration Reliability Engineer Intern, Technical Operations",
           "url": "https://stripe.com/jobs/search?gh_jid=8186367",
           "detail": "Singapore",
           "source": "Stripe",
-          "source_zh": "Stripe"
+          "source_zh": "Stripe",
+          "group": "company"
         },
         {
           "title": "Solution Architect Intern",
           "url": "https://www.amazon.jobs/en/jobs/10512549/solution-architect-intern",
           "detail": "Santiago, Region Santiago Metropolitan, CHL",
           "source": "Amazon",
-          "source_zh": "亚马逊"
+          "source_zh": "亚马逊",
+          "group": "company"
         },
         {
           "title": "Marketing Intern, AUTA",
           "url": "https://www.amazon.jobs/en/jobs/10553918/marketing-intern-auta",
           "detail": "Mexico City, Mexico City, MEX",
           "source": "Amazon",
-          "source_zh": "亚马逊"
+          "source_zh": "亚马逊",
+          "group": "company"
         },
         {
           "title": "Program Manager Intern",
           "url": "https://www.amazon.jobs/en/jobs/10410587/program-manager-intern",
           "detail": "Mexico City, Mexico City, MEX",
           "source": "Amazon",
-          "source_zh": "亚马逊"
+          "source_zh": "亚马逊",
+          "group": "company"
         },
         {
           "title": "Financial Analyst Intern",
           "url": "https://www.amazon.jobs/en/jobs/3198451/financial-analyst-intern",
           "detail": "Mexico City, Mexico City, MEX",
           "source": "Amazon",
-          "source_zh": "亚马逊"
+          "source_zh": "亚马逊",
+          "group": "company"
         },
         {
           "title": "Solution Architect Intern",
           "url": "https://www.amazon.jobs/en/jobs/10512638/solution-architect-intern",
           "detail": "Santiago, Region Santiago Metropolitan, CHL",
           "source": "Amazon",
-          "source_zh": "亚马逊"
+          "source_zh": "亚马逊",
+          "group": "company"
         },
         {
           "title": "Executive Assistant Intern",
           "url": "https://www.amazon.jobs/en/jobs/3119940/executive-assistant-intern",
           "detail": "Sao Paulo, Sao Paulo, BRA",
           "source": "Amazon",
-          "source_zh": "亚马逊"
+          "source_zh": "亚马逊",
+          "group": "company"
         },
         {
           "title": "Operations Intern, AUTA",
           "url": "https://www.amazon.jobs/en/jobs/3181151/operations-intern-auta",
           "detail": "Mexico City, Mexico City, MEX",
           "source": "Amazon",
-          "source_zh": "亚马逊"
+          "source_zh": "亚马逊",
+          "group": "company"
         }
       ]
     }

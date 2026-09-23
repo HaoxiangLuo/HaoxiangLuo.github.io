@@ -117,6 +117,8 @@
 
 每次拥有者向 `master` 推送网页修改后，工作流会记录日期、修改类别、提交说明和提交链接。自动新闻提交、日志机器人提交和合并噪声不会写入日志。同一提交重复运行不会产生重复记录，最多保留最近 100 条。
 
+描述文字由 GitHub Models（`openai/gpt-4o-mini`，工作流已授予 `models: read`）根据提交主题与改动文件生成一句话具体说明（形如"增加了X，用于X；对X进行X改动，使X更X"），调用失败时回退到脚本内置的按文件分类规则句子。本地刷新既有记录可用 `python scripts/update_site_log.py --sha <sha> --refresh`（需 `GITHUB_TOKEN` 环境变量）。
+
 页面只读取已经保存的数据，不再依赖访客浏览器实时请求 GitHub API。需要手动补充时，可编辑 `_data/site_updates.json`，但应保持现有字段结构。
 
 ## 10. 每日新闻自动化
@@ -180,7 +182,7 @@
 
 任务每天从官方信息源收集两个板块，按上海时区日期去重后追加保存，最多保留 180 天：
 
-1. 实习资讯：联合国（UNICEF、UN Women）与知名外企（Amazon、Airbnb、Stripe、Anthropic、Cloudflare）的官方招聘接口，仅保留标题含 "intern" 的职位。
+1. 实习资讯：页面内再分为"联合国实习"与"企业实习"两个子板块（条目带 `group` 字段：`un` / `company`）。来源为联合国（UNICEF、UN Women）与知名外企（Amazon、Airbnb、Stripe、Anthropic、Cloudflare）的官方招聘接口，仅保留标题含 "intern" 的职位。
 2. 院校资讯：QS 前 50 高校新闻传播院系官方页面（牛津 RISJ、剑桥 POLIS、哈佛 Shorenstein、NYU、斯坦福、USC Annenberg、香港大学 JMSC、威斯康星麦迪逊、南洋理工 WKWSCI），提取含 visiting、exchange、joint、fellowship、studentship 等关键词的条目。
 
 某天没有新信息时，脚本不修改数据文件，工作流检测到无差异即跳过提交。已收录的条目按 URL 去重，不会重复出现。新增信息源时编辑脚本顶部的 `INTERN_SOURCES` / `ACADEMIA_SOURCES` 列表即可。

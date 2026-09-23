@@ -15,21 +15,53 @@ translation_url: /opportunities/
 <div class="opps-archive">
   <section class="opps-section" aria-labelledby="opps-intern-title">
     <h2 id="opps-intern-title" class="opps-section__title">实习资讯</h2>
-    <div class="daily-news-archive">
-      {% if opps.internships.size > 0 %}
-        {% for day in opps.internships %}
-          <article class="daily-news-day" data-filter-date="{{ day.date }}">
-            <header><time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time><span>新增 {{ day.items.size }} 条</span></header>
-            <ol>
-              {% for item in day.items %}
-                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}{% if item.detail %} <em>· {{ item.detail | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
-              {% endfor %}
-            </ol>
-          </article>
-        {% endfor %}
-      {% else %}
-        <p class="daily-news-empty">自动任务运行后，第一批实习信息将显示在这里。</p>
-      {% endif %}
+    {% assign un_total = 0 %}
+    {% for day in opps.internships %}{% assign day_un = day.items | where: "group", "un" %}{% assign un_total = un_total | plus: day_un.size %}{% endfor %}
+    {% assign company_total = 0 %}
+    {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% assign company_total = company_total | plus: day_co.size %}{% endfor %}
+    <div class="opps-subblock">
+      <h3 class="opps-subtitle">联合国实习</h3>
+      <div class="daily-news-archive">
+        {% if un_total > 0 %}
+          {% for day in opps.internships %}
+            {% assign group_items = day.items | where: "group", "un" %}
+            {% if group_items.size > 0 %}
+              <article class="daily-news-day" data-filter-date="{{ day.date }}">
+                <header><time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time><span>新增 {{ group_items.size }} 条</span></header>
+                <ol>
+                  {% for item in group_items %}
+                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}{% if item.detail %} <em>· {{ item.detail | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                  {% endfor %}
+                </ol>
+              </article>
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          <p class="daily-news-empty">联合国系统的实习信息将显示在这里。</p>
+        {% endif %}
+      </div>
+    </div>
+    <div class="opps-subblock">
+      <h3 class="opps-subtitle">企业实习</h3>
+      <div class="daily-news-archive">
+        {% if company_total > 0 %}
+          {% for day in opps.internships %}
+            {% assign group_items = day.items | where: "group", "company" %}
+            {% if group_items.size > 0 %}
+              <article class="daily-news-day" data-filter-date="{{ day.date }}">
+                <header><time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time><span>新增 {{ group_items.size }} 条</span></header>
+                <ol>
+                  {% for item in group_items %}
+                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}{% if item.detail %} <em>· {{ item.detail | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                  {% endfor %}
+                </ol>
+              </article>
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          <p class="daily-news-empty">知名外企的实习信息将显示在这里。</p>
+        {% endif %}
+      </div>
     </div>
   </section>
 

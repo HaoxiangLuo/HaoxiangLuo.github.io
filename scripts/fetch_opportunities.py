@@ -44,14 +44,15 @@ REQUEST_TIMEOUT = 25
 USER_AGENT = "HaoxiangLuo.github.io opportunities collector/1.0"
 
 # Internship sources: official job feeds of the UN and leading global companies.
+# `group` splits the archive into the UN and company sub-sections.
 INTERN_SOURCES = [
-    {"name": "UNICEF", "name_zh": "联合国儿童基金会", "kind": "taleo_rss", "value": "https://jobs.unicef.org/cw/en/rss"},
-    {"name": "UN Women", "name_zh": "联合国妇女署", "kind": "taleo_rss", "value": "https://careers.unwomen.org/cw/en/rss"},
-    {"name": "Amazon", "name_zh": "亚马逊", "kind": "amazon_json", "value": "https://www.amazon.jobs/en/search.json?result_limit=30&base_query=intern"},
-    {"name": "Airbnb", "name_zh": "爱彼迎", "kind": "greenhouse", "value": "airbnb"},
-    {"name": "Stripe", "name_zh": "Stripe", "kind": "greenhouse", "value": "stripe"},
-    {"name": "Anthropic", "name_zh": "Anthropic", "kind": "greenhouse", "value": "anthropic"},
-    {"name": "Cloudflare", "name_zh": "Cloudflare", "kind": "greenhouse", "value": "cloudflare"},
+    {"name": "UNICEF", "name_zh": "联合国儿童基金会", "kind": "taleo_rss", "value": "https://jobs.unicef.org/cw/en/rss", "group": "un"},
+    {"name": "UN Women", "name_zh": "联合国妇女署", "kind": "taleo_rss", "value": "https://careers.unwomen.org/cw/en/rss", "group": "un"},
+    {"name": "Amazon", "name_zh": "亚马逊", "kind": "amazon_json", "value": "https://www.amazon.jobs/en/search.json?result_limit=30&base_query=intern", "group": "company"},
+    {"name": "Airbnb", "name_zh": "爱彼迎", "kind": "greenhouse", "value": "airbnb", "group": "company"},
+    {"name": "Stripe", "name_zh": "Stripe", "kind": "greenhouse", "value": "stripe", "group": "company"},
+    {"name": "Anthropic", "name_zh": "Anthropic", "kind": "greenhouse", "value": "anthropic", "group": "company"},
+    {"name": "Cloudflare", "name_zh": "Cloudflare", "kind": "greenhouse", "value": "cloudflare", "group": "company"},
 ]
 
 # Academic sources: official pages of journalism/communication departments at
@@ -190,6 +191,7 @@ def gather(section_sources: list[dict], collector) -> list[dict]:
             for candidate in candidates:
                 candidate["source"] = source["name"]
                 candidate["source_zh"] = source["name_zh"]
+                candidate["group"] = source.get("group", "company")
             groups.append(candidates)
         except Exception as exc:
             print(f"warning: {source['name']}: {exc}", file=sys.stderr)

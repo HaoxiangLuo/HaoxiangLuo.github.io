@@ -273,6 +273,23 @@ body.home-page .page__content .news-window h2 {
   background: #0071e3;
 }
 .opps-section .daily-news-day em { font-style: normal; color: #6e6e73; }
+.opps-subblock { display: grid; gap: 0.85rem; }
+.opps-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0;
+  color: #6e6e73;
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+.opps-subtitle::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(29, 29, 31, 0.08);
+}
 
 /* Date filters shared by the two generated archives. */
 .archive-date-filter {

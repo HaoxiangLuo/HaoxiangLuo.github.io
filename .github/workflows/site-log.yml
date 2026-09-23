@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  models: read
 
 concurrency:
   group: site-update-log
@@ -32,6 +33,8 @@ jobs:
           python-version: "3.12"
 
       - name: Record this website update
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_site_log.py --sha "${{ github.sha }}"
 
       - name: Save the site log
