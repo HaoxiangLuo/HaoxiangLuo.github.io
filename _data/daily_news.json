@@ -1,20 +1,26 @@
 {
-  "updated_at": "2026-09-23T08:29:33+08:00",
+  "updated_at": "2026-09-23T09:23:41+08:00",
   "days": [
     {
       "date": "2026-09-23",
       "items": [
         {
-          "title": "Trump threatens to 'annihilate' Iran in UN speech as officials meet on sidelines",
+          "title": "Trump threatens to 'annihilate' Iran in UN speech as officials from both countries meet on sidelines",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c52e0ywl9pr7o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普在联合国演讲中威胁要“消灭”伊朗，官员们在场外开会"
+          "title_zh": "特朗普在联合国演讲中威胁要“消灭”伊朗，两国官员在场外会面"
         },
         {
           "title": "The United Nations General Assembly is meeting. Is it accomplishing anything?",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/22/nx-s1-5955445/the-united-nations-general-assembly-is-meeting-is-it-accomplishing-anything",
           "title_zh": "联合国大会正在召开。它有什么成就吗？"
+        },
+        {
+          "title": "‘Ask us first’: Children demand a voice on AI’s future",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168403",
+          "title_zh": "先问我们”：孩子们要求对人工智能的未来发表意见"
         },
         {
           "title": "Burnham expects to find 'common ground' with Trump in first meeting",
@@ -29,6 +35,12 @@
           "title_zh": "斯里兰卡法院对 2019 年复活节爆炸事件中的 15 人定罪"
         },
         {
+          "title": "‘Time is running out’ for Israel-Palestine two-State solution",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168401",
+          "title_zh": "以色列-巴勒斯坦两国解决方案的“时间已经不多了"
+        },
+        {
           "title": "US to build two military bases in Greenland under new deal with Denmark",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss",
@@ -41,22 +53,10 @@
           "title_zh": "CNN、MS NOW 和 Politico 起诉特朗普。并且，派拉蒙在大规模合并诉讼中达成和解"
         },
         {
-          "title": "How Ceuta, football and Israel are shaping Morocco's election",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c8r4v7n6py97o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "休达、足球和以色列如何影响摩洛哥的选举"
-        },
-        {
-          "title": "Houthis try to push deeper into western Yemen, upending life, witnesses tell NPR",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/22/g-s1-144261/yemen-houthis-saudi-iran-humanitarian-crisis",
-          "title_zh": "目击者告诉美国国家公共广播电台，胡塞武装试图深入也门西部，颠覆人们的生活"
-        },
-        {
-          "title": "Sri Lanka court convicts 15 men over deadly Easter Sunday bombings",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqy7z275yx65o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "斯里兰卡法院判处 15 名复活节周日爆炸案男子有罪"
+          "title": "Choose international order over ‘law of the jungle’, urges Macron",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168402",
+          "title_zh": "马克龙敦促选择国际秩序而不是“丛林法则"
         }
       ]
     },
