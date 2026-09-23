@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-24T06:24:02+08:00",
+  "updated_at": "2026-09-24T07:20:48+08:00",
   "days": [
     {
       "date": "2026-09-24",
       "items": [
         {
-          "title": "Iran's president tells Trump it will never 'bend the knee'",
+          "title": "AI superpower ambitions take centre stage as Trump and Xi meet",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqvgyjy23ggjo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "伊朗总统告诉特朗普，伊朗永远不会“屈服"
+          "url": "https://www.bbc.co.uk/news/articles/c6gqdgg8w59xo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普和习近平会面，人工智能超级大国的野心成为焦点"
         },
         {
           "title": "Here's what happened on day 2 of the UN General Assembly",
@@ -23,10 +23,10 @@
           "title_zh": "古特雷斯呼吁各国制定摆脱化石燃料的明确时间表"
         },
         {
-          "title": "Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war",
+          "title": "OpenAI agent 'infiltrated' Australian government website, PM says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "埃塞俄比亚和提格雷指责各自发动攻势，加剧了对新战争的担忧"
+          "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "总理称 OpenAI 代理“渗透”了澳大利亚政府网站"
         },
         {
           "title": "Does the UN have a future?",
@@ -41,10 +41,10 @@
           "title_zh": "罗兴亚难民应该拥有超越生存的未来，而不是无休无止的流离失所"
         },
         {
-          "title": "Trump's Board of Peace unveils $2.45bn plan to begin Gaza's reconstruction",
+          "title": "Iran's president tells Trump it will never 'bend the knee'",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwlyke0mm0x3o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普和平委员会公布24.5亿美元开始加沙重建计划"
+          "url": "https://www.bbc.co.uk/news/articles/cqvgyjy23ggjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "伊朗总统告诉特朗普，伊朗永远不会“屈服"
         },
         {
           "title": "Trump and Xi meet at moment of global consequence",
@@ -56,7 +56,7 @@
           "title": "Zelenskyy urges stronger pressure on Russia, warns war’s impact is spreading beyond Ukraine",
           "source": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/09/1168416",
-          "title_zh": "泽伦斯基敦促对俄罗斯施加更大压力，警告战争的影响正在蔓延到乌克兰以外"
+          "title_zh": "泽伦斯基敦促对俄罗斯施加更大压力，警告战争的影响正在蔓延至乌克兰以外"
         }
       ]
     },
