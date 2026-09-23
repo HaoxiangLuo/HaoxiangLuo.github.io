@@ -1308,15 +1308,28 @@ body {
   width: 100%;
 }
 
-/* The language pill sits inside the same flex row as the menu links and has no
-   counterpart on the left, so centring the row alone leaves the links looking
-   pushed rightwards. Reserving an equally wide empty first cell makes the
-   centring optically true for the menu labels themselves. */
+/* Menu links and the language pill sit in one flex row. Two things are needed
+   for the menu to look centred rather than pushed right:
+
+   1. A spacer on the left, exactly as wide as the pill is on the right. The
+      pill sits in a cell of --nav-lang-width, so the spacer uses the same
+      token. Sizing the spacer to anything else leaves a visible offset.
+   2. Real breathing room between the links. At the old ~2px gap the six labels
+      merged into one solid block whose own centre is what the eye reads, and
+      that block's centre is not the row's centre once the pill is added.
+
+   --nav-gap is therefore measured in the same units as the link padding so the
+   block grows predictably as the viewport widens. */
+:root {
+  --nav-lang-width: 4.6rem;
+  --nav-gap: clamp(0.5rem, 1.35vw, 1.15rem);
+}
+
 .greedy-nav .visible-links::before {
   content: "";
   display: block;
   flex: 0 0 auto;
-  width: var(--nav-lang-width, 5.5rem);
+  width: var(--nav-lang-width);
 }
 
 .greedy-nav .visible-links {
@@ -1327,7 +1340,7 @@ body {
   align-items: center;
   justify-content: center !important;
   min-height: 48px;
-  gap: clamp(0.15rem, 1.1vw, 1.1rem);
+  gap: var(--nav-gap);
 }
 
 .greedy-nav .visible-links > li {
@@ -1337,7 +1350,7 @@ body {
 }
 
 .greedy-nav .visible-links > .language-toggle {
-  width: var(--nav-lang-width, 5.5rem);
+  width: var(--nav-lang-width);
   justify-content: center;
 }
 
@@ -1438,24 +1451,35 @@ body {
   margin-left: 0;
 }
 
+/* Below ~880px the desktop gap plus the pill no longer fit, so the row would
+   silently squeeze the labels together. Tighten the gap and the pill in two
+   measured steps instead of letting flex shrink the links themselves. */
+@media (max-width: 880px) {
+  :root {
+    --nav-gap: 0.55rem;
+  }
+
+  .greedy-nav a {
+    padding: 0.55rem 0.66rem;
+  }
+}
+
 @media (max-width: 767px) {
   .masthead__inner-wrap {
     padding: 0 0.45rem;
   }
 
-  /* Below tablet width the row would overflow, so the reserved left cell is
-     dropped and the natural flow keeps every label visible. */
-  .greedy-nav .visible-links::before {
-    display: none;
+  /* The labels get tighter padding on small screens, so the pill is narrower
+     too and the spacer has to shrink with it. The spacer is kept rather than
+     dropped: hiding it would reintroduce the left/right imbalance at the exact
+     widths where the row is already most cramped. */
+  :root {
+    --nav-lang-width: 4.55rem;
+    --nav-gap: 0.34rem;
   }
 
   .greedy-nav .visible-links {
-    gap: 0.1rem;
-    justify-content: space-around !important;
-  }
-
-  .greedy-nav .visible-links > .language-toggle {
-    width: auto;
+    justify-content: center !important;
   }
 
   .greedy-nav a {
@@ -1476,5 +1500,26 @@ body {
     min-height: 1.55rem;
     padding: 0 0.25rem;
     font-size: 0.62rem;
+  }
+}
+
+/* Phone widths cannot hold six English labels plus the pill on one line
+   without starving the tap targets, so the row wraps into two centred rows.
+   Wrapping keeps the block centred; shrinking to fit would not.
+   The threshold is 640px rather than 560px because the measured six-label row
+   still needs ~585px of content box at the compact link padding. */
+@media (max-width: 640px) {
+  .greedy-nav .visible-links {
+    flex-wrap: wrap;
+    row-gap: 0.15rem;
+  }
+
+  .greedy-nav .visible-links::before {
+    display: none;
+  }
+
+  .greedy-nav .visible-links > .language-toggle {
+    flex: 0 0 auto;
+    width: auto;
   }
 }
