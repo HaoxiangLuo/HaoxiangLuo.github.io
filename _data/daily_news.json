@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T01:24:52+08:00",
+  "updated_at": "2026-09-24T02:28:25+08:00",
   "days": [
     {
       "date": "2026-09-24",
@@ -11,16 +11,10 @@
           "title_zh": "伊朗总统告诉特朗普，伊朗永远不会“屈服"
         },
         {
-          "title": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi",
+          "title": "Iran's president gives a rare wartime speech at the U.N.",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/nx-s1-5978691/from-cybersecurity-to-ai-what-at-stake-in-trumps-meeting-with-and-president-xiwhy-the-us-and-china-are-at-a-precarious-moment-in-their-relationship",
-          "title_zh": "从网络安全到人工智能再到台湾，特朗普与习近平的峰会利害攸关"
-        },
-        {
-          "title": "Syria begins ‘new phase of revival’, President Al-Sharaa tells General Assembly",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168411",
-          "title_zh": "萨拉总统告诉大会，叙利亚开始“复兴的新阶段"
+          "url": "https://www.npr.org/2026/09/23/nx-s1-5978863/iran-president-united-nations-general-assembly",
+          "title_zh": "伊朗总统在联合国发表罕见的战时讲话"
         },
         {
           "title": "Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war",
@@ -29,16 +23,10 @@
           "title_zh": "埃塞俄比亚和提格雷指责各自发动攻势，加剧了对新战争的担忧"
         },
         {
-          "title": "U.S. ambassador to the U.N. discusses progress on key issues",
+          "title": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/nx-s1-5978682/u-s-ambassador-to-the-u-n-discusses-progress-on-key-issues",
-          "title_zh": "美国驻联合国大使讨论关键问题的进展"
-        },
-        {
-          "title": "Security Council LIVE: World leaders debate ongoing war in Ukraine",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168410",
-          "title_zh": "安理会直播：世界领导人辩论乌克兰正在进行的战争"
+          "url": "https://www.npr.org/2026/09/23/nx-s1-5978691/from-cybersecurity-to-ai-what-at-stake-in-trumps-meeting-with-and-president-xiwhy-the-us-and-china-are-at-a-precarious-moment-in-their-relationship",
+          "title_zh": "从网络安全到人工智能再到台湾，特朗普与习近平的峰会利害攸关"
         },
         {
           "title": "White House rolling out red carpet for historic Xi Jinping visit",
@@ -47,16 +35,28 @@
           "title_zh": "白宫为习近平历史性访问铺上红地毯"
         },
         {
+          "title": "U.S. ambassador to the U.N. discusses progress on key issues",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/23/nx-s1-5978682/u-s-ambassador-to-the-u-n-discusses-progress-on-key-issues",
+          "title_zh": "美国驻联合国大使讨论关键问题的进展"
+        },
+        {
+          "title": "Dramatic eviction of woman aged 87 highlights Spain's housing shortage",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6vgy55lm8z1o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "87岁妇女被大规模驱逐凸显西班牙住房短缺"
+        },
+        {
           "title": "Greetings from Edinburgh, where a cheeky tour guide makes art history hilarious",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/23/g-s1-142427/uk-coco-art-history-comedy-tour",
           "title_zh": "来自爱丁堡的问候，厚脸皮的导游让艺术史变得热闹"
         },
         {
-          "title": "Right to development: A blueprint for unmet promises",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168405",
-          "title_zh": "发展权：未兑现承诺的蓝图"
+          "title": "Dolly Parton's manager accuses her nephew of 'threats and intimidation'",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c670lydl5wg5o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "多莉帕顿的经理指责她的侄子“威胁和恐吓"
         }
       ]
     },
