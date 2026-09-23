@@ -771,30 +771,12 @@ body.home-page .page__content .news-window h2 {
     padding: 0.35rem 0.3rem;
   }
 
-  body .greedy-nav .visible-links {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    width: 100%;
-    max-width: none;
-    min-width: 0;
-    gap: 0.08rem;
-    align-items: center;
-    justify-content: center;
-  }
-
-  body .greedy-nav .visible-links > li {
-    min-width: 0;
-    margin: 0;
-  }
-
-  body .greedy-nav .visible-links > li > a {
-    min-width: 0;
-    padding: 0.45rem 0.08rem;
-    overflow: hidden;
-    font-size: 0.64rem;
-    text-align: center;
-    text-overflow: clip;
-  }
+  /*
+   * The primary navigation (including its own mobile layout) is owned entirely
+   * by the "PRIMARY NAVIGATION" block at the end of main.scss. Do not restate
+   * .greedy-nav .visible-links layout here: a body-prefixed grid outranks that
+   * block and reintroduces the sizing conflicts it was written to remove.
+   */
 
   /*
    * The language switch geometry (capsule width, per-option hit box) is owned

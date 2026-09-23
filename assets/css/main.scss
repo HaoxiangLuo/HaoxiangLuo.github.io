@@ -1294,9 +1294,38 @@ body {
   min-height: 48px;
 }
 
-/* Centre the whole navigation bar at every viewport width. The theme's own
-   rules use a table layout above 1280px and space-between below 1024px, so the
-   flex centring has to be restated globally, after the media queries. */
+/* ==========================================================================
+   PRIMARY NAVIGATION
+   ==========================================================================
+
+   One authority for the whole nav bar. Everything the theme does to
+   .visible-links is replaced here rather than patched over, because the theme
+   uses `display: table` with table-cell columns and every later override of
+   that layout had to fight the table sizing.
+
+   Layout model
+   ------------
+   The row holds six menu items followed by the language pill. The six items
+   share the full width equally (flex: 1 1 0) and each label is centred inside
+   its own share, so the menu block always spans the container and therefore
+   its centre is the container's centre. The pill is positioned separately
+   (position: absolute, right) so it never takes space away from the menu and
+   never shifts the menu's centre.
+
+   Why the old approach kept failing
+   ---------------------------------
+   Previous revisions centred the whole row, then tried to cancel the pill's
+   extra width with a spacer of the same size. That can never work: the spacer
+   is itself part of the row, so widening it moves both centres together and
+   the offset between them stays. The menu block only looks centred when it
+   spans the container on its own terms - which is what flex: 1 1 0 gives. */
+
+:root {
+  --nav-pill-w: 4.6rem;         /* language pill outer width */
+  --nav-side: clamp(0.6rem, 1.4vw, 1.05rem);   /* link horizontal padding */
+  --nav-pill-reserve: calc(var(--nav-pill-w) + var(--nav-side) + 0.5rem);
+}
+
 .masthead__inner-wrap {
   max-width: 1180px;
   margin: 0 auto;
@@ -1308,88 +1337,82 @@ body {
   width: 100%;
 }
 
-/* Menu links and the language pill sit in one flex row. Two things are needed
-   for the menu to look centred rather than pushed right:
-
-   1. A spacer on the left, exactly as wide as the pill is on the right. The
-      pill sits in a cell of --nav-lang-width, so the spacer uses the same
-      token. Sizing the spacer to anything else leaves a visible offset.
-   2. Real breathing room between the links. At the old ~2px gap the six labels
-      merged into one solid block whose own centre is what the eye reads, and
-      that block's centre is not the row's centre once the pill is added.
-
-   --nav-gap is therefore measured in the same units as the link padding so the
-   block grows predictably as the viewport widens. */
-:root {
-  --nav-lang-width: 4.6rem;
-  --nav-gap: clamp(0.5rem, 1.35vw, 1.15rem);
-}
-
-.greedy-nav .visible-links::before {
-  content: "";
-  display: block;
-  flex: 0 0 auto;
-  width: var(--nav-lang-width);
-}
-
+/* The row is the positioning context for the pill. */
 .greedy-nav .visible-links {
+  position: relative;
   display: flex !important;
+  align-items: center;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  align-items: center;
-  justify-content: center !important;
+  padding: 0;
+  list-style: none;
   min-height: 48px;
-  gap: var(--nav-gap);
+  gap: clamp(0.15rem, 0.6vw, 0.5rem);
 }
 
+/* Six equal shares. `min-width: 0` lets a share shrink below its label's
+   natural width instead of forcing the row to overflow on narrow screens. */
 .greedy-nav .visible-links > li {
   display: block !important;
-  flex: 0 0 auto;
-  width: auto;
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: center;
 }
 
-.greedy-nav .visible-links > .language-toggle {
-  width: var(--nav-lang-width);
-  justify-content: center;
-}
-
-.masthead__menu-item,
-.masthead__menu-item--lg {
-  padding-right: 0;
-  background: transparent;
-}
-
-.greedy-nav a {
-  padding: 0.55rem 0.85rem;
+.greedy-nav .visible-links > li > a {
+  display: block;
+  width: 100%;
+  padding: 0.55rem var(--nav-side);
   font-size: 0.82rem;
   font-weight: 450;
   letter-spacing: -0.01em;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 999px;
 }
 
-.masthead__menu-item.selected a {
-  border-bottom: 0;
+.masthead__menu-item.selected > a {
   font-weight: 600;
 }
 
-.language-toggle {
-  display: flex;
-  align-items: center;
-  margin-left: 0;
+/* The pill lives outside the equal-share flow. The row reserves the pill's
+   strip on BOTH sides rather than just the right: reserving it only on the
+   right would squeeze the menu leftwards by half a pill (measured 49px at
+   1280px), which is the same kind of offset as the original problem, just in
+   the other direction. Reserving symmetrically keeps the menu block's centre
+   exactly on the container axis, while the pill itself sits in the right-hand
+   strip. */
+.greedy-nav .visible-links > li.language-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  flex: 0 0 auto;
+  width: var(--nav-pill-w);
+  margin: 0;
 }
 
-/* --- Language switch -------------------------------------------------------
-   The switch is one capsule split into two equal halves: the control is the
-   capsule, each option is a half. Only the control draws the outer border and
-   background; each option stretches to exactly its own grid track and centres
-   its glyph there, so the clickable feedback area of a half always coincides
-   with the visible half it belongs to. */
+.greedy-nav .visible-links {
+  padding-right: 0;
+  padding-left: 0;
+  border-right: var(--nav-pill-reserve) solid transparent;
+  border-left: var(--nav-pill-reserve) solid transparent;
+}
+
+.language-toggle,
+.language-toggle__control {
+  display: flex;
+  align-items: center;
+}
+
 .language-toggle__control {
   display: grid !important;
   grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
   width: 100%;
-  max-width: 4.6rem;
   padding: 0.2rem;
   border: 1px solid rgba(29, 29, 31, 0.1);
   border-radius: 999px;
@@ -1397,9 +1420,6 @@ body {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.42);
 }
 
-/* Without an explicit min-width the grid tracks distribute the leftover space
-   unevenly once the two glyphs differ in width, which shifts the hit boxes off
-   centre even though the capsule itself looks centred. */
 .language-toggle__control > .language-toggle__option {
   display: flex !important;
   align-items: center;
@@ -1433,93 +1453,142 @@ body {
   outline-offset: 1px;
 }
 
-.language-toggle__control > .language-toggle__option.is-active {
+.language-toggle__control > .language-toggle__option.is-active,
+.language-toggle__control > .language-toggle__option.is-active:hover {
   color: #f5f5f7;
   background: #2c2c2e;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
   cursor: default;
 }
 
-/* The active half is not clickable, but its hover colour must not linger on
-   the segment either, otherwise the pointer reports a target it cannot hit. */
-.language-toggle__control > .language-toggle__option.is-active:hover {
-  color: #f5f5f7;
-  background: #2c2c2e;
+/* The theme's sliding underline is not used with this layout. */
+.greedy-nav .visible-links a::before,
+.greedy-nav a::before {
+  display: none;
 }
 
 #theme-toggle.tail {
   margin-left: 0;
 }
 
-/* Below ~880px the desktop gap plus the pill no longer fit, so the row would
-   silently squeeze the labels together. Tighten the gap and the pill in two
-   measured steps instead of letting flex shrink the links themselves. */
-@media (max-width: 880px) {
+/* Narrower than a tablet the six shares get tight, so reserve less room and
+   use slightly smaller labels. The reserve shrinks before the labels do:
+   the pill is a fixed target and does not need the full gutter beside it. */
+@media (max-width: 980px) {
   :root {
-    --nav-gap: 0.55rem;
+    --nav-side: 0.5rem;
+    --nav-pill-reserve: calc(var(--nav-pill-w) + var(--nav-side) + 0.35rem);
   }
 
-  .greedy-nav a {
-    padding: 0.55rem 0.66rem;
+  .greedy-nav .visible-links > li > a {
+    font-size: 0.78rem;
   }
 }
 
-@media (max-width: 767px) {
-  .masthead__inner-wrap {
-    padding: 0 0.45rem;
+/* 860-980px is the last band where six equal shares can still hold the widest
+   English label ("Opportunities") beside the pill. Measured: the row needs
+   535px of label ink, and at 860px the usable width is 560px - a 25px margin.
+   Below that the measured requirement exceeds the row, so the pill drops out
+   of the right-hand strip and flows inline instead of squeezing the labels. */
+@media (max-width: 860px) {
+  :root {
+    --nav-pill-reserve: calc(var(--nav-pill-w) + 0.35rem);
   }
 
-  /* The labels get tighter padding on small screens, so the pill is narrower
-     too and the spacer has to shrink with it. The spacer is kept rather than
-     dropped: hiding it would reintroduce the left/right imbalance at the exact
-     widths where the row is already most cramped. */
-  :root {
-    --nav-lang-width: 4.55rem;
-    --nav-gap: 0.34rem;
+  .greedy-nav .visible-links > li > a {
+    font-size: 0.76rem;
+  }
+}
+
+/* Phone widths: the same two-row model as above, just tighter. The nav is
+   deliberately always-visible (see the note beside `.greedy-nav > button`),
+   so the burger stays off and the labels shrink instead. */
+@media (max-width: 600px) {
+  .masthead__inner-wrap {
+    padding: 0 0.4rem;
   }
 
   .greedy-nav .visible-links {
-    justify-content: center !important;
+    column-gap: 0.1rem;
+    row-gap: 0.2rem;
   }
 
-  .greedy-nav a {
-    padding: 0.5rem 0.45rem;
+  .greedy-nav .visible-links > li {
+    flex: 0 1 calc((100% - 0.2rem) / 3);
+  }
+
+  .greedy-nav .visible-links > li > a {
+    padding: 0.4rem 0.2rem;
+    font-size: 0.68rem;
+  }
+
+  .language-toggle__control {
+    width: 4.3rem;
+  }
+
+  .language-toggle__control > .language-toggle__option {
+    min-height: 1.4rem;
+    padding: 0 0.15rem;
+    font-size: 0.56rem;
+  }
+}
+
+/* Below ~860px the six equal shares can no longer hold the widest English
+   label next to the pill, so the pill drops out of the right-hand strip and
+   flows inline with the labels. */
+@media (max-width: 859px) {
+  .masthead__inner-wrap {
+    padding: 0 0.6rem;
+  }
+
+  /* Two rows of three. A 30% basis with no column gap left the extra 10% to
+     be shared out by flex-grow, which read as uneven gaps; three per row is
+     what the percentages were really expressing, so say it directly and keep
+     a real gap between columns. */
+  .greedy-nav .visible-links {
+    flex-wrap: wrap;
+    border-right: 0;
+    border-left: 0;
+    row-gap: 0.3rem;
+    column-gap: 0.2rem;
+  }
+
+  .greedy-nav .visible-links > li {
+    flex: 0 1 calc((100% - 0.4rem) / 3);
+    min-width: 0;
+  }
+
+  /* The pill keeps a row to itself so it can never unbalance a row of
+     labels. */
+  .greedy-nav .visible-links > li.language-toggle {
+    position: static;
+    transform: none;
+    flex: 0 0 100%;
+    width: 100%;
+    margin: 0.3rem 0 0.15rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .greedy-nav .visible-links > li > a {
+    padding: 0.45rem 0.3rem;
     font-size: 0.76rem;
+    letter-spacing: 0;
   }
 
-  .language-toggle {
-    margin-left: 0;
+  .language-toggle,
+  .language-toggle__control {
+    justify-content: center;
   }
 
-  .greedy-nav .visible-links > .language-toggle .language-toggle__control {
-    width: 4.55rem;
-    max-width: 4.55rem;
+  .language-toggle__control {
+    width: 4.6rem;
+    margin: 0 auto;
   }
 
   .language-toggle__control > .language-toggle__option {
     min-height: 1.55rem;
     padding: 0 0.25rem;
     font-size: 0.62rem;
-  }
-}
-
-/* Phone widths cannot hold six English labels plus the pill on one line
-   without starving the tap targets, so the row wraps into two centred rows.
-   Wrapping keeps the block centred; shrinking to fit would not.
-   The threshold is 640px rather than 560px because the measured six-label row
-   still needs ~585px of content box at the compact link padding. */
-@media (max-width: 640px) {
-  .greedy-nav .visible-links {
-    flex-wrap: wrap;
-    row-gap: 0.15rem;
-  }
-
-  .greedy-nav .visible-links::before {
-    display: none;
-  }
-
-  .greedy-nav .visible-links > .language-toggle {
-    flex: 0 0 auto;
-    width: auto;
   }
 }
