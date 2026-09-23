@@ -1307,6 +1307,9 @@ body {
   min-height: 48px;
 }
 
+/* Centre the whole navigation bar at every viewport width. The theme's own
+   rules use a table layout above 1280px and space-between below 1024px, so the
+   flex centring has to be restated globally, after the media queries. */
 .masthead__inner-wrap {
   max-width: 1180px;
   margin: 0 auto;
@@ -1319,9 +1322,20 @@ body {
 }
 
 .greedy-nav .visible-links {
-  justify-content: center;
+  display: flex !important;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center !important;
   min-height: 48px;
   gap: clamp(0.15rem, 1.1vw, 1.1rem);
+}
+
+.greedy-nav .visible-links > li {
+  display: block !important;
+  flex: 0 0 auto;
+  width: auto;
 }
 
 .masthead__menu-item,
@@ -1364,6 +1378,10 @@ body {
 
   .greedy-nav .visible-links {
     gap: 0.1rem;
+  }
+
+  .language-toggle {
+    margin-left: 0;
   }
 
   .greedy-nav a {
