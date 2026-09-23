@@ -3,10 +3,14 @@
   max-width: 100%;
 }
 
+/*
+ * Language switch capsule. Only the outer shape lives here; the width cap and
+ * every option hit-box rule come from the authoritative navigation block at the
+ * end of main.scss, so the two never disagree about how wide a half is.
+ */
 .language-toggle__control {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 6rem;
   padding: 0.2rem;
   border: 1px solid rgba(29, 29, 31, 0.1);
   border-radius: 999px;
@@ -15,13 +19,14 @@
 }
 
 .greedy-nav .visible-links > li.language-toggle .language-toggle__control > .language-toggle__option {
-  display: grid !important;
-  width: auto !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
   min-width: 0;
   min-height: 1.8rem;
   box-sizing: border-box;
-  place-items: center;
-  padding: 0 !important;
+  padding: 0 0.3rem;
   border: 0;
   border-radius: 999px;
   color: #86868b;
@@ -37,12 +42,12 @@
 
 .greedy-nav .visible-links > li.language-toggle .language-toggle__control > a.language-toggle__option:hover {
   color: #1d1d1f;
-  background: rgba(255, 255, 255, 0.58);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .greedy-nav .visible-links > li.language-toggle .language-toggle__control > a.language-toggle__option:focus-visible {
   outline: 2px solid #0071e3;
-  outline-offset: 2px;
+  outline-offset: 1px;
 }
 
 .greedy-nav .visible-links > li.language-toggle .language-toggle__control > .language-toggle__option.is-active {
@@ -50,6 +55,11 @@
   color: #f5f5f7;
   background: #2c2c2e;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.greedy-nav .visible-links > li.language-toggle .language-toggle__control > .language-toggle__option.is-active:hover {
+  color: #f5f5f7;
+  background: #2c2c2e;
 }
 
 body.inner-page:has(.notes-grid) #main,
@@ -786,16 +796,15 @@ body.home-page .page__content .news-window h2 {
     text-overflow: clip;
   }
 
+  /*
+   * The language switch geometry (capsule width, per-option hit box) is owned
+   * by the authoritative navigation block at the end of main.scss. Do not
+   * restate its width or padding here: a body-prefixed selector outranks that
+   * block, and a stale width makes the option hit boxes sit off the capsule
+   * centre, which is exactly the misalignment this file used to cause.
+   */
   body .language-toggle__control {
-    width: 4.15rem;
     margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0.16rem;
-  }
-
-  body .greedy-nav .visible-links > li.language-toggle .language-toggle__control > .language-toggle__option {
-    min-height: 1.45rem;
-    font-size: 0.58rem;
   }
 
   body.home-page #main {
