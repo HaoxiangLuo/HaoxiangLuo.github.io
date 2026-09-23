@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-09-23",
+    "title_zh": "调整了界面样式",
+    "title_en": "Refined interface styling",
+    "message": "Size nav labels by content so Opportunities stops being clipped",
+    "story_zh": "页面还可以更清楚、更顺手。这次重新整理了界面样式的视觉与交互。",
+    "story_en": "The site could feel clearer and easier to use, so I refined the visual design and interaction of interface styling.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Size nav labels by content so Opportunities stops being clipped",
+    "details_zh": "优化页面的排版、间距与响应式视觉效果。",
+    "details_en": "Improved typography, spacing, and responsive visual presentation.",
+    "sha": "98d1cc2",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/98d1cc295e9b2981ba06fcd1c749d31c08839b9e"
+  },
+  {
+    "date": "2026-09-23",
     "title_zh": "调整了资讯、导航、界面样式",
     "title_en": "Refined Opportunities, navigation, interface styling",
     "message": "Add Opportunities page with daily internship and academia collectors",
