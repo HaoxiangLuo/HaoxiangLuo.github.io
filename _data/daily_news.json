@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T02:28:25+08:00",
+  "updated_at": "2026-09-24T03:23:42+08:00",
   "days": [
     {
       "date": "2026-09-24",
@@ -11,10 +11,16 @@
           "title_zh": "伊朗总统告诉特朗普，伊朗永远不会“屈服"
         },
         {
-          "title": "Iran's president gives a rare wartime speech at the U.N.",
+          "title": "Trump set to greet Xi for high-stakes state visit",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/nx-s1-5978863/iran-president-united-nations-general-assembly",
-          "title_zh": "伊朗总统在联合国发表罕见的战时讲话"
+          "url": "https://www.npr.org/2026/09/23/nx-s1-5978733/trump-xi-meeting-china",
+          "title_zh": "特朗普将迎接习近平进行高风险国事访问"
+        },
+        {
+          "title": "LIVE: OpenAI and Anthropic to brief Security Council as AI guardrails debate intensifies",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168414",
+          "title_zh": "直播：随着人工智能护栏辩论的加剧，OpenAI 和 Anthropic 向安理会通报情况"
         },
         {
           "title": "Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war",
@@ -23,10 +29,16 @@
           "title_zh": "埃塞俄比亚和提格雷指责各自发动攻势，加剧了对新战争的担忧"
         },
         {
-          "title": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi",
+          "title": "Iran's president gives a rare wartime speech at the U.N.",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/nx-s1-5978691/from-cybersecurity-to-ai-what-at-stake-in-trumps-meeting-with-and-president-xiwhy-the-us-and-china-are-at-a-precarious-moment-in-their-relationship",
-          "title_zh": "从网络安全到人工智能再到台湾，特朗普与习近平的峰会利害攸关"
+          "url": "https://www.npr.org/2026/09/23/nx-s1-5978863/iran-president-united-nations-general-assembly",
+          "title_zh": "伊朗总统在联合国发表罕见的战时讲话"
+        },
+        {
+          "title": "LIVE: Climate change is here - What happens next is still in our hands",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168372",
+          "title_zh": "直播：气候变化已经到来 - 接下来会发生什么仍然掌握在我们手中"
         },
         {
           "title": "White House rolling out red carpet for historic Xi Jinping visit",
@@ -35,28 +47,16 @@
           "title_zh": "白宫为习近平历史性访问铺上红地毯"
         },
         {
-          "title": "U.S. ambassador to the U.N. discusses progress on key issues",
+          "title": "From cybersecurity to AI to Taiwan, what's at stake in Trump's summit with Xi",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/nx-s1-5978682/u-s-ambassador-to-the-u-n-discusses-progress-on-key-issues",
-          "title_zh": "美国驻联合国大使讨论关键问题的进展"
+          "url": "https://www.npr.org/2026/09/23/nx-s1-5978691/from-cybersecurity-to-ai-what-at-stake-in-trumps-meeting-with-and-president-xiwhy-the-us-and-china-are-at-a-precarious-moment-in-their-relationship",
+          "title_zh": "从网络安全到人工智能再到台湾，特朗普与习近平的峰会利害攸关"
         },
         {
-          "title": "Dramatic eviction of woman aged 87 highlights Spain's housing shortage",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6vgy55lm8z1o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "87岁妇女被大规模驱逐凸显西班牙住房短缺"
-        },
-        {
-          "title": "Greetings from Edinburgh, where a cheeky tour guide makes art history hilarious",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/g-s1-142427/uk-coco-art-history-comedy-tour",
-          "title_zh": "来自爱丁堡的问候，厚脸皮的导游让艺术史变得热闹"
-        },
-        {
-          "title": "Dolly Parton's manager accuses her nephew of 'threats and intimidation'",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c670lydl5wg5o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "多莉帕顿的经理指责她的侄子“威胁和恐吓"
+          "title": "UN’s ‘sacred covenant has been broken’, Argentina’s Milei tells General Assembly",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168415",
+          "title_zh": "阿根廷的米莱告诉大会，联合国的“神圣盟约已经被打破"
         }
       ]
     },
