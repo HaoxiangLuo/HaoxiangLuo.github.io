@@ -1321,6 +1321,17 @@ body {
   width: 100%;
 }
 
+/* The language pill sits inside the same flex row as the menu links and has no
+   counterpart on the left, so centring the row alone leaves the links looking
+   pushed rightwards. Reserving an equally wide empty first cell makes the
+   centring optically true for the menu labels themselves. */
+.greedy-nav .visible-links::before {
+  content: "";
+  display: block;
+  flex: 0 0 auto;
+  width: var(--nav-lang-width, 5.5rem);
+}
+
 .greedy-nav .visible-links {
   display: flex !important;
   width: 100%;
@@ -1336,6 +1347,11 @@ body {
   display: block !important;
   flex: 0 0 auto;
   width: auto;
+}
+
+.greedy-nav .visible-links > .language-toggle {
+  width: var(--nav-lang-width, 5.5rem);
+  justify-content: center;
 }
 
 .masthead__menu-item,
@@ -1357,10 +1373,13 @@ body {
 }
 
 .language-toggle {
+  display: flex;
+  align-items: center;
   margin-left: 0.4rem;
 }
 
-.language-toggle a {
+.language-toggle a,
+.language-toggle__option {
   min-width: 2.75rem;
   border: 1px solid rgba(29, 29, 31, 0.14);
   border-radius: 999px;
@@ -1376,12 +1395,19 @@ body {
     padding: 0 0.45rem;
   }
 
-  .greedy-nav .visible-links {
-    gap: 0.1rem;
+  /* Below tablet width the row would overflow, so the reserved left cell is
+     dropped and the natural flow keeps every label visible. */
+  .greedy-nav .visible-links::before {
+    display: none;
   }
 
-  .language-toggle {
-    margin-left: 0;
+  .greedy-nav .visible-links {
+    gap: 0.1rem;
+    justify-content: space-around !important;
+  }
+
+  .greedy-nav .visible-links > .language-toggle {
+    width: auto;
   }
 
   .greedy-nav a {
