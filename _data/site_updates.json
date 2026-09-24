@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-24",
+    "title_zh": "调整了页面结构、资讯、界面样式、网站日志",
+    "title_en": "Refined page structure, Opportunities, interface styling, Site Log",
+    "message": "Fold the opportunities archive by day and make log entries specific",
+    "story_zh": "对页面结构、资讯、界面样式、网站日志的收录与归档方式进行了改动，使每天抓取的内容按日留存并默认收起。",
+    "story_en": "Changed how page structure, Opportunities, interface styling, Site Log is collected and archived so each day's items are kept by date and collapsed by default.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Fold the opportunities archive by day and make log entries specific",
+    "details_zh": "调整网站日志的归档内容、呈现方式或自动记录。调整资讯页面的收录内容、板块结构或自动采集。调整样式表中的排版、间距与响应式规则。调整页面组件与内容结构。",
+    "details_en": "Refined the site-log archive, presentation, or automatic record. Refined the opportunities archive, sections, or automatic collection. Adjusted typography, spacing and responsive rules in the stylesheet. Adjusted page components and content structure.",
+    "sha": "b4444c2",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/b4444c26895117f804561f70d7a05faa32922437"
+  },
+  {
     "date": "2026-09-23",
     "title_zh": "导航栏间距与切换按钮",
     "title_en": "Nav spacing and language pill",
