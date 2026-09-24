@@ -117,9 +117,18 @@
 
 每次拥有者向 `master` 推送网页修改后，工作流会记录日期、修改类别、提交说明和提交链接。自动新闻提交、日志机器人提交和合并噪声不会写入日志。同一提交重复运行不会产生重复记录，最多保留最近 100 条。
 
-描述文字由 GitHub Models（`openai/gpt-4o-mini`，工作流已授予 `models: read`）根据提交主题与改动文件生成一句话具体说明（形如"增加了X，用于X；对X进行X改动，使X更X"），调用失败时回退到脚本内置的按文件分类规则句子。本地刷新既有记录可用 `python scripts/update_site_log.py --sha <sha> --refresh`（需 `GITHUB_TOKEN` 环境变量）。
+### 描述文字的硬性要求（每次改动日志相关代码都必须遵守）
 
-页面只读取已经保存的数据，不再依赖访客浏览器实时请求 GitHub API。需要手动补充时，可编辑 `_data/site_updates.json`，但应保持现有字段结构。
+一句话，**具体**，简短。必须写成下面两种句式之一：
+
+- `增加了X，该功能用于X` —— X 是站内具体的页面、板块、控件或脚本；
+- `对X进行了X改动，使X变得X` —— 说明改动对象和改动带来的结果。
+
+禁止使用"体验""效果""内容""质量"这类空泛名词，也禁止"更清楚、更顺手""持续改进""进一步完善""优化体验""界面更友好"这类套话。英文条目同样一句话镜像表达（Added X, which does Y. / Changed X so that Y.），至多 22 个单词。
+
+描述文字由 GitHub Models（`openai/gpt-4o-mini`，工作流已授予 `models: read`）按上述规则生成，脚本会先校验：命中禁用词、超长或为空的结果一律丢弃并改用回退句（回退句同样按文件类别点名具体改动对象）。模型最多重试两次。本地预演：`python scripts/update_site_log.py --only-shas <sha1,sha2> --dry-run`（需 `GITHUB_TOKEN`）。注意：本工作区的沙箱网络无法真正访问 `models.github.ai`（请求会被拦截返回空响应），模型效果只能在 GitHub Actions 中验证。
+
+页面只读取已经保存的数据，不再依赖访客浏览器实时请求 GitHub API。需要手动补充时，可编辑 `_data/site_updates.json`，但应保持现有字段结构，并遵循上面的句式要求。
 
 ## 10. 每日新闻自动化
 
@@ -186,6 +195,12 @@
 2. 院校资讯：QS 前 50 高校新闻传播院系官方页面（牛津 RISJ、剑桥 POLIS、哈佛 Shorenstein、NYU、斯坦福、USC Annenberg、香港大学 JMSC、威斯康星麦迪逊、南洋理工 WKWSCI），提取含 visiting、exchange、joint、fellowship、studentship 等关键词的条目。
 
 某天没有新信息时，脚本不修改数据文件，工作流检测到无差异即跳过提交。已收录的条目按 URL 去重，不会重复出现。新增信息源时编辑脚本顶部的 `INTERN_SOURCES` / `ACADEMIA_SOURCES` 列表即可。
+
+### 归档只增不改（改动前必读）
+
+采集结果**只追加、不覆盖**：新条目写入当天日期的 `items`，已有日期合并而非重建，脚本每次运行前会先归一化归档（同一日期合并为一条、日内按 URL/标题去重、无日期的条目丢弃），最多保留 180 天。切勿改成"每天生成一份新数据覆盖写入"。
+
+页面呈现与存储配套：**每一天是一个 `<details>`**（`class="daily-news-day opps-day"`，带 `data-filter-date` 以便日期筛选器生效），**最新一天默认 `open`，更早的收起**；`_includes/opps-archive-controls.html` 提供"展开/收起全部日期"按钮。这样归档可以持续增长而不会把最新内容埋进长列表。相关样式在 `_sass/_content-refinements.scss` 的 `.opps-day` / `.opps-toolbar` 段。
 
 ## 14. 当前迁移注意事项
 

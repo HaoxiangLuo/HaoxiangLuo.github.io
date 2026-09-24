@@ -300,6 +300,77 @@ body.home-page .page__content .news-window h2 {
   height: 1px;
   background: rgba(29, 29, 31, 0.08);
 }
+.opps-subtitle__count {
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(0, 113, 227, 0.09);
+  color: #0071e3;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+/* Each collected day is a <details>: the archive grows without the newest
+   entries pushing a wall of older ones onto the reader, because every day
+   except the latest is folded closed. The card keeps the shared
+   `.daily-news-day` item styling and only changes its own frame. */
+.opps-archive .daily-news-day {
+  display: block;
+  padding: 0;
+  overflow: hidden;
+}
+.opps-day > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.95rem clamp(1.1rem, 2.2vw, 1.6rem);
+  cursor: pointer;
+  list-style: none;
+}
+.opps-day > summary::-webkit-details-marker { display: none; }
+.opps-day > summary::marker { content: ""; }
+.opps-day > summary time {
+  color: #1d1d1f;
+  font-size: 1rem;
+  font-weight: 720;
+  letter-spacing: -0.02em;
+}
+.opps-day__count { color: #86868b; font-size: 0.65rem; }
+.opps-day__chevron {
+  flex: 0 0 auto;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-left: auto;
+  border-right: 1.6px solid #86868b;
+  border-bottom: 1.6px solid #86868b;
+  transform: rotate(45deg) translateY(-1px);
+  transition: transform 0.18s ease;
+}
+.opps-day[open] > summary .opps-day__chevron { transform: rotate(-135deg) translateY(-1px); }
+.opps-day[open] > summary { border-bottom: 1px solid rgba(29, 29, 31, 0.07); }
+.opps-day > summary:hover time { color: #0071e3; }
+.opps-day > ol { padding: 0.35rem clamp(1.1rem, 2.2vw, 1.6rem) 1.1rem; }
+
+.opps-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 1.6rem;
+}
+.opps-toggle {
+  padding: 0.4rem 0.95rem;
+  border: 1px solid rgba(29, 29, 31, 0.12);
+  border-radius: 999px;
+  background: #fff;
+  color: #1d1d1f;
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.18s ease, color 0.18s ease;
+}
+.opps-toggle:hover { border-color: #0071e3; color: #0071e3; }
+.opps-toolbar__hint { color: #86868b; font-size: 0.68rem; }
 
 /* Date filters shared by the two generated archives. */
 .archive-date-filter {

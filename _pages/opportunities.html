@@ -7,10 +7,11 @@ lang: en
 translation_url: /zh/opportunities/
 ---
 
-<p class="daily-news-intro">A daily-updated record of internships at the United Nations and leading global companies, together with PhD exchange, visiting and joint-training opportunities announced by journalism and communication departments at QS top-50 universities. Sections are collected automatically from official sources; entries stay in the archive below.</p>
+<p class="daily-news-intro">A daily-updated record of internships at the United Nations and leading global companies, together with PhD exchange, visiting and joint-training opportunities announced by journalism and communication departments at QS top-50 universities. Sections are collected automatically from official sources. Everything collected is kept: each day is filed under its own date, the newest day starts open and earlier days stay folded away, so a later run never overwrites an earlier one.</p>
 
 {% assign opps = site.data.opportunities %}
 {% include archive-date-filter.html %}
+{% include opps-archive-controls.html %}
 
 <div class="opps-archive">
   <section class="opps-section" aria-labelledby="opps-intern-title">
@@ -19,21 +20,29 @@ translation_url: /zh/opportunities/
     {% for day in opps.internships %}{% assign day_un = day.items | where: "group", "un" %}{% assign un_total = un_total | plus: day_un.size %}{% endfor %}
     {% assign company_total = 0 %}
     {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% assign company_total = company_total | plus: day_co.size %}{% endfor %}
+    {% assign un_first = "" %}
+    {% for day in opps.internships %}{% assign day_un = day.items | where: "group", "un" %}{% if day_un.size > 0 and un_first == "" %}{% assign un_first = day.date %}{% endif %}{% endfor %}
+    {% assign company_first = "" %}
+    {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% if day_co.size > 0 and company_first == "" %}{% assign company_first = day.date %}{% endif %}{% endfor %}
     <div class="opps-subblock">
-      <h3 class="opps-subtitle">United Nations</h3>
+      <h3 class="opps-subtitle">United Nations <span class="opps-subtitle__count">{{ un_total }}</span></h3>
       <div class="daily-news-archive">
         {% if un_total > 0 %}
           {% for day in opps.internships %}
             {% assign group_items = day.items | where: "group", "un" %}
             {% if group_items.size > 0 %}
-              <article class="daily-news-day" data-filter-date="{{ day.date }}">
-                <header><time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time><span>{{ group_items.size }} new</span></header>
+              <details class="daily-news-day opps-day" data-filter-date="{{ day.date }}"{% if day.date == un_first %} open{% endif %}>
+                <summary class="opps-day__summary">
+                  <time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time>
+                  <span class="opps-day__count">{{ group_items.size }} new</span>
+                  <span class="opps-day__chevron" aria-hidden="true"></span>
+                </summary>
                 <ol>
                   {% for item in group_items %}
                     <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}{% if item.detail %} <em>· {{ item.detail | escape }}</em>{% endif %}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
                   {% endfor %}
                 </ol>
-              </article>
+              </details>
             {% endif %}
           {% endfor %}
         {% else %}
@@ -42,20 +51,24 @@ translation_url: /zh/opportunities/
       </div>
     </div>
     <div class="opps-subblock">
-      <h3 class="opps-subtitle">Global Companies</h3>
+      <h3 class="opps-subtitle">Global Companies <span class="opps-subtitle__count">{{ company_total }}</span></h3>
       <div class="daily-news-archive">
         {% if company_total > 0 %}
           {% for day in opps.internships %}
             {% assign group_items = day.items | where: "group", "company" %}
             {% if group_items.size > 0 %}
-              <article class="daily-news-day" data-filter-date="{{ day.date }}">
-                <header><time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time><span>{{ group_items.size }} new</span></header>
+              <details class="daily-news-day opps-day" data-filter-date="{{ day.date }}"{% if day.date == company_first %} open{% endif %}>
+                <summary class="opps-day__summary">
+                  <time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time>
+                  <span class="opps-day__count">{{ group_items.size }} new</span>
+                  <span class="opps-day__chevron" aria-hidden="true"></span>
+                </summary>
                 <ol>
                   {% for item in group_items %}
                     <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}{% if item.detail %} <em>· {{ item.detail | escape }}</em>{% endif %}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
                   {% endfor %}
                 </ol>
-              </article>
+              </details>
             {% endif %}
           {% endfor %}
         {% else %}
@@ -70,14 +83,18 @@ translation_url: /zh/opportunities/
     <div class="daily-news-archive">
       {% if opps.academia.size > 0 %}
         {% for day in opps.academia %}
-          <article class="daily-news-day" data-filter-date="{{ day.date }}">
-            <header><time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time><span>{{ day.items.size }} new</span></header>
+          <details class="daily-news-day opps-day" data-filter-date="{{ day.date }}"{% if forloop.first %} open{% endif %}>
+            <summary class="opps-day__summary">
+              <time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time>
+              <span class="opps-day__count">{{ day.items.size }} new</span>
+              <span class="opps-day__chevron" aria-hidden="true"></span>
+            </summary>
             <ol>
               {% for item in day.items %}
                 <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
               {% endfor %}
             </ol>
-          </article>
+          </details>
         {% endfor %}
       {% else %}
         <p class="daily-news-empty">The first batch of academic opportunities will appear after the automated collection task runs.</p>

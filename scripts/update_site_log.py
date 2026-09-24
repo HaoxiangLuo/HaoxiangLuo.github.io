@@ -1,11 +1,25 @@
 #!/usr/bin/env python3
-"""Save concise, durable site-update records from Git commits."""
+"""Save concise, specific site-update records from Git commits.
+
+Every entry is written for a reader of the site, not for a developer: it names
+the concrete thing that changed and what that change is for. One sentence, in
+one of two shapes:
+
+    增加了X，该功能用于X        (something was added; say what it does)
+    对X进行了X改动，使X变得X     (something was changed; say what it improves)
+
+Vague wording ("优化了体验", "让页面更清楚") is rejected: it describes nothing
+and reads the same for every commit. When the model call fails or returns
+something unusable, the fallback below names the touched areas instead of
+falling back to a generic sentence.
+"""
 
 from __future__ import annotations
 
 import argparse
 import json
 import os
+import re
 import subprocess
 import sys
 import urllib.request
@@ -24,6 +38,64 @@ OUTPUT = ROOT / "_data" / "site_updates.json"
 MAX_ENTRIES = 100
 MODELS_ENDPOINT = "https://models.github.ai/inference/chat/completions"
 MODELS_MODEL = "openai/gpt-4o-mini"
+
+# Wording that describes nothing. If a generated sentence contains one of these
+# it is discarded and the area-based fallback is used instead.
+BANNED_PHRASES = (
+    "更清楚、更顺手",
+    "持续改进",
+    "进一步完善",
+    "不断优化",
+    "提升用户体验",
+    "优化体验",
+    "界面更友好",
+    "更加完善",
+    "让网站更好",
+)
+
+SYSTEM_PROMPT = """You write public changelog entries for Haoxiang Luo's bilingual academic website.
+
+Reply with a JSON object with exactly these keys: story_zh, story_en, title_zh, title_en, details_zh, details_en.
+
+Rules for story_zh — ONE Simplified Chinese sentence, 20 to 45 characters, following one of these two shapes word for word:
+  增加了X，该功能用于X
+  对X进行了X改动，使X变得X
+X must be a concrete part of this site: a page, a section, a control, a script or a data file. Never a vague noun such as 体验、效果、内容、质量.
+Name what the change does for a visitor, for example 使导航栏各间距相等、使每日抓取的内容按日收起、使论文可按年份筛选.
+
+Rules for story_en — the same content in English, ONE sentence, at most 22 words, in one of these shapes:
+  Added X, which does Y.
+  Changed X so that Y.
+
+Rules for title_zh — 6 to 16 characters naming the concrete thing that changed, no full stop, e.g. 导航栏间距与切换器、每日新闻归档、资讯页按日折叠.
+Rules for title_en — at most 6 words, same content.
+Rules for details_zh / details_en — one or two short clauses naming the concrete areas or files touched.
+
+Never use these phrases: 更清楚、更顺手、持续改进、进一步完善、优化体验、界面更友好、更加完善.
+Never mention commit hashes, branch names, markdown or quotes.
+Describe only what the commit clearly does. If the diff is ambiguous, name the areas or files touched rather than guessing at a purpose."""
+
+FEWSHOT_USER = """Subject: Add Opportunities page with daily internship and academia collectors
+
+Files:
+_pages/opportunities.html
+_data/opportunities.json
+
+Diff stat:
+ _pages/opportunities.html | 84 ++++++++++
+ _data/opportunities.json | 26 +++"""
+
+FEWSHOT_ASSISTANT = json.dumps(
+    {
+        "story_zh": "增加了资讯页面，该功能用于按日收录联合国与企业实习、以及海外高校交流项目。",
+        "story_en": "Added an Opportunities page, which archives UN and company internships plus university exchange programmes by day.",
+        "title_zh": "资讯页面与每日采集",
+        "title_en": "Opportunities page and daily collection",
+        "details_zh": "新增中英双语资讯页与导航入口，实习板块区分联合国与企业两类来源。",
+        "details_en": "Added the bilingual Opportunities page and its navigation entry, splitting UN and company internship sources.",
+    },
+    ensure_ascii=False,
+)
 
 
 def git(*args: str) -> str:
@@ -80,8 +152,8 @@ def details(files: list[str]) -> tuple[str, str]:
         (lambda path: "site-log" in path or "site_log" in path, "调整网站日志的归档内容、呈现方式或自动记录。", "Refined the site-log archive, presentation, or automatic record."),
         (lambda path: "daily-news" in path or "daily_news" in path, "调整每日新闻的归档内容、呈现方式或自动更新。", "Refined the daily-news archive, presentation, or automatic update."),
         (lambda path: "opportunities" in path, "调整资讯页面的收录内容、板块结构或自动采集。", "Refined the opportunities archive, sections, or automatic collection."),
-        (lambda path: path.startswith(("_sass/", "assets/css/")), "优化页面的排版、间距与响应式视觉效果。", "Improved typography, spacing, and responsive visual presentation."),
-        (lambda path: path.startswith("assets/js/"), "优化页面筛选或其他交互体验。", "Improved page filtering or other interactions."),
+        (lambda path: path.startswith(("_sass/", "assets/css/")), "调整样式表中的排版、间距与响应式规则。", "Adjusted typography, spacing and responsive rules in the stylesheet."),
+        (lambda path: path.startswith("assets/js/"), "调整页面的筛选、展开或其他交互脚本。", "Adjusted the page's filtering, expand/collapse or other interaction scripts."),
         (lambda path: path.startswith(("_includes/", "_layouts/")), "调整页面组件与内容结构。", "Adjusted page components and content structure."),
     )
     zh, en = [], []
@@ -94,52 +166,64 @@ def details(files: list[str]) -> tuple[str, str]:
     return "".join(zh), " ".join(en)
 
 
-def story(files: list[str], zh_labels: list[str], en_labels: list[str]) -> tuple[str, str]:
-    """Write one brief, public-facing sentence about the change."""
+def fallback_story(files: list[str], zh_labels: list[str], en_labels: list[str]) -> tuple[str, str]:
+    """A sentence that still names the concrete area when the model is unavailable."""
     scope_zh = "、".join(zh_labels)
     scope_en = ", ".join(en_labels)
     if any("daily-news" in path or "daily_news" in path for path in files):
         return (
-            f"为了更方便地了解世界动态，我调整了{scope_zh}，让信息更新与归档更可靠。",
-            f"To make world events easier to follow, I refined {scope_en} so updates and archives remain reliable.",
+            f"对{scope_zh}的采集与归档逻辑进行了改动，使每日内容按日留存、重复条目不再重复入库。",
+            f"Changed the collection and archiving logic of {scope_en} so daily items are kept by date and duplicates are no longer stored twice.",
+        )
+    if any("opportunities" in path for path in files):
+        return (
+            f"对{scope_zh}的收录与归档方式进行了改动，使每天抓取的内容按日留存并默认收起。",
+            f"Changed how {scope_en} is collected and archived so each day's items are kept by date and collapsed by default.",
+        )
+    if any(path.startswith(("assets/js/", "_includes/", "_layouts/")) for path in files):
+        return (
+            f"对{scope_zh}的结构与交互脚本进行了改动，使页面的展开、筛选等操作更容易完成。",
+            f"Changed the structure and interaction scripts of {scope_en} so expanding and filtering the page is easier to do.",
         )
     if any(path.startswith(("_sass/", "assets/css/")) or "masthead" in path for path in files):
         return (
-            f"页面还可以更清楚、更顺手。这次重新整理了{scope_zh}的视觉与交互。",
-            f"The site could feel clearer and easier to use, so I refined the visual design and interaction of {scope_en}.",
+            f"对{scope_zh}的排版、间距与响应式规则进行了改动，使其在窄屏与宽屏下的排布更整齐。",
+            f"Changed the typography, spacing and responsive rules of {scope_en} so the layout is tidier on both narrow and wide screens.",
         )
     return (
-        f"为了让内容更完整、查找更轻松，这次更新了{scope_zh}。",
-        f"To make the content more complete and easier to find, I updated {scope_en}.",
+        f"对{scope_zh}的内容与呈现方式进行了改动，使相关信息更完整、更容易查到。",
+        f"Changed the content and presentation of {scope_en} so the information is more complete and easier to find.",
     )
 
 
-def describe_via_models(subject: str, files: list[str], stat: str, token: str) -> dict[str, str]:
+def acceptable(text: str, max_len: int) -> bool:
+    """Reject empty, padded or substance-free sentences."""
+    value = (text or "").strip()
+    if not value or len(value) > max_len:
+        return False
+    return not any(phrase in value for phrase in BANNED_PHRASES)
+
+
+def describe_via_models(subject: str, body: str, files: list[str], stat: str, diff: str, token: str) -> dict[str, str] | None:
     """Ask GitHub Models for one specific, brief sentence about the change."""
-    file_list = "\n".join(files[:20])
-    stat_text = "\n".join(stat.splitlines()[:14])
+    user_parts = [f"Subject: {subject}"]
+    if body:
+        user_parts.append(f"\nCommit message body:\n{body[:800]}")
+    user_parts.append("\nFiles:\n" + "\n".join(files[:20]))
+    if stat:
+        user_parts.append("\nDiff stat:\n" + "\n".join(stat.splitlines()[:14]))
+    if diff:
+        user_parts.append("\nDiff excerpt:\n" + diff[:3000])
+    messages = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": FEWSHOT_USER},
+        {"role": "assistant", "content": FEWSHOT_ASSISTANT},
+        {"role": "user", "content": "\n".join(user_parts)},
+    ]
     payload = json.dumps(
         {
             "model": MODELS_MODEL,
-            "messages": [
-                {
-                    "role": "system",
-                    "content": (
-                        "You write public changelog entries for Haoxiang Luo's bilingual academic "
-                        "website. Given a commit subject, changed files and a diff stat, reply with "
-                        'a JSON object with keys "story_zh", "story_en", "details_zh", "details_en". '
-                        "story_zh: one Simplified Chinese sentence, at most 45 characters, in the "
-                        "pattern 增加了X，用于X or 对X进行了X改动，使X更X. story_en: the matching English "
-                        "sentence, at most 24 words. details_zh/details_en: one or two short clauses "
-                        "naming the concrete areas changed. Describe only what the commit clearly "
-                        "does. No markdown, no quotes, no commit jargon, keep it brief."
-                    ),
-                },
-                {
-                    "role": "user",
-                    "content": f"Subject: {subject}\n\nFiles:\n{file_list}\n\nDiff stat:\n{stat_text}",
-                },
-            ],
+            "messages": messages,
             "temperature": 0.2,
             "response_format": {"type": "json_object"},
         }
@@ -154,11 +238,12 @@ def describe_via_models(subject: str, files: list[str], stat: str, token: str) -
         },
     )
     with urllib.request.urlopen(request, timeout=30) as response:
-        body = json.loads(response.read().decode("utf-8"))
-    content = json.loads(body["choices"][0]["message"]["content"])
+        body_json = json.loads(response.read().decode("utf-8"))
+    content = json.loads(body_json["choices"][0]["message"]["content"])
+    keys = ("story_zh", "story_en", "title_zh", "title_en", "details_zh", "details_en")
     return {
-        key: str(content.get(key, "")).strip().strip('"').strip()
-        for key in ("story_zh", "story_en", "details_zh", "details_en")
+        key: re.sub(r"\s+", " ", str(content.get(key, "")).strip().strip('"').strip())
+        for key in keys
     }
 
 
@@ -169,26 +254,46 @@ def make_entry(sha: str) -> dict[str, object] | None:
 
     files = changed_files(sha)
     zh, en = labels(files)
-    story_zh, story_en = story(files, zh, en)
+    story_zh, story_en = fallback_story(files, zh, en)
     details_zh, details_en = details(files)
+    title_zh = "调整了" + "、".join(zh)
+    title_en = "Refined " + ", ".join(en)
+
+    body = git("show", "-s", "--format=%b", sha)
+    stat = git("diff-tree", "--no-commit-id", "--stat", "-m", sha)
+    try:
+        diff = git("show", "--format=", "-U1", "--no-color", sha)
+        diff = "\n".join(line for line in diff.splitlines() if not line.startswith("index "))
+    except Exception:
+        diff = ""
+
     token = os.environ.get("GITHUB_TOKEN", "")
     if token:
-        try:
-            stat = git("diff-tree", "--no-commit-id", "--stat", "-m", sha)
-            described = describe_via_models(message, files, stat, token)
-            story_zh = described["story_zh"] or story_zh
-            story_en = described["story_en"] or story_en
-            details_zh = described["details_zh"] or details_zh
-            details_en = described["details_en"] or details_en
-        except Exception as exc:
-            print(f"warning: model description failed for {sha[:7]}: {exc}", file=sys.stderr)
+        for attempt in (1, 2):
+            try:
+                described = describe_via_models(message, body, files, stat, diff, token)
+                if acceptable(described.get("story_zh", ""), 60) and acceptable(described.get("story_en", ""), 160):
+                    story_zh = described["story_zh"]
+                    story_en = described["story_en"]
+                    if described.get("details_zh"):
+                        details_zh = described["details_zh"]
+                    if described.get("details_en"):
+                        details_en = described["details_en"]
+                    if described.get("title_zh") and acceptable(described["title_zh"], 24):
+                        title_zh = described["title_zh"]
+                    if described.get("title_en") and acceptable(described["title_en"], 48):
+                        title_en = described["title_en"]
+                break
+            except Exception as exc:
+                print(f"warning: model description failed for {sha[:7]} (attempt {attempt}): {exc}", file=sys.stderr)
+
     raw_date = git("show", "-s", "--format=%cI", sha)
     date = datetime.fromisoformat(raw_date).astimezone(TZ)
     short_sha = git("rev-parse", "--short=7", sha)
     return {
         "date": date.strftime("%Y-%m-%d"),
-        "title_zh": "调整了" + "、".join(zh),
-        "title_en": "Refined " + ", ".join(en),
+        "title_zh": title_zh,
+        "title_en": title_en,
         "message": message,
         "story_zh": story_zh,
         "story_en": story_en,
@@ -205,10 +310,16 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--sha", default="HEAD")
     parser.add_argument("--backfill", type=int, default=0)
+    parser.add_argument("--dry-run", action="store_true", help="Build the entries and print them without writing the archive.")
     parser.add_argument(
         "--refresh",
         action="store_true",
         help="Regenerate the entry for --sha (or the backfilled range) even if it already exists.",
+    )
+    parser.add_argument(
+        "--only-shas",
+        default="",
+        help="Comma-separated short SHAs to regenerate; other existing entries are kept as they are.",
     )
     args = parser.parse_args()
 
@@ -219,6 +330,15 @@ def main() -> int:
     shas = [args.sha]
     if args.backfill:
         shas = git("rev-list", f"--max-count={args.backfill}", args.sha).splitlines()
+
+    if args.only_shas:
+        wanted = {value.strip() for value in args.only_shas.split(",") if value.strip()}
+        shas = [
+            sha
+            for sha in git("rev-list", "--max-count=400", args.sha).splitlines()
+            if git("rev-parse", "--short=7", sha) in wanted
+        ]
+        args.refresh = True
 
     if args.refresh:
         refresh_keys = {git("rev-parse", "--short=7", sha) for sha in shas}
@@ -236,6 +356,20 @@ def main() -> int:
             by_sha[entry["sha"]] = entry
 
     entries = sorted(by_sha.values(), key=lambda entry: (entry["date"], entry["sha"]), reverse=True)
+    if args.dry_run:
+        for sha in shas:
+            entry = by_sha.get(git("rev-parse", "--short=7", sha))
+            if not entry:
+                continue
+            print(f"--- {entry['sha']} {entry['date']}")
+            print(f"    subject : {entry['message']}")
+            print(f"    title_zh: {entry['title_zh']}")
+            print(f"    story_zh: {entry['story_zh']}")
+            print(f"    title_en: {entry['title_en']}")
+            print(f"    story_en: {entry['story_en']}")
+        print(f"dry run: {len(entries)} entries would be saved")
+        return 0
+
     OUTPUT.write_text(json.dumps(entries[:MAX_ENTRIES], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"saved {min(len(entries), MAX_ENTRIES)} site updates")
     return 0

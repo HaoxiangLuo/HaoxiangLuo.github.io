@@ -1,0 +1,33 @@
+<div class="opps-toolbar">
+  <button type="button" class="opps-toggle" data-opps-toggle
+          data-expand-label="{% if page.lang == 'zh' %}展开全部日期{% else %}Expand every day{% endif %}"
+          data-collapse-label="{% if page.lang == 'zh' %}收起全部日期{% else %}Collapse every day{% endif %}"
+          aria-expanded="false">{% if page.lang == 'zh' %}展开全部日期{% else %}Expand every day{% endif %}</button>
+  <span class="opps-toolbar__hint">{% if page.lang == 'zh' %}最新一天默认展开，更早的记录收起保存。{% else %}The newest day starts open; earlier days stay folded away.{% endif %}</span>
+</div>
+<script>
+  (function () {
+    "use strict";
+    var button = document.querySelector("[data-opps-toggle]");
+    if (!button) return;
+    var panels = Array.prototype.slice.call(document.querySelectorAll(".opps-archive details"));
+    if (!panels.length) return;
+    var expandLabel = button.getAttribute("data-expand-label");
+    var collapseLabel = button.getAttribute("data-collapse-label");
+    function allOpen() {
+      return panels.every(function (panel) { return panel.open; });
+    }
+    function sync() {
+      var open = allOpen();
+      button.textContent = open ? collapseLabel : expandLabel;
+      button.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+    button.addEventListener("click", function () {
+      var open = !allOpen();
+      panels.forEach(function (panel) { panel.open = open; });
+      sync();
+    });
+    panels.forEach(function (panel) { panel.addEventListener("toggle", sync); });
+    sync();
+  }());
+</script>

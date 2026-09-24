@@ -18,6 +18,7 @@ daily workflow can skip the commit entirely.
 from __future__ import annotations
 
 import argparse
+import copy
 import html
 import json
 import re
@@ -211,6 +212,35 @@ def archive_keys(days: list[dict]) -> set[str]:
     return keys
 
 
+def normalise_days(days: list[dict]) -> list[dict]:
+    """Repair an archive in place: one entry per date, no repeated items.
+
+    The archive is the only storage this page has, so it is normalised before
+    anything is added rather than trusted: two runs that land on the same date
+    (a retry after a push race, say) would otherwise leave two entries for one
+    day, and repeated items would survive inside a single day.
+    """
+    merged: dict[str, dict] = {}
+    order: list[str] = []
+    for day in days or []:
+        date = day.get("date")
+        if not date:
+            continue
+        bucket = merged.setdefault(date, {"date": date, "items": []})
+        if date not in order:
+            order.append(date)
+        seen = {item_key(item) for item in bucket["items"]}
+        for item in day.get("items", []):
+            key = item_key(item)
+            if key in seen:
+                continue
+            seen.add(key)
+            bucket["items"].append(item)
+    normalised = [merged[date] for date in order]
+    normalised.sort(key=lambda day: day["date"], reverse=True)
+    return normalised
+
+
 def append_new(days: list[dict], candidates: list[dict], today: str) -> int:
     known = archive_keys(days)
     fresh: list[dict] = []
@@ -243,6 +273,11 @@ def main() -> int:
         "internships": raw.get("internships") if isinstance(raw.get("internships"), list) else [],
         "academia": raw.get("academia") if isinstance(raw.get("academia"), list) else [],
     }
+    normalised = {name: normalise_days(days) for name, days in sections.items()}
+    # A copy, not the same list: append_new edits in place, so the "did
+    # normalising repair anything" comparison needs the pre-normalised state.
+    before = {name: copy.deepcopy(value) for name, value in normalised.items()}
+    sections.update(normalised)
 
     today = datetime.now(TZ).strftime("%Y-%m-%d")
 
@@ -256,10 +291,20 @@ def main() -> int:
     print(f"new items: internships={added_intern}, academia={added_academia}")
 
     if args.dry_run:
-        print("dry run: archive not written")
+        stored_intern = sum(len(day["items"]) for day in sections["internships"])
+        stored_academia = sum(len(day["items"]) for day in sections["academia"])
+        print(
+            f"dry run: archive not written "
+            f"(would hold {len(sections['internships'])} internship days / {stored_intern} items, "
+            f"{len(sections['academia'])} academia days / {stored_academia} items)"
+        )
         return 0
 
-    if added_intern == 0 and added_academia == 0:
+    # Nothing new is the normal case: the archive already holds these items and
+    # stays exactly as it was. It is only rewritten when the day added
+    # something, or when normalising repaired a duplicate date or item.
+    repaired = any(before[name] != sections[name] for name in before)
+    if added_intern == 0 and added_academia == 0 and not repaired:
         print("nothing new to record; archive left unchanged")
         return 0
 
@@ -269,7 +314,13 @@ def main() -> int:
         "academia": sections["academia"][:MAX_DAYS],
     }
     OUTPUT.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    stored_intern = sum(len(day["items"]) for day in archive["internships"])
+    stored_academia = sum(len(day["items"]) for day in archive["academia"])
     print(f"saved {added_intern} internships and {added_academia} academia items for {today}")
+    print(
+        f"archive now holds {len(archive['internships'])} internship days / {stored_intern} items, "
+        f"{len(archive['academia'])} academia days / {stored_academia} items"
+    )
     return 0
 
 
