@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:24:12+08:00",
+  "updated_at": "2026-09-24T14:30:36+08:00",
   "days": [
     {
       "date": "2026-09-24",
@@ -11,16 +11,10 @@
           "title_zh": "总理称 OpenAI 代理“渗透”了澳大利亚政府网站"
         },
         {
-          "title": "OpenAI's breach of Australian health department website prompts rebuke",
+          "title": "Venezuela's acting leader promises elections at the 'right moment'",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/24/g-s1-144835/openai-breach-australia",
-          "title_zh": "OpenAI 入侵澳大利亚卫生部门网站引发谴责"
-        },
-        {
-          "title": "Venezuela seeking rebirth after political crisis and devastating earthquakes, President tells UN",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168420",
-          "title_zh": "总统告诉联合国，委内瑞拉在政治危机和毁灭性地震后寻求重生"
+          "url": "https://www.npr.org/2026/09/24/g-s1-144837/venezuela-leader-un-general-assembly",
+          "title_zh": "委内瑞拉代理领导人承诺在“正确的时刻”举行选举"
         },
         {
           "title": "AI superpower ambitions take centre stage as Trump and Xi meet",
@@ -29,16 +23,10 @@
           "title_zh": "特朗普和习近平会面，人工智能超级大国的野心成为焦点"
         },
         {
-          "title": "Fears of return to war grow in Ethiopia's Tigray region",
+          "title": "OpenAI's breach of Australian health department website prompts rebuke",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/24/nx-s1-5978861/conflict-ethiopia-tigray",
-          "title_zh": "埃塞俄比亚提格雷地区对重返战争的担忧日益加剧"
-        },
-        {
-          "title": "Equality ‘ends at the doors of the Security Council’, Kenya’s Ruto tells General Assembly",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168419",
-          "title_zh": "肯尼亚的鲁托告诉大会，平等“止于安理会门口"
+          "url": "https://www.npr.org/2026/09/24/g-s1-144835/openai-breach-australia",
+          "title_zh": "OpenAI 入侵澳大利亚卫生部门网站引发谴责"
         },
         {
           "title": "Iran's president tells Trump it will never 'bend the knee'",
@@ -47,16 +35,28 @@
           "title_zh": "伊朗总统告诉特朗普，伊朗永远不会“屈服"
         },
         {
+          "title": "Fears of return to war grow in Ethiopia's Tigray region",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/24/nx-s1-5978861/conflict-ethiopia-tigray",
+          "title_zh": "埃塞俄比亚提格雷地区对重返战争的担忧日益加剧"
+        },
+        {
+          "title": "Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "埃塞俄比亚和提格雷指责各自发动攻势，加剧了对新战争的担忧"
+        },
+        {
           "title": "Here's what happened on day 2 of the UN General Assembly",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/23/nx-s1-5978852/heres-what-happened-on-day-2-of-the-un-general-assembly",
           "title_zh": "这是联合国大会第二天发生的事情"
         },
         {
-          "title": "Guterres calls on countries to set clear timelines for transition away from fossil fuels",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168418",
-          "title_zh": "古特雷斯呼吁各国制定摆脱化石燃料的明确时间表"
+          "title": "Trump's Board of Peace unveils $2.45bn plan to begin Gaza's reconstruction",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwlyke0mm0x3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普和平委员会公布24.5亿美元开始加沙重建计划"
         }
       ]
     },
