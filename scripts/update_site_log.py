@@ -127,8 +127,10 @@ def labels(files: list[str]) -> tuple[list[str], list[str]]:
             add("网站日志", "Site Log")
         elif "daily-news" in path or "daily_news" in path:
             add("每日新闻", "Daily News")
-        elif "opportunities" in path:
+        elif "opportunities" in path or "opps" in path:
             add("资讯", "Opportunities")
+        elif "archive-date-filter" in path:
+            add("归档筛选", "archive date filter")
         elif path.startswith("_data/navigation") or "masthead" in path:
             add("导航", "navigation")
         elif path.startswith(("_sass/", "assets/css/")):
@@ -167,23 +169,57 @@ def details(files: list[str]) -> tuple[str, str]:
 
 
 def fallback_story(files: list[str], zh_labels: list[str], en_labels: list[str]) -> tuple[str, str]:
-    """A sentence that still names the concrete area when the model is unavailable."""
+    """A sentence that still names the concrete area when the model is unavailable.
+
+    The model is not reliable from the workflow, so this path is taken often;
+    it must read like a real entry rather than a placeholder. It names the
+    touched area and what that area does, never a general improvement.
+    """
     scope_zh = "、".join(zh_labels)
     scope_en = ", ".join(en_labels)
-    if any("daily-news" in path or "daily_news" in path for path in files):
+
+    # A commit touching only scripts and templates is an interaction change,
+    # even when those files belong to a section: repairing the expand button is
+    # not the same as changing what that section collects.
+    if files and all(path.startswith(("assets/js/", "_includes/", "_layouts/")) for path in files):
         return (
-            f"对{scope_zh}的采集与归档逻辑进行了改动，使每日内容按日留存、重复条目不再重复入库。",
-            f"Changed the collection and archiving logic of {scope_en} so daily items are kept by date and duplicates are no longer stored twice.",
+            f"对{scope_zh}的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
+            f"Changed the script and interaction logic of {scope_en} so expanding and filtering the page works reliably.",
         )
-    if any("opportunities" in path for path in files):
+
+    def whole_topic(predicate) -> bool:
+        """True when every changed file belongs to that one topic.
+
+        A commit spanning several areas must not be described as if all of
+        them did the same thing, so the specific sentences are reserved for
+        commits whose files all point at one topic.
+        """
+        return bool(files) and all(predicate(path) for path in files)
+
+    if whole_topic(lambda path: "daily-news" in path or "daily_news" in path):
         return (
-            f"对{scope_zh}的收录与归档方式进行了改动，使每天抓取的内容按日留存并默认收起。",
-            f"Changed how {scope_en} is collected and archived so each day's items are kept by date and collapsed by default.",
+            f"对{scope_zh}的采集与归档脚本进行了改动，使每日内容按日留存、重复条目不再重复入库。",
+            f"Changed the collection and archiving script behind {scope_en} so daily items are kept by date and duplicates are stored once.",
+        )
+    if whole_topic(lambda path: "opportunities" in path or "opps" in path):
+        return (
+            f"对{scope_zh}的收录与归档方式进行了改动，使每天抓取的内容按日留存、历史日期默认收起。",
+            f"Changed how {scope_en} is collected and archived so each day's items are kept by date and earlier days stay folded.",
+        )
+    if whole_topic(lambda path: path.startswith(("_sass/", "assets/css/")) or "masthead" in path):
+        return (
+            f"对{scope_zh}的排版、间距与响应式规则进行了改动，使其在窄屏与宽屏下的排布更整齐。",
+            f"Changed the typography, spacing and responsive rules of {scope_en} so the layout is tidier on both narrow and wide screens.",
+        )
+    if any(path.startswith("_data/") for path in files):
+        return (
+            f"更新了{scope_zh}的归档数据，使页面读到的记录与最新一次改动保持一致。",
+            f"Updated the archived data behind {scope_en} so the page shows the records from the latest change.",
         )
     if any(path.startswith(("assets/js/", "_includes/", "_layouts/")) for path in files):
         return (
-            f"对{scope_zh}的结构与交互脚本进行了改动，使页面的展开、筛选等操作更容易完成。",
-            f"Changed the structure and interaction scripts of {scope_en} so expanding and filtering the page is easier to do.",
+            f"对{scope_zh}的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
+            f"Changed the script and interaction logic of {scope_en} so expanding and filtering the page works reliably.",
         )
     if any(path.startswith(("_sass/", "assets/css/")) or "masthead" in path for path in files):
         return (
@@ -204,8 +240,31 @@ def acceptable(text: str, max_len: int) -> bool:
     return not any(phrase in value for phrase in BANNED_PHRASES)
 
 
-def describe_via_models(subject: str, body: str, files: list[str], stat: str, diff: str, token: str) -> dict[str, str] | None:
-    """Ask GitHub Models for one specific, brief sentence about the change."""
+def describe_via_models(subject: str, body: str, files: list[str], stat: str, diff: str, token: str, compact: bool = False) -> dict[str, str] | None:
+    """Ask GitHub Models for one specific, brief sentence about the change.
+
+    `compact` drops the few-shot example and the diff excerpt: a retry with a
+    smaller payload gets through in cases where the full one does not.
+    """
+    if compact:
+        messages = [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": f"Subject: {subject}\n\nFiles:\n" + "\n".join(files[:12])},
+        ]
+        payload = json.dumps(
+            {"model": MODELS_MODEL, "messages": messages, "temperature": 0.2, "response_format": {"type": "json_object"}}
+        ).encode("utf-8")
+        request = urllib.request.Request(
+            MODELS_ENDPOINT,
+            data=payload,
+            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json", "Accept": "application/json"},
+        )
+        with urllib.request.urlopen(request, timeout=30) as response:
+            body_json = json.loads(response.read().decode("utf-8"))
+        content = json.loads(body_json["choices"][0]["message"]["content"])
+        keys = ("story_zh", "story_en", "title_zh", "title_en", "details_zh", "details_en")
+        return {key: re.sub(r"\s+", " ", str(content.get(key, "")).strip().strip('"').strip()) for key in keys}
+
     user_parts = [f"Subject: {subject}"]
     if body:
         user_parts.append(f"\nCommit message body:\n{body[:800]}")
@@ -269,20 +328,30 @@ def make_entry(sha: str) -> dict[str, object] | None:
 
     token = os.environ.get("GITHUB_TOKEN", "")
     if token:
-        for attempt in (1, 2):
+        for attempt, compact in ((1, False), (2, True)):
             try:
-                described = describe_via_models(message, body, files, stat, diff, token)
-                if acceptable(described.get("story_zh", ""), 60) and acceptable(described.get("story_en", ""), 160):
-                    story_zh = described["story_zh"]
-                    story_en = described["story_en"]
-                    if described.get("details_zh"):
-                        details_zh = described["details_zh"]
-                    if described.get("details_en"):
-                        details_en = described["details_en"]
-                    if described.get("title_zh") and acceptable(described["title_zh"], 24):
-                        title_zh = described["title_zh"]
-                    if described.get("title_en") and acceptable(described["title_en"], 48):
-                        title_en = described["title_en"]
+                described = describe_via_models(message, body, files, stat, diff, token, compact=compact)
+                problems = [
+                    label
+                    for label, value, limit in (
+                        ("story_zh", described.get("story_zh", ""), 60),
+                        ("story_en", described.get("story_en", ""), 160),
+                    )
+                    if not acceptable(value, limit)
+                ]
+                if problems:
+                    print(f"warning: model answer rejected for {sha[:7]}: {', '.join(problems)} unusable", file=sys.stderr)
+                    continue
+                story_zh = described["story_zh"]
+                story_en = described["story_en"]
+                if described.get("details_zh"):
+                    details_zh = described["details_zh"]
+                if described.get("details_en"):
+                    details_en = described["details_en"]
+                if described.get("title_zh") and acceptable(described["title_zh"], 24):
+                    title_zh = described["title_zh"]
+                if described.get("title_en") and acceptable(described["title_en"], 48):
+                    title_en = described["title_en"]
                 break
             except Exception as exc:
                 print(f"warning: model description failed for {sha[:7]} (attempt {attempt}): {exc}", file=sys.stderr)
