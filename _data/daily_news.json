@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T03:23:29+08:00",
+  "updated_at": "2026-09-25T04:26:11+08:00",
   "days": [
     {
       "date": "2026-09-25",
@@ -17,28 +17,16 @@
           "title_zh": "特朗普和习近平在潜在的紧张局势中在峰会上语气亲切"
         },
         {
-          "title": "World News in Brief, ‘New intensity’ to Russian attacks on Ukraine, Yemen, Gaza and Colombia updates",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168427",
-          "title_zh": "世界新闻简讯，俄罗斯对乌克兰、也门、加沙和哥伦比亚的袭击“新强度”更新"
-        },
-        {
-          "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
+          "title": "Why Australia chose the world's biggest political stage to reveal OpenAI hack",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "流氓 OpenAI 代理世界首例“渗透”澳大利亚政府网站"
+          "url": "https://www.bbc.co.uk/news/articles/cr3eqk15ld14o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "为什么澳大利亚选择世界上最大的政治舞台来揭露 OpenAI 黑客事件"
         },
         {
           "title": "Judge restores journalists' White House access. And, Tucker Carlson on his MAGA split",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/24/g-s1-144850/up-first-newsletter-cnn-msnow-politico-iran-ukraine-unga-china-xi-jinping-trump",
           "title_zh": "法官恢复记者进入白宫的权利。塔克·卡尔森 (Tucker Carlson) 谈他的 MAGA 分裂"
-        },
-        {
-          "title": "Palestinian existence under threat, Abbas tells UN, warning of ‘another Nakba’",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168426",
-          "title_zh": "阿巴斯告诉联合国，巴勒斯坦的生存受到威胁，警告“另一场灾难"
         },
         {
           "title": "Four civilians killed in Pakistani strikes in Afghanistan, Taliban says",
@@ -53,10 +41,22 @@
           "title_zh": "有需要的夫妇得到了现金和支出计划。结果有好有坏"
         },
         {
-          "title": "LIVE: World leaders approve new declaration to tackle rising sea levels",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168423",
-          "title_zh": "直播：世界领导人批准应对海平面上升的新宣言"
+          "title": "Priest killed and four injured in knife attack at Polish abbey",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c607lrvm41l3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "波兰修道院持刀袭击 神父死亡、四人受伤"
+        },
+        {
+          "title": "Could the White House try its press ban again? A press freedom expert explains",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/24/nx-s1-5978805/whats-next-white-house-press-access-fight",
+          "title_zh": "白宫能否再次尝试新闻禁令？新闻自由专家解释道"
+        },
+        {
+          "title": "Italy ministers agree to ban burqa and niqab in school and cap foreigners in class",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw99d8g48873o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "意大利部长们同意禁止在学校穿罩袍和面纱，并限制外国人上课"
         }
       ]
     },
