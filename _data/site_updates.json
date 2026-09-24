@@ -56,6 +56,20 @@
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/8f5cb828d143bd99da55ba60017eb81133051edd"
   },
   {
+    "date": "2026-09-24",
+    "title_zh": "调整了每日新闻",
+    "title_en": "Refined Daily News",
+    "message": "Merge the news stories that only existed in the local copy",
+    "story_zh": "对每日新闻的采集与归档脚本进行了改动，使每日内容按日留存、重复条目不再重复入库。",
+    "story_en": "Changed the collection and archiving script behind Daily News so daily items are kept by date and duplicates are stored once.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Merge the news stories that only existed in the local copy",
+    "details_zh": "调整每日新闻的归档内容、呈现方式或自动更新。",
+    "details_en": "Refined the daily-news archive, presentation, or automatic update.",
+    "sha": "898fbc0",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/898fbc02d84af9cde4cdbbf86d21ba86bf68194b"
+  },
+  {
     "date": "2026-09-23",
     "title_zh": "导航栏间距与切换按钮",
     "title_en": "Nav spacing and language pill",
