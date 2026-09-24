@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T21:26:46+08:00",
+  "updated_at": "2026-09-24T22:26:34+08:00",
   "days": [
     {
       "date": "2026-09-24",
@@ -17,12 +17,6 @@
           "title_zh": "高风险峰会开始之际，特朗普为习近平铺上红地毯"
         },
         {
-          "title": "‘Peace remains only a promise’ for millions in eastern DR Congo, General Assembly hears",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168422",
-          "title_zh": "大会听取刚果民主共和国东部数百万人的“和平仍然只是一个承诺"
-        },
-        {
           "title": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cmp30r1klk37o?at_medium=RSS&at_campaign=rss",
@@ -35,16 +29,10 @@
           "title_zh": "法官恢复记者进入白宫的权利。塔克·卡尔森 (Tucker Carlson) 谈他的 MAGA 分裂"
         },
         {
-          "title": "The Takeaway: UN General Assembly debate Day 2",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168421",
-          "title_zh": "要点：联合国大会辩论第二天"
-        },
-        {
-          "title": "Judge temporarily overturns Trump's White House media ban",
+          "title": "Ethiopia's army says it has repelled attacks in first comment on fresh fighting",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqm2mg34x2v7o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "法官暂时推翻特朗普的白宫媒体禁令"
+          "url": "https://www.bbc.co.uk/news/articles/cqevwm09w4xmo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "埃塞俄比亚军队首次就新战斗发表评论称已击退袭击"
         },
         {
           "title": "Needy couples got cash and a spending plan. Results were good -- and bad",
@@ -53,10 +41,22 @@
           "title_zh": "有需要的夫妇得到了现金和支出计划。结果有好有坏"
         },
         {
-          "title": "Venezuela seeking rebirth after political crisis and devastating earthquakes, President tells UN",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168420",
-          "title_zh": "总统告诉联合国，委内瑞拉在政治危机和毁灭性地震后寻求重生"
+          "title": "Judge temporarily overturns Trump's White House media ban",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqm2mg34x2v7o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法官暂时推翻特朗普的白宫媒体禁令"
+        },
+        {
+          "title": "Could the White House try its press ban again? A press freedom expert explains",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/24/nx-s1-5978805/whats-next-white-house-press-access-fight",
+          "title_zh": "白宫能否再次尝试新闻禁令？新闻自由专家解释道"
+        },
+        {
+          "title": "Teen rocker Nene Royal becomes first Thai to win America's Got Talent",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqzjzl3d1409o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "青少年摇滚歌手 Nene Royal 成为第一位赢得美国达人秀冠军的泰国人"
         }
       ]
     },
