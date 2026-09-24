@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T06:24:48+08:00",
+  "updated_at": "2026-09-25T07:23:37+08:00",
   "days": [
     {
       "date": "2026-09-25",
@@ -11,10 +11,16 @@
           "title_zh": "内塔尼亚胡为以色列的军事行动辩护，代表们在联合国演讲前退场"
         },
         {
-          "title": "Trump and Xi strike cordial tone at summit amid underlying tensions",
+          "title": "Thousands of people gather for a South African barbecue, aiming to set a world record",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/24/g-s1-144806/trump-xi-summit",
-          "title_zh": "特朗普和习近平在潜在的紧张局势中在峰会上语气亲切"
+          "url": "https://www.npr.org/2026/09/24/nx-s1-5977047/thousands-of-people-gather-for-a-south-african-barbecue-aiming-to-set-a-world-record",
+          "title_zh": "数千人齐聚南非烧烤 志在刷新世界纪录"
+        },
+        {
+          "title": "Haitians can’t wait to return home and vote in elections says Prime Minister",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168429",
+          "title_zh": "总理表示海地人迫不及待地想回家投票"
         },
         {
           "title": "White House restores access to media outlets banned by Trump after judge's order",
@@ -23,40 +29,34 @@
           "title_zh": "法官下令后，白宫恢复了特朗普禁止的媒体渠道"
         },
         {
+          "title": "Trump and Xi strike cordial tone at summit amid underlying tensions",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/24/g-s1-144806/trump-xi-summit",
+          "title_zh": "特朗普和习近平在潜在的紧张局势中在峰会上语气亲切"
+        },
+        {
+          "title": "UNRWA work and mandate in ‘jeopardy’, Guterres warns",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168428",
+          "title_zh": "古特雷斯警告近东救济工程处的工作和任务处于“危险”之中"
+        },
+        {
+          "title": "Hundreds of thousands expected in Paris for Pope's visit",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&at_campaign=rss",
+          "title_zh": "巴黎预计将有数十万人参加教宗的访问"
+        },
+        {
           "title": "Judge restores journalists' White House access. And, Tucker Carlson on his MAGA split",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/24/g-s1-144850/up-first-newsletter-cnn-msnow-politico-iran-ukraine-unga-china-xi-jinping-trump",
           "title_zh": "法官恢复记者进入白宫的权利。塔克·卡尔森 (Tucker Carlson) 谈他的 MAGA 分裂"
         },
         {
-          "title": "Why Australia chose the world's biggest political stage to reveal OpenAI hack",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cr3eqk15ld14o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "为什么澳大利亚选择世界上最大的政治舞台来揭露 OpenAI 黑客事件"
-        },
-        {
-          "title": "Needy couples got cash and a spending plan. Results were good -- and bad",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/24/g-s1-144544/cash-transfer-poverty-liberia-partner-violence",
-          "title_zh": "有需要的夫妇得到了现金和支出计划。结果有好有坏"
-        },
-        {
-          "title": "Four civilians killed in Pakistani strikes in Afghanistan, Taliban says",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm86xn0nnw58o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "塔利班称巴基斯坦在阿富汗的空袭造成四名平民死亡"
-        },
-        {
-          "title": "Could the White House try its press ban again? A press freedom expert explains",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/24/nx-s1-5978805/whats-next-white-house-press-access-fight",
-          "title_zh": "白宫能否再次尝试新闻禁令？新闻自由专家解释道"
-        },
-        {
-          "title": "Priest killed and four injured in knife attack at Polish abbey",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c607lrvm41l3o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "波兰修道院持刀袭击 神父死亡、四人受伤"
+          "title": "World News in Brief: ‘New intensity’ to Russian attacks on Ukraine, Yemen, Gaza and Colombia updates",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168427",
+          "title_zh": "世界新闻简讯：俄罗斯对乌克兰、也门、加沙和哥伦比亚的袭击“新强度”更新"
         }
       ]
     },
