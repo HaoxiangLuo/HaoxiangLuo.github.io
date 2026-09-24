@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-09-24",
+    "title_zh": "调整了网站日志",
+    "title_en": "Refined Site Log",
+    "message": "Label site-log data files and reword the restore entry",
+    "story_zh": "更新了网站日志的归档数据，使页面读到的记录与最新一次改动保持一致。",
+    "story_en": "Updated the archived data behind Site Log so the page shows the records from the latest change.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Label site-log data files and reword the restore entry",
+    "details_zh": "调整网站日志的归档内容、呈现方式或自动记录。",
+    "details_en": "Refined the site-log archive, presentation, or automatic record.",
+    "sha": "c280e35",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/c280e351d19bec9eb81bf7ac83c404deb9588477"
+  },
+  {
+    "date": "2026-09-24",
     "title_zh": "展开与收起全部日期",
     "title_en": "Expand/collapse every day",
     "message": "Bind the expand/collapse control after the archive is parsed",
