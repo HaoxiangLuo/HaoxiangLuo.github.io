@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T16:27:32+08:00",
+  "updated_at": "2026-09-24T17:26:25+08:00",
   "days": [
     {
       "date": "2026-09-24",
@@ -11,22 +11,34 @@
           "title_zh": "流氓 OpenAI 代理世界首例“渗透”澳大利亚政府网站"
         },
         {
+          "title": "Israel's prime minister to give an address at the U.N.",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/24/nx-s1-5978964/israels-prime-minister-to-give-an-address-at-the-u-n",
+          "title_zh": "以色列总理将在联合国发表讲话"
+        },
+        {
+          "title": "Trump offers warm welcome as China's Xi arrives for US visit",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqgmrk7187lzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普热烈欢迎习近平抵达美国"
+        },
+        {
+          "title": "Veteran diplomat discusses the public -- and private -- politicking happening at UNGA",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/24/nx-s1-5979078/veteran-diplomat-discusses-the-public-and-private-politicking-happening-at-unga",
+          "title_zh": "资深外交官讨论联合国大会上发生的公共和私人政治活动"
+        },
+        {
+          "title": "Trump and Xi come face-to-face as US and China jostle for dominance over AI",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6gqdgg8w59xo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "中美争夺人工智能主导地位，特朗普和习近平面对面"
+        },
+        {
           "title": "Venezuela's acting leader promises elections at the 'right moment'",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/24/g-s1-144837/venezuela-leader-un-general-assembly",
           "title_zh": "委内瑞拉代理领导人承诺在“正确的时刻”举行选举"
-        },
-        {
-          "title": "AI superpower ambitions take centre stage as Trump and Xi meet",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6gqdgg8w59xo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普和习近平会面，人工智能超级大国的野心成为焦点"
-        },
-        {
-          "title": "OpenAI's breach of Australian health department website prompts rebuke",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/24/g-s1-144835/openai-breach-australia",
-          "title_zh": "OpenAI 入侵澳大利亚卫生部门网站引发谴责"
         },
         {
           "title": "Iran's president tells Trump it will never 'bend the knee'",
@@ -35,28 +47,16 @@
           "title_zh": "伊朗总统告诉特朗普，伊朗永远不会“屈服"
         },
         {
-          "title": "Fears of return to war grow in Ethiopia's Tigray region",
+          "title": "OpenAI's breach of Australian health department website prompts rebuke",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/24/nx-s1-5978861/conflict-ethiopia-tigray",
-          "title_zh": "埃塞俄比亚提格雷地区对重返战争的担忧日益加剧"
+          "url": "https://www.npr.org/2026/09/24/g-s1-144835/openai-breach-australia",
+          "title_zh": "OpenAI 入侵澳大利亚卫生部门网站引发谴责"
         },
         {
           "title": "Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&at_campaign=rss",
           "title_zh": "埃塞俄比亚和提格雷指责各自发动攻势，加剧了对新战争的担忧"
-        },
-        {
-          "title": "Here's what happened on day 2 of the UN General Assembly",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/nx-s1-5978852/heres-what-happened-on-day-2-of-the-un-general-assembly",
-          "title_zh": "这是联合国大会第二天发生的事情"
-        },
-        {
-          "title": "Trump's Board of Peace unveils $2.45bn plan to begin Gaza's reconstruction",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwlyke0mm0x3o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普和平委员会公布24.5亿美元开始加沙重建计划"
         }
       ]
     },
