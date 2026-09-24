@@ -123,7 +123,7 @@ def labels(files: list[str]) -> tuple[list[str], list[str]]:
             add("论文发表", "Publications")
         elif "study-notes" in path:
             add("学习札记", "Study Notes")
-        elif "site-log" in path or "site_log" in path:
+        elif "site-log" in path or "site_log" in path or "site_updates" in path:
             add("网站日志", "Site Log")
         elif "daily-news" in path or "daily_news" in path:
             add("每日新闻", "Daily News")
