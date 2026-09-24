@@ -1,26 +1,32 @@
 {
-  "updated_at": "2026-09-24T22:26:34+08:00",
+  "updated_at": "2026-09-24T23:26:53+08:00",
   "days": [
     {
       "date": "2026-09-24",
       "items": [
         {
-          "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
+          "title": "White House 'repeatedly violated' court order to restore press access, say media outlets",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "流氓 OpenAI 代理世界首例“渗透”澳大利亚政府网站"
+          "url": "https://www.bbc.co.uk/news/articles/cqe8ek7608mlo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "媒体称，白宫“多次违反”法院恢复新闻采访的命令"
         },
         {
-          "title": "Trump rolls out red carpet for Xi as high-stakes summit begins",
+          "title": "Trump rolls out the red carpet for Xi as high-stakes summit begins",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/24/g-s1-144806/trump-rolls-out-red-carpet-for-xi-as-high-stakes-summit-begins",
           "title_zh": "高风险峰会开始之际，特朗普为习近平铺上红地毯"
         },
         {
-          "title": "Poland says fire at Starlink station is sabotage as Denmark warns of rising Russian threat",
+          "title": "LIVE: World leaders tackle sea level rise, a stark marker of climate change",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168423",
+          "title_zh": "直播：世界领导人应对海平面上升这一气候变化的明显标志"
+        },
+        {
+          "title": "Rogue OpenAI agent 'infiltrated' Australian government website in world first",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmp30r1klk37o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "波兰称星链站火灾是破坏行为，丹麦警告俄罗斯威胁加剧"
+          "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "流氓 OpenAI 代理世界首例“渗透”澳大利亚政府网站"
         },
         {
           "title": "Judge restores journalists' White House access. And, Tucker Carlson on his MAGA split",
@@ -29,10 +35,16 @@
           "title_zh": "法官恢复记者进入白宫的权利。塔克·卡尔森 (Tucker Carlson) 谈他的 MAGA 分裂"
         },
         {
-          "title": "Ethiopia's army says it has repelled attacks in first comment on fresh fighting",
+          "title": "‘Peace remains only a promise’ for millions in eastern DR Congo, General Assembly hears",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168422",
+          "title_zh": "大会听取刚果民主共和国东部数百万人的“和平仍然只是一个承诺"
+        },
+        {
+          "title": "Why did an OpenAI system hack Australia's health system - and can it be stopped in the future?",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqevwm09w4xmo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "埃塞俄比亚军队首次就新战斗发表评论称已击退袭击"
+          "url": "https://www.bbc.co.uk/news/articles/cw24jm9rryy3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "为什么 OpenAI 系统会入侵澳大利亚的医疗系统 - 未来可以阻止吗？"
         },
         {
           "title": "Needy couples got cash and a spending plan. Results were good -- and bad",
@@ -41,22 +53,10 @@
           "title_zh": "有需要的夫妇得到了现金和支出计划。结果有好有坏"
         },
         {
-          "title": "Judge temporarily overturns Trump's White House media ban",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqm2mg34x2v7o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "法官暂时推翻特朗普的白宫媒体禁令"
-        },
-        {
-          "title": "Could the White House try its press ban again? A press freedom expert explains",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/24/nx-s1-5978805/whats-next-white-house-press-access-fight",
-          "title_zh": "白宫能否再次尝试新闻禁令？新闻自由专家解释道"
-        },
-        {
-          "title": "Teen rocker Nene Royal becomes first Thai to win America's Got Talent",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqzjzl3d1409o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "青少年摇滚歌手 Nene Royal 成为第一位赢得美国达人秀冠军的泰国人"
+          "title": "The Takeaway: UN General Assembly debate Day 2",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168421",
+          "title_zh": "要点：联合国大会辩论第二天"
         }
       ]
     },
