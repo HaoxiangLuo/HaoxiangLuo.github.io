@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-09-24",
+    "title_zh": "展开与收起全部日期",
+    "title_en": "Expand/collapse every day",
+    "message": "Bind the expand/collapse control after the archive is parsed",
+    "story_zh": "修复了资讯页的“展开/收起全部日期”按钮，该功能用于一次性展开或收起所有归档日期。",
+    "story_en": "Fixed the Opportunities page's button that expands or folds every archived day at once.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Bind the expand/collapse control after the archive is parsed",
+    "details_zh": "控件脚本原先在归档渲染完成前执行、没有绑上事件；改为文档解析后再绑定，并在点击时按需查询日期块。",
+    "details_en": "The control's script ran before the archive was parsed and bound nothing; it now binds after parsing and looks the day panels up on click.",
+    "sha": "b6622dd",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/b6622ddc8aba66e444b47bef95d29423b12f5b45"
+  },
+  {
+    "date": "2026-09-24",
     "title_zh": "资讯按日折叠与日志描述",
     "title_en": "Day folding and log wording",
     "message": "Fold the opportunities archive by day and make log entries specific",
