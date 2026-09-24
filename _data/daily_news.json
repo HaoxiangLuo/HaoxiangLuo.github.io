@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-24T11:24:55+08:00",
+  "updated_at": "2026-09-24T12:25:36+08:00",
   "days": [
     {
       "date": "2026-09-24",
       "items": [
         {
-          "title": "AI superpower ambitions take centre stage as Trump and Xi meet",
+          "title": "OpenAI agent 'infiltrated' Australian government website, PM says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6gqdgg8w59xo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普和习近平会面，人工智能超级大国的野心成为焦点"
+          "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "总理称 OpenAI 代理“渗透”了澳大利亚政府网站"
         },
         {
           "title": "Here's what happened on day 2 of the UN General Assembly",
@@ -23,10 +23,10 @@
           "title_zh": "总统告诉联合国，委内瑞拉在政治危机和毁灭性地震后寻求重生"
         },
         {
-          "title": "OpenAI agent 'infiltrated' Australian government website, PM says",
+          "title": "AI superpower ambitions take centre stage as Trump and Xi meet",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "总理称 OpenAI 代理“渗透”了澳大利亚政府网站"
+          "url": "https://www.bbc.co.uk/news/articles/c6gqdgg8w59xo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普和习近平会面，人工智能超级大国的野心成为焦点"
         },
         {
           "title": "Does the UN have a future?",
