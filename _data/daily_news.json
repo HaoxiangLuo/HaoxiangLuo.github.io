@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T12:25:36+08:00",
+  "updated_at": "2026-09-24T13:24:12+08:00",
   "days": [
     {
       "date": "2026-09-24",
@@ -11,10 +11,10 @@
           "title_zh": "总理称 OpenAI 代理“渗透”了澳大利亚政府网站"
         },
         {
-          "title": "Here's what happened on day 2 of the UN General Assembly",
+          "title": "OpenAI's breach of Australian health department website prompts rebuke",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/nx-s1-5978852/heres-what-happened-on-day-2-of-the-un-general-assembly",
-          "title_zh": "这是联合国大会第二天发生的事情"
+          "url": "https://www.npr.org/2026/09/24/g-s1-144835/openai-breach-australia",
+          "title_zh": "OpenAI 入侵澳大利亚卫生部门网站引发谴责"
         },
         {
           "title": "Venezuela seeking rebirth after political crisis and devastating earthquakes, President tells UN",
@@ -29,10 +29,10 @@
           "title_zh": "特朗普和习近平会面，人工智能超级大国的野心成为焦点"
         },
         {
-          "title": "Does the UN have a future?",
+          "title": "Fears of return to war grow in Ethiopia's Tigray region",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/nx-s1-5976846/does-the-un-have-a-future",
-          "title_zh": "联合国还有未来吗？"
+          "url": "https://www.npr.org/2026/09/24/nx-s1-5978861/conflict-ethiopia-tigray",
+          "title_zh": "埃塞俄比亚提格雷地区对重返战争的担忧日益加剧"
         },
         {
           "title": "Equality ‘ends at the doors of the Security Council’, Kenya’s Ruto tells General Assembly",
@@ -47,10 +47,10 @@
           "title_zh": "伊朗总统告诉特朗普，伊朗永远不会“屈服"
         },
         {
-          "title": "Trump and Xi meet at moment of global consequence",
+          "title": "Here's what happened on day 2 of the UN General Assembly",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/23/nx-s1-5978733/trump-xi-meeting-china",
-          "title_zh": "特朗普和习近平在具有全球影响力的时刻会面"
+          "url": "https://www.npr.org/2026/09/23/nx-s1-5978852/heres-what-happened-on-day-2-of-the-un-general-assembly",
+          "title_zh": "这是联合国大会第二天发生的事情"
         },
         {
           "title": "Guterres calls on countries to set clear timelines for transition away from fossil fuels",
