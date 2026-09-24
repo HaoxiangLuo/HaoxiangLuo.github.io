@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T17:26:25+08:00",
+  "updated_at": "2026-09-24T18:25:37+08:00",
   "days": [
     {
       "date": "2026-09-24",
@@ -17,6 +17,12 @@
           "title_zh": "以色列总理将在联合国发表讲话"
         },
         {
+          "title": "The Takeaway: UN General Assembly debate Day 2",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168421",
+          "title_zh": "要点：联合国大会辩论第二天"
+        },
+        {
           "title": "Trump offers warm welcome as China's Xi arrives for US visit",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cqgmrk7187lzo?at_medium=RSS&at_campaign=rss",
@@ -27,6 +33,12 @@
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/24/nx-s1-5979078/veteran-diplomat-discusses-the-public-and-private-politicking-happening-at-unga",
           "title_zh": "资深外交官讨论联合国大会上发生的公共和私人政治活动"
+        },
+        {
+          "title": "Venezuela seeking rebirth after political crisis and devastating earthquakes, President tells UN",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168420",
+          "title_zh": "总统告诉联合国，委内瑞拉在政治危机和毁灭性地震后寻求重生"
         },
         {
           "title": "Trump and Xi come face-to-face as US and China jostle for dominance over AI",
@@ -41,22 +53,10 @@
           "title_zh": "委内瑞拉代理领导人承诺在“正确的时刻”举行选举"
         },
         {
-          "title": "Iran's president tells Trump it will never 'bend the knee'",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqvgyjy23ggjo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "伊朗总统告诉特朗普，伊朗永远不会“屈服"
-        },
-        {
-          "title": "OpenAI's breach of Australian health department website prompts rebuke",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/24/g-s1-144835/openai-breach-australia",
-          "title_zh": "OpenAI 入侵澳大利亚卫生部门网站引发谴责"
-        },
-        {
-          "title": "Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "埃塞俄比亚和提格雷指责各自发动攻势，加剧了对新战争的担忧"
+          "title": "Equality ‘ends at the doors of the Security Council’, Kenya’s Ruto tells General Assembly",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168419",
+          "title_zh": "肯尼亚的鲁托告诉大会，平等“止于安理会门口"
         }
       ]
     },
