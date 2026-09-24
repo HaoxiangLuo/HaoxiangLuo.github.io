@@ -28,6 +28,20 @@
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/b4444c26895117f804561f70d7a05faa32922437"
   },
   {
+    "date": "2026-09-24",
+    "title_zh": "调整了网站内容",
+    "title_en": "Refined site content",
+    "message": "Restore the entry for the expand/collapse fix",
+    "story_zh": "更新了网站内容的归档数据，使页面读到的记录与最新一次改动保持一致。",
+    "story_en": "Updated the archived data behind site content so the page shows the records from the latest change.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "Restore the entry for the expand/collapse fix",
+    "details_zh": "更新网站内容与信息呈现。",
+    "details_en": "Updated website content and information presentation.",
+    "sha": "8f5cb82",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/8f5cb828d143bd99da55ba60017eb81133051edd"
+  },
+  {
     "date": "2026-09-23",
     "title_zh": "导航栏间距与切换按钮",
     "title_en": "Nav spacing and language pill",
