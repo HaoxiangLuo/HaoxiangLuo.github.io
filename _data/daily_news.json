@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-26T04:23:57+08:00",
+  "updated_at": "2026-09-26T05:24:34+08:00",
   "days": [
     {
       "date": "2026-09-26",
       "items": [
         {
-          "title": "Russia targeting 'ordinary life' with attacks on data centres, Zelensky says",
+          "title": "Russia targeting 'ordinary life' with attacks on Ukraine's data centres, Zelensky says",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c84gkwgk7d06o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "泽伦斯基表示，俄罗斯针对数据中心的攻击瞄准了“日常生活"
+          "title_zh": "泽伦斯基表示，俄罗斯针对乌克兰数据中心的攻击瞄准了“日常生活"
         },
         {
           "title": "Takeaways from the Trump-Xi state visit: Pageantry and pandas",
@@ -17,10 +17,10 @@
           "title_zh": "特朗普与习近平国事访问的要点：盛会和熊猫"
         },
         {
-          "title": "World News in Brief: West Bank demolitions accelerate, urgent support for Sudan, Haiti diplacement, AI hub to boost gender equality",
+          "title": "UN voices grave concern as fighting spreads across northern Ethiopia",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168447",
-          "title_zh": "世界新闻简讯：约旦河西岸拆除加速、对苏丹、海地流离失所的紧急支持、人工智能中心促进性别平等"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168450",
+          "title_zh": "联合国对埃塞俄比亚北部战事蔓延表示严重关切"
         },
         {
           "title": "Special agents' blood and urine test results stolen in FBI hack",
@@ -35,10 +35,10 @@
           "title_zh": "一项全球流行病条约已经签署，但仍处于“悬而未决”的状态。有什么阻碍？"
         },
         {
-          "title": "‘No one speaks on behalf of Lebanon’: PM Salam asserts State authority at UN",
+          "title": "Tuvalu urges decisive global action as rising seas threaten its future",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168444",
-          "title_zh": "没有人代表黎巴嫩发言”：萨拉姆总理在联合国维护国家权威"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168449",
+          "title_zh": "由于海平面上升威胁其未来，图瓦卢敦促全球采取果断行动"
         },
         {
           "title": "Pope warns against 'losing humanity' to AI machines",
@@ -53,10 +53,10 @@
           "title_zh": "教皇利奥在访问法国时警告“机器天堂”可能会破坏人性"
         },
         {
-          "title": "‘Invest with Iraq’: PM sets out vision for new economic future",
+          "title": "World News in Brief: West Bank demolitions accelerate, urgent support for Sudan, Haiti diplacement, AI hub to boost gender equality",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168443",
-          "title_zh": "投资伊拉克”：总理提出新经济未来愿景"
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168447",
+          "title_zh": "世界新闻简讯：约旦河西岸拆除加速、对苏丹、海地流离失所的紧急支持、人工智能中心促进性别平等"
         }
       ]
     },
