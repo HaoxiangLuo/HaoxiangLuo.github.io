@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T22:26:53+08:00",
+  "updated_at": "2026-09-25T23:26:20+08:00",
   "days": [
     {
       "date": "2026-09-25",
@@ -11,10 +11,16 @@
           "title_zh": "教皇警告人工智能机器不要“失去人性"
         },
         {
-          "title": "Trump and Xi strike cordial tone at summit. And, Netanyahu gives defiant UNGA speech",
+          "title": "Pope Leo warns a 'paradise of machines' could undermine humanity on his France visit",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/25/g-s1-144994/up-first-newsletter-trump-xi-netanyahu-united-nations-mortgage-rates",
-          "title_zh": "特朗普和习近平在峰会上语气亲切。而且，内塔尼亚胡在联合国大会上发表了挑衅性的讲话"
+          "url": "https://www.npr.org/2026/09/25/nx-s1-5981140/pope-leo-france",
+          "title_zh": "教皇利奥在访问法国时警告“机器天堂”可能会破坏人性"
+        },
+        {
+          "title": "Security Council LIVE: Rising tide of forced displacement",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168438",
+          "title_zh": "安理会直播：被迫流离失所的浪潮不断上升"
         },
         {
           "title": "Trump and Xi exchange warm words at state dinner but little progress on key issues",
@@ -23,10 +29,16 @@
           "title_zh": "特朗普和习近平在国宴上热情交谈，但在关键问题上进展甚微"
         },
         {
-          "title": "Former U.S. ambassador to China on Xi Jinping's visit to Washington",
+          "title": "Trump and Xi strike cordial tone at summit. And, Netanyahu gives defiant UNGA speech",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/25/nx-s1-5979917/former-u-s-ambassador-to-china-on-xi-jinpings-visit-to-washington",
-          "title_zh": "美国前驻华大使谈习近平访问华盛顿"
+          "url": "https://www.npr.org/2026/09/25/g-s1-144994/up-first-newsletter-trump-xi-netanyahu-united-nations-mortgage-rates",
+          "title_zh": "特朗普和习近平在峰会上语气亲切。而且，内塔尼亚胡在联合国大会上发表了挑衅性的讲话"
+        },
+        {
+          "title": "LIVE: Six years on from COVID-19, is the world ready for the next pandemic?",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168437",
+          "title_zh": "直播：COVID-19 六年过去了，世界准备好应对下一次大流行了吗？"
         },
         {
           "title": "Xi got Trump's red carpet welcome - but not everything he wanted",
@@ -35,28 +47,16 @@
           "title_zh": "习近平受到了特朗普红地毯的欢迎，但并没有得到他想要的一切"
         },
         {
-          "title": "Netanyahu rages against critics, including Mamdani, at the U.N. General Assembly",
+          "title": "Former U.S. ambassador to China on Xi Jinping's visit to Washington",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/25/nx-s1-5979852/israels-prime-minister-addresses-u-n-general-assembly",
-          "title_zh": "内塔尼亚胡在联合国大会上对包括马姆达尼在内的批评者表示愤怒"
+          "url": "https://www.npr.org/2026/09/25/nx-s1-5979917/former-u-s-ambassador-to-china-on-xi-jinpings-visit-to-washington",
+          "title_zh": "美国前驻华大使谈习近平访问华盛顿"
         },
         {
-          "title": "Special agents' blood and urine test results stolen in FBI hack",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw62me2vlj07o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特工的血液和尿液检测结果在 FBI 黑客攻击中被盗"
-        },
-        {
-          "title": "Is Switzerland's neutrality at a crossroads?",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/25/nx-s1-5978905/swiss-referendum-neutrality-russia",
-          "title_zh": "瑞士的中立性正处于十字路口吗？"
-        },
-        {
-          "title": "Jay-Z rape accuser says her allegation was false",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm4g53547wygo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "Jay-Z 强奸指控者称她的指控是错误的"
+          "title": "Yemen violence deepens concerns over child hunger crisis",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168436",
+          "title_zh": "也门暴力加深了对儿童饥饿危机的担忧"
         }
       ]
     },
