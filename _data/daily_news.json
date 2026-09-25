@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-25T11:23:52+08:00",
+  "updated_at": "2026-09-25T12:25:59+08:00",
   "days": [
     {
       "date": "2026-09-25",
       "items": [
         {
-          "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+          "title": "Xi got Trump's red carpet welcome - but not everything he wanted",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "内塔尼亚胡为以色列的军事行动辩护，代表们在联合国演讲前退场"
+          "url": "https://www.bbc.co.uk/news/articles/cr93e4x7kdjjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "习近平受到了特朗普红地毯的欢迎，但并没有得到他想要的一切"
         },
         {
           "title": "Trump and Xi strike cordial tone at summit amid underlying tensions",
@@ -17,10 +17,16 @@
           "title_zh": "特朗普和习近平在潜在的紧张局势中在峰会上语气亲切"
         },
         {
-          "title": "Media outlets banned by Trump denied access to White House dinner despite judge's order",
+          "title": "‘Turn what we know into what we do,’ Barbados PM Mottley urges world leaders at UN",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168433",
+          "title_zh": "巴巴多斯总理莫特利在联合国敦促世界领导人“将我们所知道的转化为我们所做的"
+        },
+        {
+          "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqe8ek7608mlo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "尽管法官下令，被特朗普禁止的媒体仍拒绝参加白宫晚宴"
+          "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "内塔尼亚胡为以色列的军事行动辩护，代表们在联合国演讲前退场"
         },
         {
           "title": "Judge restores journalists' White House access. And, Tucker Carlson on his MAGA split",
@@ -29,10 +35,16 @@
           "title_zh": "法官恢复记者进入白宫的权利。塔克·卡尔森 (Tucker Carlson) 谈他的 MAGA 分裂"
         },
         {
-          "title": "Hundreds of thousands expected in Paris for Pope's visit",
+          "title": "Yemen’s path to stability depends on restoring the state, Leadership Council vice-president tells UN",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168432",
+          "title_zh": "领导委员会副主席告诉联合国，也门的稳定之路取决于恢复国家"
+        },
+        {
+          "title": "Media outlets banned by Trump denied access to White House dinner despite judge's order",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&at_campaign=rss",
-          "title_zh": "巴黎预计将有数十万人参加教宗的访问"
+          "url": "https://www.bbc.co.uk/news/articles/cqe8ek7608mlo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "尽管法官下令，被特朗普禁止的媒体仍拒绝参加白宫晚宴"
         },
         {
           "title": "Needy couples got cash and a spending plan. Results were good -- and bad",
@@ -41,22 +53,10 @@
           "title_zh": "有需要的夫妇得到了现金和支出计划。结果有好有坏"
         },
         {
-          "title": "Why Australia chose the world's biggest political stage to reveal OpenAI hack",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cr3eqk15ld14o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "为什么澳大利亚选择世界上最大的政治舞台来揭露 OpenAI 黑客事件"
-        },
-        {
-          "title": "Could the White House try its press ban again? A press freedom expert explains",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/24/nx-s1-5978805/whats-next-white-house-press-access-fight",
-          "title_zh": "白宫能否再次尝试新闻禁令？新闻自由专家解释道"
-        },
-        {
-          "title": "Four civilians killed in Pakistani strikes in Afghanistan, Taliban says",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm86xn0nnw58o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "塔利班称巴基斯坦在阿富汗的空袭造成四名平民死亡"
+          "title": "Israeli leader at UN: ‘We’re going to win. We have no other choice’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168431",
+          "title_zh": "联合国以色列领导人：“我们会赢。”我们别无选择"
         }
       ]
     },
