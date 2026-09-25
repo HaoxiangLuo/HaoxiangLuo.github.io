@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-09-25T23:26:20+08:00",
+  "updated_at": "2026-09-26T00:27:20+08:00",
   "days": [
+    {
+      "date": "2026-09-26",
+      "items": [
+        {
+          "title": "Special agents' blood and urine test results stolen in FBI hack",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw62me2vlj07o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特工的血液和尿液检测结果在 FBI 黑客攻击中被盗"
+        },
+        {
+          "title": "There's a global pandemic treaty that's signed -- and in 'limbo.' What's the holdup?",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/25/g-s1-144948/pandemic-prevention-treaty-agreement-world-health-organization",
+          "title_zh": "一项全球流行病条约已经签署，但仍处于“悬而未决”的状态。有什么阻碍？"
+        },
+        {
+          "title": "Security Council LIVE: Rising tide of forced displacement",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168438",
+          "title_zh": "安理会直播：被迫流离失所的浪潮不断上升"
+        },
+        {
+          "title": "Pope warns against 'losing humanity' to AI machines",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&at_campaign=rss",
+          "title_zh": "教皇警告人工智能机器不要“失去人性"
+        },
+        {
+          "title": "Pope Leo warns a 'paradise of machines' could undermine humanity on his France visit",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/25/nx-s1-5981140/pope-leo-france",
+          "title_zh": "教皇利奥在访问法国时警告“机器天堂”可能会破坏人性"
+        },
+        {
+          "title": "LIVE: Six years on from COVID-19, is the world ready for the next pandemic?",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168437",
+          "title_zh": "直播：COVID-19 六年过去了，世界准备好应对下一次大流行了吗？"
+        },
+        {
+          "title": "Xi got Trump's red carpet welcome - but not everything he wanted",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr93e4x7kdjjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "习近平受到了特朗普红地毯的欢迎，但并没有得到他想要的一切"
+        },
+        {
+          "title": "Trump and Xi strike cordial tone at summit. And, Netanyahu gives defiant UNGA speech",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/25/g-s1-144994/up-first-newsletter-trump-xi-netanyahu-united-nations-mortgage-rates",
+          "title_zh": "特朗普和习近平在峰会上语气亲切。而且，内塔尼亚胡在联合国大会上发表了挑衅性的讲话"
+        },
+        {
+          "title": "Yemen violence deepens concerns over child hunger crisis",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168436",
+          "title_zh": "也门暴力加深了对儿童饥饿危机的担忧"
+        }
+      ]
+    },
     {
       "date": "2026-09-25",
       "items": [
