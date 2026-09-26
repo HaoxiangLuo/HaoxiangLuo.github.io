@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T09:23:08+08:00",
+  "updated_at": "2026-09-26T10:24:19+08:00",
   "days": [
     {
       "date": "2026-09-26",
@@ -17,10 +17,16 @@
           "title_zh": "特朗普与习近平国事访问的要点：盛会和熊猫"
         },
         {
-          "title": "Russia targeting 'ordinary life' with attacks on Ukraine's data centres, Zelensky says",
+          "title": "Haiti at ‘watershed moment’, Prime Minister tells UN, urging full backing for security force",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168453",
+          "title_zh": "海地总理告诉联合国，海地正处于“分水岭时刻”，敦促全力支持安全部队"
+        },
+        {
+          "title": "OpenAI bots meddled with multiple US government agency sites",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c84gkwgk7d06o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "泽伦斯基表示，俄罗斯针对乌克兰数据中心的攻击瞄准了“日常生活"
+          "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "OpenAI 机器人干扰了多个美国政府机构网站"
         },
         {
           "title": "There's a global pandemic treaty that's signed -- and in 'limbo.' What's the holdup?",
@@ -29,10 +35,16 @@
           "title_zh": "一项全球流行病条约已经签署，但仍处于“悬而未决”的状态。有什么阻碍？"
         },
         {
-          "title": "South African white genocide does not exist, new ambassador to US tells BBC",
+          "title": "Pakistan’s Sharif warns any diversion of Indus waters will be ‘treated as an act of war’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168452",
+          "title_zh": "巴基斯坦谢里夫警告称，印度河水域的任何改道都将被“视为战争行为"
+        },
+        {
+          "title": "Russia targeting 'ordinary life' with attacks on Ukraine's data centres, Zelensky says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm2l8qv7zppko?at_medium=RSS&at_campaign=rss",
-          "title_zh": "新任驻美国大使告诉BBC，南非白人种族灭绝并不存在"
+          "url": "https://www.bbc.co.uk/news/articles/c84gkwgk7d06o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽伦斯基表示，俄罗斯针对乌克兰数据中心的攻击瞄准了“日常生活"
         },
         {
           "title": "Pope Leo warns a 'paradise of machines' could undermine humanity on his France visit",
@@ -41,22 +53,10 @@
           "title_zh": "教皇利奥在访问法国时警告“机器天堂”可能会破坏人性"
         },
         {
-          "title": "Inside the FBI hack: Agents fearful and angry after 'dangerous' data breach",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm4gjjlgzdjgo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "FBI 黑客事件内部：特工们在“危险”数据泄露后感到恐惧和愤怒"
-        },
-        {
-          "title": "Trump and Xi strike cordial tone at summit. And, Netanyahu gives defiant UNGA speech",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/25/g-s1-144994/up-first-newsletter-trump-xi-netanyahu-united-nations-mortgage-rates",
-          "title_zh": "特朗普和习近平在峰会上语气亲切。而且，内塔尼亚胡在联合国大会上发表了挑衅性的讲话"
-        },
-        {
-          "title": "OpenAI investigating 'dozens' of instances of agents acting improperly",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "OpenAI 调查“数十起”特工不当行为实例"
+          "title": "UN voices grave concern as fighting spreads across northern Ethiopia",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168450",
+          "title_zh": "联合国对埃塞俄比亚北部战事蔓延表示严重关切"
         }
       ]
     },
