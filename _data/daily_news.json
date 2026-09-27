@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T10:25:13+08:00",
+  "updated_at": "2026-09-27T11:25:17+08:00",
   "days": [
     {
       "date": "2026-09-27",
@@ -17,6 +17,12 @@
           "title_zh": "特朗普对习近平表示热烈欢迎。会谈取得了什么成果？"
         },
         {
+          "title": "Canada urges stronger partnerships as global order faces ‘rupture’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168461",
+          "title_zh": "全球秩序面临“破裂”，加拿大敦促加强伙伴关系"
+        },
+        {
           "title": "Pope praises young people's 'energy and commitment' at huge open-air Mass in Paris",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cm4gjjwvvlzro?at_medium=RSS&at_campaign=rss",
@@ -27,6 +33,12 @@
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/26/nx-s1-5976867/is-congos-ebola-outbreak-coming-under-control",
           "title_zh": "刚果埃博拉疫情是否已得到控制？"
+        },
+        {
+          "title": "Countries far from conflict paying the price for wars not their own, India tells UN",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168460",
+          "title_zh": "印度告诉联合国，远离冲突的国家为非本国战争付出代价"
         },
         {
           "title": "British national among six dead in building explosion close to Acropolis in Athens",
@@ -41,22 +53,10 @@
           "title_zh": "特朗普称伊朗重新开放霍尔木兹海峡的计划“不可接受"
         },
         {
-          "title": "German town bans 'stumbling stone' memorials to Nazi victims",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqm2mm4y5dkko?at_medium=RSS&at_campaign=rss",
-          "title_zh": "德国小镇禁止为纳粹受害者设立“绊脚石”纪念碑"
-        },
-        {
-          "title": "Why this island paradise has the world's fastest-growing HIV epidemic",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/26/g-s1-144667/hiv-crystal-meth-epidemic-fiji",
-          "title_zh": "为什么这个天堂般的岛屿拥有世界上增长最快的艾滋病毒流行"
-        },
-        {
-          "title": "Nor'easter brings flooding as New York and New Jersey declare emergency",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "纽约和新泽西州宣布紧急状态，东北带来洪水"
+          "title": "Saudi Arabia warns Gulf security inseparable from global stability amid regional tensions",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168459",
+          "title_zh": "沙特阿拉伯警告称，在地区紧张局势中，海湾安全与全球稳定密不可分"
         }
       ]
     },
