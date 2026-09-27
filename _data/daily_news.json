@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-09-27T13:23:50+08:00",
+  "updated_at": "2026-09-27T14:29:44+08:00",
   "days": [
     {
       "date": "2026-09-27",
       "items": [
         {
-          "title": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
+          "title": "Iran says it will wait for official US response after Trump rejects Strait of Hormuz proposal",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普拒绝伊朗在7天内重新开放霍尔木兹海峡的协议"
+          "url": "https://www.bbc.co.uk/news/articles/cmvgyyw2jeego?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普拒绝霍尔木兹海峡提议后，伊朗表示将等待美国官方回应"
         },
         {
           "title": "Trump gave Xi Jinping a warm welcome. What did the talks accomplish?",
@@ -17,10 +17,16 @@
           "title_zh": "特朗普对习近平表示热烈欢迎。会谈取得了什么成果？"
         },
         {
-          "title": "Pope praises young people's 'energy and commitment' at huge open-air Mass in Paris",
+          "title": "The Takeaway: UN General Assembly debate Day 5",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168462",
+          "title_zh": "要点：联合国大会辩论第五天"
+        },
+        {
+          "title": "Christa Pike to be first woman executed in Tennessee in 200 years - but her defence say she's a victim too",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm4gjjwvvlzro?at_medium=RSS&at_campaign=rss",
-          "title_zh": "教宗在巴黎大型露天弥撒中赞扬年轻人的“活力和承诺"
+          "url": "https://www.bbc.co.uk/news/articles/c6pwl9g9ne1lo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "克里斯塔·派克（Christa Pike）将成为田纳西州 200 年来第一位被处决的女性，但她的辩护律师称她也是受害者"
         },
         {
           "title": "Is Congo's Ebola outbreak coming under control?",
@@ -29,10 +35,16 @@
           "title_zh": "刚果埃博拉疫情是否已得到控制？"
         },
         {
-          "title": "British national among six dead in building explosion close to Acropolis in Athens",
+          "title": "Canada urges stronger partnerships as global order faces ‘rupture’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168461",
+          "title_zh": "全球秩序面临“破裂”，加拿大敦促加强伙伴关系"
+        },
+        {
+          "title": "Four killed in helicopter crash near Montreal",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6p3kk78l4l1o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "英国国民在雅典卫城附近的建筑爆炸中丧生，其中六人死亡"
+          "url": "https://www.bbc.co.uk/news/articles/c3grvv7p81lqo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "蒙特利尔附近直升机坠毁造成四人死亡"
         },
         {
           "title": "Trump calls Iranian plan to reopen Strait of Hormuz not 'acceptable'",
@@ -41,22 +53,10 @@
           "title_zh": "特朗普称伊朗重新开放霍尔木兹海峡的计划“不可接受"
         },
         {
-          "title": "German town bans 'stumbling stone' memorials to Nazi victims",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqm2mm4y5dkko?at_medium=RSS&at_campaign=rss",
-          "title_zh": "德国小镇禁止为纳粹受害者设立“绊脚石”纪念碑"
-        },
-        {
-          "title": "Why this island paradise has the world's fastest-growing HIV epidemic",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/26/g-s1-144667/hiv-crystal-meth-epidemic-fiji",
-          "title_zh": "为什么这个岛屿天堂的艾滋病毒流行速度是世界上最快的"
-        },
-        {
-          "title": "Nor'easter brings flooding as New York and New Jersey declare emergency",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "纽约和新泽西州宣布紧急状态，东北带来洪水"
+          "title": "Countries far from conflict paying the price for wars not their own, India tells UN",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168460",
+          "title_zh": "印度告诉联合国，远离冲突的国家为非本国战争付出代价"
         }
       ]
     },
