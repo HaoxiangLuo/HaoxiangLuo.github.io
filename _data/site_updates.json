@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-28",
+    "title_zh": "调整了界面样式",
+    "title_en": "Refined interface styling",
+    "message": "统一学界前沿页面内容宽度",
+    "story_zh": "对界面样式的排版、间距与响应式规则进行了改动，使其在窄屏与宽屏下的排布更整齐。",
+    "story_en": "Changed the typography, spacing and responsive rules of interface styling so the layout is tidier on both narrow and wide screens.",
+    "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+    "purpose_en": "统一学界前沿页面内容宽度",
+    "details_zh": "调整样式表中的排版、间距与响应式规则。",
+    "details_en": "Adjusted typography, spacing and responsive rules in the stylesheet.",
+    "sha": "8e12266",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/8e122669ea9c3ae3774b2f24fd75e91f969b38e4"
+  },
+  {
     "date": "2026-09-24",
     "title_zh": "调整了网站日志",
     "title_en": "Refined Site Log",
