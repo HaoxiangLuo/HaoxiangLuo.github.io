@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T04:25:01+08:00",
+  "updated_at": "2026-09-29T05:25:22+08:00",
   "days": [
     {
       "date": "2026-09-29",
@@ -17,12 +17,6 @@
           "title_zh": "我们对英国涉嫌恐怖阴谋的了解。为什么海湾地区仍处于不稳定状态"
         },
         {
-          "title": "World News in Brief: Refugee funding, US migration policy triggers ‘cascade’ of rights violations, world forests report, restorative justice in Colombia",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168467",
-          "title_zh": "世界新闻简讯：难民资助、美国移民政策引发“一连串”侵犯人权行为、世界森林报告、哥伦比亚的恢复性司法"
-        },
-        {
           "title": "Seoul summons Ukraine envoy over North Korean prisoner-of-war row",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c8ly40xx0dr0o?at_medium=RSS&at_campaign=rss",
@@ -33,12 +27,6 @@
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack",
           "title_zh": "英国正在调查伊朗或俄罗斯是否参与了美国基地附近未遂袭击事件"
-        },
-        {
-          "title": "Security Council LIVE: Ambassadors meet as West Bank tensions rise, Gaza plan stalls",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168464",
-          "title_zh": "安理会直播：随着西岸紧张局势升级，大使们会面，加沙计划陷入停滞"
         },
         {
           "title": "Twelve women have been killed in one part of South Africa since July. Here's what we know so far",
@@ -53,10 +41,22 @@
           "title_zh": "87岁老人被驱逐引发马德里住房危机抗议"
         },
         {
-          "title": "LIVE: World leaders take stock of global fight against racism",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168463",
-          "title_zh": "直播：世界领导人评估全球反种族主义斗争"
+          "title": "Iran court upholds lashes sentence for singer who performed without hijab",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/crn45ed1kqqgo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "伊朗法院维持对未戴头巾表演歌手的鞭刑判决"
+        },
+        {
+          "title": "Five arrested near UK air base used by U.S. bombers in Iran war",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/27/nx-s1-5982718/five-arrested-near-uk-air-base-used-by-u-s-bombers-in-iran-war",
+          "title_zh": "五人在美国轰炸机在伊朗战争中使用的英国空军基地附近被捕"
+        },
+        {
+          "title": "Nigerian attempts to break world record by dancing non-stop for seven days",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq8r6z2gjzd1o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "尼日利亚人连续7天不停跳舞，试图打破世界纪录"
         }
       ]
     },
