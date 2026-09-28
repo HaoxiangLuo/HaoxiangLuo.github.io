@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T21:28:27+08:00",
+  "updated_at": "2026-09-28T22:29:59+08:00",
   "days": [
     {
       "date": "2026-09-28",
@@ -7,47 +7,56 @@
         {
           "title": "Inside Yemen's front-line city as Houthis battle for control",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw98005ndz7no?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cw98005ndz7no?at_medium=RSS&at_campaign=rss",
+          "title_zh": "也门前线城市内胡塞武装争夺控制权"
         },
         {
           "title": "What we know about the suspected U.K. terror plot. And, why the Gulf remains in limbo",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/28/g-s1-145248/up-first-newsletter-uk-us-air-base-iran-strait-hormuz-media-outlets-cnn-trump"
-        },
-        {
-          "title": "The Takeaway: UN General Assembly debate Day 5",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168462"
+          "url": "https://www.npr.org/2026/09/28/g-s1-145248/up-first-newsletter-uk-us-air-base-iran-strait-hormuz-media-outlets-cnn-trump",
+          "title_zh": "我们对英国涉嫌恐怖阴谋的了解。为什么海湾地区仍处于不稳定状态"
         },
         {
           "title": "Trump-Xi summit: What wasn't said might matter the most",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cxp84g2ly1mjo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cxp84g2ly1mjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特习峰会：没有说的可能是最重要的"
         },
         {
-          "title": "5 men arrested over suspected attack at a U.S.-run air force base are British nationals",
+          "title": "5 British suspects arrested, explosives found near U.S.-run air base. Iran denies role",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack"
-        },
-        {
-          "title": "Canada urges stronger partnerships as global order faces ‘rupture’",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168461"
+          "url": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack",
+          "title_zh": "5 名英国嫌疑人被捕，美国空军基地附近发现爆炸物。伊朗否认参与其中"
         },
         {
           "title": "Mexico's Pacific coast braces for Hurricane Polo",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw8d3z5y7958o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cw8d3z5y7958o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "墨西哥太平洋海岸为飓风波罗做好准备"
         },
         {
           "title": "Eviction of 87-year-old sparks protests in Madrid over housing crisis",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/28/nx-s1-5983303/encampment-protest-madrid-housing-crisis"
+          "url": "https://www.npr.org/2026/09/28/nx-s1-5983303/encampment-protest-madrid-housing-crisis",
+          "title_zh": "87岁老人被驱逐引发马德里住房危机抗议"
         },
         {
-          "title": "Countries far from conflict paying the price for wars not their own, India tells UN",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168460"
+          "title": "Plan for controversial Sydney data centre scrapped after push-back",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6n9wrqpj4yqo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "备受争议的悉尼数据中心计划遭推迟后被取消"
+        },
+        {
+          "title": "Five arrested near UK air base used by U.S. bombers in Iran war",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/27/nx-s1-5982718/five-arrested-near-uk-air-base-used-by-u-s-bombers-in-iran-war",
+          "title_zh": "五人在美国轰炸机在伊朗战争中使用的英国空军基地附近被捕"
+        },
+        {
+          "title": "Two mass shootings in South Africa leave 28 dead",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "南非发生两起大规模枪击事件 造成28人死亡"
         }
       ]
     },
