@@ -1,0 +1,48 @@
+---
+layout: archive
+permalink: /zh/academic-frontiers/
+title: "学界前沿"
+author_profile: false
+lang: zh
+translation_url: /academic-frontiers/
+---
+
+<p class="daily-news-intro">本站追踪的十本新闻传播学核心期刊的最新论文。期刊范围由维护者依据其拥有授权的 JCR 数据每年人工核对一次。论文元数据由 OpenAlex 整理，页面仅展示摘要节选，不保存或提供全文与 PDF。</p>
+
+{% assign frontiers = site.data.academic_frontiers %}
+{% assign updated_day = frontiers.updated_at | slice: 0, 10 %}
+{% include archive-date-filter.html %}
+
+<p class="frontiers-updated">本站更新 <time datetime="{{ updated_day }}">{{ updated_day | date: "%Y 年 %-m 月 %-d 日" }}</time></p>
+
+<div class="frontiers-archive">
+  {% if frontiers.items.size > 0 %}
+    {% for item in frontiers.items %}
+      {% if item.doi_url != blank %}
+        {% assign source_link = item.doi_url %}
+      {% else %}
+        {% assign source_link = item.landing_page_url %}
+      {% endif %}
+      <article class="frontiers-card" data-filter-date="{{ item.published_at }}">
+        <header class="frontiers-card__meta">
+          <time datetime="{{ item.published_at }}">{{ item.published_at | date: "%Y 年 %-m 月 %-d 日" }}</time>
+          <span class="frontiers-card__journal">{{ item.journal | escape }}</span>
+          {% if item.source_tier != blank %}<span class="frontiers-card__tier">{{ item.source_tier }}</span>{% endif %}
+        </header>
+        <h2 class="frontiers-card__title">{{ item.title | escape }}</h2>
+        <p class="frontiers-card__authors">{% if item.authors.size > 0 %}{{ item.authors | join: ", " | escape }}{% else %}元数据中未列出作者。{% endif %}</p>
+        <p class="frontiers-card__abstract{% unless item.abstract_excerpt %} is-empty{% endunless %}">
+          <span class="frontiers-card__label">摘要节选</span>
+          {% if item.abstract_excerpt %}{{ item.abstract_excerpt | escape }}{% else %}元数据中暂无摘要节选。{% endif %}
+        </p>
+        {% if source_link != blank %}
+          <a class="frontiers-card__link" href="{{ source_link }}" target="_blank" rel="noopener noreferrer">阅读原文 <b aria-hidden="true">↗</b></a>
+        {% endif %}
+      </article>
+    {% endfor %}
+  {% else %}
+    <p class="frontiers-empty">自动归档任务运行后，这里会显示第一批论文。</p>
+  {% endif %}
+</div>
+
+<p class="frontiers-note">论文元数据由 OpenAlex 整理，摘要仅展示节选，原文归相应出版方所有。</p>

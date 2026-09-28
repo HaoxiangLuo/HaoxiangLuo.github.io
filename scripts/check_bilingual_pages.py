@@ -15,6 +15,12 @@ PAIRS = (
     ("_pages/site-log.html", "_pages/site-log-zh.html", "/site-log/", "/zh/site-log/"),
     ("_pages/daily-news.html", "_pages/daily-news-zh.html", "/daily-news/", "/zh/daily-news/"),
     ("_pages/opportunities.html", "_pages/opportunities-zh.html", "/opportunities/", "/zh/opportunities/"),
+    (
+        "_pages/academic-frontiers.html",
+        "_pages/academic-frontiers-zh.html",
+        "/academic-frontiers/",
+        "/zh/academic-frontiers/",
+    ),
 )
 
 

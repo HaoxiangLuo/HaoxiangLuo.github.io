@@ -36,6 +36,15 @@ except Exception:  # Fallback for hosts without the IANA tz database.
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "_data" / "site_updates.json"
 MAX_ENTRIES = 100
+
+# Commits written by the site's own robots. Their data files are rewritten many
+# times a day, so recording them would bury the entries a reader cares about.
+IGNORED_PREFIXES = (
+    "Update daily news ",
+    "Update academic frontiers ",
+    "Record site update ",
+    "Merge branch ",
+)
 MODELS_ENDPOINT = "https://models.github.ai/inference/chat/completions"
 MODELS_MODEL = "openai/gpt-4o-mini"
 
@@ -127,6 +136,8 @@ def labels(files: list[str]) -> tuple[list[str], list[str]]:
             add("网站日志", "Site Log")
         elif "daily-news" in path or "daily_news" in path:
             add("每日新闻", "Daily News")
+        elif "academic-frontiers" in path or "academic_frontiers" in path:
+            add("学界前沿", "Academic Frontiers")
         elif "opportunities" in path or "opps" in path:
             add("资讯", "Opportunities")
         elif "archive-date-filter" in path:
@@ -153,6 +164,7 @@ def details(files: list[str]) -> tuple[str, str]:
         (lambda path: "study-notes" in path, "调整学习札记的内容或展开交互。", "Refined study-note content or its expandable interaction."),
         (lambda path: "site-log" in path or "site_log" in path, "调整网站日志的归档内容、呈现方式或自动记录。", "Refined the site-log archive, presentation, or automatic record."),
         (lambda path: "daily-news" in path or "daily_news" in path, "调整每日新闻的归档内容、呈现方式或自动更新。", "Refined the daily-news archive, presentation, or automatic update."),
+        (lambda path: "academic-frontiers" in path or "academic_frontiers" in path, "调整学界前沿的期刊范围、论文归档或页面呈现。", "Refined the journal shortlist, article archive, or presentation of Academic Frontiers."),
         (lambda path: "opportunities" in path, "调整资讯页面的收录内容、板块结构或自动采集。", "Refined the opportunities archive, sections, or automatic collection."),
         (lambda path: path.startswith(("_sass/", "assets/css/")), "调整样式表中的排版、间距与响应式规则。", "Adjusted typography, spacing and responsive rules in the stylesheet."),
         (lambda path: path.startswith("assets/js/"), "调整页面的筛选、展开或其他交互脚本。", "Adjusted the page's filtering, expand/collapse or other interaction scripts."),
@@ -308,7 +320,7 @@ def describe_via_models(subject: str, body: str, files: list[str], stat: str, di
 
 def make_entry(sha: str) -> dict[str, object] | None:
     message = git("show", "-s", "--format=%s", sha)
-    if message.startswith(("Update daily news ", "Record site update ", "Merge branch ")):
+    if message.startswith(IGNORED_PREFIXES):
         return None
 
     files = changed_files(sha)
@@ -417,7 +429,7 @@ def main() -> int:
         entry.get("sha"): entry
         for entry in current
         if isinstance(entry, dict)
-        and not str(entry.get("message", "")).startswith(("Update daily news ", "Record site update ", "Merge branch "))
+        and not str(entry.get("message", "")).startswith(IGNORED_PREFIXES)
     }
     for sha in reversed(shas):
         entry = make_entry(sha)

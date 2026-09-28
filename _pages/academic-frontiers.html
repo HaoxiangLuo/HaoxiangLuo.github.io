@@ -1,0 +1,48 @@
+---
+layout: archive
+permalink: /academic-frontiers/
+title: "Academic Frontiers"
+author_profile: false
+lang: en
+translation_url: /zh/academic-frontiers/
+---
+
+<p class="daily-news-intro">Latest articles from the ten communication journals this site tracks. The journal list is checked once a year against JCR data the maintainer holds under licence. Article metadata comes from OpenAlex, only an abstract excerpt is shown, and no full text or PDF is stored here.</p>
+
+{% assign frontiers = site.data.academic_frontiers %}
+{% assign updated_day = frontiers.updated_at | slice: 0, 10 %}
+{% include archive-date-filter.html %}
+
+<p class="frontiers-updated">Site update <time datetime="{{ updated_day }}">{{ updated_day | date: "%B %-d, %Y" }}</time></p>
+
+<div class="frontiers-archive">
+  {% if frontiers.items.size > 0 %}
+    {% for item in frontiers.items %}
+      {% if item.doi_url != blank %}
+        {% assign source_link = item.doi_url %}
+      {% else %}
+        {% assign source_link = item.landing_page_url %}
+      {% endif %}
+      <article class="frontiers-card" data-filter-date="{{ item.published_at }}">
+        <header class="frontiers-card__meta">
+          <time datetime="{{ item.published_at }}">{{ item.published_at | date: "%B %-d, %Y" }}</time>
+          <span class="frontiers-card__journal">{{ item.journal | escape }}</span>
+          {% if item.source_tier != blank %}<span class="frontiers-card__tier">{{ item.source_tier }}</span>{% endif %}
+        </header>
+        <h2 class="frontiers-card__title">{{ item.title | escape }}</h2>
+        <p class="frontiers-card__authors">{% if item.authors.size > 0 %}{{ item.authors | join: ", " | escape }}{% else %}Authors are not listed in the metadata.{% endif %}</p>
+        <p class="frontiers-card__abstract{% unless item.abstract_excerpt %} is-empty{% endunless %}">
+          <span class="frontiers-card__label">Abstract excerpt</span>
+          {% if item.abstract_excerpt %}{{ item.abstract_excerpt | escape }}{% else %}No abstract excerpt is available in the metadata.{% endif %}
+        </p>
+        {% if source_link != blank %}
+          <a class="frontiers-card__link" href="{{ source_link }}" target="_blank" rel="noopener noreferrer">Read source <b aria-hidden="true">↗</b></a>
+        {% endif %}
+      </article>
+    {% endfor %}
+  {% else %}
+    <p class="frontiers-empty">The first articles will appear after the automated archive task runs.</p>
+  {% endif %}
+</div>
+
+<p class="frontiers-note">Article metadata is compiled by OpenAlex. Abstracts appear as excerpts only. Full texts remain the property of their respective publishers.</p>

@@ -6,6 +6,9 @@ main:
   - title: "Study Notes"
     url: /study-notes/
 
+  - title: "Academic Frontiers"
+    url: /academic-frontiers/
+
   - title: "Site Log"
     url: /site-log/
 
@@ -21,6 +24,9 @@ main_zh:
 
   - title: "学习札记"
     url: /zh/study-notes/
+
+  - title: "学界前沿"
+    url: /zh/academic-frontiers/
 
   - title: "网站日志"
     url: /zh/site-log/

@@ -1,0 +1,69 @@
+# 学界前沿 / Academic Frontiers — 本站监测的期刊白名单。
+#
+# 每年由维护者依据拥有授权的 JCR 数据核对：
+#   1. 期刊仍在 SSCI 收录范围内；
+#   2. 期刊在 JCR 的 Communication 分类中位于 Q1。
+# 复核后更新 `tier` 与 `active`，并在提交说明中写明核对年份。
+#
+# `active: true` 只表示本站监测范围，不等于实时 JCR 自动认证。
+# 本站不把 OpenAlex、Scopus、SJR 或任何推断结果当作 JCR 分区展示。
+
+- name: Journal of Communication
+  issn_l: "0021-9916"
+  focus: ["综合传播", "国际传播", "政治传播"]
+  tier: "SSCI Q1"
+  active: true
+
+- name: Communication Research
+  issn_l: "0093-6502"
+  focus: ["综合传播", "政治传播"]
+  tier: "SSCI Q1"
+  active: true
+
+- name: Communication Theory
+  issn_l: "1050-3293"
+  focus: ["传播理论", "国际传播"]
+  tier: "SSCI Q1"
+  active: true
+
+- name: Journal of Computer-Mediated Communication
+  issn_l: "1083-6101"
+  focus: ["智能传播", "平台", "算法"]
+  tier: "SSCI Q1"
+  active: true
+
+- name: New Media & Society
+  issn_l: "1461-4448"
+  focus: ["智能传播", "平台", "数字社会"]
+  tier: "SSCI Q1"
+  active: true
+
+- name: Information, Communication & Society
+  issn_l: "1369-118X"
+  focus: ["智能传播", "数字传播", "国际传播"]
+  tier: "SSCI Q1"
+  active: true
+
+- name: Political Communication
+  issn_l: "1058-4609"
+  focus: ["政治传播", "公共舆论"]
+  tier: "SSCI Q1"
+  active: true
+
+- name: The International Journal of Press/Politics
+  issn_l: "1940-1612"
+  focus: ["政治传播", "比较政治传播"]
+  tier: "SSCI Q1"
+  active: true
+
+- name: International Journal of Communication
+  issn_l: "1932-8036"
+  focus: ["国际传播", "全球传播"]
+  tier: "SSCI Q1"
+  active: true
+
+- name: Media, Culture & Society
+  issn_l: "0163-4437"
+  focus: ["国际传播", "文化与权力"]
+  tier: "SSCI Q1"
+  active: true

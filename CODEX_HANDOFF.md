@@ -42,10 +42,11 @@
 1. Home／首页
 2. Publications／论文发表
 3. Study Notes／学习札记
-4. Site Log／网站日志
-5. Daily News／每日新闻
-6. Opportunities／资讯
-7. 中／EN 分段式语言切换
+4. Academic Frontiers／学界前沿
+5. Site Log／网站日志
+6. Daily News／每日新闻
+7. Opportunities／资讯
+8. 中／EN 分段式语言切换
 
 语言切换必须进入当前页面对应的译文。每组双语页面通过 Front Matter 中的 `lang` 和 `translation_url` 对应。
 
@@ -56,6 +57,7 @@
 - `_pages/year-archive.html`、`_pages/study-notes-zh.html`：研究方法、智能传播、全球传播三类札记。
 - `_pages/site-log.html`、`_pages/site-log-zh.html`：网站修改记录。
 - `_pages/daily-news.html`、`_pages/daily-news-zh.html`：按日期归档的新闻简讯。
+- `_pages/academic-frontiers.html`、`_pages/academic-frontiers-zh.html`：十本核心期刊的最新论文归档。
 - `_data/navigation.yml`：导航项目。
 - `_includes/masthead.html`：顶部导航和语言控件。
 - `_sass/_content-refinements.scss`：当前主要页面组件和响应式样式。
@@ -115,7 +117,7 @@
 - 生成脚本：`scripts/update_site_log.py`
 - 自动任务：`.github/workflows/site-log.yml`
 
-每次拥有者向 `master` 推送网页修改后，工作流会记录日期、修改类别、提交说明和提交链接。自动新闻提交、日志机器人提交和合并噪声不会写入日志。同一提交重复运行不会产生重复记录，最多保留最近 100 条。
+每次拥有者向 `master` 推送网页修改后，工作流会记录日期、修改类别、提交说明和提交链接。自动新闻提交、学界前沿自动提交、日志机器人提交和合并噪声不会写入日志。同一提交重复运行不会产生重复记录，最多保留最近 100 条。
 
 ### 描述文字的硬性要求（每次改动日志相关代码都必须遵守）
 
@@ -178,6 +180,7 @@
 - Publications 卡片在桌面端双列、手机端单列，标签位置一致。
 - Site Log 能显示最新人工发布记录。
 - Daily News 能按日期显示历史记录，首页能显示当天或最近一期。
+- Academic Frontiers 中英文页面卡片字段一致，标题与摘要保持原文，年月筛选可用。
 - `git diff --check` 无错误。
 - 工作区无测试缓存、临时文件或私人简历。
 - 明确告知用户是否仍需点击 `Push origin`。
@@ -202,6 +205,23 @@
 
 页面呈现与存储配套：**每一天是一个 `<details>`**（`class="daily-news-day opps-day"`，带 `data-filter-date` 以便日期筛选器生效），**最新一天默认 `open`，更早的收起**；`_includes/opps-archive-controls.html` 提供"展开/收起全部日期"按钮。这样归档可以持续增长而不会把最新内容埋进长列表。相关样式在 `_sass/_content-refinements.scss` 的 `.opps-day` / `.opps-toolbar` 段。
 
-## 14. 当前迁移注意事项
+## 14. 学界前沿自动化
+
+- 数据文件：`_data/academic_frontiers.json`
+- 期刊清单：`_data/academic_frontiers_sources.yml`
+- 抓取脚本：`scripts/fetch_academic_frontiers.py`
+- 自动任务：`.github/workflows/academic-frontiers.yml`
+- 页面：`_pages/academic-frontiers.html`、`_pages/academic-frontiers-zh.html`
+
+任务每天 09:23（上海时间）通过 OpenAlex REST API 抓取清单内期刊最近 30 天的论文（`type:article`、有摘要、非撤稿），按发表日期倒序归档；每刊最多 3 条、单次最多 24 条，归档保留 180 天。以 DOI 去重（无 DOI 时用 OpenAlex 工作 ID），归档只增不覆盖，接口异常时保留现有数据。清单内没有启用期刊时，脚本不访问 OpenAlex，直接产出空归档。
+
+硬性约定：
+
+- 期刊清单为人工维护，**每年由维护者依据拥有授权的 JCR 数据（Communication 类 + SSCI 收录状态）核对一次**。不得把 OpenAlex、Scopus、SJR 或任何推断结果当作 JCR 分区展示；页面只显示人工核定的 `SSCI Q1`。
+- 摘要由 `abstract_inverted_index` 重建后整词截取，最多 450 字符，字段名 `abstract_excerpt`，不保存完整摘要或全文。
+- 标题、作者、期刊名与摘要在中英文页面一律保持原文，不使用机器翻译；只有界面文案、筛选器、说明和空状态做双语。
+- 页脚须保留"元数据来自 OpenAlex、摘要仅为节选、全文归出版方"的说明。
+
+## 15. 当前迁移注意事项
 
 换电脑前必须确保旧电脑上的本地提交全部推送。只有出现在 GitHub 仓库中的内容，才能在新电脑克隆后完整恢复。Codex 对话记录不会随仓库迁移，但本文件和 `AGENTS.md` 已保存足够的项目背景。

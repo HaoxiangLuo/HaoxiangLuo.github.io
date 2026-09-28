@@ -1,0 +1,65 @@
+name: Update academic frontiers
+
+on:
+  schedule:
+    # 01:23 UTC = 09:23 Asia/Shanghai, once a day.
+    - cron: "23 1 * * *"
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - "scripts/fetch_academic_frontiers.py"
+      - "_data/academic_frontiers_sources.yml"
+      - ".github/workflows/academic-frontiers.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: academic-frontiers
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect the newest articles
+        run: |
+          git pull --ff-only origin master
+          python scripts/fetch_academic_frontiers.py
+
+      - name: Save the academic archive
+        run: |
+          if git diff --quiet -- _data/academic_frontiers.json; then
+            echo "No academic frontier changes to save."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/academic_frontiers.json
+          git commit -m "Update academic frontiers $(TZ=Asia/Shanghai date +%F)"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            echo "Push raced with another site update; refreshing the archive (attempt $attempt)."
+            # -X theirs keeps the newest remote news archives; this job only
+            # re-collects its own data file afterwards.
+            git pull --rebase -X theirs origin master
+            python scripts/fetch_academic_frontiers.py
+            git add _data/academic_frontiers.json
+            git commit --amend --no-edit
+          done
+          echo "Unable to save the academic archive after three attempts." >&2
+          exit 1
