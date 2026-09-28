@@ -48,6 +48,24 @@ IGNORED_PREFIXES = (
 MODELS_ENDPOINT = "https://models.github.ai/inference/chat/completions"
 MODELS_MODEL = "openai/gpt-4o-mini"
 
+# Stylesheets are shared by every page, so a CSS-only commit would otherwise be
+# logged as "interface styling" with no clue about which page it touched. These
+# tokens are the page's own class names; when one appears in the *added* lines of
+# a stylesheet diff, the page is credited too. Context lines are ignored on
+# purpose: the shared layout rules list several pages on neighbouring lines.
+PAGE_STYLE_TOKENS = (
+    ("frontiers", "学界前沿", "Academic Frontiers"),
+    ("daily-news", "每日新闻", "Daily News"),
+    ("site-timeline", "网站日志", "Site Log"),
+    ("notes-grid", "学习札记", "Study Notes"),
+    ("opps-", "资讯", "Opportunities"),
+    ("publication-board", "论文发表", "Publications"),
+)
+
+# Selectors that mean "the page shell and its width", i.e. a layout change
+# rather than a colour or spacing tweak inside one component.
+LAYOUT_SHELL_TOKENS = ("#main", ".archive", "max-width", "page__title")
+
 # Wording that describes nothing. If a generated sentence contains one of these
 # it is discarded and the area-based fallback is used instead.
 BANNED_PHRASES = (
@@ -116,7 +134,50 @@ def changed_files(sha: str) -> list[str]:
     return sorted(set(filter(None, output.splitlines())))
 
 
-def labels(files: list[str]) -> tuple[list[str], list[str]]:
+def strip_edge(line: str) -> str:
+    """A selector line without the punctuation that a list edit changes."""
+    return line.strip().rstrip(",{").strip()
+
+
+def added_lines(diff: str) -> str:
+    """Only the lines a commit really introduced.
+
+    Two filters are needed. Context lines are dropped because the shared layout
+    rules list every page on neighbouring lines. Punctuation-only edits are
+    dropped as well: appending a comma to an existing selector shows up as a
+    removed line plus an added line, which would otherwise credit a page the
+    commit never touched.
+    """
+    removed = {
+        strip_edge(line[1:])
+        for line in diff.splitlines()
+        if line.startswith("-") and not line.startswith("---")
+    }
+    return "\n".join(
+        line[1:]
+        for line in diff.splitlines()
+        if line.startswith("+")
+        and not line.startswith("+++")
+        and strip_edge(line[1:]) not in removed
+    )
+
+
+def style_pages(added: str, files: list[str]) -> list[tuple[str, str]]:
+    """Pages a stylesheet change belongs to, taken from the selectors it adds."""
+    if not any(path.startswith(("_sass/", "assets/css/")) for path in files):
+        return []
+    return [(zh, en) for token, zh, en in PAGE_STYLE_TOKENS if token in added]
+
+
+def purpose_zh(files: list[str], added: str) -> str:
+    """Why the change was made, kept concrete and free of filler wording."""
+    pages = style_pages(added, files)
+    if pages and any(token in added for token in LAYOUT_SHELL_TOKENS):
+        return "统一{}与既有内容页的内容宽度、阅读节奏和视觉层级。".format("、".join(zh for zh, _ in pages))
+    return "更新站内页面、板块或脚本的内容组织与呈现方式。"
+
+
+def labels(files: list[str], added: str = "") -> tuple[list[str], list[str]]:
     zh: list[str] = []
     en: list[str] = []
 
@@ -124,6 +185,11 @@ def labels(files: list[str]) -> tuple[list[str], list[str]]:
         if zh_label not in zh:
             zh.append(zh_label)
             en.append(en_label)
+
+    # A stylesheet edit names its page only through the selectors it adds, and
+    # that page belongs in the title before the generic styling label.
+    for zh_label, en_label in style_pages(added, files):
+        add(zh_label, en_label)
 
     for path in files:
         if path.startswith("_pages/about"):
@@ -156,8 +222,20 @@ def labels(files: list[str]) -> tuple[list[str], list[str]]:
     return zh[:4], en[:4]
 
 
-def details(files: list[str]) -> tuple[str, str]:
+def details(files: list[str], added: str = "") -> tuple[str, str]:
     """Describe changed areas in language suited to the public log."""
+    # A stylesheet carries no page name of its own, so name the page behind the
+    # selectors it adds instead of falling back to "the stylesheet".
+    pages = style_pages(added, files)
+    if pages:
+        return (
+            "调整{}页面的主内容容器、archive 宽度或内边距、标题对齐与移动端布局。".format(
+                "、".join(zh for zh, _ in pages)
+            ),
+            "Adjusted the main content container, archive width or padding, title alignment and mobile "
+            "layout of the {} page.".format(", ".join(en for _, en in pages)),
+        )
+
     descriptions = (
         (lambda path: path.startswith("_pages/about"), "调整首页介绍、研究兴趣或全球要闻卡片。", "Refined the home introduction, research interests, or global-news card."),
         (lambda path: "publications" in path, "调整论文发表页面的内容或筛选浏览方式。", "Refined publication content or its browsing controls."),
@@ -324,12 +402,6 @@ def make_entry(sha: str) -> dict[str, object] | None:
         return None
 
     files = changed_files(sha)
-    zh, en = labels(files)
-    story_zh, story_en = fallback_story(files, zh, en)
-    details_zh, details_en = details(files)
-    title_zh = "调整了" + "、".join(zh)
-    title_en = "Refined " + ", ".join(en)
-
     body = git("show", "-s", "--format=%b", sha)
     stat = git("diff-tree", "--no-commit-id", "--stat", "-m", sha)
     try:
@@ -337,6 +409,15 @@ def make_entry(sha: str) -> dict[str, object] | None:
         diff = "\n".join(line for line in diff.splitlines() if not line.startswith("index "))
     except Exception:
         diff = ""
+
+    # Shared stylesheets hide which page a change belongs to, so the added
+    # lines are read before labels and descriptions are chosen.
+    added = added_lines(diff)
+    zh, en = labels(files, added)
+    story_zh, story_en = fallback_story(files, zh, en)
+    details_zh, details_en = details(files, added)
+    title_zh = "调整了" + "、".join(zh)
+    title_en = "Refined " + ", ".join(en)
 
     token = os.environ.get("GITHUB_TOKEN", "")
     if token:
@@ -378,7 +459,7 @@ def make_entry(sha: str) -> dict[str, object] | None:
         "message": message,
         "story_zh": story_zh,
         "story_en": story_en,
-        "purpose_zh": "持续改进网站内容、信息组织与使用体验。",
+        "purpose_zh": purpose_zh(files, added),
         "purpose_en": message,
         "details_zh": details_zh,
         "details_en": details_en,
