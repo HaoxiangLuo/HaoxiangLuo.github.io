@@ -2297,6 +2297,25 @@ body.home-page .news-window {
   font-weight: 700;
 }
 
+/* The intro is the tracked journal shortlist: names carry the emphasis, the
+   middots only separate. */
+.frontiers-intro {
+  max-width: 780px;
+  font-size: 0.82rem;
+  line-height: 2;
+}
+
+.frontiers-intro__name {
+  color: #1d1d1f;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.frontiers-intro__sep {
+  margin: 0 0.45rem;
+  color: #c7c7cc;
+}
+
 .frontiers-updated {
   margin: 0 0 1.4rem;
   color: #86868b;
@@ -2332,6 +2351,21 @@ body.home-page .news-window {
 }
 
 @media (max-width: 767px) {
+  .frontiers-intro {
+    font-size: 0.74rem;
+    line-height: 1.9;
+  }
+
+  /* Below this width even the longest journal name is close to the column
+     width, so let names break rather than push the page sideways. */
+  .frontiers-intro__name {
+    white-space: normal;
+  }
+
+  .frontiers-intro__sep {
+    margin: 0 0.3rem;
+  }
+
   .frontiers-card {
     padding: 1rem;
     border-radius: 18px;

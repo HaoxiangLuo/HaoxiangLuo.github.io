@@ -7,7 +7,8 @@ lang: zh
 translation_url: /academic-frontiers/
 ---
 
-<p class="daily-news-intro">本站追踪的十本新闻传播学核心期刊的最新论文。期刊范围由维护者依据其拥有授权的 JCR 数据每年人工核对一次。论文元数据由 OpenAlex 整理，页面仅展示摘要节选，不保存或提供全文与 PDF。</p>
+{% assign tracked_journals = site.data.academic_frontiers_sources | where: "active", true %}
+<p class="daily-news-intro frontiers-intro">{% for journal in tracked_journals %}<span class="frontiers-intro__name">{{ journal.name | escape }}</span>{% unless forloop.last %}<span class="frontiers-intro__sep" aria-hidden="true">·</span> {% endunless %}{% endfor %}</p>
 
 {% assign frontiers = site.data.academic_frontiers %}
 {% assign updated_day = frontiers.updated_at | slice: 0, 10 %}
@@ -45,4 +46,4 @@ translation_url: /academic-frontiers/
   {% endif %}
 </div>
 
-<p class="frontiers-note">论文元数据由 OpenAlex 整理，摘要仅展示节选，原文归相应出版方所有。</p>
+<p class="frontiers-note">论文元数据由 OpenAlex 整理，摘要仅展示节选，原文归相应出版方所有。以上期刊清单每年依据拥有授权的 JCR 数据人工核对一次。</p>

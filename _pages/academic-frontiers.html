@@ -7,7 +7,8 @@ lang: en
 translation_url: /zh/academic-frontiers/
 ---
 
-<p class="daily-news-intro">Latest articles from the ten communication journals this site tracks. The journal list is checked once a year against JCR data the maintainer holds under licence. Article metadata comes from OpenAlex, only an abstract excerpt is shown, and no full text or PDF is stored here.</p>
+{% assign tracked_journals = site.data.academic_frontiers_sources | where: "active", true %}
+<p class="daily-news-intro frontiers-intro">{% for journal in tracked_journals %}<span class="frontiers-intro__name">{{ journal.name | escape }}</span>{% unless forloop.last %}<span class="frontiers-intro__sep" aria-hidden="true">·</span> {% endunless %}{% endfor %}</p>
 
 {% assign frontiers = site.data.academic_frontiers %}
 {% assign updated_day = frontiers.updated_at | slice: 0, 10 %}
@@ -45,4 +46,4 @@ translation_url: /zh/academic-frontiers/
   {% endif %}
 </div>
 
-<p class="frontiers-note">Article metadata is compiled by OpenAlex. Abstracts appear as excerpts only. Full texts remain the property of their respective publishers.</p>
+<p class="frontiers-note">Article metadata is compiled by OpenAlex. Abstracts appear as excerpts only. Full texts remain the property of their respective publishers. The journal list above is reviewed once a year against JCR data held under licence.</p>
