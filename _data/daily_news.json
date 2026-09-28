@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-09-28T23:29:24+08:00",
+  "updated_at": "2026-09-29T00:30:21+08:00",
   "days": [
+    {
+      "date": "2026-09-29",
+      "items": [
+        {
+          "title": "Inside Yemen's front-line city as Houthis battle for control",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw98005ndz7no?at_medium=RSS&at_campaign=rss",
+          "title_zh": "也门前线城市内胡塞武装争夺控制权"
+        },
+        {
+          "title": "What we know about the suspected U.K. terror plot. And, why the Gulf remains in limbo",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/28/g-s1-145248/up-first-newsletter-uk-us-air-base-iran-strait-hormuz-media-outlets-cnn-trump",
+          "title_zh": "我们对英国涉嫌恐怖阴谋的了解。为什么海湾地区仍处于不稳定状态"
+        },
+        {
+          "title": "The Takeaway: UN General Assembly debate Day 5",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168462",
+          "title_zh": "要点：联合国大会辩论第五天"
+        },
+        {
+          "title": "Trump-Xi summit: What wasn't said might matter the most",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cxp84g2ly1mjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特习峰会：没有说的可能是最重要的"
+        },
+        {
+          "title": "5 British suspects arrested, explosives found near U.S.-run air base. Iran denies role",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack",
+          "title_zh": "5 名英国嫌疑人被捕，美国空军基地附近发现爆炸物。伊朗否认参与其中"
+        },
+        {
+          "title": "Canada urges stronger partnerships as global order faces ‘rupture’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168461",
+          "title_zh": "全球秩序面临“破裂”，加拿大敦促加强伙伴关系"
+        },
+        {
+          "title": "Mexico's Pacific coast braces for Hurricane Polo",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw8d3z5y7958o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "墨西哥太平洋海岸为飓风波罗做好准备"
+        },
+        {
+          "title": "Eviction of 87-year-old sparks protests in Madrid over housing crisis",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/28/nx-s1-5983303/encampment-protest-madrid-housing-crisis",
+          "title_zh": "87岁老人被驱逐引发马德里住房危机抗议"
+        },
+        {
+          "title": "Countries far from conflict paying the price for wars not their own, India tells UN",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168460",
+          "title_zh": "印度告诉联合国，远离冲突的国家为非本国战争付出代价"
+        }
+      ]
+    },
     {
       "date": "2026-09-28",
       "items": [
