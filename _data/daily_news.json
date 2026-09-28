@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T13:26:39+08:00",
+  "updated_at": "2026-09-28T14:34:07+08:00",
   "days": [
     {
       "date": "2026-09-28",
@@ -17,12 +17,6 @@
           "title_zh": "五人在美国轰炸机在伊朗战争中使用的英国空军基地附近被捕"
         },
         {
-          "title": "The Takeaway: UN General Assembly debate Day 5",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168462",
-          "title_zh": "要点：联合国大会辩论第五天"
-        },
-        {
           "title": "Embattled Serbian president resigns, paving way for early elections",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&at_campaign=rss",
@@ -33,12 +27,6 @@
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/27/nx-s1-5981123/after-more-than-two-decades-u-s-forces-prepare-to-leave-iraq",
           "title_zh": "二十多年后，美军准备撤离伊拉克"
-        },
-        {
-          "title": "Canada urges stronger partnerships as global order faces ‘rupture’",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168461",
-          "title_zh": "全球秩序面临“破裂”，加拿大敦促加强伙伴关系"
         },
         {
           "title": "Two bodies found after avalanche hits Himalayan climbing group",
@@ -53,10 +41,22 @@
           "title_zh": "南非连续发生一周内造成 38 人死亡的大规模枪击事件"
         },
         {
-          "title": "Countries far from conflict paying the price for wars not their own, India tells UN",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168460",
-          "title_zh": "印度告诉联合国，远离冲突的国家为非本国战争付出代价"
+          "title": "Two mass shootings in South Africa leave 27 dead",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "南非发生两起大规模枪击事件 造成27人死亡"
+        },
+        {
+          "title": "Amid changing dynamics in the Middle East, Turkey seeks to emerge as a leader",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/27/nx-s1-5949210/amid-changing-dynamics-in-the-middle-east-turkey-seeks-to-emerge-as-a-leader",
+          "title_zh": "在中东局势不断变化的背景下，土耳其寻求成为领导者"
+        },
+        {
+          "title": "Four killed in helicopter crash near Montreal",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3grvv7p81lqo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "蒙特利尔附近直升机坠毁造成四人死亡"
         }
       ]
     },
