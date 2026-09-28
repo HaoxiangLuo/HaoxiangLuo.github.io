@@ -2,8 +2,9 @@ name: Update academic frontiers
 
 on:
   schedule:
-    # 01:23 UTC = 09:23 Asia/Shanghai, once a day.
-    - cron: "23 1 * * *"
+    # 01:23 UTC on Mondays = 09:23 Asia/Shanghai, once a week. The journals
+    # publish far more slowly than the news cycle, so weekly is enough.
+    - cron: "23 1 * * 1"
   workflow_dispatch:
   push:
     branches: [master]
@@ -17,7 +18,7 @@ permissions:
 
 concurrency:
   group: academic-frontiers
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -41,13 +42,15 @@ jobs:
 
       - name: Save the academic archive
         run: |
-          if git diff --quiet -- _data/academic_frontiers.json; then
+          # The JSONL archive is the history; the short index is generated from
+          # it. Both belong to this job and nothing else is touched.
+          if git diff --quiet -- _data/academic_frontiers.json assets/data/archive/academic-frontiers assets/data/archive/manifest.json; then
             echo "No academic frontier changes to save."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add _data/academic_frontiers.json
+          git add _data/academic_frontiers.json assets/data/archive/academic-frontiers assets/data/archive/manifest.json
           git commit -m "Update academic frontiers $(TZ=Asia/Shanghai date +%F)"
           for attempt in 1 2 3; do
             if git push origin HEAD:master; then
@@ -58,7 +61,7 @@ jobs:
             # re-collects its own data file afterwards.
             git pull --rebase -X theirs origin master
             python scripts/fetch_academic_frontiers.py
-            git add _data/academic_frontiers.json
+            git add _data/academic_frontiers.json assets/data/archive/academic-frontiers assets/data/archive/manifest.json
             git commit --amend --no-edit
           done
           echo "Unable to save the academic archive after three attempts." >&2

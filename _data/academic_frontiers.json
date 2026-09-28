@@ -1,6 +1,25 @@
 {
-  "updated_at": "2026-09-28T17:36:50+08:00",
+  "updated_at": "2026-09-29T00:10:39+08:00",
   "items": [
+    {
+      "id": "doi:10.1080/1369118x.2026.2738178",
+      "title": "Afterword: the waning power of the fix",
+      "abstract_excerpt": "This commentary offers some reflections on the ‘power of the fix' in cybersecurity and its wider implications for technological democracy. I begin with a discussion of the discrepancy between the discourse of solutionism and everyday practices of securing IT systems (Elgaard Jensen et al, 2026). Whereas the former posits that problems are neat and can be solved by means of technology, the latter must confront what Röhle (2021) has called the…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-09-25",
+      "authors": [
+        "Noortje Marres"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2738178",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2738178",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ]
+    },
     {
       "id": "doi:10.1080/1369118x.2026.2737398",
       "title": "Digital responsibility, skills and environmental awareness for digital sustainability",
@@ -39,25 +58,6 @@
       ],
       "doi_url": "https://doi.org/10.1080/1369118x.2026.2736810",
       "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2736810",
-      "source_tier": "SSCI Q1",
-      "focus": [
-        "智能传播",
-        "数字传播",
-        "国际传播"
-      ]
-    },
-    {
-      "id": "doi:10.1080/1369118x.2026.2738178",
-      "title": "Afterword: the waning power of the fix",
-      "abstract_excerpt": "This commentary offers some reflections on the ‘power of the fix' in cybersecurity and its wider implications for technological democracy. I begin with a discussion of the discrepancy between the discourse of solutionism and everyday practices of securing IT systems (Elgaard Jensen et al, 2026). Whereas the former posits that problems are neat and can be solved by means of technology, the latter must confront what Röhle (2021) has called the…",
-      "journal": "Information Communication & Society",
-      "issn_l": "1369-118X",
-      "published_at": "2026-09-25",
-      "authors": [
-        "Noortje Marres"
-      ],
-      "doi_url": "https://doi.org/10.1080/1369118x.2026.2738178",
-      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2738178",
       "source_tier": "SSCI Q1",
       "focus": [
         "智能传播",
@@ -122,25 +122,6 @@
       ]
     },
     {
-      "id": "doi:10.1177/01634437261488250",
-      "title": "How social media produces “Cheap Europe”: Digital Balkanism and the politics of creator mobility",
-      "abstract_excerpt": "Digital platforms increasingly mediate how socioeconomic unevenness becomes visible, often recoding structural inequality as consumable value. This article introduces the concept of digital Balkanism to explain how platformed travel content reworks long-standing intra-European hierarchies. Drawing on a critical discourse analysis of 108 English-language YouTube videos about Bulgaria, we identify five recurring frames: cheapness-as-freedom…",
-      "journal": "Media Culture & Society",
-      "issn_l": "0163-4437",
-      "published_at": "2026-09-21",
-      "authors": [
-        "Zhasmina Tacheva",
-        "Sevgi Erdoğan"
-      ],
-      "doi_url": "https://doi.org/10.1177/01634437261488250",
-      "landing_page_url": "https://doi.org/10.1177/01634437261488250",
-      "source_tier": "SSCI Q1",
-      "focus": [
-        "国际传播",
-        "文化与权力"
-      ]
-    },
-    {
       "id": "doi:10.1177/01634437261488262",
       "title": "The “Netflix Look”: Moving image aesthetics as data under platform logic",
       "abstract_excerpt": "This article examines Netflix’s industrial model through the framework of platform logic, arguing that the data-centric approach it adopts in the production of moving images alters the creative process. The result is a conceptual shift from shooting a film to capturing an image. Bridging platform studies and film theory, I build on David Bordwell’s poetics of cinema, which conceives the production process as a negotiation between institutional…",
@@ -171,6 +152,25 @@
       ],
       "doi_url": "https://doi.org/10.1177/01634437261488252",
       "landing_page_url": "https://doi.org/10.1177/01634437261488252",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "文化与权力"
+      ]
+    },
+    {
+      "id": "doi:10.1177/01634437261488250",
+      "title": "How social media produces “Cheap Europe”: Digital Balkanism and the politics of creator mobility",
+      "abstract_excerpt": "Digital platforms increasingly mediate how socioeconomic unevenness becomes visible, often recoding structural inequality as consumable value. This article introduces the concept of digital Balkanism to explain how platformed travel content reworks long-standing intra-European hierarchies. Drawing on a critical discourse analysis of 108 English-language YouTube videos about Bulgaria, we identify five recurring frames: cheapness-as-freedom…",
+      "journal": "Media Culture & Society",
+      "issn_l": "0163-4437",
+      "published_at": "2026-09-21",
+      "authors": [
+        "Zhasmina Tacheva",
+        "Sevgi Erdoğan"
+      ],
+      "doi_url": "https://doi.org/10.1177/01634437261488250",
+      "landing_page_url": "https://doi.org/10.1177/01634437261488250",
       "source_tier": "SSCI Q1",
       "focus": [
         "国际传播",
@@ -235,6 +235,24 @@
       ]
     },
     {
+      "id": "doi:10.65476/g7nasv11",
+      "title": "One-Dimensional Algorithm: Rereading Marcuse’s Critical Theory Through Platform Culture",
+      "abstract_excerpt": "This article rereads Herbert Marcuse’s critical theory through algorithmic curation on commercial social media platforms, pursuing a dialectical argument in two directions: first, that platform capitalism structurally reproduces Marcuse’s diagnoses of false needs, incorporation, and one-dimensional thought; second, that platform dynamics exceed his framework—in its passive-subject assumptions, its vagueness about resistance, and its inability…",
+      "journal": "International journal of communication",
+      "issn_l": "1932-8036",
+      "published_at": "2026-09-14",
+      "authors": [
+        "Dursun Can Şimşek"
+      ],
+      "doi_url": "https://doi.org/10.65476/g7nasv11",
+      "landing_page_url": "https://doi.org/10.65476/g7nasv11",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "全球传播"
+      ]
+    },
+    {
       "id": "doi:10.65476/b5f64595",
       "title": "Stephen Duncombe, Æffect: The Affect and Effect of Artistic Activism",
       "abstract_excerpt": "As with the philosophers and critics, among artistic activists there is no one universally agreed-upon notion of what artistic activism does.Depending on whom you speak to, artistic activism makes ideas accessible or it surprises and confuses, it reveals realities or it imagines new ones, it creates conversations or facilitates participation, it circumvents barriers to acceptance or creates spaces and places for creativity, it generates affect…",
@@ -266,24 +284,6 @@
       ],
       "doi_url": "https://doi.org/10.65476/4614hy26",
       "landing_page_url": "https://doi.org/10.65476/4614hy26",
-      "source_tier": "SSCI Q1",
-      "focus": [
-        "国际传播",
-        "全球传播"
-      ]
-    },
-    {
-      "id": "doi:10.65476/g7nasv11",
-      "title": "One-Dimensional Algorithm: Rereading Marcuse’s Critical Theory Through Platform Culture",
-      "abstract_excerpt": "This article rereads Herbert Marcuse’s critical theory through algorithmic curation on commercial social media platforms, pursuing a dialectical argument in two directions: first, that platform capitalism structurally reproduces Marcuse’s diagnoses of false needs, incorporation, and one-dimensional thought; second, that platform dynamics exceed his framework—in its passive-subject assumptions, its vagueness about resistance, and its inability…",
-      "journal": "International journal of communication",
-      "issn_l": "1932-8036",
-      "published_at": "2026-09-14",
-      "authors": [
-        "Dursun Can Şimşek"
-      ],
-      "doi_url": "https://doi.org/10.65476/g7nasv11",
-      "landing_page_url": "https://doi.org/10.65476/g7nasv11",
       "source_tier": "SSCI Q1",
       "focus": [
         "国际传播",

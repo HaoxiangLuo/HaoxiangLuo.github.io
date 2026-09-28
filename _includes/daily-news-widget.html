@@ -21,5 +21,5 @@
   {% else %}
     <p class="news-window__empty">{% if page.lang == 'zh' %}今日简讯正在整理中，请稍后再来。{% else %}Today's briefing is being prepared. Please check back shortly.{% endif %}</p>
   {% endif %}
-  <div class="news-window__footer"><time datetime="{{ today_news_day.date }}">{{ today_news_day.date }}</time><span>{% if page.lang == 'zh' %}每小时自动更新{% else %}Updated hourly{% endif %}</span></div>
+  <div class="news-window__footer"><time datetime="{{ today_news_day.date }}">{{ today_news_day.date }}</time><span>{% if page.lang == 'zh' %}每天自动更新三次{% else %}Updated three times daily{% endif %}</span></div>
 </aside>

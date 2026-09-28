@@ -4,6 +4,11 @@
 Every headline is stored twice: `title` keeps the publisher's original wording
 and `title_zh` holds a Simplified Chinese rendering so the two language
 versions of the site can show the same story in their own language.
+
+The long-term archive is authoritative: each run files the day it collected into
+`assets/data/archive/daily-news/YYYY-MM.jsonl` and only then lets
+`scripts/archive_data.py` regenerate the short `_data/daily_news.json` index
+that Jekyll builds from. Nothing is trimmed out of history here.
 """
 
 from __future__ import annotations
@@ -23,16 +28,17 @@ from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import archive_data
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "_data" / "daily_news.json"
 SOURCES = (
     ("BBC World", "https://feeds.bbci.co.uk/news/world/rss.xml"),
     ("NPR World", "https://feeds.npr.org/1004/rss.xml"),
     ("UN News", "https://news.un.org/feed/subscribe/en/news/all/rss.xml"),
 )
 MAX_PER_DAY = 9
-MAX_DAYS = 90
 
 TRANSLATE_TIMEOUT = 20
 GTX_ENDPOINT = "https://translate.googleapis.com/translate_a/single"
@@ -185,48 +191,37 @@ def backfill_translations(days: list[dict], translate) -> int:
     return filled
 
 
+def archived_days() -> list[dict]:
+    """Every day the long-term archive holds, newest first."""
+    records, invalid = archive_data.read_archive(ROOT, "daily_news")
+    if invalid:
+        print(f"warning: skipped {invalid} unreadable archive line(s)", file=sys.stderr)
+    return sorted(records, key=lambda record: record.get("date", ""), reverse=True)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--migrate-only", action="store_true")
-    parser.add_argument("--migrate-from", type=Path)
     parser.add_argument(
         "--translate-only",
         action="store_true",
         help="Skip feed collection and only fill in missing Chinese titles.",
     )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="collect and report without writing the archive or the index",
+    )
     args = parser.parse_args()
 
-    source_file = args.migrate_from or OUTPUT
-    raw_archive = json.loads(source_file.read_text(encoding="utf-8")) if source_file.exists() else {}
-    if isinstance(raw_archive, dict) and isinstance(raw_archive.get("days"), list):
-        days = raw_archive["days"]
-    elif isinstance(raw_archive, dict):
-        # Migrate the original date-keyed object without losing its history.
-        days = [
-            {"date": date, "items": entries}
-            for date, entries in raw_archive.items()
-            if isinstance(entries, list)
-        ]
-    else:
-        days = []
-
-    if args.migrate_only:
-        archive = {
-            "updated_at": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(timespec="seconds"),
-            "days": sorted(days, key=lambda day: day.get("date", ""), reverse=True)[:MAX_DAYS],
-        }
-        OUTPUT.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(f"migrated {len(archive['days'])} archived days")
-        return 0
+    days = archived_days()
 
     if args.translate_only:
         filled = backfill_translations(days, build_translator())
-        archive = {
-            "updated_at": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(timespec="seconds"),
-            "days": days,
-        }
-        OUTPUT.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(f"translated {filled} headlines")
+        if args.dry_run:
+            print(f"dry run: {filled} headlines would be translated")
+            return 0
+        stats = archive_data.upsert(ROOT, "daily_news", days)
+        print(f"translated {filled} headlines; {stats.as_line()}")
         return 0
 
     groups: list[list[dict[str, str]]] = []
@@ -242,18 +237,21 @@ def main() -> int:
         return 1
 
     today = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
-    days = [day for day in days if day.get("date") != today]
-    days.append({"date": today, "items": items})
-    days = sorted(days, key=lambda day: day.get("date", ""), reverse=True)[:MAX_DAYS]
+    record = archive_data.normalize_daily_news({"date": today, "items": items})
 
-    filled = backfill_translations(days, build_translator())
+    if args.dry_run:
+        print(f"dry run: {len(items)} headlines for {today}; archive holds {len(days)} days")
+        return 0
 
-    archive = {
-        "updated_at": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(timespec="seconds"),
-        "days": days,
-    }
-    OUTPUT.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"saved {len(items)} headlines for {today}; translated {filled} headlines")
+    # Archive first: the recent index is only ever generated from it.
+    stats = archive_data.upsert(ROOT, "daily_news", [record])
+
+    translated = archived_days()
+    filled = backfill_translations(translated, build_translator())
+    if filled:
+        # Translations are part of the record, so they go straight back in.
+        stats = archive_data.upsert(ROOT, "daily_news", translated)
+    print(f"saved {len(items)} headlines for {today}; translated {filled} headlines; {stats.as_line()}")
     return 0
 
 

@@ -2,7 +2,10 @@ name: Update daily news
 
 on:
   schedule:
-    - cron: "17 * * * *"
+    # 01:00, 05:00 and 11:00 UTC = 09:00, 13:00 and 19:00 Asia/Shanghai.
+    - cron: "0 1 * * *"
+    - cron: "0 5 * * *"
+    - cron: "0 11 * * *"
   workflow_dispatch:
   push:
     branches: [master]
@@ -15,8 +18,9 @@ permissions:
   models: read
 
 concurrency:
+  # Three runs a day is plenty; never cancel one that is mid-push.
   group: daily-news
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -44,13 +48,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if git diff --quiet -- _data/daily_news.json; then
+          # The JSONL archive is the history; the short index is generated from
+          # it. Both belong to this job and nothing else is touched.
+          if git diff --quiet -- _data/daily_news.json assets/data/archive/daily-news assets/data/archive/manifest.json; then
             echo "No news changes to save."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add _data/daily_news.json
+          git add _data/daily_news.json assets/data/archive/daily-news assets/data/archive/manifest.json
           git commit -m "Update daily news $(TZ=Asia/Shanghai date +%F)"
           for attempt in 1 2 3; do
             if git push origin HEAD:master; then
@@ -59,7 +65,7 @@ jobs:
             echo "Push raced with another site update; refreshing archive (attempt $attempt)."
             git pull --rebase -X theirs origin master
             python scripts/fetch_daily_news.py
-            git add _data/daily_news.json
+            git add _data/daily_news.json assets/data/archive/daily-news assets/data/archive/manifest.json
             git commit --amend --no-edit
           done
           echo "Unable to save the news archive after three attempts." >&2

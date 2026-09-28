@@ -10,6 +10,11 @@ Only metadata is stored — title, authors, journal, date, DOI and a short
 abstract excerpt. No publisher page is scraped, no PDF is downloaded and no
 full text is kept. When OpenAlex misbehaves or returns nothing, the existing
 archive is left exactly as it is.
+
+The long-term archive is authoritative: each run files the articles it found
+into `assets/data/archive/academic-frontiers/YYYY.jsonl` and only then lets
+`scripts/archive_data.py` regenerate the short `_data/academic_frontiers.json`
+index (the last 180 days) that Jekyll builds from.
 """
 
 from __future__ import annotations
@@ -25,10 +30,14 @@ import urllib.request
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import archive_data
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ROOT / "_data" / "academic_frontiers_sources.yml"
-OUTPUT = ROOT / "_data" / "academic_frontiers.json"
 
 ENDPOINT = "https://api.openalex.org/works"
 USER_AGENT = "HaoxiangLuo.github.io academic-frontiers collector/1.0"
@@ -36,7 +45,8 @@ USER_AGENT = "HaoxiangLuo.github.io academic-frontiers collector/1.0"
 WINDOW_DAYS = 30          # only articles published in the last 30 days
 MAX_PER_JOURNAL = 3
 MAX_ITEMS = 24
-MAX_DAYS = 180            # how much history the archive keeps
+# How much history the JSON archive keeps is decided by `archive_data`; this
+# collector only ever hands records over to it.
 ABSTRACT_LIMIT = 450
 MAX_AUTHORS = 6
 MAX_ISSN_PER_QUERY = 5    # OpenAlex accepts 50 OR values; stay well below it
@@ -44,14 +54,6 @@ MAX_ATTEMPTS = 4
 REQUEST_TIMEOUT = 30
 BACKOFF_BASE = 2.0
 TIMEZONE = ZoneInfo("Asia/Shanghai")
-
-
-def today() -> str:
-    return datetime.now(TIMEZONE).strftime("%Y-%m-%d")
-
-
-def stamp() -> str:
-    return datetime.now(TIMEZONE).isoformat(timespec="seconds")
 
 
 def parse_sources(path: Path) -> list[dict]:
@@ -253,35 +255,12 @@ def select_items(works: list[dict], sources: list[dict]) -> list[dict]:
     return selected
 
 
-def merge_archive(existing: dict, items: list[dict], cutoff: str) -> list[dict]:
-    """Merge by stable id and drop anything older than the retention window."""
-    by_id: dict[str, dict] = {}
-    for item in existing.get("items", []) or []:
-        if isinstance(item, dict) and item.get("id"):
-            by_id[str(item["id"])] = item
-    for item in items:
-        by_id[item["id"]] = item
-    kept = [item for item in by_id.values() if str(item.get("published_at") or "") >= cutoff]
-    kept.sort(key=lambda item: (str(item.get("published_at") or ""), str(item.get("journal") or "")), reverse=True)
-    return kept
-
-
-def load_archive() -> dict:
-    if not OUTPUT.exists():
-        return {"updated_at": None, "items": []}
-    try:
-        raw = json.loads(OUTPUT.read_text(encoding="utf-8"))
-    except Exception as exc:  # noqa: BLE001 - never overwrite a damaged archive
-        print(f"error: cannot read {OUTPUT.name}: {exc}", file=sys.stderr)
-        return {"updated_at": None, "items": []}
-    if not isinstance(raw, dict) or not isinstance(raw.get("items"), list):
-        return {"updated_at": None, "items": []}
-    return raw
-
-
-def write_archive(items: list[dict]) -> None:
-    archive = {"updated_at": stamp(), "items": items}
-    OUTPUT.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+def load_archive() -> list[dict]:
+    """Every article the long-term archive already holds."""
+    records, invalid = archive_data.read_archive(ROOT, "academic_frontiers")
+    if invalid:
+        print(f"warning: skipped {invalid} unreadable archive line(s)", file=sys.stderr)
+    return records
 
 
 def main() -> int:
@@ -301,12 +280,12 @@ def main() -> int:
         # A broad OpenAlex search would be the wrong answer here: without a
         # whitelist there is nothing to filter on, so keep the archive intact.
         print("error: no active journals in the shortlist; not contacting OpenAlex", file=sys.stderr)
-        if not existing["items"]:
+        if not existing:
             if args.dry_run:
                 print("dry run: would write an empty archive")
             else:
-                write_archive([])
-                print(f"wrote empty archive to {OUTPUT.name}")
+                stats = archive_data.upsert(ROOT, "academic_frontiers", [])
+                print(f"wrote an empty archive; {stats.as_line()}")
         return 0
 
     since = (datetime.now(TIMEZONE) - timedelta(days=WINDOW_DAYS)).strftime("%Y-%m-%d")
@@ -316,25 +295,25 @@ def main() -> int:
         works = fetch_works(issns, since)
     except Exception as exc:  # noqa: BLE001 - keep the archive on failure
         print(f"error: OpenAlex collection failed: {exc}", file=sys.stderr)
-        print(f"error: keeping the existing archive ({len(existing['items'])} items)", file=sys.stderr)
+        print(f"error: keeping the existing archive ({len(existing)} items)", file=sys.stderr)
         return 0
 
     items = select_items(works, sources)
     if not items:
-        print(f"no new articles since {since}; keeping the existing archive ({len(existing['items'])} items)")
+        print(f"no new articles since {since}; keeping the existing archive ({len(existing)} items)")
         return 0
 
-    cutoff = (datetime.now(TIMEZONE) - timedelta(days=MAX_DAYS)).strftime("%Y-%m-%d")
-    merged = merge_archive(existing, items, cutoff)
+    records = [record for record in (archive_data.normalize("academic_frontiers", item) for item in items) if record]
 
     if args.dry_run:
-        print(f"dry run: {len(items)} new articles, archive would hold {len(merged)} items")
-        for item in merged[:5]:
-            print(f"  {item['published_at']}  {item['journal']}  {item['title'][:60]}")
+        print(f"dry run: {len(records)} collected articles; archive holds {len(existing)} items")
+        for record in records[:5]:
+            print(f"  {record['published_at']}  {record['journal']}  {record['title'][:60]}")
         return 0
 
-    write_archive(merged)
-    print(f"saved {len(items)} new articles; archive now holds {len(merged)} items")
+    # Archive first: the recent index is only ever generated from it.
+    stats = archive_data.upsert(ROOT, "academic_frontiers", records)
+    print(f"saved {len(records)} collected articles; {stats.as_line()}")
     return 0
 
 

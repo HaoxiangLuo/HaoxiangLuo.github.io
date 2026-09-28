@@ -6,6 +6,8 @@ on:
     paths-ignore:
       - "_data/daily_news.json"
       - "_data/site_updates.json"
+      - "_data/academic_frontiers.json"
+      - "assets/data/archive/**"
   workflow_dispatch:
 
 permissions:
@@ -39,13 +41,15 @@ jobs:
 
       - name: Save the site log
         run: |
-          if git diff --quiet -- _data/site_updates.json; then
+          # The entry lands in the JSONL archive first; the short index is
+          # generated from it. Both belong to this job.
+          if git diff --quiet -- _data/site_updates.json assets/data/archive/site-updates assets/data/archive/manifest.json; then
             echo "No new website update to record."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add _data/site_updates.json
+          git add _data/site_updates.json assets/data/archive/site-updates assets/data/archive/manifest.json
           git commit -m "Record site update ${{ github.sha }}"
           for attempt in 1 2 3; do
             if git push origin HEAD:master; then
@@ -54,7 +58,7 @@ jobs:
             echo "Refreshing site log after a concurrent update (attempt $attempt)."
             git pull --rebase -X theirs origin master
             python scripts/update_site_log.py --sha "${{ github.sha }}"
-            git add _data/site_updates.json
+            git add _data/site_updates.json assets/data/archive/site-updates assets/data/archive/manifest.json
             git commit --amend --no-edit
           done
           echo "Unable to save the site log after three attempts." >&2

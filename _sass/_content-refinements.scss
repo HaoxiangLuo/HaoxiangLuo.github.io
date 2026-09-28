@@ -415,6 +415,35 @@ body.home-page .page__content .news-window h2 {
   font-size: 0.78rem;
 }
 
+/* Status line shown while a historical JSONL partition is fetched. */
+.archive-history-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 100%;
+  margin: 0 0 1rem;
+  color: #86868b;
+  font-size: 0.78rem;
+}
+
+.archive-history-status[hidden] { display: none !important; }
+.archive-history-status.is-error { color: #a8432f; }
+
+.archive-history-retry {
+  min-height: 30px;
+  padding: 0.15rem 0.9rem;
+  border: 1px solid rgba(29, 29, 31, 0.14);
+  border-radius: 999px;
+  color: #0071e3;
+  background: rgba(255, 255, 255, 0.78);
+  font: 650 0.72rem/1 inherit;
+  cursor: pointer;
+}
+
+.archive-history-retry:hover { border-color: #0071e3; }
+.archive-history-retry:focus-visible { outline: 2px solid #0071e3; outline-offset: 2px; }
+
 [data-filter-date][hidden] { display: none !important; }
 
 .publication-column--articles .publication-card {
@@ -2384,5 +2413,30 @@ body.home-page .news-window {
   .frontiers-card__link,
   .frontiers-card__journal {
     overflow-wrap: anywhere;
+  }
+}
+
+/* Archive-history status: desktop gets the roomier line, phones wrap instead. */
+@media (min-width: 1024px) {
+  .archive-history-status {
+    gap: 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .archive-history-status {
+    gap: 0.4rem;
+    font-size: 0.74rem;
+    line-height: 1.6;
+  }
+
+  .archive-history-status span {
+    overflow-wrap: anywhere;
+  }
+
+  .archive-history-retry {
+    min-height: 32px;
+    padding: 0.2rem 0.95rem;
   }
 }

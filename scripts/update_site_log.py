@@ -25,6 +25,11 @@ import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import archive_data
 
 try:
     from zoneinfo import ZoneInfo
@@ -42,9 +47,53 @@ MAX_ENTRIES = 100
 IGNORED_PREFIXES = (
     "Update daily news ",
     "Update academic frontiers ",
+    "Update opportunities ",
+    "Automated update of talk locations",
     "Record site update ",
     "Merge branch ",
+    "Archive data ",
+    "Build data archive ",
 )
+
+# A commit that introduces the long-term archive layer is a structural change,
+# not a content tweak, so it needs the reason spelled out rather than a list of
+# files. The sentences below are used whenever such files are touched.
+ARCHIVE_PATH_TOKENS = (
+    "scripts/archive_data.py",
+    "scripts/build_data_snapshot.py",
+    "assets/data/archive/",
+    "docs/data-archive.md",
+    ".github/workflows/data-archive-release.yml",
+    "assets/js/archive-history.js",
+)
+
+ARCHIVE_PURPOSE_ZH = (
+    "为避免自动抓取数据因页面展示期限而被清除，建立可长期追溯、可按需读取且不增加网站首页负担的数据归档机制。"
+)
+ARCHIVE_PURPOSE_EN = (
+    "Establish a durable, traceable archive so automatically collected data is retained "
+    "beyond the website’s display window without making the static site heavier."
+)
+ARCHIVE_DETAILS_ZH = (
+    "将每日新闻按月、学界前沿与网站日志按年写入追加式 JSONL 归档；保留近期 JSON 索引供 Jekyll 快速构建；"
+    "新增 manifest、稳定去重键、SHA-256 校验、历史数据按需加载与年度 GitHub Release 快照。"
+    "同步降低抓取频率，以减少自动提交噪声和并发冲突。"
+)
+ARCHIVE_DETAILS_EN = (
+    "Archive daily news by month and academic-frontier and site-log records by year in append-only "
+    "JSONL files; retain small recent JSON indexes for Jekyll; add manifests, stable deduplication "
+    "keys, SHA-256 checksums, on-demand historical loading, and annual GitHub Release snapshots. "
+    "Reduce collection frequency to limit automated commit noise and concurrent-update conflicts."
+)
+
+
+def is_archive_change(files: list[str]) -> bool:
+    """True when a commit builds the archive layer, not merely its data files."""
+    if not files:
+        return False
+    if all(path.startswith("assets/data/archive/") for path in files):
+        return False  # data written by the collectors, not a change to the layer
+    return any(any(token in path for token in ARCHIVE_PATH_TOKENS) for path in files)
 MODELS_ENDPOINT = "https://models.github.ai/inference/chat/completions"
 MODELS_MODEL = "openai/gpt-4o-mini"
 
@@ -210,6 +259,10 @@ def labels(files: list[str], added: str = "") -> tuple[list[str], list[str]]:
             add("归档筛选", "archive date filter")
         elif path.startswith("_data/navigation") or "masthead" in path:
             add("导航", "navigation")
+        elif is_archive_change([path]):
+            add("数据归档", "data archive")
+        elif path.startswith("tests/"):
+            add("归档测试", "archive tests")
         elif path.startswith(("_sass/", "assets/css/")):
             add("界面样式", "interface styling")
         elif path.startswith(("_includes/", "_layouts/")):
@@ -224,6 +277,12 @@ def labels(files: list[str], added: str = "") -> tuple[list[str], list[str]]:
 
 def details(files: list[str], added: str = "") -> tuple[str, str]:
     """Describe changed areas in language suited to the public log."""
+    # Building the archive layer outranks any single page it touches: the commit
+    # adds storage and on-demand loading, so naming only the styled pages would
+    # describe the wrong change.
+    if is_archive_change(files):
+        return ARCHIVE_DETAILS_ZH, ARCHIVE_DETAILS_EN
+
     # A stylesheet carries no page name of its own, so name the page behind the
     # selectors it adds instead of falling back to "the stylesheet".
     pages = style_pages(added, files)
@@ -275,6 +334,14 @@ def fallback_story(files: list[str], zh_labels: list[str], en_labels: list[str])
         return (
             f"对{scope_zh}的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
             f"Changed the script and interaction logic of {scope_en} so expanding and filtering the page works reliably.",
+        )
+
+    if is_archive_change(files):
+        return (
+            f"对{scope_zh}的存储方式进行了追加式归档改动，使每日新闻按月、学界前沿与网站日志按年永久保存，页面只在访客选择历史年份时才读取分卷。",
+            f"Changed the storage of {scope_en} to an append-only archive so daily news is kept by month "
+            "and frontier and site-log records by year, and a page loads a partition only when a visitor "
+            "chooses an earlier year.",
         )
 
     def whole_topic(predicate) -> bool:
@@ -459,8 +526,8 @@ def make_entry(sha: str) -> dict[str, object] | None:
         "message": message,
         "story_zh": story_zh,
         "story_en": story_en,
-        "purpose_zh": purpose_zh(files, added),
-        "purpose_en": message,
+        "purpose_zh": ARCHIVE_PURPOSE_ZH if is_archive_change(files) else purpose_zh(files, added),
+        "purpose_en": ARCHIVE_PURPOSE_EN if is_archive_change(files) else message,
         "details_zh": details_zh,
         "details_en": details_en,
         "sha": short_sha,
@@ -529,11 +596,15 @@ def main() -> int:
             print(f"    story_zh: {entry['story_zh']}")
             print(f"    title_en: {entry['title_en']}")
             print(f"    story_en: {entry['story_en']}")
+            print(f"    purpose_zh: {entry.get('purpose_zh', '')}")
+            print(f"    details_zh: {entry.get('details_zh', '')}")
         print(f"dry run: {len(entries)} entries would be saved")
         return 0
 
-    OUTPUT.write_text(json.dumps(entries[:MAX_ENTRIES], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"saved {min(len(entries), MAX_ENTRIES)} site updates")
+    # The long-term archive is authoritative: file every entry there and let it
+    # regenerate the short index Jekyll builds from (the newest 100).
+    stats = archive_data.upsert(ROOT, "site_updates", entries)
+    print(f"saved {stats.index_count} site updates ({stats.added} added, {stats.updated} updated)")
     return 0
 
 

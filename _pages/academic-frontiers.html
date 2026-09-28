@@ -12,7 +12,7 @@ translation_url: /zh/academic-frontiers/
 
 {% assign frontiers = site.data.academic_frontiers %}
 {% assign updated_day = frontiers.updated_at | slice: 0, 10 %}
-{% include archive-date-filter.html %}
+{% include archive-date-filter.html dataset="academic_frontiers" %}
 
 <p class="frontiers-updated">Site update <time datetime="{{ updated_day }}">{{ updated_day | date: "%B %-d, %Y" }}</time></p>
 

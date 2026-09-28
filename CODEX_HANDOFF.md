@@ -117,7 +117,7 @@
 - 生成脚本：`scripts/update_site_log.py`
 - 自动任务：`.github/workflows/site-log.yml`
 
-每次拥有者向 `master` 推送网页修改后，工作流会记录日期、修改类别、提交说明和提交链接。自动新闻提交、学界前沿自动提交、日志机器人提交和合并噪声不会写入日志。同一提交重复运行不会产生重复记录，最多保留最近 100 条。
+每次拥有者向 `master` 推送网页修改后，工作流会记录日期、修改类别、提交说明和提交链接。自动新闻提交、学界前沿自动提交、资讯自动提交、日志机器人提交和合并噪声不会写入日志。同一提交重复运行不会产生重复记录，最近索引最多保留 100 条，全部历史写入 `assets/data/archive/site-updates/YYYY.jsonl`。
 
 ### 描述文字的硬性要求（每次改动日志相关代码都必须遵守）
 
@@ -139,7 +139,7 @@
 - 自动任务：`.github/workflows/daily-news.yml`
 - 首页组件：`_includes/daily-news-widget.html`
 
-工作流每小时从公开 RSS 新闻源整理标题，按上海时区日期保存。数据结构为：
+工作流每天三次（上海时间 09:00 / 13:00 / 19:00）从公开 RSS 新闻源整理标题，按上海时区日期保存。数据先写入长期归档 `assets/data/archive/daily-news/YYYY-MM.jsonl`，再由归档生成近期索引。数据结构为：
 
 ```json
 {
@@ -155,7 +155,7 @@
 }
 ```
 
-最多保存 90 天，每天最多 9 条。任务会在写入前同步最新分支，推送竞争时最多自动重试三次。新闻标题和链接归原发布机构所有，网站只做索引。
+近期索引最多保存 90 天，每天最多 9 条；历史按月永久保存在归档里。任务会在写入前同步最新分支，推送竞争时最多自动重试三次。新闻标题和链接归原发布机构所有，网站只做索引。
 
 ## 11. 修改与发布流程
 
@@ -181,6 +181,7 @@
 - Site Log 能显示最新人工发布记录。
 - Daily News 能按日期显示历史记录，首页能显示当天或最近一期。
 - Academic Frontiers 中英文页面卡片字段一致，标题与摘要保持原文，年月筛选可用。
+- Daily News、Academic Frontiers、Site Log 选中近期索引之外的年份或月份时，能显示"正在读取历史归档…"并加载出该分卷；失败时保留已有记录并给出重试按钮。
 - `git diff --check` 无错误。
 - 工作区无测试缓存、临时文件或私人简历。
 - 明确告知用户是否仍需点击 `Push origin`。
@@ -213,7 +214,7 @@
 - 自动任务：`.github/workflows/academic-frontiers.yml`
 - 页面：`_pages/academic-frontiers.html`、`_pages/academic-frontiers-zh.html`
 
-任务每天 09:23（上海时间）通过 OpenAlex REST API 抓取清单内期刊最近 30 天的论文（`type:article`、有摘要、非撤稿），按发表日期倒序归档；每刊最多 3 条、单次最多 24 条，归档保留 180 天。以 DOI 去重（无 DOI 时用 OpenAlex 工作 ID），归档只增不覆盖，接口异常时保留现有数据。清单内没有启用期刊时，脚本不访问 OpenAlex，直接产出空归档。
+任务每周一 09:23（上海时间）通过 OpenAlex REST API 抓取清单内期刊最近 30 天的论文（`type:article`、有摘要、非撤稿），按发表日期倒序归档；每刊最多 3 条、单次最多 24 条，归档保留 180 天。以 DOI 去重（无 DOI 时用 OpenAlex 工作 ID），归档只增不覆盖，接口异常时保留现有数据。清单内没有启用期刊时，脚本不访问 OpenAlex，直接产出空归档。
 
 硬性约定：
 
@@ -222,6 +223,25 @@
 - 标题、作者、期刊名与摘要在中英文页面一律保持原文，不使用机器翻译；只有界面文案、筛选器、说明和空状态做双语。
 - 页脚须保留"元数据来自 OpenAlex、摘要仅为节选、全文归出版方"的说明。
 
-## 15. 当前迁移注意事项
+## 15. 长期数据归档（三层）
+
+详细设计见 `docs/data-archive.md`，这里只记改动前必须知道的三条：
+
+1. **归档是权威，索引是投影**。`assets/data/archive/` 下的 JSONL（每日新闻按月、学界前沿与网站日志按年）只追加、按稳定 ID 更新，永不因保留期限删除；`_data/` 里的近期 JSON 永远由 `scripts/archive_data.py` 从归档生成（90 天 / 180 天 / 100 条）。手工改 `_data/` 会在下次运行时被覆盖。
+2. **页面默认轻量**。Jekyll 只构建近期索引；访客选中近期索引里没有的年份或月份时，`assets/js/archive-history.js` 才用 `fetch()` 读取 `manifest.json` 并对应该分卷，逐行解析后渲染，带双语加载/失败/重试提示，分卷在内存里缓存。
+3. **写入必须原子**。所有 JSON / JSONL / manifest 都先写临时文件、解析通过后再替换；不要在脚本里直接字符串追加 JSONL。
+
+常用命令：
+
+```sh
+python scripts/archive_data.py --all              # 重建索引与 manifest（可反复运行）
+python scripts/archive_data.py --dataset daily_news --dry-run
+python scripts/build_data_snapshot.py --year 2026 --output-dir ./snapshot   # 手动导出年度 ZIP
+python tests/test_archive_data.py                 # 归档层单元测试
+```
+
+每年 1 月 5 日 `.github/workflows/data-archive-release.yml` 会把上一自然年的分卷打包成 `haoxiangluo-data-archive-YYYY.zip`，创建 tag `data-archive-YYYY` 的 Release（已存在则安全退出）。
+
+## 16. 当前迁移注意事项
 
 换电脑前必须确保旧电脑上的本地提交全部推送。只有出现在 GitHub 仓库中的内容，才能在新电脑克隆后完整恢复。Codex 对话记录不会随仓库迁移，但本文件和 `AGENTS.md` 已保存足够的项目背景。

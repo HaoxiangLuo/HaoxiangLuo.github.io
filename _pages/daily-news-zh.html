@@ -7,10 +7,10 @@ lang: zh
 translation_url: /daily-news/
 ---
 
-<p class="daily-news-intro">每小时从公开新闻源整理全球重要标题，并按日期留存。点击来源链接可阅读完整报道。</p>
+<p class="daily-news-intro">每天三次从公开新闻源整理全球重要标题，并按日期留存。点击来源链接可阅读完整报道。更早的日期保存在长期归档中，选择对应月份即可读取。</p>
 
 {% assign news_days = site.data.daily_news.days %}
-{% include archive-date-filter.html %}
+{% include archive-date-filter.html dataset="daily_news" %}
 <div class="daily-news-archive">
   {% if news_days.size > 0 %}
     {% for day in news_days %}
