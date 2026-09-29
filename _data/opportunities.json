@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-09-24T09:18:12+08:00",
+  "updated_at": "2026-09-29T09:43:06+08:00",
   "internships": [
+    {
+      "date": "2026-09-29",
+      "items": [
+        {
+          "title": "WHS Intern",
+          "url": "https://www.amazon.jobs/en/jobs/10541373/whs-intern",
+          "detail": "San Fernando de Henares, Community of Madrid, ESP",
+          "source": "Amazon",
+          "source_zh": "亚马逊",
+          "group": "company"
+        },
+        {
+          "title": "Software Engineer Intern (2027) - Austin, TX",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8199958?gh_jid=8199958",
+          "detail": "In-Office",
+          "source": "Cloudflare",
+          "source_zh": "Cloudflare",
+          "group": "company"
+        },
+        {
+          "title": "Legal Intern",
+          "url": "https://www.amazon.jobs/en/jobs/10562103/legal-intern",
+          "detail": "Madrid, Community of Madrid, ESP",
+          "source": "Amazon",
+          "source_zh": "亚马逊",
+          "group": "company"
+        }
+      ]
+    },
     {
       "date": "2026-09-24",
       "items": [
