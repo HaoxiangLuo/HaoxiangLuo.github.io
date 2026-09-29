@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-09-29T00:10:39+08:00",
+  "updated_at": "2026-09-29T08:32:53+08:00",
   "days": [
+    {
+      "date": "2026-09-29",
+      "items": [
+        {
+          "title": "Inside Yemen's front-line city as Houthis battle for control",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw98005ndz7no?at_medium=RSS&at_campaign=rss",
+          "title_zh": "也门前线城市内胡塞武装争夺控制权"
+        },
+        {
+          "title": "British men released on bail after suspected terror plot",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/28/nx-s1-5983550/british-men-released-on-bail-after-suspected-terror-plot",
+          "title_zh": "英国男子因涉嫌恐怖阴谋获保释"
+        },
+        {
+          "title": "The Takeaway Day 6: General Debate ends with a plea to turn words into action",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168478",
+          "title_zh": "第六天要点：一般性辩论以呼吁将言语转化为行动结束"
+        },
+        {
+          "title": "Seoul summons Ukraine envoy over North Korean prisoner-of-war row",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c8ly40xx0dr0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "首尔就朝鲜战俘纠纷召见乌克兰特使"
+        },
+        {
+          "title": "What we know about the suspected U.K. terror plot. And, why the Gulf remains in limbo",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/28/g-s1-145248/up-first-newsletter-uk-us-air-base-iran-strait-hormuz-media-outlets-cnn-trump",
+          "title_zh": "我们对英国涉嫌恐怖阴谋的了解。为什么海湾地区仍处于不稳定状态"
+        },
+        {
+          "title": "UN leaders renew push to defeat racism, 25 years after Durban",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168477",
+          "title_zh": "德班会议 25 年后，联合国领导人再次推动击败种族主义"
+        },
+        {
+          "title": "Twelve women have been killed in one part of South Africa since July. Here's what we know so far",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6m27dprvzv7o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "自 7 月以来，南非部分地区已有 12 名妇女被杀。这是迄今为止我们所知道的"
+        },
+        {
+          "title": "U.K. examines if Iran or Russia are involved in foiled attack near base used by U.S.",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack",
+          "title_zh": "英国正在调查伊朗或俄罗斯是否参与了美国基地附近未遂袭击事件"
+        },
+        {
+          "title": "DPR Korea tells UN its nuclear status is ‘irreversible’, rejects outside pressure",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168476",
+          "title_zh": "朝鲜拒绝外界压力，告诉联合国其核地位“不可逆转"
+        }
+      ]
+    },
     {
       "date": "2026-09-28",
       "items": [
