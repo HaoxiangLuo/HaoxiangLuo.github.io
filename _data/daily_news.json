@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T13:17:04+08:00",
+  "updated_at": "2026-09-29T19:01:54+08:00",
   "days": [
     {
       "date": "2026-09-29",
@@ -11,16 +11,10 @@
           "title_zh": "出于安全考虑，OpenAI 放弃推出新模型"
         },
         {
-          "title": "British men released on bail after suspected terror plot",
+          "title": "As the U.S. signals a smaller Middle East footprint, Turkey is ready to step in",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/28/nx-s1-5983550/british-men-released-on-bail-after-suspected-terror-plot",
-          "title_zh": "英国男子因涉嫌恐怖阴谋获保释"
-        },
-        {
-          "title": "The Takeaway Day 6: General Debate ends with call to turn words into action",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168478",
-          "title_zh": "第六天要点：一般性辩论以呼吁将言语转化为行动结束"
+          "url": "https://www.npr.org/2026/09/29/nx-s1-5983685/turkey-influence",
+          "title_zh": "随着美国发出缩小中东足迹的信号，土耳其已准备好介入"
         },
         {
           "title": "Evicted Spanish pensioner can move back home, lawyer says",
@@ -29,16 +23,10 @@
           "title_zh": "律师称，被驱逐的西班牙养老金领取者可以搬回家"
         },
         {
-          "title": "What we know about the suspected U.K. terror plot. And, why the Gulf remains in limbo",
+          "title": "British men released on bail after suspected terror plot",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/09/28/g-s1-145248/up-first-newsletter-uk-us-air-base-iran-strait-hormuz-media-outlets-cnn-trump",
-          "title_zh": "我们对英国涉嫌恐怖阴谋的了解。为什么海湾地区仍处于不稳定状态"
-        },
-        {
-          "title": "UN leaders renew push to defeat racism, 25 years after Durban",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168477",
-          "title_zh": "德班会议 25 年后，联合国领导人再次推动击败种族主义"
+          "url": "https://www.npr.org/2026/09/28/nx-s1-5983550/british-men-released-on-bail-after-suspected-terror-plot",
+          "title_zh": "英国男子因涉嫌恐怖阴谋获保释"
         },
         {
           "title": "Argentina threatens legal action against UK over Falkland Islands oil exploration",
@@ -47,16 +35,28 @@
           "title_zh": "阿根廷威胁就福克兰群岛石油勘探对英国采取法律行动"
         },
         {
-          "title": "U.K. examines if Iran or Russia are involved in foiled attack near base used by U.S.",
+          "title": "What we know about the suspected U.K. terror plot. And, why the Gulf remains in limbo",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/28/g-s1-145248/up-first-newsletter-uk-us-air-base-iran-strait-hormuz-media-outlets-cnn-trump",
+          "title_zh": "我们对英国涉嫌恐怖阴谋的了解。为什么海湾地区仍处于不稳定状态"
+        },
+        {
+          "title": "New York Times executive fatally shot by elderly in-laws, police say",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cred737qdv2no?at_medium=RSS&at_campaign=rss",
+          "title_zh": "警方称《纽约时报》高管被年迈的姻亲枪杀"
+        },
+        {
+          "title": "5 men arrested near a U.S.-run base bailed as UK police probe if there's an Iran link",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack",
           "title_zh": "英国正在调查伊朗或俄罗斯是否参与了美国基地附近未遂袭击事件"
         },
         {
-          "title": "DPR Korea tells UN its nuclear status is ‘irreversible’, rejects outside pressure",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/09/1168476",
-          "title_zh": "朝鲜拒绝外界压力，告诉联合国其核地位“不可逆转"
+          "title": "US ban on Canadian alcohol and dairy comes into effect as trade war drags on",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm1j43y146d2o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "随着贸易战的持续，美国对加拿大酒精和乳制品的禁令生效"
         }
       ]
     },
