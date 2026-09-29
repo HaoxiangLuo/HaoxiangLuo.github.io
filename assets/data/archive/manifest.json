@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-29T08:52:15+08:00",
+  "updated_at": "2026-09-29T08:52:17+08:00",
   "archives": {
     "daily_news": {
       "format": "jsonl",
