@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-09-29T19:01:54+08:00",
+  "updated_at": "2026-09-30T09:05:31+08:00",
   "days": [
+    {
+      "date": "2026-09-30",
+      "items": [
+        {
+          "title": "Spain announces ban on evictions after protests over 87-year-old woman's removal from flat",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwm2qmjgy93do?at_medium=RSS&at_campaign=rss",
+          "title_zh": "87岁老妇被强行赶出公寓引发抗议，西班牙宣布禁止驱逐"
+        },
+        {
+          "title": "Potential Taiwan tension sparked 'last minute' change in Trump-Xi National Archives visit",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/29/nx-s1-5984989/digital-archives-trump-xi",
+          "title_zh": "潜在的台湾紧张局势引发特朗普与习近平国家档案馆访问的“最后一刻”变化"
+        },
+        {
+          "title": "World News in Brief: Deadly Myanmar strikes as Malaysia begins deportations, new emergency funding released, Gaza and West Bank update",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168488",
+          "title_zh": "世界新闻简讯：马来西亚开始驱逐、新的紧急资金发放、加沙和约旦河西岸最新情况，缅甸发生致命袭击"
+        },
+        {
+          "title": "Chinese AI tool told researchers how to make bioweapons",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmrergq3j7lgo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "中国人工智能工具告诉研究人员如何制造生物武器"
+        },
+        {
+          "title": "Trump weakens fuel efficiency standards. And, Cornell fraternity rape case reopened",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/29/g-s1-145422/up-first-newsletter-fuel-efficiency-standards-cornell-rape-case-terror-suspects",
+          "title_zh": "特朗普削弱了燃油效率标准。并且，康奈尔兄弟会强奸案重新审理"
+        },
+        {
+          "title": "Funding cuts put 8.3 million refugees at risk of losing vital assistance",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168486",
+          "title_zh": "资金削减使 830 万难民面临失去重要援助的风险"
+        },
+        {
+          "title": "South Africa to clean up high-risk areas after 12 women killed",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c51kx9ze1mdzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "12名妇女遇害后南非将清理高风险地区"
+        },
+        {
+          "title": "As the U.S. signals a smaller Middle East footprint, Turkey is ready to step in",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/29/nx-s1-5983685/turkey-influence",
+          "title_zh": "随着美国发出缩小中东足迹的信号，土耳其已准备好介入"
+        },
+        {
+          "title": "Clean your plate – to reduce food loss and waste",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/09/1168485",
+          "title_zh": "清洁你的盘子——减少食物损失和浪费"
+        }
+      ]
+    },
     {
       "date": "2026-09-29",
       "items": [
