@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-30T17:19:02+08:00",
+  "updated_at": "2026-09-30T17:36:20+08:00",
   "archives": {
     "daily_news": {
       "format": "jsonl",
@@ -10,7 +10,7 @@
           "key": "2026-09",
           "url": "/assets/data/archive/daily-news/2026-09.jsonl",
           "records": 16,
-          "sha256": "015bda9d291f617e0466c0c67ed387d57fd9cf776a162bda6eec36ccee03ea73"
+          "sha256": "37fa8a8bfe6b27a80d97730cb6c49ed97562fde03fbfa2f1c15c387a3b4b345a"
         }
       ]
     },
@@ -22,7 +22,7 @@
           "key": "2026",
           "url": "/assets/data/archive/academic-frontiers/2026.jsonl",
           "records": 18,
-          "sha256": "664ef2efa3dfe8367296fc0540465a03cba7466a729e727221bc60f5c8cebd5f"
+          "sha256": "682918c670c0b40bd905310a4d64746d98c2603bf0d7dac30006fdbaee7f6ac0"
         }
       ]
     },
@@ -33,8 +33,8 @@
         {
           "key": "2026",
           "url": "/assets/data/archive/site-updates/2026.jsonl",
-          "records": 31,
-          "sha256": "b3d2fc92f8115264edd0ceb583aaa0a223a2841a00af12d0e828dc2deab2b152"
+          "records": 32,
+          "sha256": "523b1bc1996672a4b37761223facbd3e52ef69b6a387d776981ed3eeb2cb0928"
         }
       ]
     }
