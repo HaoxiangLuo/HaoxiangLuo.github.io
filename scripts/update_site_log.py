@@ -87,6 +87,49 @@ ARCHIVE_DETAILS_EN = (
 )
 
 
+OPPS_TRANSLATION_TITLE_ZH = "Opportunities 资讯内容自动双语化"
+OPPS_TRANSLATION_TITLE_EN = "Automatic bilingual content for Opportunities"
+OPPS_TRANSLATION_PURPOSE_ZH = (
+    "让自动抓取的实习与院校机会在中英文页面中展示对应语言内容，同时保留发布方原文与历史记录。"
+)
+OPPS_TRANSLATION_PURPOSE_EN = (
+    "Show automatically collected internships and academic opportunities in the matching "
+    "language while preserving publisher wording and historical records."
+)
+OPPS_TRANSLATION_DETAILS_ZH = (
+    "采集脚本现为职位与项目标题、地点等补充信息增量写入中英文译文字段；英文页和中文页按语言读取对应字段，"
+    "并在译文暂缺时安全回退至来源原文。翻译由 GitHub Actions 中的 GitHub Models 完成，译文与机会记录一同归档，"
+    "避免浏览器端泄露密钥或在页面加载时重复翻译。"
+)
+OPPS_TRANSLATION_DETAILS_EN = (
+    "The collector now writes translated fields incrementally for job and programme titles and "
+    "location details; the English and Chinese pages select their matching fields and safely fall "
+    "back to the publisher’s wording while a translation is pending. GitHub Models runs inside "
+    "GitHub Actions, and translations are archived with the opportunity records so no key is "
+    "exposed to visitors and no translation is repeated during page load."
+)
+OPPS_TRANSLATION_STORY_ZH = (
+    "为资讯条目增加了标题与地点的中英文译文字段，使中文页与英文页显示同一批条目的对应语言版本。"
+)
+OPPS_TRANSLATION_STORY_EN = (
+    "Added translated title and location fields to opportunity items so both pages show the same "
+    "items in their own language."
+)
+
+
+def is_opps_translation_change(files: list[str]) -> bool:
+    """True for the commit that made Opportunities content bilingual.
+
+    Translating the collector alone would not change what a visitor sees, so
+    the page templates have to be part of the commit as well.
+    """
+    if not files:
+        return False
+    collector = any(path.endswith("scripts/fetch_opportunities.py") for path in files)
+    pages = any(path.startswith("_pages/") and "opportunities" in path for path in files)
+    return collector and pages
+
+
 def is_archive_change(files: list[str]) -> bool:
     """True when a commit builds the archive layer, not merely its data files."""
     if not files:
@@ -485,6 +528,10 @@ def make_entry(sha: str) -> dict[str, object] | None:
     details_zh, details_en = details(files, added)
     title_zh = "调整了" + "、".join(zh)
     title_en = "Refined " + ", ".join(en)
+    opps_translation = is_opps_translation_change(files)
+    if opps_translation:
+        # Fixed wording agreed for this change: the model must not rephrase it.
+        story_zh, story_en = OPPS_TRANSLATION_STORY_ZH, OPPS_TRANSLATION_STORY_EN
 
     token = os.environ.get("GITHUB_TOKEN", "")
     if token:
@@ -519,6 +566,16 @@ def make_entry(sha: str) -> dict[str, object] | None:
     raw_date = git("show", "-s", "--format=%cI", sha)
     date = datetime.fromisoformat(raw_date).astimezone(TZ)
     short_sha = git("rev-parse", "--short=7", sha)
+    # Named apart from the module-level `purpose_zh()` helper: assigning a local
+    # of the same name would shadow the function for the whole scope.
+    entry_purpose_zh = ARCHIVE_PURPOSE_ZH if is_archive_change(files) else purpose_zh(files, added)
+    entry_purpose_en = ARCHIVE_PURPOSE_EN if is_archive_change(files) else message
+    # Applied last so a model reply cannot replace the agreed wording.
+    if opps_translation:
+        title_zh, title_en = OPPS_TRANSLATION_TITLE_ZH, OPPS_TRANSLATION_TITLE_EN
+        entry_purpose_zh, entry_purpose_en = OPPS_TRANSLATION_PURPOSE_ZH, OPPS_TRANSLATION_PURPOSE_EN
+        details_zh, details_en = OPPS_TRANSLATION_DETAILS_ZH, OPPS_TRANSLATION_DETAILS_EN
+
     return {
         "date": date.strftime("%Y-%m-%d"),
         "title_zh": title_zh,
@@ -526,8 +583,8 @@ def make_entry(sha: str) -> dict[str, object] | None:
         "message": message,
         "story_zh": story_zh,
         "story_en": story_en,
-        "purpose_zh": ARCHIVE_PURPOSE_ZH if is_archive_change(files) else purpose_zh(files, added),
-        "purpose_en": ARCHIVE_PURPOSE_EN if is_archive_change(files) else message,
+        "purpose_zh": entry_purpose_zh,
+        "purpose_en": entry_purpose_en,
         "details_zh": details_zh,
         "details_en": details_en,
         "sha": short_sha,

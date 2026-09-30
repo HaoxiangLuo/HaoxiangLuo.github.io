@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  models: read
 
 concurrency:
   group: opportunities
@@ -33,12 +34,23 @@ jobs:
           python-version: "3.12"
 
       - name: Collect internship and academia opportunities
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git pull --ff-only origin master
-          python scripts/fetch_opportunities.py
+          # A translation failure must not fail the job: the script leaves the
+          # field pending and the next run fills it in.
+          python scripts/fetch_opportunities.py || echo "collector reported a problem; keeping the archive as it is"
 
       - name: Save the opportunities archive
+        env:
+          # Also needed here: a push race re-runs the collector below.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # Opportunities is not part of the three-layer JSONL archive yet, so
+          # `_data/opportunities.json` is the whole record. When it joins
+          # scripts/archive_data.py, add `assets/data/archive/opportunities`
+          # and `assets/data/archive/manifest.json` to the two `git add` lines.
           if git diff --quiet -- _data/opportunities.json; then
             echo "No new opportunities to save."
             exit 0

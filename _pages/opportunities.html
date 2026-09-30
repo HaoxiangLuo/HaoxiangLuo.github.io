@@ -39,7 +39,7 @@ translation_url: /zh/opportunities/
                 </summary>
                 <ol>
                   {% for item in group_items %}
-                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}{% if item.detail %} <em>· {{ item.detail | escape }}</em>{% endif %}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_en | default: item.title | escape }}{% assign detail_text = item.detail_en | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
                   {% endfor %}
                 </ol>
               </details>
@@ -65,7 +65,7 @@ translation_url: /zh/opportunities/
                 </summary>
                 <ol>
                   {% for item in group_items %}
-                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}{% if item.detail %} <em>· {{ item.detail | escape }}</em>{% endif %}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_en | default: item.title | escape }}{% assign detail_text = item.detail_en | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
                   {% endfor %}
                 </ol>
               </details>
@@ -91,7 +91,7 @@ translation_url: /zh/opportunities/
             </summary>
             <ol>
               {% for item in day.items %}
-                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_en | default: item.title | escape }}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
               {% endfor %}
             </ol>
           </details>
@@ -103,4 +103,4 @@ translation_url: /zh/opportunities/
   </section>
 </div>
 
-<p class="daily-news-note">Entries are indexed automatically from the official career pages and department sites of the listed organisations. Titles and links belong to the original publishers; details such as deadlines and eligibility are subject to the official announcements. Inclusion does not imply endorsement.</p>
+<p class="daily-news-note">Entries are indexed automatically from the official career pages and department sites of the listed organisations. Titles and links belong to the original publishers; details such as deadlines and eligibility are subject to the official announcements. Inclusion does not imply endorsement. Chinese titles and location details are generated automatically; a newly collected item may temporarily retain its source wording while translation is retried.</p>

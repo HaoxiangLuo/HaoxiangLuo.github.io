@@ -200,6 +200,16 @@
 
 某天没有新信息时，脚本不修改数据文件，工作流检测到无差异即跳过提交。已收录的条目按 URL 去重，不会重复出现。新增信息源时编辑脚本顶部的 `INTERN_SOURCES` / `ACADEMIA_SOURCES` 列表即可。
 
+### 资讯条目双语字段（改动前必读）
+
+条目在原文之外带译文字段：`title` / `detail` 永远保留发布方原文，`title_zh` / `detail_zh` 由采集阶段的 GitHub Models 增量写入（`title_en` / `detail_en` 为将来的中文来源预留）。英文页按 `title_en → title`、`detail_en → detail` 显示，中文页按 `title_zh → title`、`detail_zh → detail` 显示，译文暂缺时回退原文。
+
+- 翻译只在 GitHub Actions 里进行，用工作流自带的 `GITHUB_TOKEN`（工作流已授予 `models: read`），**不需要站长额外配置密钥**，密钥也不会出现在仓库或页面里。
+- **没有未认证公共翻译接口作为静默兜底**：Models 不可用时该字段留为待翻译，下次运行继续补齐，页面临时显示原文并在说明里注明。
+- 每次运行最多翻译 `--max-translations`（默认 40）个文本字段，先补历史缺失再译当天新增；同一文本一次运行只请求一次；已有译文绝不覆盖。
+- `--translate-only` 只补译文不抓取，`--dry-run` 不写文件。
+- Opportunities 目前**不在** `scripts/archive_data.py` 的三层归档里（那里只有每日新闻、学界前沿、网站日志），`_data/opportunities.json` 仍是唯一存储；接入归档时把 `write_archive()` 换成 `archive_data.upsert(ROOT, "opportunities", records)` 即可，记录结构无需改变。
+
 ### 归档只增不改（改动前必读）
 
 采集结果**只追加、不覆盖**：新条目写入当天日期的 `items`，已有日期合并而非重建，脚本每次运行前会先归一化归档（同一日期合并为一条、日内按 URL/标题去重、无日期的条目丢弃），最多保留 180 天。切勿改成"每天生成一份新数据覆盖写入"。

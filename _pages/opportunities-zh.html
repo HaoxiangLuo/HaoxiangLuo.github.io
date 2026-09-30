@@ -39,7 +39,7 @@ translation_url: /opportunities/
                 </summary>
                 <ol>
                   {% for item in group_items %}
-                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}{% if item.detail %} <em>· {{ item.detail | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_zh | default: item.title | escape }}{% assign detail_text = item.detail_zh | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
                   {% endfor %}
                 </ol>
               </details>
@@ -65,7 +65,7 @@ translation_url: /opportunities/
                 </summary>
                 <ol>
                   {% for item in group_items %}
-                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}{% if item.detail %} <em>· {{ item.detail | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_zh | default: item.title | escape }}{% assign detail_text = item.detail_zh | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
                   {% endfor %}
                 </ol>
               </details>
@@ -91,7 +91,7 @@ translation_url: /opportunities/
             </summary>
             <ol>
               {% for item in day.items %}
-                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title | escape }}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_zh | default: item.title | escape }}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
               {% endfor %}
             </ol>
           </details>
@@ -103,4 +103,4 @@ translation_url: /opportunities/
   </section>
 </div>
 
-<p class="daily-news-note">条目由机器自动从各机构官方招聘页与院系官网收录，标题保留来源语言原文；截止日期、申请资格等细节以官方公告为准。标题与链接归原发布机构所有；收录不代表本站赞同其观点。</p>
+<p class="daily-news-note">条目由机器自动从各机构官方招聘页与院系官网收录，标题与地点显示自动生成的中文译文，来源原文一并保留；截止日期、申请资格等细节以官方公告为准。标题与链接归原发布机构所有；收录不代表本站赞同其观点。条目标题与地点由自动翻译生成；如个别新条目尚未完成译配，将暂时保留来源原文。</p>

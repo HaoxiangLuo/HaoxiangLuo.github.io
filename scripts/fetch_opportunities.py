@@ -21,8 +21,10 @@ import argparse
 import copy
 import html
 import json
+import os
 import re
 import sys
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -43,6 +45,24 @@ MAX_NEW_PER_SOURCE = 8
 MAX_NEW_PER_DAY = 20
 REQUEST_TIMEOUT = 25
 USER_AGENT = "HaoxiangLuo.github.io opportunities collector/1.0"
+
+# --- Translation -----------------------------------------------------------
+# Same approach as scripts/fetch_daily_news.py (GitHub Models, OpenAI-compatible
+# endpoint, GITHUB_TOKEN from the workflow) but packaged for the Opportunities
+# record shape: two plain-text fields per item instead of a single headline.
+# There is deliberately no unauthenticated public translate endpoint as a
+# silent fallback: when GitHub Models is unreachable the field simply stays
+# pending and the next scheduled run fills it in.
+TRANSLATE_TIMEOUT = 20
+MODELS_ENDPOINT = "https://models.github.ai/inference/chat/completions"
+MODELS_MODEL = "openai/gpt-4o-mini"
+MAX_TRANSLATIONS_PER_RUN = 40  # text fields per run, history first
+MAX_SOURCE_CHARS = 240  # refuse to send anything longer to the model
+MAX_TRANSLATION_CHARS = 240  # refuse a reply that rambles or explains
+TRANSLATE_ATTEMPTS = 2  # bounded retries for one field
+CJK_RE = re.compile(r"[\u3400-\u9fff]")
+# URLs, HTML and workflow variables never reach the model.
+UNSAFE_TEXT_RE = re.compile(r"https?://|<[a-z!/]|[{][{]", re.I)
 
 # Internship sources: official job feeds of the UN and leading global companies.
 # `group` splits the archive into the UN and company sub-sections.
@@ -105,6 +125,201 @@ def item_key(item: dict) -> str:
     url = re.sub(r"[#?].*$", "", item["url"].rstrip("/").lower())
     title = re.sub(r"[^a-z0-9\u3400-\u9fff]+", "", item["title"].lower())
     return url or title
+
+
+SYSTEM_PROMPTS = {
+    "zh": (
+        "You translate English job titles, academic programme titles and short "
+        "location or supplementary lines taken from official internship and "
+        "academic-mobility announcements into concise Simplified Chinese. Keep "
+        "organisations, universities, companies, programme abbreviations, job "
+        "levels, numbers, deadlines and place names exactly as they are. Do not "
+        "add any information that the source does not contain. Reply with the "
+        "translation only: no quotes, no pinyin, no explanation."
+    ),
+    "en": (
+        "You translate Chinese job titles, academic programme titles and short "
+        "location or supplementary lines into concise English. Keep "
+        "organisations, universities, companies, programme abbreviations, job "
+        "levels, numbers, deadlines and place names exactly as they are. Do not "
+        "add any information that the source does not contain. Reply with the "
+        "translation only."
+    ),
+}
+
+
+def tidy_translation(value: str, target: str) -> str:
+    """Normalise a model reply, or return "" when it is not usable.
+
+    Empty, over-long, URL-bearing and wrong-script replies are rejected so the
+    field is left for the next run instead of being filled with noise.
+    """
+    text = clean_text(value)
+    text = text.strip().strip('"').strip("“”‘’").strip()
+    text = re.sub(
+        r"^(翻译|译文|简体中文|英译|Chinese translation|Chinese|English|Translation)\s*[:：]\s*",
+        "",
+        text,
+        flags=re.I,
+    )
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text or len(text) > MAX_TRANSLATION_CHARS:
+        return ""
+    if UNSAFE_TEXT_RE.search(text):
+        return ""
+    has_cjk = bool(CJK_RE.search(text))
+    if target == "zh" and not has_cjk:
+        return ""
+    if target == "en" and has_cjk:
+        return ""
+    return text
+
+
+class Translator:
+    """A tiny field-level translator with a per-run cache.
+
+    Only plain text is sent. Identical text is translated once per run, so a
+    repeated job title across sources costs one request.
+    """
+
+    def __init__(self, token: str = "") -> None:
+        self.token = token
+        self.cache: dict[tuple[str, str], str] = {}
+        self.calls = 0
+        self.pending = 0
+
+    @staticmethod
+    def translatable(text: str) -> bool:
+        if not text or len(text) > MAX_SOURCE_CHARS:
+            return False
+        return not UNSAFE_TEXT_RE.search(text)
+
+    def translate(self, text: str, target: str) -> str:
+        """Return the translation of `text`, or "" to leave the field pending."""
+        key = (target, text)
+        if key in self.cache:
+            return self.cache[key]
+        value = ""
+        if self.token and self.translatable(text):
+            for _ in range(TRANSLATE_ATTEMPTS):
+                try:
+                    self.calls += 1
+                    value = tidy_translation(self._request(text, target), target)
+                    time.sleep(0.15)
+                except Exception as exc:
+                    print(f"warning: translation failed: {exc}", file=sys.stderr)
+                    value = ""
+                if value:
+                    break
+        if not value:
+            self.pending += 1
+        self.cache[key] = value
+        return value
+
+    def _request(self, text: str, target: str) -> str:
+        payload = json.dumps(
+            {
+                "model": MODELS_MODEL,
+                "messages": [
+                    {"role": "system", "content": SYSTEM_PROMPTS[target]},
+                    {"role": "user", "content": text},
+                ],
+                "temperature": 0.2,
+            }
+        ).encode("utf-8")
+        request = urllib.request.Request(
+            MODELS_ENDPOINT,
+            data=payload,
+            headers={
+                "Authorization": f"Bearer {self.token}",
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+            },
+        )
+        with urllib.request.urlopen(request, timeout=TRANSLATE_TIMEOUT) as response:
+            body = json.loads(response.read().decode("utf-8"))
+        return body["choices"][0]["message"]["content"]
+
+
+def build_translator() -> Translator:
+    """Build the translator from the token GitHub Actions provides."""
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GITHUB_MODELS_TOKEN") or ""
+    if not token:
+        print(
+            "note: no GITHUB_TOKEN in the environment; translations stay pending for the next run",
+            file=sys.stderr,
+        )
+    return Translator(token)
+
+
+# (source field, Chinese target, English target): `title_en` / `detail_en` are
+# reserved for Chinese-language sources that may be collected later.
+TRANSLATION_FIELDS = (
+    ("title", "title_zh", "title_en"),
+    ("detail", "detail_zh", "detail_en"),
+)
+
+
+def pending_field(item: dict, source_key: str, zh_key: str, en_key: str):
+    """Describe the field that still needs a translation, or None."""
+    text = str(item.get(source_key) or "").strip()
+    if not text:
+        return None
+    if CJK_RE.search(text):  # a Chinese source: the English page needs it
+        return None if item.get(en_key) else (text, en_key, "en")
+    return None if item.get(zh_key) else (text, zh_key, "zh")
+
+
+def backfill_translations(sections: dict, translator: Translator, budget: int = MAX_TRANSLATIONS_PER_RUN) -> dict:
+    """Fill missing translations, newest day first, within `budget` fields.
+
+    Existing translations are never overwritten, and one failed field never
+    touches the record it belongs to: the item keeps its publisher wording and
+    the Chinese page falls back to it.
+    """
+    filled = {"titles": 0, "details": 0}
+    for name in ("internships", "academia"):
+        for day in sections.get(name) or []:
+            for item in day.get("items", []):
+                for source_key, zh_key, en_key in TRANSLATION_FIELDS:
+                    if filled["titles"] + filled["details"] >= budget:
+                        return filled
+                    job = pending_field(item, source_key, zh_key, en_key)
+                    if job is None:
+                        continue
+                    text, target_key, target = job
+                    translated = translator.translate(text, target)
+                    if not translated:
+                        continue
+                    item[target_key] = translated
+                    filled["titles" if source_key == "title" else "details"] += 1
+    return filled
+
+
+# Long-term archive hook: `opportunities` is not one of the three datasets in
+# scripts/archive_data.py yet (those are daily_news, academic_frontiers and
+# site_updates), so `_data/opportunities.json` is still the only storage and
+# this file is written directly. When Opportunities joins the three-layer
+# archive, replace write_archive() below with
+# `archive_data.upsert(ROOT, "opportunities", records)` exactly as
+# scripts/fetch_daily_news.py does: the translations then live in the JSONL
+# partitions and are re-projected into the recent index, and nothing in the
+# record shape has to change.
+def write_archive(archive: dict) -> None:
+    """Replace the archive atomically: write a temp file, parse it, then swap."""
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    payload = json.dumps(archive, ensure_ascii=False, indent=2) + "\n"
+    temporary = OUTPUT.with_name(OUTPUT.name + ".tmp")
+    try:
+        temporary.write_text(payload, encoding="utf-8")
+        json.loads(temporary.read_text(encoding="utf-8"))
+        os.replace(temporary, OUTPUT)
+    except Exception:
+        try:
+            temporary.unlink()
+        except OSError:
+            pass
+        raise
 
 
 def collect_taleo_rss(source: dict) -> list[dict]:
@@ -263,10 +478,21 @@ def append_new(days: list[dict], candidates: list[dict], today: str) -> int:
     return len(fresh)
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Collect and report without writing the archive.")
-    args = parser.parse_args()
+    parser.add_argument(
+        "--translate-only",
+        action="store_true",
+        help="Fill in missing translations of stored items without collecting anything.",
+    )
+    parser.add_argument(
+        "--max-translations",
+        type=int,
+        default=MAX_TRANSLATIONS_PER_RUN,
+        help=f"How many text fields one run may translate (default {MAX_TRANSLATIONS_PER_RUN}).",
+    )
+    args = parser.parse_args(argv)
 
     raw = json.loads(OUTPUT.read_text(encoding="utf-8")) if OUTPUT.exists() else {}
     sections = {
@@ -279,6 +505,41 @@ def main() -> int:
     before = {name: copy.deepcopy(value) for name, value in normalised.items()}
     sections.update(normalised)
 
+    translator = build_translator()
+
+    def fill(budget: int) -> dict:
+        """Translate within a budget; a failure here must never lose an item."""
+        try:
+            return backfill_translations(sections, translator, budget)
+        except Exception as exc:
+            print(f"warning: translation backfill aborted: {exc}", file=sys.stderr)
+            return {"titles": 0, "details": 0}
+
+    # History first: an older item whose translation failed last time gets
+    # another chance before today's new items are translated.
+    history = fill(args.max_translations)
+
+    if args.translate_only:
+        print(
+            f"translations: {history['titles']} titles, {history['details']} details filled; "
+            f"{translator.pending} field(s) pending retry"
+        )
+        if args.dry_run:
+            print("dry run: archive not written")
+            return 0
+        if not (history["titles"] or history["details"]):
+            print("nothing left to translate; archive left unchanged")
+            return 0
+        write_archive(
+            {
+                "updated_at": datetime.now(TZ).isoformat(timespec="seconds"),
+                "internships": sections["internships"][:MAX_DAYS],
+                "academia": sections["academia"][:MAX_DAYS],
+            }
+        )
+        print(f"saved {history['titles']} titles and {history['details']} details without collecting")
+        return 0
+
     today = datetime.now(TZ).strftime("%Y-%m-%d")
 
     intern_candidates = gather(INTERN_SOURCES, lambda s: COLLECTORS[s["kind"]](s))
@@ -289,6 +550,16 @@ def main() -> int:
 
     print(f"candidates: {len(intern_candidates)} internships, {len(academia_candidates)} academia")
     print(f"new items: internships={added_intern}, academia={added_academia}")
+
+    # Whatever is left of the budget goes to the items just collected.
+    remaining = max(args.max_translations - history["titles"] - history["details"], 0)
+    fresh = fill(remaining) if remaining else {"titles": 0, "details": 0}
+    titles = history["titles"] + fresh["titles"]
+    details = history["details"] + fresh["details"]
+    print(
+        f"translations: {titles} titles, {details} details filled; "
+        f"{translator.pending} field(s) pending retry"
+    )
 
     if args.dry_run:
         stored_intern = sum(len(day["items"]) for day in sections["internships"])
@@ -302,9 +573,10 @@ def main() -> int:
 
     # Nothing new is the normal case: the archive already holds these items and
     # stays exactly as it was. It is only rewritten when the day added
-    # something, or when normalising repaired a duplicate date or item.
+    # something, when normalising repaired a duplicate date or item, or when a
+    # translation was filled in.
     repaired = any(before[name] != sections[name] for name in before)
-    if added_intern == 0 and added_academia == 0 and not repaired:
+    if added_intern == 0 and added_academia == 0 and not repaired and not (fresh["titles"] or fresh["details"]):
         print("nothing new to record; archive left unchanged")
         return 0
 
@@ -313,7 +585,7 @@ def main() -> int:
         "internships": sections["internships"][:MAX_DAYS],
         "academia": sections["academia"][:MAX_DAYS],
     }
-    OUTPUT.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    write_archive(archive)
     stored_intern = sum(len(day["items"]) for day in archive["internships"])
     stored_academia = sum(len(day["items"]) for day in archive["academia"])
     print(f"saved {added_intern} internships and {added_academia} academia items for {today}")
