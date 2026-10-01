@@ -269,7 +269,7 @@ python tests/test_archive_data.py                 # 归档层单元测试
 ```yaml
 env:
   TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
-  TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+  TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
   TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
 ```
 

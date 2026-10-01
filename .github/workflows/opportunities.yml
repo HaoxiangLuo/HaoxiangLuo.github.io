@@ -41,7 +41,7 @@ jobs:
           # TRANSLATE_BASE_URL / TRANSLATE_API_KEY nothing is sent and every
           # field stays pending for the next run.
           TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
-          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
           TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: |
           git pull --ff-only origin master
@@ -54,7 +54,7 @@ jobs:
           # Also needed here: a push race re-runs the collector below.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
-          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
           TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: |
           # Opportunities is not part of the three-layer JSONL archive yet, so

@@ -58,6 +58,16 @@ class ClientTests(unittest.TestCase):
         os.environ["TRANSLATE_API_KEY"] = "sk-test"
         self.assertTrue(model_client.configured())
 
+    def test_github_token_written_into_the_key_variable_still_counts_as_unset(self):
+        """The workflows must not pipe GITHUB_TOKEN into TRANSLATE_API_KEY.
+
+        `${{ secrets.X || secrets.GITHUB_TOKEN }}` would make every run look
+        configured and send requests to the retired endpoint again.
+        """
+        os.environ["TRANSLATE_API_KEY"] = ""
+        os.environ["GITHUB_TOKEN"] = "gho_example"
+        self.assertFalse(model_client.configured())
+
     def test_bare_github_token_is_not_a_provider(self):
         os.environ["GITHUB_TOKEN"] = "gho_example"
         self.assertFalse(model_client.configured())
@@ -138,6 +148,16 @@ class ChatTests(unittest.TestCase):
         with self.assertRaises(model_client.ModelUnavailable) as ctx:
             model_client.chat([{"role": "user", "content": "hi"}])
         self.assertIn("without a choice", str(ctx.exception))
+
+
+class WorkflowConfigTests(unittest.TestCase):
+    """The workflows are where the provider is actually wired up."""
+
+    def test_workflows_do_not_fall_back_to_github_token(self):
+        for path in sorted((ROOT / ".github" / "workflows").glob("*.yml")):
+            for line in path.read_text(encoding="utf-8").splitlines():
+                if "TRANSLATE_API_KEY:" in line:
+                    self.assertNotIn("GITHUB_TOKEN", line, f"{path.name} re-enables the retired endpoint")
 
 
 if __name__ == "__main__":

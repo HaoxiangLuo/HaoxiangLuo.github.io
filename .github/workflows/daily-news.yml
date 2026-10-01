@@ -44,7 +44,7 @@ jobs:
           # OpenAI-compatible provider is used when one exists; otherwise the
           # unauthenticated endpoint below stays the only source.
           TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
-          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
           TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: |
           git pull --ff-only origin master
@@ -54,7 +54,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
-          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
           TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: |
           # The JSONL archive is the history; the short index is generated from
