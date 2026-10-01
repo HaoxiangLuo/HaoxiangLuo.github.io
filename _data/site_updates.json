@@ -14,6 +14,20 @@
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/cdced9f948199e6688f03a79edaa26bc8e4d182d"
   },
   {
+    "date": "2026-10-01",
+    "title_zh": "调整了资讯",
+    "title_en": "Refined Opportunities",
+    "message": "Probe the Opportunities translation endpoint when a request fails",
+    "story_zh": "对资讯的收录与归档方式进行了改动，使每天抓取的内容按日留存、历史日期默认收起。",
+    "story_en": "Changed how Opportunities is collected and archived so each day's items are kept by date and earlier days stay folded.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "Probe the Opportunities translation endpoint when a request fails",
+    "details_zh": "调整资讯页面的收录内容、板块结构或自动采集。",
+    "details_en": "Refined the opportunities archive, sections, or automatic collection.",
+    "sha": "19dcd43",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/19dcd43ba1618c7859047541d530f23084cc23c9"
+  },
+  {
     "date": "2026-09-30",
     "title_zh": "Opportunities 资讯内容自动双语化",
     "title_en": "Automatic bilingual content for Opportunities",
