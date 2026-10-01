@@ -23,6 +23,7 @@ import html
 import json
 import os
 import re
+import socket
 import sys
 import time
 import urllib.error
@@ -198,6 +199,7 @@ class Translator:
         # Set once the endpoint has refused us twice in a row: the rest of the
         # run then stays offline instead of spending a request per field.
         self.unavailable = ""
+        self._diagnosed = False
 
     @staticmethod
     def translatable(text: str) -> bool:
@@ -220,6 +222,7 @@ class Translator:
                     time.sleep(0.15)
                 except Exception as exc:
                     print(f"warning: translation failed: {exc}", file=sys.stderr)
+                    self._diagnose()
                     failures += 1
                     value = ""
                 if value:
@@ -273,6 +276,53 @@ class Translator:
             return body["choices"][0]["message"]["content"]
         except (KeyError, IndexError, TypeError) as exc:
             raise RuntimeError(f"models endpoint replied without a choice: {_snippet(raw)}") from exc
+
+
+    def _diagnose(self) -> None:
+        """Print, once per run, why the endpoint may be unreachable.
+
+        A plain "OK" body means something between us and GitHub Models answers
+        instead of the inference API, so the run records the host resolution
+        and the proxy environment next to the failure.
+        """
+        if self._diagnosed:
+            return
+        self._diagnosed = True
+        try:
+            address = socket.gethostbyname("models.github.ai")
+        except Exception as exc:  # noqa: BLE001
+            address = f"dns failed: {exc}"
+        proxies = {
+            name: os.environ[name]
+            for name in ("http_proxy", "https_proxy", "HTTP_PROXY", "HTTPS_PROXY")
+            if os.environ.get(name)
+        }
+        print(
+            f"warning: models probe models.github.ai -> {address}; proxy env {proxies or 'none'}",
+            file=sys.stderr,
+        )
+        request = urllib.request.Request(
+            "https://models.github.ai/catalog/models",
+            headers={
+                "Authorization": f"Bearer {self.token}",
+                "Accept": "application/json",
+                "User-Agent": USER_AGENT,
+            },
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=TRANSLATE_TIMEOUT) as response:
+                print(
+                    f"warning: models catalog probe HTTP {response.status}: "
+                    f"{_snippet(response.read(), 120)}",
+                    file=sys.stderr,
+                )
+        except urllib.error.HTTPError as exc:
+            print(
+                f"warning: models catalog probe HTTP {exc.code}: {_snippet(exc.read(), 120)}",
+                file=sys.stderr,
+            )
+        except Exception as exc:  # noqa: BLE001
+            print(f"warning: models catalog probe failed: {exc}", file=sys.stderr)
 
 
 def build_translator() -> Translator:
