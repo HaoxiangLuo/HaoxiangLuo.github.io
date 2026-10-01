@@ -128,7 +128,7 @@
 
 禁止使用"体验""效果""内容""质量"这类空泛名词，也禁止"更清楚、更顺手""持续改进""进一步完善""优化体验""界面更友好"这类套话。英文条目同样一句话镜像表达（Added X, which does Y. / Changed X so that Y.），至多 22 个单词。
 
-描述文字由 GitHub Models（`openai/gpt-4o-mini`，工作流已授予 `models: read`）按上述规则生成，脚本会先校验：命中禁用词、超长或为空的结果一律丢弃并改用回退句（回退句同样按文件类别点名具体改动对象）。模型最多重试两次。本地预演：`python scripts/update_site_log.py --only-shas <sha1,sha2> --dry-run`（需 `GITHUB_TOKEN`）。注意：本工作区的沙箱网络无法真正访问 `models.github.ai`（请求会被拦截返回空响应），模型效果只能在 GitHub Actions 中验证。
+描述文字由配置的 OpenAI 兼容模型服务按上述规则生成（见第 16 节），脚本会先校验：命中禁用词、超长或为空的结果一律丢弃并改用回退句（回退句同样按文件类别点名具体改动对象）。模型最多重试两次。本地预演：`python scripts/update_site_log.py --only-shas <sha1,sha2> --dry-run`（需配置好模型服务）。注意：本工作区的沙箱网络无法访问外部模型端点，模型效果只能在 GitHub Actions 中验证。
 
 页面只读取已经保存的数据，不再依赖访客浏览器实时请求 GitHub API。需要手动补充时，可编辑 `_data/site_updates.json`，但应保持现有字段结构，并遵循上面的句式要求。
 
@@ -202,10 +202,10 @@
 
 ### 资讯条目双语字段（改动前必读）
 
-条目在原文之外带译文字段：`title` / `detail` 永远保留发布方原文，`title_zh` / `detail_zh` 由采集阶段的 GitHub Models 增量写入（`title_en` / `detail_en` 为将来的中文来源预留）。英文页按 `title_en → title`、`detail_en → detail` 显示，中文页按 `title_zh → title`、`detail_zh → detail` 显示，译文暂缺时回退原文。
+条目在原文之外带译文字段：`title` / `detail` 永远保留发布方原文，`title_zh` / `detail_zh` 由采集阶段的模型服务增量写入（`title_en` / `detail_en` 为将来的中文来源预留）。英文页按 `title_en → title`、`detail_en → detail` 显示，中文页按 `title_zh → title`、`detail_zh → detail` 显示，译文暂缺时回退原文。
 
-- 翻译只在 GitHub Actions 里进行，用工作流自带的 `GITHUB_TOKEN`（工作流已授予 `models: read`），**不需要站长额外配置密钥**，密钥也不会出现在仓库或页面里。
-- **没有未认证公共翻译接口作为静默兜底**：Models 不可用时该字段留为待翻译，下次运行继续补齐，页面临时显示原文并在说明里注明。
+- 翻译只在 GitHub Actions 里进行，密钥放在仓库 secret 里，不会出现在仓库文件、页面或前端脚本中（配置方式见第 16 节）。
+- **没有未认证公共翻译接口作为静默兜底**：未配置模型服务或请求失败时该字段留为待翻译，下次运行继续补齐，页面临时显示原文并在说明里注明。
 - 每次运行最多翻译 `--max-translations`（默认 40）个文本字段，先补历史缺失再译当天新增；同一文本一次运行只请求一次；已有译文绝不覆盖。
 - `--translate-only` 只补译文不抓取，`--dry-run` 不写文件。
 - Opportunities 目前**不在** `scripts/archive_data.py` 的三层归档里（那里只有每日新闻、学界前沿、网站日志），`_data/opportunities.json` 仍是唯一存储；接入归档时把 `write_archive()` 换成 `archive_data.upsert(ROOT, "opportunities", records)` 即可，记录结构无需改变。
@@ -252,6 +252,34 @@ python tests/test_archive_data.py                 # 归档层单元测试
 
 每年 1 月 5 日 `.github/workflows/data-archive-release.yml` 会把上一自然年的分卷打包成 `haoxiangluo-data-archive-YYYY.zip`，创建 tag `data-archive-YYYY` 的 Release（已存在则安全退出）。
 
-## 16. 当前迁移注意事项
+## 16. 模型服务配置（改动前必读）
+
+站内所有需要模型的脚本（网站日志描述、每日新闻译文、资讯译文）都通过 **`scripts/model_client.py`** 这一个共享客户端调用 OpenAI 兼容的 `/chat/completions` 接口。
+
+**GitHub Models 已于 2026-07-30 全线下线**（playground、模型目录、推理接口、BYOK 全部移除，`models.github.ai` 现在对任何请求都返回 `200 OK`），因此端点、密钥、模型名**不再是常量，而是配置**：
+
+| 环境变量 | 含义 | 未设置时 |
+| --- | --- | --- |
+| `TRANSLATE_BASE_URL` | OpenAI 兼容服务地址，如 `https://api.groq.com/openai/v1`；缺 `/chat/completions` 时自动补齐 | 回落到已下线的 GitHub Models 地址 |
+| `TRANSLATE_API_KEY` | 该服务的密钥 | 依次回落到 `GITHUB_MODELS_TOKEN`、`GITHUB_TOKEN` |
+| `TRANSLATE_MODEL` | 模型 id | `gpt-4o-mini` |
+
+工作流里读取的是仓库变量/密钥（`daily-news.yml`、`opportunities.yml`、`site-log.yml` 三个文件的相关步骤）：
+
+```yaml
+env:
+  TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
+  TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+  TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
+```
+
+- **只设置 `GITHUB_TOKEN` 不算已配置**：旧 provider 已下线，脚本会直接跳过请求，字段留为待翻译，不会每天白跑几十次请求。
+- 密钥只存在于仓库 secret，不会进入仓库文件、页面或前端脚本；页面只读已保存的数据。
+- 未配置或请求失败时：资讯字段留待下次补齐（页面回退原文），日志条目使用按改动区域生成的回退句。**任何情况下都不会写入错误译文**。
+- 每日新闻仍保留原有的未认证公共接口作为兜底，所以配置模型服务后质量会更好，不配置也不会中断。
+
+测试：`python tests/test_model_client.py`（用桩替换 `urlopen`，不联网、不消耗额度）。
+
+## 17. 当前迁移注意事项
 
 换电脑前必须确保旧电脑上的本地提交全部推送。只有出现在 GitHub 仓库中的内容，才能在新电脑克隆后完整恢复。Codex 对话记录不会随仓库迁移，但本文件和 `AGENTS.md` 已保存足够的项目背景。

@@ -36,6 +36,13 @@ jobs:
       - name: Collect internship and academia opportunities
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GitHub Models was retired on 2026-07-30, so the translator reads an
+          # OpenAI-compatible provider from configuration instead. Without
+          # TRANSLATE_BASE_URL / TRANSLATE_API_KEY nothing is sent and every
+          # field stays pending for the next run.
+          TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+          TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: |
           git pull --ff-only origin master
           # A translation failure must not fail the job: the script leaves the
@@ -46,6 +53,9 @@ jobs:
         env:
           # Also needed here: a push race re-runs the collector below.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+          TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: |
           # Opportunities is not part of the three-layer JSONL archive yet, so
           # `_data/opportunities.json` is the whole record. When it joins

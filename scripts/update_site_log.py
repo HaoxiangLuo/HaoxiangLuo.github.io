@@ -22,7 +22,6 @@ import os
 import re
 import subprocess
 import sys
-import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import sys
@@ -30,6 +29,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import archive_data
+import model_client
 
 try:
     from zoneinfo import ZoneInfo
@@ -137,8 +137,8 @@ def is_archive_change(files: list[str]) -> bool:
     if all(path.startswith("assets/data/archive/") for path in files):
         return False  # data written by the collectors, not a change to the layer
     return any(any(token in path for token in ARCHIVE_PATH_TOKENS) for path in files)
-MODELS_ENDPOINT = "https://models.github.ai/inference/chat/completions"
-MODELS_MODEL = "openai/gpt-4o-mini"
+# The model call itself lives in scripts/model_client.py: GitHub Models was
+# retired on 2026-07-30, so the endpoint, key and model are configuration.
 
 # Stylesheets are shared by every page, so a CSS-only commit would otherwise be
 # logged as "interface styling" with no clue about which page it touched. These
@@ -440,8 +440,8 @@ def acceptable(text: str, max_len: int) -> bool:
     return not any(phrase in value for phrase in BANNED_PHRASES)
 
 
-def describe_via_models(subject: str, body: str, files: list[str], stat: str, diff: str, token: str, compact: bool = False) -> dict[str, str] | None:
-    """Ask GitHub Models for one specific, brief sentence about the change.
+def describe_via_models(subject: str, body: str, files: list[str], stat: str, diff: str, compact: bool = False) -> dict[str, str] | None:
+    """Ask the configured model for one specific, brief sentence about the change.
 
     `compact` drops the few-shot example and the diff excerpt: a retry with a
     smaller payload gets through in cases where the full one does not.
@@ -451,19 +451,7 @@ def describe_via_models(subject: str, body: str, files: list[str], stat: str, di
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": f"Subject: {subject}\n\nFiles:\n" + "\n".join(files[:12])},
         ]
-        payload = json.dumps(
-            {"model": MODELS_MODEL, "messages": messages, "temperature": 0.2, "response_format": {"type": "json_object"}}
-        ).encode("utf-8")
-        request = urllib.request.Request(
-            MODELS_ENDPOINT,
-            data=payload,
-            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json", "Accept": "application/json"},
-        )
-        with urllib.request.urlopen(request, timeout=30) as response:
-            body_json = json.loads(response.read().decode("utf-8"))
-        content = json.loads(body_json["choices"][0]["message"]["content"])
-        keys = ("story_zh", "story_en", "title_zh", "title_en", "details_zh", "details_en")
-        return {key: re.sub(r"\s+", " ", str(content.get(key, "")).strip().strip('"').strip()) for key in keys}
+        return _parse_model_json(messages)
 
     user_parts = [f"Subject: {subject}"]
     if body:
@@ -479,26 +467,13 @@ def describe_via_models(subject: str, body: str, files: list[str], stat: str, di
         {"role": "assistant", "content": FEWSHOT_ASSISTANT},
         {"role": "user", "content": "\n".join(user_parts)},
     ]
-    payload = json.dumps(
-        {
-            "model": MODELS_MODEL,
-            "messages": messages,
-            "temperature": 0.2,
-            "response_format": {"type": "json_object"},
-        }
-    ).encode("utf-8")
-    request = urllib.request.Request(
-        MODELS_ENDPOINT,
-        data=payload,
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-        },
-    )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        body_json = json.loads(response.read().decode("utf-8"))
-    content = json.loads(body_json["choices"][0]["message"]["content"])
+    return _parse_model_json(messages)
+
+
+def _parse_model_json(messages: list[dict]) -> dict[str, str]:
+    """Send one prompt through the shared client and read the JSON answer."""
+    reply = model_client.chat(messages, timeout=30, response_format={"type": "json_object"})
+    content = json.loads(reply)
     keys = ("story_zh", "story_en", "title_zh", "title_en", "details_zh", "details_en")
     return {
         key: re.sub(r"\s+", " ", str(content.get(key, "")).strip().strip('"').strip())
@@ -533,11 +508,12 @@ def make_entry(sha: str) -> dict[str, object] | None:
         # Fixed wording agreed for this change: the model must not rephrase it.
         story_zh, story_en = OPPS_TRANSLATION_STORY_ZH, OPPS_TRANSLATION_STORY_EN
 
-    token = os.environ.get("GITHUB_TOKEN", "")
-    if token:
+    # Without a configured provider the entry keeps the area-based fallback
+    # wording instead of spending two requests on an endpoint that is gone.
+    if model_client.configured():
         for attempt, compact in ((1, False), (2, True)):
             try:
-                described = describe_via_models(message, body, files, stat, diff, token, compact=compact)
+                described = describe_via_models(message, body, files, stat, diff, compact=compact)
                 problems = [
                     label
                     for label, value, limit in (

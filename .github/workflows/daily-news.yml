@@ -40,6 +40,12 @@ jobs:
       - name: Collect world headlines
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GitHub Models was retired on 2026-07-30, so the configured
+          # OpenAI-compatible provider is used when one exists; otherwise the
+          # unauthenticated endpoint below stays the only source.
+          TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+          TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: |
           git pull --ff-only origin master
           python scripts/fetch_daily_news.py
@@ -47,6 +53,9 @@ jobs:
       - name: Save the daily archive
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+          TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: |
           # The JSONL archive is the history; the short index is generated from
           # it. Both belong to this job and nothing else is touched.

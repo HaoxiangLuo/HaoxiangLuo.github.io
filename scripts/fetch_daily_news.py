@@ -31,6 +31,7 @@ from zoneinfo import ZoneInfo
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import archive_data
+import model_client
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = (
@@ -42,8 +43,6 @@ MAX_PER_DAY = 9
 
 TRANSLATE_TIMEOUT = 20
 GTX_ENDPOINT = "https://translate.googleapis.com/translate_a/single"
-MODELS_ENDPOINT = "https://models.github.ai/inference/chat/completions"
-MODELS_MODEL = "openai/gpt-4o-mini"
 MAX_TRANSLATIONS_PER_RUN = 60
 CJK_RE = re.compile(r"[\u3400-\u9fff]")
 
@@ -101,36 +100,21 @@ def tidy_translation(value: str) -> str:
 
 
 def translate_via_models(text: str, token: str) -> str:
-    payload = json.dumps(
-        {
-            "model": MODELS_MODEL,
-            "messages": [
-                {
-                    "role": "system",
-                    "content": (
-                        "You translate English news headlines into concise Simplified "
-                        "Chinese as used in mainland China. Keep proper nouns, place "
-                        "names and numbers accurate. Reply with the translation only: "
-                        "no quotes, no pinyin, no explanation."
-                    ),
-                },
-                {"role": "user", "content": text},
-            ],
-            "temperature": 0.2,
-        }
-    ).encode("utf-8")
-    request = urllib.request.Request(
-        MODELS_ENDPOINT,
-        data=payload,
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-        },
+    return model_client.chat(
+        [
+            {
+                "role": "system",
+                "content": (
+                    "You translate English news headlines into concise Simplified "
+                    "Chinese as used in mainland China. Keep proper nouns, place "
+                    "names and numbers accurate. Reply with the translation only: "
+                    "no quotes, no pinyin, no explanation."
+                ),
+            },
+            {"role": "user", "content": text},
+        ],
+        timeout=TRANSLATE_TIMEOUT,
     )
-    with urllib.request.urlopen(request, timeout=TRANSLATE_TIMEOUT) as response:
-        body = json.loads(response.read().decode("utf-8"))
-    return body["choices"][0]["message"]["content"]
 
 
 def translate_via_gtx(text: str) -> str:
@@ -149,10 +133,14 @@ def translate_via_gtx(text: str) -> str:
 
 def build_translator():
     """Return a callable that maps an English headline to Chinese (or "")."""
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GITHUB_MODELS_TOKEN")
+    token = model_client.api_key()
+    # The original provider (GitHub Models) was retired on 2026-07-30, so a bare
+    # GITHUB_TOKEN is not a provider any more; without one the unauthenticated
+    # endpoint below stays the only source, exactly as before.
+    enabled = model_client.configured()
 
     def translate(text: str) -> str:
-        if token:
+        if token and enabled:
             try:
                 result = tidy_translation(translate_via_models(text, token))
                 if result:

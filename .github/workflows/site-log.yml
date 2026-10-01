@@ -37,9 +37,21 @@ jobs:
       - name: Record this website update
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Same provider configuration as the collectors: GitHub Models was
+          # retired on 2026-07-30, so the endpoint, key and model are read from
+          # configuration. Without them the entry keeps its fallback wording.
+          TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+          TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: python scripts/update_site_log.py --sha "${{ github.sha }}"
 
       - name: Save the site log
+        env:
+          # Also needed here: a push race re-runs the generator below.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY || secrets.GITHUB_TOKEN }}
+          TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: |
           # The entry lands in the JSONL archive first; the short index is
           # generated from it. Both belong to this job.

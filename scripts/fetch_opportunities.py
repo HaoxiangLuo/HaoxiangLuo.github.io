@@ -26,12 +26,13 @@ import re
 import socket
 import sys
 import time
-import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
+
+import model_client  # noqa: E402  (sibling module: scripts/model_client.py)
 
 try:
     from zoneinfo import ZoneInfo
@@ -49,15 +50,14 @@ REQUEST_TIMEOUT = 25
 USER_AGENT = "HaoxiangLuo.github.io opportunities collector/1.0"
 
 # --- Translation -----------------------------------------------------------
-# Same approach as scripts/fetch_daily_news.py (GitHub Models, OpenAI-compatible
-# endpoint, GITHUB_TOKEN from the workflow) but packaged for the Opportunities
-# record shape: two plain-text fields per item instead of a single headline.
-# There is deliberately no unauthenticated public translate endpoint as a
-# silent fallback: when GitHub Models is unreachable the field simply stays
-# pending and the next scheduled run fills it in.
+# Packaged for the Opportunities record shape: two plain-text fields per item
+# instead of a single headline. The model call itself is shared with the other
+# generators through scripts/model_client.py, which reads the endpoint, key and
+# model from the environment (GitHub Models, the original provider, was retired
+# on 2026-07-30). There is deliberately no unauthenticated public translate
+# endpoint as a silent fallback: when no provider is configured or the request
+# fails, the field simply stays pending and the next scheduled run fills it in.
 TRANSLATE_TIMEOUT = 20
-MODELS_ENDPOINT = "https://models.github.ai/inference/chat/completions"
-MODELS_MODEL = "openai/gpt-4o-mini"
 MAX_TRANSLATIONS_PER_RUN = 40  # text fields per run, history first
 MAX_SOURCE_CHARS = 240  # refuse to send anything longer to the model
 MAX_TRANSLATION_CHARS = 240  # refuse a reply that rambles or explains
@@ -177,13 +177,6 @@ def tidy_translation(value: str, target: str) -> str:
     return text
 
 
-def _snippet(raw: bytes | str, limit: int = 200) -> str:
-    """A short printable excerpt of an unexpected reply, for the warning line."""
-    text = raw.decode("utf-8", "replace") if isinstance(raw, bytes) else str(raw)
-    text = text.replace("\n", " ").replace("\r", " ").strip()
-    return repr(text[:limit])
-
-
 class Translator:
     """A tiny field-level translator with a per-run cache.
 
@@ -235,61 +228,27 @@ class Translator:
         return value
 
     def _request(self, text: str, target: str) -> str:
-        payload = json.dumps(
-            {
-                "model": MODELS_MODEL,
-                "messages": [
-                    {"role": "system", "content": SYSTEM_PROMPTS[target]},
-                    {"role": "user", "content": text},
-                ],
-                "temperature": 0.2,
-            }
-        ).encode("utf-8")
-        request = urllib.request.Request(
-            MODELS_ENDPOINT,
-            data=payload,
-            headers={
-                "Authorization": f"Bearer {self.token}",
-                "Content-Type": "application/json",
-                "Accept": "application/json",
-                "User-Agent": USER_AGENT,
-            },
+        return model_client.chat(
+            [
+                {"role": "system", "content": SYSTEM_PROMPTS[target]},
+                {"role": "user", "content": text},
+            ],
+            timeout=TRANSLATE_TIMEOUT,
         )
-        try:
-            with urllib.request.urlopen(request, timeout=TRANSLATE_TIMEOUT) as response:
-                status = getattr(response, "status", None)
-                raw = response.read()
-        except urllib.error.HTTPError as exc:
-            # The body of an error reply is the only place that says why the
-            # token or the endpoint was refused, so it goes into the warning.
-            raise RuntimeError(
-                f"models endpoint returned HTTP {exc.code} ({exc.reason}): "
-                f"{_snippet(exc.read())}"
-            ) from exc
-        try:
-            body = json.loads(raw.decode("utf-8", "replace"))
-        except ValueError as exc:
-            raise RuntimeError(
-                f"models endpoint replied HTTP {status} with a non-JSON body: {_snippet(raw)}"
-            ) from exc
-        try:
-            return body["choices"][0]["message"]["content"]
-        except (KeyError, IndexError, TypeError) as exc:
-            raise RuntimeError(f"models endpoint replied without a choice: {_snippet(raw)}") from exc
 
 
     def _diagnose(self) -> None:
-        """Print, once per run, why the endpoint may be unreachable.
+        """Print, once per run, the host and proxy context of a failed call.
 
-        A plain "OK" body means something between us and GitHub Models answers
-        instead of the inference API, so the run records the host resolution
-        and the proxy environment next to the failure.
+        A plain "OK" body means something answers in place of the inference
+        API, so the run records how the endpoint resolved next to the failure.
         """
         if self._diagnosed:
             return
         self._diagnosed = True
+        host = urlparse(model_client.endpoint()).hostname or "?"
         try:
-            address = socket.gethostbyname("models.github.ai")
+            address = socket.gethostbyname(host)
         except Exception as exc:  # noqa: BLE001
             address = f"dns failed: {exc}"
         proxies = {
@@ -298,42 +257,25 @@ class Translator:
             if os.environ.get(name)
         }
         print(
-            f"warning: models probe models.github.ai -> {address}; proxy env {proxies or 'none'}",
+            f"warning: translation host {host} -> {address}; proxy env {proxies or 'none'}",
             file=sys.stderr,
         )
-        request = urllib.request.Request(
-            "https://models.github.ai/catalog/models",
-            headers={
-                "Authorization": f"Bearer {self.token}",
-                "Accept": "application/json",
-                "User-Agent": USER_AGENT,
-            },
-        )
-        try:
-            with urllib.request.urlopen(request, timeout=TRANSLATE_TIMEOUT) as response:
-                print(
-                    f"warning: models catalog probe HTTP {response.status}: "
-                    f"{_snippet(response.read(), 120)}",
-                    file=sys.stderr,
-                )
-        except urllib.error.HTTPError as exc:
-            print(
-                f"warning: models catalog probe HTTP {exc.code}: {_snippet(exc.read(), 120)}",
-                file=sys.stderr,
-            )
-        except Exception as exc:  # noqa: BLE001
-            print(f"warning: models catalog probe failed: {exc}", file=sys.stderr)
 
 
 def build_translator() -> Translator:
-    """Build the translator from the token GitHub Actions provides."""
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GITHUB_MODELS_TOKEN") or ""
-    if not token:
+    """Build the translator from the provider the workflow configured.
+
+    Without a configured provider the translator stays offline, so the run
+    leaves every field pending instead of spending a request per field.
+    """
+    if not model_client.configured():
         print(
-            "note: no GITHUB_TOKEN in the environment; translations stay pending for the next run",
+            "note: no translation provider configured (set TRANSLATE_BASE_URL and "
+            "TRANSLATE_API_KEY); translations stay pending for the next run",
             file=sys.stderr,
         )
-    return Translator(token)
+        return Translator("")
+    return Translator(model_client.api_key())
 
 
 # (source field, Chinese target, English target): `title_en` / `detail_en` are
