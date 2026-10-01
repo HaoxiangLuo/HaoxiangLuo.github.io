@@ -25,6 +25,7 @@ import os
 import re
 import sys
 import time
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -175,6 +176,13 @@ def tidy_translation(value: str, target: str) -> str:
     return text
 
 
+def _snippet(raw: bytes | str, limit: int = 200) -> str:
+    """A short printable excerpt of an unexpected reply, for the warning line."""
+    text = raw.decode("utf-8", "replace") if isinstance(raw, bytes) else str(raw)
+    text = text.replace("\n", " ").replace("\r", " ").strip()
+    return repr(text[:limit])
+
+
 class Translator:
     """A tiny field-level translator with a per-run cache.
 
@@ -187,6 +195,9 @@ class Translator:
         self.cache: dict[tuple[str, str], str] = {}
         self.calls = 0
         self.pending = 0
+        # Set once the endpoint has refused us twice in a row: the rest of the
+        # run then stays offline instead of spending a request per field.
+        self.unavailable = ""
 
     @staticmethod
     def translatable(text: str) -> bool:
@@ -200,7 +211,8 @@ class Translator:
         if key in self.cache:
             return self.cache[key]
         value = ""
-        if self.token and self.translatable(text):
+        if self.token and self.translatable(text) and not self.unavailable:
+            failures = 0
             for _ in range(TRANSLATE_ATTEMPTS):
                 try:
                     self.calls += 1
@@ -208,9 +220,12 @@ class Translator:
                     time.sleep(0.15)
                 except Exception as exc:
                     print(f"warning: translation failed: {exc}", file=sys.stderr)
+                    failures += 1
                     value = ""
                 if value:
                     break
+            if not value and failures:
+                self.unavailable = "endpoint refused the request; skipping the rest of this run"
         if not value:
             self.pending += 1
         self.cache[key] = value
@@ -234,11 +249,30 @@ class Translator:
                 "Authorization": f"Bearer {self.token}",
                 "Content-Type": "application/json",
                 "Accept": "application/json",
+                "User-Agent": USER_AGENT,
             },
         )
-        with urllib.request.urlopen(request, timeout=TRANSLATE_TIMEOUT) as response:
-            body = json.loads(response.read().decode("utf-8"))
-        return body["choices"][0]["message"]["content"]
+        try:
+            with urllib.request.urlopen(request, timeout=TRANSLATE_TIMEOUT) as response:
+                status = getattr(response, "status", None)
+                raw = response.read()
+        except urllib.error.HTTPError as exc:
+            # The body of an error reply is the only place that says why the
+            # token or the endpoint was refused, so it goes into the warning.
+            raise RuntimeError(
+                f"models endpoint returned HTTP {exc.code} ({exc.reason}): "
+                f"{_snippet(exc.read())}"
+            ) from exc
+        try:
+            body = json.loads(raw.decode("utf-8", "replace"))
+        except ValueError as exc:
+            raise RuntimeError(
+                f"models endpoint replied HTTP {status} with a non-JSON body: {_snippet(raw)}"
+            ) from exc
+        try:
+            return body["choices"][0]["message"]["content"]
+        except (KeyError, IndexError, TypeError) as exc:
+            raise RuntimeError(f"models endpoint replied without a choice: {_snippet(raw)}") from exc
 
 
 def build_translator() -> Translator:
