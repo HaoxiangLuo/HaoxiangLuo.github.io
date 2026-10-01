@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-09-30T19:02:19+08:00",
+  "updated_at": "2026-10-01T09:06:03+08:00",
   "days": [
+    {
+      "date": "2026-10-01",
+      "items": [
+        {
+          "title": "What we know about stabbing on Flydubai flight to Israel",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqjdv7pmj9dno?at_medium=RSS&at_campaign=rss",
+          "title_zh": "关于迪拜航空飞往以色列的航班上发生持刀伤人事件，我们了解多少"
+        },
+        {
+          "title": "Swiss glaciers suffer another year of record ice loss",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/30/nx-s1-5981403/swiss-glaciers-climate-change",
+          "title_zh": "瑞士冰川又遭遇创纪录的冰损失一年"
+        },
+        {
+          "title": "Putin shows no sign of stopping the war as Russia doubles down on Ukraine",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqx2ze420kpyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "俄罗斯在乌克兰问题上加大力度，普京没有表现出停止战争的迹象"
+        },
+        {
+          "title": "Greetings from Syria, where time seems to melt as a glassmaker braves scorching temps",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/30/nx-s1-5983516/damascus-syria-glass",
+          "title_zh": "来自叙利亚的问候，玻璃制造商勇敢地面对酷暑，时间似乎融化了"
+        },
+        {
+          "title": "US Supreme Court allows execution of Christa Pike to go ahead",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq8r6rjdvlx6o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国最高法院允许继续执行克里斯塔·派克"
+        },
+        {
+          "title": "How Ukrainians are coping with new, more deadly Russian attacks",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/30/nx-s1-5984948/how-ukrainians-are-coping-with-new-more-deadly-russian-attacks",
+          "title_zh": "乌克兰人如何应对俄罗斯新的、更致命的袭击"
+        },
+        {
+          "title": "Swiss glaciers suffer 'disastrous' year of ice loss, threatening water supplies",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6n9w0ypjwl9o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "瑞士冰川遭遇“灾难性”冰损失，威胁供水"
+        },
+        {
+          "title": "On flight to Israel, pilot is stabbed, plane plunges before passengers tackle attacker",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/09/30/nx-s1-5985806/flydubai-flight-dubai-tel-aviv-israel",
+          "title_zh": "在飞往以色列的航班上，飞行员被刺伤，飞机坠落，然后乘客与袭击者搏斗"
+        },
+        {
+          "title": "Six smugglers jailed for manslaughter over worst Channel small boats disaster",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6n8m33pn9djo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "六名走私犯因海峡小船灾难中过失杀人罪被判入狱"
+        }
+      ]
+    },
     {
       "date": "2026-09-30",
       "items": [

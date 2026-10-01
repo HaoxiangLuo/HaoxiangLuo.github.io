@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-30T19:02:19+08:00",
+  "updated_at": "2026-10-01T09:06:03+08:00",
   "archives": {
     "daily_news": {
       "format": "jsonl",
@@ -11,6 +11,12 @@
           "url": "/assets/data/archive/daily-news/2026-09.jsonl",
           "records": 16,
           "sha256": "447a991af2ea5e4f4bc67cc0593327b54766c50aa8e32a154720015529524764"
+        },
+        {
+          "key": "2026-10",
+          "url": "/assets/data/archive/daily-news/2026-10.jsonl",
+          "records": 1,
+          "sha256": "689ff4d08309beb07b8a749fbae8d6c640921111b3b83d2635d8d096d00460d0"
         }
       ]
     },
