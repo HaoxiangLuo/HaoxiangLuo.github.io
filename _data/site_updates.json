@@ -29,6 +29,20 @@
   },
   {
     "date": "2026-10-01",
+    "title_zh": "调整了每日新闻、资讯、网站日志、归档测试",
+    "title_en": "Refined Daily News, Opportunities, Site Log, archive tests",
+    "message": "工作流不再把 GITHUB_TOKEN 当作译文服务密钥",
+    "story_zh": "对每日新闻、资讯、网站日志、归档测试的内容与呈现方式进行了改动，使相关信息更完整、更容易查到。",
+    "story_en": "Changed the content and presentation of Daily News, Opportunities, Site Log, archive tests so the information is more complete and easier to find.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "工作流不再把 GITHUB_TOKEN 当作译文服务密钥",
+    "details_zh": "调整网站日志的归档内容、呈现方式或自动记录。调整每日新闻的归档内容、呈现方式或自动更新。调整资讯页面的收录内容、板块结构或自动采集。",
+    "details_en": "Refined the site-log archive, presentation, or automatic record. Refined the daily-news archive, presentation, or automatic update. Refined the opportunities archive, sections, or automatic collection.",
+    "sha": "242fbe3",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/242fbe31c207e6f8294e206fe99b7a035f566ddf"
+  },
+  {
+    "date": "2026-10-01",
     "title_zh": "资讯译文接口探针",
     "title_en": "Translation endpoint probe",
     "message": "Probe the Opportunities translation endpoint when a request fails",
