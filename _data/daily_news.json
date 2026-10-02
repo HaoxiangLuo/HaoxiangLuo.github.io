@@ -1,14 +1,32 @@
 {
-  "updated_at": "2026-10-02T13:17:01+08:00",
+  "updated_at": "2026-10-02T19:01:56+08:00",
   "days": [
     {
       "date": "2026-10-02",
       "items": [
         {
-          "title": "US pressures Europe over diesel reserves as Trump threatens export ban",
+          "title": "'I was not going to let others die' - pilot of Flydubai flight describes cockpit attack by co-pilot",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普威胁出口禁令，美国就柴油储备向欧洲施压"
+          "url": "https://www.bbc.co.uk/news/articles/c639m98gde00o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "我不会让其他人死去”——迪拜航空航班飞行员描述副驾驶对驾驶舱的攻击"
+        },
+        {
+          "title": "Pro-democracy activists increasingly vulnerable to authoritarian governments in Southeast Asia",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/02/g-s1-146064/pro-democracy-activists-asia-authoritarian-governments",
+          "title_zh": "民主活动人士越来越容易受到东南亚独裁政府的攻击"
+        },
+        {
+          "title": "‘I have not lost my dreams’: Refugee education funding cuts threaten millions",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168506",
+          "title_zh": "我没有失去我的梦想”：难民教育经费削减威胁数百万人"
+        },
+        {
+          "title": "Christa Pike in critical condition after surviving two lethal injections, lawyer says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "律师称，克里斯塔·派克在两次注射死刑后幸存，情况危急"
         },
         {
           "title": "What a Pearly King taught me about Cockney rhyming slang and East London history",
@@ -23,10 +41,10 @@
           "title_zh": "联合国成员国权衡安理会最新否决权，这次是针对伊朗"
         },
         {
-          "title": "Christa Pike in critical condition after surviving two lethal injections, lawyer says",
+          "title": "A 'dark cloud' and 'dismal' mood: How it feels on Cornell campus right now",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "律师称，克里斯塔·派克在两次注射死刑后幸存，情况危急"
+          "url": "https://www.bbc.co.uk/news/articles/cm0e3ed1er1yo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "乌云”和“沮丧”的情绪：康奈尔大学校园现在的感觉如何"
         },
         {
           "title": "Passengers recount chaos on Tel Aviv flight. And, FBI probes employee-data hack",
@@ -39,24 +57,6 @@
           "source": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/10/1168504",
           "title_zh": "联合国人权事务高级专员：不再尝试处决克里斯塔·派克"
-        },
-        {
-          "title": "NY's governor appoints special prosecutor in Cornell frat rape investigation",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cr1585y0y90go?at_medium=RSS&at_campaign=rss",
-          "title_zh": "纽约州州长任命特别检察官参与康奈尔兄弟会强奸案调查"
-        },
-        {
-          "title": "Picanha, prices and politics: What Brazil's favorite steak says about the election",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/01/nx-s1-5986079/picanha-election-brazil-economy",
-          "title_zh": "Picanha、价格和政治：巴西最受欢迎的牛排对选举的评价"
-        },
-        {
-          "title": "World News in Brief: Marshall Islands nuclear legacy, FlyDubai attack condemned, Ukraine update, breast cancer treatment expanded in West Bank",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168503",
-          "title_zh": "世界新闻简讯：马绍尔群岛核遗产、迪拜航空袭击受到谴责、乌克兰最新情况、约旦河西岸扩大乳腺癌治疗"
         }
       ]
     },
