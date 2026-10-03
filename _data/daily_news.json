@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-10-02T19:01:56+08:00",
+  "updated_at": "2026-10-03T09:03:59+08:00",
   "days": [
+    {
+      "date": "2026-10-03",
+      "items": [
+        {
+          "title": "G7 to release 100 million barrels of oil and diesel after Trump export ban threat",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普出口禁令威胁后七国集团将释放1亿桶石油和柴油"
+        },
+        {
+          "title": "How Brazil's two leading presidential candidates are talking about crime",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/02/nx-s1-5986091/how-brazils-two-leading-presidential-candidates-are-talking-about-crime",
+          "title_zh": "巴西两位主要总统候选人如何谈论犯罪问题"
+        },
+        {
+          "title": "‘Money alone won’t get us there’: UN steps up aid for 12 forgotten crises",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168516",
+          "title_zh": "仅靠金钱无法帮助我们实现这一目标”：联合国加大对 12 个被遗忘危机的援助力度"
+        },
+        {
+          "title": "US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3kgqw7zvz47o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "律师称，美国凶手克里斯塔·派克在处决失败后失去知觉并使用呼吸机"
+        },
+        {
+          "title": "The G7 will release 100 million reserve barrels of diesel fuel over the next 4 months",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/02/nx-s1-5989397/the-g7-will-release-100-million-reserve-barrels-of-diesel-fuel-over-the-next-4-months",
+          "title_zh": "G7将在未来4个月内释放1亿桶柴油储备"
+        },
+        {
+          "title": "Global life expectancy bounces back to near pre-pandemic levels, WHO says",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168515",
+          "title_zh": "世卫组织表示，全球预期寿命反弹至接近大流行前的水平"
+        },
+        {
+          "title": "Cornell frat house rape accuser 'under siege' online, says lawyer",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6ly0ljypzrdo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "律师称，康奈尔兄弟会强奸案指控者在网上“遭到围攻"
+        },
+        {
+          "title": "Germany's political center fights for relevance after far-right and far-left gains",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/02/g-s1-146108/germany-politics-center-afd-die-linke-cdu-merz",
+          "title_zh": "德国政治中心在极右翼和极左翼获胜后为争取相关性而战"
+        },
+        {
+          "title": "Ukraine war ‘a human rights catastrophe’ that must end, says Türk",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168513",
+          "title_zh": "图尔克表示，乌克兰战争是一场必须结束的“人权灾难"
+        }
+      ]
+    },
     {
       "date": "2026-10-02",
       "items": [
