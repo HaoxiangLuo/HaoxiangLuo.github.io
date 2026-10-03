@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-03T13:15:48+08:00",
+  "updated_at": "2026-10-03T19:24:43+08:00",
   "days": [
     {
       "date": "2026-10-03",
       "items": [
         {
-          "title": "G7 to release millions of barrels of oil and diesel after Trump threat",
+          "title": "Flydubai co-pilot attacked captain with axe, UAE official says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普出口禁令威胁后七国集团将释放1亿桶石油和柴油"
+          "url": "https://www.bbc.co.uk/news/articles/c61wv7lgex13o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "阿联酋官员称，迪拜航空副驾驶用斧头袭击了机长"
         },
         {
           "title": "Brazil's big political rematch: What to know",
@@ -17,10 +17,16 @@
           "title_zh": "巴西的大型政治重赛：需要了解什么"
         },
         {
-          "title": "US murderer Christa Pike unconscious and on ventilator after failed execution, lawyers say",
+          "title": "‘Money alone won’t get us there’: UN steps up aid for 12 forgotten crises",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168516",
+          "title_zh": "仅靠金钱无法帮助我们实现这一目标”：联合国加大对 12 个被遗忘危机的援助力度"
+        },
+        {
+          "title": "Russia strikes second major bridge in Kyiv, mayor says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c3kgqw7zvz47o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "律师称，美国凶手克里斯塔·派克在处决失败后失去知觉并使用呼吸机"
+          "url": "https://www.bbc.co.uk/news/articles/c83vqxzdg1yko?at_medium=RSS&at_campaign=rss",
+          "title_zh": "基辅市长称俄罗斯袭击了基辅第二座大桥"
         },
         {
           "title": "How Brazil's two leading presidential candidates are talking about crime",
@@ -29,10 +35,16 @@
           "title_zh": "巴西两位主要总统候选人如何谈论犯罪问题"
         },
         {
-          "title": "Cornell frat house rape accuser 'under siege' online, says lawyer",
+          "title": "Global life expectancy bounces back to near pre-pandemic levels, WHO says",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168515",
+          "title_zh": "世卫组织表示，全球预期寿命反弹至接近大流行前的水平"
+        },
+        {
+          "title": "G7 to release millions of barrels of oil and diesel after Trump threat",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6ly0ljypzrdo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "律师称，康奈尔兄弟会强奸案指控者在网上“遭到围攻"
+          "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普出口禁令威胁后七国集团将释放1亿桶石油和柴油"
         },
         {
           "title": "The G7 will release 100 million reserve barrels of diesel fuel over the next 4 months",
@@ -41,22 +53,10 @@
           "title_zh": "G7将在未来4个月内释放1亿桶柴油储备"
         },
         {
-          "title": "Riot police clash with students as education protests rage in France",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck3r5dxxwqzpo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "法国教育抗议活动激烈，防暴警察与学生发生冲突"
-        },
-        {
-          "title": "Germany's political center fights for relevance after far-right and far-left gains",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/02/g-s1-146108/germany-politics-center-afd-die-linke-cdu-merz",
-          "title_zh": "德国政治中心在极右翼和极左翼获胜后为争取相关性而战"
-        },
-        {
-          "title": "Spanish PM Sánchez loses key housing crisis vote after eviction of woman, 87",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c623dlk4y75mo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "西班牙首相桑切斯在驱逐 87 岁妇女后失去了关键的住房危机投票"
+          "title": "Ukraine war ‘a human rights catastrophe’ that must end, says Türk",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168513",
+          "title_zh": "图尔克表示，乌克兰战争是一场必须结束的“人权灾难"
         }
       ]
     },
