@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-10-04T19:03:09+08:00",
+  "updated_at": "2026-10-05T01:20:38+08:00",
   "days": [
+    {
+      "date": "2026-10-05",
+      "items": [
+        {
+          "title": "Kyiv bridge hit in further Russian drone attack as German chancellor makes surprise visit",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckreyjzzzywqo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "德国总理突然访问基辅大桥遭遇俄罗斯无人机进一步袭击"
+        },
+        {
+          "title": "U.S. Marine arrested for alleged murder of a woman in Okinawa, Japan",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/04/nx-s1-5990790/us-marine-arrested-for-alleged-murder-woman-on-okinawa",
+          "title_zh": "美国海军陆战队因涉嫌在日本冲绳谋杀一名妇女而被捕"
+        },
+        {
+          "title": "Watch: What we know about Russian strikes on Kyiv bridges",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cmglwkyl9djyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "观看：我们对俄罗斯袭击基辅桥梁的了解"
+        },
+        {
+          "title": "She died covering war for Fox News. Her parents blame the network — and a star reporter",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/04/nx-s1-5737621/fox-news-ukraine-deaths",
+          "title_zh": "她为福克斯新闻报道战争而去世。她的父母责怪网络和一位明星记者"
+        },
+        {
+          "title": "Yemen's government announces all-out war to reclaim land from Houthis",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "也门政府宣布全面战争，从胡塞武装手中夺回土地"
+        },
+        {
+          "title": "For some Brazilians, this election is a vote on Trump",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/03/nx-s1-5989699/for-some-brazilians-this-election-is-a-vote-on-trump",
+          "title_zh": "对于一些巴西人来说，这次选举是对特朗普的投票"
+        },
+        {
+          "title": "Ethiopian rebel forces withdraw from Tigray regional capital",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqm249v07j4xo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "埃塞俄比亚叛军从提格雷地区首府撤出"
+        },
+        {
+          "title": "France arrests 5,000 people, mostly teens, as school protests spread",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/03/nx-s1-5989532/france-arrests-5-000-people-mostly-teens-as-school-protests-spread",
+          "title_zh": "随着学校抗议活动蔓延，法国逮捕了 5,000 人，其中大部分是青少年"
+        },
+        {
+          "title": "Christa Pike's prognosis still unclear after failed execution, lawyer says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckgelynyg7d3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "律师称，克里斯塔·派克执行失败后的预后仍不清楚"
+        }
+      ]
+    },
     {
       "date": "2026-10-04",
       "items": [
