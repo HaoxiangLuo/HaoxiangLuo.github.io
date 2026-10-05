@@ -1,6 +1,201 @@
 {
-  "updated_at": "2026-09-29T08:52:51+08:00",
+  "updated_at": "2026-10-05T09:35:28+08:00",
   "items": [
+    {
+      "id": "doi:10.1080/10584609.2026.2735922",
+      "title": "When Populism? Consistent and Opportunistic Populist Communication in the 2022 Brazilian Presidential Elections",
+      "abstract_excerpt": "When do presidential candidates use populist communication, and does its prevalence vary across policy domains? We address these questions using an original dataset of 11,885 tweets from nine Brazilian presidential candidates during the 2022 elections. Drawing on the ideational approach, we operationalize populist discourse as the co-occurrence of people-centrism and anti-elitism, measured with fine-tuned BERT-based classifiers, and classify…",
+      "journal": "Political Communication",
+      "issn_l": "1058-4609",
+      "published_at": "2026-10-01",
+      "authors": [
+        "Gustavo Luiz Venturelli",
+        "Paolo Ricci",
+        "Guilherme Tiengo",
+        "Raphaela Martins Guedes Azevedo Velho"
+      ],
+      "doi_url": "https://doi.org/10.1080/10584609.2026.2735922",
+      "landing_page_url": "https://doi.org/10.1080/10584609.2026.2735922",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "政治传播",
+        "公共舆论"
+      ]
+    },
+    {
+      "id": "doi:10.1080/1369118x.2026.2740745",
+      "title": "Skewed toward uniformity? Investigating algorithmic stereotyping and amplification in AI-generated images",
+      "abstract_excerpt": "As text-to-image generative artificial intelligence (AI) increasingly shapes visual communication, concerns are growing about its role in reproducing social stereotypes. While recent algorithm auditing studies have advanced our understanding of stereotypical AI-generated imagery, they have largely focused on a narrow set of stereotypes – primarily gender and race – overlooking more nuanced forms. Addressing this gap, our study adopts a…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-10-01",
+      "authors": [
+        "Daniela Mahl",
+        "Lars Guenther"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2740745",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2740745",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ]
+    },
+    {
+      "id": "doi:10.1080/1369118x.2026.2737400",
+      "title": "From constituencies to audiences: lessons from Brazil about audience analytics in representative politics",
+      "abstract_excerpt": "The pursuit of audiences is a key driver of the mediatization of politics, yet it remains unclear how parliamentarians carry out this task. Drawing on interviews with members of Brazil’s Congress, this study investigates how politicians incorporate audience analytics into their communication strategies. It introduces a conceptual framework of audience perception – distinguishing among loyalists, followers, and audience reservoirs – to explain…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-10-01",
+      "authors": [
+        "André K. Rodarte"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2737400",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2737400",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ]
+    },
+    {
+      "id": "doi:10.1177/01634437261493382",
+      "title": "Branding the invisible: Big Tech, naming submarine cables, and the politics of infrastructure (in)visibility",
+      "abstract_excerpt": "Submarine cables have historically been invisible: buried, technical and obscured by conventions such as security and language including naming practises that prioritised function over storytelling. However, as Big Tech companies like Google have emerged as major cable investors, increasingly shifting from consortium to sole or private ownership, they have disrupted the cable industry in many ways. This paper demonstrates this disruption…",
+      "journal": "Media Culture & Society",
+      "issn_l": "0163-4437",
+      "published_at": "2026-09-30",
+      "authors": [
+        "Emeka Joseph Nwankwo"
+      ],
+      "doi_url": "https://doi.org/10.1177/01634437261493382",
+      "landing_page_url": "https://doi.org/10.1177/01634437261493382",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "文化与权力"
+      ]
+    },
+    {
+      "id": "doi:10.65476/wxwh5156",
+      "title": "Madelyn Rose Sanfilippo and Melissa G. Ocepek (Eds.), Governing Misinformation in Everyday Knowledge Commons",
+      "abstract_excerpt": "academics and researchers, drawing on diverse expertise in information sciences, computer science, law, communication studies, and media studies.As the",
+      "journal": "International journal of communication",
+      "issn_l": "1932-8036",
+      "published_at": "2026-09-29",
+      "authors": [
+        "Judas Kelley"
+      ],
+      "doi_url": "https://doi.org/10.65476/wxwh5156",
+      "landing_page_url": "https://doi.org/10.65476/wxwh5156",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "全球传播"
+      ]
+    },
+    {
+      "id": "doi:10.65476/dfkaet24",
+      "title": "From Words to Harm: Hate Speech and Societal Violence in U.S. Presidential Campaigns",
+      "abstract_excerpt": "Political speeches are typically viewed as mobilizing democratic participation, yet research shows elite political rhetoric—particularly when it contains hate speech—may contribute to societal harm. Our study extends this line of research by investigating the association between hate speech and societal violence from a temporal perspective in the context of U.S. presidential campaigns. We examined the extent to which hate speech was associated…",
+      "journal": "International journal of communication",
+      "issn_l": "1932-8036",
+      "published_at": "2026-09-29",
+      "authors": [
+        "Zhengyi Liang",
+        "Joel Sandoval-Valdez",
+        "Jaeho Cho",
+        "Xinya Jiang",
+        "Zhicong Chen"
+      ],
+      "doi_url": "https://doi.org/10.65476/dfkaet24",
+      "landing_page_url": "https://doi.org/10.65476/dfkaet24",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "全球传播"
+      ]
+    },
+    {
+      "id": "doi:10.65476/1khjyc86",
+      "title": "Gabriel Tarde’s Crowded Publics: Rediscovering the Work of a Forgotten Media Theorist",
+      "abstract_excerpt": "Despite a revival of interest in the work of Gabriel Tarde, he remains an underappreciated, patchily translated, and often misrepresented thinker. When he is invoked, it is typically as the “forefather” of actor–network theory, as claimed by Bruno Latour; as the advocate of the power of conversation in media influence, as promoted by Elihu Katz; or as a useful, but inaccurate, citation for comparing rational publics with irrational crowds. This…",
+      "journal": "International journal of communication",
+      "issn_l": "1932-8036",
+      "published_at": "2026-09-29",
+      "authors": [
+        "Samuel Earle"
+      ],
+      "doi_url": "https://doi.org/10.65476/1khjyc86",
+      "landing_page_url": "https://doi.org/10.65476/1khjyc86",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "全球传播"
+      ]
+    },
+    {
+      "id": "doi:10.1177/00936502261489660",
+      "title": "From Hate Speech to Collective Action Intentions: The Role of Counter-Speech and Accuracy Cues Among Targeted Minorities",
+      "abstract_excerpt": "Online hate speech targeting minority groups poses a significant social identity threat to those affected, often prompting coping strategies like out-group avoidance or derogation, which can harm intergroup relations in diverse societies. However, collective action as an empowering response has received limited attention in this context. Drawing on the social identity model of collective action (SIMCA), this study examines both the mechanisms…",
+      "journal": "Communication Research",
+      "issn_l": "0093-6502",
+      "published_at": "2026-09-29",
+      "authors": [
+        "Desirée Schmuck",
+        "Magdalena Obermaier",
+        "Nancy Molina-Rogers",
+        "Muniba Saleem"
+      ],
+      "doi_url": "https://doi.org/10.1177/00936502261489660",
+      "landing_page_url": "https://doi.org/10.1177/00936502261489660",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "综合传播",
+        "政治传播"
+      ]
+    },
+    {
+      "id": "doi:10.1080/1369118x.2026.2740039",
+      "title": "Taking artificial intelligence from the ‘priesthood’ and providing it as a service: a media-genealogical perspective on big tech’s AI platformisation",
+      "abstract_excerpt": "Recently, Amazon, Microsoft, and Google have been positioning artificial intelligence as a utility that should be accessible to everyone. At the same time, they promote their cloud platforms as a means of ‘democratizing’ AI as they distribute easy-to-use AI services at scale. In this article, I propose a media-genealogical approach to situate this claim of ‘democratization’ within a broader development in the infrastructuralisation and…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-09-28",
+      "authors": [
+        "Inga Luchs"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2740039",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2740039",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ]
+    },
+    {
+      "id": "doi:10.1177/00936502261487784",
+      "title": "Media Use for Strong and Weak Ties: A Configural Examination of Personal Media System and Well-Being",
+      "abstract_excerpt": "Taking a configural approach to personal media use, this study examined how strong- and weak-tie media configuration relate to digital stress and well-being. Using a sample of 1,197 U.S. adults (analytic N = 1,143), we explored how media configuration attributes (size, density, and centralization by tie strength, and homogeneity) are associated with well-being, directly and indirectly through five dimensions of digital stress (overconnectivity…",
+      "journal": "Communication Research",
+      "issn_l": "0093-6502",
+      "published_at": "2026-09-28",
+      "authors": [
+        "Xinyi Zhang",
+        "Ronald E. Rice"
+      ],
+      "doi_url": "https://doi.org/10.1177/00936502261487784",
+      "landing_page_url": "https://doi.org/10.1177/00936502261487784",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "综合传播",
+        "政治传播"
+      ]
+    },
     {
       "id": "doi:10.1080/1369118x.2026.2738178",
       "title": "Afterword: the waning power of the fix",
@@ -310,6 +505,26 @@
         "智能传播",
         "平台",
         "数字社会"
+      ]
+    },
+    {
+      "id": "doi:10.1093/joc/jqag018",
+      "title": "Inoculating against fatalistic beliefs: a comparative test of narrative and non-narrative strategies",
+      "abstract_excerpt": "Abstract This study compares the effectiveness of narrative and non-narrative inoculation messages in reducing fatalistic beliefs and fostering resistance to conflicting cancer information. A two-phase randomized experiment (N = 572 in Phase 1; n = 332 in Phase 2) tested their effects on counterarguing against attack, cancer fatalism, perceived efficacy, and intentions to adopt cancer risk-reduction behaviors. Compared with control, both…",
+      "journal": "Journal of Communication",
+      "issn_l": "0021-9916",
+      "published_at": "2026-09-11",
+      "authors": [
+        "Minyi Chen",
+        "Hye Kyung Kim"
+      ],
+      "doi_url": "https://doi.org/10.1093/joc/jqag018",
+      "landing_page_url": "https://doi.org/10.1093/joc/jqag018",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "综合传播",
+        "国际传播",
+        "政治传播"
       ]
     },
     {
