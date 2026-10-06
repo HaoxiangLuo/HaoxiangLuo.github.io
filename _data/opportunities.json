@@ -1,6 +1,19 @@
 {
-  "updated_at": "2026-10-01T09:44:45+08:00",
+  "updated_at": "2026-10-06T09:43:37+08:00",
   "internships": [
+    {
+      "date": "2026-10-06",
+      "items": [
+        {
+          "title": "People Analytics Data Engineering Intern (Winter/Spring 2027)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8241790?gh_jid=8241790",
+          "detail": "Hybrid",
+          "source": "Cloudflare",
+          "source_zh": "Cloudflare",
+          "group": "company"
+        }
+      ]
+    },
     {
       "date": "2026-10-01",
       "items": [
