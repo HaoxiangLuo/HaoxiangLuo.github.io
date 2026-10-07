@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T09:07:36+08:00",
+  "updated_at": "2026-10-07T13:18:18+08:00",
   "days": [
     {
       "date": "2026-10-07",
@@ -17,16 +17,10 @@
           "title_zh": "围绕英国基地和伊朗可能支持的袭击的问题"
         },
         {
-          "title": "From drought to deluge: ‘Super’ El Niño’s expanding reach",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168537",
-          "title_zh": "从干旱到洪水：“超级”厄尔尼诺现象的影响范围不断扩大"
-        },
-        {
-          "title": "Tear gas in Paris and Marseille as school protests grow across France",
+          "title": "Residents of kibbutz destroyed in 7 October Hamas-led attacks grapple with how to rebuild",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c8x23706pvz3o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "法国各地学校抗议活动愈演愈烈，巴黎和马赛施放催泪瓦斯"
+          "url": "https://www.bbc.co.uk/news/articles/cqrmyz4mdn94o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "10 月 7 日哈马斯领导的袭击中被毁的基布兹居民正在努力解决如何重建问题"
         },
         {
           "title": "France's police fire tear gas and water cannons as school protests sweep the country",
@@ -35,16 +29,10 @@
           "title_zh": "法国警方发射催泪瓦斯和高压水枪，学校抗议席卷全国"
         },
         {
-          "title": "Djibouti faces ‘overlapping emergencies’ as Yemen’s refugee exodus continues",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168535",
-          "title_zh": "随着也门难民继续逃亡，吉布提面临“重叠的紧急情况"
-        },
-        {
-          "title": "Former German spy chief arrested for espionage and treason",
+          "title": "Ex-US spy who stashed gold bars in his home admits to $200m scam",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c58jzyer1kr0o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "德国前间谍头子因间谍和叛国罪被捕"
+          "url": "https://www.bbc.co.uk/news/articles/cr3wvq965dngo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "在家藏金条的前美国间谍承认诈骗2亿美元"
         },
         {
           "title": "What to know about nationwide protests in India over voter list changes",
@@ -53,10 +41,22 @@
           "title_zh": "关于印度因选民名单变更而发生的全国性抗议活动，您需要了解什么"
         },
         {
-          "title": "Testing and monitoring underway in suspected Russia plague death",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168533",
-          "title_zh": "俄罗斯疑似鼠疫死亡病例正在进行检测和监测"
+          "title": "A beautiful Himalayan bird is changing its voice due to human activity, research shows",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq9868z88rexo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "研究显示，一种美丽的喜马拉雅鸟由于人类活动而改变了声音"
+        },
+        {
+          "title": "Vietnamese police arrest 12 suspected of prowling city streets at night, snatching cats for meat",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/06/g-s1-146634/vietnamese-police-arrest-12-suspected-of-prowling-city-streets-at-night-snatching-cats-for-meat",
+          "title_zh": "越南警方逮捕12名涉嫌夜间在城市街道徘徊、抢走猫肉的嫌疑人"
+        },
+        {
+          "title": "Former Australian bishop jailed for sexually abusing young men",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj62ylxqz173o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "澳大利亚前主教因性虐待年轻男子被判入狱"
         }
       ]
     },
