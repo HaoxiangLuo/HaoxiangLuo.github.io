@@ -10,7 +10,9 @@
           "detail": "Hybrid",
           "source": "Cloudflare",
           "source_zh": "Cloudflare",
-          "group": "company"
+          "group": "company",
+          "title_zh": "人才团队：软件工程实习生（2027 年冬季/春季）",
+          "detail_zh": "混合办公"
         },
         {
           "title": "Software Engineer Intern (2027)",
@@ -18,7 +20,9 @@
           "detail": "In-Office",
           "source": "Cloudflare",
           "source_zh": "Cloudflare",
-          "group": "company"
+          "group": "company",
+          "title_zh": "软件工程实习生（2027 年）",
+          "detail_zh": "现场办公"
         },
         {
           "title": "Software Engineer Intern (2027)",
@@ -26,7 +30,9 @@
           "detail": "In-Office",
           "source": "Cloudflare",
           "source_zh": "Cloudflare",
-          "group": "company"
+          "group": "company",
+          "title_zh": "软件工程实习生（2027 年）",
+          "detail_zh": "现场办公"
         }
       ]
     },
@@ -39,7 +45,9 @@
           "detail": "Hybrid",
           "source": "Cloudflare",
           "source_zh": "Cloudflare",
-          "group": "company"
+          "group": "company",
+          "title_zh": "人力分析数据工程实习生（2027 年冬季/春季）",
+          "detail_zh": "混合办公"
         }
       ]
     },
@@ -51,7 +59,8 @@
           "url": "https://jobs.unicef.org/cw/en-us/job/595900",
           "source": "UNICEF",
           "source_zh": "联合国儿童基金会",
-          "group": "un"
+          "group": "un",
+          "title_zh": "规划、监测与评估（PM&E）实习，姆巴巴内，埃斯瓦蒂尼（仅 6 个月）"
         },
         {
           "title": "WHS Intern",
@@ -59,7 +68,9 @@
           "detail": "Rugby, England, GBR",
           "source": "Amazon",
           "source_zh": "亚马逊",
-          "group": "company"
+          "group": "company",
+          "title_zh": "工作健康与安全（WHS）实习生",
+          "detail_zh": "英国英格兰拉格比"
         }
       ]
     },
@@ -72,7 +83,9 @@
           "detail": "San Fernando de Henares, Community of Madrid, ESP",
           "source": "Amazon",
           "source_zh": "亚马逊",
-          "group": "company"
+          "group": "company",
+          "title_zh": "工作健康与安全（WHS）实习生",
+          "detail_zh": "西班牙马德里自治区圣费尔南多-德埃纳雷斯"
         },
         {
           "title": "Software Engineer Intern (2027) - Austin, TX",
@@ -80,7 +93,9 @@
           "detail": "In-Office",
           "source": "Cloudflare",
           "source_zh": "Cloudflare",
-          "group": "company"
+          "group": "company",
+          "title_zh": "软件工程实习生（2027 年）— 美国得克萨斯州奥斯汀",
+          "detail_zh": "现场办公"
         },
         {
           "title": "Legal Intern",
@@ -88,7 +103,9 @@
           "detail": "Madrid, Community of Madrid, ESP",
           "source": "Amazon",
           "source_zh": "亚马逊",
-          "group": "company"
+          "group": "company",
+          "title_zh": "法务实习生",
+          "detail_zh": "西班牙马德里自治区马德里"
         }
       ]
     },
@@ -100,7 +117,8 @@
           "url": "https://jobs.unicef.org/cw/en-us/job/595861",
           "source": "UNICEF",
           "source_zh": "联合国儿童基金会",
-          "group": "un"
+          "group": "un",
+          "title_zh": "批量招聘（5 个岗位）：伙伴关系、倡导与传播（PAC）实习，雅温得、杜阿拉、布埃亚、贝尔图阿与马鲁阿，喀麦隆，西非与中非地区（WCAR），（6 个月）"
         }
       ]
     },
@@ -112,7 +130,8 @@
           "url": "https://jobs.unicef.org/cw/en-us/job/595661",
           "source": "UNICEF",
           "source_zh": "联合国儿童基金会",
-          "group": "un"
+          "group": "un",
+          "title_zh": "实习：风险基金实习（多个名额）— GPD/创新办公室，瑞典，6 个月（兼职）— 线下或远程"
         },
         {
           "title": "Sales Rep Intern",
@@ -120,7 +139,9 @@
           "detail": "Mexico City, Mexico City, MEX",
           "source": "Amazon",
           "source_zh": "亚马逊",
-          "group": "company"
+          "group": "company",
+          "title_zh": "销售代表实习生",
+          "detail_zh": "墨西哥墨西哥城"
         },
         {
           "title": "Integration Reliability Engineer Intern, Technical Operations",
@@ -128,7 +149,9 @@
           "detail": "Singapore",
           "source": "Stripe",
           "source_zh": "Stripe",
-          "group": "company"
+          "group": "company",
+          "title_zh": "集成可靠性工程实习生，技术运营",
+          "detail_zh": "新加坡"
         },
         {
           "title": "Solution Architect Intern",
@@ -136,7 +159,9 @@
           "detail": "Santiago, Region Santiago Metropolitan, CHL",
           "source": "Amazon",
           "source_zh": "亚马逊",
-          "group": "company"
+          "group": "company",
+          "title_zh": "解决方案架构师实习生",
+          "detail_zh": "智利圣地亚哥首都大区圣地亚哥"
         },
         {
           "title": "Marketing Intern, AUTA",
@@ -144,7 +169,9 @@
           "detail": "Mexico City, Mexico City, MEX",
           "source": "Amazon",
           "source_zh": "亚马逊",
-          "group": "company"
+          "group": "company",
+          "title_zh": "市场营销实习生，AUTA",
+          "detail_zh": "墨西哥墨西哥城"
         },
         {
           "title": "Program Manager Intern",
@@ -152,7 +179,9 @@
           "detail": "Mexico City, Mexico City, MEX",
           "source": "Amazon",
           "source_zh": "亚马逊",
-          "group": "company"
+          "group": "company",
+          "title_zh": "项目经理实习生",
+          "detail_zh": "墨西哥墨西哥城"
         },
         {
           "title": "Financial Analyst Intern",
@@ -160,7 +189,9 @@
           "detail": "Mexico City, Mexico City, MEX",
           "source": "Amazon",
           "source_zh": "亚马逊",
-          "group": "company"
+          "group": "company",
+          "title_zh": "财务分析实习生",
+          "detail_zh": "墨西哥墨西哥城"
         },
         {
           "title": "Solution Architect Intern",
@@ -168,7 +199,9 @@
           "detail": "Santiago, Region Santiago Metropolitan, CHL",
           "source": "Amazon",
           "source_zh": "亚马逊",
-          "group": "company"
+          "group": "company",
+          "title_zh": "解决方案架构师实习生",
+          "detail_zh": "智利圣地亚哥首都大区圣地亚哥"
         },
         {
           "title": "Executive Assistant Intern",
@@ -176,7 +209,9 @@
           "detail": "Sao Paulo, Sao Paulo, BRA",
           "source": "Amazon",
           "source_zh": "亚马逊",
-          "group": "company"
+          "group": "company",
+          "title_zh": "行政助理实习生",
+          "detail_zh": "巴西圣保罗州圣保罗"
         },
         {
           "title": "Operations Intern, AUTA",
@@ -184,7 +219,9 @@
           "detail": "Mexico City, Mexico City, MEX",
           "source": "Amazon",
           "source_zh": "亚马逊",
-          "group": "company"
+          "group": "company",
+          "title_zh": "运营实习生，AUTA",
+          "detail_zh": "墨西哥墨西哥城"
         }
       ]
     }
@@ -197,73 +234,85 @@
           "title": "Fellowship Takeaways podcast series",
           "url": "https://reutersinstitute.politics.ox.ac.uk/fellowship-takeaways-podcast-series",
           "source": "Reuters Institute, University of Oxford",
-          "source_zh": "牛津大学路透新闻研究院"
+          "source_zh": "牛津大学路透新闻研究院",
+          "title_zh": "研究员项目心得播客系列"
         },
         {
           "title": "Witwatersrand-Cambridge Exchange Programme",
           "url": "https://www.polis.cam.ac.uk/research-overview/witwatersrand-cambridge-exchange-programme",
           "source": "POLIS, University of Cambridge",
-          "source_zh": "剑桥大学政治与国际研究系"
+          "source_zh": "剑桥大学政治与国际研究系",
+          "title_zh": "威特沃特斯兰德—剑桥交换项目"
         },
         {
           "title": "Global & Joint Program Studies",
           "url": "https://journalism.nyu.edu/graduate/programs/global-and-joint-program-studies/",
           "source": "NYU, Arthur L. Carter Journalism Institute",
-          "source_zh": "纽约大学新闻学院"
+          "source_zh": "纽约大学新闻学院",
+          "title_zh": "全球与联合学位项目"
         },
         {
           "title": "Joint JD/Ph.D. Program",
           "url": "https://comm.stanford.edu/joint-jd-phd-program",
           "source": "Stanford University, Department of Communication",
-          "source_zh": "斯坦福大学传播系"
+          "source_zh": "斯坦福大学传播系",
+          "title_zh": "法律博士（J.D.）与博士（Ph.D.）联合项目"
         },
         {
           "title": "Who funds our Fellowships?",
           "url": "https://reutersinstitute.politics.ox.ac.uk/funders-our-fellowship-programme",
           "source": "Reuters Institute, University of Oxford",
-          "source_zh": "牛津大学路透新闻研究院"
+          "source_zh": "牛津大学路透新闻研究院",
+          "title_zh": "我们的研究员项目由谁资助？"
         },
         {
           "title": "Become a Visiting Scholar",
           "url": "https://www.polis.cam.ac.uk/research-overview/visiting-scholars-0",
           "source": "POLIS, University of Cambridge",
-          "source_zh": "剑桥大学政治与国际研究系"
+          "source_zh": "剑桥大学政治与国际研究系",
+          "title_zh": "成为访问学者"
         },
         {
           "title": "Scholarships & Fellowships",
           "url": "https://journalism.nyu.edu/graduate/scholarships-and-fellowships/",
           "source": "NYU, Arthur L. Carter Journalism Institute",
-          "source_zh": "纽约大学新闻学院"
+          "source_zh": "纽约大学新闻学院",
+          "title_zh": "奖学金与研究员项目"
         },
         {
           "title": "John S. Knight Journalism Fellowships",
           "url": "https://jsk.stanford.edu/",
           "source": "Stanford University, Department of Communication",
-          "source_zh": "斯坦福大学传播系"
+          "source_zh": "斯坦福大学传播系",
+          "title_zh": "John S. Knight 新闻研究员项目"
         },
         {
           "title": "Caithlin Mercer Associate Director of the Fellowship Programme",
           "url": "https://reutersinstitute.politics.ox.ac.uk/people/caithlin-mercer",
           "source": "Reuters Institute, University of Oxford",
-          "source_zh": "牛津大学路透新闻研究院"
+          "source_zh": "牛津大学路透新闻研究院",
+          "title_zh": "Caithlin Mercer，研究员项目副主任"
         },
         {
           "title": "Visiting Scholars",
           "url": "https://journalism.nyu.edu/faculty/visiting-scholars/",
           "source": "NYU, Arthur L. Carter Journalism Institute",
-          "source_zh": "纽约大学新闻学院"
+          "source_zh": "纽约大学新闻学院",
+          "title_zh": "访问学者"
         },
         {
           "title": "Juan Morante Fellowship Officer",
           "url": "https://reutersinstitute.politics.ox.ac.uk/people/juan-morante",
           "source": "Reuters Institute, University of Oxford",
-          "source_zh": "牛津大学路透新闻研究院"
+          "source_zh": "牛津大学路透新闻研究院",
+          "title_zh": "Juan Morante，研究员项目主管"
         },
         {
           "title": "Fellowships & Annual Programs",
           "url": "https://journalism.nyu.edu/career-services/fellowships-and-annual-programs/",
           "source": "NYU, Arthur L. Carter Journalism Institute",
-          "source_zh": "纽约大学新闻学院"
+          "source_zh": "纽约大学新闻学院",
+          "title_zh": "研究员项目与年度项目"
         }
       ]
     }
