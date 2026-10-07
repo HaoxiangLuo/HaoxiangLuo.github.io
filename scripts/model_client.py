@@ -29,6 +29,7 @@ from __future__ import annotations
 import json
 import os
 import urllib.error
+import urllib.parse
 import urllib.request
 
 DEFAULT_ENDPOINT = "https://models.github.ai/inference/chat/completions"
@@ -111,3 +112,30 @@ def chat(messages: list[dict], timeout: int = TIMEOUT, response_format: dict | N
         raise ModelUnavailable(
             f"{endpoint()} replied without a choice: {snippet(raw)}"
         ) from exc
+
+
+GTX_ENDPOINT = "https://translate.googleapis.com/translate_a/single"
+
+
+def public_translate(text: str, target: str = "zh") -> str:
+    """Translate through Google's unauthenticated web endpoint.
+
+    This is the endpoint the daily-news collector has always fallen back on:
+    it needs no key and no configuration, so the site keeps producing Chinese
+    even when no provider is configured. The trade-off is that it is an
+    unofficial endpoint — Google may rate-limit or close it without notice —
+    and its wording is blunter than a model's. It is therefore only ever
+    reached when no provider is configured or the provider refused.
+    """
+    source, destination = ("en", "zh-CN") if target == "zh" else ("zh-CN", "en")
+    query = urllib.parse.urlencode(
+        {"client": "gtx", "sl": source, "tl": destination, "dt": "t", "q": text}
+    )
+    request = urllib.request.Request(
+        f"{GTX_ENDPOINT}?{query}",
+        headers={"User-Agent": USER_AGENT},
+    )
+    with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+        body = json.loads(response.read().decode("utf-8"))
+    segments = body[0] if body else []
+    return "".join(segment[0] for segment in segments if segment and segment[0])

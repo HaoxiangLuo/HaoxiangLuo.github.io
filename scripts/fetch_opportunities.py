@@ -223,10 +223,12 @@ class Translator:
         self.token = token
         self.cache: dict[tuple[str, str], str] = {}
         self.calls = 0
+        self.public_calls = 0
         self.pending = 0
         # Set once the endpoint has refused us twice in a row: the rest of the
         # run then stays offline instead of spending a request per field.
         self.unavailable = ""
+        self.public_unavailable = False
         self._diagnosed = False
 
     @staticmethod
@@ -257,9 +259,29 @@ class Translator:
                     break
             if not value and failures:
                 self.unavailable = "endpoint refused the request; skipping the rest of this run"
+        if not value and self.translatable(text) and not self.public_unavailable:
+            value = self._public(text, target)
         if not value:
             self.pending += 1
         self.cache[key] = value
+        return value
+
+    def _public(self, text: str, target: str) -> str:
+        """Google's unauthenticated endpoint: no key, but no guarantees.
+
+        Reached when no provider is configured or the provider refused, so the
+        Chinese page is not left empty just because nobody set a key up. One
+        failure is enough to stop trying: an endpoint that has started refusing
+        will refuse every remaining field in the run too.
+        """
+        try:
+            self.public_calls += 1
+            value = tidy_translation(model_client.public_translate(text, target), target)
+        except Exception as exc:  # noqa: BLE001 - network failures of any kind
+            print(f"warning: public translation failed: {exc}", file=sys.stderr)
+            self.public_unavailable = True
+            return ""
+        time.sleep(0.15)
         return value
 
     def _request(self, text: str, target: str) -> str:
@@ -306,11 +328,18 @@ def build_translator() -> Translator:
     if not model_client.configured():
         print(
             "note: no translation provider configured (set TRANSLATE_BASE_URL and "
-            "TRANSLATE_API_KEY); translations stay pending for the next run",
+            "TRANSLATE_API_KEY); fields are filled through the public endpoint",
             file=sys.stderr,
         )
         return Translator("")
     return Translator(model_client.api_key())
+
+
+def public_note(translator: Translator) -> str:
+    """Report how many fields came from the unauthenticated endpoint."""
+    if not translator.public_calls:
+        return ""
+    return f" ({translator.public_calls} via the public endpoint)"
 
 
 # (source field, Chinese target, English target): `title_en` / `detail_en` are
@@ -811,7 +840,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.translate_only:
         print(
             f"translations: {history['titles']} titles, {history['details']} details filled; "
-            f"{translator.pending} field(s) pending retry"
+            f"{translator.pending} field(s) pending retry{public_note(translator)}"
         )
         if args.dry_run:
             print("dry run: archive not written")
@@ -853,7 +882,7 @@ def main(argv: list[str] | None = None) -> int:
     details = history["details"] + fresh["details"]
     print(
         f"translations: {titles} titles, {details} details filled; "
-        f"{translator.pending} field(s) pending retry"
+        f"{translator.pending} field(s) pending retry{public_note(translator)}"
     )
 
     if args.dry_run:

@@ -33,6 +33,7 @@ class FakeTranslator:
         self.calls: list[str] = []
         self.cache: dict = {}
         self.pending = 0
+        self.public_calls = 0
 
     def translate(self, text: str, target: str) -> str:
         if text in self.cache:  # mirrors opps.Translator's per-run cache
