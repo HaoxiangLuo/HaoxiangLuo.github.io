@@ -36,11 +36,24 @@ jobs:
           python-version: "3.12"
 
       - name: Collect the newest articles
+        env:
+          # The configured OpenAI-compatible provider is used when one exists;
+          # otherwise the collector falls back to the same unauthenticated
+          # endpoint the news and opportunities jobs use, so the Chinese title
+          # and abstract are still produced.
+          TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
+          TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: |
           git pull --ff-only origin master
           python scripts/fetch_academic_frontiers.py
 
       - name: Save the academic archive
+        env:
+          # Also needed here: a push race re-runs the collector below.
+          TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
+          TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
         run: |
           # The JSONL archive is the history; the short index is generated from
           # it. Both belong to this job and nothing else is touched.

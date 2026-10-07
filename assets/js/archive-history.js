@@ -38,6 +38,7 @@
       authorsMissing: "Authors are not listed in the metadata.",
       abstractMissing: "No abstract excerpt is available in the metadata.",
       abstractLabel: "Abstract excerpt",
+      originalAbstract: "Original abstract",
       readSource: "Read source",
       viewCommit: "View commit"
     },
@@ -53,6 +54,7 @@
       authorsMissing: "元数据中未列出作者。",
       abstractMissing: "元数据中暂无摘要节选。",
       abstractLabel: "摘要节选",
+      originalAbstract: "英文原文",
       readSource: "阅读原文",
       viewCommit: "查看提交"
     }
@@ -278,9 +280,15 @@
         meta.appendChild(tier);
       }
 
+      // The Chinese wording is what is read; the wording the paper was
+      // published under stays on the card so it can still be found.
+      var useChinese = options.language === "zh";
+      var zhTitle = useChinese ? record.title_zh : "";
+      var zhAbstract = useChinese ? record.abstract_excerpt_zh : "";
+
       var heading = document.createElement("h2");
       heading.className = "frontiers-card__title";
-      setText(heading, title);
+      setText(heading, zhTitle || title);
 
       var authors = document.createElement("p");
       authors.className = "frontiers-card__authors";
@@ -288,18 +296,38 @@
       setText(authors, names.length ? names.join(", ") : words.authorsMissing);
 
       var abstract = document.createElement("p");
-      abstract.className = "frontiers-card__abstract" + (record.abstract_excerpt ? "" : " is-empty");
+      abstract.className = "frontiers-card__abstract" + ((zhAbstract || record.abstract_excerpt) ? "" : " is-empty");
       var label = document.createElement("span");
       label.className = "frontiers-card__label";
       setText(label, words.abstractLabel);
       abstract.appendChild(label);
       abstract.appendChild(document.createTextNode(" "));
-      abstract.appendChild(document.createTextNode(record.abstract_excerpt || words.abstractMissing));
+      abstract.appendChild(document.createTextNode(zhAbstract || record.abstract_excerpt || words.abstractMissing));
 
       card.appendChild(meta);
       card.appendChild(heading);
+      if (zhTitle && title) {
+        var originalTitle = document.createElement("p");
+        originalTitle.className = "frontiers-card__original";
+        originalTitle.lang = "en";
+        setText(originalTitle, title);
+        card.appendChild(originalTitle);
+      }
       card.appendChild(authors);
       card.appendChild(abstract);
+      if (zhAbstract && record.abstract_excerpt) {
+        var originalBlock = document.createElement("details");
+        originalBlock.className = "frontiers-card__original-block";
+        var summary = document.createElement("summary");
+        setText(summary, words.originalAbstract);
+        originalBlock.appendChild(summary);
+        var originalAbstract = document.createElement("p");
+        originalAbstract.className = "frontiers-card__abstract frontiers-card__abstract--original";
+        originalAbstract.lang = "en";
+        setText(originalAbstract, record.abstract_excerpt);
+        originalBlock.appendChild(originalAbstract);
+        card.appendChild(originalBlock);
+      }
 
       var link = record.doi_url || record.landing_page_url;
       if (link) {

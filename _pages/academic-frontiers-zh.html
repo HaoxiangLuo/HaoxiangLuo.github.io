@@ -30,12 +30,30 @@ translation_url: /academic-frontiers/
           <span class="frontiers-card__journal">{{ item.journal | escape }}</span>
           {% if item.source_tier != blank %}<span class="frontiers-card__tier">{{ item.source_tier }}</span>{% endif %}
         </header>
-        <h2 class="frontiers-card__title">{{ item.title | escape }}</h2>
+        {% if item.title_zh != blank %}
+          <h2 class="frontiers-card__title">{{ item.title_zh | escape }}</h2>
+          <p class="frontiers-card__original" lang="en">{{ item.title | escape }}</p>
+        {% else %}
+          <h2 class="frontiers-card__title" lang="en">{{ item.title | escape }}</h2>
+        {% endif %}
         <p class="frontiers-card__authors">{% if item.authors.size > 0 %}{{ item.authors | join: ", " | escape }}{% else %}元数据中未列出作者。{% endif %}</p>
-        <p class="frontiers-card__abstract{% unless item.abstract_excerpt %} is-empty{% endunless %}">
-          <span class="frontiers-card__label">摘要节选</span>
-          {% if item.abstract_excerpt %}{{ item.abstract_excerpt | escape }}{% else %}元数据中暂无摘要节选。{% endif %}
-        </p>
+        {% if item.abstract_excerpt_zh != blank %}
+          <p class="frontiers-card__abstract">
+            <span class="frontiers-card__label">摘要节选</span>
+            {{ item.abstract_excerpt_zh | escape }}
+          </p>
+          {% if item.abstract_excerpt != blank %}
+            <details class="frontiers-card__original-block">
+              <summary>英文原文</summary>
+              <p class="frontiers-card__abstract frontiers-card__abstract--original" lang="en">{{ item.abstract_excerpt | escape }}</p>
+            </details>
+          {% endif %}
+        {% else %}
+          <p class="frontiers-card__abstract{% unless item.abstract_excerpt %} is-empty{% endunless %}">
+            <span class="frontiers-card__label">摘要节选</span>
+            {% if item.abstract_excerpt %}{{ item.abstract_excerpt | escape }}{% else %}元数据中暂无摘要节选。{% endif %}
+          </p>
+        {% endif %}
         {% if source_link != blank %}
           <a class="frontiers-card__link" href="{{ source_link }}" target="_blank" rel="noopener noreferrer">阅读原文 <b aria-hidden="true">↗</b></a>
         {% endif %}
@@ -46,4 +64,4 @@ translation_url: /academic-frontiers/
   {% endif %}
 </div>
 
-<p class="frontiers-note">论文元数据由 OpenAlex 整理，摘要仅展示节选，原文归相应出版方所有。以上期刊清单每年依据拥有授权的 JCR 数据人工核对一次。</p>
+<p class="frontiers-note">论文元数据由 OpenAlex 整理，摘要仅展示节选，原文归相应出版方所有。标题与摘要的中文为机器译文，英文原文一并保留，便于按原题检索论文。以上期刊清单每年依据拥有授权的 JCR 数据人工核对一次。</p>

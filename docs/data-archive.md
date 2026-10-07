@@ -51,13 +51,14 @@ assets/data/archive/           ← 权威历史（追加式，浏览器按需读
 
 ```json
 {"id": "doi:10.1093/joc/....", "title": "...", "abstract_excerpt": "...",
+ "title_zh": "...", "abstract_excerpt_zh": "...",
  "journal": "...", "issn_l": "...", "published_at": "YYYY-MM-DD",
  "authors": ["..."], "doi_url": "...", "landing_page_url": "...",
  "source_tier": "SSCI Q1", "focus": ["..."],
  "fetched_at": "ISO-8601", "schema_version": 1}
 ```
 
-`abstract_excerpt` 最多 450 字符，不保存全文。更新同一篇文章时，新数据里缺失的字段**不会**清空已保存的字段。
+`abstract_excerpt` 最多 450 字符，不保存全文。`title_zh` / `abstract_excerpt_zh` 是并存的中文译文，可能缺失（译文预算用尽或接口失败），中文页面会回退到英文原文。更新同一篇文章时，新数据里缺失的字段**不会**清空已保存的字段（译文同理）。
 
 ### 网站日志（`site-updates/YYYY.jsonl`）
 

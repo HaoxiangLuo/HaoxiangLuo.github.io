@@ -180,7 +180,7 @@
 - Publications 卡片在桌面端双列、手机端单列，标签位置一致。
 - Site Log 能显示最新人工发布记录。
 - Daily News 能按日期显示历史记录，首页能显示当天或最近一期。
-- Academic Frontiers 中英文页面卡片字段一致，标题与摘要保持原文，年月筛选可用。
+- Academic Frontiers 中英文页面卡片字段一致：英文页显示原文；中文页显示中文标题与中文摘要，并把英文原文一并保留（标题原文紧随译文，摘要原文在折叠块内），年月筛选可用。
 - Daily News、Academic Frontiers、Site Log 选中近期索引之外的年份或月份时，能显示"正在读取历史归档…"并加载出该分卷；失败时保留已有记录并给出重试按钮。
 - `git diff --check` 无错误。
 - 工作区无测试缓存、临时文件或私人简历。
@@ -254,8 +254,10 @@
 
 - 期刊清单为人工维护，**每年由维护者依据拥有授权的 JCR 数据（Communication 类 + SSCI 收录状态）核对一次**。不得把 OpenAlex、Scopus、SJR 或任何推断结果当作 JCR 分区展示；页面只显示人工核定的 `SSCI Q1`。
 - 摘要由 `abstract_inverted_index` 重建后整词截取，最多 450 字符，字段名 `abstract_excerpt`，不保存完整摘要或全文。
-- 标题、作者、期刊名与摘要在中英文页面一律保持原文，不使用机器翻译；只有界面文案、筛选器、说明和空状态做双语。
-- 页脚须保留"元数据来自 OpenAlex、摘要仅为节选、全文归出版方"的说明。
+- 标题、作者、期刊名一律保持原文；**标题与摘要另存中文字段**（`title_zh`、`abstract_excerpt_zh`），中文页面优先显示译文并把英文原文一并保留（标题原文直接跟在译文下，摘要原文收在"英文原文"折叠块里），这样论文仍可按原题检索到。英文页面只显示原文。
+- 译文由 `scripts/fetch_academic_frontiers.py` 里的 `ArticleTranslator` 产出：优先用配置的译文服务，未配置时退回第 16 节说的公共接口。每次运行有预算（`--max-translations`，默认 40 个字段），先翻新收集的论文、再回填归档里还缺的；翻不出来的字段留空，下次运行重试。`--translate-only` 只补译文不抓取。
+- 译文永远写在原文字段旁边、不覆盖原文；`merge_history()` 保证同一篇论文被重复抓到时已存的译文不会被清空。`archive_data.normalize_frontiers()` 是 `dict(entry)` 拷贝，新字段会自动进归档与索引。
+- 页脚须保留"元数据来自 OpenAlex、摘要仅为节选、全文归出版方"的说明，中文页另需说明"中文为机器译文、英文原文一并保留"。
 
 ## 15. 长期数据归档（三层）
 
@@ -278,7 +280,7 @@ python tests/test_archive_data.py                 # 归档层单元测试
 
 ## 16. 模型服务配置（改动前必读）
 
-站内所有需要模型的脚本（网站日志描述、每日新闻译文、资讯译文）都通过 **`scripts/model_client.py`** 这一个共享客户端调用 OpenAI 兼容的 `/chat/completions` 接口。
+站内所有需要模型的脚本（网站日志描述、每日新闻译文、资讯译文、学界前沿译文）都通过 **`scripts/model_client.py`** 这一个共享客户端调用 OpenAI 兼容的 `/chat/completions` 接口。
 
 **GitHub Models 已于 2026-07-30 全线下线**（playground、模型目录、推理接口、BYOK 全部移除，`models.github.ai` 现在对任何请求都返回 `200 OK`），因此端点、密钥、模型名**不再是常量，而是配置**：
 
@@ -288,7 +290,7 @@ python tests/test_archive_data.py                 # 归档层单元测试
 | `TRANSLATE_API_KEY` | 该服务的密钥 | 依次回落到 `GITHUB_MODELS_TOKEN`、`GITHUB_TOKEN` |
 | `TRANSLATE_MODEL` | 模型 id | `gpt-4o-mini` |
 
-工作流里读取的是仓库变量/密钥（`daily-news.yml`、`opportunities.yml`、`site-log.yml` 三个文件的相关步骤）：
+工作流里读取的是仓库变量/密钥（`daily-news.yml`、`opportunities.yml`、`academic-frontiers.yml`、`site-log.yml` 四个文件的相关步骤）：
 
 ```yaml
 env:

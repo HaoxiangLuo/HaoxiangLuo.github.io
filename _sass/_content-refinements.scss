@@ -2470,6 +2470,39 @@ body.home-page .news-window {
   line-height: 1.62;
 }
 
+/* A translated card still shows the wording the paper was published under:
+   the Chinese line is what gets read, the English one is what makes the article
+   findable again. */
+.frontiers-card__original {
+  margin: -0.15rem 0 0.6rem;
+  color: #86868b;
+  font-size: 0.7rem;
+  line-height: 1.45;
+}
+
+.frontiers-card__original-block {
+  margin-top: 0.55rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid rgba(29, 29, 31, 0.07);
+}
+
+.frontiers-card__original-block > summary {
+  color: #0071e3;
+  cursor: pointer;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.frontiers-card__original-block > summary::-webkit-details-marker { display: none; }
+.frontiers-card__original-block > summary::marker { content: ""; }
+
+.frontiers-card__abstract--original {
+  margin-top: 0.4rem;
+  color: #6e6e73;
+  font-size: 0.72rem;
+}
+
 .frontiers-card__abstract.is-empty {
   color: #86868b;
 }
