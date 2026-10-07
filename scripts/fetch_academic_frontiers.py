@@ -67,6 +67,7 @@ TIMEZONE = ZoneInfo("Asia/Shanghai")
 # the article findable.
 TRANSLATE_TIMEOUT = 25
 MAX_TRANSLATE_CHARS = 700
+MAX_CHUNK_CHARS = 180       # one request per sentence group, not per abstract
 DEFAULT_TRANSLATIONS = 40
 CJK_RE = re.compile(r"[\u4e00-\u9fff]")
 TITLE_PROMPT = (
@@ -299,6 +300,24 @@ class ArticleTranslator:
         text = (text or "").strip()
         if not text or len(text) > MAX_TRANSLATE_CHARS:
             return ""
+        pieces = split_sentences(text)
+        if len(pieces) == 1:
+            return self._request(pieces[0], prompt)
+        # Long text is sent sentence group by sentence group: the unauthenticated
+        # endpoint answers a short request completely, but echoes whole English
+        # sentences back when the request is long.
+        values = [self._request(piece, prompt, require_cjk=False) for piece in pieces]
+        if not all(values):
+            return ""
+        joined = self._tidy(" ".join(values))
+        # The same echo can still happen per group: a translation that contains
+        # its own source sentence is worse than no translation at all, so the
+        # field stays pending and the next run tries again.
+        if echoes_source(text, joined):
+            return ""
+        return joined
+
+    def _request(self, text: str, prompt: str, require_cjk: bool = True) -> str:
         if model_client.configured():
             try:
                 self.calls += 1
@@ -309,7 +328,8 @@ class ArticleTranslator:
                             {"role": "user", "content": text},
                         ],
                         timeout=TRANSLATE_TIMEOUT,
-                    )
+                    ),
+                    require_cjk,
                 )
                 if value:
                     return value
@@ -319,7 +339,7 @@ class ArticleTranslator:
             return ""
         try:
             self.public_calls += 1
-            value = self._tidy(model_client.public_translate(text, "zh"))
+            value = self._tidy(model_client.public_translate(text, "zh"), require_cjk)
         except Exception as exc:  # noqa: BLE001 - network failures of any kind
             print(f"warning: public translation failed: {exc}", file=sys.stderr)
             self.public_unavailable = True
@@ -328,12 +348,51 @@ class ArticleTranslator:
         return value
 
     @staticmethod
-    def _tidy(value: str) -> str:
+    def _tidy(value: str, require_cjk: bool = True) -> str:
         text = re.sub(r"\s+", " ", value or "").strip()
         # A reply without one Chinese character is not a translation.
-        if not text or len(text) > MAX_TRANSLATE_CHARS * 3 or not CJK_RE.search(text):
+        if not text or len(text) > MAX_TRANSLATE_CHARS * 3:
+            return ""
+        if require_cjk and not CJK_RE.search(text):
             return ""
         return text
+
+
+def echoes_source(source: str, translation: str) -> bool:
+    """True when a "translation" still carries whole sentences of the source.
+
+    The unauthenticated endpoint occasionally answers a long request with some
+    sentences left in English. Such a value is not published: it is dropped so
+    the next run translates it properly.
+    """
+    source = re.sub(r"\s+", " ", source or "").strip()
+    translation = re.sub(r"\s+", " ", translation or "").strip()
+    if len(source) < 40 or not translation:
+        return False
+    return any(
+        len(piece) >= 40 and piece in translation for piece in split_sentences(source)
+    )
+
+
+def split_sentences(text: str) -> list[str]:
+    """Group the text into requests of roughly `MAX_CHUNK_CHARS`, on boundaries."""
+    if len(text) <= MAX_CHUNK_CHARS:
+        return [text]
+    chunks: list[str] = []
+    current = ""
+    for part in re.split(r"(?<=[.!?;])\s+", text):
+        part = part.strip()
+        if not part:
+            continue
+        if current and len(current) + 1 + len(part) > MAX_CHUNK_CHARS:
+            chunks.append(current)
+            current = part
+        else:
+            current = f"{current} {part}".strip()
+    if current:
+        chunks.append(current)
+    # One sentence longer than the limit: send it whole rather than cut it.
+    return chunks or [text]
 
 
 def translate_articles(
@@ -347,10 +406,18 @@ def translate_articles(
     the caller can write those and nothing else.
     """
     translator = ArticleTranslator()
-    filled = {"titles": 0, "abstracts": 0}
+    filled = {"titles": 0, "abstracts": 0, "dropped": 0}
     changed: list[str] = []
     for record in records:
         touched = False
+        # A stored translation that kept whole English sentences is not one:
+        # drop it so this run translates it again.
+        if record.get("abstract_excerpt_zh") and echoes_source(
+            str(record.get("abstract_excerpt") or ""), str(record["abstract_excerpt_zh"])
+        ):
+            record.pop("abstract_excerpt_zh")
+            filled["dropped"] += 1
+            touched = True
         if budget > 0 and not record.get("title_zh") and record.get("title"):
             value = translator.chinese(str(record["title"]), TITLE_PROMPT)
             if value:
@@ -382,6 +449,16 @@ def public_note(translator: ArticleTranslator) -> str:
     if not translator.public_calls:
         return ""
     return f" ({translator.public_calls} via the public endpoint)"
+
+
+def translation_line(filled: dict, translator: ArticleTranslator) -> str:
+    line = (
+        f"translations: {filled['titles']} titles, {filled['abstracts']} abstracts filled; "
+        f"{translator.pending} field(s) pending retry"
+    )
+    if filled.get("dropped"):
+        line += f"; {filled['dropped']} echoed translation(s) dropped"
+    return line + public_note(translator)
 
 
 def newest_first(records: list[dict]) -> list[dict]:
@@ -416,10 +493,7 @@ def merge_history(history: list[dict], fresh: list[dict]) -> tuple[list[dict], s
 def backfill_history(existing: list[dict], budget: int, dry_run: bool) -> int:
     """Translate what the archive is still missing, newest article first."""
     filled, translator, changed = translate_articles(newest_first(existing), budget)
-    print(
-        f"translations: {filled['titles']} titles, {filled['abstracts']} abstracts filled; "
-        f"{translator.pending} field(s) pending retry{public_note(translator)}"
-    )
+    print(translation_line(filled, translator))
     if dry_run:
         print("dry run: archive not written")
         return 0
@@ -514,10 +588,7 @@ def main() -> int:
     # article whose translation failed last time is retried on a later run.
     merged, fresh_ids = merge_history(existing, records)
     filled, translator, changed = translate_articles(merged, args.max_translations)
-    print(
-        f"translations: {filled['titles']} titles, {filled['abstracts']} abstracts filled; "
-        f"{translator.pending} field(s) pending retry{public_note(translator)}"
-    )
+    print(translation_line(filled, translator))
     write_ids = fresh_ids | set(changed)
     to_write = [record for record in merged if str(record.get("id")) in write_ids]
 
