@@ -3,9 +3,12 @@
 
 Two sections are maintained in `_data/opportunities.json`:
 
-* `internships` — internships at the United Nations and well-known global
-  companies, read from their official job feeds (Taleo RSS, Greenhouse board
-  APIs, Amazon's public search endpoint).
+* `internships` — United Nations system openings collected by
+  scripts/un_sources.py across twenty organisations, then judged by
+  scripts/opps_match.py (direction, function, topics, eligibility, mode and
+  organisation, out of 100). Anything scoring below 60 is never stored, so the
+  page stays a shortlist rather than a mirror of every vacancy; plus a handful
+  of global-company internship boards.
 * `academia` — PhD exchange, visiting-scholar and joint-training
   announcements from journalism/communication departments at QS top-50
   universities, extracted from official department pages.
@@ -27,12 +30,13 @@ import socket
 import sys
 import time
 import urllib.request
-import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 import model_client  # noqa: E402  (sibling module: scripts/model_client.py)
+import opps_match  # noqa: E402  (sibling module: scripts/opps_match.py)
+import un_sources  # noqa: E402  (sibling module: scripts/un_sources.py)
 
 try:
     from zoneinfo import ZoneInfo
@@ -46,6 +50,12 @@ OUTPUT = ROOT / "_data" / "opportunities.json"
 MAX_DAYS = 180
 MAX_NEW_PER_SOURCE = 8
 MAX_NEW_PER_DAY = 20
+MAX_UN_PER_DAY = 60  # scored UN openings kept in one day
+# One organisation must not fill the page: UNESCO alone can publish fourteen
+# internships at once, and fourteen near-identical cards answer none of the
+# three questions the page exists for. Six keeps a daily run readable while a
+# smaller organisation still gets its one relevant post through.
+MAX_UN_PER_ORG = 6
 REQUEST_TIMEOUT = 25
 USER_AGENT = "HaoxiangLuo.github.io opportunities collector/1.0"
 
@@ -66,17 +76,33 @@ CJK_RE = re.compile(r"[\u3400-\u9fff]")
 # URLs, HTML and workflow variables never reach the model.
 UNSAFE_TEXT_RE = re.compile(r"https?://|<[a-z!/]|[{][{]", re.I)
 
-# Internship sources: official job feeds of the UN and leading global companies.
-# `group` splits the archive into the UN and company sub-sections.
-INTERN_SOURCES = [
-    {"name": "UNICEF", "name_zh": "联合国儿童基金会", "kind": "taleo_rss", "value": "https://jobs.unicef.org/cw/en/rss", "group": "un"},
-    {"name": "UN Women", "name_zh": "联合国妇女署", "kind": "taleo_rss", "value": "https://careers.unwomen.org/cw/en/rss", "group": "un"},
+# The United Nations section is collected by scripts/un_sources.py and judged by
+# scripts/opps_match.py; see those two modules for the organisation list and the
+# scoring rules. What is left here are the company boards, which stay on the old
+# title-matching path because they publish internships and nothing else.
+COMPANY_SOURCES = [
     {"name": "Amazon", "name_zh": "亚马逊", "kind": "amazon_json", "value": "https://www.amazon.jobs/en/search.json?result_limit=30&base_query=intern", "group": "company"},
     {"name": "Airbnb", "name_zh": "爱彼迎", "kind": "greenhouse", "value": "airbnb", "group": "company"},
     {"name": "Stripe", "name_zh": "Stripe", "kind": "greenhouse", "value": "stripe", "group": "company"},
     {"name": "Anthropic", "name_zh": "Anthropic", "kind": "greenhouse", "value": "anthropic", "group": "company"},
     {"name": "Cloudflare", "name_zh": "Cloudflare", "kind": "greenhouse", "value": "cloudflare", "group": "company"},
 ]
+
+# A consultancy is not an internship and is kept out of the internship list; the
+# exception the profile asks for is a consultancy that says in writing that it
+# takes doctoral, postgraduate or early-career researchers. Those are stored
+# anyway, tagged "extended", so they can be shown apart rather than mixed in.
+UN_INTERNSHIP_TYPES = {"internship", "traineeship", "fellowship", "young_professional"}
+EARLY_CAREER_RE = re.compile(
+    r"\b(?:phd|doctoral|doctorate|postgraduate|graduate student|early[- ]career"
+    r"|recent graduate|master'?s (?:degree|student)|master'?s level)\b",
+    re.I,
+)
+# An opening missing from its organisation's listing for this many days has been
+# taken down. Long enough that one broken career site cannot close anything.
+UNSEEN_DAYS = 21
+# "Closing soon" is seven days; three days or fewer is urgent enough to say so.
+URGENT_DAYS = 3
 
 # Academic sources: official pages of journalism/communication departments at
 # QS top-50 universities where exchange, visiting and joint programmes appear.
@@ -124,9 +150,18 @@ def normalise_url(url: str, base: str | None = None) -> str:
 
 
 def item_key(item: dict) -> str:
-    url = re.sub(r"[#?].*$", "", item["url"].rstrip("/").lower())
-    title = re.sub(r"[^a-z0-9\u3400-\u9fff]+", "", item["title"].lower())
-    return url or title
+    """The identity an archived item is deduplicated by.
+
+    A UN opening carries its organisation and job id, which is authoritative:
+    the same post seen on two platforms still has one id. Everything else falls
+    back to the URL and then to a normalised title.
+    """
+    if item.get("org") and item.get("job_id"):
+        return f"{item['org']}:{item['job_id']}"
+    url = re.sub(r"[#?].*$", "", (item.get("url") or "").rstrip("/").lower())
+    if url:
+        return url
+    return re.sub(r"[^a-z0-9\u3400-\u9fff]+", "", (item.get("title") or "").lower())
 
 
 SYSTEM_PROMPTS = {
@@ -348,19 +383,6 @@ def write_archive(archive: dict) -> None:
         raise
 
 
-def collect_taleo_rss(source: dict) -> list[dict]:
-    root = ET.fromstring(fetch(source["value"]))
-    results = []
-    for entry in root.findall(".//item"):
-        title = clean_text(entry.findtext("title", ""))
-        link = normalise_url(clean_text(entry.findtext("link", "")))
-        if title and link and INTERN_RE.search(title):
-            results.append({"title": title, "url": link})
-            if len(results) >= MAX_NEW_PER_SOURCE:
-                break
-    return results
-
-
 def collect_greenhouse(source: dict) -> list[dict]:
     payload = json.loads(fetch(f"https://boards-api.greenhouse.io/v1/boards/{source['value']}/jobs"))
     results = []
@@ -417,8 +439,209 @@ def collect_academia(source: dict) -> list[dict]:
     return results
 
 
+# --- United Nations pipeline -----------------------------------------------
+def un_summary(record: dict, result: dict, deadline: str) -> tuple[str, str]:
+    """One summary line per language, built from the fields already extracted.
+
+    Both lines are generated, not translated: the archive has to read correctly
+    in Chinese on a day when no translation provider answers, and every word in
+    them comes from data the collector actually found.
+    """
+    place_zh = opps_match.location_zh(result["city"], result["country"])
+    en = [record["org_name"], record["location"] or "Location not stated"]
+    zh = [record["org_zh"], place_zh or record["location"] or "地点未说明"]
+    if result["mode"] != "unknown":
+        en.append(result["mode"].capitalize())
+        zh.append(opps_match.MODE_ZH.get(result["mode"], ""))
+    if deadline:
+        en.append(f"Apply by {deadline}")
+        zh.append(f"截止 {deadline}")
+    else:
+        en.append("Deadline not stated")
+        zh.append("截止日期未说明")
+    if result["duration"]:
+        en.append(result["duration"])
+        zh.append(result["duration"].replace("months", "个月").replace("month", "个月")
+                  .replace("weeks", "周").replace("week", "周")
+                  .replace("years", "年").replace("year", "年"))
+    en.append(opps_match.STIPEND_EN.get(result["stipend"], "Stipend not stated"))
+    zh.append(opps_match.STIPEND_ZH.get(result["stipend"], "津贴未说明"))
+    return " · ".join(part for part in en if part), " · ".join(part for part in zh if part)
+
+
+def build_un_item(record: dict, result: dict, today: date) -> dict:
+    """Turn one scored opening into the record the page renders."""
+    deadline = record["deadline"] or result["deadline"]
+    remaining = opps_match.days_left(deadline, today)
+    status = opps_match.status_of(deadline, today)
+    detail, detail_zh = un_summary(record, result, deadline)
+    extended = result["type"] == "consultancy"
+    return {
+        "title": record["title"],
+        "url": record["url"],
+        "detail": detail,
+        "detail_zh": detail_zh,
+        "source": record["org_name"],
+        "source_zh": record["org_zh"],
+        "org": record["org"],
+        "group": "un",
+        "job_id": record["job_id"],
+        "type": result["type"],
+        "type_label": opps_match.TYPE_LABELS.get(result["type"], "Opening"),
+        "type_zh": opps_match.TYPE_ZH.get(result["type"], "其他"),
+        "areas": result["areas"],
+        "areas_zh": opps_match.areas_zh(result["areas"]),
+        "location": record["location"],
+        "city": result["city"],
+        "country": result["country"],
+        "region": result["region"],
+        "mode": result["mode"],
+        "mode_zh": opps_match.MODE_ZH.get(result["mode"], "未说明"),
+        "department": record["department"],
+        "eligibility": result["eligibility"],
+        "eligibility_zh": "、".join(
+            opps_match.ELIGIBILITY_ZH.get(key, key) for key in result["eligibility"]
+        ),
+        "phd_ok": result["phd_ok"],
+        "duration": result["duration"],
+        "stipend": result["stipend"],
+        "stipend_zh": opps_match.STIPEND_ZH.get(result["stipend"], "津贴未说明"),
+        "stipend_amount": result["stipend_amount"],
+        "language": result["language"],
+        "posted": record["posted"],
+        "deadline": deadline,
+        "days_left": remaining,
+        # Booleans the page filters on. Liquid cannot compare a date to today,
+        # so "closing soon" and the score bands are decided here instead.
+        "open": status != "closed",
+        "closing": remaining is not None and 0 <= remaining <= 7,
+        "urgent": remaining is not None and 0 <= remaining <= URGENT_DAYS and status != "closed",
+        "score90": result["score"] >= 90,
+        "score80": result["score"] >= 80,
+        "score70": result["score"] >= 70,
+        "status": status,
+        "status_zh": opps_match.STATUS_ZH.get(status, "未说明"),
+        # What the page sorts "newly published" by: the organisation's own
+        # posting date when it prints one, otherwise the day we first saw it.
+        "sort_date": record["posted"] or today.isoformat(),
+        "found": today.isoformat(),
+        "score": result["score"],
+        "tier": result["tier"],
+        "tier_zh": result["tier_zh"],
+        "tier_en": opps_match.tier_en(result["score"]),
+        "reasons": result["reasons"],
+        "reasons_zh": result["reasons_zh"],
+        "extended": extended,
+        "excluded": result["excluded"],
+    }
+
+
+def collect_un_candidates(today: date) -> tuple[list[dict], set[str]]:
+    """Fetch, judge, deduplicate and rank the UN openings.
+
+    The order is the order the page promises: match first, then how soon it
+    closes, then how recently it appeared. A closing deadline is the tie-break
+    that makes "worth applying to" and "about to close" the same list.
+
+    The second return value is every opening the run saw, filtered or not. The
+    archive is checked against it each day: an opening that stops appearing has
+    been taken down, and only the run that saw the listing can know that.
+    """
+    records = un_sources.collect_all()
+    kept: dict[str, dict] = {}
+    seen: set[str] = set()
+    for record in records:
+        identity, fallback = opps_match.dedupe_key(
+            record["org"], record["job_id"], record["url"], record["title"]
+        )
+        if identity:
+            seen.add(identity)
+        result = opps_match.score_opening(
+            title=record["title"],
+            description=record["description"],
+            org_code=record["org"],
+            org_priority=record["priority"],
+            department=record["department"],
+            location=record["location"],
+            today=today,
+        )
+        if result["excluded"] or result["score"] < opps_match.MIN_SCORE:
+            continue  # finance, HR, engineering and anything else off-profile
+        if result["type"] in UN_INTERNSHIP_TYPES:
+            pass
+        elif result["type"] == "consultancy" and EARLY_CAREER_RE.search(
+            f"{record['title']} {record['description']}"
+        ):
+            pass  # a consultancy that explicitly takes doctoral researchers
+        else:
+            continue
+        item = build_un_item(record, result, today)
+        key = identity or fallback
+        # Same opening seen twice: keep the better described copy, and never
+        # let an aggregator's link replace the organisation's own.
+        previous = kept.get(key)
+        if previous is None or item["score"] > previous["score"] or (
+            item["score"] == previous["score"] and len(item["detail"]) > len(previous["detail"])
+        ):
+            kept[key] = item
+    ranked = sorted(
+        kept.values(),
+        key=lambda item: (
+            -item["score"],
+            item["deadline"] or "9999-12-31",
+            -(int(item["posted"].replace("-", "") or 0) if item["posted"] else 0),
+        ),
+    )
+    per_org: dict[str, int] = {}
+    limited = []
+    for item in ranked:
+        already = per_org.get(item["org"], 0)
+        if already >= MAX_UN_PER_ORG:
+            continue
+        per_org[item["org"]] = already + 1
+        limited.append(item)
+    return limited[:MAX_UN_PER_DAY], seen
+
+
+def refresh_un_items(sections: dict, seen: set[str], today: date) -> int:
+    """Re-derive everything about a stored opening that depends on today.
+
+    A stored record keeps the day it was collected; its deadline moves. Run
+    daily, this is what turns an open post into a closed one, and what notices
+    a post that has been taken down: an opening missing from the listing for
+    UNSEEN_DAYS runs has gone, however far away its deadline was.
+    """
+    changed = 0
+    for day in sections.get("internships") or []:
+        for item in day.get("items", []):
+            if item.get("group") != "un":
+                continue
+            identity = f"{item.get('org', '')}:{item.get('job_id', '')}"
+            if identity in seen and item.get("last_seen") != today.isoformat():
+                item["last_seen"] = today.isoformat()
+                changed += 1
+            deadline = item.get("deadline") or ""
+            remaining = opps_match.days_left(deadline, today)
+            status = opps_match.status_of(deadline, today)
+            last_seen = item.get("last_seen") or ""
+            if last_seen and opps_match.days_left(last_seen, today) is not None:
+                if opps_match.days_left(last_seen, today) <= -UNSEEN_DAYS:
+                    status = "closed"  # gone from the listing, not just past its date
+            for field, value in (
+                ("status", status),
+                ("status_zh", opps_match.STATUS_ZH.get(status, "未说明")),
+                ("days_left", remaining),
+                ("open", status != "closed"),
+                ("closing", remaining is not None and 0 <= remaining <= 7),
+                ("urgent", remaining is not None and 0 <= remaining <= URGENT_DAYS and status != "closed"),
+            ):
+                if item.get(field) != value:
+                    item[field] = value
+                    changed += 1
+    return changed
+
+
 COLLECTORS = {
-    "taleo_rss": collect_taleo_rss,
     "greenhouse": collect_greenhouse,
     "amazon_json": collect_amazon,
 }
@@ -482,6 +705,45 @@ def normalise_days(days: list[dict]) -> list[dict]:
     return normalised
 
 
+def migrate_un_items(sections: dict) -> int:
+    """Give UN items collected before scoring existed the fields the page filters on.
+
+    The page sorts and filters on `score`, `status` and `open`, and Liquid
+    cannot compare a missing value safely, so the archive is given explicit
+    values instead of nils. An item saved before scoring existed is judged on
+    what was stored — its title, which is the one field every source
+    provides — so it takes its real place in the ranking instead of showing
+    a bare zero.
+    """
+    registry = {source["name"].lower(): source for source in un_sources.SOURCES}
+    changed = 0
+    for day in sections.get("internships") or []:
+        for item in day.get("items", []):
+            if item.get("group") != "un":
+                continue
+            if "status" not in item:
+                item["status"] = "open"
+                changed += 1
+            if "open" not in item:
+                item["open"] = item["status"] != "closed"
+                changed += 1
+            if not isinstance(item.get("score"), int):
+                source = registry.get((item.get("source") or "").lower(), {})
+                judged = opps_match.score_opening(
+                    title=item.get("title", ""),
+                    org_code=source.get("code", ""),
+                    org_priority=source.get("priority", 2),
+                    location=item.get("location", ""),
+                )
+                item["score"] = judged["score"]
+                item["tier"] = judged["tier"]
+                item["tier_zh"] = judged["tier_zh"]
+                item["reasons"] = judged["reasons"]
+                item["reasons_zh"] = judged["reasons_zh"]
+                changed += 1
+    return changed
+
+
 def append_new(days: list[dict], candidates: list[dict], today: str) -> int:
     known = archive_keys(days)
     fresh: list[dict] = []
@@ -530,6 +792,7 @@ def main(argv: list[str] | None = None) -> int:
     # normalising repair anything" comparison needs the pre-normalised state.
     before = {name: copy.deepcopy(value) for name, value in normalised.items()}
     sections.update(normalised)
+    migrated = migrate_un_items(sections)
 
     translator = build_translator()
 
@@ -568,14 +831,20 @@ def main(argv: list[str] | None = None) -> int:
 
     today = datetime.now(TZ).strftime("%Y-%m-%d")
 
-    intern_candidates = gather(INTERN_SOURCES, lambda s: COLLECTORS[s["kind"]](s))
+    un_candidates, seen = collect_un_candidates(datetime.now(TZ).date())
+    company_candidates = gather(COMPANY_SOURCES, lambda s: COLLECTORS[s["kind"]](s))
+    intern_candidates = un_candidates + company_candidates
     academia_candidates = gather(ACADEMIA_SOURCES, collect_academia)
+    # Before anything new is added: yesterday's openings are a day older, and a
+    # deadline that has passed must not still read "open".
+    refreshed = refresh_un_items(sections, seen, datetime.now(TZ).date())
 
     added_intern = append_new(sections["internships"], intern_candidates, today)
     added_academia = append_new(sections["academia"], academia_candidates, today)
 
     print(f"candidates: {len(intern_candidates)} internships, {len(academia_candidates)} academia")
     print(f"new items: internships={added_intern}, academia={added_academia}")
+    print(f"status refreshed on {refreshed} stored field(s)")
 
     # Whatever is left of the budget goes to the items just collected.
     remaining = max(args.max_translations - history["titles"] - history["details"], 0)
@@ -601,7 +870,7 @@ def main(argv: list[str] | None = None) -> int:
     # stays exactly as it was. It is only rewritten when the day added
     # something, when normalising repaired a duplicate date or item, or when a
     # translation was filled in.
-    repaired = any(before[name] != sections[name] for name in before)
+    repaired = any(before[name] != sections[name] for name in before) or migrated or refreshed
     if added_intern == 0 and added_academia == 0 and not repaired and not (fresh["titles"] or fresh["details"]):
         print("nothing new to record; archive left unchanged")
         return 0

@@ -3,7 +3,7 @@
           data-expand-label="{% if page.lang == 'zh' %}展开全部日期{% else %}Expand every day{% endif %}"
           data-collapse-label="{% if page.lang == 'zh' %}收起全部日期{% else %}Collapse every day{% endif %}"
           aria-expanded="false">{% if page.lang == 'zh' %}展开全部日期{% else %}Expand every day{% endif %}</button>
-  <span class="opps-toolbar__hint">{% if page.lang == 'zh' %}最新一天默认展开，更早的记录收起保存。{% else %}The newest day starts open; earlier days stay folded away.{% endif %}</span>
+  <span class="opps-toolbar__hint">{% if page.lang == 'zh' %}仅作用于按日期归档的板块：最新一天默认展开，更早的记录收起保存。{% else %}Applies to the day-filed sections: the newest day starts open, earlier days stay folded away.{% endif %}</span>
 </div>
 <script>
   (function () {
@@ -18,8 +18,10 @@
        not exist yet when the script runs. Look them up on demand instead of
        caching an empty list at start-up, and bind to them once the document
        is parsed. */
+    /* Day panels only: the shortlist cards use <details> for their match
+       reasons, and "expand every day" must not open those. */
     function panels() {
-      return Array.prototype.slice.call(document.querySelectorAll(".opps-archive details"));
+      return Array.prototype.slice.call(document.querySelectorAll(".opps-archive details.opps-day"));
     }
     function allOpen(list) {
       return list.every(function (panel) { return panel.open; });

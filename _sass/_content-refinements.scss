@@ -375,6 +375,175 @@ body.home-page .page__content .news-window h2 {
 .opps-toggle:hover { border-color: #0071e3; color: #0071e3; }
 .opps-toolbar__hint { color: #86868b; font-size: 0.68rem; }
 
+/* --- United Nations shortlist: modules, cards, filters ------------------- */
+.opps-section__note { margin: -0.35rem 0 0; color: #6e6e73; font-size: 0.72rem; line-height: 1.65; }
+
+.opps-modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+}
+/* A column narrower than the grid minimum would overflow on a small phone,
+   so the modules stack instead of forcing a horizontal scroll. */
+@media (max-width: 22rem) {
+  .opps-modules { grid-template-columns: 1fr; }
+}
+.opps-module {
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+  padding: 1.1rem clamp(1rem, 1.8vw, 1.35rem) 1.25rem;
+  border: 1px solid rgba(29, 29, 31, 0.09);
+  border-radius: 18px;
+  background: #fff;
+}
+.opps-module__title {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #1d1d1f;
+}
+.opps-module__note { margin: -0.4rem 0 0; color: #86868b; font-size: 0.66rem; }
+.opps-module .opps-cards { gap: 0.7rem; }
+.opps-module .opps-card { padding: 0.8rem 0.9rem; }
+
+.opps-cards { display: grid; gap: 0.85rem; }
+
+.opps-card {
+  display: grid;
+  gap: 0.6rem;
+  padding: 1rem clamp(1rem, 1.8vw, 1.35rem);
+  border: 1px solid rgba(29, 29, 31, 0.09);
+  border-radius: 16px;
+  background: #fff;
+  transition: border-color 0.18s ease;
+}
+.opps-card:hover { border-color: rgba(0, 113, 227, 0.45); }
+.opps-card--urgent { border-color: rgba(215, 0, 21, 0.35); }
+.opps-card--closed { background: #fafafa; opacity: 0.78; }
+
+.opps-card__head { display: grid; grid-template-columns: auto 1fr; gap: 0.95rem; align-items: start; }
+.opps-card__score {
+  display: grid;
+  justify-items: center;
+  gap: 0.05rem;
+  min-width: 3.6rem;
+  margin: 0;
+  padding: 0.35rem 0.5rem;
+  border-radius: 12px;
+  background: #f5f5f7;
+  line-height: 1.1;
+}
+.opps-card__score b { font-size: 1.15rem; font-weight: 600; color: #6e6e73; }
+.opps-card__score span { font-size: 0.56rem; color: #86868b; }
+.opps-card__score em {
+  font-size: 0.58rem;
+  font-style: normal;
+  color: #86868b;
+  text-align: center;
+}
+.opps-card__score--exceptional { background: rgba(0, 113, 227, 0.08); }
+.opps-card__score--exceptional b { color: #0071e3; }
+.opps-card__score--high b { color: #1d1d1f; }
+
+.opps-card__body { display: grid; gap: 0.3rem; min-width: 0; }
+.opps-card__title { margin: 0; font-size: 0.86rem; font-weight: 600; line-height: 1.45; }
+.opps-card__title a { color: #1d1d1f; text-decoration: none; }
+.opps-card__title a:hover { color: #0071e3; }
+.opps-card__org, .opps-card__detail, .opps-card__foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  font-size: 0.68rem;
+  color: #6e6e73;
+}
+.opps-card__detail { color: #86868b; }
+.opps-card__orgname { font-weight: 600; color: #1d1d1f; }
+.opps-card__place { color: #86868b; }
+
+.opps-chip {
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: #f5f5f7;
+  color: #6e6e73;
+  font-size: 0.62rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.opps-chip--type { background: rgba(0, 113, 227, 0.08); color: #0071e3; }
+.opps-chip--mode { background: rgba(29, 29, 31, 0.05); }
+
+.opps-card__tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0; padding: 0; list-style: none; }
+.opps-tag {
+  padding: 0.12rem 0.5rem;
+  border: 1px solid rgba(29, 29, 31, 0.1);
+  border-radius: 999px;
+  color: #6e6e73;
+  font-size: 0.62rem;
+}
+.opps-tag--plain { border-style: dashed; }
+.opps-tag--phd { border-color: rgba(0, 113, 227, 0.35); color: #0071e3; }
+.opps-tag--ext { border-color: rgba(29, 29, 31, 0.18); color: #1d1d1f; }
+.opps-tag--urgent { border-color: rgba(215, 0, 21, 0.4); color: #d70015; font-weight: 600; }
+.opps-tag--closed { border-color: rgba(29, 29, 31, 0.12); color: #86868b; }
+
+.opps-card__reasons { font-size: 0.68rem; color: #6e6e73; }
+.opps-card__reasons > summary {
+  cursor: pointer;
+  color: #0071e3;
+  font-size: 0.66rem;
+  font-weight: 600;
+  list-style: none;
+}
+.opps-card__reasons > summary::-webkit-details-marker { display: none; }
+.opps-card__reasons > summary::marker { content: ""; }
+.opps-card__reasons > summary::before { content: "+ "; }
+.opps-card__reasons[open] > summary::before { content: "\2212  "; }
+.opps-card__reasons ul { margin: 0.35rem 0 0; padding-left: 1.05rem; display: grid; gap: 0.2rem; }
+
+.opps-card__foot { justify-content: space-between; border-top: 1px solid rgba(29, 29, 31, 0.06); padding-top: 0.5rem; }
+.opps-card__deadline { font-weight: 600; color: #1d1d1f; }
+.opps-card__left { color: #86868b; }
+.opps-card__link { margin-left: auto; color: #0071e3; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.opps-card__link:hover { text-decoration: underline; }
+
+.opps-filters {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  padding: 0.85rem clamp(0.9rem, 1.6vw, 1.2rem);
+  border: 1px solid rgba(29, 29, 31, 0.09);
+  border-radius: 14px;
+  background: #fbfbfd;
+}
+.opps-filters[hidden] { display: none; }
+.opps-filters__row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
+.opps-filters__label {
+  min-width: 4.2rem;
+  color: #86868b;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.opps-chip-btn {
+  padding: 0.22rem 0.65rem;
+  border: 1px solid rgba(29, 29, 31, 0.12);
+  border-radius: 999px;
+  background: #fff;
+  color: #1d1d1f;
+  font-size: 0.66rem;
+  cursor: pointer;
+  transition: border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+}
+.opps-chip-btn:hover { border-color: #0071e3; color: #0071e3; }
+.opps-chip-btn[aria-pressed="true"] { border-color: #0071e3; background: #0071e3; color: #fff; }
+.opps-chip-btn--reset { margin-left: auto; border-style: dashed; color: #86868b; }
+.opps-filters__count { color: #86868b; font-size: 0.64rem; font-variant-numeric: tabular-nums; }
+.opps-cards .daily-news-empty[hidden] { display: none; }
+
 /* Date filters shared by the two generated archives. */
 .archive-date-filter {
   display: flex;

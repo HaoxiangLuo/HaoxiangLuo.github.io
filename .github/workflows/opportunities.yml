@@ -7,7 +7,12 @@ on:
   push:
     branches: [master]
     paths:
+      # The collector reads the archive, but the UN shortlist is produced by
+      # the source registry and the scoring rules beside it: a change to
+      # either changes what tomorrow's page says.
       - "scripts/fetch_opportunities.py"
+      - "scripts/un_sources.py"
+      - "scripts/opps_match.py"
       - ".github/workflows/opportunities.yml"
 
 permissions:

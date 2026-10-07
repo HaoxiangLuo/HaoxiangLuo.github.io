@@ -1,0 +1,46 @@
+{# Filter chips for the United Nations shortlist.
+
+   Each chip names the value it filters on; assets/js/opps-filters.js reads
+   those values back off the cards and hides the ones that do not match. The
+   bar stays hidden until the script reveals it: without JavaScript the chips
+   would filter nothing, and a control that does nothing is worse than none.
+#}
+{% assign zh = false %}
+{% if include.lang == "zh" %}{% assign zh = true %}{% endif %}
+{% assign vocab = site.data.opps_filters %}
+
+<div class="opps-filters" data-opps-filters hidden>
+  <div class="opps-filters__row">
+    <span class="opps-filters__label">{% if zh %}机构{% else %}Organisation{% endif %}</span>
+    {% for org in vocab.orgs %}
+      <button type="button" class="opps-chip-btn" data-filter="org" data-value="{{ org.code | escape }}" aria-pressed="false">{% if zh %}{{ org.label_zh }}{% else %}{{ org.label_en }}{% endif %}</button>
+    {% endfor %}
+  </div>
+  <div class="opps-filters__row">
+    <span class="opps-filters__label">{% if zh %}方向{% else %}Direction{% endif %}</span>
+    {% for area in vocab.areas %}
+      <button type="button" class="opps-chip-btn" data-filter="areas" data-value="{{ area.code | escape }}" aria-pressed="false">{% if zh %}{{ area.label_zh }}{% else %}{{ area.label_en }}{% endif %}</button>
+    {% endfor %}
+  </div>
+  <div class="opps-filters__row">
+    <span class="opps-filters__label">{% if zh %}地点{% else %}Location{% endif %}</span>
+    {% for place in vocab.places %}
+      <button type="button" class="opps-chip-btn" data-filter="{{ place.key | escape }}" data-value="{{ place.code | escape }}" aria-pressed="false">{% if zh %}{{ place.label_zh }}{% else %}{{ place.label_en }}{% endif %}</button>
+    {% endfor %}
+  </div>
+  <div class="opps-filters__row">
+    <span class="opps-filters__label">{% if zh %}状态{% else %}Status{% endif %}</span>
+    {% for state in vocab.states %}
+      <button type="button" class="opps-chip-btn" data-filter="status" data-value="{{ state.code | escape }}" aria-pressed="false">{% if zh %}{{ state.label_zh }}{% else %}{{ state.label_en }}{% endif %}</button>
+    {% endfor %}
+  </div>
+  <div class="opps-filters__row">
+    <span class="opps-filters__label">{% if zh %}匹配度{% else %}Match{% endif %}</span>
+    {% for band in vocab.bands %}
+      <button type="button" class="opps-chip-btn" data-filter="score" data-value="{{ band.code | escape }}" aria-pressed="false">{% if zh %}{{ band.label_zh }}{% else %}{{ band.label_en }}{% endif %}</button>
+    {% endfor %}
+    <button type="button" class="opps-chip-btn opps-chip-btn--reset" data-opps-reset>{% if zh %}清除筛选{% else %}Clear{% endif %}</button>
+    <span class="opps-filters__count" data-opps-count></span>
+  </div>
+</div>
+<script src="{{ base_path }}/assets/js/opps-filters.js"></script>

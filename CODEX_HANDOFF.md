@@ -190,15 +190,39 @@
 
 - 数据文件：`_data/opportunities.json`
 - 抓取脚本：`scripts/fetch_opportunities.py`
+- 联合国来源注册表：`scripts/un_sources.py`（20 个机构，按发布平台各写一个采集器）
+- 评分与筛选规则：`scripts/opps_match.py`（100 分制，低于 60 分不入库）
+- 筛选词表：`_data/opps_filters.yml`
+- 卡片模板：`_includes/opps-card.html`；筛选栏：`_includes/opps-filters.html` + `assets/js/opps-filters.js`
 - 自动任务：`.github/workflows/opportunities.yml`
 - 页面：`_pages/opportunities.html`、`_pages/opportunities-zh.html`
 
 任务每天从官方信息源收集两个板块，按上海时区日期去重后追加保存，最多保留 180 天：
 
-1. 实习资讯：页面内再分为"联合国实习"与"企业实习"两个子板块（条目带 `group` 字段：`un` / `company`）。来源为联合国（UNICEF、UN Women）与知名外企（Amazon、Airbnb、Stripe、Anthropic、Cloudflare）的官方招聘接口，仅保留标题含 "intern" 的职位。
-2. 院校资讯：QS 前 50 高校新闻传播院系官方页面（牛津 RISJ、剑桥 POLIS、哈佛 Shorenstein、NYU、斯坦福、USC Annenberg、香港大学 JMSC、威斯康星麦迪逊、南洋理工 WKWSCI），提取含 visiting、exchange、joint、fellowship、studentship 等关键词的条目。
+1. 联合国机会：`un_sources.collect_all()` 抓全部机构 → `opps_match.score_opening()` 打分 → 按「匹配度降序、截止日期升序、发布时间降序」排序 → 单机构每天最多 6 条。入库门槛：类型属于实习/培训实习/研究资助/青年专业人员，或明确接受博士、研究生、早期职业研究者的咨询岗（标 `extended`，页面单列「拓展机会」）；分数 ≥ 60。财务、人力资源、工程、医疗、后勤、采购、法务等一律不收录。
+2. 企业实习：Amazon、Airbnb、Stripe、Anthropic、Cloudflare 的官方招聘接口，保留标题含 "intern" 的职位。
+3. 院校资讯：QS 前 50 高校新闻传播院系官方页面（牛津 RISJ、剑桥 POLIS、哈佛 Shorenstein、NYU、斯坦福、USC Annenberg、香港大学 JMSC、威斯康星麦迪逊、南洋理工 WKWSCI），提取含 visiting、exchange、joint、fellowship、studentship 等关键词的条目。
 
-某天没有新信息时，脚本不修改数据文件，工作流检测到无差异即跳过提交。已收录的条目按 URL 去重，不会重复出现。新增信息源时编辑脚本顶部的 `INTERN_SOURCES` / `ACADEMIA_SOURCES` 列表即可。
+每天运行还会**刷新已收录条目的状态**（`refresh_un_items`）：重算剩余天数、`open` / `closing` / `urgent` / `status`，超过截止日期的转为 `closed`（页面移到「已截止」），连续 21 天未在机构列表中出现的也视为下架。新增机构时编辑 `un_sources.SOURCES`；改评分权重、关键词或加分规则时改 `opps_match`。
+
+某天没有新信息且状态没有变化，脚本不修改数据文件，工作流检测到无差异即跳过提交。
+
+### 评分模型的两个坑（改 opps_match 前必读）
+
+- **总分必须在封顶之后计算。** `score_opening()` 会按「标题是否点名方向」给 direction / function 封顶，但封顶只改变量本身。先求和再封顶的话，封顶等于没生效——曾因此让「循环经济实习」凭描述里的零散词拿到 72 分。现在的代码先封顶、后求和。
+- **长描述里的零散命中不算方向。** 几千字的招聘启事几乎必然出现 communication / research / data，机构名（International Telecommunication Union、UN Institute for Training and Research）尤其容易误判成传播岗或研究岗。三档处理：标题点名方向 → 按实际方向打分；标题没点名但描述里有强主题词 → 中间档；两者都没有 → 封顶很低，通常直接掉到 60 分以下。
+- **旧条目迁移时会用标题补评分。** 评分功能上线前存的条目只有标题和摘要，没有正文，因此分数天然偏低；页面用 `item.score >= 60` 过滤，低于门槛的不会出现在主列表，但数据仍留在归档里。
+
+### 联合国抓取的两个已知限制
+
+- **careers.un.org 的搜索接口会整段故障**（POST 返回 504，服务端超时，非本机问题）。UN 秘书处、UNEP、UN-Habitat、UNCTAD、OHCHR 五个源都走它；第一个失败后其余当天直接跳过（`_FAILED_HOSTS`），恢复后自动重新生效。
+- **UNV、世界银行、IFAD、UNAIDS 没有可机器读取的列表**（无 feed、无公开 JSON、无服务端渲染页面），因此不在注册表里。第三方聚合站只作补充且必须保留机构名与官方链接，目前未使用。
+
+### 联合国条目字段（改动前必读）
+
+条目除 `title` / `url` / `source` 外还带：机构代码 `org`、岗位类型 `type`、方向 `areas`、地点 `location` / `city` / `country` / `region`、工作方式 `mode`（remote / hybrid / onsite）、部门 `department`、资格 `eligibility`、时长 `duration`、津贴 `stipend`（未说明即 `unknown`，绝不推断）、截止日期 `deadline`、剩余天数 `days_left`、状态 `status`、匹配度 `score` 与档位 `tier`、匹配理由 `reasons` / `reasons_zh`。
+
+中文摘要、标签与匹配理由由**固定模板生成**，不经过模型，因此没有配置翻译服务时中文页也是完整的；岗位标题仍保留发布方原文，等译文补齐。
 
 ### 资讯条目双语字段（改动前必读）
 

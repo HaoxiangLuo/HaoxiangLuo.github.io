@@ -7,74 +7,126 @@ lang: en
 translation_url: /zh/opportunities/
 ---
 
-<p class="daily-news-intro">A daily-updated record of internships at the United Nations and leading global companies, together with PhD exchange, visiting and joint-training opportunities announced by journalism and communication departments at QS top-50 universities. Sections are collected automatically from official sources. Everything collected is kept: each day is filed under its own date, the newest day starts open and earlier days stay folded away, so a later run never overwrites an earlier one.</p>
+<p class="daily-news-intro">A daily-updated shortlist of United Nations internships, traineeships and fellowships for a researcher in communication, computational communication and digital governance. Twenty UN organisations are read from their own career sites; every opening is then scored out of 100 on direction, function, topics, eligibility, working mode and organisation, and anything below 60 is never stored — the aim is to miss an irrelevant post rather than to admit finance, HR or engineering. Beside them sit PhD exchange, visiting and joint-training announcements from journalism and communication departments at QS top-50 universities. Nothing collected is ever thrown away: each day is filed under its own date and a later run never overwrites an earlier one.</p>
 
 {% assign opps = site.data.opportunities %}
+{# Flatten the archive: the day buckets are how items are stored, not how they
+   are read. The shortlist is ranked by match, not by the day it was found. #}
+{% assign un_items = "" | split: "," %}
+{% for day in opps.internships %}{% assign day_un = day.items | where: "group", "un" %}{% assign un_items = un_items | concat: day_un %}{% endfor %}
+{% assign un_live = un_items | where_exp: "item", "item.status != 'closed' and item.score >= 60" %}
+{% assign by_score = un_live | sort: "score" | reverse %}
+{% assign exceptional = un_live | where: "score90", true | sort: "score" | reverse %}
+{% assign closing = un_live | where: "closing", true | sort: "days_left" %}
+{% assign latest = un_live | sort: "sort_date" | reverse %}
+{% assign remote = un_live | where: "mode", "remote" %}
+{% assign expired = un_items | where: "status", "closed" %}
+{% assign extended = un_items | where: "extended", true %}
+
 {% include archive-date-filter.html %}
 {% include opps-archive-controls.html %}
 
 <div class="opps-archive">
-  <section class="opps-section" aria-labelledby="opps-intern-title">
-    <h2 id="opps-intern-title" class="opps-section__title">Internships</h2>
-    {% assign un_total = 0 %}
-    {% for day in opps.internships %}{% assign day_un = day.items | where: "group", "un" %}{% assign un_total = un_total | plus: day_un.size %}{% endfor %}
-    {% assign company_total = 0 %}
-    {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% assign company_total = company_total | plus: day_co.size %}{% endfor %}
-    {% assign un_first = "" %}
-    {% for day in opps.internships %}{% assign day_un = day.items | where: "group", "un" %}{% if day_un.size > 0 and un_first == "" %}{% assign un_first = day.date %}{% endif %}{% endfor %}
-    {% assign company_first = "" %}
-    {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% if day_co.size > 0 and company_first == "" %}{% assign company_first = day.date %}{% endif %}{% endfor %}
-    <div class="opps-subblock">
-      <h3 class="opps-subtitle">United Nations <span class="opps-subtitle__count">{{ un_total }}</span></h3>
-      <div class="daily-news-archive">
-        {% if un_total > 0 %}
-          {% for day in opps.internships %}
-            {% assign group_items = day.items | where: "group", "un" %}
-            {% if group_items.size > 0 %}
-              <details class="daily-news-day opps-day" data-filter-date="{{ day.date }}"{% if day.date == un_first %} open{% endif %}>
-                <summary class="opps-day__summary">
-                  <time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time>
-                  <span class="opps-day__count">{{ group_items.size }} new</span>
-                  <span class="opps-day__chevron" aria-hidden="true"></span>
-                </summary>
-                <ol>
-                  {% for item in group_items %}
-                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_en | default: item.title | escape }}{% assign detail_text = item.detail_en | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
-                  {% endfor %}
-                </ol>
-              </details>
-            {% endif %}
-          {% endfor %}
+  {% if un_live.size > 0 %}
+  <section class="opps-section" aria-labelledby="opps-pick-title">
+    <h2 id="opps-pick-title" class="opps-section__title">Where to apply</h2>
+    <p class="opps-section__note">Four answers to the three questions the page exists for: what suits the profile, what is most worth applying to, and what is about to close.</p>
+    <div class="opps-modules">
+      <div class="opps-module">
+        <h3 class="opps-module__title">Exceptional matches <span class="opps-subtitle__count">{{ exceptional.size }}</span></h3>
+        <p class="opps-module__note">Scored 90 or above.</p>
+        {% if exceptional.size > 0 %}
+          <div class="opps-cards">{% for item in exceptional limit: 6 %}{% include opps-card.html item=item lang="en" %}{% endfor %}</div>
         {% else %}
-          <p class="daily-news-empty">Internships across the UN system will appear here.</p>
+          <p class="daily-news-empty">Nothing scores 90 or above today; the highest matches are listed below.</p>
+        {% endif %}
+      </div>
+      <div class="opps-module">
+        <h3 class="opps-module__title">Closing soon <span class="opps-subtitle__count">{{ closing.size }}</span></h3>
+        <p class="opps-module__note">Seven days or fewer left to apply.</p>
+        {% if closing.size > 0 %}
+          <div class="opps-cards">{% for item in closing limit: 6 %}{% include opps-card.html item=item lang="en" %}{% endfor %}</div>
+        {% else %}
+          <p class="daily-news-empty">Nothing closes within the next seven days.</p>
+        {% endif %}
+      </div>
+      <div class="opps-module">
+        <h3 class="opps-module__title">Newly published <span class="opps-subtitle__count">{{ latest.size }}</span></h3>
+        <p class="opps-module__note">Most recent first.</p>
+        <div class="opps-cards">{% for item in latest limit: 6 %}{% include opps-card.html item=item lang="en" %}{% endfor %}</div>
+      </div>
+      <div class="opps-module">
+        <h3 class="opps-module__title">Remote <span class="opps-subtitle__count">{{ remote.size }}</span></h3>
+        <p class="opps-module__note">Home-based and fully remote assignments.</p>
+        {% if remote.size > 0 %}
+          <div class="opps-cards">{% for item in remote limit: 6 %}{% include opps-card.html item=item lang="en" %}{% endfor %}</div>
+        {% else %}
+          <p class="daily-news-empty">No remote opening is open at the moment.</p>
         {% endif %}
       </div>
     </div>
-    <div class="opps-subblock">
-      <h3 class="opps-subtitle">Global Companies <span class="opps-subtitle__count">{{ company_total }}</span></h3>
-      <div class="daily-news-archive">
-        {% if company_total > 0 %}
-          {% for day in opps.internships %}
-            {% assign group_items = day.items | where: "group", "company" %}
-            {% if group_items.size > 0 %}
-              <details class="daily-news-day opps-day" data-filter-date="{{ day.date }}"{% if day.date == company_first %} open{% endif %}>
-                <summary class="opps-day__summary">
-                  <time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time>
-                  <span class="opps-day__count">{{ group_items.size }} new</span>
-                  <span class="opps-day__chevron" aria-hidden="true"></span>
-                </summary>
-                <ol>
-                  {% for item in group_items %}
-                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_en | default: item.title | escape }}{% assign detail_text = item.detail_en | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
-                  {% endfor %}
-                </ol>
-              </details>
-            {% endif %}
-          {% endfor %}
-        {% else %}
-          <p class="daily-news-empty">Internships at leading global companies will appear here.</p>
-        {% endif %}
-      </div>
+  </section>
+
+  <section class="opps-section" aria-labelledby="opps-un-title">
+    <h2 id="opps-un-title" class="opps-section__title">United Nations <span class="opps-subtitle__count">{{ un_live.size }}</span></h2>
+    <p class="opps-section__note">Every opening that scored 60 or above, highest match first. Filter by organisation, direction, place, status or score.</p>
+    {% include opps-filters.html lang="en" %}
+    <div class="opps-cards">
+      {% for item in by_score %}{% include opps-card.html item=item lang="en" %}{% endfor %}
+      <p class="daily-news-empty" data-opps-empty hidden>No opening matches these filters.</p>
+    </div>
+  </section>
+  {% else %}
+  <section class="opps-section" aria-labelledby="opps-un-title">
+    <h2 id="opps-un-title" class="opps-section__title">United Nations</h2>
+    <p class="daily-news-empty">The first United Nations openings appear here after the automated collection task runs.</p>
+  </section>
+  {% endif %}
+
+  {% if extended.size > 0 %}
+  <section class="opps-section" aria-labelledby="opps-ext-title">
+    <h2 id="opps-ext-title" class="opps-section__title">Extended opportunities <span class="opps-subtitle__count">{{ extended.size }}</span></h2>
+    <p class="opps-section__note">Consultancies, kept only when the notice says in writing that doctoral, postgraduate or early-career researchers may apply. They are not internships and are listed apart from them.</p>
+    <div class="opps-cards">{% for item in extended %}{% include opps-card.html item=item lang="en" %}{% endfor %}</div>
+  </section>
+  {% endif %}
+
+  {% if expired.size > 0 %}
+  <section class="opps-section" aria-labelledby="opps-gone-title">
+    <h2 id="opps-gone-title" class="opps-section__title">Closed <span class="opps-subtitle__count">{{ expired.size }}</span></h2>
+    <p class="opps-section__note">Deadline passed. Kept for the record; open notices stay above.</p>
+    <div class="opps-cards">{% for item in expired %}{% include opps-card.html item=item lang="en" %}{% endfor %}</div>
+  </section>
+  {% endif %}
+
+  <section class="opps-section" aria-labelledby="opps-company-title">
+    <h2 id="opps-company-title" class="opps-section__title">Global Companies</h2>
+    {% assign company_total = 0 %}
+    {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% assign company_total = company_total | plus: day_co.size %}{% endfor %}
+    {% assign company_first = "" %}
+    {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% if day_co.size > 0 and company_first == "" %}{% assign company_first = day.date %}{% endif %}{% endfor %}
+    <div class="daily-news-archive">
+      {% if company_total > 0 %}
+        {% for day in opps.internships %}
+          {% assign group_items = day.items | where: "group", "company" %}
+          {% if group_items.size > 0 %}
+            <details class="daily-news-day opps-day" data-filter-date="{{ day.date }}"{% if day.date == company_first %} open{% endif %}>
+              <summary class="opps-day__summary">
+                <time datetime="{{ day.date }}">{{ day.date | date: "%B %-d, %Y" }}</time>
+                <span class="opps-day__count">{{ group_items.size }} new</span>
+                <span class="opps-day__chevron" aria-hidden="true"></span>
+              </summary>
+              <ol>
+                {% for item in group_items %}
+                  <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_en | default: item.title | escape }}{% assign detail_text = item.detail_en | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                {% endfor %}
+              </ol>
+            </details>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <p class="daily-news-empty">Internships at leading global companies will appear here.</p>
+      {% endif %}
     </div>
   </section>
 
@@ -103,4 +155,4 @@ translation_url: /zh/opportunities/
   </section>
 </div>
 
-<p class="daily-news-note">Entries are indexed automatically from the official career pages and department sites of the listed organisations. Titles and links belong to the original publishers; details such as deadlines and eligibility are subject to the official announcements. Inclusion does not imply endorsement. Chinese titles and location details are generated automatically; a newly collected item may temporarily retain its source wording while translation is retried.</p>
+<p class="daily-news-note">Entries are indexed automatically from the official career pages of the organisations listed and from the department sites of the universities listed. Titles and links belong to the original publishers; deadlines, stipends and eligibility are read from the official notice and are subject to it — a field the notice does not state is shown as not stated rather than filled in. Inclusion does not imply endorsement. The match score is this site's own reading of the notice, not the organisation's opinion. Chinese summaries, labels and match reasons are generated by fixed templates; job titles are left in the publisher's wording until a translation provider fills them in.</p>

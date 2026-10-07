@@ -1,0 +1,44 @@
+# Filter vocabulary for the United Nations shortlist on the Opportunities page.
+# `code` values must match what scripts/fetch_opportunities.py writes into a
+# record: `org` for organisations, the area keys from scripts/opps_match.py for
+# directions, `mode` / `city` / `region` for places, `status` for state and the
+# score bands 90 / 80 / 70.
+orgs:
+  - {code: un, label_en: UN Secretariat, label_zh: 联合国秘书处}
+  - {code: unesco, label_en: UNESCO, label_zh: 联合国教科文组织}
+  - {code: unicef, label_en: UNICEF, label_zh: 联合国儿童基金会}
+  - {code: undp, label_en: UNDP, label_zh: 联合国开发计划署}
+  - {code: unwomen, label_en: UN Women, label_zh: 联合国妇女署}
+  - {code: unhcr, label_en: UNHCR, label_zh: 联合国难民署}
+  - {code: who, label_en: WHO, label_zh: 世界卫生组织}
+  - {code: wfp, label_en: WFP, label_zh: 世界粮食计划署}
+  - {code: other, label_en: Other, label_zh: 其他机构}
+
+areas:
+  - {code: communication, label_en: Communication, label_zh: 传播}
+  - {code: research, label_en: Research, label_zh: 研究}
+  - {code: data, label_en: Data, label_zh: 数据}
+  - {code: ai, label_en: AI, label_zh: 人工智能}
+  - {code: governance, label_en: Digital governance, label_zh: 数字治理}
+  - {code: media, label_en: Media, label_zh: 传媒}
+  - {code: policy, label_en: Policy, label_zh: 政策}
+
+places:
+  - {key: mode, code: remote, label_en: Remote, label_zh: 远程}
+  - {key: city, code: new york, label_en: New York, label_zh: 纽约}
+  - {key: city, code: geneva, label_en: Geneva, label_zh: 日内瓦}
+  - {key: city, code: paris, label_en: Paris, label_zh: 巴黎}
+  - {key: region, code: Asia, label_en: Asia, label_zh: 亚洲}
+  - {key: region, code: Europe, label_en: Europe, label_zh: 欧洲}
+  - {key: region, code: North America, label_en: North America, label_zh: 北美}
+  - {key: region, code: Africa, label_en: Africa, label_zh: 非洲}
+
+states:
+  - {code: open, label_en: Open, label_zh: 开放申请}
+  - {code: closing, label_en: Closing soon, label_zh: 即将截止}
+  - {code: closed, label_en: Closed, label_zh: 已截止}
+
+bands:
+  - {code: "90", label_en: "90+", label_zh: "90 分以上"}
+  - {code: "80", label_en: "80+", label_zh: "80 分以上"}
+  - {code: "70", label_en: "70+", label_zh: "70 分以上"}

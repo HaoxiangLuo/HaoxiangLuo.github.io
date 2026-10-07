@@ -1,0 +1,107 @@
+{# One United Nations opening.
+
+   Renders both languages from the same markup: every label is chosen here, so
+   the two pages differ only by `lang`. Fields that no run has filled in yet
+   (a translation, a deadline the page never printed) fall back to the
+   publisher's own wording rather than to a placeholder.
+#}
+{% assign item = include.item %}
+{% assign zh = false %}
+{% if include.lang == "zh" %}{% assign zh = true %}{% endif %}
+{% if zh %}
+  {% assign card_title = item.title_zh | default: item.title %}
+  {% assign card_detail = item.detail_zh | default: item.detail %}
+  {% assign card_reasons = item.reasons_zh | default: item.reasons %}
+  {% assign card_org = item.source_zh | default: item.source %}
+  {% assign card_type = item.type_zh | default: item.type %}
+  {% assign card_mode = item.mode_zh | default: item.mode %}
+  {% assign card_status = item.status_zh | default: item.status %}
+  {% assign card_tier = item.tier_zh | default: item.tier %}
+  {% assign label_deadline = "截止" %}
+  {% assign label_left = "剩余" %}
+  {% assign label_days = "天" %}
+  {% assign label_score = "匹配度" %}
+  {% assign label_phd = "博士友好" %}
+  {% assign label_urgent = "紧急申请" %}
+  {% assign label_extended = "拓展机会" %}
+  {% assign label_closed = "已截止" %}
+  {% assign label_apply = "查看官方公告" %}
+  {% assign label_reasons = "匹配理由" %}
+{% else %}
+  {% assign card_title = item.title_en | default: item.title %}
+  {% assign card_detail = item.detail_en | default: item.detail %}
+  {% assign card_reasons = item.reasons %}
+  {% assign card_org = item.source %}
+  {% assign card_type = item.type_label | default: item.type %}
+  {% assign card_mode = item.mode %}
+  {% assign card_status = item.status %}
+  {% assign card_tier = item.tier_en | default: item.tier %}
+  {% assign label_deadline = "Deadline" %}
+  {% assign label_left = "" %}
+  {% assign label_days = "days left" %}
+  {% assign label_score = "Match" %}
+  {% assign label_phd = "PhD friendly" %}
+  {% assign label_urgent = "Apply now" %}
+  {% assign label_extended = "Extended" %}
+  {% assign label_closed = "Closed" %}
+  {% assign label_apply = "Open the official notice" %}
+  {% assign label_reasons = "Why this matches" %}
+{% endif %}
+
+<article class="opps-card{% if item.urgent %} opps-card--urgent{% endif %}{% if item.status == 'closed' %} opps-card--closed{% endif %}"
+  data-opp
+  data-org="{{ item.org | default: 'other' | escape }}"
+  data-areas="{{ item.areas | join: ' ' | escape }}"
+  data-mode="{{ item.mode | default: 'unknown' | escape }}"
+  data-city="{{ item.city | default: '' | downcase | escape }}"
+  data-region="{{ item.region | default: '' | escape }}"
+  data-status="{{ item.status | default: 'open' | escape }}"
+  data-score="{{ item.score | default: 0 }}">
+  <div class="opps-card__head">
+    <p class="opps-card__score opps-card__score--{{ item.tier | default: 'possible' }}" aria-label="{{ label_score }} {{ item.score }}">
+      <b>{{ item.score | default: "—" }}</b><span>/100</span>
+      <em class="opps-card__tier">{{ card_tier | default: item.tier | escape }}</em>
+    </p>
+    <div class="opps-card__body">
+      <h4 class="opps-card__title">
+        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ card_title | escape }}</a>
+      </h4>
+      <p class="opps-card__org">
+        <span class="opps-card__orgname">{{ card_org | escape }}</span>
+        {% if card_type %}<span class="opps-chip opps-chip--type">{{ card_type | escape }}</span>{% endif %}
+        {% if item.location %}<span class="opps-card__place">{{ item.location | escape }}</span>{% endif %}
+        {% if item.mode and item.mode != 'unknown' %}<span class="opps-chip opps-chip--mode">{{ card_mode | escape }}</span>{% endif %}
+      </p>
+      {% if card_detail %}<p class="opps-card__detail">{{ card_detail | escape }}</p>{% endif %}
+    </div>
+  </div>
+
+  <ul class="opps-card__tags">
+    {% if item.phd_ok %}<li class="opps-tag opps-tag--phd">{{ label_phd }}</li>{% endif %}
+    {% if item.extended %}<li class="opps-tag opps-tag--ext">{{ label_extended }}</li>{% endif %}
+    {% if item.urgent %}<li class="opps-tag opps-tag--urgent">{{ label_urgent }}</li>{% endif %}
+    {% if item.status == 'closed' %}<li class="opps-tag opps-tag--closed">{{ label_closed }}</li>{% endif %}
+    {% for area in item.areas %}<li class="opps-tag">{{ area | escape }}</li>{% endfor %}
+    {% if item.stipend and item.stipend != 'unknown' %}<li class="opps-tag opps-tag--plain">{{ item.stipend_zh | default: item.stipend | escape }}</li>{% endif %}
+    {% if item.duration %}<li class="opps-tag opps-tag--plain">{{ item.duration | escape }}</li>{% endif %}
+  </ul>
+
+  {% if card_reasons %}
+    <details class="opps-card__reasons">
+      <summary>{{ label_reasons }}</summary>
+      <ul>
+        {% for reason in card_reasons %}<li>{{ reason | escape }}</li>{% endfor %}
+      </ul>
+    </details>
+  {% endif %}
+
+  <p class="opps-card__foot">
+    {% if item.deadline %}
+      <span class="opps-card__deadline">{{ label_deadline }} {{ item.deadline | escape }}</span>
+      {% if item.open and item.days_left %}
+        <span class="opps-card__left">{{ label_left }}{{ item.days_left }} {{ label_days }}</span>
+      {% endif %}
+    {% endif %}
+    <a class="opps-card__link" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ label_apply }} <b aria-hidden="true">↗</b></a>
+  </p>
+</article>

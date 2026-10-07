@@ -7,74 +7,124 @@ lang: zh
 translation_url: /opportunities/
 ---
 
-<p class="daily-news-intro">每天自动从官方渠道收录联合国与知名外企的实习信息，以及 QS 前 50 高校新闻传播院系发布的博士交换、访学、联合培养项目资讯。收录的内容全部留档：每天的内容单独归档在各自的日期下，最新一天默认展开、更早的记录收起保存，后一次的采集不会覆盖前一次的结果；未搜集到新信息时不更新。</p>
+<p class="daily-news-intro">面向传播学、计算传播、国际传播与数字治理方向的联合国系统实习岗位每日更新清单。系统每天从二十个联合国机构的官方招聘页面采集岗位，再按「专业方向 30 分、岗位职能 25 分、研究主题 20 分、申请资格 15 分、工作形式与地点 5 分、机构相关度 5 分」打分，低于 60 分的一律不收录——宁可漏掉不相关的岗位，也不放进财务、人力资源或工程类职位。同时收录 QS 前 50 高校新闻传播院系发布的博士交换、访学与联合培养项目。收录的内容全部留档：每天的内容单独归档在各自日期下，后一次的采集不会覆盖前一次的结果。</p>
 
 {% assign opps = site.data.opportunities %}
+{% assign un_items = "" | split: "," %}
+{% for day in opps.internships %}{% assign day_un = day.items | where: "group", "un" %}{% assign un_items = un_items | concat: day_un %}{% endfor %}
+{% assign un_live = un_items | where_exp: "item", "item.status != 'closed' and item.score >= 60" %}
+{% assign by_score = un_live | sort: "score" | reverse %}
+{% assign exceptional = un_live | where: "score90", true | sort: "score" | reverse %}
+{% assign closing = un_live | where: "closing", true | sort: "days_left" %}
+{% assign latest = un_live | sort: "sort_date" | reverse %}
+{% assign remote = un_live | where: "mode", "remote" %}
+{% assign expired = un_items | where: "status", "closed" %}
+{% assign extended = un_items | where: "extended", true %}
+
 {% include archive-date-filter.html %}
 {% include opps-archive-controls.html %}
 
 <div class="opps-archive">
-  <section class="opps-section" aria-labelledby="opps-intern-title">
-    <h2 id="opps-intern-title" class="opps-section__title">实习资讯</h2>
-    {% assign un_total = 0 %}
-    {% for day in opps.internships %}{% assign day_un = day.items | where: "group", "un" %}{% assign un_total = un_total | plus: day_un.size %}{% endfor %}
-    {% assign company_total = 0 %}
-    {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% assign company_total = company_total | plus: day_co.size %}{% endfor %}
-    {% assign un_first = "" %}
-    {% for day in opps.internships %}{% assign day_un = day.items | where: "group", "un" %}{% if day_un.size > 0 and un_first == "" %}{% assign un_first = day.date %}{% endif %}{% endfor %}
-    {% assign company_first = "" %}
-    {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% if day_co.size > 0 and company_first == "" %}{% assign company_first = day.date %}{% endif %}{% endfor %}
-    <div class="opps-subblock">
-      <h3 class="opps-subtitle">联合国实习 <span class="opps-subtitle__count">{{ un_total }}</span></h3>
-      <div class="daily-news-archive">
-        {% if un_total > 0 %}
-          {% for day in opps.internships %}
-            {% assign group_items = day.items | where: "group", "un" %}
-            {% if group_items.size > 0 %}
-              <details class="daily-news-day opps-day" data-filter-date="{{ day.date }}"{% if day.date == un_first %} open{% endif %}>
-                <summary class="opps-day__summary">
-                  <time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time>
-                  <span class="opps-day__count">新增 {{ group_items.size }} 条</span>
-                  <span class="opps-day__chevron" aria-hidden="true"></span>
-                </summary>
-                <ol>
-                  {% for item in group_items %}
-                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_zh | default: item.title | escape }}{% assign detail_text = item.detail_zh | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
-                  {% endfor %}
-                </ol>
-              </details>
-            {% endif %}
-          {% endfor %}
+  {% if un_live.size > 0 %}
+  <section class="opps-section" aria-labelledby="opps-pick-title">
+    <h2 id="opps-pick-title" class="opps-section__title">优先推荐</h2>
+    <p class="opps-section__note">四个模块分别回答三个问题：最近有哪些适合我的联合国实习、哪些最值得申请、哪些马上截止。</p>
+    <div class="opps-modules">
+      <div class="opps-module">
+        <h3 class="opps-module__title">极高匹配 <span class="opps-subtitle__count">{{ exceptional.size }}</span></h3>
+        <p class="opps-module__note">匹配度 90 分及以上。</p>
+        {% if exceptional.size > 0 %}
+          <div class="opps-cards">{% for item in exceptional limit: 6 %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
         {% else %}
-          <p class="daily-news-empty">联合国系统的实习信息将显示在这里。</p>
+          <p class="daily-news-empty">目前暂无 90 分以上的岗位，匹配度最高的岗位见下方完整清单。</p>
+        {% endif %}
+      </div>
+      <div class="opps-module">
+        <h3 class="opps-module__title">即将截止 <span class="opps-subtitle__count">{{ closing.size }}</span></h3>
+        <p class="opps-module__note">剩余申请时间不超过 7 天。</p>
+        {% if closing.size > 0 %}
+          <div class="opps-cards">{% for item in closing limit: 6 %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
+        {% else %}
+          <p class="daily-news-empty">未来 7 天内没有岗位截止。</p>
+        {% endif %}
+      </div>
+      <div class="opps-module">
+        <h3 class="opps-module__title">最新发布 <span class="opps-subtitle__count">{{ latest.size }}</span></h3>
+        <p class="opps-module__note">按发布时间由新到旧排列。</p>
+        <div class="opps-cards">{% for item in latest limit: 6 %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
+      </div>
+      <div class="opps-module">
+        <h3 class="opps-module__title">远程机会 <span class="opps-subtitle__count">{{ remote.size }}</span></h3>
+        <p class="opps-module__note">居家办公与全远程岗位。</p>
+        {% if remote.size > 0 %}
+          <div class="opps-cards">{% for item in remote limit: 6 %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
+        {% else %}
+          <p class="daily-news-empty">目前没有开放的远程岗位。</p>
         {% endif %}
       </div>
     </div>
-    <div class="opps-subblock">
-      <h3 class="opps-subtitle">企业实习 <span class="opps-subtitle__count">{{ company_total }}</span></h3>
-      <div class="daily-news-archive">
-        {% if company_total > 0 %}
-          {% for day in opps.internships %}
-            {% assign group_items = day.items | where: "group", "company" %}
-            {% if group_items.size > 0 %}
-              <details class="daily-news-day opps-day" data-filter-date="{{ day.date }}"{% if day.date == company_first %} open{% endif %}>
-                <summary class="opps-day__summary">
-                  <time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time>
-                  <span class="opps-day__count">新增 {{ group_items.size }} 条</span>
-                  <span class="opps-day__chevron" aria-hidden="true"></span>
-                </summary>
-                <ol>
-                  {% for item in group_items %}
-                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_zh | default: item.title | escape }}{% assign detail_text = item.detail_zh | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
-                  {% endfor %}
-                </ol>
-              </details>
-            {% endif %}
-          {% endfor %}
-        {% else %}
-          <p class="daily-news-empty">知名外企的实习信息将显示在这里。</p>
-        {% endif %}
-      </div>
+  </section>
+
+  <section class="opps-section" aria-labelledby="opps-un-title">
+    <h2 id="opps-un-title" class="opps-section__title">联合国机构 <span class="opps-subtitle__count">{{ un_live.size }}</span></h2>
+    <p class="opps-section__note">全部 60 分以上的岗位，按匹配度从高到低排列；可按机构、方向、地点、状态与匹配度筛选。</p>
+    {% include opps-filters.html lang="zh" %}
+    <div class="opps-cards">
+      {% for item in by_score %}{% include opps-card.html item=item lang="zh" %}{% endfor %}
+      <p class="daily-news-empty" data-opps-empty hidden>没有符合当前筛选条件的岗位。</p>
+    </div>
+  </section>
+  {% else %}
+  <section class="opps-section" aria-labelledby="opps-un-title">
+    <h2 id="opps-un-title" class="opps-section__title">联合国机构</h2>
+    <p class="daily-news-empty">自动采集任务运行后，第一批联合国岗位将显示在这里。</p>
+  </section>
+  {% endif %}
+
+  {% if extended.size > 0 %}
+  <section class="opps-section" aria-labelledby="opps-ext-title">
+    <h2 id="opps-ext-title" class="opps-section__title">拓展机会 <span class="opps-subtitle__count">{{ extended.size }}</span></h2>
+    <p class="opps-section__note">咨询顾问类岗位：仅当公告明确写明接受博士、研究生或早期职业研究者时保留，不属于实习，单独列出。</p>
+    <div class="opps-cards">{% for item in extended %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
+  </section>
+  {% endif %}
+
+  {% if expired.size > 0 %}
+  <section class="opps-section" aria-labelledby="opps-gone-title">
+    <h2 id="opps-gone-title" class="opps-section__title">已截止 <span class="opps-subtitle__count">{{ expired.size }}</span></h2>
+    <p class="opps-section__note">申请期限已过，仅作留档，开放中的岗位列在上方。</p>
+    <div class="opps-cards">{% for item in expired %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
+  </section>
+  {% endif %}
+
+  <section class="opps-section" aria-labelledby="opps-company-title">
+    <h2 id="opps-company-title" class="opps-section__title">企业实习</h2>
+    {% assign company_total = 0 %}
+    {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% assign company_total = company_total | plus: day_co.size %}{% endfor %}
+    {% assign company_first = "" %}
+    {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% if day_co.size > 0 and company_first == "" %}{% assign company_first = day.date %}{% endif %}{% endfor %}
+    <div class="daily-news-archive">
+      {% if company_total > 0 %}
+        {% for day in opps.internships %}
+          {% assign group_items = day.items | where: "group", "company" %}
+          {% if group_items.size > 0 %}
+            <details class="daily-news-day opps-day" data-filter-date="{{ day.date }}"{% if day.date == company_first %} open{% endif %}>
+              <summary class="opps-day__summary">
+                <time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time>
+                <span class="opps-day__count">新增 {{ group_items.size }} 条</span>
+                <span class="opps-day__chevron" aria-hidden="true"></span>
+              </summary>
+              <ol>
+                {% for item in group_items %}
+                  <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_zh | default: item.title | escape }}{% assign detail_text = item.detail_zh | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                {% endfor %}
+              </ol>
+            </details>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <p class="daily-news-empty">知名企业的实习信息将显示在这里。</p>
+      {% endif %}
     </div>
   </section>
 
@@ -103,4 +153,4 @@ translation_url: /opportunities/
   </section>
 </div>
 
-<p class="daily-news-note">条目由机器自动从各机构官方招聘页与院系官网收录，标题与地点显示自动生成的中文译文，来源原文一并保留；截止日期、申请资格等细节以官方公告为准。标题与链接归原发布机构所有；收录不代表本站赞同其观点。条目标题与地点由自动翻译生成；如个别新条目尚未完成译配，将暂时保留来源原文。</p>
+<p class="daily-news-note">条目由机器自动从各机构官方招聘页与院系官网收录，标题与链接归原发布机构所有；截止日期、津贴与申请资格均读取自官方公告并以公告为准，公告未说明的字段显示为「未说明」而非推测填写。收录不代表本站赞同其观点。匹配度是本网站依据公告文本给出的判断，不代表发布机构的意见。中文摘要、标签与匹配理由由固定模板生成；岗位标题在译文填充前保留来源原文。</p>
