@@ -28,6 +28,20 @@
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/98702ca761a90799a690cdd33998350664c1f081"
   },
   {
+    "date": "2026-10-07",
+    "title_zh": "调整了资讯",
+    "title_en": "Refined Opportunities",
+    "message": "为资讯译文接入每日新闻所用的免费翻译接口，使未配置译文服务时中文页也不留空",
+    "story_zh": "对资讯的内容与呈现方式进行了改动，使相关信息更完整、更容易查到。",
+    "story_en": "Changed the content and presentation of Opportunities so the information is more complete and easier to find.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "为资讯译文接入每日新闻所用的免费翻译接口，使未配置译文服务时中文页也不留空",
+    "details_zh": "调整资讯页面的收录内容、板块结构或自动采集。",
+    "details_en": "Refined the opportunities archive, sections, or automatic collection.",
+    "sha": "2be864a",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/2be864a903ff3240138cb510c4243a8b8bb5f613"
+  },
+  {
     "date": "2026-10-01",
     "title_zh": "资讯译文失败提示",
     "title_en": "Translation failure details",
