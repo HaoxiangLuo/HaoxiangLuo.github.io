@@ -1,6 +1,35 @@
 {
-  "updated_at": "2026-10-06T09:43:37+08:00",
+  "updated_at": "2026-10-07T09:46:21+08:00",
   "internships": [
+    {
+      "date": "2026-10-07",
+      "items": [
+        {
+          "title": "People Team: Software Engineer Intern (Winter/Spring 2027)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/7774167?gh_jid=7774167",
+          "detail": "Hybrid",
+          "source": "Cloudflare",
+          "source_zh": "Cloudflare",
+          "group": "company"
+        },
+        {
+          "title": "Software Engineer Intern (2027)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8245197?gh_jid=8245197",
+          "detail": "In-Office",
+          "source": "Cloudflare",
+          "source_zh": "Cloudflare",
+          "group": "company"
+        },
+        {
+          "title": "Software Engineer Intern (2027)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8245211?gh_jid=8245211",
+          "detail": "In-Office",
+          "source": "Cloudflare",
+          "source_zh": "Cloudflare",
+          "group": "company"
+        }
+      ]
+    },
     {
       "date": "2026-10-06",
       "items": [
