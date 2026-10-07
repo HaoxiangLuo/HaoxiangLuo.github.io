@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-10-07",
+    "title_zh": "Opportunities 资讯内容自动双语化",
+    "title_en": "Automatic bilingual content for Opportunities",
+    "message": "为联合国实习增加多机构抓取与匹配排序，用于按匹配度筛出对口岗位",
+    "story_zh": "为资讯条目增加了标题与地点的中英文译文字段，使中文页与英文页显示同一批条目的对应语言版本。",
+    "story_en": "Added translated title and location fields to opportunity items so both pages show the same items in their own language.",
+    "purpose_zh": "让自动抓取的实习与院校机会在中英文页面中展示对应语言内容，同时保留发布方原文与历史记录。",
+    "purpose_en": "Show automatically collected internships and academic opportunities in the matching language while preserving publisher wording and historical records.",
+    "details_zh": "采集脚本现为职位与项目标题、地点等补充信息增量写入中英文译文字段；英文页和中文页按语言读取对应字段，并在译文暂缺时安全回退至来源原文。翻译由 GitHub Actions 中的 GitHub Models 完成，译文与机会记录一同归档，避免浏览器端泄露密钥或在页面加载时重复翻译。",
+    "details_en": "The collector now writes translated fields incrementally for job and programme titles and location details; the English and Chinese pages select their matching fields and safely fall back to the publisher’s wording while a translation is pending. GitHub Models runs inside GitHub Actions, and translations are archived with the opportunity records so no key is exposed to visitors and no translation is repeated during page load.",
+    "sha": "d67c555",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/d67c555f03d7584f60e5cd42cdc47054c85ba593"
+  },
+  {
+    "date": "2026-10-07",
     "title_zh": "资讯条目补入中文译文",
     "title_en": "Chinese translations for Opportunities entries",
     "message": "为资讯条目补入中英文标题与地点译文",
