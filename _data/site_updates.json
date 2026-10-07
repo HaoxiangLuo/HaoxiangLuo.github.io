@@ -1,15 +1,15 @@
 [
   {
     "date": "2026-10-07",
-    "title_zh": "调整了资讯",
-    "title_en": "Refined Opportunities",
+    "title_zh": "资讯条目补入中文译文",
+    "title_en": "Chinese translations for Opportunities entries",
     "message": "为资讯条目补入中英文标题与地点译文",
-    "story_zh": "对资讯的收录与归档方式进行了改动，使每天抓取的内容按日留存、历史日期默认收起。",
-    "story_en": "Changed how Opportunities is collected and archived so each day's items are kept by date and earlier days stay folded.",
-    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
-    "purpose_en": "为资讯条目补入中英文标题与地点译文",
-    "details_zh": "调整资讯页面的收录内容、板块结构或自动采集。",
-    "details_en": "Refined the opportunities archive, sections, or automatic collection.",
+    "story_zh": "为资讯档案中 32 条标题与 17 条地点信息补写了 title_zh 与 detail_zh 字段，使中文资讯页显示对应译文。",
+    "story_en": "Added title_zh and detail_zh to 32 titles and 17 location fields in the Opportunities archive so the Chinese page shows the matching text.",
+    "purpose_zh": "让中文资讯页显示职位与项目标题、地点信息的中文译文，同时保留发布方原文。",
+    "purpose_en": "Show Chinese titles and location details on the Opportunities page while keeping the publisher wording.",
+    "details_zh": "_data/opportunities.json 中 32 条资讯记录的标题与地点译文字段。",
+    "details_en": "the title and detail translation fields of 32 records in _data/opportunities.json",
     "sha": "98702ca",
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/98702ca761a90799a690cdd33998350664c1f081"
   },
