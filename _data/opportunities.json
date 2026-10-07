@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T18:24:19+08:00",
+  "updated_at": "2026-10-07T20:14:04+08:00",
   "internships": [
     {
       "date": "2026-10-07",
@@ -372,7 +372,8 @@
             "UNICEF的本岗位方向与传播、研究或数字政策工作相关。"
           ],
           "extended": false,
-          "excluded": false
+          "excluded": false,
+          "last_seen": "2026-10-07"
         },
         {
           "title": "Unpaid internship - Emergency Telecommunications Intern (Geneva, Switzerland)",
@@ -648,7 +649,8 @@
             "明确接受硕士或博士在读学生。"
           ],
           "extended": true,
-          "excluded": false
+          "excluded": false,
+          "last_seen": "2026-10-07"
         },
         {
           "title": "Internship, Data Analysis and Report Synthesis with UNDP RBAS in NY, USA (Office-Based)",
@@ -710,7 +712,8 @@
             "UNDP的本岗位方向与传播、研究或数字政策工作相关。"
           ],
           "extended": false,
-          "excluded": false
+          "excluded": false,
+          "last_seen": "2026-10-07"
         },
         {
           "title": "UN Women : Data Analyst Intern, Istanbul, Turkiye - Istanbul, Türkiye",
