@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-10-07",
+    "title_zh": "调整了网站内容",
+    "title_en": "Refined site content",
+    "message": "在交接文档里说明译文的公共接口兜底，使后续维护者知道未配置译文服务时中文仍会产出及其代价",
+    "story_zh": "对网站内容的内容与呈现方式进行了改动，使相关信息更完整、更容易查到。",
+    "story_en": "Changed the content and presentation of site content so the information is more complete and easier to find.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "在交接文档里说明译文的公共接口兜底，使后续维护者知道未配置译文服务时中文仍会产出及其代价",
+    "details_zh": "更新网站内容与信息呈现。",
+    "details_en": "Updated website content and information presentation.",
+    "sha": "ef038e2",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/ef038e2f7fb1e9187071c0aa5cd71e28ad42348f"
+  },
+  {
+    "date": "2026-10-07",
     "title_zh": "联合国实习的多机构抓取与匹配排序",
     "title_en": "Multi-agency UN internship matching",
     "message": "为联合国实习增加多机构抓取与匹配排序，用于按匹配度筛出对口岗位",
