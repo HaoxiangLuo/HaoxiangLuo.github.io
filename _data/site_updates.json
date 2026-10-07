@@ -106,8 +106,8 @@
     "story_en": "Added translated title and location fields to opportunity items so both pages show the same items in their own language.",
     "purpose_zh": "让自动抓取的实习与院校机会在中英文页面中展示对应语言内容，同时保留发布方原文与历史记录。",
     "purpose_en": "Show automatically collected internships and academic opportunities in the matching language while preserving publisher wording and historical records.",
-    "details_zh": "采集脚本现为职位与项目标题、地点等补充信息增量写入中英文译文字段；英文页和中文页按语言读取对应字段，并在译文暂缺时安全回退至来源原文。翻译由 GitHub Actions 中的 GitHub Models 完成，译文与机会记录一同归档，避免浏览器端泄露密钥或在页面加载时重复翻译。",
-    "details_en": "The collector now writes translated fields incrementally for job and programme titles and location details; the English and Chinese pages select their matching fields and safely fall back to the publisher’s wording while a translation is pending. GitHub Models runs inside GitHub Actions, and translations are archived with the opportunity records so no key is exposed to visitors and no translation is repeated during page load.",
+    "details_zh": "采集脚本现为职位与项目标题、地点等补充信息增量写入中英文译文字段；英文页和中文页按语言读取对应字段，并在译文暂缺时安全回退至来源原文。翻译由 GitHub Actions 中配置的译文服务（OpenAI 兼容接口）完成，译文与机会记录一同归档，避免浏览器端泄露密钥或在页面加载时重复翻译。",
+    "details_en": "The collector now writes translated fields incrementally for job and programme titles and location details; the English and Chinese pages select their matching fields and safely fall back to the publisher’s wording while a translation is pending. A configurable translation endpoint runs inside GitHub Actions, and translations are archived with the opportunity records so no key is exposed to visitors and no translation is repeated during page load.",
     "sha": "e090574",
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/e090574a08046da4611554451ced630e149d9795"
   },
