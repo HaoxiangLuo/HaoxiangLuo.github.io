@@ -182,6 +182,7 @@
 - Daily News 能按日期显示历史记录，首页能显示当天或最近一期。
 - Academic Frontiers 中英文页面卡片字段一致：英文页显示原文；中文页显示中文标题与中文摘要，并把英文原文一并保留（标题原文紧随译文，摘要原文在折叠块内），年月筛选可用。
 - Daily News、Academic Frontiers、Site Log 选中近期索引之外的年份或月份时，能显示"正在读取历史归档…"并加载出该分卷；失败时保留已有记录并给出重试按钮。
+- **`git push` 之后必须确认 Pages 构建成功**（见第 17 节）：本机没有 Ruby/Jekyll，模板错误在本地跑测试是查不出来的，只有线上构建会报。
 - `git diff --check` 无错误。
 - 工作区无测试缓存、临时文件或私人简历。
 - 明确告知用户是否仍需点击 `Push origin`。
@@ -317,6 +318,34 @@ env:
 
 测试：`python tests/test_model_client.py`（用桩替换 `urlopen`，不联网、不消耗额度）。
 
-## 17. 当前迁移注意事项
+## 17. Liquid 与 Jekyll 版本的硬限制（改模板前必读）
+
+本机**没有 Ruby/Jekyll**，改完模板本地跑测试是查不出构建错误的；GitHub Pages 用的是 **Jekyll 3.10 + liquid 4.0.4**（`github-pages` v232），比很多教程里的版本老，下面几条踩一次就整站构建失败：
+
+1. **`where_exp` 只能写一个条件**。写 `item.status != 'closed' and item.score >= 60` 会抛
+   `Liquid syntax error: Expected end_of_string but found id`，整站构建失败。要两个条件就连续过滤两次：
+
+   ```liquid
+   {% assign un_open = un_items | where_exp: "item", "item.status != 'closed'" %}
+   {% assign un_live = un_open | where_exp: "item", "item.score >= 60" %}
+   ```
+
+   2026-10-07 就是因为这一条，站点连续 20 次构建失败、线上整整停在旧版本，而本地测试、SCSS 编译、双语检查全是绿的。
+2. **注释必须是 `{% comment %}…{% endcomment %}`**。`{# … #}` 不是 Liquid 标签，会被原样输出到页面上。
+3. **`sort` 遇到 nil 会抛错**。排序前先确认该字段在参与排序的集合里都有值（例如 `days_left` 只对"即将截止"的条目有值，就要先 `where: "closing", true` 再排）。
+4. **`min()` 等 CSS 函数在 libsass 下会报 `Incompatible units`**（本地 `compile_site_css.py` 能复现），Jekyll 侧改用固定值 + 媒体查询。
+
+推送后查构建状态（本机无 Jekyll，这是唯一的验证手段）：
+
+```sh
+# 最近几次构建；status 为 built 才算成功，errored 就去看日志
+gh api repos/HaoxiangLuo/HaoxiangLuo.github.io/pages/builds?per_page=5 --jq '.[] | "\(.created_at) \(.status) \(.commit[0:8])"'
+# 失败时：Actions 里 "pages build and deployment" → build / "Build with Jekyll" 步骤有完整报错
+python tools/actions_logs.py log <run_id>
+```
+
+注意：连续推送时前一次的构建会显示 `cancelled`（被后一次抢占），那不是失败，看最新那次的 `status` 即可。
+
+## 18. 当前迁移注意事项
 
 换电脑前必须确保旧电脑上的本地提交全部推送。只有出现在 GitHub 仓库中的内容，才能在新电脑克隆后完整恢复。Codex 对话记录不会随仓库迁移，但本文件和 `AGENTS.md` 已保存足够的项目背景。
