@@ -29,6 +29,20 @@
   },
   {
     "date": "2026-10-07",
+    "title_zh": "调整了学界前沿、每日新闻、界面样式、数据归档",
+    "title_en": "Refined Academic Frontiers, Daily News, interface styling, data archive",
+    "message": "为学界前沿的标题与摘要增加中文字段，使中文页显示译文并把英文原文一并保留以便检索",
+    "story_zh": "对学界前沿、每日新闻、界面样式、数据归档的存储方式进行了追加式归档改动，使每日新闻按月、学界前沿与网站日志按年永久保存，页面只在访客选择历史年份时才读取分卷。",
+    "story_en": "Changed the storage of Academic Frontiers, Daily News, interface styling, data archive to an append-only archive so daily news is kept by month and frontier and site-log records by year, and a page loads a partition only when a visitor chooses an earlier year.",
+    "purpose_zh": "为避免自动抓取数据因页面展示期限而被清除，建立可长期追溯、可按需读取且不增加网站首页负担的数据归档机制。",
+    "purpose_en": "Establish a durable, traceable archive so automatically collected data is retained beyond the website’s display window without making the static site heavier.",
+    "details_zh": "将每日新闻按月、学界前沿与网站日志按年写入追加式 JSONL 归档；保留近期 JSON 索引供 Jekyll 快速构建；新增 manifest、稳定去重键、SHA-256 校验、历史数据按需加载与年度 GitHub Release 快照。同步降低抓取频率，以减少自动提交噪声和并发冲突。",
+    "details_en": "Archive daily news by month and academic-frontier and site-log records by year in append-only JSONL files; retain small recent JSON indexes for Jekyll; add manifests, stable deduplication keys, SHA-256 checksums, on-demand historical loading, and annual GitHub Release snapshots. Reduce collection frequency to limit automated commit noise and concurrent-update conflicts.",
+    "sha": "ceed771",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/ceed771a3f4c339ca63aaf3d4c6fba49e5679cf0"
+  },
+  {
+    "date": "2026-10-07",
     "title_zh": "资讯条目补入中文译文",
     "title_en": "Chinese translations for Opportunities entries",
     "message": "为资讯条目补入中英文标题与地点译文",

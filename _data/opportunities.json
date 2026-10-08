@@ -1,6 +1,210 @@
 {
-  "updated_at": "2026-10-07T21:05:30+08:00",
+  "updated_at": "2026-10-08T09:48:26+08:00",
   "internships": [
+    {
+      "date": "2026-10-08",
+      "items": [
+        {
+          "title": "UNEP Finance Initiative (UNEP FI) Policy Internship",
+          "url": "https://careers.un.org/job/285946",
+          "detail": "UNEP · GENEVA · Remote · Deadline not stated · 6 months · Stipend not stated",
+          "detail_zh": "联合国环境规划署 · 日内瓦 · 远程 · 截止日期未说明 · 6 个月 · 津贴未说明",
+          "source": "UNEP",
+          "source_zh": "联合国环境规划署",
+          "org": "unep",
+          "group": "un",
+          "job_id": "285946",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "data",
+            "media",
+            "policy",
+            "research"
+          ],
+          "areas_zh": "传播、数据、传媒、政策、研究",
+          "location": "GENEVA",
+          "city": "GENEVA",
+          "country": "GENEVA",
+          "region": "",
+          "mode": "remote",
+          "mode_zh": "远程",
+          "department": "United Nations Environment Programme",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "6 months",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "English and French",
+          "posted": "",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": true,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-08",
+          "found": "2026-10-08",
+          "score": 95,
+          "tier": "exceptional",
+          "tier_zh": "极高匹配",
+          "tier_en": "Exceptional match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "环境署金融倡议（UNEP FI）政策实习"
+        },
+        {
+          "title": "National Intern: WASH Knowledge Management (KM), Accra Ghana- 26 Weeks",
+          "url": "https://jobs.unicef.org/cw/en-us/job/596175",
+          "detail": "UNICEF · Ghana · Onsite · Deadline not stated · 26 Weeks · Stipend not stated",
+          "detail_zh": "联合国儿童基金会 · 加纳 · 现场办公 · 截止日期未说明 · 26 Weeks · 津贴未说明",
+          "source": "UNICEF",
+          "source_zh": "联合国儿童基金会",
+          "org": "unicef",
+          "group": "un",
+          "job_id": "596175",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "data",
+            "research"
+          ],
+          "areas_zh": "数据、研究",
+          "location": "Ghana",
+          "city": "Ghana",
+          "country": "Ghana",
+          "region": "Africa",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "",
+          "eligibility": [],
+          "eligibility_zh": "",
+          "phd_ok": false,
+          "duration": "26 Weeks",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "",
+          "posted": "2026-10-07",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": false,
+          "score80": false,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-07",
+          "found": "2026-10-08",
+          "score": 76,
+          "tier": "good",
+          "tier_zh": "较高匹配",
+          "tier_en": "Good match",
+          "reasons": [
+            "The post sits in data, which matches the profile directly.",
+            "It combines data or AI work.",
+            "UNICEF works on communication, research or digital policy here."
+          ],
+          "reasons_zh": [
+            "岗位属于数据方向，与申请者背景直接对口。",
+            "岗位同时涉及数据与人工智能工作，属于交叉方向。",
+            "UNICEF的本岗位方向与传播、研究或数字政策工作相关。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "国内实习生：WASH 知识管理 (KM)，加纳阿克拉 - 26 周"
+        },
+        {
+          "title": "National Communication and Advocacy Intern- Human Interest Story & Social Media Content (6 months)",
+          "url": "https://jobs.unicef.org/cw/en-us/job/596164",
+          "detail": "UNICEF · Location not stated · Onsite · Deadline not stated · 6 months · Stipend not stated",
+          "detail_zh": "联合国儿童基金会 · 地点未说明 · 现场办公 · 截止日期未说明 · 6 个月 · 津贴未说明",
+          "source": "UNICEF",
+          "source_zh": "联合国儿童基金会",
+          "org": "unicef",
+          "group": "un",
+          "job_id": "596164",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "media"
+          ],
+          "areas_zh": "传播、传媒",
+          "location": "",
+          "city": "",
+          "country": "",
+          "region": "",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "",
+          "eligibility": [],
+          "eligibility_zh": "",
+          "phd_ok": false,
+          "duration": "6 months",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "",
+          "posted": "2026-10-07",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": false,
+          "score80": false,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-07",
+          "found": "2026-10-08",
+          "score": 75,
+          "tier": "good",
+          "tier_zh": "较高匹配",
+          "tier_en": "Good match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media.",
+            "UNICEF works on communication, research or digital policy here."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体。",
+            "UNICEF的本岗位方向与传播、研究或数字政策工作相关。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "国家传播和宣传实习生 - 人文故事和社交媒体内容（6 个月）"
+        }
+      ]
+    },
     {
       "date": "2026-10-07",
       "items": [
@@ -75,7 +279,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 85,
+          "days_left": 84,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -147,7 +351,7 @@
           "language": "English or French",
           "posted": "2026-09-21",
           "deadline": "2026-12-31",
-          "days_left": 85,
+          "days_left": 84,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -217,7 +421,7 @@
           "language": "",
           "posted": "2026-10-03",
           "deadline": "2026-10-08",
-          "days_left": 1,
+          "days_left": 0,
           "open": true,
           "closing": true,
           "urgent": true,
@@ -286,7 +490,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 85,
+          "days_left": 84,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -422,7 +626,7 @@
           "language": "",
           "posted": "2026-09-11",
           "deadline": "2026-12-10",
-          "days_left": 64,
+          "days_left": 63,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -493,7 +697,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 85,
+          "days_left": 84,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -564,7 +768,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 85,
+          "days_left": 84,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -631,7 +835,7 @@
           "language": "",
           "posted": "2026-10-01",
           "deadline": "2026-10-08",
-          "days_left": 1,
+          "days_left": 0,
           "open": true,
           "closing": true,
           "urgent": true,
@@ -658,7 +862,7 @@
           ],
           "extended": true,
           "excluded": false,
-          "last_seen": "2026-10-07",
+          "last_seen": "2026-10-08",
           "title_zh": "个人顾问：2017-2030年国家老龄化政策中期审查（MTR）发展国家顾问"
         },
         {
@@ -695,7 +899,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": 7,
+          "days_left": 6,
           "open": true,
           "closing": true,
           "urgent": false,
@@ -722,7 +926,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-10-07",
+          "last_seen": "2026-10-08",
           "title_zh": "在美国纽约联合国开发计划署 RBAS 实习、数据分析和报告合成（办公室）"
         },
         {
@@ -759,7 +963,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": 7,
+          "days_left": 6,
           "open": true,
           "closing": true,
           "urgent": false,
@@ -857,7 +1061,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "战略传播实习生"
+          "title_zh": "战略传播实习生",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "Intern - Public Information",
@@ -928,7 +1133,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生 - 公共信息"
+          "title_zh": "实习生 - 公共信息",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "Political Affairs Intern: Peacekeeping Knowledge Management and Guidance",
@@ -999,7 +1205,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "政治事务实习生：维和知识管理与指导"
+          "title_zh": "政治事务实习生：维和知识管理与指导",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "INTERN - ECONOMIC AFFAIRS (TRADE POLICY)",
@@ -1070,7 +1277,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生 - 经济事务（贸易政策）"
+          "title_zh": "实习生 - 经济事务（贸易政策）",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "INTERN - SOCIAL SCIENCES (GENDER EQUALITY AND WOMEN'S EMPOWERMENT COMMUNICATIONS)",
@@ -1138,7 +1346,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生 - 社会科学（性别平等和妇女赋权传播）"
+          "title_zh": "实习生 - 社会科学（性别平等和妇女赋权传播）",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "JIU Research and Analysis Intern",
@@ -1207,7 +1416,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "联检组研究与分析实习生"
+          "title_zh": "联检组研究与分析实习生",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "Editorial and AI Communications Intern",
@@ -1277,7 +1487,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "编辑和人工智能传播实习生"
+          "title_zh": "编辑和人工智能传播实习生",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "Audio-Visual Editing and Digital Media Intern",
@@ -1347,7 +1558,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "视听编辑和数字媒体实习生"
+          "title_zh": "视听编辑和数字媒体实习生",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "Intern for communications and knowledge management",
@@ -1416,7 +1628,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "沟通和知识管理实习生"
+          "title_zh": "沟通和知识管理实习生",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "INTERN - Information and Evidence Management",
@@ -1483,7 +1696,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生 - 信息和证据管理"
+          "title_zh": "实习生 - 信息和证据管理",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "Interns - Innovation & Analytics Hub",
@@ -1555,7 +1769,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生 - 创新与分析中心"
+          "title_zh": "实习生 - 创新与分析中心",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "INTERN - HUMAN RIGHTS, I",
@@ -1623,7 +1838,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生 - 人权，我"
+          "title_zh": "实习生 - 人权，我",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "Intern - Human Rights",
@@ -1692,7 +1908,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生 - 人权"
+          "title_zh": "实习生 - 人权",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "Intern - Human Rights",
@@ -1761,7 +1978,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生 - 人权"
+          "title_zh": "实习生 - 人权",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "Economic intern",
@@ -1833,7 +2051,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "经济实习生"
+          "title_zh": "经济实习生",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "Intern",
@@ -1905,7 +2124,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生"
+          "title_zh": "实习生",
+          "last_seen": "2026-10-08"
         },
         {
           "title": "Intern - urban heat and cooling",
@@ -1974,7 +2194,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生——城市供热和制冷"
+          "title_zh": "实习生——城市供热和制冷",
+          "last_seen": "2026-10-08"
         }
       ]
     },
