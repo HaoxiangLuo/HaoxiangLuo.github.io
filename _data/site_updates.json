@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-10-08",
+    "title_zh": "调整了网站内容",
+    "title_en": "Refined site content",
+    "message": "在交接文档里记下 Jekyll 3.10 的模板限制与推送后必须核对构建状态，使后续改动不再让整站构建失败",
+    "story_zh": "对网站内容的内容与呈现方式进行了改动，使相关信息更完整、更容易查到。",
+    "story_en": "Changed the content and presentation of site content so the information is more complete and easier to find.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "在交接文档里记下 Jekyll 3.10 的模板限制与推送后必须核对构建状态，使后续改动不再让整站构建失败",
+    "details_zh": "更新网站内容与信息呈现。",
+    "details_en": "Updated website content and information presentation.",
+    "sha": "da76d9e",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/da76d9ea4082dbd0a34814e4ef2a59520e8a7a62"
+  },
+  {
+    "date": "2026-10-08",
     "title_zh": "调整了资讯",
     "title_en": "Refined Opportunities",
     "message": "修正资讯页 where_exp 里的多条件写法，使整站 Jekyll 构建不再因 Liquid 语法错误失败",
