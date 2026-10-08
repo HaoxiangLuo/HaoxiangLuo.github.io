@@ -1,10 +1,9 @@
-{# One United Nations opening.
+{% comment %}One United Nations opening.
 
    Renders both languages from the same markup: every label is chosen here, so
    the two pages differ only by `lang`. Fields that no run has filled in yet
    (a translation, a deadline the page never printed) fall back to the
-   publisher's own wording rather than to a placeholder.
-#}
+   publisher's own wording rather than to a placeholder.{% endcomment %}
 {% assign item = include.item %}
 {% assign zh = false %}
 {% if include.lang == "zh" %}{% assign zh = true %}{% endif %}

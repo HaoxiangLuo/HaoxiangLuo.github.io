@@ -12,7 +12,9 @@ translation_url: /opportunities/
 {% assign opps = site.data.opportunities %}
 {% assign un_items = "" | split: "," %}
 {% for day in opps.internships %}{% assign day_un = day.items | where: "group", "un" %}{% assign un_items = un_items | concat: day_un %}{% endfor %}
-{% assign un_live = un_items | where_exp: "item", "item.status != 'closed' and item.score >= 60" %}
+{% comment %}Jekyll 3.10 的 where_exp 只能解析一个条件，写 `and` 会让整站构建失败。{% endcomment %}
+{% assign un_open = un_items | where_exp: "item", "item.status != 'closed'" %}
+{% assign un_live = un_open | where_exp: "item", "item.score >= 60" %}
 {% assign by_score = un_live | sort: "score" | reverse %}
 {% assign exceptional = un_live | where: "score90", true | sort: "score" | reverse %}
 {% assign closing = un_live | where: "closing", true | sort: "days_left" %}

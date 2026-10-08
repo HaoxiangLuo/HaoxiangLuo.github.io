@@ -1,10 +1,9 @@
-{# Filter chips for the United Nations shortlist.
+{% comment %}Filter chips for the United Nations shortlist.
 
    Each chip names the value it filters on; assets/js/opps-filters.js reads
    those values back off the cards and hides the ones that do not match. The
    bar stays hidden until the script reveals it: without JavaScript the chips
-   would filter nothing, and a control that does nothing is worse than none.
-#}
+   would filter nothing, and a control that does nothing is worse than none.{% endcomment %}
 {% assign zh = false %}
 {% if include.lang == "zh" %}{% assign zh = true %}{% endif %}
 {% assign vocab = site.data.opps_filters %}
