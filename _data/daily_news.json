@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-10-08T19:03:31+08:00",
+  "updated_at": "2026-10-09T09:09:55+08:00",
   "days": [
+    {
+      "date": "2026-10-09",
+      "items": [
+        {
+          "title": "Suspect linked to Monaco bomb attack on millionaire breaks silence to BBC",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckgel9044vqeo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "摩纳哥百万富翁炸弹袭击嫌疑人打破沉默"
+        },
+        {
+          "title": "The long-deployed USS Lincoln returns home to San Diego Bay",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/08/nx-s1-5995911/the-long-deployed-uss-lincoln-returns-home-to-san-diego-bay",
+          "title_zh": "长期部署的林肯号航空母舰返回圣地亚哥湾"
+        },
+        {
+          "title": "World News in Brief: Russian attacks continue in Ukraine, Gazans shelter in flood-prone areas, keeping sight of eye health",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168557",
+          "title_zh": "世界新闻简讯：俄罗斯对乌克兰的袭击仍在继续，加沙人在洪水易发地区避难，关注眼睛健康"
+        },
+        {
+          "title": "Fort Hood attacker's execution by firing squad will be livestreamed, Pentagon says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmy0r96xygx6o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "五角大楼表示，行刑队将现场直播胡德堡袭击者的处决"
+        },
+        {
+          "title": "New U.S. indictment charges former Venezuelan President Nicolás Maduro with torture",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/08/nx-s1-5995360/venezuela-nicolas-maduro-torture-charges",
+          "title_zh": "美国新起诉书指控委内瑞拉前总统尼古拉斯·马杜罗遭受酷刑"
+        },
+        {
+          "title": "Darfur: Healthcare needs outstrip resources as Security Council extends Sudan sanctions",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168556",
+          "title_zh": "达尔富尔：随着安理会延长对苏丹的制裁，医疗保健需求超出了资源"
+        },
+        {
+          "title": "Russian strike on buses kills at least 30, say officials, as deadly attacks on Ukraine surge",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c875pwq134l3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "官员称，俄罗斯对公共汽车的袭击造成至少30人死亡，乌克兰的致命袭击激增"
+        },
+        {
+          "title": "South Korea to recall its ambassador to Ukraine over North Korean POW dispute",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/08/g-s1-147115/south-korea-to-recall-its-ambassador-to-ukraine-over-north-korean-pow-dispute",
+          "title_zh": "韩国因朝鲜战俘纠纷召回驻乌克兰大使"
+        },
+        {
+          "title": "‘Overshoot is not a reason to surrender’: UN calls for accelerated climate action ahead of COP31 summit",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168555",
+          "title_zh": "超调不是投降的理由”：联合国呼吁在 COP31 峰会之前加快气候行动"
+        }
+      ]
+    },
     {
       "date": "2026-10-08",
       "items": [
