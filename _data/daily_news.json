@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-10-09T19:03:18+08:00",
+  "updated_at": "2026-10-10T09:08:03+08:00",
   "days": [
+    {
+      "date": "2026-10-10",
+      "items": [
+        {
+          "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普宣布与俄罗斯柴油达成协议，泽连斯基称这是送给普京的礼物"
+        },
+        {
+          "title": "South African human rights lawyer Navi Pillay wins Nobel Peace Prize",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/09/nx-s1-5996461/south-african-human-rights-lawyer-navi-pillay-wins-nobel-peace-prize",
+          "title_zh": "南非人权律师纳维·皮莱荣获诺贝尔和平奖"
+        },
+        {
+          "title": "Analysis: Trump's shock Russia deal highlights mounting pressure to curb fuel prices",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5lye9z4xw4yo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "分析：特朗普令人震惊的俄罗斯协议凸显了遏制燃油价格的压力越来越大"
+        },
+        {
+          "title": "Trump says U.S. to get diesel from Russia, relaxing pressure on Moscow to ease prices before midterms",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/09/nx-s1-5996912/trump-says-u-s-to-get-diesel-from-russia-relaxing-pressure-on-moscow-to-ease-prices-before-midterms",
+          "title_zh": "特朗普表示美国将从俄罗斯购买柴油，缓解莫斯科在中期选举前降低价格的压力"
+        },
+        {
+          "title": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国宣布对国际刑事法院实施制裁 法院谴责“对法治的攻击"
+        },
+        {
+          "title": "Did Russia play by the rules in reporting lab worker's death?",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/09/g-s1-147295/russia-lab-death-pneumonia-plague",
+          "title_zh": "俄罗斯在报告实验室工作人员死亡时是否遵守规则？"
+        },
+        {
+          "title": "Thousands of security personnel deployed as Delhi braces for ‘cockroach’ protest",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm2d6xd2g4w2o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "德里部署数千名安全人员应对“蟑螂”抗议"
+        },
+        {
+          "title": "Trump says U.S. won't attack Iran before midterms. And, ICE agent shoots man in NYC",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/09/g-s1-147455/up-first-newsletter-hurricane-isaias-ukraine-russia-trump-iran-ice-shooting",
+          "title_zh": "特朗普表示美国不会在中期选举前攻击伊朗。而且，ICE 特工在纽约开枪射杀了一名男子"
+        },
+        {
+          "title": "JD Vance casts doubt on firing squad execution and says he will not watch it",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck20r39nl3qzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "JD万斯对行刑队的执行表示怀疑，并表示他不会观看"
+        }
+      ]
+    },
     {
       "date": "2026-10-09",
       "items": [
@@ -13,17 +72,20 @@
         {
           "title": "South African human rights lawyer Navi Pillay wins the Nobel Peace Prize",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/08/nx-s1-5994952/nobel-peace-prize"
+          "url": "https://www.npr.org/2026/10/08/nx-s1-5994952/nobel-peace-prize",
+          "title_zh": "南非人权律师纳维·皮莱荣获诺贝尔和平奖"
         },
         {
           "title": "Former UN rights chief awarded Nobel Peace Prize",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168558"
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168558",
+          "title_zh": "前联合国人权事务负责人荣获诺贝尔和平奖"
         },
         {
           "title": "Fort Hood survivor supports gunman's execution by firing squad but questions livestream",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck1wvqw4lzdvo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/ck1wvqw4lzdvo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "胡德堡幸存者支持行刑队处决枪手，但对直播提出质疑"
         },
         {
           "title": "The long-deployed USS Lincoln returns home to San Diego Bay",
