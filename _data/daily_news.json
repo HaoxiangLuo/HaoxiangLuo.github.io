@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T09:08:03+08:00",
+  "updated_at": "2026-10-10T13:16:37+08:00",
   "days": [
     {
       "date": "2026-10-10",
@@ -17,6 +17,12 @@
           "title_zh": "南非人权律师纳维·皮莱荣获诺贝尔和平奖"
         },
         {
+          "title": "World News in Brief: ‘Horrific’ attack in Sudan, Israeli incursions in Syria intensify, most women and girls homeless in Gaza",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168567",
+          "title_zh": "世界新闻简讯：苏丹发生“可怕”袭击，以色列加强对叙利亚的入侵，加沙大多数妇女和女孩无家可归"
+        },
+        {
           "title": "Analysis: Trump's shock Russia deal highlights mounting pressure to curb fuel prices",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c5lye9z4xw4yo?at_medium=RSS&at_campaign=rss",
@@ -29,10 +35,16 @@
           "title_zh": "特朗普表示美国将从俄罗斯购买柴油，缓解莫斯科在中期选举前降低价格的压力"
         },
         {
-          "title": "US unveils sanctions on ICC in move court condemns as 'assault on rule of law'",
+          "title": "Global trade reaches record $35 trillion despite conflicts",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168566",
+          "title_zh": "尽管存在冲突，全球贸易仍达到创纪录的 35 万亿美元"
+        },
+        {
+          "title": "US country music star Ella Langley cancels show due to 'security threat'",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cj20vkkx3rdvo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "美国宣布对国际刑事法院实施制裁 法院谴责“对法治的攻击"
+          "url": "https://www.bbc.co.uk/news/articles/cm79pdlywqd4o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国乡村音乐明星埃拉·兰利因“安全威胁”取消演出"
         },
         {
           "title": "Did Russia play by the rules in reporting lab worker's death?",
@@ -41,22 +53,10 @@
           "title_zh": "俄罗斯在报告实验室工作人员死亡时是否遵守规则？"
         },
         {
-          "title": "Thousands of security personnel deployed as Delhi braces for ‘cockroach’ protest",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm2d6xd2g4w2o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "德里部署数千名安全人员应对“蟑螂”抗议"
-        },
-        {
-          "title": "Trump says U.S. won't attack Iran before midterms. And, ICE agent shoots man in NYC",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/09/g-s1-147455/up-first-newsletter-hurricane-isaias-ukraine-russia-trump-iran-ice-shooting",
-          "title_zh": "特朗普表示美国不会在中期选举前攻击伊朗。而且，ICE 特工在纽约开枪射杀了一名男子"
-        },
-        {
-          "title": "JD Vance casts doubt on firing squad execution and says he will not watch it",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck20r39nl3qzo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "JD万斯对行刑队的执行表示怀疑，并表示他不会观看"
+          "title": "Livestreaming US execution would breach prohibition of torture, UN rights office warns",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168565",
+          "title_zh": "联合国人权办公室警告称，直播美国处决将违反禁止酷刑的规定"
         }
       ]
     },
