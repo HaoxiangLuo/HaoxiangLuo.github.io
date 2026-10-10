@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T13:16:37+08:00",
+  "updated_at": "2026-10-10T19:01:08+08:00",
   "days": [
     {
       "date": "2026-10-10",
@@ -11,16 +11,10 @@
           "title_zh": "特朗普宣布与俄罗斯柴油达成协议，泽连斯基称这是送给普京的礼物"
         },
         {
-          "title": "South African human rights lawyer Navi Pillay wins Nobel Peace Prize",
+          "title": "A year of ceasefire in Gaza through the lens of NPR's reporter",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/09/nx-s1-5996461/south-african-human-rights-lawyer-navi-pillay-wins-nobel-peace-prize",
-          "title_zh": "南非人权律师纳维·皮莱荣获诺贝尔和平奖"
-        },
-        {
-          "title": "World News in Brief: ‘Horrific’ attack in Sudan, Israeli incursions in Syria intensify, most women and girls homeless in Gaza",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168567",
-          "title_zh": "世界新闻简讯：苏丹发生“可怕”袭击，以色列加强对叙利亚的入侵，加沙大多数妇女和女孩无家可归"
+          "url": "https://www.npr.org/sections/the-picture-show/2026/10/10/nx-s1-5991619/gaza-ceasefire-israel-life",
+          "title_zh": "NPR记者镜头下的加沙停火一年"
         },
         {
           "title": "Analysis: Trump's shock Russia deal highlights mounting pressure to curb fuel prices",
@@ -29,34 +23,40 @@
           "title_zh": "分析：特朗普令人震惊的俄罗斯协议凸显了遏制燃油价格的压力越来越大"
         },
         {
+          "title": "India cracks down on youth protests as anger grows against Modi and election chief",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/10/g-s1-147603/india-cracks-down-on-youth-protests-as-anger-grows-against-modi-and-election-chief",
+          "title_zh": "随着对莫迪和选举负责人的愤怒加剧，印度镇压青年抗议活动"
+        },
+        {
+          "title": "Three men found guilty of murdering Australian brothers and US friend in Mexico",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj5ynwnye009o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "三名男子因在墨西哥谋杀澳大利亚兄弟和美国朋友而被判有罪"
+        },
+        {
+          "title": "South African human rights lawyer Navi Pillay wins Nobel Peace Prize",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/09/nx-s1-5996461/south-african-human-rights-lawyer-navi-pillay-wins-nobel-peace-prize",
+          "title_zh": "南非人权律师纳维·皮莱荣获诺贝尔和平奖"
+        },
+        {
+          "title": "Flydubai attacker began a 'drift towards extremism and terrorism' in Australia, UAE says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw3dj5n538jpo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "阿联酋称，迪拜航空袭击者开始在澳大利亚“走向极端主义和恐怖主义"
+        },
+        {
           "title": "Trump says U.S. to get diesel from Russia, relaxing pressure on Moscow to ease prices before midterms",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/10/09/nx-s1-5996912/trump-says-u-s-to-get-diesel-from-russia-relaxing-pressure-on-moscow-to-ease-prices-before-midterms",
           "title_zh": "特朗普表示美国将从俄罗斯购买柴油，缓解莫斯科在中期选举前降低价格的压力"
         },
         {
-          "title": "Global trade reaches record $35 trillion despite conflicts",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168566",
-          "title_zh": "尽管存在冲突，全球贸易仍达到创纪录的 35 万亿美元"
-        },
-        {
-          "title": "US country music star Ella Langley cancels show due to 'security threat'",
+          "title": "Hurricane Isaias downgraded after making landfall in Florida",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm79pdlywqd4o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "美国乡村音乐明星埃拉·兰利因“安全威胁”取消演出"
-        },
-        {
-          "title": "Did Russia play by the rules in reporting lab worker's death?",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/09/g-s1-147295/russia-lab-death-pneumonia-plague",
-          "title_zh": "俄罗斯在报告实验室工作人员死亡时是否遵守规则？"
-        },
-        {
-          "title": "Livestreaming US execution would breach prohibition of torture, UN rights office warns",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168565",
-          "title_zh": "联合国人权办公室警告称，直播美国处决将违反禁止酷刑的规定"
+          "url": "https://www.bbc.co.uk/news/articles/c3vgx4450v2lo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "飓风伊萨亚斯在佛罗里达州登陆后降级"
         }
       ]
     },
