@@ -1,53 +1,121 @@
 {
-  "updated_at": "2026-10-11T19:02:01+08:00",
+  "updated_at": "2026-10-12T09:11:39+08:00",
   "days": [
+    {
+      "date": "2026-10-12",
+      "items": [
+        {
+          "title": "Trump's 'energy ceasefire' claim welcomed by Zelensky but Russia silent",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普的“能源停火”主张受到泽连斯基的欢迎，但俄罗斯保持沉默"
+        },
+        {
+          "title": "Seafarer's union official says crews offered big money to transit Strait of Hormuz",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/11/nx-s1-5995186/seafarers-union-official-says-crews-offered-big-money-to-transit-strait-of-hormuz",
+          "title_zh": "海员工会官员表示，船员们愿意提供大笔资金来穿越霍尔木兹海峡"
+        },
+        {
+          "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "胡塞武装两天内第二次袭击利雅得机场，造成1人死亡、11人受伤"
+        },
+        {
+          "title": "Harrowing accounts of violence and sex abuse in women's prison told in new podcast",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/11/nx-s1-5994363/harrowing-accounts-of-violence-and-sex-abuse-in-womens-prison-told-in-new-podcast",
+          "title_zh": "新播客讲述女子监狱中的暴力和性虐待的悲惨故事"
+        },
+        {
+          "title": "Poland detains man suspected of planning assassination of PM Tusk",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6n9rvynl5p5o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "波兰拘留涉嫌策划暗杀图斯克总理的男子"
+        },
+        {
+          "title": "Ukrainian MP calls U.S.-Russia diesel deal a 'betrayal'",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/11/nx-s1-5997466/ukrainian-mp-calls-u-s-russia-diesel-deal-a-betrayal",
+          "title_zh": "乌克兰议员称美俄柴油协议是“背叛"
+        },
+        {
+          "title": "Dozens of gold prospectors killed in strikes on Egypt-Sudan border, rights group says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqy43vrk8wv8o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "人权组织称，数十名淘金者在埃及与苏丹边境的袭击中丧生"
+        },
+        {
+          "title": "Pope Leo XIV to undergo lung surgery this week",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/11/nx-s1-5998027/pope-leo-xiv-to-undergo-lung-surgery-this-week",
+          "title_zh": "教皇利奥十四世本周将接受肺部手术"
+        },
+        {
+          "title": "Homes and bridges swept away as fresh floods hit Nepal",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck86zppejjw3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "新一轮洪水袭击尼泊尔，房屋和桥梁被冲毁"
+        }
+      ]
+    },
     {
       "date": "2026-10-11",
       "items": [
         {
           "title": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽伦斯基谴责柴油交易后，特朗普表示“乌克兰是时候选出新总统了"
         },
         {
           "title": "Attack on Riyadh airport killed 12 people and wounded over 300 more, Saudi authorities say",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/10/g-s1-147682/attack-on-riyadh-airport-killed-12-people-and-wounded-over-300-more-saudi-authorities-say"
+          "url": "https://www.npr.org/2026/10/10/g-s1-147682/attack-on-riyadh-airport-killed-12-people-and-wounded-over-300-more-saudi-authorities-say",
+          "title_zh": "沙特当局称，利雅得机场袭击造成 12 人死亡、300 多人受伤"
         },
         {
           "title": "Pope Leo to have surgery after lump found on lung",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6m2dnngvw8xo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c6m2dnngvw8xo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "教皇利奥在肺部发现肿块后接受手术"
         },
         {
           "title": "Bayeux Tapestry's London tour spurs enthusiasts to Battle of Hastings reenactment",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/10/nx-s1-5993847/bayeux-tapestrys-london-tour-spurs-enthusiasts-to-battle-of-hastings-re-enactment"
+          "url": "https://www.npr.org/2026/10/10/nx-s1-5993847/bayeux-tapestrys-london-tour-spurs-enthusiasts-to-battle-of-hastings-re-enactment",
+          "title_zh": "贝叶挂毯的伦敦之旅激发了爱好者们重演黑斯廷斯战役的热情"
         },
         {
           "title": "Young men live in fear of being snatched off the streets and sold to Myanmar's army",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c680zlny0gk4o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c680zlny0gk4o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "年轻人生活在害怕被从街上抓走并卖给缅甸军队的恐惧之中"
         },
         {
           "title": "Trump weighs joining the fight against Houthis after Riyadh airport attack",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/10/nx-s1-5997512/saudi-arabia-riyadh-airport-bombing-attack"
+          "url": "https://www.npr.org/2026/10/10/nx-s1-5997512/saudi-arabia-riyadh-airport-bombing-attack",
+          "title_zh": "利雅得机场袭击后，特朗普考虑加入打击胡塞武装"
         },
         {
           "title": "Delhi sees more protests as 'cockroach' group's leaders released",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c84g179n2393o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c84g179n2393o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "随着“蟑螂”组织领导人被释放，德里出现更多抗议活动"
         },
         {
           "title": "Protests against voter roll revisions rock capital of world's largest democracy",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/10/nx-s1-5995118/protests-against-voter-roll-revisions-rock-capital-of-worlds-largest-democracy"
+          "url": "https://www.npr.org/2026/10/10/nx-s1-5995118/protests-against-voter-roll-revisions-rock-capital-of-worlds-largest-democracy",
+          "title_zh": "反对修改选民名册的抗议活动席卷了世界最大民主国家的首都"
         },
         {
           "title": "US justice department investigates TV networks over Trump pool coverage",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国司法部调查电视网络对特朗普泳池的报道"
         }
       ]
     },
