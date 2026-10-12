@@ -1,14 +1,23 @@
 {
-  "updated_at": "2026-10-12T13:19:00+08:00",
+  "updated_at": "2026-10-12T19:06:23+08:00",
   "days": [
     {
       "date": "2026-10-12",
       "items": [
         {
-          "title": "Trump's 'energy ceasefire' claim welcomed by Zelensky but Russia silent",
+          "title": "Documents falsified to evade tax on Abramovich's wealth, BBC finds",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6pvg4jyz1m0o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普的“能源停火”主张受到泽连斯基的欢迎，但俄罗斯保持沉默"
+          "url": "https://www.bbc.co.uk/news/articles/c64g1l5389kvo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Trump says Russia and Ukraine agree to an 'energy ceasefire'",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/12/nx-s1-5998614/trump-russia-ukraine-energy-ceasefire"
+        },
+        {
+          "title": "Trump faces growing backlash over plans to import diesel from Russia",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cjn5v21py07vo?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Seafarer's union official says crews offered big money to transit Strait of Hormuz",
@@ -17,14 +26,9 @@
           "title_zh": "海员工会官员表示，船员们愿意提供大笔资金来穿越霍尔木兹海峡"
         },
         {
-          "title": "Djibouti shipwreck: Death toll rises to 139 as 84 remain missing",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168573"
-        },
-        {
-          "title": "Trump faces growing backlash over plans to import diesel from Russia",
+          "title": "Saudi minister vows 'serious response' to Houthi attacks on airports",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cjn5v21py07vo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cjly0zqq27e4o?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Harrowing accounts of violence and sex abuse in women's prison told in new podcast",
@@ -33,15 +37,9 @@
           "title_zh": "新播客讲述女子监狱中的暴力和性虐待的悲惨故事"
         },
         {
-          "title": "Sustaining livelihoods amid crisis in Gaza",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168569"
-        },
-        {
-          "title": "One killed, 11 injured in second Houthi strike on Riyadh airport in two days",
+          "title": "American ranchers wrestle with soaring costs - and their loyalty to Trump",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cr93znyk44e1o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "胡塞武装两天内第二次袭击利雅得机场，造成1人死亡、11人受伤"
+          "url": "https://www.bbc.co.uk/news/articles/c6d7q5z17gp5o?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Ukrainian MP calls U.S.-Russia diesel deal a 'betrayal'",
@@ -50,9 +48,9 @@
           "title_zh": "乌克兰议员称美俄柴油协议是“背叛"
         },
         {
-          "title": "‘These attacks must cease immediately’: Guterres condemns deadly Houthi strike on Riyadh airport",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168572"
+          "title": "Mourners killed by Kenya police at ex-PM's national farewell not part of violence, BBC finds",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c962y4ld1d7do?at_medium=RSS&at_campaign=rss"
         }
       ]
     },
