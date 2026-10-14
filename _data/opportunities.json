@@ -1,6 +1,21 @@
 {
-  "updated_at": "2026-10-13T09:53:41+08:00",
+  "updated_at": "2026-10-14T10:03:26+08:00",
   "internships": [
+    {
+      "date": "2026-10-14",
+      "items": [
+        {
+          "title": "Marketing Intern",
+          "url": "https://www.amazon.jobs/en/jobs/10576936/marketing-intern",
+          "detail": "Shanghai, CHN",
+          "source": "Amazon",
+          "source_zh": "亚马逊",
+          "group": "company",
+          "title_zh": "营销实习生",
+          "detail_zh": "中国上海"
+        }
+      ]
+    },
     {
       "date": "2026-10-13",
       "items": [
@@ -73,7 +88,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生 - 联合国可持续发展集团全系统评价办公室"
+          "title_zh": "实习生 - 联合国可持续发展集团全系统评价办公室",
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Information Management for Evaluation Support Intern",
@@ -141,7 +157,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "评估支持实习生信息管理"
+          "title_zh": "评估支持实习生信息管理",
+          "last_seen": "2026-10-14"
         },
         {
           "title": "BUILDINGS AND COOLING UNIT INTERN",
@@ -210,7 +227,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "建筑和冷却装置实习生"
+          "title_zh": "建筑和冷却装置实习生",
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Communications Intern (Open to South Sudanese only, 3 Months), Juba South Sudan",
@@ -276,7 +294,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "通信实习生（仅向南苏丹人开放，3个月），南苏丹朱巴"
+          "title_zh": "通信实习生（仅向南苏丹人开放，3个月），南苏丹朱巴",
+          "last_seen": "2026-10-14"
         }
       ]
     },
@@ -351,7 +370,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "公共信息实习生",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         }
       ]
     },
@@ -428,7 +447,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "数字通信实习生",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Social Media Intern",
@@ -498,7 +517,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "社交媒体实习生",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Sustainable Fiscal Policy and Public Finance Intern",
@@ -567,7 +586,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "可持续财政政策和公共财政实习生",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Internship - Data Governance",
@@ -604,7 +623,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-25",
-          "days_left": 12,
+          "days_left": 11,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -632,7 +651,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习 - 数据治理",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Unpaid Internship - Giga UX/UI Support Officer-Intern (Home Based, Remote)",
@@ -676,7 +695,7 @@
           "language": "",
           "posted": "2026-10-09",
           "deadline": "2026-10-30",
-          "days_left": 17,
+          "days_left": 16,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -739,7 +758,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-25",
-          "days_left": 12,
+          "days_left": 11,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -767,7 +786,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习 - 数据与分析",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         }
       ]
     },
@@ -843,7 +862,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "通讯支持实习生",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Internship with UPR Branch",
@@ -913,7 +932,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "UPR分行实习",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Human Rights Intern",
@@ -983,7 +1002,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "人权实习生",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Software Development Intern, Intech",
@@ -1070,7 +1089,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "环境署金融倡议（UNEP FI）政策实习",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "National Intern: WASH Knowledge Management (KM), Accra Ghana- 26 Weeks",
@@ -1135,7 +1154,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "国内实习生：WASH 知识管理 (KM)，加纳阿克拉 - 26 周",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "National Communication and Advocacy Intern- Human Interest Story & Social Media Content (6 months)",
@@ -1200,7 +1219,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "国家传播和宣传实习生 - 人文故事和社交媒体内容（6 个月）",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         }
       ]
     },
@@ -1278,7 +1297,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 79,
+          "days_left": 78,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1350,7 +1369,7 @@
           "language": "English or French",
           "posted": "2026-09-21",
           "deadline": "2026-12-31",
-          "days_left": 79,
+          "days_left": 78,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1420,7 +1439,7 @@
           "language": "",
           "posted": "2026-10-03",
           "deadline": "2026-10-08",
-          "days_left": -5,
+          "days_left": -6,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -1489,7 +1508,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 79,
+          "days_left": 78,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1625,7 +1644,7 @@
           "language": "",
           "posted": "2026-09-11",
           "deadline": "2026-12-10",
-          "days_left": 58,
+          "days_left": 57,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1696,7 +1715,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 79,
+          "days_left": 78,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1767,7 +1786,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 79,
+          "days_left": 78,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1834,7 +1853,7 @@
           "language": "",
           "posted": "2026-10-01",
           "deadline": "2026-10-08",
-          "days_left": -5,
+          "days_left": -6,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -1898,7 +1917,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": 1,
+          "days_left": 0,
           "open": true,
           "closing": true,
           "urgent": true,
@@ -1925,7 +1944,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-10-13",
+          "last_seen": "2026-10-14",
           "title_zh": "在美国纽约联合国开发计划署 RBAS 实习、数据分析和报告合成（办公室）"
         },
         {
@@ -1962,7 +1981,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": 1,
+          "days_left": 0,
           "open": true,
           "closing": true,
           "urgent": true,
@@ -2061,7 +2080,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "战略传播实习生",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Intern - Public Information",
@@ -2205,7 +2224,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "政治事务实习生：维和知识管理与指导",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "INTERN - ECONOMIC AFFAIRS (TRADE POLICY)",
@@ -2277,7 +2296,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 经济事务（贸易政策）",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "INTERN - SOCIAL SCIENCES (GENDER EQUALITY AND WOMEN'S EMPOWERMENT COMMUNICATIONS)",
@@ -2346,7 +2365,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 社会科学（性别平等和妇女赋权传播）",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "JIU Research and Analysis Intern",
@@ -2416,7 +2435,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "联检组研究与分析实习生",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Editorial and AI Communications Intern",
@@ -2487,7 +2506,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "编辑和人工智能传播实习生",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Audio-Visual Editing and Digital Media Intern",
@@ -2628,7 +2647,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "沟通和知识管理实习生",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "INTERN - Information and Evidence Management",
@@ -2769,7 +2788,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 创新与分析中心",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "INTERN - HUMAN RIGHTS, I",
@@ -2838,7 +2857,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 人权，我",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Intern - Human Rights",
@@ -2908,7 +2927,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 人权",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Intern - Human Rights",
@@ -2978,7 +2997,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 人权",
-          "last_seen": "2026-10-13"
+          "last_seen": "2026-10-14"
         },
         {
           "title": "Economic intern",
