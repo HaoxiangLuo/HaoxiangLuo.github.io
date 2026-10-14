@@ -1,9 +1,27 @@
 {
-  "updated_at": "2026-10-14T09:23:24+08:00",
+  "updated_at": "2026-10-14T18:01:23+08:00",
   "days": [
     {
       "date": "2026-10-14",
       "items": [
+        {
+          "title": "Russian strikes leave 600,000 without power in Ukraine, as Starlink restrictions affect front line",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm2d6e62p49do?at_medium=RSS&at_campaign=rss",
+          "title_zh": "由于星链限制影响前线，俄罗斯的空袭导致乌克兰 60 万人断电"
+        },
+        {
+          "title": "These workers help train robots who could one day steal their jobs",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/14/g-s1-146907/these-workers-help-train-robots-who-could-one-day-steal-their-jobs",
+          "title_zh": "这些工人帮助训练机器人，有一天它们会抢走他们的工作"
+        },
+        {
+          "title": "Yemen: Houthi siege, cholera outbreak and aid cuts put civilians in the crosshairs",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168589",
+          "title_zh": "也门：胡塞武装围困、霍乱爆发和援助削减使平民成为焦点"
+        },
         {
           "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
           "source": "BBC World",
@@ -11,22 +29,16 @@
           "title_zh": "梵蒂冈表示，教皇被诊断患有肺癌，但手术成功"
         },
         {
-          "title": "How will a diesel deal with Russia impact the U.S. market?",
+          "title": "Trump's ambassador to Greece, Kimberly Guilfoyle, resigns after allegations of improper conduct",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/13/nx-s1-6000118/how-will-a-diesel-deal-with-russia-impact-the-u-s-market",
-          "title_zh": "与俄罗斯的柴油交易将如何影响美国市场？"
+          "url": "https://www.npr.org/2026/10/14/g-s1-148027/trump-ambassador-greece-resignation",
+          "title_zh": "特朗普驻希腊大使金伯利·吉尔福伊尔因不当行为指控而辞职"
         },
         {
-          "title": "Saudi man charged with planting 'sophisticated' recording device in OpenAI office",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "沙特男子被控在 OpenAI 办公室安放“复杂”录音设备"
-        },
-        {
-          "title": "The Trump administration warns Ukraine it could cut off intel, Zelenskyy tells NPR",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/13/nx-s1-6000051/ukraine-zelenskyy-npr-interview-russia-war",
-          "title_zh": "泽连斯基告诉 NPR，特朗普政府警告乌克兰可能会切断情报"
+          "title": "800 million young people face a future without jobs",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168588",
+          "title_zh": "8亿年轻人面临失业的未来"
         },
         {
           "title": "Germany puts Ukrainian on trial accused of blowing up Nord Stream pipelines",
@@ -35,28 +47,16 @@
           "title_zh": "德国对被控炸毁北溪管道的乌克兰人进行审判"
         },
         {
-          "title": "Government spent millions on Trump ads. And, federal agents raid Ilhan Omar's home",
+          "title": "How will a diesel deal with Russia impact the U.S. market?",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/13/g-s1-147822/up-first-newsletter-trump-ads-funding-campaign-rallies-ilhan-omar",
-          "title_zh": "政府在特朗普的广告上花费了数百万美元。而且，联邦特工突袭了伊尔汗·奥马尔的家"
+          "url": "https://www.npr.org/2026/10/13/nx-s1-6000118/how-will-a-diesel-deal-with-russia-impact-the-u-s-market",
+          "title_zh": "与俄罗斯的柴油交易将如何影响美国市场？"
         },
         {
-          "title": "MI5 chief warns of threats to UK from Russia, Iran and AI",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c60rl5vwpk02o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "军情五处负责人警告英国面临来自俄罗斯、伊朗和人工智能的威胁"
-        },
-        {
-          "title": "Pakistan imposes emergency rule in former prime minister's stronghold",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/13/nx-s1-5998798/pakistan-imposes-emergency-rule-in-former-prime-ministers-stronghold",
-          "title_zh": "巴基斯坦对前总理据点实施紧急统治"
-        },
-        {
-          "title": "Missiles intercepted near Riyadh after Saudi coalition hits Yemen fuel depot",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/crx2d60y1py3o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "沙特联军袭击也门油库后在利雅得附近拦截导弹"
+          "title": "World News in Brief: West African migrant crossings, Argentina takes UK to maritime tribunal, farming in Gaza, mental health update",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168587",
+          "title_zh": "世界新闻简讯：西非移民过境、阿根廷将英国告上海事法庭、加沙农业、心理健康更新"
         }
       ]
     },
