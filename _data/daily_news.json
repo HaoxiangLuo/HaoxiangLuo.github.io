@@ -1,6 +1,56 @@
 {
-  "updated_at": "2026-10-15T23:22:07+08:00",
+  "updated_at": "2026-10-16T13:14:00+08:00",
   "days": [
+    {
+      "date": "2026-10-16",
+      "items": [
+        {
+          "title": "Three children and teacher killed in US primary school shooting",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Social Security benefits to get a boost. And, Hasan Piker defends his rhetoric",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/15/g-s1-148199/up-first-newsletter-inflation-social-security-ukraine-russia-yemen-saudi-arabia"
+        },
+        {
+          "title": "'It's really hard to believe' - How Oregon primary school shooting unfolded",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cwe8r29mjd05o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/15/g-s1-148194/russia-ukraine-war"
+        },
+        {
+          "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Greetings from Mexico City, where a bullfighting ban doesn't stop this matador training",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/15/nx-s1-6001550/mexico-city-bullfighting-ban-matador-training"
+        },
+        {
+          "title": "Trump calls off livestream of Fort Hood attacker's execution by firing squad",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/crx23qlnj27qo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Ukraine says its Starshield access is back",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/15/nx-s1-6002949/ukraine-says-its-starshield-access-is-back"
+        },
+        {
+          "title": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss"
+        }
+      ]
+    },
     {
       "date": "2026-10-15",
       "items": [
