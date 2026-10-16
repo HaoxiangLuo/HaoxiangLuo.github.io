@@ -1,53 +1,62 @@
 {
-  "updated_at": "2026-10-16T13:14:00+08:00",
+  "updated_at": "2026-10-16T17:36:56+08:00",
   "days": [
     {
       "date": "2026-10-16",
       "items": [
         {
-          "title": "Three children and teacher killed in US primary school shooting",
+          "title": "Children aged 5, 8 and 11 killed in US school shooting before suspect shot by bystander",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cm89zp48k4kzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国校园枪击案 5、8、11岁儿童遭旁观者开枪射杀"
         },
         {
-          "title": "Social Security benefits to get a boost. And, Hasan Piker defends his rhetoric",
+          "title": "Russia's view amid Ukraine's strikes and Zelenskyy's growing rift with the U.S.",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/15/g-s1-148199/up-first-newsletter-inflation-social-security-ukraine-russia-yemen-saudi-arabia"
+          "url": "https://www.npr.org/2026/10/16/nx-s1-6004281/russias-view-amid-ukraines-strikes-and-zelenskyys-growing-rift-with-the-u-s",
+          "title_zh": "俄罗斯对乌克兰袭击以及泽伦斯基与美国日益加深的分歧的看法"
+        },
+        {
+          "title": "Could your brain data be used against you? UN calls for limits on neurotechnology",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168609",
+          "title_zh": "你的大脑数据会被用来对付你吗？联合国呼吁限制神经技术"
         },
         {
           "title": "'It's really hard to believe' - How Oregon primary school shooting unfolded",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/cwe8r29mjd05o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/videos/cwe8r29mjd05o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "这真的很难相信”——俄勒冈州小学枪击事件是如何发生的"
         },
         {
-          "title": "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce",
+          "title": "How Putin may react to the rift between the U.S. and Ukraine",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/15/g-s1-148194/russia-ukraine-war"
+          "url": "https://www.npr.org/2026/10/16/nx-s1-6003665/how-putin-may-react-to-the-rift-between-the-u-s-and-ukraine",
+          "title_zh": "普京可能如何应对美国和乌克兰之间的裂痕"
+        },
+        {
+          "title": "The world is waging a ‘war on nature’ as progress on biodiversity targets lags",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168607",
+          "title_zh": "由于生物多样性目标进展滞后，世界正在发动一场“自然战争"
         },
         {
           "title": "Ship attack reports near Hormuz reach record high as oil exports slow",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cmde8dpg8g0no?at_medium=RSS&at_campaign=rss",
+          "title_zh": "由于石油出口放缓，霍尔木兹附近的船只袭击报告创历史新高"
         },
         {
-          "title": "Greetings from Mexico City, where a bullfighting ban doesn't stop this matador training",
+          "title": "Social Security benefits to get a boost. And, Hasan Piker defends his rhetoric",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/15/nx-s1-6001550/mexico-city-bullfighting-ban-matador-training"
+          "url": "https://www.npr.org/2026/10/15/g-s1-148199/up-first-newsletter-inflation-social-security-ukraine-russia-yemen-saudi-arabia",
+          "title_zh": "社会保障福利得到提升。而且，哈桑·派克为他的言论辩护"
         },
         {
-          "title": "Trump calls off livestream of Fort Hood attacker's execution by firing squad",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/crx23qlnj27qo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Ukraine says its Starshield access is back",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/15/nx-s1-6002949/ukraine-says-its-starshield-access-is-back"
-        },
-        {
-          "title": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss"
+          "title": "AI, green energy and economic transitions risk leaving vulnerable communities behind, UN warns",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168604",
+          "title_zh": "联合国警告称，人工智能、绿色能源和经济转型有可能使脆弱社区落后"
         }
       ]
     },
@@ -57,42 +66,50 @@
         {
           "title": "Trump calls off livestream for Fort Hood shooter's execution by firing squad",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/crx23qlnj27qo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/crx23qlnj27qo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普取消胡德堡枪手被行刑队处决的现场直播"
         },
         {
           "title": "Social Security benefits to get a boost. And, Hasan Piker defends his rhetoric",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/15/g-s1-148199/up-first-newsletter-inflation-social-security-ukraine-russia-yemen-saudi-arabia"
+          "url": "https://www.npr.org/2026/10/15/g-s1-148199/up-first-newsletter-inflation-social-security-ukraine-russia-yemen-saudi-arabia",
+          "title_zh": "社会保障福利得到提升。而且，哈桑·派克为他的言论辩护"
         },
         {
           "title": "Security Council LIVE: Deaths, demolitions spike in Gaza, West Bank",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168599"
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168599",
+          "title_zh": "安理会直播：加沙和约旦河西岸的死亡和拆除激增"
         },
         {
           "title": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽连斯基表示恢复罢工后，俄罗斯指责乌克兰袭击炼油厂"
         },
         {
           "title": "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/15/g-s1-148194/russia-ukraine-war"
+          "url": "https://www.npr.org/2026/10/15/g-s1-148194/russia-ukraine-war",
+          "title_zh": "官员称，乌克兰在短暂休战后恢复对俄罗斯炼油厂的袭击"
         },
         {
           "title": "WHO urges faster action to end lead exposure which kills 3.5 million annually",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168600"
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168600",
+          "title_zh": "世界卫生组织敦促采取更快行动，消除每年导致 350 万人死亡的铅接触"
         },
         {
           "title": "At least 33 pupils and teacher killed after school roof collapses in Pakistan",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "巴基斯坦学校屋顶倒塌 至少33名学生和老师丧生"
         },
         {
           "title": "Greetings from Mexico City, where a bullfighting ban doesn't stop this matador training",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/15/nx-s1-6001550/mexico-city-bullfighting-ban-matador-training"
+          "url": "https://www.npr.org/2026/10/15/nx-s1-6001550/mexico-city-bullfighting-ban-matador-training",
+          "title_zh": "来自墨西哥城的问候，斗牛禁令并没有阻止斗牛士的训练"
         },
         {
           "title": "Haiti sanctions renewed: Starving the gangs of bullets",
