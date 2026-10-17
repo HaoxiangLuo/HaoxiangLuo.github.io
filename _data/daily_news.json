@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-10-16T23:02:07+08:00",
+  "updated_at": "2026-10-17T13:09:09+08:00",
   "days": [
+    {
+      "date": "2026-10-17",
+      "items": [
+        {
+          "title": "Brazil sees record fall in Amazon deforestation as key election looms",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "随着关键选举的临近，巴西亚马逊森林砍伐量创历史新高"
+        },
+        {
+          "title": "Israeli settlers beat Palestinians and a U.S. photojournalist in West Bank attacks",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/16/nx-s1-6004904/israeli-settlers-beat-us-photojournalist-washington-post-west-bank",
+          "title_zh": "以色列定居者在西岸袭击中殴打巴勒斯坦人和一名美国摄影记者"
+        },
+        {
+          "title": "Trump waives several Russia sanctions as new US law takes effect",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "随着美国新法律生效，特朗普放弃了对俄罗斯的多项制裁"
+        },
+        {
+          "title": "Crowds throng New Delhi and wave Indian flags amid escalating protests",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/16/g-s1-148383/crowds-throng-new-delhi-and-wave-indian-flags-amid-escalating-protests",
+          "title_zh": "随着抗议活动不断升级，人群聚集在新德里并挥舞着印度国旗"
+        },
+        {
+          "title": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cv98zw1k8kp3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "俄勒冈州老师与学校袭击者搏斗，武装父亲“多次”射杀嫌疑人"
+        },
+        {
+          "title": "Sally Rooney's books will no longer be sold in U.K. after Palestinian Action support",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/16/nx-s1-6004838/sally-rooney-books-uk-palestinian-action-support",
+          "title_zh": "在巴勒斯坦行动支持后，莎莉·鲁尼的书将不再在英国出售"
+        },
+        {
+          "title": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3kgqjkzw29wo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "三名男子因在墨西哥谋杀澳大利亚和美国冲浪者而各被判入狱 158 年"
+        },
+        {
+          "title": "Russia's view amid Ukraine's strikes and Zelenskyy's growing rift with the U.S.",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/16/nx-s1-6004281/russias-view-amid-ukraines-strikes-and-zelenskyys-growing-rift-with-the-u-s",
+          "title_zh": "俄罗斯对乌克兰袭击以及泽伦斯基与美国日益加深的分歧的看法"
+        },
+        {
+          "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
+          "title_zh": "乌克兰内部攻势将俄罗斯击退——星链发挥关键作用"
+        }
+      ]
+    },
     {
       "date": "2026-10-16",
       "items": [
