@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-17T17:08:20+08:00",
+  "updated_at": "2026-10-17T21:58:47+08:00",
   "days": [
     {
       "date": "2026-10-17",
@@ -11,10 +11,16 @@
           "title_zh": "随着美国新法律生效，特朗普放弃了对俄罗斯的多项制裁"
         },
         {
-          "title": "Sidewalk sleepers: They have nowhere else to stay while a loved one is in the hospital",
+          "title": "Decades after apartheid, South Africans seek justice for crimes of the past",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/17/g-s1-147874/hospital-diagnosis-patients-india-sidewalk",
-          "title_zh": "路边露宿者：当亲人住院时，他们无处可住"
+          "url": "https://www.npr.org/2026/10/17/nx-s1-5987671/south-africa-justice-sharpeville-apartheid",
+          "title_zh": "种族隔离几十年后，南非人为过去的罪行寻求正义"
+        },
+        {
+          "title": "As disasters mount, next UN climate summit faces a test of trust",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168617",
+          "title_zh": "随着灾害加剧，下一届联合国气候峰会面临信任考验"
         },
         {
           "title": "Oregon teacher fought school attacker before armed dad shot suspect 'multiple times'",
@@ -23,10 +29,16 @@
           "title_zh": "俄勒冈州老师与学校袭击者搏斗，武装父亲“多次”射杀嫌疑人"
         },
         {
-          "title": "Israeli settlers beat Palestinians and a U.S. photojournalist in West Bank attacks",
+          "title": "Sidewalk sleepers: They have nowhere else to stay while a loved one is in the hospital",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/16/nx-s1-6004904/israeli-settlers-beat-us-photojournalist-washington-post-west-bank",
-          "title_zh": "以色列定居者在西岸袭击中殴打巴勒斯坦人和一名美国摄影记者"
+          "url": "https://www.npr.org/2026/10/17/g-s1-147874/hospital-diagnosis-patients-india-sidewalk",
+          "title_zh": "路边露宿者：当亲人住院时，他们无处可住"
+        },
+        {
+          "title": "Ukraine: Civilian casualty rates among ‘deadliest’ in years, as energy attacks intensify",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168614",
+          "title_zh": "乌克兰：能源袭击加剧，平民伤亡率跻身多年来“最致命”之列"
         },
         {
           "title": "Three men jailed for 158 years each for murdering Australian and US surfers in Mexico",
@@ -35,28 +47,16 @@
           "title_zh": "三名男子因在墨西哥谋杀澳大利亚和美国冲浪者而各被判入狱 158 年"
         },
         {
-          "title": "Crowds throng New Delhi and wave Indian flags amid escalating protests",
+          "title": "Israeli settlers beat Palestinians and a U.S. photojournalist in West Bank attacks",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/16/g-s1-148383/crowds-throng-new-delhi-and-wave-indian-flags-amid-escalating-protests",
-          "title_zh": "随着抗议活动不断升级，人群聚集在新德里并挥舞着印度国旗"
+          "url": "https://www.npr.org/2026/10/16/nx-s1-6004904/israeli-settlers-beat-us-photojournalist-washington-post-west-bank",
+          "title_zh": "以色列定居者在西岸袭击中殴打巴勒斯坦人和一名美国摄影记者"
         },
         {
-          "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
-          "title_zh": "乌克兰内部攻势将俄罗斯击退——星链发挥关键作用"
-        },
-        {
-          "title": "Sally Rooney's books will no longer be sold in U.K. after support for pro-Palestinian group",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/16/nx-s1-6004838/sally-rooney-books-uk-palestinian-action-support",
-          "title_zh": "在巴勒斯坦行动支持后，莎莉·鲁尼的书将不再在英国出售"
-        },
-        {
-          "title": "Brazil sees record fall in Amazon deforestation as key election looms",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "随着关键选举的临近，巴西亚马逊森林砍伐量创历史新高"
+          "title": "WHO scales up Ebola readiness in 22 countries across three continents",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168613",
+          "title_zh": "世卫组织加强三大洲22个国家的埃博拉准备工作"
         }
       ]
     },
