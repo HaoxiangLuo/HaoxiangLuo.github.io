@@ -1,14 +1,29 @@
 {
-  "updated_at": "2026-10-18T13:14:29+08:00",
+  "updated_at": "2026-10-18T17:25:50+08:00",
   "days": [
     {
       "date": "2026-10-18",
       "items": [
         {
-          "title": "Violent clashes, looting and buildings ablaze in France as over 1,000 arrested after protests",
+          "title": "Violent clashes, looting and buildings ablaze in France as more than 1,200 arrested after protests",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c6d937wedj7jo?at_medium=RSS&at_campaign=rss",
           "title_zh": "法国发生暴力冲突、抢劫和建筑物起火，抗议后逾千人被捕"
+        },
+        {
+          "title": "Major fire breaks out in Alberta after deadly incident at military base",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/18/nx-s1-6007276/fire-alberta-deadly-canada-military-base"
+        },
+        {
+          "title": "COP17: The world has a plan to save nature. Is it working?",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168618"
+        },
+        {
+          "title": "Photos show luxury boat with 50m pool and water slides near Kim Jong Un's summer retreat",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmy4xnyyg1lyo?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Student protests widen into greater social unrest in France",
@@ -23,10 +38,9 @@
           "title_zh": "面粉袋变成防洪堤：加沙将面临又一个没有安全住所的冬天"
         },
         {
-          "title": "European diplomats attacked by Israeli settlers in West Bank",
+          "title": "A wave of homemade, synthetic drugs sweeps US and deepens crisis",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "欧洲外交官在约旦河西岸遭到以色列定居者袭击"
+          "url": "https://www.bbc.co.uk/news/articles/cmx2wvyv5j17o?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "The state of the State Department in the wake of the Kimberly Guilfoyle scandal",
@@ -39,24 +53,6 @@
           "source": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/10/1168617",
           "title_zh": "随着灾害加剧，下一届联合国气候峰会面临信任考验"
-        },
-        {
-          "title": "Deaths confirmed in major fire at Canada military base",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "加拿大军事基地重大火灾确认死亡"
-        },
-        {
-          "title": "Scuffles and fires break out as protesters rally across France, joining students",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
-          "title_zh": "抗议者与学生一起在法国各地集会，发生扭打和火灾"
-        },
-        {
-          "title": "Ukraine: Civilian casualty rates among ‘deadliest’ in years, as energy attacks intensify",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168614",
-          "title_zh": "乌克兰：能源袭击加剧，平民伤亡率跻身多年来“最致命”之列"
         }
       ]
     },
