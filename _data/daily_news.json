@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-10-17T21:58:47+08:00",
+  "updated_at": "2026-10-18T13:14:29+08:00",
   "days": [
+    {
+      "date": "2026-10-18",
+      "items": [
+        {
+          "title": "Violent clashes, looting and buildings ablaze in France as over 1,000 arrested after protests",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6d937wedj7jo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法国发生暴力冲突、抢劫和建筑物起火，抗议后逾千人被捕"
+        },
+        {
+          "title": "Student protests widen into greater social unrest in France",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/17/nx-s1-6006735/student-protests-widen-into-greater-social-unrest-in-france",
+          "title_zh": "法国学生抗议活动扩大为更大的社会动荡"
+        },
+        {
+          "title": "Flour sacks turned flood barriers: Gaza faces another winter without safe shelter",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168619",
+          "title_zh": "面粉袋变成防洪堤：加沙将面临又一个没有安全住所的冬天"
+        },
+        {
+          "title": "European diplomats attacked by Israeli settlers in West Bank",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "欧洲外交官在约旦河西岸遭到以色列定居者袭击"
+        },
+        {
+          "title": "The state of the State Department in the wake of the Kimberly Guilfoyle scandal",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/17/nx-s1-6001729/the-state-of-the-state-department-in-the-wake-of-the-kimberly-guilfoyle-scandal",
+          "title_zh": "金伯利·吉尔福伊尔丑闻后国务院的状况"
+        },
+        {
+          "title": "As disasters mount, next UN climate summit faces a test of trust",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168617",
+          "title_zh": "随着灾害加剧，下一届联合国气候峰会面临信任考验"
+        },
+        {
+          "title": "Deaths confirmed in major fire at Canada military base",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr86z0w4lxdxo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "加拿大军事基地重大火灾确认死亡"
+        },
+        {
+          "title": "Scuffles and fires break out as protesters rally across France, joining students",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
+          "title_zh": "抗议者与学生一起在法国各地集会，发生扭打和火灾"
+        },
+        {
+          "title": "Ukraine: Civilian casualty rates among ‘deadliest’ in years, as energy attacks intensify",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168614",
+          "title_zh": "乌克兰：能源袭击加剧，平民伤亡率跻身多年来“最致命”之列"
+        }
+      ]
+    },
     {
       "date": "2026-10-17",
       "items": [
