@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-10-19T18:38:49+08:00",
+  "updated_at": "2026-10-20T01:13:22+08:00",
   "days": [
+    {
+      "date": "2026-10-20",
+      "items": [
+        {
+          "title": "Australian MP critically injured after being hit by car in apparent attack",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwp9g43g2p07o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "澳大利亚议员在明显的袭击中被车撞后重伤"
+        },
+        {
+          "title": "Australian prime minister says lawmaker critically injured by car is 'no accident'",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/19/g-s1-148737/australia-lawmaker-critically-injured",
+          "title_zh": "澳大利亚总理表示议员被车严重受伤“并非意外"
+        },
+        {
+          "title": "Kenya cult leader who told parents to starve children guilty of 191 murders",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "肯尼亚邪教领袖教唆父母让儿童挨饿 犯有191起谋杀案"
+        },
+        {
+          "title": "2026 midterms could be the most expensive on record. And, Macron condemns protests",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/19/g-s1-148733/up-first-newsletter-ukraine-russia-campaign-finances-france-protests",
+          "title_zh": "2026 年中期选举可能是有记录以来最昂贵的一次。并且，马克龙谴责抗议活动"
+        },
+        {
+          "title": "Ex-OpenAI worker accused of planting device had Saudi support says court filing",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6gel2dlyxvyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法庭文件显示，被指控种植设备的前 OpenAI 员工得到了沙特的支持"
+        },
+        {
+          "title": "Ukraine and Russia exchange strikes, as relations between Trump and Zelenskyy sour",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/19/nx-s1-6007371/ukraine-and-russia-exchange-strikes-as-relations-between-trump-and-zelenskyy-sour",
+          "title_zh": "特朗普和泽连斯基关系恶化，乌克兰和俄罗斯相互攻击"
+        },
+        {
+          "title": "Alberta heads to polls to decide whether to hold vote on separation from Canada",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cxvgd0ymgzgyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "艾伯塔省将进行民意调查，决定是否就与加拿大分离进行投票"
+        },
+        {
+          "title": "Solar power is changing agriculture in Pakistan, but some fear it could cause issues",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/19/nx-s1-5993523/solar-power-is-changing-agriculture-in-pakistan-but-some-fear-it-could-cause-issues",
+          "title_zh": "太阳能正在改变巴基斯坦的农业，但一些人担心这可能会引起问题"
+        },
+        {
+          "title": "Exiled critic of Rwandan president found beheaded",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3lylj78777do?at_medium=RSS&at_campaign=rss",
+          "title_zh": "卢旺达总统的流亡批评者被发现被斩首"
+        }
+      ]
+    },
     {
       "date": "2026-10-19",
       "items": [
