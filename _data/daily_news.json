@@ -1,6 +1,56 @@
 {
-  "updated_at": "2026-10-18T22:11:05+08:00",
+  "updated_at": "2026-10-19T13:26:09+08:00",
   "days": [
+    {
+      "date": "2026-10-19",
+      "items": [
+        {
+          "title": "Macron calls for 'calm and order' after riots across France",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw240zl08dm5o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Political rivals implicated under Pakistan's anti-terror law",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/18/nx-s1-6004833/political-rivals-implicated-under-pakistans-anti-terror-law"
+        },
+        {
+          "title": "Inside the New York ‘time machine’ racing to save a century of sound and film",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168608"
+        },
+        {
+          "title": "France's government under pressure after weekend of widespread violence",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/crwyd02yz22vo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "'Life is absolutely brutal in Gaza,' says World Food Programme head",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/18/nx-s1-6001709/life-is-absolutely-brutal-in-gaza-says-world-food-programme-head"
+        },
+        {
+          "title": "COP17: The world has a plan to save nature. Is it working?",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168618"
+        },
+        {
+          "title": "Major fire at Canada military base leaves four dead, dozens injured",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cxj0ly1m3q81o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Ukraine and the U.S. are at odds over Starshield. Here's what to know",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/18/nx-s1-6007382/ukraine-us-starshield-starlink-what-to-know-trump"
+        },
+        {
+          "title": "Flour sacks turned flood barriers: Gaza faces another winter without safe shelter",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168619"
+        }
+      ]
+    },
     {
       "date": "2026-10-18",
       "items": [

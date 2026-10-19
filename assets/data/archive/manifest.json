@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T09:51:17+08:00",
+  "updated_at": "2026-10-19T13:26:09+08:00",
   "archives": {
     "daily_news": {
       "format": "jsonl",
@@ -15,8 +15,8 @@
         {
           "key": "2026-10",
           "url": "/assets/data/archive/daily-news/2026-10.jsonl",
-          "records": 18,
-          "sha256": "6b8995757b6fe07d46b32a1926044aa10aa7b9218d830aaf4dddb42781dde0c1"
+          "records": 19,
+          "sha256": "791850b00a0b26964152a1c4607a027a6c99d3107b7aea21d25631e2aadbf37f"
         }
       ]
     },
