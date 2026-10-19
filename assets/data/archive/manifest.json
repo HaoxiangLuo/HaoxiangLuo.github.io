@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-18T22:11:05+08:00",
+  "updated_at": "2026-10-19T09:51:17+08:00",
   "archives": {
     "daily_news": {
       "format": "jsonl",
@@ -27,8 +27,8 @@
         {
           "key": "2026",
           "url": "/assets/data/archive/academic-frontiers/2026.jsonl",
-          "records": 44,
-          "sha256": "0710393805e6511b083b2034321d174b68590a7b12616878c718405b70118d4e"
+          "records": 57,
+          "sha256": "628cf42c498fca3fedc4147690757455565d20e586c6595b46af6e193b4ffeeb"
         }
       ]
     },

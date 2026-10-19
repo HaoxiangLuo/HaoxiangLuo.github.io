@@ -1,6 +1,260 @@
 {
-  "updated_at": "2026-10-12T09:40:19+08:00",
+  "updated_at": "2026-10-19T09:51:17+08:00",
   "items": [
+    {
+      "id": "doi:10.1080/1369118x.2026.2750550",
+      "title": "Religious information repertoires in Switzerland’s hybrid information environment: asymmetric associations with trust and reputation",
+      "abstract_excerpt": "In hybrid media environments, public understanding emerges from patterned combinations of legacy news media, digital platforms, and interpersonal communication. Rather than relying on single channels, individuals assemble repertoires of mediated sources, interpersonal encounters, and direct personal experiences that structure how they make sense of public issues and evaluate social groups. Religion provides an instructive case: as a morally…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-10-17",
+      "authors": [
+        "Rebekka Rieser",
+        "Mark Eisenegger"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2750550",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2750550",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ]
+    },
+    {
+      "id": "doi:10.1177/00936502261496144",
+      "title": "Two Paths of Conversation: How Stories and Statistics are Associated With Community Engagement in Online Debate Surrounding Vaccine Science Skeptical Content",
+      "abstract_excerpt": "Statistical and narrative evidence represent two distinct ways of substantiating claims in public reasoning, but does this distinction matter for how people engage with vaccine science skeptical (VSS) content and the discursive spaces surrounding it? This study addresses this question through a large-scale, LLM-assisted observational analysis of online engagement with VSS posts and comments that support or counter such content using statistical…",
+      "journal": "Communication Research",
+      "issn_l": "0093-6502",
+      "published_at": "2026-10-17",
+      "authors": [
+        "Han Zao Li",
+        "Inhwan Bae",
+        "Pengfei Zhao",
+        "Natalya N. Bazarova",
+        "Drew Margolin"
+      ],
+      "doi_url": "https://doi.org/10.1177/00936502261496144",
+      "landing_page_url": "https://doi.org/10.1177/00936502261496144",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "综合传播",
+        "政治传播"
+      ]
+    },
+    {
+      "id": "doi:10.1177/01634437261497901",
+      "title": "Privileged precarity: Working freelance in the TV industry",
+      "abstract_excerpt": "Despite growing interest in the television industry’s freelance labour market, little is yet known about how workers interpret and manage the instability, intermittent employment and organisational ambivalence that characterise these skilled contingent careers. This article investigates the lived experience of freelance television work through qualitative interviews with practitioners in the UK and Australia. It maps the recurrent cycle of…",
+      "journal": "Media Culture & Society",
+      "issn_l": "0163-4437",
+      "published_at": "2026-10-16",
+      "authors": [
+        "Richard Wallis"
+      ],
+      "doi_url": "https://doi.org/10.1177/01634437261497901",
+      "landing_page_url": "https://doi.org/10.1177/01634437261497901",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "文化与权力"
+      ]
+    },
+    {
+      "id": "doi:10.1177/01634437261493368",
+      "title": "Manufacturing controversies: Media, politics and censoring contemporary art in Australia",
+      "abstract_excerpt": "Censorship campaigns targeting contemporary art are increasingly visible in liberal democracies, yet their operation is frequently treated as episodic controversy rather than as a structured social and media process. This obscures how such campaigns are assembled, amplified, and translated into institutional pressures, reshaping the arts sector in disquieting ways. From artists Juan Davila to Bill Henson, this study examines how censorship is…",
+      "journal": "Media Culture & Society",
+      "issn_l": "0163-4437",
+      "published_at": "2026-10-16",
+      "authors": [
+        "Louise Rollman"
+      ],
+      "doi_url": "https://doi.org/10.1177/01634437261493368",
+      "landing_page_url": "https://doi.org/10.1177/01634437261493368",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "文化与权力"
+      ]
+    },
+    {
+      "id": "doi:10.1080/1369118x.2026.2736814",
+      "title": "Navigating GenAI in the workplace: skills transformation & tension",
+      "abstract_excerpt": "By automating the content creation process, Generative AI is reshaping creative work, but its impact on knowledge workers remains underexplored, which this study seeks to examine. Drawing on in-depth interviews with 20 knowledge workers, this study examines what is being transformed in the workplace and how these shifts are being perceived by the knowledge workers who use GenAI. Using Social Shaping of Technology (SST) as a conceptual lens to…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-10-16",
+      "authors": [
+        "Simin Michelle Chen",
+        "Kate J. Cassidy"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2736814",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2736814",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ]
+    },
+    {
+      "id": "doi:10.1177/14614448261488700",
+      "title": "Stress and self-efficacy under artificial intelligence disruption: A mixed-methods study on the usage of artificial intelligence among Finnish workers",
+      "abstract_excerpt": "Rapid workplace integration of artificial intelligence (AI) is reshaping work practices and challenging employees’ self-efficacy and well-being. This mixed-methods study examines these experiences using national survey data ( N = 2109) and qualitative interviews ( N = 54) with Finnish workers. Frequent AI use, AI-induced identity threat, and organizational AI deployment are associated with higher AI strain, whereas AI self-efficacy relates to…",
+      "journal": "New Media & Society",
+      "issn_l": "1461-4448",
+      "published_at": "2026-10-15",
+      "authors": [
+        "Atte Oksanen",
+        "Teo Keipi",
+        "Moona Heiskari",
+        "Iina Savolainen"
+      ],
+      "doi_url": "https://doi.org/10.1177/14614448261488700",
+      "landing_page_url": "https://doi.org/10.1177/14614448261488700",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "平台",
+        "数字社会"
+      ]
+    },
+    {
+      "id": "doi:10.1177/01634437261497900",
+      "title": "The coercion of care: Compulsory connectivity in assistive communication",
+      "abstract_excerpt": "Assistive communication expands autonomy, participation and social life. Under particular conditions, the capacity to communicate becomes a duty to remain available. I describe this configuration as compulsory connectivity. It arises when mediated output functions as evidence of presence, nonresponse attracts an adverse default and refusal threatens care, support or recognition. Advanced amyotrophic lateral sclerosis and locked-in syndrome…",
+      "journal": "Media Culture & Society",
+      "issn_l": "0163-4437",
+      "published_at": "2026-10-15",
+      "authors": [
+        "Qiutong Meng"
+      ],
+      "doi_url": "https://doi.org/10.1177/01634437261497900",
+      "landing_page_url": "https://doi.org/10.1177/01634437261497900",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "文化与权力"
+      ]
+    },
+    {
+      "id": "doi:10.65476/g86gaf75",
+      "title": "L. S. Kim, Maid for Television: Race, Class, Gender, and a Representational Economy",
+      "abstract_excerpt": "pursues an intertextual and historical analysis of domestic servants throughout American television in Maid for Television: Race, Class, Gender, and a Representational Economy.Kim weaves together in-depth episode analyses from various television programs with overarching cultural themes to examine how race operates as a representational frame that \"economizes\" differences (p.164).This analysis has meaningful implications for critical race…",
+      "journal": "International journal of communication",
+      "issn_l": "1932-8036",
+      "published_at": "2026-10-14",
+      "authors": [
+        "Kayla Wentzel"
+      ],
+      "doi_url": "https://doi.org/10.65476/g86gaf75",
+      "landing_page_url": "https://doi.org/10.65476/g86gaf75",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "全球传播"
+      ]
+    },
+    {
+      "id": "doi:10.65476/4w78vd46",
+      "title": "Rahul Mukherjee, Unlimited: Aspirational Politics and Mobile Media Distribution",
+      "abstract_excerpt": "In recent years, India's rising telecommunications industry, start-up culture, and official state narratives have cultivated a distinct national brand of an innovative and digitally savvy state machinery that mobilizes digital infrastructure for seamless governance, service delivery, and communication with citizens (Athique, 2019; Kaur, 2020).Particularly post-2014, the Bharatiya Janata Party (BJP) government's nationalist agenda promotes…",
+      "journal": "International journal of communication",
+      "issn_l": "1932-8036",
+      "published_at": "2026-10-14",
+      "authors": [
+        "Saumya Malhotra"
+      ],
+      "doi_url": "https://doi.org/10.65476/4w78vd46",
+      "landing_page_url": "https://doi.org/10.65476/4w78vd46",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "全球传播"
+      ]
+    },
+    {
+      "id": "doi:10.65476/1x2r4g26",
+      "title": "Isabel Molina-Guzmán and Angharad N. Valdivia (Eds.), Rebooting Inequality: Critical Takes on Film and Television Remakes",
+      "abstract_excerpt": "The contemporary culture of remakes, revivals, and reboots has generated a substantial literature on nostalgia, adaptation, intellectual property, and television memory.Carlen Lavigne's (2014) edited collection Remake Television examined how recycled television texts gain meaning by returning in altered historical contexts, while Amy Holdsworth (2011) approached nostalgia through television's relationship to memory, repetition, and everyday…",
+      "journal": "International journal of communication",
+      "issn_l": "1932-8036",
+      "published_at": "2026-10-14",
+      "authors": [
+        "Murat Akser"
+      ],
+      "doi_url": "https://doi.org/10.65476/1x2r4g26",
+      "landing_page_url": "https://doi.org/10.65476/1x2r4g26",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "全球传播"
+      ]
+    },
+    {
+      "id": "doi:10.1080/1369118x.2026.2743936",
+      "title": "(In)congruent synergies? Discursive boundary-spanning between the Italian anti-gender galaxy and anti-trans groups",
+      "abstract_excerpt": "This article investigates increasing alignment between the anti-gender galaxy and anti-trans groups by looking at the symbolic synergies that these two collective endeavors create in and through social media discourse. Building on social movement theory, we examine processes of discursive boundary spanning through which ecclesial and right-wing actors, dedicated anti-gender organizations, and anti-trans groups converge when discussing…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-10-12",
+      "authors": [
+        "Elena Pavan",
+        "Aurora Perego",
+        "Matteo Scianna"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2743936",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2743936",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ]
+    },
+    {
+      "id": "doi:10.1080/10584609.2026.2745832",
+      "title": "Who Verifies the Verifiers? AI, Local Knowledge Production, and Credibility in Tanzania’s 2025 Election",
+      "abstract_excerpt": "This study examines how Factchecking AI tools and community-based credibility practices interacted during Tanzania’s 2025 presidential election. Using data from five regions, we analyzed 342 media materials, 87 interviews, field observations, and 22 distinct contested election events. The findings identify three forms of verification disjuncture. First, AI-assisted translation and transcription sometimes changed the meaning of politically…",
+      "journal": "Political Communication",
+      "issn_l": "1058-4609",
+      "published_at": "2026-10-11",
+      "authors": [
+        "Gregory Gondwe"
+      ],
+      "doi_url": "https://doi.org/10.1080/10584609.2026.2745832",
+      "landing_page_url": "https://doi.org/10.1080/10584609.2026.2745832",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "政治传播",
+        "公共舆论"
+      ]
+    },
+    {
+      "id": "doi:10.1177/00936502261478982",
+      "title": "Human Imagery and Psychological Reactance in Persuasive Health Messages",
+      "abstract_excerpt": "Although mass-mediated persuasive messages often feature images of people, their impacts are surprisingly understudied. We tested whether attributes of human imagery influence psychological reactance to a health promotion PSA, either alone or combined with language style. Participants ( N = 1,100) viewed a message promoting sun safety that contained a forceful (vs. courteous) appeal and featured a model with forceful (vs. neutral) body…",
+      "journal": "Communication Research",
+      "issn_l": "0093-6502",
+      "published_at": "2026-10-11",
+      "authors": [
+        "Chelsea L. Ratcliff",
+        "Helen M. Lillie",
+        "Manusheela Pokharel",
+        "Jakob D. Jensen",
+        "Doris E. Acheme",
+        "Benjamin Sam-Paintsil"
+      ],
+      "doi_url": "https://doi.org/10.1177/00936502261478982",
+      "landing_page_url": "https://doi.org/10.1177/00936502261478982",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "综合传播",
+        "政治传播"
+      ]
+    },
     {
       "id": "doi:10.1080/1369118x.2026.2740040",
       "title": "Data benefits? Attitudes and aspirations of recipients towards social security administrative data sharing",
@@ -240,7 +494,7 @@
     {
       "id": "doi:10.1080/10584609.2026.2733320",
       "title": "Does the TikTok Feed Lean Right? Exposure to Political Content Among Non-Partisan Users in Germany",
-      "abstract_excerpt": "We evaluated disparities in exposure to partisan content among new, nonpartisan TikTok users. We performed a sock puppet audit using 118 automated users in Germany ahead of three regional elections in 2024 and the federal election in 2025 (N = 266.161 videos). The design allowed us to account for past individual user behavior, user networks, location, and time. Overall, general political content constitutes 5%–7% of nonpolitical user feeds in…",
+      "abstract_excerpt": "Populist parties are gaining popularity among young voters in many Western democracies. Young voters increasingly obtain news online through social media websites. TikTok has quickly ascended to become one of the most popular platforms globally. We evaluate exposure disparities regarding political parties by measuring the extent to which parties enter non-partisan users’ feeds. By implementing a sock puppet audit using 78 automated users, we…",
       "journal": "Political Communication",
       "issn_l": "1058-4609",
       "published_at": "2026-10-05",
@@ -248,7 +502,7 @@
         "Jasper Tjaden",
         "Johannes Wolfgram",
         "Aaron Philipp",
-        "Sarah Weißmann",
+        "Sarah Weissmann",
         "Licia Bobzien",
         "Ulrich Köhler"
       ],
