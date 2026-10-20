@@ -1,14 +1,50 @@
 {
-  "updated_at": "2026-10-20T17:55:20+08:00",
+  "updated_at": "2026-10-20T23:24:49+08:00",
   "days": [
     {
       "date": "2026-10-20",
       "items": [
         {
-          "title": "Suspect arrested after historic town hall set alight during disorder - French media",
+          "title": "Zelensky and US envoys holding Oslo talks as Rubio denies withholding intelligence",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw5yn5e8mezvo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "历史悠久的市政厅在骚乱中被纵火，嫌疑人被捕 - 法国媒体"
+          "url": "https://www.bbc.co.uk/news/articles/ck9qzn193lrlo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽连斯基和美国特使在奥斯陆举行会谈，卢比奥否认隐瞒情报"
+        },
+        {
+          "title": "DOJ charges 28 with voting crimes. And, TikTok ignored staff's child safety concerns",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/20/g-s1-148877/up-first-newsletter-california-elections-doj-midterms-trump-tiktok",
+          "title_zh": "美国司法部指控 28 人犯有投票罪。而且，TikTok无视员工的儿童安全担忧"
+        },
+        {
+          "title": "Marseille braces for more unrest after protests give way to 'apocalyptic' disorder",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm5ynkk570pno?at_medium=RSS&at_campaign=rss",
+          "title_zh": "抗议活动演变成“世界末日”混乱后，马赛准备迎接更多骚乱"
+        },
+        {
+          "title": "Trump makes Russia-friendly moves as he looks for a way to end the war with Ukraine",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/20/nx-s1-6007897/trump-makes-russia-friendly-moves-as-he-looks-for-a-way-to-end-the-war-with-ukraine",
+          "title_zh": "特朗普在寻找结束与乌克兰战争的方法时采取了对俄罗斯友好的举措"
+        },
+        {
+          "title": "Man charged with attack on Australian MP as suspect's father says she is family friend",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c678pnn9mpgno?at_medium=RSS&at_campaign=rss",
+          "title_zh": "一名男子被指控袭击澳大利亚议员，嫌疑人的父亲称她是家庭朋友"
+        },
+        {
+          "title": "Former U.S. ambassador on Trump's recent moves to embrace Russia",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/20/nx-s1-6007865/former-u-s-ambassador-on-trumps-recent-moves-to-embrace-russia",
+          "title_zh": "美国前大使谈特朗普最近拥抱俄罗斯的举动"
+        },
+        {
+          "title": "Sudan army drones hit mourners and fuel market killing more than 200 people, sources say",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr3el70jz1nqo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "消息人士称，苏丹陆军无人机袭击哀悼者和燃料市场，造成200多人死亡"
         },
         {
           "title": "Alberta voters reject a move toward independence in referendum backing Canadian unity",
@@ -17,46 +53,10 @@
           "title_zh": "艾伯塔省选民拒绝在支持加拿大统一的公投中走向独立"
         },
         {
-          "title": "UN condemns deadly wave of drone strikes in war-torn Sudan",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168628",
-          "title_zh": "联合国谴责无人机对饱受战争蹂躏的苏丹发动致命袭击"
-        },
-        {
-          "title": "Ukrainians dying because US restricting intelligence sharing, Zelensky adviser tells BBC",
+          "title": "North Korea publishes photos of Kim Jong Un - why do rumours of his death keep coming back?",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmj47yx572z5o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "泽连斯基顾问告诉 BBC，乌克兰人因美国限制情报共享而死亡"
-        },
-        {
-          "title": "Alberta voters decide whether to take a step toward separating from Canada",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/19/nx-s1-6005810/alberta-voters-decide-whether-to-take-a-step-toward-separating-from-canada",
-          "title_zh": "艾伯塔省选民决定是否采取与加拿大分离的步骤"
-        },
-        {
-          "title": "Hunger is ‘an avoidable tragedy’ in a world of plenty: Türk",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168627",
-          "title_zh": "蒂尔克：在富裕的世界里，饥饿是“一场可以避免的悲剧"
-        },
-        {
-          "title": "Seventh day of violent clashes between Albanian protesters and police",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmy4xjlpqgd3o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "阿尔巴尼亚抗议者与警察之间的暴力冲突已进入第七天"
-        },
-        {
-          "title": "Australian prime minister says lawmaker critically injured by car is 'no accident'",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/19/g-s1-148737/australia-lawmaker-critically-injured",
-          "title_zh": "澳大利亚总理表示议员被车严重受伤“并非意外"
-        },
-        {
-          "title": "Haiti: Elections on hold as gangs adapt to security crackdown, Security Council hears",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168626",
-          "title_zh": "海地：安理会获悉，由于帮派适应安全镇压，选举被搁置"
+          "url": "https://www.bbc.co.uk/news/articles/cmvg6qv1jdydo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "朝鲜公布金正恩的照片——为何金正恩去世的传闻不断传出？"
         }
       ]
     },
