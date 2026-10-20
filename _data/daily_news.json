@@ -1,28 +1,50 @@
 {
-  "updated_at": "2026-10-20T13:28:15+08:00",
+  "updated_at": "2026-10-20T17:55:20+08:00",
   "days": [
     {
       "date": "2026-10-20",
       "items": [
         {
-          "title": "Curfew imposed in parts of central Paris and other cities after rioting across France",
+          "title": "Suspect arrested after historic town hall set alight during disorder - French media",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cx30ez03djyqo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cw5yn5e8mezvo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "历史悠久的市政厅在骚乱中被纵火，嫌疑人被捕 - 法国媒体"
         },
         {
-          "title": "Alberta voters decide whether to take a step toward separating from Canada",
+          "title": "Alberta voters reject a move toward independence in referendum backing Canadian unity",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/19/nx-s1-6005810/alberta-voters-decide-whether-to-take-a-step-toward-separating-from-canada"
+          "url": "https://www.npr.org/2026/10/20/nx-s1-6008832/alberta-referendum-canada",
+          "title_zh": "艾伯塔省选民拒绝在支持加拿大统一的公投中走向独立"
         },
         {
           "title": "UN condemns deadly wave of drone strikes in war-torn Sudan",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168628"
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168628",
+          "title_zh": "联合国谴责无人机对饱受战争蹂躏的苏丹发动致命袭击"
         },
         {
           "title": "Ukrainians dying because US restricting intelligence sharing, Zelensky adviser tells BBC",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmj47yx572z5o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cmj47yx572z5o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽连斯基顾问告诉 BBC，乌克兰人因美国限制情报共享而死亡"
+        },
+        {
+          "title": "Alberta voters decide whether to take a step toward separating from Canada",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/19/nx-s1-6005810/alberta-voters-decide-whether-to-take-a-step-toward-separating-from-canada",
+          "title_zh": "艾伯塔省选民决定是否采取与加拿大分离的步骤"
+        },
+        {
+          "title": "Hunger is ‘an avoidable tragedy’ in a world of plenty: Türk",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168627",
+          "title_zh": "蒂尔克：在富裕的世界里，饥饿是“一场可以避免的悲剧"
+        },
+        {
+          "title": "Seventh day of violent clashes between Albanian protesters and police",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmy4xjlpqgd3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "阿尔巴尼亚抗议者与警察之间的暴力冲突已进入第七天"
         },
         {
           "title": "Australian prime minister says lawmaker critically injured by car is 'no accident'",
@@ -31,25 +53,10 @@
           "title_zh": "澳大利亚总理表示议员被车严重受伤“并非意外"
         },
         {
-          "title": "Hunger is ‘an avoidable tragedy’ in a world of plenty: Türk",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168627"
-        },
-        {
-          "title": "Seventh day of violent clashes between Albanian protesters and police",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmy4xjlpqgd3o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "2026 midterms could be the most expensive on record. And, Macron condemns protests",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/19/g-s1-148733/up-first-newsletter-ukraine-russia-campaign-finances-france-protests",
-          "title_zh": "2026 年中期选举可能是有记录以来最昂贵的一次。并且，马克龙谴责抗议活动"
-        },
-        {
           "title": "Haiti: Elections on hold as gangs adapt to security crackdown, Security Council hears",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168626"
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168626",
+          "title_zh": "海地：安理会获悉，由于帮派适应安全镇压，选举被搁置"
         }
       ]
     },
