@@ -1,6 +1,580 @@
 {
-  "updated_at": "2026-10-20T14:28:24+08:00",
+  "updated_at": "2026-10-21T14:29:05+08:00",
   "internships": [
+    {
+      "date": "2026-10-21",
+      "items": [
+        {
+          "title": "Socia Media Intern",
+          "url": "https://careers.un.org/job/286491",
+          "detail": "UN Secretariat · NEW YORK · Hybrid · Deadline not stated · 3-6 months · Stipend not stated",
+          "detail_zh": "联合国秘书处 · 纽约 · 混合办公 · 截止日期未说明 · 3-6 个月 · 津贴未说明",
+          "source": "UN Secretariat",
+          "source_zh": "联合国秘书处",
+          "org": "un",
+          "group": "un",
+          "job_id": "286491",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "governance",
+            "media",
+            "research"
+          ],
+          "areas_zh": "传播、数字治理、传媒、研究",
+          "location": "NEW YORK",
+          "city": "NEW YORK",
+          "country": "NEW YORK",
+          "region": "",
+          "mode": "hybrid",
+          "mode_zh": "混合办公",
+          "department": "Department of Global Communications",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "3-6 months",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "English or French",
+          "posted": "",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": true,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-21",
+          "found": "2026-10-21",
+          "score": 100,
+          "tier": "exceptional",
+          "tier_zh": "极高匹配",
+          "tier_en": "Exceptional match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media, global communication.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体、全球传播。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "社交媒体实习生"
+        },
+        {
+          "title": "Intern- Human Rights (Social Media Internship)",
+          "url": "https://careers.un.org/job/286681",
+          "detail": "OHCHR · GENEVA · Onsite · Deadline not stated · 3 months · Unpaid",
+          "detail_zh": "联合国人权高专办 · 日内瓦 · 现场办公 · 截止日期未说明 · 3 个月 · 无津贴",
+          "source": "OHCHR",
+          "source_zh": "联合国人权高专办",
+          "org": "ohchr",
+          "group": "un",
+          "job_id": "286681",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "media",
+            "research"
+          ],
+          "areas_zh": "传播、传媒、研究",
+          "location": "GENEVA",
+          "city": "GENEVA",
+          "country": "GENEVA",
+          "region": "",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "Office of the High Commissioner for Human Rights",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "3 months",
+          "stipend": "unpaid",
+          "stipend_zh": "无津贴",
+          "stipend_amount": "",
+          "language": "English and French",
+          "posted": "",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": true,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-21",
+          "found": "2026-10-21",
+          "score": 94,
+          "tier": "exceptional",
+          "tier_zh": "极高匹配",
+          "tier_en": "Exceptional match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "实习生 - 人权（社交媒体实习）"
+        },
+        {
+          "title": "Intern- Data Management and Administrative Support",
+          "url": "https://careers.un.org/job/286456",
+          "detail": "OHCHR · YAOUNDE · Onsite · Deadline not stated · Stipend not stated",
+          "detail_zh": "联合国人权高专办 · YAOUNDE, YAOUNDE · 现场办公 · 截止日期未说明 · 津贴未说明",
+          "source": "OHCHR",
+          "source_zh": "联合国人权高专办",
+          "org": "ohchr",
+          "group": "un",
+          "job_id": "286456",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "ai",
+            "communication",
+            "data",
+            "governance"
+          ],
+          "areas_zh": "人工智能、传播、数据、数字治理",
+          "location": "YAOUNDE",
+          "city": "YAOUNDE",
+          "country": "YAOUNDE",
+          "region": "",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "Office of the High Commissioner for Human Rights",
+          "eligibility": [
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "硕士在读、应届毕业生",
+          "phd_ok": false,
+          "duration": "",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "English and French",
+          "posted": "",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": true,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-21",
+          "found": "2026-10-21",
+          "score": 90,
+          "tier": "exceptional",
+          "tier_zh": "极高匹配",
+          "tier_en": "Exceptional match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers digital transformation.",
+            "It accepts Master's / PhD students."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及数字化转型。",
+            "明确接受硕士或博士在读学生。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "内部数据管理和行政支持"
+        },
+        {
+          "title": "Unpaid internship - WSIS Forum 2027 - Junior Project Officer (WSIS Prizes) (Geneva, Switzerland)",
+          "url": "https://jobs.itu.int/job/Geneva-Unpaid-internship-WSIS-Forum-2027-Junior-Project-Officer-%28WSIS-Prizes%29/1373509955/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+          "detail": "ITU · Geneva, Switzerland · Onsite · Apply by 2026-11-17 · Unpaid",
+          "detail_zh": "国际电信联盟 · 瑞士日内瓦 · 现场办公 · 截止 2026-11-17 · 无津贴",
+          "source": "ITU",
+          "source_zh": "国际电信联盟",
+          "org": "itu",
+          "group": "un",
+          "job_id": "",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "governance",
+            "media",
+            "policy",
+            "research"
+          ],
+          "areas_zh": "传播、数字治理、传媒、政策、研究",
+          "location": "Geneva, Switzerland",
+          "city": "Geneva",
+          "country": "Switzerland",
+          "region": "Europe",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "",
+          "stipend": "unpaid",
+          "stipend_zh": "无津贴",
+          "stipend_amount": "",
+          "language": "",
+          "posted": "2026-10-20",
+          "deadline": "2026-11-17",
+          "days_left": 27,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": false,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-20",
+          "found": "2026-10-21",
+          "score": 85,
+          "tier": "high",
+          "tier_zh": "高度匹配",
+          "tier_en": "Strong match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media, audience, digital transformation.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体、受众、数字化转型。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "无薪实习 - 2027 年 WSIS 论坛 - 初级项目官员（WSIS 奖项）（瑞士日内瓦）"
+        },
+        {
+          "title": "Communications Officer | International Consultancy Level 2 | Gaza, Palestine",
+          "url": "https://wfp.wd3.myworkdayjobs.com/en-US/job_openings/job/Gaza-West-Bank--Gaza/Communications-Officer---International-Consultancy-Level-2---Gaza--Palestine_JR127651",
+          "detail": "WFP · Gaza, West Bank & Gaza · Onsite · Apply by 2026-11-04 · 11 months · Stipend not stated",
+          "detail_zh": "世界粮食计划署 · Gaza, West Bank & Gaza · 现场办公 · 截止 2026-11-04 · 11 个月 · 津贴未说明",
+          "source": "WFP",
+          "source_zh": "世界粮食计划署",
+          "org": "wfp",
+          "group": "un",
+          "job_id": "JR127651",
+          "type": "consultancy",
+          "type_label": "Consultancy",
+          "type_zh": "咨询顾问",
+          "areas": [
+            "communication",
+            "data",
+            "media",
+            "policy"
+          ],
+          "areas_zh": "传播、数据、传媒、政策",
+          "location": "Gaza, West Bank & Gaza",
+          "city": "Gaza",
+          "country": "West Bank & Gaza",
+          "region": "",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "",
+          "eligibility": [
+            "master"
+          ],
+          "eligibility_zh": "硕士在读",
+          "phd_ok": false,
+          "duration": "11 months",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "",
+          "posted": "",
+          "deadline": "2026-11-04",
+          "days_left": 14,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": false,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-21",
+          "found": "2026-10-21",
+          "score": 82,
+          "tier": "high",
+          "tier_zh": "高度匹配",
+          "tier_en": "Strong match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media, journalism, audience.",
+            "It accepts Master's / PhD students."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体、新闻业、受众。",
+            "明确接受硕士或博士在读学生。"
+          ],
+          "extended": true,
+          "excluded": false,
+          "title_zh": "通讯官|国际咨询二级 |加沙、巴勒斯坦"
+        },
+        {
+          "title": "Unpaid Internship - WSIS Forum 2027 - Junior Project Officer (Videography) (Geneva, Switzerland)",
+          "url": "https://jobs.itu.int/job/Geneva-Unpaid-Internship-WSIS-Forum-2027-Junior-Project-Officer-%28Videography%29/1373508955/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+          "detail": "ITU · Geneva, Switzerland · Onsite · Apply by 2026-11-17 · Unpaid",
+          "detail_zh": "国际电信联盟 · 瑞士日内瓦 · 现场办公 · 截止 2026-11-17 · 无津贴",
+          "source": "ITU",
+          "source_zh": "国际电信联盟",
+          "org": "itu",
+          "group": "un",
+          "job_id": "",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "media",
+            "policy",
+            "research"
+          ],
+          "areas_zh": "传播、传媒、政策、研究",
+          "location": "Geneva, Switzerland",
+          "city": "Geneva",
+          "country": "Switzerland",
+          "region": "Europe",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "",
+          "stipend": "unpaid",
+          "stipend_zh": "无津贴",
+          "stipend_amount": "",
+          "language": "",
+          "posted": "2026-10-20",
+          "deadline": "2026-11-17",
+          "days_left": 27,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": false,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-20",
+          "found": "2026-10-21",
+          "score": 80,
+          "tier": "high",
+          "tier_zh": "高度匹配",
+          "tier_en": "Strong match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media, audience, strategic communication.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体、受众、战略传播。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "无薪实习 - WSIS 论坛 2027 - 初级项目官员（摄像）（瑞士日内瓦）"
+        },
+        {
+          "title": "Unpaid Internship - WSIS Forum 2027 - Junior Project Officer (WSIS Stocktaking and Case Studies) (Geneva, Switzerland)",
+          "url": "https://jobs.itu.int/job/Geneva-Unpaid-Internship-WSIS-Forum-2027-Junior-Project-Officer-%28WSIS-Stocktaking-and-Case-Studies%29/1373509155/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+          "detail": "ITU · Geneva, Switzerland · Onsite · Apply by 2026-11-17 · 6 months · Unpaid",
+          "detail_zh": "国际电信联盟 · 瑞士日内瓦 · 现场办公 · 截止 2026-11-17 · 6 个月 · 无津贴",
+          "source": "ITU",
+          "source_zh": "国际电信联盟",
+          "org": "itu",
+          "group": "un",
+          "job_id": "",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "data",
+            "media",
+            "policy",
+            "research"
+          ],
+          "areas_zh": "传播、数据、传媒、政策、研究",
+          "location": "Geneva, Switzerland",
+          "city": "Geneva",
+          "country": "Switzerland",
+          "region": "Europe",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "6 months",
+          "stipend": "unpaid",
+          "stipend_zh": "无津贴",
+          "stipend_amount": "",
+          "language": "",
+          "posted": "2026-10-20",
+          "deadline": "2026-11-17",
+          "days_left": 27,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": false,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-20",
+          "found": "2026-10-21",
+          "score": 80,
+          "tier": "high",
+          "tier_zh": "高度匹配",
+          "tier_en": "Strong match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media, audience, strategic communication.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体、受众、战略传播。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "无薪实习 - 2027 年 WSIS 论坛 - 初级项目官员（WSIS 盘点和案例研究）（瑞士日内瓦）"
+        },
+        {
+          "title": "Unpaid Internship - WSIS Forum 2027 - Junior Project Officer (Event Operations and Exhibition) (Geneva, Switzerland)",
+          "url": "https://jobs.itu.int/job/Geneva-Unpaid-Internship-WSIS-Forum-2027-Junior-Project-Officer-%28Event-Operations-and-Exhibition%29/1373492655/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+          "detail": "ITU · Geneva, Switzerland · Onsite · Apply by 2026-11-17 · 6 months · Unpaid",
+          "detail_zh": "国际电信联盟 · 瑞士日内瓦 · 现场办公 · 截止 2026-11-17 · 6 个月 · 无津贴",
+          "source": "ITU",
+          "source_zh": "国际电信联盟",
+          "org": "itu",
+          "group": "un",
+          "job_id": "",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "ai",
+            "communication",
+            "media",
+            "policy",
+            "research"
+          ],
+          "areas_zh": "人工智能、传播、传媒、政策、研究",
+          "location": "Geneva, Switzerland",
+          "city": "Geneva",
+          "country": "Switzerland",
+          "region": "Europe",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "6 months",
+          "stipend": "unpaid",
+          "stipend_zh": "无津贴",
+          "stipend_amount": "",
+          "language": "",
+          "posted": "2026-10-20",
+          "deadline": "2026-11-17",
+          "days_left": 27,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": false,
+          "score80": false,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-20",
+          "found": "2026-10-21",
+          "score": 72,
+          "tier": "good",
+          "tier_zh": "较高匹配",
+          "tier_en": "Good match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers artificial intelligence, strategic communication.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及人工智能、战略传播。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "无薪实习 - WSIS 论坛 2027 - 初级项目官员（活动运营和展览）（瑞士日内瓦）"
+        },
+        {
+          "title": "Program Manager Intern",
+          "url": "https://www.amazon.jobs/en/jobs/10563245/program-manager-intern",
+          "detail": "SGP",
+          "source": "Amazon",
+          "source_zh": "亚马逊",
+          "group": "company",
+          "title_zh": "项目经理实习生",
+          "detail_zh": "新加坡GP"
+        }
+      ]
+    },
     {
       "date": "2026-10-20",
       "items": [
@@ -46,7 +620,7 @@
           "language": "",
           "posted": "2026-10-19",
           "deadline": "2026-11-16",
-          "days_left": 27,
+          "days_left": 26,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -118,7 +692,7 @@
           "language": "",
           "posted": "2026-10-19",
           "deadline": "2026-11-16",
-          "days_left": 27,
+          "days_left": 26,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -232,7 +806,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "公共信息实习生",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         }
       ]
     },
@@ -273,7 +847,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-30",
-          "days_left": 10,
+          "days_left": 9,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -301,7 +875,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "SDG 金融和私营部门发展研究实习生 - 36124（居家）",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         }
       ]
     },
@@ -348,7 +922,7 @@
           "language": "English",
           "posted": "",
           "deadline": "2026-11-02",
-          "days_left": 13,
+          "days_left": 12,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -447,7 +1021,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "GlobalABC 实习生 - 战略沟通、合作伙伴关系和活动",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "GlobalABC intern - Strategic Communications, Partnerships and Events",
@@ -518,7 +1092,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "GlobalABC 实习生 - 战略沟通、合作伙伴关系和活动",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Monitoring and Evaluation Internship - Bridgetown, Barbados",
@@ -560,7 +1134,7 @@
           "language": "English",
           "posted": "",
           "deadline": "2026-11-02",
-          "days_left": 13,
+          "days_left": 12,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -675,7 +1249,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "新闻写作/报道 - 公共信息实习生 - 新闻和内容 - 英语",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Intern, Special Procedures",
@@ -744,7 +1318,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生，特别程序",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "DCO Tech Intern",
@@ -846,7 +1420,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 联合国可持续发展集团全系统评价办公室",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Information Management for Evaluation Support Intern",
@@ -915,7 +1489,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "评估支持实习生信息管理",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "BUILDINGS AND COOLING UNIT INTERN",
@@ -1127,7 +1701,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "公共信息实习生",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         }
       ]
     },
@@ -1204,7 +1778,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "数字通信实习生",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Social Media Intern",
@@ -1274,7 +1848,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "社交媒体实习生",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Sustainable Fiscal Policy and Public Finance Intern",
@@ -1343,7 +1917,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "可持续财政政策和公共财政实习生",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Internship - Data Governance",
@@ -1380,7 +1954,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-25",
-          "days_left": 5,
+          "days_left": 4,
           "open": true,
           "closing": true,
           "urgent": false,
@@ -1408,7 +1982,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习 - 数据治理",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Unpaid Internship - Giga UX/UI Support Officer-Intern (Home Based, Remote)",
@@ -1452,7 +2026,7 @@
           "language": "",
           "posted": "2026-10-09",
           "deadline": "2026-10-30",
-          "days_left": 10,
+          "days_left": 9,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1515,7 +2089,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-25",
-          "days_left": 5,
+          "days_left": 4,
           "open": true,
           "closing": true,
           "urgent": false,
@@ -1543,7 +2117,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习 - 数据与分析",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         }
       ]
     },
@@ -1619,7 +2193,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "通讯支持实习生",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Internship with UPR Branch",
@@ -1689,7 +2263,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "UPR分行实习",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Human Rights Intern",
@@ -1759,7 +2333,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "人权实习生",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Software Development Intern, Intech",
@@ -1846,7 +2420,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "环境署金融倡议（UNEP FI）政策实习",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "National Intern: WASH Knowledge Management (KM), Accra Ghana- 26 Weeks",
@@ -2054,7 +2628,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 72,
+          "days_left": 71,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2126,7 +2700,7 @@
           "language": "English or French",
           "posted": "2026-09-21",
           "deadline": "2026-12-31",
-          "days_left": 72,
+          "days_left": 71,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2196,7 +2770,7 @@
           "language": "",
           "posted": "2026-10-03",
           "deadline": "2026-10-08",
-          "days_left": -12,
+          "days_left": -13,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -2265,7 +2839,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 72,
+          "days_left": 71,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2401,7 +2975,7 @@
           "language": "",
           "posted": "2026-09-11",
           "deadline": "2026-12-10",
-          "days_left": 51,
+          "days_left": 50,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2472,7 +3046,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 72,
+          "days_left": 71,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2543,7 +3117,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 72,
+          "days_left": 71,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2610,7 +3184,7 @@
           "language": "",
           "posted": "2026-10-01",
           "deadline": "2026-10-08",
-          "days_left": -12,
+          "days_left": -13,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -2674,7 +3248,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": -6,
+          "days_left": -7,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -2738,7 +3312,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": -6,
+          "days_left": -7,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -3122,7 +3696,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 社会科学（性别平等和妇女赋权传播）",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "JIU Research and Analysis Intern",
@@ -3192,7 +3766,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "联检组研究与分析实习生",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Editorial and AI Communications Intern",
@@ -3404,7 +3978,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "沟通和知识管理实习生",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "INTERN - Information and Evidence Management",
@@ -3545,7 +4119,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 创新与分析中心",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "INTERN - HUMAN RIGHTS, I",
@@ -3684,7 +4258,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 人权",
-          "last_seen": "2026-10-20"
+          "last_seen": "2026-10-21"
         },
         {
           "title": "Intern - Human Rights",
@@ -4213,6 +4787,19 @@
     }
   ],
   "academia": [
+    {
+      "date": "2026-10-21",
+      "items": [
+        {
+          "title": "Become a Visiting Scholar",
+          "url": "https://www.polis.cam.ac.uk/research-overview/visiting-scholars",
+          "source": "POLIS, University of Cambridge",
+          "source_zh": "剑桥大学政治与国际研究系",
+          "group": "company",
+          "title_zh": "成为访问学者"
+        }
+      ]
+    },
     {
       "date": "2026-09-23",
       "items": [
