@@ -1,56 +1,62 @@
 {
-  "updated_at": "2026-10-21T17:58:33+08:00",
+  "updated_at": "2026-10-21T23:40:49+08:00",
   "days": [
     {
       "date": "2026-10-21",
       "items": [
         {
-          "title": "Russia frees US citizen Stephen Hubbard, state media reports",
+          "title": "US citizen Stephen Hubbard freed by Russia as Trump envoy meets Putin",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6m24l9v3745o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c6m24l9v3745o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普特使会见普京，美国公民斯蒂芬·哈伯德被俄罗斯释放"
         },
         {
-          "title": "Zelenskyy says early warning system for Russian missile attacks resumes",
+          "title": "Israel detains dozens of Americans, including a congressional candidate, in West Bank",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/21/g-s1-149026/zelenskyy-russian-missiles-warning"
+          "url": "https://www.npr.org/2026/10/21/nx-s1-6010460/brad-lander-detained-west-bank-israel-palestinians",
+          "title_zh": "以色列在约旦河西岸拘留了数十名美国人，其中包括一名国会候选人"
+        },
+        {
+          "title": "Sudan conflict: Peace efforts resume to end ‘drone war’ fuelling humanitarian crisis",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168638",
+          "title_zh": "苏丹冲突：恢复和平努力以结束加剧人道主义危机的“无人机战争"
+        },
+        {
+          "title": "Macron accuses foreign leaders of exploiting French riots",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckjrw044ggxgo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "马克龙指责外国领导人利用法国骚乱"
+        },
+        {
+          "title": "DOJ's noncitizen voter list is unreliable, officials say. And, U.S. pollution rises",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/21/g-s1-149068/up-first-newsletter-california-voter-roll-united-nations-emissions-us-crimes-ukraine-russia",
+          "title_zh": "官员们表示，司法部的非公民选民名单不可靠。而且，美国的污染加剧"
         },
         {
           "title": "WHO supports Nigeria after first Ebola case confirmed",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168637"
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168637",
+          "title_zh": "世卫组织在确认首例埃博拉病例后向尼日利亚提供支持"
         },
         {
-          "title": "Trump and Zelensky appear at loggerheads despite new optimism",
+          "title": "Australian MP loses both legs after alleged car attack, husband says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ckrey51jrgnro?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/ckwyqdqxw6d0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "丈夫称澳大利亚议员因涉嫌汽车袭击而失去双腿"
         },
         {
-          "title": "France announces nightly curfews 'for as long as necessary' in Paris and other cities",
+          "title": "Former U.S. Ambassador to Ukraine on Trump's turn toward Russia",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/21/nx-s1-6010344/france-nightly-curfews"
+          "url": "https://www.npr.org/2026/10/21/nx-s1-6009376/former-u-s-ambassador-to-ukraine-on-trumps-turn-toward-russia",
+          "title_zh": "前美国驻乌克兰大使谈特朗普转向俄罗斯"
         },
         {
           "title": "Global warming will breach 1.5°C – but deep, fast cuts can still bring it back",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168634"
-        },
-        {
-          "title": "Katya Adler: France divided over who to blame for riots and what to learn from them",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cq0me4g9p970o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "法国对于周末骚乱应归咎于谁以及从中吸取什么教训存在分歧"
-        },
-        {
-          "title": "Current U.S. support for Ukraine looks very different than it did",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/20/nx-s1-6009227/current-u-s-support-for-ukraine-looks-very-different-than-it-did",
-          "title_zh": "目前美国对乌克兰的支持看起来与以前大不相同"
-        },
-        {
-          "title": "AI on track to ‘crowd out’ human decision-making in warfare",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168636",
-          "title_zh": "人工智能有望在战争中“挤出”人类决策"
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168634",
+          "title_zh": "全球变暖将突破 1.5°C——但深度、快速的减排仍可将其恢复"
         }
       ]
     },
