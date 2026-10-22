@@ -1,20 +1,38 @@
 {
-  "updated_at": "2026-10-22T17:58:43+08:00",
+  "updated_at": "2026-10-22T23:42:22+08:00",
   "days": [
     {
       "date": "2026-10-22",
       "items": [
         {
-          "title": "How Arab parties could hold critical balance of power in Israeli election",
+          "title": "Police investigate Married at First Sight Australia after 'inappropriate' allegations",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cx8dzrp768j8o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "阿拉伯政党如何在以色列选举中保持关键的权力平衡"
+          "url": "https://www.bbc.co.uk/news/articles/cry83vyw3y4lo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "警方在“不当”指控后调查澳大利亚一见钟情婚姻"
         },
         {
-          "title": "See how Big Tech is transforming Spain's landscape",
+          "title": "Greetings from the Brazil-Argentina border, where waterfalls are flowing at near-record rates",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/22/nx-s1-5991641/ai-data-centers-spain-environmental-impact",
-          "title_zh": "了解大型科技如何改变西班牙的面貌"
+          "url": "https://www.npr.org/2026/10/22/g-s1-148553/argentina-brazil-iguazu-falls-waterfalls-super-el-nino",
+          "title_zh": "来自巴西和阿根廷边境的问候，那里的瀑布正以接近创纪录的速度流动"
+        },
+        {
+          "title": "‘Connect the dots’ between street protests and global turmoil, urges Guterres",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168646",
+          "title_zh": "古特雷斯敦促“连接街头抗议和全球动荡之间的点"
+        },
+        {
+          "title": "At least four dead after storm brings flooding to southern France",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm5ynl4v4wgwo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法国南部暴风雨引发洪水 至少四人死亡"
+        },
+        {
+          "title": "U.S., Israel may attack Iran post-elections. And, SpaceX and Tesla consider merging",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/22/g-s1-149315/up-first-newsletter-midterm-campaign-israel-iran-elon-musk-spacex-tesla",
+          "title_zh": "美国、以色列可能会在选举后攻击伊朗。而且，SpaceX 和特斯拉考虑合并"
         },
         {
           "title": "Fate unknown of many returned to DPR Korea from China: UN independent experts",
@@ -23,40 +41,22 @@
           "title_zh": "许多从中国返回朝鲜的人命运不明：联合国独立专家"
         },
         {
-          "title": "Celebrity shark guided out of South Korea canal refuses to swim out to sea",
+          "title": "French weekend protests to be limited to union demos only, says Macron",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cr3wv99614deo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "被引导出韩国运河的名人鲨鱼拒绝游出海"
+          "url": "https://www.bbc.co.uk/news/articles/cvde8g40xx42o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "马克龙表示，法国周末抗议活动仅限于工会示威"
         },
         {
-          "title": "Bukele says military operation launched to rescue Salvadorans held by gangs in Haiti",
+          "title": "Former U.S. Ambassador to Ukraine William Taylor on Trump's embrace of Russia",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/22/nx-s1-6012029/bukele-military-operation-haiti",
-          "title_zh": "布克莱表示，为营救在海地被帮派扣押的萨尔瓦多人发起了军事行动"
+          "url": "https://www.npr.org/2026/10/22/nx-s1-6010509/former-u-s-ambassador-to-ukraine-william-taylor-on-trumps-embrace-of-russia",
+          "title_zh": "前美国驻乌克兰大使威廉·泰勒谈特朗普拥抱俄罗斯"
         },
         {
           "title": "‘Ominous start’ to West Bank olive harvest amid settler attacks",
           "source": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/10/1168644",
           "title_zh": "定居者袭击中西岸橄榄收获“不祥的开始"
-        },
-        {
-          "title": "Two killed in attack on airport in eastern Saudi Arabia, authorities say",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqwy71ww156ro?at_medium=RSS&at_campaign=rss",
-          "title_zh": "当局称，沙特阿拉伯东部机场袭击造成两人死亡"
-        },
-        {
-          "title": "North Korea says it will resume propaganda broadcasts across border into South Korea",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/22/g-s1-149306/north-korea-propaganda-broadcasts",
-          "title_zh": "朝鲜表示将恢复跨境宣传广播进入韩国"
-        },
-        {
-          "title": "World News in Brief: Aid for Ethiopia, Abyei drone strikes condemned, extreme heat and newborn health",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168643",
-          "title_zh": "世界新闻简讯：对埃塞俄比亚的援助、阿卜耶伊无人机袭击受到谴责、极端高温和新生儿健康"
         }
       ]
     },
