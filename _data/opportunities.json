@@ -1,6 +1,362 @@
 {
-  "updated_at": "2026-10-21T14:29:05+08:00",
+  "updated_at": "2026-10-22T14:31:46+08:00",
   "internships": [
+    {
+      "date": "2026-10-22",
+      "items": [
+        {
+          "title": "PUBLIC INFORMATION - DIGITAL COMMUNICATIONS INTERN",
+          "url": "https://careers.un.org/job/286879",
+          "detail": "UN Secretariat · ETH - OTHER CITIES · Onsite · Deadline not stated · 6 months · Unpaid",
+          "detail_zh": "联合国秘书处 · ETH - OTHER CITIES, ETH - OTHER CITIES · 现场办公 · 截止日期未说明 · 6 个月 · 无津贴",
+          "source": "UN Secretariat",
+          "source_zh": "联合国秘书处",
+          "org": "un",
+          "group": "un",
+          "job_id": "286879",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "governance",
+            "media",
+            "policy",
+            "research"
+          ],
+          "areas_zh": "传播、数字治理、传媒、政策、研究",
+          "location": "ETH - OTHER CITIES",
+          "city": "ETH - OTHER CITIES",
+          "country": "ETH - OTHER CITIES",
+          "region": "",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "Office of the Special Envoy for the Horn of Africa",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "6 months",
+          "stipend": "unpaid",
+          "stipend_zh": "无津贴",
+          "stipend_amount": "",
+          "language": "",
+          "posted": "",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": true,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-22",
+          "found": "2026-10-22",
+          "score": 100,
+          "tier": "exceptional",
+          "tier_zh": "极高匹配",
+          "tier_en": "Exceptional match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media, disinformation, journalism.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体、虚假信息、新闻业。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "公共信息 - 数字通信实习生"
+        },
+        {
+          "title": "Intern: Talent Attraction and Outreach",
+          "url": "https://careers.un.org/job/286702",
+          "detail": "OHCHR · GENEVA · Onsite · Deadline not stated · Stipend not stated",
+          "detail_zh": "联合国人权高专办 · 日内瓦 · 现场办公 · 截止日期未说明 · 津贴未说明",
+          "source": "OHCHR",
+          "source_zh": "联合国人权高专办",
+          "org": "ohchr",
+          "group": "un",
+          "job_id": "286702",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "data",
+            "media",
+            "research"
+          ],
+          "areas_zh": "传播、数据、传媒、研究",
+          "location": "GENEVA",
+          "city": "GENEVA",
+          "country": "GENEVA",
+          "region": "",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "Office of the High Commissioner for Human Rights",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "English and French",
+          "posted": "",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": true,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-22",
+          "found": "2026-10-22",
+          "score": 94,
+          "tier": "exceptional",
+          "tier_zh": "极高匹配",
+          "tier_en": "Exceptional match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "实习生：人才吸引和外展"
+        },
+        {
+          "title": "Intern - Project and Knowledge Management Support",
+          "url": "https://careers.un.org/job/286174",
+          "detail": "UNEP · MONTREAL · Onsite · Deadline not stated · 6 months · Stipend not stated",
+          "detail_zh": "联合国环境规划署 · MONTREAL, MONTREAL · 现场办公 · 截止日期未说明 · 6 个月 · 津贴未说明",
+          "source": "UNEP",
+          "source_zh": "联合国环境规划署",
+          "org": "unep",
+          "group": "un",
+          "job_id": "286174",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "data",
+            "research"
+          ],
+          "areas_zh": "传播、数据、研究",
+          "location": "MONTREAL",
+          "city": "MONTREAL",
+          "country": "MONTREAL",
+          "region": "",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "United Nations Environment Programme",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "6 months",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "English and French",
+          "posted": "",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": false,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-22",
+          "found": "2026-10-22",
+          "score": 88,
+          "tier": "high",
+          "tier_zh": "高度匹配",
+          "tier_en": "Strong match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "Doctoral candidates are explicitly eligible.",
+            "It combines communication and data analysis."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "明确接受博士候选人申请。",
+            "岗位同时涉及传播与数据分析，属于交叉方向。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "实习生 - 项目和知识管理支持"
+        },
+        {
+          "title": "Project Management Intern",
+          "url": "https://careers.un.org/job/286447",
+          "detail": "UN-Habitat · NAIROBI · Hybrid · Deadline not stated · 6 Months · Stipend not stated",
+          "detail_zh": "联合国人居署 · 内罗毕 · 混合办公 · 截止日期未说明 · 6 Months · 津贴未说明",
+          "source": "UN-Habitat",
+          "source_zh": "联合国人居署",
+          "org": "unhabitat",
+          "group": "un",
+          "job_id": "286447",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "data",
+            "policy",
+            "research"
+          ],
+          "areas_zh": "传播、数据、政策、研究",
+          "location": "NAIROBI",
+          "city": "NAIROBI",
+          "country": "NAIROBI",
+          "region": "",
+          "mode": "hybrid",
+          "mode_zh": "混合办公",
+          "department": "United Nations Human Settlements Programme",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "6 Months",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "English and French",
+          "posted": "",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": false,
+          "score80": false,
+          "score70": false,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-22",
+          "found": "2026-10-22",
+          "score": 67,
+          "tier": "possible",
+          "tier_zh": "可考虑",
+          "tier_en": "Worth a look",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers data analysis.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及数据分析。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "项目管理实习生"
+        },
+        {
+          "title": "Capacity Development Intern",
+          "url": "https://careers.un.org/job/286463",
+          "detail": "UN-Habitat · NAIROBI · Hybrid · Deadline not stated · 6 Months · Stipend not stated",
+          "detail_zh": "联合国人居署 · 内罗毕 · 混合办公 · 截止日期未说明 · 6 Months · 津贴未说明",
+          "source": "UN-Habitat",
+          "source_zh": "联合国人居署",
+          "org": "unhabitat",
+          "group": "un",
+          "job_id": "286463",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "data",
+            "media",
+            "policy",
+            "research"
+          ],
+          "areas_zh": "传播、数据、传媒、政策、研究",
+          "location": "NAIROBI",
+          "city": "NAIROBI",
+          "country": "NAIROBI",
+          "region": "",
+          "mode": "hybrid",
+          "mode_zh": "混合办公",
+          "department": "United Nations Human Settlements Programme",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "6 Months",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "English and French",
+          "posted": "",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": false,
+          "score80": false,
+          "score70": false,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-22",
+          "found": "2026-10-22",
+          "score": 67,
+          "tier": "possible",
+          "tier_zh": "可考虑",
+          "tier_en": "Worth a look",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "能力发展实习生"
+        }
+      ]
+    },
     {
       "date": "2026-10-21",
       "items": [
@@ -72,7 +428,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "社交媒体实习生"
+          "title_zh": "社交媒体实习生",
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Intern- Human Rights (Social Media Internship)",
@@ -141,7 +498,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "实习生 - 人权（社交媒体实习）"
+          "title_zh": "实习生 - 人权（社交媒体实习）",
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Intern- Data Management and Administrative Support",
@@ -210,7 +568,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "内部数据管理和行政支持"
+          "title_zh": "内部数据管理和行政支持",
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Unpaid internship - WSIS Forum 2027 - Junior Project Officer (WSIS Prizes) (Geneva, Switzerland)",
@@ -254,7 +613,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": 27,
+          "days_left": 26,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -322,7 +681,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-04",
-          "days_left": 14,
+          "days_left": 13,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -349,7 +708,8 @@
           ],
           "extended": true,
           "excluded": false,
-          "title_zh": "通讯官|国际咨询二级 |加沙、巴勒斯坦"
+          "title_zh": "通讯官|国际咨询二级 |加沙、巴勒斯坦",
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Unpaid Internship - WSIS Forum 2027 - Junior Project Officer (Videography) (Geneva, Switzerland)",
@@ -392,7 +752,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": 27,
+          "days_left": 26,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -463,7 +823,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": 27,
+          "days_left": 26,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -534,7 +894,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": 27,
+          "days_left": 26,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -620,7 +980,7 @@
           "language": "",
           "posted": "2026-10-19",
           "deadline": "2026-11-16",
-          "days_left": 26,
+          "days_left": 25,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -692,7 +1052,7 @@
           "language": "",
           "posted": "2026-10-19",
           "deadline": "2026-11-16",
-          "days_left": 26,
+          "days_left": 25,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -806,7 +1166,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "公共信息实习生",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         }
       ]
     },
@@ -847,7 +1207,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-30",
-          "days_left": 9,
+          "days_left": 8,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -875,7 +1235,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "SDG 金融和私营部门发展研究实习生 - 36124（居家）",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         }
       ]
     },
@@ -922,7 +1282,7 @@
           "language": "English",
           "posted": "",
           "deadline": "2026-11-02",
-          "days_left": 12,
+          "days_left": 11,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1021,7 +1381,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "GlobalABC 实习生 - 战略沟通、合作伙伴关系和活动",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "GlobalABC intern - Strategic Communications, Partnerships and Events",
@@ -1092,7 +1452,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "GlobalABC 实习生 - 战略沟通、合作伙伴关系和活动",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Monitoring and Evaluation Internship - Bridgetown, Barbados",
@@ -1134,7 +1494,7 @@
           "language": "English",
           "posted": "",
           "deadline": "2026-11-02",
-          "days_left": 12,
+          "days_left": 11,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1249,7 +1609,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "新闻写作/报道 - 公共信息实习生 - 新闻和内容 - 英语",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Intern, Special Procedures",
@@ -1318,7 +1678,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生，特别程序",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "DCO Tech Intern",
@@ -1420,7 +1780,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 联合国可持续发展集团全系统评价办公室",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Information Management for Evaluation Support Intern",
@@ -1489,7 +1849,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "评估支持实习生信息管理",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "BUILDINGS AND COOLING UNIT INTERN",
@@ -1701,7 +2061,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "公共信息实习生",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         }
       ]
     },
@@ -1778,7 +2138,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "数字通信实习生",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Social Media Intern",
@@ -1848,7 +2208,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "社交媒体实习生",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Sustainable Fiscal Policy and Public Finance Intern",
@@ -1917,7 +2277,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "可持续财政政策和公共财政实习生",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Internship - Data Governance",
@@ -1954,10 +2314,10 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-25",
-          "days_left": 4,
+          "days_left": 3,
           "open": true,
           "closing": true,
-          "urgent": false,
+          "urgent": true,
           "score90": false,
           "score80": false,
           "score70": true,
@@ -1982,7 +2342,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习 - 数据治理",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Unpaid Internship - Giga UX/UI Support Officer-Intern (Home Based, Remote)",
@@ -2026,7 +2386,7 @@
           "language": "",
           "posted": "2026-10-09",
           "deadline": "2026-10-30",
-          "days_left": 9,
+          "days_left": 8,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2089,10 +2449,10 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-25",
-          "days_left": 4,
+          "days_left": 3,
           "open": true,
           "closing": true,
-          "urgent": false,
+          "urgent": true,
           "score90": false,
           "score80": false,
           "score70": false,
@@ -2117,7 +2477,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习 - 数据与分析",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         }
       ]
     },
@@ -2193,7 +2553,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "通讯支持实习生",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Internship with UPR Branch",
@@ -2263,7 +2623,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "UPR分行实习",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Human Rights Intern",
@@ -2333,7 +2693,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "人权实习生",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Software Development Intern, Intech",
@@ -2628,7 +2988,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 71,
+          "days_left": 70,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2700,7 +3060,7 @@
           "language": "English or French",
           "posted": "2026-09-21",
           "deadline": "2026-12-31",
-          "days_left": 71,
+          "days_left": 70,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2770,7 +3130,7 @@
           "language": "",
           "posted": "2026-10-03",
           "deadline": "2026-10-08",
-          "days_left": -13,
+          "days_left": -14,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -2839,7 +3199,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 71,
+          "days_left": 70,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2975,7 +3335,7 @@
           "language": "",
           "posted": "2026-09-11",
           "deadline": "2026-12-10",
-          "days_left": 50,
+          "days_left": 49,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -3046,7 +3406,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 71,
+          "days_left": 70,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -3117,7 +3477,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 71,
+          "days_left": 70,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -3184,7 +3544,7 @@
           "language": "",
           "posted": "2026-10-01",
           "deadline": "2026-10-08",
-          "days_left": -13,
+          "days_left": -14,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -3248,7 +3608,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": -7,
+          "days_left": -8,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -3312,7 +3672,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": -7,
+          "days_left": -8,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -3696,7 +4056,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 社会科学（性别平等和妇女赋权传播）",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "JIU Research and Analysis Intern",
@@ -3766,7 +4126,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "联检组研究与分析实习生",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Editorial and AI Communications Intern",
@@ -3978,7 +4338,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "沟通和知识管理实习生",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "INTERN - Information and Evidence Management",
@@ -4119,7 +4479,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 创新与分析中心",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "INTERN - HUMAN RIGHTS, I",
@@ -4258,7 +4618,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 人权",
-          "last_seen": "2026-10-21"
+          "last_seen": "2026-10-22"
         },
         {
           "title": "Intern - Human Rights",
