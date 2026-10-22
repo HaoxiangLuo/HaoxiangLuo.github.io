@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-10-21T23:40:49+08:00",
+  "updated_at": "2026-10-22T13:33:12+08:00",
   "days": [
+    {
+      "date": "2026-10-22",
+      "items": [
+        {
+          "title": "Websites taken down worldwide as critical cyber-security update issued",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "发布重要网络安全更新后，全球网站被关闭"
+        },
+        {
+          "title": "AIPAC halts endorsements and direct contributions to candidates",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/21/nx-s1-6011531/aipac-campaign-contributions-israel-democrats",
+          "title_zh": "AIPAC 停止对候选人的背书和直接捐款"
+        },
+        {
+          "title": "What is PHP and why did it spark a global cyber-security scramble?",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "什么是 PHP？它为何引发全球网络安全争夺战？"
+        },
+        {
+          "title": "Putin releases American Stephen Hubbard from Russian prison",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/21/nx-s1-6010608/putin-releases-american-stephen-hubbard-from-russian-prison",
+          "title_zh": "普京从俄罗斯监狱释放美国人斯蒂芬·哈伯德"
+        },
+        {
+          "title": "Missiles hit Kyiv after Russia agrees to US call to resume Ukraine peace talks",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq3djn5nxx12o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "俄罗斯同意美国恢复乌克兰和谈的呼吁后导弹袭击基辅"
+        },
+        {
+          "title": "Meet the people moving north to escape increasingly hot summers",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/21/nx-s1-5977837/climate-uk-usa-housing",
+          "title_zh": "来认识一下为了躲避日益炎热的夏季而向北迁移的人们"
+        },
+        {
+          "title": "Rosenberg: US diplomatic push offers little hope for imminent Ukraine peace",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm98zn5j89kdo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "罗森伯格：美国的外交推动对乌克兰即将实现的和平几乎没有希望"
+        },
+        {
+          "title": "Israel frees dozens of Americans, including U.S. Congress nominee, after West Bank detention",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/21/nx-s1-6010460/brad-lander-detained-west-bank-israel-palestinians",
+          "title_zh": "以色列在约旦河西岸拘留后释放了数十名美国人，其中包括美国国会候选人"
+        },
+        {
+          "title": "US orders some diplomats to leave Saudi Arabia as Houthi attacks escalate",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6x2vpk93770o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "随着胡塞武装袭击升级，美国命令部分外交官离开沙特阿拉伯"
+        }
+      ]
+    },
     {
       "date": "2026-10-21",
       "items": [
