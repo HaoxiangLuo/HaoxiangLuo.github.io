@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-10-22T23:42:22+08:00",
+  "updated_at": "2026-10-23T13:31:05+08:00",
   "days": [
+    {
+      "date": "2026-10-23",
+      "items": [
+        {
+          "title": "Hospitals deliberately targeted by Sudan's RSF fighters, BBC investigation finds",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c54g1kxw4nvvo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "英国广播公司(BBC)调查发现，苏丹无国界医生组织战士故意袭击医院"
+        },
+        {
+          "title": "What we know about war plans that Trump and Netanyahu are drawing up",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/22/nx-s1-6012306/what-we-know-about-war-plans-that-trump-and-netanyahu-are-drawing-up",
+          "title_zh": "我们对特朗普和内塔尼亚胡正在制定的战争计划了解多少"
+        },
+        {
+          "title": "Trump says Musk has restored access to Ukraine's Starlink network",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq74pjpmx0e8o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普表示马斯克已恢复对乌克兰星链网络的访问"
+        },
+        {
+          "title": "Greetings from the Brazil-Argentina border, where waterfalls are flowing at near-record rates",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/22/g-s1-148553/argentina-brazil-iguazu-falls-waterfalls-super-el-nino",
+          "title_zh": "来自巴西和阿根廷边境的问候，那里的瀑布正以接近创纪录的速度流动"
+        },
+        {
+          "title": "L'Oreal says weight loss drugs are impacting beauty and skin care sales",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cvglwgwpgrlpo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "欧莱雅表示减肥药物正在影响美容和护肤品的销售"
+        },
+        {
+          "title": "U.S., Israel may attack Iran post-elections. And, SpaceX and Tesla consider merging",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/22/g-s1-149315/up-first-newsletter-midterm-campaign-israel-iran-elon-musk-spacex-tesla",
+          "title_zh": "美国、以色列可能会在选举后攻击伊朗。而且，SpaceX 和特斯拉考虑合并"
+        },
+        {
+          "title": "Trump ordered to answer questions under oath in BBC lawsuit",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmy0ryjx7741o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普被要求在 BBC 诉讼中宣誓回答问题"
+        },
+        {
+          "title": "Former U.S. Ambassador to Ukraine William Taylor on Trump's embrace of Russia",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/22/nx-s1-6010509/former-u-s-ambassador-to-ukraine-william-taylor-on-trumps-embrace-of-russia",
+          "title_zh": "前美国驻乌克兰大使威廉·泰勒谈特朗普拥抱俄罗斯"
+        },
+        {
+          "title": "Nigeria and Kenya Ebola patients may have crossed paths at Uganda airport, officials say",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmwy4wlzqz3zo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "官员称尼日利亚和肯尼亚埃博拉患者可能在乌干达机场相遇"
+        }
+      ]
+    },
     {
       "date": "2026-10-22",
       "items": [
