@@ -1,6 +1,65 @@
 {
-  "updated_at": "2026-10-23T23:29:49+08:00",
+  "updated_at": "2026-10-24T13:10:09+08:00",
   "days": [
+    {
+      "date": "2026-10-24",
+      "items": [
+        {
+          "title": "France prepares for day of protest a week after nationwide riots",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cj62yv5k0w4yo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法国全国骚乱一周后准备抗议日"
+        },
+        {
+          "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
+          "title_zh": "当局正在调查肯尼亚和尼日利亚首例埃博拉病例是否交叉"
+        },
+        {
+          "title": "World News in Brief: Iran nuclear inspections, deadly church attack in Jordan, El Fasher – one year on",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168664",
+          "title_zh": "世界新闻简讯：伊朗核检查、约旦法希尔致命教堂袭击——一年过去了"
+        },
+        {
+          "title": "Woman, 65, becomes second patient to die of Ebola in Kenya",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6x2355448eyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "65 岁妇女成为肯尼亚第二名死于埃博拉病毒的患者"
+        },
+        {
+          "title": "Military reinforcements move to Mideast. And, millions of Americans vote early",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/23/g-s1-149514/up-first-newsletter-iran-war-midterm-voting-trump-bbc",
+          "title_zh": "军事增援部队移至中东。而且，数百万美国人提前投票"
+        },
+        {
+          "title": "Blood brothers: WHO chief joins ENHYPEN to celebrate drive success",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168662",
+          "title_zh": "亲兄弟：世卫组织总干事加入 ENHYPEN 庆祝行动取得成功"
+        },
+        {
+          "title": "Arrest made after fire at Hitler's Eagle's Nest retreat",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr93zwjw1k4qo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "希特勒鹰巢撤退发生火灾后被捕"
+        },
+        {
+          "title": "Retired general discusses the U.S. and Israeli plan for possible attack on Iran",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/23/nx-s1-6012303/retired-general-discusses-the-u-s-and-israeli-plan-for-possible-attack-on-iran",
+          "title_zh": "退休将军讨论美国和以色列可能袭击伊朗的计划"
+        },
+        {
+          "title": "West Bank: Guterres alarmed as Israel imposes sweeping closures after deadly Hebron attack",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168660",
+          "title_zh": "西岸：古特雷斯对以色列在希伯伦致命袭击后实施全面封锁感到震惊"
+        }
+      ]
+    },
     {
       "date": "2026-10-23",
       "items": [
