@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-10-24T17:22:52+08:00",
+  "updated_at": "2026-10-24T22:08:59+08:00",
   "days": [
     {
       "date": "2026-10-24",
       "items": [
         {
-          "title": "France prepares for day of protest a week after nationwide riots",
+          "title": "Ukraine says Starlink connection 'now stable' after network limits",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cj62yv5k0w4yo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "法国全国骚乱一周后准备抗议日"
+          "url": "https://www.bbc.co.uk/news/articles/cwkg5md14j8go?at_medium=RSS&at_campaign=rss",
+          "title_zh": "乌克兰称星链连接在网络限制后“现已稳定"
         },
         {
-          "title": "Drinking water supplies dwindle in Yemeni city besieged by Houthi rebels",
+          "title": "Gunmen open fire at a church during a funeral in Jordan, killing 7 and wounding 40",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/24/g-s1-149729/drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houthi-rebels",
-          "title_zh": "被胡塞武装围困的也门城市饮用水供应减少"
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6015414/shooting-church-jordan",
+          "title_zh": "约旦一场葬礼期间，枪手向一座教堂开枪，造成 7 人死亡、40 人受伤"
         },
         {
           "title": "World News in Brief: Iran nuclear inspections, deadly church attack in Jordan, El Fasher – one year on",
@@ -29,10 +29,10 @@
           "title_zh": "希特勒鹰巢撤退发生火灾后被捕"
         },
         {
-          "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+          "title": "European student protests take aim at Serbia's elections",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
-          "title_zh": "当局正在调查肯尼亚和尼日利亚首例埃博拉病例是否交叉"
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6012799/european-student-protests-take-aim-at-serbias-elections",
+          "title_zh": "欧洲学生抗议活动瞄准塞尔维亚选举"
         },
         {
           "title": "Blood brothers: WHO chief joins ENHYPEN to celebrate drive success",
@@ -47,10 +47,10 @@
           "title_zh": "杀害俄勒冈州学校枪手的父亲描述了他无法拯救孩子的痛苦"
         },
         {
-          "title": "Military reinforcements move to Mideast. And, millions of Americans vote early",
+          "title": "Drinking water supplies dwindle in Yemeni city besieged by Houthi rebels",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/23/g-s1-149514/up-first-newsletter-iran-war-midterm-voting-trump-bbc",
-          "title_zh": "军事增援部队移至中东。而且，数百万美国人提前投票"
+          "url": "https://www.npr.org/2026/10/24/g-s1-149729/drinking-water-supplies-dwindle-in-yemeni-city-besieged-by-houthi-rebels",
+          "title_zh": "被胡塞武装围困的也门城市饮用水供应减少"
         },
         {
           "title": "West Bank: Guterres alarmed as Israel imposes sweeping closures after deadly Hebron attack",
@@ -67,10 +67,10 @@
           "title_zh": "APOD：2026 年 10 月 24 日——罗塞塔的自拍照"
         },
         {
-          "title": "SpaceX launches Starlink satellites from California as Falcon 9 cadence slows (photos)",
+          "title": "'Star Trek: Strange New Worlds' was afraid to say anything in season of gimmicks",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-starlink-group-15-15-b1063-ocisly",
-          "title_zh": "随着猎鹰 9 号速度减慢，SpaceX 从加利福尼亚州发射星链卫星（照片）"
+          "url": "https://www.space.com/entertainment/space-movies-shows/star-trek-strange-new-worlds-season-of-gimmicks-was-afraid-to-say-anything",
+          "title_zh": "《星际迷航：奇异新世界》在噱头季节不敢说什么"
         },
         {
           "title": "SpaceX launches Starlink 15-15 mission following a trio of scrubs",
@@ -97,10 +97,10 @@
           "title_zh": "NASA 与合作伙伴加快 2028 年月球任务着陆器的开发"
         },
         {
-          "title": "NASA lays out plan for Artemis 3 moon-lander test flight —but when will it launch?",
+          "title": "Medusa's eye, Halloween fireballs and more: 5 skywatching targets to look out for this spooky season",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/artemis/nasa-lays-out-plan-for-artemis-3-moon-lander-test-flight-but-when-will-it-launch",
-          "title_zh": "NASA 制定了阿耳忒弥斯 3 号登月器试飞计划，但何时发射？"
+          "url": "https://www.space.com/stargazing/medusas-eye-halloween-fireballs-and-more-5-skywatching-targets-to-look-out-for-this-spooky-season",
+          "title_zh": "美杜莎之眼、万圣节火球等：这个幽灵季节需要留意的 5 个天空观测目标"
         },
         {
           "title": "SpaceX launches Starfall reentry capsule, 31 customer payloads on Bandwagon-5 rideshare mission",
