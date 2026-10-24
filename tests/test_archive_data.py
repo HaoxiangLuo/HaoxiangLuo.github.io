@@ -192,6 +192,45 @@ class DailyNewsTests(ArchiveTestCase):
         # The archive itself never drops anything for being old.
         self.assertEqual(len(self.archive_records("daily_news")), len(days))
 
+    def test_space_items_are_carried_into_index_and_archive(self):
+        day_entry = {
+            "date": day(0),
+            "items": [news_item(1)],
+            "space_items": [
+                {"title": "Artemis launch", "source": "NASA", "url": "https://example.org/artemis"},
+            ],
+        }
+        self.write_index("daily_news", {"updated_at": None, "days": [day_entry]})
+        archive_data.process_dataset(self.root, "daily_news")
+
+        archive_record = self.archive_records("daily_news")[0]
+        self.assertEqual(len(archive_record["space_items"]), 1)
+        index = self.read_index("daily_news")
+        self.assertEqual(index["days"][0]["space_items"][0]["title"], "Artemis launch")
+
+    def test_recollect_without_space_items_keeps_stored_space_items(self):
+        day_entry = {
+            "date": day(0),
+            "items": [news_item(1)],
+            "space_items": [
+                {"title": "Artemis launch", "source": "NASA", "url": "https://example.org/artemis", "title_zh": "阿尔忒弥斯发射"},
+            ],
+        }
+        self.write_index("daily_news", {"updated_at": None, "days": [day_entry]})
+        archive_data.process_dataset(self.root, "daily_news")
+
+        # A later general collect carries items but no space_items; the stored
+        # space items (and their translations) must survive the merge.
+        incoming = archive_data.normalize(
+            "daily_news",
+            {"date": day(0), "items": [{"title": "Headline 1", "source": "BBC World", "url": "https://example.org/story/1"}]},
+        )
+        archive_data.process_dataset(self.root, "daily_news", [incoming])
+
+        stored = self.archive_records("daily_news")[0]
+        self.assertEqual(len(stored["space_items"]), 1)
+        self.assertEqual(stored["space_items"][0]["title_zh"], "阿尔忒弥斯发射")
+
 
 class FrontiersTests(ArchiveTestCase):
     def test_yearly_partition_and_retention(self):

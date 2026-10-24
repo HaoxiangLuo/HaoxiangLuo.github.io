@@ -199,10 +199,12 @@ def normalize_daily_news(entry: dict) -> dict | None:
     if len(date) != 10:
         return None
     items = [item for item in (entry.get("items") or []) if isinstance(item, dict)]
+    space_items = [item for item in (entry.get("space_items") or []) if isinstance(item, dict)]
     record = {
         "id": f"daily-news:{date}",
         "date": date,
         "items": items,
+        "space_items": space_items,
         "schema_version": SCHEMA_VERSION,
     }
     if entry.get("fetched_at"):
@@ -314,6 +316,9 @@ def merge_records(old: dict, new: dict, dataset: str) -> dict:
         if key == "items" and dataset == "daily_news":
             merged["items"] = merge_items(old.get("items") or [], value)
             continue
+        if key == "space_items" and dataset == "daily_news":
+            merged["space_items"] = merge_items(old.get("space_items") or [], value)
+            continue
         merged[key] = value
 
     # The recent index is a projection and carries no `fetched_at`, so an empty
@@ -412,7 +417,14 @@ def build_index_payload(dataset: str, records: list[dict]) -> object:
     if dataset == "daily_news":
         return {
             "updated_at": now_iso(),
-            "days": [{"date": record["date"], "items": record.get("items") or []} for record in kept],
+            "days": [
+                {
+                    "date": record["date"],
+                    "items": record.get("items") or [],
+                    "space_items": record.get("space_items") or [],
+                }
+                for record in kept
+            ],
         }
     return {"updated_at": now_iso(), "items": [public_record(dataset, record) for record in kept]}
 

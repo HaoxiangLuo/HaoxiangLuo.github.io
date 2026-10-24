@@ -266,6 +266,52 @@ body.home-page .page__content .news-window h2 {
 .daily-news-note, .daily-news-empty { color: #86868b; font-size: 0.68rem; }
 .daily-news-note { margin-top: 1.25rem; }
 
+/* Space & Aerospace section on the daily news page. */
+.space-news-title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  font-weight: 720;
+  letter-spacing: -0.03em;
+  color: #1d1d1f;
+}
+.space-news-title::after {
+  content: "";
+  display: block;
+  width: 2.6rem;
+  height: 2px;
+  margin-top: 0.5rem;
+  background: #0071e3;
+  border-radius: 2px;
+}
+.space-news-intro {
+  max-width: 680px;
+  margin: 0 0 1.6rem;
+  color: #6e6e73;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.space-news-archive {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+.daily-news-day.is-space {
+  border-color: rgba(0, 113, 227, 0.28);
+  background: linear-gradient(145deg, #fff, #f2f7ff);
+}
+.space-tag {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: #0071e3;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+}
+
 /* Opportunities page (internships + academic exchange). */
 .opps-archive { display: grid; gap: 2.4rem; }
 .opps-section { display: grid; gap: 1rem; }

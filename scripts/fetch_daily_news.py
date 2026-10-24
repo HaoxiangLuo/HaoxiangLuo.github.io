@@ -41,6 +41,17 @@ SOURCES = (
 )
 MAX_PER_DAY = 9
 
+# Dedicated aerospace outlets. These feed the standalone "Space & Aerospace"
+# section on the daily news page, kept apart from the general world digest.
+SPACE_SOURCES = (
+    ("NASA", "https://www.nasa.gov/news-release/feed/"),
+    ("Space.com", "https://www.space.com/feeds/all"),
+    ("Spaceflight Now", "https://spaceflightnow.com/feed/"),
+    ("SpaceNews", "https://spacenews.com/feed/"),
+    ("Universe Today", "https://www.universetoday.com/feed/"),
+)
+MAX_SPACE_PER_DAY = 8
+
 TRANSLATE_TIMEOUT = 20
 GTX_ENDPOINT = "https://translate.googleapis.com/translate_a/single"
 MAX_TRANSLATIONS_PER_RUN = 60
@@ -52,7 +63,23 @@ def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
-def read_feed(source: str, url: str) -> list[dict[str, str]]:
+def link_of(item: ET.Element) -> str:
+    """Best hyperlink for an RSS <item> or Atom <entry>."""
+    text = clean_text(item.findtext("link", ""))
+    if text:
+        return text
+    # Atom keeps the href on a <link> attribute and may carry several rel values.
+    for rel in (None, "alternate"):
+        for element in item.findall("link"):
+            if element.get("rel") == rel and element.get("href"):
+                return element.get("href")  # type: ignore[return-value]
+    for element in item.findall("link"):
+        if element.get("href"):
+            return element.get("href")  # type: ignore[return-value]
+    return ""
+
+
+def read_feed(source: str, url: str, limit: int = 8) -> list[dict[str, str]]:
     request = urllib.request.Request(
         url,
         headers={"User-Agent": "HaoxiangLuo.github.io daily-news collector/1.0"},
@@ -61,15 +88,18 @@ def read_feed(source: str, url: str) -> list[dict[str, str]]:
         root = ET.fromstring(response.read())
 
     results: list[dict[str, str]] = []
-    for item in root.findall(".//item")[:8]:
+    nodes = root.findall(".//item") or root.findall(".//{http://purl.org/rss/1.0/}item")
+    if not nodes:
+        nodes = root.findall(".//entry")  # Atom
+    for item in nodes[:limit]:
         title = clean_text(item.findtext("title", ""))
-        link = clean_text(item.findtext("link", ""))
+        link = link_of(item)
         if title and urlparse(link).scheme in {"http", "https"}:
             results.append({"title": title, "source": source, "url": link})
     return results
 
 
-def interleave(groups: list[list[dict[str, str]]]) -> list[dict[str, str]]:
+def interleave(groups: list[list[dict[str, str]]], max_per_day: int = MAX_PER_DAY) -> list[dict[str, str]]:
     merged: list[dict[str, str]] = []
     seen: set[str] = set()
     for index in range(max((len(group) for group in groups), default=0)):
@@ -82,7 +112,7 @@ def interleave(groups: list[list[dict[str, str]]]) -> list[dict[str, str]]:
                 continue
             seen.add(key)
             merged.append(item)
-            if len(merged) == MAX_PER_DAY:
+            if len(merged) == max_per_day:
                 return merged
     return merged
 
@@ -156,27 +186,36 @@ def build_translator():
     return translate
 
 
+def _fill_list(items: list[dict], translate, cache: dict[str, str], counter: list[int]) -> None:
+    for item in items:
+        title = item.get("title")
+        if not title or item.get("title_zh"):
+            continue
+        if counter[0] >= MAX_TRANSLATIONS_PER_RUN:
+            return
+        if title in cache:
+            chinese = cache[title]
+        else:
+            chinese = translate(title)
+            cache[title] = chinese
+            time.sleep(0.15)
+        if chinese:
+            item["title_zh"] = chinese
+            counter[0] += 1
+
+
 def backfill_translations(days: list[dict], translate) -> int:
-    """Fill in `title_zh` for every archived headline that still lacks one."""
+    """Fill in `title_zh` for every archived headline that still lacks one.
+
+    Both the general digest (`items`) and the aerospace section (`space_items`)
+    are translated, so the Chinese page reads naturally in every zone.
+    """
     cache: dict[str, str] = {}
-    filled = 0
+    counter = [0]
     for day in days:
-        for item in day.get("items", []):
-            title = item.get("title")
-            if not title or item.get("title_zh"):
-                continue
-            if filled >= MAX_TRANSLATIONS_PER_RUN:
-                return filled
-            if title in cache:
-                chinese = cache[title]
-            else:
-                chinese = translate(title)
-                cache[title] = chinese
-                time.sleep(0.15)
-            if chinese:
-                item["title_zh"] = chinese
-                filled += 1
-    return filled
+        _fill_list(day.get("items") or [], translate, cache, counter)
+        _fill_list(day.get("space_items") or [], translate, cache, counter)
+    return counter[0]
 
 
 def archived_days() -> list[dict]:
@@ -224,11 +263,23 @@ def main() -> int:
         print("error: no news items were collected", file=sys.stderr)
         return 1
 
+    # Aerospace news is collected from dedicated space feeds and kept separate so
+    # it can power its own section on the page.
+    space_groups: list[list[dict[str, str]]] = []
+    for source, url in SPACE_SOURCES:
+        try:
+            space_groups.append(read_feed(source, url))
+        except Exception as exc:
+            print(f"warning: {source}: {exc}", file=sys.stderr)
+    space_items = interleave(space_groups, MAX_SPACE_PER_DAY)
+
     today = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
-    record = archive_data.normalize_daily_news({"date": today, "items": items})
+    record = archive_data.normalize_daily_news(
+        {"date": today, "items": items, "space_items": space_items}
+    )
 
     if args.dry_run:
-        print(f"dry run: {len(items)} headlines for {today}; archive holds {len(days)} days")
+        print(f"dry run: {len(items)} headlines and {len(space_items)} space items for {today}; archive holds {len(days)} days")
         return 0
 
     # Archive first: the recent index is only ever generated from it.
@@ -239,7 +290,7 @@ def main() -> int:
     if filled:
         # Translations are part of the record, so they go straight back in.
         stats = archive_data.upsert(ROOT, "daily_news", translated)
-    print(f"saved {len(items)} headlines for {today}; translated {filled} headlines; {stats.as_line()}")
+    print(f"saved {len(items)} headlines and {len(space_items)} space items for {today}; translated {filled} headlines; {stats.as_line()}")
     return 0
 
 

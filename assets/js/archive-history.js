@@ -189,57 +189,77 @@
     }).format(date);
   }
 
-  function renderDailyNews(container, records, options) {
+  function buildDaySection(date, items, options, isSpace) {
+    if (!items || !items.length) return null;
     var words = labels(options.language);
+    var section = document.createElement("section");
+    section.className = "daily-news-day" + (isSpace ? " is-space" : "");
+    section.setAttribute("data-filter-date", date);
+    section.setAttribute("data-archive-record", "true");
+
+    var header = document.createElement("header");
+    var time = document.createElement("time");
+    time.dateTime = date;
+    setText(time, formatDate(date, options.language));
+    var count = document.createElement("span");
+    if (isSpace) {
+      setText(count, options.language === "zh"
+        ? items.length + " 条航天简讯"
+        : items.length + " space headlines");
+    } else {
+      setText(count, options.language === "zh"
+        ? items.length + " " + words.headlines
+        : items.length + " " + (items.length === 1 ? words.headline : words.headlines));
+    }
+    header.appendChild(time);
+    header.appendChild(count);
+    if (isSpace) {
+      var tag = document.createElement("span");
+      tag.className = "space-tag";
+      setText(tag, options.language === "zh" ? "航天" : "Space");
+      count.appendChild(tag);
+    }
+
+    var list = document.createElement("ol");
+    items.forEach(function (item) {
+      var row = document.createElement("li");
+      var link = document.createElement("a");
+      link.href = item.url || "#";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      var title = document.createElement("span");
+      setText(title, options.language === "zh" && item.title_zh ? item.title_zh : item.title);
+      var source = document.createElement("small");
+      setText(source, item.source || "");
+      var arrow = document.createElement("b");
+      arrow.setAttribute("aria-hidden", "true");
+      setText(arrow, "↗");
+      source.appendChild(document.createTextNode(" "));
+      source.appendChild(arrow);
+      link.appendChild(title);
+      link.appendChild(source);
+      row.appendChild(link);
+      list.appendChild(row);
+    });
+
+    section.appendChild(header);
+    section.appendChild(list);
+    return section;
+  }
+
+  function renderDailyNews(container, records, options) {
     var rendered = 0;
     records.forEach(function (record) {
       var date = record.date || "";
       if (!date) return;
       if (container.querySelector('[data-filter-date="' + date + '"]')) return; // already shown
 
-      var section = document.createElement("section");
-      section.className = "daily-news-day";
-      section.setAttribute("data-filter-date", date);
-      section.setAttribute("data-archive-record", "true");
-
-      var header = document.createElement("header");
-      var time = document.createElement("time");
-      time.dateTime = date;
-      setText(time, formatDate(date, options.language));
-      var count = document.createElement("span");
-      var items = record.items || [];
-      setText(count, options.language === "zh"
-        ? items.length + " " + words.headlines
-        : items.length + " " + (items.length === 1 ? words.headline : words.headlines));
-      header.appendChild(time);
-      header.appendChild(count);
-
-      var list = document.createElement("ol");
-      items.forEach(function (item) {
-        var row = document.createElement("li");
-        var link = document.createElement("a");
-        link.href = item.url || "#";
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        var title = document.createElement("span");
-        setText(title, options.language === "zh" && item.title_zh ? item.title_zh : item.title);
-        var source = document.createElement("small");
-        setText(source, item.source || "");
-        var arrow = document.createElement("b");
-        arrow.setAttribute("aria-hidden", "true");
-        setText(arrow, "↗");
-        source.appendChild(document.createTextNode(" "));
-        source.appendChild(arrow);
-        link.appendChild(title);
-        link.appendChild(source);
-        row.appendChild(link);
-        list.appendChild(row);
-      });
-
-      section.appendChild(header);
-      section.appendChild(list);
-      container.appendChild(section);
-      rendered += 1;
+      var general = buildDaySection(date, record.items || [], options, false);
+      if (general) { container.appendChild(general); rendered += 1; }
+      // The aerospace feeds power a separate "Space & Aerospace" section; a day
+      // that carries space items renders as a second, flagged card.
+      var space = buildDaySection(date, record.space_items || [], options, true);
+      if (space) { container.appendChild(space); rendered += 1; }
     });
     return rendered;
   }

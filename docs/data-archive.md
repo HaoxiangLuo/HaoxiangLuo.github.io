@@ -42,10 +42,11 @@ assets/data/archive/           ← 权威历史（追加式，浏览器按需读
 ```json
 {"id": "daily-news:2026-09-28", "date": "2026-09-28",
  "items": [{"title": "...", "title_zh": "...", "source": "...", "url": "..."}],
+ "space_items": [{"title": "...", "title_zh": "...", "source": "NASA", "url": "..."}],
  "fetched_at": "2026-09-28T09:00:03+08:00", "schema_version": 1}
 ```
 
-一行 = 一天。`title_zh` 是机器翻译标题，可能缺失；同一天重新抓取时只覆盖有值的字段，已翻译的标题不会丢。
+一行 = 一天。`title_zh` 是机器翻译标题，可能缺失；同一天重新抓取时只覆盖有值的字段，已翻译的标题不会丢。`space_items` 来自 NASA、Space.com、Spaceflight Now、SpaceNews、Universe Today 等航天信源，单独汇聚到每日新闻页面的「航天动态」分区；与 `items` 一样按 url 去重、按天合并、可补译，缺失时不影响 `items`。
 
 ### 学界前沿（`academic-frontiers/YYYY.jsonl`）
 
