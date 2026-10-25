@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T13:27:01+08:00",
+  "updated_at": "2026-10-25T17:41:36+08:00",
   "days": [
     {
       "date": "2026-10-25",
@@ -11,22 +11,28 @@
           "title_zh": "法国各地大规模抗议活动又发生一天，冲突导致近千人被捕"
         },
         {
+          "title": "Soldiers guard center of Milan as thousands of protesters march in cities across Europe",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/25/nx-s1-6016126/thousands-of-protesters-across-europe",
+          "title_zh": "数千名抗议者在欧洲各城市游行，士兵守卫米兰市中心"
+        },
+        {
+          "title": "Israel to close West Bank crossings on election day as crackdown escalates",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6y93ylpl5p2o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "随着镇压升级，以色列将在选举日关闭西岸过境点"
+        },
+        {
           "title": "Protests roil France once again as police seek to quell violence",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/10/24/nx-s1-6014520/protests-roil-france-once-again-as-police-seek-to-quell-violence",
           "title_zh": "警察试图平息暴力，抗议活动再次席卷法国"
         },
         {
-          "title": "Women ‘first to suffer’ under siege, first to step up as frontline responders in Sudan",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168663",
-          "title_zh": "苏丹妇女“最先遭受围困”，最先挺身而出，成为前线救援人员"
-        },
-        {
-          "title": "Ukraine says Starlink connection 'now stable' after network limits",
+          "title": "Voters in Brazil to choose between Lula and Bolsonaro's son",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwkg5md14j8go?at_medium=RSS&at_campaign=rss",
-          "title_zh": "乌克兰称星链连接在网络限制后“现已稳定"
+          "url": "https://www.bbc.co.uk/news/articles/cxp8g21j4648o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "巴西选民在卢拉和博尔索纳罗的儿子之间做出选择"
         },
         {
           "title": "Why a far-right cabinet minister in Israel has Netanyahu's ear",
@@ -35,16 +41,10 @@
           "title_zh": "为什么以色列极右翼内阁部长会听取内塔尼亚胡的意见"
         },
         {
-          "title": "UN marks 81 years of global cooperation",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168665",
-          "title_zh": "联合国纪念全球合作81周年"
-        },
-        {
-          "title": "Palestinian families displaced as Israeli forces demolish Hebron homes",
+          "title": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "以色列军队拆除希伯伦房屋，巴勒斯坦家庭流离失所"
+          "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "马斯克表示，随着服务恢复，SpaceX限制了乌克兰的星链连接"
         },
         {
           "title": "Ukraine says Starlink is back to normal after disruptions",
@@ -53,18 +53,18 @@
           "title_zh": "乌克兰称星链在中断后已恢复正常"
         },
         {
-          "title": "World News in Brief: Iran nuclear inspections, deadly church attack in Jordan, El Fasher – one year on",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168664",
-          "title_zh": "世界新闻简讯：伊朗核检查、约旦法希尔致命教堂袭击——一年过去了"
+          "title": "Gunmen kill at least 10 villagers and loot shops in north-east Nigeria",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq1kdlm1ze7do?at_medium=RSS&at_campaign=rss",
+          "title_zh": "尼日利亚东北部武装分子杀害至少 10 名村民并抢劫商店"
         }
       ],
       "space_items": [
         {
-          "title": "APOD: 2026 October 24 – Rosetta’s Selfie",
+          "title": "APOD: 2026 October 25 – Dark Matter in a Simulated Universe",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-october-24-rosettas-selfie/",
-          "title_zh": "APOD：2026 年 10 月 24 日——罗塞塔的自拍照"
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-25-dark-matter-in-a-simulated-universe/",
+          "title_zh": "APOD：2026 年 10 月 25 日——模拟宇宙中的暗物质"
         },
         {
           "title": "This Week In Space podcast: Episode 233 — The Artemis Generation",
@@ -85,16 +85,16 @@
           "title_zh": "11 月 5 日：边缘卫星任务管理"
         },
         {
-          "title": "White Dwarfs Are Actually…Yellow, Green, Pink, and Purple?",
+          "title": "Rare Lunar Meteorites Could Fill Gaps In Moon’s Evolution",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/white-dwarfs-are-actuallyyellow-green-pink-and-purple",
-          "title_zh": "白矮星实际上是……黄色、绿色、粉色和紫色？"
+          "url": "https://www.universetoday.com/articles/rare-lunar-meteorites-could-fill-gaps-in-moons-evolution",
+          "title_zh": "罕见的月球陨石可以填补月球演化的空白"
         },
         {
-          "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+          "title": "APOD: 2026 October 24 – Rosetta’s Selfie",
           "source": "NASA",
-          "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
-          "title_zh": "NASA 与合作伙伴加快 2028 年月球任务着陆器的开发"
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-24-rosettas-selfie/",
+          "title_zh": "APOD：2026 年 10 月 24 日——罗塞塔的自拍照"
         },
         {
           "title": "On this day in space! Oct. 24, 1946: V-2 rocket takes 1st photos of Earth from space",
