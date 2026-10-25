@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-10-24T22:08:59+08:00",
+  "updated_at": "2026-10-25T13:27:01+08:00",
   "days": [
+    {
+      "date": "2026-10-25",
+      "items": [
+        {
+          "title": "Almost 1,000 arrested as clashes follow another day of mass protests across France",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法国各地大规模抗议活动又发生一天，冲突导致近千人被捕"
+        },
+        {
+          "title": "Protests roil France once again as police seek to quell violence",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6014520/protests-roil-france-once-again-as-police-seek-to-quell-violence",
+          "title_zh": "警察试图平息暴力，抗议活动再次席卷法国"
+        },
+        {
+          "title": "Women ‘first to suffer’ under siege, first to step up as frontline responders in Sudan",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168663",
+          "title_zh": "苏丹妇女“最先遭受围困”，最先挺身而出，成为前线救援人员"
+        },
+        {
+          "title": "Ukraine says Starlink connection 'now stable' after network limits",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwkg5md14j8go?at_medium=RSS&at_campaign=rss",
+          "title_zh": "乌克兰称星链连接在网络限制后“现已稳定"
+        },
+        {
+          "title": "Why a far-right cabinet minister in Israel has Netanyahu's ear",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6010464/why-a-far-right-cabinet-minister-in-israel-has-netanyahus-ear",
+          "title_zh": "为什么以色列极右翼内阁部长会听取内塔尼亚胡的意见"
+        },
+        {
+          "title": "UN marks 81 years of global cooperation",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168665",
+          "title_zh": "联合国纪念全球合作81周年"
+        },
+        {
+          "title": "Palestinian families displaced as Israeli forces demolish Hebron homes",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "以色列军队拆除希伯伦房屋，巴勒斯坦家庭流离失所"
+        },
+        {
+          "title": "Ukraine says Starlink is back to normal after disruptions",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
+          "title_zh": "乌克兰称星链在中断后已恢复正常"
+        },
+        {
+          "title": "World News in Brief: Iran nuclear inspections, deadly church attack in Jordan, El Fasher – one year on",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168664",
+          "title_zh": "世界新闻简讯：伊朗核检查、约旦法希尔致命教堂袭击——一年过去了"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "APOD: 2026 October 24 – Rosetta’s Selfie",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-24-rosettas-selfie/",
+          "title_zh": "APOD：2026 年 10 月 24 日——罗塞塔的自拍照"
+        },
+        {
+          "title": "This Week In Space podcast: Episode 233 — The Artemis Generation",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-233-the-artemis-generation",
+          "title_zh": "本周太空播客：第 233 集 — 阿耳忒弥斯一代"
+        },
+        {
+          "title": "SpaceX launches Starlink 15-15 mission following a trio of scrubs",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/20/live-coverage-spacex-to-launch-27-starlink-satellites-on-falcon-9-rocket-from-vandenberg-sfb-5/",
+          "title_zh": "SpaceX 在三轮磨砂之后启动了 Starlink 15-15 任务"
+        },
+        {
+          "title": "Nov. 5: Satellite Mission Management at the Edge",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/satellite-mission-management-at-the-edge-event/",
+          "title_zh": "11 月 5 日：边缘卫星任务管理"
+        },
+        {
+          "title": "White Dwarfs Are Actually…Yellow, Green, Pink, and Purple?",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/white-dwarfs-are-actuallyyellow-green-pink-and-purple",
+          "title_zh": "白矮星实际上是……黄色、绿色、粉色和紫色？"
+        },
+        {
+          "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+          "title_zh": "NASA 与合作伙伴加快 2028 年月球任务着陆器的开发"
+        },
+        {
+          "title": "On this day in space! Oct. 24, 1946: V-2 rocket takes 1st photos of Earth from space",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-october-24-2026",
+          "title_zh": "在太空的这一天！ 1946 年 10 月 24 日：V-2 火箭从太空拍摄了第一张地球照片"
+        },
+        {
+          "title": "SpaceX launches Starfall reentry capsule, 31 customer payloads on Bandwagon-5 rideshare mission",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/18/live-coverage-spacex-to-launch-starfall-reentry-capsule-31-customer-payloads-on-bandwagon-5-rideshare-mission/",
+          "title_zh": "SpaceX 在 Bandwagon-5 拼车任务中发射了 Starfall 再入舱和 31 个客户有效载荷"
+        }
+      ]
+    },
     {
       "date": "2026-10-24",
       "items": [
