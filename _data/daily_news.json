@@ -1,20 +1,26 @@
 {
-  "updated_at": "2026-10-25T17:41:36+08:00",
+  "updated_at": "2026-10-25T22:36:45+08:00",
   "days": [
     {
       "date": "2026-10-25",
       "items": [
         {
-          "title": "Almost 1,000 arrested as clashes follow another day of mass protests across France",
+          "title": "Voters in Brazil head to polls as Lula goes up against Bolsonaro's son",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "法国各地大规模抗议活动又发生一天，冲突导致近千人被捕"
+          "url": "https://www.bbc.co.uk/news/articles/cxp8g21j4648o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "巴西选民在卢拉和博尔索纳罗的儿子之间做出选择"
         },
         {
-          "title": "Soldiers guard center of Milan as thousands of protesters march in cities across Europe",
+          "title": "The College of Magic turns ordinary kids into confident, top-hat wearing magicians",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/25/nx-s1-6016126/thousands-of-protesters-across-europe",
-          "title_zh": "数千名抗议者在欧洲各城市游行，士兵守卫米兰市中心"
+          "url": "https://www.npr.org/2026/10/25/g-s1-149089/magic-magicians-south-africa-school-students",
+          "title_zh": "魔法学院将普通孩子变成自信、戴着大礼帽的魔术师"
+        },
+        {
+          "title": "Women ‘first to suffer’ under siege, first to step up as frontline responders in Sudan",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168663",
+          "title_zh": "苏丹妇女“最先遭受围困”，最先挺身而出，成为前线救援人员"
         },
         {
           "title": "Israel to close West Bank crossings on election day as crackdown escalates",
@@ -23,22 +29,16 @@
           "title_zh": "随着镇压升级，以色列将在选举日关闭西岸过境点"
         },
         {
-          "title": "Protests roil France once again as police seek to quell violence",
+          "title": "Soldiers guard center of Milan as thousands of protesters march in cities across Europe",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/24/nx-s1-6014520/protests-roil-france-once-again-as-police-seek-to-quell-violence",
-          "title_zh": "警察试图平息暴力，抗议活动再次席卷法国"
+          "url": "https://www.npr.org/2026/10/25/nx-s1-6016126/thousands-of-protesters-across-europe",
+          "title_zh": "数千名抗议者在欧洲各城市游行，士兵守卫米兰市中心"
         },
         {
-          "title": "Voters in Brazil to choose between Lula and Bolsonaro's son",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cxp8g21j4648o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "巴西选民在卢拉和博尔索纳罗的儿子之间做出选择"
-        },
-        {
-          "title": "Why a far-right cabinet minister in Israel has Netanyahu's ear",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/24/nx-s1-6010464/why-a-far-right-cabinet-minister-in-israel-has-netanyahus-ear",
-          "title_zh": "为什么以色列极右翼内阁部长会听取内塔尼亚胡的意见"
+          "title": "UN marks 81 years of global cooperation",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168665",
+          "title_zh": "联合国纪念全球合作81周年"
         },
         {
           "title": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
@@ -47,16 +47,16 @@
           "title_zh": "马斯克表示，随着服务恢复，SpaceX限制了乌克兰的星链连接"
         },
         {
-          "title": "Ukraine says Starlink is back to normal after disruptions",
+          "title": "Protests roil France once again as police seek to quell violence",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
-          "title_zh": "乌克兰称星链在中断后已恢复正常"
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6014520/protests-roil-france-once-again-as-police-seek-to-quell-violence",
+          "title_zh": "警察试图平息暴力，抗议活动再次席卷法国"
         },
         {
-          "title": "Gunmen kill at least 10 villagers and loot shops in north-east Nigeria",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cq1kdlm1ze7do?at_medium=RSS&at_campaign=rss",
-          "title_zh": "尼日利亚东北部武装分子杀害至少 10 名村民并抢劫商店"
+          "title": "World News in Brief: Iran nuclear inspections, deadly church attack in Jordan, El Fasher – one year on",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168664",
+          "title_zh": "世界新闻简讯：伊朗核检查、约旦法希尔致命教堂袭击——一年过去了"
         }
       ],
       "space_items": [
@@ -67,10 +67,10 @@
           "title_zh": "APOD：2026 年 10 月 25 日——模拟宇宙中的暗物质"
         },
         {
-          "title": "This Week In Space podcast: Episode 233 — The Artemis Generation",
+          "title": "On this day in space! Oct. 25, 1671: Astronomer Giovanni Cassini discovers Iapetus, Saturn's 'yin-yang' moon",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-233-the-artemis-generation",
-          "title_zh": "本周太空播客：第 233 集 — 阿耳忒弥斯一代"
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-oct-25-1671-astronomer-giovanni-cassini-discovers-iapetus-saturns-yin-yang-moon",
+          "title_zh": "在太空的这一天！ 1671 年 10 月 25 日：天文学家乔瓦尼·卡西尼发现土卫八，土星的“阴阳”卫星"
         },
         {
           "title": "SpaceX launches Starlink 15-15 mission following a trio of scrubs",
@@ -97,10 +97,10 @@
           "title_zh": "APOD：2026 年 10 月 24 日——罗塞塔的自拍照"
         },
         {
-          "title": "On this day in space! Oct. 24, 1946: V-2 rocket takes 1st photos of Earth from space",
+          "title": "October's 'Hunter's Moon' stalks into the autumn sky tonight: Here's what you need to know",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-october-24-2026",
-          "title_zh": "在太空的这一天！ 1946 年 10 月 24 日：V-2 火箭从太空拍摄了第一张地球照片"
+          "url": "https://www.space.com/stargazing/octobers-hunters-moon-stalks-into-the-autumn-sky-tonight-heres-what-you-need-to-know",
+          "title_zh": "十月的“猎人之月”今晚悄然进入秋天的天空：这是你需要知道的"
         },
         {
           "title": "SpaceX launches Starfall reentry capsule, 31 customer payloads on Bandwagon-5 rideshare mission",
