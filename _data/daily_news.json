@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-10-26T18:55:26+08:00",
+  "updated_at": "2026-10-27T01:02:03+08:00",
   "days": [
+    {
+      "date": "2026-10-27",
+      "items": [
+        {
+          "title": "Lula wins fourth term in dramatic Brazil election comeback",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "巴西大选戏剧性逆转，卢拉赢得第四个任期"
+        },
+        {
+          "title": "Australian judge rejects prisoner's human rights challenge to Vegemite ban",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/26/g-s1-149923/australian-judge-rejects-prisoners-human-rights-challenge-to-vegemite-ban",
+          "title_zh": "澳大利亚法官驳回囚犯对 Vegemite 禁令提出的人权挑战"
+        },
+        {
+          "title": "Ukraine: Investigators find Russia committed war crimes by targeting civilians",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168670",
+          "title_zh": "乌克兰：调查人员发现俄罗斯针对平民犯下战争罪"
+        },
+        {
+          "title": "Celebrations in Serbia after veteran ruler Vučić loses election to student-led protest movement",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "塞尔维亚老将武契奇在学生领导的抗议运动中落败后举行庆祝活动"
+        },
+        {
+          "title": "What to know about China's plenum as Xi seeks stronger party discipline",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/26/g-s1-149918/what-to-know-about-chinas-plenum-as-xi-seeks-stronger-party-discipline",
+          "title_zh": "习近平寻求加强党纪，关于中国十一届三中全会需要了解什么"
+        },
+        {
+          "title": "Security Council LIVE: Children and war, ‘each one is a life’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168668",
+          "title_zh": "安理会直播：儿童与战争，“每个人都是一条生命"
+        },
+        {
+          "title": "Chris Brown given suspended eight-month prison sentence over nightclub attack",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq3dje4g4d5jo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "克里斯·布朗因夜总会袭击事件被判处八个月监禁，缓刑"
+        },
+        {
+          "title": "Russia says it will open humanitarian corridor to Ukrainian town",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/26/nx-s1-6014540/russia-says-it-will-open-humanitarian-corridor-to-ukrainian-town",
+          "title_zh": "俄罗斯表示将向乌克兰城镇开放人道主义走廊"
+        },
+        {
+          "title": "In Egypt, Guterres warns against Iran-US escalation",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168669",
+          "title_zh": "在埃及，古特雷斯警告伊朗与美国不要升级"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "NASA’s X-59 Aircraft and Test Pilot",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/nasas-x-59-aircraft-and-test-pilot/",
+          "title_zh": "NASA 的 X-59 飞机和试飞员"
+        },
+        {
+          "title": "SpaceX ignites giant Super Heavy booster engines ahead of daring Starship launch (video)",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-ignites-giant-super-heavy-booster-engines-ahead-of-daring-starship-launch-video",
+          "title_zh": "SpaceX 在大胆的星际飞船发射之前点燃巨型超重型助推发动机（视频）"
+        },
+        {
+          "title": "SpaceX launches Starlink 15-15 mission following a trio of scrubs",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/20/live-coverage-spacex-to-launch-27-starlink-satellites-on-falcon-9-rocket-from-vandenberg-sfb-5/",
+          "title_zh": "SpaceX 在三轮磨砂之后启动了 Starlink 15-15 任务"
+        },
+        {
+          "title": "Astranis Upgrades Falcon 9 Launch Contract to Dedicated Mission for Entire Block 4 Production Run of Satellites",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/astranis-upgrades-falcon-9-launch-contract-to-dedicated-mission-for-entire-block-4-production-run-of-satellites/",
+          "title_zh": "Astranis 将猎鹰 9 号发射合同升级为整个 Block 4 卫星生产运行的专用任务"
+        },
+        {
+          "title": "Parker Solar Probe Spots Twisted Magnetic Braids Growing in the Solar Wind",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/parker-solar-probe-spots-twisted-magnetic-braids-growing-in-the-solar-wind",
+          "title_zh": "帕克太阳能探测器发现在太阳风中生长的扭曲磁辫"
+        },
+        {
+          "title": "NASA, USDA Sign Agreement Advancing Earth Science, Agriculture",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/news-release/nasa-usda-sign-agreement-advancing-earth-science-agriculture/",
+          "title_zh": "美国宇航局和美国农业部签署协议推进地球科学和农业"
+        },
+        {
+          "title": "Glowing 'cauldron' of new stars | Space photo of the day for Oct. 26, 2026",
+          "source": "Space.com",
+          "url": "https://www.space.com/astronomy/glowing-cauldron-of-new-stars-space-photo-of-the-day-for-oct-26-2026",
+          "title_zh": "发光的新星“大锅”| 2026 年 10 月 26 日当天的太空照片"
+        },
+        {
+          "title": "SpaceX launches Starfall reentry capsule, 31 customer payloads on Bandwagon-5 rideshare mission",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/18/live-coverage-spacex-to-launch-starfall-reentry-capsule-31-customer-payloads-on-bandwagon-5-rideshare-mission/",
+          "title_zh": "SpaceX 在 Bandwagon-5 拼车任务中发射了 Starfall 再入舱和 31 个客户有效载荷"
+        }
+      ]
+    },
     {
       "date": "2026-10-26",
       "items": [
