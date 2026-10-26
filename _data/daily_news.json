@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-10-25T22:36:45+08:00",
+  "updated_at": "2026-10-26T13:31:40+08:00",
   "days": [
+    {
+      "date": "2026-10-26",
+      "items": [
+        {
+          "title": "Elation across Serbia after veteran ruler Vučić concedes to student-led protest movement",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "资深统治者武契奇承认学生领导的抗议运动后，塞尔维亚各地欢欣鼓舞"
+        },
+        {
+          "title": "Brazil's left-wing President Lula elected for fourth term",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
+          "title_zh": "巴西左翼总统卢拉当选第四任总统"
+        },
+        {
+          "title": "Why do planes keep circling before landing? The UN has a plan to fix it",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168666",
+          "title_zh": "为什么飞机在降落前要不停地盘旋？联合国有一个解决这个问题的计划"
+        },
+        {
+          "title": "Deeply divided Israel braces for pivotal election",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "分裂严重的以色列准备迎接关键选举"
+        },
+        {
+          "title": "U.S. influence in Latin America at stake in runoff election in Brazil",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/25/nx-s1-6011223/u-s-influence-in-latin-america-at-stake-in-runoff-election-in-brazil",
+          "title_zh": "巴西决选将影响美国在拉丁美洲的影响力"
+        },
+        {
+          "title": "Women ‘first to suffer’ under siege, first to step up as frontline responders in Sudan",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168663",
+          "title_zh": "苏丹妇女“最先遭受围困”，最先挺身而出，成为前线救援人员"
+        },
+        {
+          "title": "Venezuelan opposition leader María Machado returns after months in exile",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq8ez592pp0eo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "委内瑞拉反对派领导人玛丽亚·马查多在流亡数月后返回"
+        },
+        {
+          "title": "This center-right former general could unseat Netanyahu as Prime Minister in Israel",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/25/nx-s1-6011185/this-center-right-former-general-could-unseat-netanyahu-as-prime-minister-in-israel",
+          "title_zh": "这位中右翼前将军可能会取代内塔尼亚胡成为以色列总理"
+        },
+        {
+          "title": "UN marks 81 years of global cooperation",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168665",
+          "title_zh": "联合国纪念全球合作81周年"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "2026 October 26 – M42: The Great Nebula in Orion",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/2026-october-26-m42-the-great-nebula-in-orion/",
+          "title_zh": "2026 年 10 月 26 日 – M42：猎户座大星云"
+        },
+        {
+          "title": "On this day in space! Oct. 25, 1671: Astronomer Giovanni Cassini discovers Iapetus, Saturn's 'yin-yang' moon",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-oct-25-1671-astronomer-giovanni-cassini-discovers-iapetus-saturns-yin-yang-moon",
+          "title_zh": "在太空的这一天！ 1671 年 10 月 25 日：天文学家乔瓦尼·卡西尼发现土卫八，土星的“阴阳”卫星"
+        },
+        {
+          "title": "SpaceX launches Starlink 15-15 mission following a trio of scrubs",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/20/live-coverage-spacex-to-launch-27-starlink-satellites-on-falcon-9-rocket-from-vandenberg-sfb-5/",
+          "title_zh": "SpaceX 在三轮磨砂之后启动了 Starlink 15-15 任务"
+        },
+        {
+          "title": "Nov. 5: Satellite Mission Management at the Edge",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/satellite-mission-management-at-the-edge-event/",
+          "title_zh": "11 月 5 日：边缘卫星任务管理"
+        },
+        {
+          "title": "Rare Lunar Meteorites Could Fill Gaps In Moon’s Evolution",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/rare-lunar-meteorites-could-fill-gaps-in-moons-evolution",
+          "title_zh": "罕见的月球陨石可以填补月球演化的空白"
+        },
+        {
+          "title": "Hunting Red Leaves with Satellites",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/earth/earth-observatory/hunting-red-leaves-with-satellites/",
+          "title_zh": "用卫星狩猎红叶"
+        },
+        {
+          "title": "October's 'Hunter's Moon' stalks into the autumn sky tonight: Here's what you need to know",
+          "source": "Space.com",
+          "url": "https://www.space.com/stargazing/octobers-hunters-moon-stalks-into-the-autumn-sky-tonight-heres-what-you-need-to-know",
+          "title_zh": "十月的“猎人之月”今晚悄然进入秋天的天空：这是你需要知道的"
+        },
+        {
+          "title": "SpaceX launches Starfall reentry capsule, 31 customer payloads on Bandwagon-5 rideshare mission",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/18/live-coverage-spacex-to-launch-starfall-reentry-capsule-31-customer-payloads-on-bandwagon-5-rideshare-mission/",
+          "title_zh": "SpaceX 在 Bandwagon-5 拼车任务中发射了 Starfall 再入舱和 31 个客户有效载荷"
+        }
+      ]
+    },
     {
       "date": "2026-10-25",
       "items": [
