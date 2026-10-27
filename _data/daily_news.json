@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-10-27T18:19:46+08:00",
+  "updated_at": "2026-10-28T00:05:09+08:00",
   "days": [
+    {
+      "date": "2026-10-28",
+      "items": [
+        {
+          "title": "Turnout so far highest on record as Israelis vote in pivotal election",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3j47l4kdez4o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "以色列人在关键选举中投票，投票率创历史新高"
+        },
+        {
+          "title": "Bolsonaro's Party accepts Brazil election defeat, but he refuses to concede",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/27/nx-s1-6019217/bolsonaro-flavio-lula-brazil-election-trump",
+          "title_zh": "博尔索纳罗领导的政党承认巴西选举失败，但他拒绝承认"
+        },
+        {
+          "title": "Norway and Finland leaders hold rare call with Putin",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "挪威和芬兰领导人与普京罕见通话"
+        },
+        {
+          "title": "A 'Green Army' is out to thwart El Niño flooding",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/27/nx-s1-6010370/el-nino-floods-nairobi-green-army",
+          "title_zh": "绿军”出击阻止厄尔尼诺洪水"
+        },
+        {
+          "title": "Truce begins in Ukraine city where residents ate weeds to survive",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck20wjnv3w0jo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "乌克兰城市开始停战，居民以杂草为生"
+        },
+        {
+          "title": "Democrats have a midterm edge, poll shows. And, Israelis vote in high-stakes election",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/27/g-s1-150052/up-first-newsletter-midterms-polling-data-voter-fraud-israel-prime-minister-elections",
+          "title_zh": "民意调查显示，民主党在中期选举中具有优势。而且，以色列人在高风险选举中投票"
+        },
+        {
+          "title": "Ballon d'Or ceremony raises case of French sports journalist jailed in Algeria",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6x2qgyqr79wo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "金球奖颁奖典礼引发了法国体育记者在阿尔及利亚被监禁的案件"
+        },
+        {
+          "title": "Local ceasefire brokered by Melania Trump starts in southern Ukraine",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/27/g-s1-150037/russia-ukraine-war",
+          "title_zh": "由梅拉尼娅·特朗普斡旋的乌克兰南部地区开始停火"
+        },
+        {
+          "title": "Mbappé sorry for 'ill-judged' Mao remark after backlash in China",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cv62yg0erp8zo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "姆巴佩对毛泽东言论在中国遭到强烈反对表示歉意"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "How a Johnson Mentor Shapes the Next Generation of NASA Talent",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/general/how-a-johnson-mentor-shapes-the-next-generation-of-nasa-talent/",
+          "title_zh": "约翰逊导师如何塑造下一代 NASA 人才"
+        },
+        {
+          "title": "'Dungeon Crawler Carl' is getting a killer new comic book series",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-books/dungeon-crawler-carl-is-getting-a-killer-new-comic-book-series",
+          "title_zh": "《地下城爬行者卡尔》即将推出杀手级新漫画系列"
+        },
+        {
+          "title": "West Coast Falcon 9 rocket launches 27 Starlink satellites",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/27/west-coast-falcon-9-rocket-to-launch-27-starlink-satellites/",
+          "title_zh": "西海岸猎鹰 9 号火箭发射 27 颗星链卫星"
+        },
+        {
+          "title": "Craft Prospect kicks off PERSEUS project to advance optical communications for space",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/craft-prospect-kicks-off-perseus-project-to-advance-optical-communications-for-space/",
+          "title_zh": "Craft Prospect 启动 PERSEUS 项目以推进太空光通信"
+        },
+        {
+          "title": "Hubble Will Give the Roman Space Telescope a Helping Hand",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/hubble-will-give-the-roman-space-telescope-a-helping-hand",
+          "title_zh": "哈勃望远镜将向罗马太空望远镜伸出援手"
+        },
+        {
+          "title": "APOD: 2026 October 27 – Noctilucent Clouds over Sweden",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-27-noctilucent-clouds-over-sweden/",
+          "title_zh": "APOD：2026 年 10 月 27 日 – 瑞典上空的夜光云"
+        },
+        {
+          "title": "On this day in space! Oct. 27, 1961: NASA launches Saturn I rocket on 1st test flight from Florida to set stage for the mighty Saturn V moon rocket",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-october-27-2026",
+          "title_zh": "在太空的这一天！ 1961 年 10 月 27 日：美国宇航局 (NASA) 从佛罗里达州发射土星一号火箭进行第一次试飞，为强大的土星五号月球火箭搭建舞台"
+        },
+        {
+          "title": "SpaceX launches Starlink 15-15 mission following a trio of scrubs",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/20/live-coverage-spacex-to-launch-27-starlink-satellites-on-falcon-9-rocket-from-vandenberg-sfb-5/",
+          "title_zh": "SpaceX 在三轮磨砂之后启动了 Starlink 15-15 任务"
+        }
+      ]
+    },
     {
       "date": "2026-10-27",
       "items": [
