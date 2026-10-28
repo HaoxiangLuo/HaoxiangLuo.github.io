@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-10-28T19:11:04+08:00",
+  "updated_at": "2026-10-29T00:51:27+08:00",
   "days": [
+    {
+      "date": "2026-10-29",
+      "items": [
+        {
+          "title": "How could Israel break election deadlock? Here are four scenarios",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm62y46d97wwo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "以色列如何打破选举僵局？这里有四种情况"
+        },
+        {
+          "title": "Israel's election too close to call. And, the Ebola outbreak reaches grim milestone",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/28/g-s1-150313/up-first-newsletter-midterm-campaign-trump-israel-elections-federal-reserve-ebola-outbreak",
+          "title_zh": "以色列大选结果势均力敌。而且，埃博拉疫情爆发达到了严峻的里程碑"
+        },
+        {
+          "title": "Luxury cruise passengers stranded in Cambodia due to soaring fuel costs",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwj342k62exyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "由于燃油成本飙升，豪华游轮乘客滞留在柬埔寨"
+        },
+        {
+          "title": "Dozens are dead in a high-speed train crash in Spain",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6020217/spain-train-disaster",
+          "title_zh": "西班牙高速列车相撞事故造成数十人死亡"
+        },
+        {
+          "title": "Serbian shot dead after attacking officer outside Israeli embassy, minister says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynj4eeyj2o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "部长称塞尔维亚人在以色列大使馆外袭击官员后被枪杀"
+        },
+        {
+          "title": "Trump's relationship with Putin comes under fire ahead of the midterms",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6009262/trumps-relationship-with-putin-comes-under-fire-ahead-of-the-midterms",
+          "title_zh": "特朗普与普京的关系在中期选举前受到批评"
+        },
+        {
+          "title": "Tanzania celebrates first natural gas discovery in more than 10 years",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5m2dry2xwwvo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "坦桑尼亚庆祝十多年来首次发现天然气"
+        },
+        {
+          "title": "Partial results from Israel's contentious election show no clear winner",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6019423/israel-election-results",
+          "title_zh": "以色列有争议的选举的部分结果显示没有明显的赢家"
+        },
+        {
+          "title": "Anger in Kenya over extradition hearing delay for ex-British soldier accused of murdering woman",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmly073ql392o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "肯尼亚因被控谋杀妇女的前英国士兵引渡听证会延迟而愤怒"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "NASA Selects 19 New Citizen Science Proposals in 2026",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/get-involved/citizen-science/nasa-selects-19-new-citizen-science-proposals-in-2026/",
+          "title_zh": "NASA 选出 2026 年 19 项新公民科学提案"
+        },
+        {
+          "title": "China's secretive space plane caught on camera in incredible new photo released by US military",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/chinas-secretive-space-plane-caught-on-camera-in-incredible-new-photo-released-by-us-military",
+          "title_zh": "美国军方发布的令人难以置信的新照片中捕捉到了中国秘密太空飞机"
+        },
+        {
+          "title": "West Coast Falcon 9 rocket launches 27 Starlink satellites",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/27/west-coast-falcon-9-rocket-to-launch-27-starlink-satellites/",
+          "title_zh": "西海岸猎鹰 9 号火箭发射 27 颗星链卫星"
+        },
+        {
+          "title": "Flexell Space and Satoro Agree to Collaborate on In-Orbit Demonstration of Next-Generation Space Solar Cells",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/flexell-space-and-satoro-agree-to-collaborate-on-in-orbit-demonstration-of-next-generation-space-solar-cells/",
+          "title_zh": "Flexell Space 和 Satoro 同意合作进行下一代太空太阳能电池的在轨演示"
+        },
+        {
+          "title": "The Rubin Observatory Finds Its First Dwarf Planet Candidate",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/the-rubin-observatory-finds-its-first-dwarf-planet-candidate",
+          "title_zh": "鲁宾天文台发现了第一颗矮行星候选者"
+        },
+        {
+          "title": "Webb Sees Turbulent Star Nursery",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/webb-sees-turbulent-star-nursery/",
+          "title_zh": "韦伯看到动荡的明星苗圃"
+        },
+        {
+          "title": "The final ‘Dune: Part Three’ trailer reignites war on Arrakis and leaves us with more questions than answers",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-movies-shows/the-final-dune-part-three-trailer-reignites-war-on-arrakis-and-leaves-us-with-more-questions-than-answers",
+          "title_zh": "《沙丘：第三部分》的最终预告片重新点燃了厄拉科斯的战争，给我们留下的问题多于答案"
+        },
+        {
+          "title": "SpaceX launches Starlink 15-15 mission following a trio of scrubs",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/20/live-coverage-spacex-to-launch-27-starlink-satellites-on-falcon-9-rocket-from-vandenberg-sfb-5/",
+          "title_zh": "SpaceX 在三轮磨砂之后启动了 Starlink 15-15 任务"
+        }
+      ]
+    },
     {
       "date": "2026-10-28",
       "items": [
