@@ -12,46 +12,54 @@ translation_url: /daily-news/
 {% assign news_days = site.data.daily_news.days %}
 {% include archive-date-filter.html dataset="daily_news" %}
 
-<h2 class="space-news-title">航天动态</h2>
-<p class="space-news-intro">每日从 NASA、Space.com、Spaceflight Now、SpaceNews、Universe Today 等航天信源自动整理的重要航天新闻，按日期归集于此。点击来源链接可阅读完整报道。</p>
-{% assign space_days = site.data.daily_news.days | where_exp: "d", "d.space_items.first" %}
-<div class="space-news-archive">
-  {% if space_days.size > 0 %}
-    {% for day in space_days %}
-      <section class="daily-news-day is-space" data-filter-date="{{ day.date }}">
-        <header>
-          <time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time>
-          <span>{{ day.space_items.size }} 条航天简讯 <span class="space-tag">航天</span></span>
-        </header>
-        <ol>
-          {% for item in day.space_items %}
-            {% assign headline = item.title_zh | default: item.title %}
-            <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ headline | escape }}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
-          {% endfor %}
-        </ol>
-      </section>
-    {% endfor %}
-  {% else %}
-    <p class="daily-news-empty">航天信源整理完成后，相关简讯将显示在这里。</p>
-  {% endif %}
-</div>
+<div class="daily-news-columns">
+  <section class="daily-news-column daily-news-column--space">
+    <h2 class="space-news-title">航天动态</h2>
+    <p class="space-news-intro">每日从 NASA、Space.com、Spaceflight Now、SpaceNews、Universe Today 等航天信源自动整理的重要航天新闻，按日期归集于此。点击来源链接可阅读完整报道。</p>
+    {% assign space_days = site.data.daily_news.days | where_exp: "d", "d.space_items.first" %}
+    <div class="space-news-archive">
+      {% if space_days.size > 0 %}
+        {% for day in space_days %}
+          <section class="daily-news-day is-space" data-filter-date="{{ day.date }}">
+            <header>
+              <time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time>
+              <span>{{ day.space_items.size }} 条航天简讯 <span class="space-tag">航天</span></span>
+            </header>
+            <ol>
+              {% for item in day.space_items %}
+                {% assign headline = item.title_zh | default: item.title %}
+                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ headline | escape }}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+              {% endfor %}
+            </ol>
+          </section>
+        {% endfor %}
+      {% else %}
+        <p class="daily-news-empty">航天信源整理完成后，相关简讯将显示在这里。</p>
+      {% endif %}
+    </div>
+  </section>
 
-<div class="daily-news-archive">
-  {% if news_days.size > 0 %}
-    {% for day in news_days %}
-      <section class="daily-news-day" data-filter-date="{{ day.date }}">
-        <header><time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time><span>{{ day.items.size }} 条简讯</span></header>
-        <ol>
-          {% for item in day.items %}
-            {% assign headline = item.title_zh | default: item.title %}
-            <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ headline | escape }}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
-          {% endfor %}
-        </ol>
-      </section>
-    {% endfor %}
-  {% else %}
-    <p class="daily-news-empty">自动新闻任务运行后，第一期简讯将显示在这里。</p>
-  {% endif %}
+  <section class="daily-news-column daily-news-column--world">
+    <h2 class="world-news-title">全球简讯</h2>
+    <p class="world-news-intro">来自 BBC、NPR、联合国新闻等公开信源的全球要闻，同样按日期归集，与左侧航天动态互为补充。</p>
+    <div class="daily-news-archive">
+      {% if news_days.size > 0 %}
+        {% for day in news_days %}
+          <section class="daily-news-day" data-filter-date="{{ day.date }}">
+            <header><time datetime="{{ day.date }}">{{ day.date | date: "%Y年%-m月%-d日" }}</time><span>{{ day.items.size }} 条简讯</span></header>
+            <ol>
+              {% for item in day.items %}
+                {% assign headline = item.title_zh | default: item.title %}
+                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ headline | escape }}</span><small>{{ item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+              {% endfor %}
+            </ol>
+          </section>
+        {% endfor %}
+      {% else %}
+        <p class="daily-news-empty">自动新闻任务运行后，第一期简讯将显示在这里。</p>
+      {% endif %}
+    </div>
+  </section>
 </div>
 
 <p class="daily-news-note">新闻标题由机器自动翻译，仅供参考，可能与原文有出入；点击标题可阅读来源语言原文。标题与链接归原发布机构所有；收录不代表本站赞同其观点。</p>

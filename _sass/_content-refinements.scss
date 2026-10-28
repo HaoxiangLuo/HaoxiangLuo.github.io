@@ -267,14 +267,16 @@ body.home-page .page__content .news-window h2 {
 .daily-news-note { margin-top: 1.25rem; }
 
 /* Space & Aerospace section on the daily news page. */
-.space-news-title {
+.space-news-title,
+.world-news-title {
   margin: 0 0 0.5rem;
   font-size: clamp(1.6rem, 2.6vw, 2.1rem);
   font-weight: 720;
   letter-spacing: -0.03em;
   color: #1d1d1f;
 }
-.space-news-title::after {
+.space-news-title::after,
+.world-news-title::after {
   content: "";
   display: block;
   width: 2.6rem;
@@ -283,7 +285,8 @@ body.home-page .page__content .news-window h2 {
   background: #0071e3;
   border-radius: 2px;
 }
-.space-news-intro {
+.space-news-intro,
+.world-news-intro {
   max-width: 680px;
   margin: 0 0 1.6rem;
   color: #6e6e73;
@@ -310,6 +313,51 @@ body.home-page .page__content .news-window h2 {
   font-weight: 600;
   letter-spacing: 0.04em;
   vertical-align: middle;
+}
+
+/* Daily news: space & aerospace and world headlines sit side by side,
+   each column keeping its own date-by-date flow. */
+.daily-news-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+  align-items: start;
+}
+.daily-news-column { min-width: 0; }
+.daily-news-columns .space-news-archive { margin-bottom: 0; }
+.daily-news-columns .daily-news-day {
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+.daily-news-columns .daily-news-day > header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+@media (max-width: 980px) {
+  .daily-news-columns { grid-template-columns: 1fr; }
+  .daily-news-column--space { margin-bottom: 1rem; }
+  .daily-news-columns .daily-news-day {
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: clamp(1.25rem, 3vw, 2.4rem);
+  }
+  .daily-news-columns .daily-news-day > header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .daily-news-columns .daily-news-day { grid-template-columns: 1fr; gap: 0.75rem; }
+  .daily-news-columns .daily-news-day > header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 /* Opportunities page (internships + academic exchange). */
