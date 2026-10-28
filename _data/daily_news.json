@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-10-28T14:25:09+08:00",
+  "updated_at": "2026-10-28T19:11:04+08:00",
   "days": [
     {
       "date": "2026-10-28",
       "items": [
         {
-          "title": "Norway and Finland leaders hold rare call with Putin",
+          "title": "Luxury cruise passengers stranded in Cambodia due to soaring fuel costs",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "挪威和芬兰领导人与普京罕见通话"
+          "url": "https://www.bbc.co.uk/news/articles/cwj342k62exyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "由于燃油成本飙升，豪华游轮乘客滞留在柬埔寨"
         },
         {
-          "title": "U.S. to issue visas to Flávio Bolsonaro as his whereabouts remain unclear",
+          "title": "At least 10 dead in crash between 2 trains in Spain",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/27/nx-s1-6019678/u-s-to-issue-visas-to-flavio-bolsonaro-as-his-whereabouts-remain-unclear",
-          "title_zh": "由于弗拉维奥·博尔索纳罗下落不明，美国将向他发放签证"
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6020217/spain-train-disaster",
+          "title_zh": "西班牙两列火车相撞 至少10人死亡"
         },
         {
           "title": "Ceasefire extended across Ukraine's Kherson region, officials say",
@@ -23,40 +23,40 @@
           "title_zh": "官员称停火范围扩大至乌克兰赫尔松地区"
         },
         {
-          "title": "Israel's voter turnout soars as Netanyahu faces a tight election",
+          "title": "Trump's relationship with Putin comes under fire ahead of the midterms",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/27/nx-s1-6019381/israel-elections",
-          "title_zh": "以色列选民投票率飙升，内塔尼亚胡面临激烈选举"
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6009262/trumps-relationship-with-putin-comes-under-fire-ahead-of-the-midterms",
+          "title_zh": "特朗普与普京的关系在中期选举前受到批评"
         },
         {
-          "title": "Mbappé sorry for 'ill-judged' Mao remark after backlash in China",
+          "title": "King acknowledges 'suffering of the past' as Caribbean tour begins",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cv62yg0erp8zo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "姆巴佩对毛泽东言论在中国遭到强烈反对表示歉意"
+          "url": "https://www.bbc.co.uk/news/articles/cmwyv8ld22z1o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "金在加勒比之旅开始时承认“过去的痛苦"
         },
         {
-          "title": "The Ebola outbreak is breaking records -- and just marked a grim milestone",
+          "title": "Partial results from Israel's contentious election show no clear winner",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/27/g-s1-150136/ebola-outbreak-milestone-democratic-republic-congo-vaccine",
-          "title_zh": "埃博拉疫情正在打破记录——并且刚刚标志着一个严峻的里程碑"
-        },
-        {
-          "title": "Lula's comeback in Brazil dents Trump's ambitions for Latin America",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cq62yg6rggj0o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "卢拉在巴西复出削弱了特朗普对拉丁美洲的野心"
-        },
-        {
-          "title": "Bolsonaro's party accepts Brazil election defeat, but he refuses to concede",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/27/nx-s1-6019217/bolsonaro-flavio-lula-brazil-election-trump",
-          "title_zh": "博尔索纳罗领导的政党承认巴西选举失败，但他拒绝承认"
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6019423/israel-election-results",
+          "title_zh": "以色列有争议的选举的部分结果显示没有明显的赢家"
         },
         {
           "title": "Dutch zookeeper dies after being mauled by leopard",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/crwyq90gwg8jo?at_medium=RSS&at_campaign=rss",
           "title_zh": "荷兰动物园管理员被豹子咬伤身亡"
+        },
+        {
+          "title": "A U.S. cruise ship ends voyage due to fuel costs and passengers lose their homes",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6020180/us-cruise-ship-ends-voyage-passengers-lose-homes",
+          "title_zh": "美国一艘游轮因燃油成本上涨而终止航行 乘客失去家园"
+        },
+        {
+          "title": "Norway and Finland leaders hold rare call with Putin",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "挪威和芬兰领导人与普京罕见通话"
         }
       ],
       "space_items": [
@@ -67,10 +67,10 @@
           "title_zh": "好奇心博客，Sols 5043-5049：准备在“纳斯卡”钻探"
         },
         {
-          "title": "How 'spacewalking' underwater made me feel like I was really in space",
+          "title": "Black holes can split in two — but only if they spin at extreme speeds",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/human-spaceflight/how-spacewalking-underwater-made-me-feel-like-i-was-really-in-space",
-          "title_zh": "水下“太空行走”如何让我感觉自己真的在太空中"
+          "url": "https://www.space.com/astronomy/black-holes/black-holes-can-split-in-two-but-only-if-they-spin-at-extreme-speeds",
+          "title_zh": "黑洞可以一分为二——但前提是它们以极高的速度旋转"
         },
         {
           "title": "West Coast Falcon 9 rocket launches 27 Starlink satellites",
@@ -97,10 +97,10 @@
           "title_zh": "APOD：2026 年 10 月 28 日——木卫三和木卫一的相互掩星"
         },
         {
-          "title": "Astronomers discover the secrets of 'string of pearls' supernova relic and the zombie star at its heart",
+          "title": "How 'spacewalking' underwater made me feel like I was really in space",
           "source": "Space.com",
-          "url": "https://www.space.com/astronomy/stars/astronomers-discover-the-secrets-of-string-of-pearls-supernova-relic-and-the-zombie-star-at-its-heart",
-          "title_zh": "天文学家发现“珍珠链”超新星遗迹及其核心僵尸星的秘密"
+          "url": "https://www.space.com/space-exploration/human-spaceflight/how-spacewalking-underwater-made-me-feel-like-i-was-really-in-space",
+          "title_zh": "水下“太空行走”如何让我感觉自己真的在太空中"
         },
         {
           "title": "SpaceX launches Starlink 15-15 mission following a trio of scrubs",
