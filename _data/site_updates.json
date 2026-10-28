@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-28",
+    "title_zh": "调整了每日新闻、界面样式",
+    "title_en": "Refined Daily News, interface styling",
+    "message": "Split daily news into two side-by-side columns (space / world)",
+    "story_zh": "对每日新闻、界面样式的排版、间距与响应式规则进行了改动，使其在窄屏与宽屏下的排布更整齐。",
+    "story_en": "Changed the typography, spacing and responsive rules of Daily News, interface styling so the layout is tidier on both narrow and wide screens.",
+    "purpose_zh": "统一每日新闻与既有内容页的内容宽度、阅读节奏和视觉层级。",
+    "purpose_en": "Split daily news into two side-by-side columns (space / world)",
+    "details_zh": "调整每日新闻页面的主内容容器、archive 宽度或内边距、标题对齐与移动端布局。",
+    "details_en": "Adjusted the main content container, archive width or padding, title alignment and mobile layout of the Daily News page.",
+    "sha": "2377eae",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/2377eae0d26f8295c91cfa384fef032cd937d866"
+  },
+  {
     "date": "2026-10-24",
     "title_zh": "调整了每日新闻、界面样式、数据归档、归档测试",
     "title_en": "Refined Daily News, interface styling, data archive, archive tests",
