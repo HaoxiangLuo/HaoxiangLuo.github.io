@@ -1,21 +1,9 @@
 {
-  "updated_at": "2026-10-28T00:05:09+08:00",
+  "updated_at": "2026-10-28T14:25:09+08:00",
   "days": [
     {
       "date": "2026-10-28",
       "items": [
-        {
-          "title": "Turnout so far highest on record as Israelis vote in pivotal election",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c3j47l4kdez4o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "以色列人在关键选举中投票，投票率创历史新高"
-        },
-        {
-          "title": "Bolsonaro's Party accepts Brazil election defeat, but he refuses to concede",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/27/nx-s1-6019217/bolsonaro-flavio-lula-brazil-election-trump",
-          "title_zh": "博尔索纳罗领导的政党承认巴西选举失败，但他拒绝承认"
-        },
         {
           "title": "Norway and Finland leaders hold rare call with Putin",
           "source": "BBC World",
@@ -23,54 +11,66 @@
           "title_zh": "挪威和芬兰领导人与普京罕见通话"
         },
         {
-          "title": "A 'Green Army' is out to thwart El Niño flooding",
+          "title": "U.S. to issue visas to Flávio Bolsonaro as his whereabouts remain unclear",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/27/nx-s1-6010370/el-nino-floods-nairobi-green-army",
-          "title_zh": "绿军”出击阻止厄尔尼诺洪水"
+          "url": "https://www.npr.org/2026/10/27/nx-s1-6019678/u-s-to-issue-visas-to-flavio-bolsonaro-as-his-whereabouts-remain-unclear",
+          "title_zh": "由于弗拉维奥·博尔索纳罗下落不明，美国将向他发放签证"
         },
         {
-          "title": "Truce begins in Ukraine city where residents ate weeds to survive",
+          "title": "Ceasefire extended across Ukraine's Kherson region, officials say",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck20wjnv3w0jo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "乌克兰城市开始停战，居民以杂草为生"
+          "url": "https://www.bbc.co.uk/news/articles/c6lye1w9p2l8o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "官员称停火范围扩大至乌克兰赫尔松地区"
         },
         {
-          "title": "Democrats have a midterm edge, poll shows. And, Israelis vote in high-stakes election",
+          "title": "Israel's voter turnout soars as Netanyahu faces a tight election",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/27/g-s1-150052/up-first-newsletter-midterms-polling-data-voter-fraud-israel-prime-minister-elections",
-          "title_zh": "民意调查显示，民主党在中期选举中具有优势。而且，以色列人在高风险选举中投票"
-        },
-        {
-          "title": "Ballon d'Or ceremony raises case of French sports journalist jailed in Algeria",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6x2qgyqr79wo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "金球奖颁奖典礼引发了法国体育记者在阿尔及利亚被监禁的案件"
-        },
-        {
-          "title": "Local ceasefire brokered by Melania Trump starts in southern Ukraine",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/27/g-s1-150037/russia-ukraine-war",
-          "title_zh": "由梅拉尼娅·特朗普斡旋的乌克兰南部地区开始停火"
+          "url": "https://www.npr.org/2026/10/27/nx-s1-6019381/israel-elections",
+          "title_zh": "以色列选民投票率飙升，内塔尼亚胡面临激烈选举"
         },
         {
           "title": "Mbappé sorry for 'ill-judged' Mao remark after backlash in China",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cv62yg0erp8zo?at_medium=RSS&at_campaign=rss",
           "title_zh": "姆巴佩对毛泽东言论在中国遭到强烈反对表示歉意"
+        },
+        {
+          "title": "The Ebola outbreak is breaking records -- and just marked a grim milestone",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/27/g-s1-150136/ebola-outbreak-milestone-democratic-republic-congo-vaccine",
+          "title_zh": "埃博拉疫情正在打破记录——并且刚刚标志着一个严峻的里程碑"
+        },
+        {
+          "title": "Lula's comeback in Brazil dents Trump's ambitions for Latin America",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq62yg6rggj0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "卢拉在巴西复出削弱了特朗普对拉丁美洲的野心"
+        },
+        {
+          "title": "Bolsonaro's party accepts Brazil election defeat, but he refuses to concede",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/27/nx-s1-6019217/bolsonaro-flavio-lula-brazil-election-trump",
+          "title_zh": "博尔索纳罗领导的政党承认巴西选举失败，但他拒绝承认"
+        },
+        {
+          "title": "Dutch zookeeper dies after being mauled by leopard",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/crwyq90gwg8jo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "荷兰动物园管理员被豹子咬伤身亡"
         }
       ],
       "space_items": [
         {
-          "title": "How a Johnson Mentor Shapes the Next Generation of NASA Talent",
+          "title": "Curiosity Blog, Sols 5043-5049: Preparing to Drill at ‘Nazca’",
           "source": "NASA",
-          "url": "https://www.nasa.gov/general/how-a-johnson-mentor-shapes-the-next-generation-of-nasa-talent/",
-          "title_zh": "约翰逊导师如何塑造下一代 NASA 人才"
+          "url": "https://science.nasa.gov/blog/curiosity-blog-sols-5043-5049-preparing-to-drill-at-nazca/",
+          "title_zh": "好奇心博客，Sols 5043-5049：准备在“纳斯卡”钻探"
         },
         {
-          "title": "'Dungeon Crawler Carl' is getting a killer new comic book series",
+          "title": "How 'spacewalking' underwater made me feel like I was really in space",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-books/dungeon-crawler-carl-is-getting-a-killer-new-comic-book-series",
-          "title_zh": "《地下城爬行者卡尔》即将推出杀手级新漫画系列"
+          "url": "https://www.space.com/space-exploration/human-spaceflight/how-spacewalking-underwater-made-me-feel-like-i-was-really-in-space",
+          "title_zh": "水下“太空行走”如何让我感觉自己真的在太空中"
         },
         {
           "title": "West Coast Falcon 9 rocket launches 27 Starlink satellites",
@@ -79,28 +79,28 @@
           "title_zh": "西海岸猎鹰 9 号火箭发射 27 颗星链卫星"
         },
         {
-          "title": "Craft Prospect kicks off PERSEUS project to advance optical communications for space",
+          "title": "Ukrainian startup, GomSpace test satellite for future communications network",
           "source": "SpaceNews",
-          "url": "https://spacenews.com/craft-prospect-kicks-off-perseus-project-to-advance-optical-communications-for-space/",
-          "title_zh": "Craft Prospect 启动 PERSEUS 项目以推进太空光通信"
+          "url": "https://spacenews.com/ukrainian-startup-gomspace-test-satellite-for-future-communications-network/",
+          "title_zh": "乌克兰初创公司 GomSpace 测试未来通信网络卫星"
         },
         {
-          "title": "Hubble Will Give the Roman Space Telescope a Helping Hand",
+          "title": "NASA Systems Engineering Team Details HWO Mission Architecture",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/hubble-will-give-the-roman-space-telescope-a-helping-hand",
-          "title_zh": "哈勃望远镜将向罗马太空望远镜伸出援手"
+          "url": "https://www.universetoday.com/articles/nasa-systems-engineering-team-details-hwo-mission-architecture",
+          "title_zh": "NASA 系统工程团队详细介绍了 HWO 任务架构"
         },
         {
-          "title": "APOD: 2026 October 27 – Noctilucent Clouds over Sweden",
+          "title": "APOD: 2026 October 28 – The Mutual Occultation of Ganymede and Io",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-october-27-noctilucent-clouds-over-sweden/",
-          "title_zh": "APOD：2026 年 10 月 27 日 – 瑞典上空的夜光云"
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-28-the-mutual-occultation-of-ganymede-and-io/",
+          "title_zh": "APOD：2026 年 10 月 28 日——木卫三和木卫一的相互掩星"
         },
         {
-          "title": "On this day in space! Oct. 27, 1961: NASA launches Saturn I rocket on 1st test flight from Florida to set stage for the mighty Saturn V moon rocket",
+          "title": "Astronomers discover the secrets of 'string of pearls' supernova relic and the zombie star at its heart",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-october-27-2026",
-          "title_zh": "在太空的这一天！ 1961 年 10 月 27 日：美国宇航局 (NASA) 从佛罗里达州发射土星一号火箭进行第一次试飞，为强大的土星五号月球火箭搭建舞台"
+          "url": "https://www.space.com/astronomy/stars/astronomers-discover-the-secrets-of-string-of-pearls-supernova-relic-and-the-zombie-star-at-its-heart",
+          "title_zh": "天文学家发现“珍珠链”超新星遗迹及其核心僵尸星的秘密"
         },
         {
           "title": "SpaceX launches Starlink 15-15 mission following a trio of scrubs",
