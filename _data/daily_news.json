@@ -1,14 +1,38 @@
 {
-  "updated_at": "2026-10-29T00:51:27+08:00",
+  "updated_at": "2026-10-29T14:35:25+08:00",
   "days": [
     {
       "date": "2026-10-29",
       "items": [
         {
-          "title": "How could Israel break election deadlock? Here are four scenarios",
+          "title": "High-speed train crash kills at least 68 people in Spain",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm62y46d97wwo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "以色列如何打破选举僵局？这里有四种情况"
+          "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "西班牙高铁相撞事故造成至少68人死亡"
+        },
+        {
+          "title": "Spain reckons with 2nd deadly train crash of the year ahead of national election",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/29/nx-s1-6021963/spain-train-crash-updates",
+          "title_zh": "西班牙预计全国大选前将发生今年第二起致命火车事故"
+        },
+        {
+          "title": "Bloodied, dazed and angry - how passengers' rail journey turned to disaster in Spain",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm9qzd47ng98o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "血迹斑斑、茫然又愤怒——西班牙乘客的铁路旅程如何变成灾难"
+        },
+        {
+          "title": "Brazilian political drama unfolds as defeated Flavio Bolsonaro arrives in Miami",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6020518/brazilian-political-drama-unfolds-as-defeated-flavio-bolsonaro-arrives-in-miami",
+          "title_zh": "失败的弗拉维奥·博尔索纳罗抵达迈阿密，巴西政治戏剧上演"
+        },
+        {
+          "title": "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "弗拉维奥·博尔索纳罗否认在迈阿密登陆后逃离巴西"
         },
         {
           "title": "Israel's election too close to call. And, the Ebola outbreak reaches grim milestone",
@@ -17,10 +41,10 @@
           "title_zh": "以色列大选结果势均力敌。而且，埃博拉疫情爆发达到了严峻的里程碑"
         },
         {
-          "title": "Luxury cruise passengers stranded in Cambodia due to soaring fuel costs",
+          "title": "Netanyahu's bloc leading Israel election but short of majority, partial results show",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwj342k62exyo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "由于燃油成本飙升，豪华游轮乘客滞留在柬埔寨"
+          "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "部分结果显示，内塔尼亚胡集团领先以色列选举，但未获得多数席位"
         },
         {
           "title": "Dozens are dead in a high-speed train crash in Spain",
@@ -29,54 +53,30 @@
           "title_zh": "西班牙高速列车相撞事故造成数十人死亡"
         },
         {
-          "title": "Serbian shot dead after attacking officer outside Israeli embassy, minister says",
+          "title": "How could Israel break election deadlock? Here are four scenarios",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck5ynj4eeyj2o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "部长称塞尔维亚人在以色列大使馆外袭击官员后被枪杀"
-        },
-        {
-          "title": "Trump's relationship with Putin comes under fire ahead of the midterms",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/28/nx-s1-6009262/trumps-relationship-with-putin-comes-under-fire-ahead-of-the-midterms",
-          "title_zh": "特朗普与普京的关系在中期选举前受到批评"
-        },
-        {
-          "title": "Tanzania celebrates first natural gas discovery in more than 10 years",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c5m2dry2xwwvo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "坦桑尼亚庆祝十多年来首次发现天然气"
-        },
-        {
-          "title": "Partial results from Israel's contentious election show no clear winner",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/28/nx-s1-6019423/israel-election-results",
-          "title_zh": "以色列有争议的选举的部分结果显示没有明显的赢家"
-        },
-        {
-          "title": "Anger in Kenya over extradition hearing delay for ex-British soldier accused of murdering woman",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmly073ql392o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "肯尼亚因被控谋杀妇女的前英国士兵引渡听证会延迟而愤怒"
+          "url": "https://www.bbc.co.uk/news/articles/cm62y46d97wwo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "以色列如何打破选举僵局？这里有四种情况"
         }
       ],
       "space_items": [
         {
-          "title": "NASA Selects 19 New Citizen Science Proposals in 2026",
+          "title": "APOD: 29 October 2026 – The Horns of Venus",
           "source": "NASA",
-          "url": "https://science.nasa.gov/get-involved/citizen-science/nasa-selects-19-new-citizen-science-proposals-in-2026/",
-          "title_zh": "NASA 选出 2026 年 19 项新公民科学提案"
+          "url": "https://science.nasa.gov/image-article/apod-29-october-2026-the-horns-of-venus/",
+          "title_zh": "APOD：2026 年 10 月 29 日 – 金星之角"
         },
         {
-          "title": "China's secretive space plane caught on camera in incredible new photo released by US military",
+          "title": "On this day in space! Oct. 28, 1971: Britain launches its 1st satellite Prospero into space on a Black Arrow rocket",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/chinas-secretive-space-plane-caught-on-camera-in-incredible-new-photo-released-by-us-military",
-          "title_zh": "美国军方发布的令人难以置信的新照片中捕捉到了中国秘密太空飞机"
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-october-28-2026",
+          "title_zh": "在太空的这一天！ 1971 年 10 月 28 日：英国利用黑箭火箭将第一颗卫星 Prospero 送入太空"
         },
         {
-          "title": "West Coast Falcon 9 rocket launches 27 Starlink satellites",
+          "title": "United Launch Alliance announces mid-November return to flight for Vulcan rocket",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/10/27/west-coast-falcon-9-rocket-to-launch-27-starlink-satellites/",
-          "title_zh": "西海岸猎鹰 9 号火箭发射 27 颗星链卫星"
+          "url": "https://spaceflightnow.com/2026/10/28/united-launch-alliance-announces-mid-november-return-to-flight-for-vulcan-rocket/",
+          "title_zh": "联合发射联盟宣布火神火箭将于 11 月中旬恢复飞行"
         },
         {
           "title": "Flexell Space and Satoro Agree to Collaborate on In-Orbit Demonstration of Next-Generation Space Solar Cells",
@@ -85,28 +85,28 @@
           "title_zh": "Flexell Space 和 Satoro 同意合作进行下一代太空太阳能电池的在轨演示"
         },
         {
-          "title": "The Rubin Observatory Finds Its First Dwarf Planet Candidate",
+          "title": "Moon Habitats May Use Layered Mylar to Block Extreme Heat",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/the-rubin-observatory-finds-its-first-dwarf-planet-candidate",
-          "title_zh": "鲁宾天文台发现了第一颗矮行星候选者"
+          "url": "https://www.universetoday.com/articles/moon-habitats-may-use-layered-mylar-to-block-extreme-heat",
+          "title_zh": "月球栖息地可能会使用分层聚酯薄膜来阻挡极热"
         },
         {
-          "title": "Webb Sees Turbulent Star Nursery",
+          "title": "Arnab Strikes India",
           "source": "NASA",
-          "url": "https://www.nasa.gov/image-article/webb-sees-turbulent-star-nursery/",
-          "title_zh": "韦伯看到动荡的明星苗圃"
+          "url": "https://science.nasa.gov/earth/earth-observatory/arnab-strikes-india/",
+          "title_zh": "阿纳布袭击印度"
         },
         {
-          "title": "The final ‘Dune: Part Three’ trailer reignites war on Arrakis and leaves us with more questions than answers",
+          "title": "5 days beneath the waves: What it's like to live in an underwater 'space station'",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-movies-shows/the-final-dune-part-three-trailer-reignites-war-on-arrakis-and-leaves-us-with-more-questions-than-answers",
-          "title_zh": "《沙丘：第三部分》的最终预告片重新点燃了厄拉科斯的战争，给我们留下的问题多于答案"
+          "url": "https://www.space.com/space-exploration/human-spaceflight/5-days-beneath-the-waves-what-its-like-to-live-in-an-underwater-space-station",
+          "title_zh": "海浪下 5 天：生活在水下“空间站”的感觉"
         },
         {
-          "title": "SpaceX launches Starlink 15-15 mission following a trio of scrubs",
+          "title": "NASA nears end of space station solar array upgrade with Oct. 29 and Nov. 5 spacewalks",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/10/20/live-coverage-spacex-to-launch-27-starlink-satellites-on-falcon-9-rocket-from-vandenberg-sfb-5/",
-          "title_zh": "SpaceX 在三轮磨砂之后启动了 Starlink 15-15 任务"
+          "url": "https://spaceflightnow.com/2026/10/28/nasa-nears-end-of-space-station-solar-array-upgrade-with-oct-29-and-nov-5-spacewalks/",
+          "title_zh": "NASA 于 10 月 29 日和 11 月 5 日进行太空行走，空间站太阳能电池阵列升级即将结束"
         }
       ]
     },
