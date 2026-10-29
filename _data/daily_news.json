@@ -1,32 +1,26 @@
 {
-  "updated_at": "2026-10-29T14:35:25+08:00",
+  "updated_at": "2026-10-29T19:24:40+08:00",
   "days": [
     {
       "date": "2026-10-29",
       "items": [
         {
-          "title": "High-speed train crash kills at least 68 people in Spain",
+          "title": "Audio reveals exchanges between control centre and drivers before deadly Spain train crash",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6p3g84kjqjlo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "西班牙高铁相撞事故造成至少68人死亡"
+          "url": "https://www.bbc.co.uk/news/articles/cmqxnl312v34o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "音频显示西班牙致命火车事故前控制中心和司机之间的交流"
         },
         {
-          "title": "Spain reckons with 2nd deadly train crash of the year ahead of national election",
+          "title": "How AI drones are influencing the course of the Ukraine war",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/29/nx-s1-6021963/spain-train-crash-updates",
-          "title_zh": "西班牙预计全国大选前将发生今年第二起致命火车事故"
+          "url": "https://www.npr.org/2026/10/29/g-s1-147496/ukraine-ai-drones-war-russia",
+          "title_zh": "人工智能无人机如何影响乌克兰战争的进程"
         },
         {
-          "title": "Bloodied, dazed and angry - how passengers' rail journey turned to disaster in Spain",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm9qzd47ng98o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "血迹斑斑、茫然又愤怒——西班牙乘客的铁路旅程如何变成灾难"
-        },
-        {
-          "title": "Brazilian political drama unfolds as defeated Flavio Bolsonaro arrives in Miami",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/28/nx-s1-6020518/brazilian-political-drama-unfolds-as-defeated-flavio-bolsonaro-arrives-in-miami",
-          "title_zh": "失败的弗拉维奥·博尔索纳罗抵达迈阿密，巴西政治戏剧上演"
+          "title": "Afghanistan opium production jumps fivefold as farmers find ways round Taliban ban",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168697",
+          "title_zh": "农民想方设法绕过塔利班禁令，阿富汗鸦片产量猛增五倍"
         },
         {
           "title": "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
@@ -35,10 +29,16 @@
           "title_zh": "弗拉维奥·博尔索纳罗否认在迈阿密登陆后逃离巴西"
         },
         {
-          "title": "Israel's election too close to call. And, the Ebola outbreak reaches grim milestone",
+          "title": "Spain reckons with 2nd deadly train crash of the year ahead of national election",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/28/g-s1-150313/up-first-newsletter-midterm-campaign-trump-israel-elections-federal-reserve-ebola-outbreak",
-          "title_zh": "以色列大选结果势均力敌。而且，埃博拉疫情爆发达到了严峻的里程碑"
+          "url": "https://www.npr.org/2026/10/29/nx-s1-6021963/spain-train-crash-updates",
+          "title_zh": "西班牙预计全国大选前将发生今年第二起致命火车事故"
+        },
+        {
+          "title": "Higher Ground: How New York is raising a park to hold back the sea",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168679",
+          "title_zh": "高地：纽约如何建造一座公园来阻挡海水"
         },
         {
           "title": "Netanyahu's bloc leading Israel election but short of majority, partial results show",
@@ -47,16 +47,16 @@
           "title_zh": "部分结果显示，内塔尼亚胡集团领先以色列选举，但未获得多数席位"
         },
         {
-          "title": "Dozens are dead in a high-speed train crash in Spain",
+          "title": "Brazilian political drama unfolds as defeated Flavio Bolsonaro arrives in Miami",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/28/nx-s1-6020217/spain-train-disaster",
-          "title_zh": "西班牙高速列车相撞事故造成数十人死亡"
+          "url": "https://www.npr.org/2026/10/28/nx-s1-6020518/brazilian-political-drama-unfolds-as-defeated-flavio-bolsonaro-arrives-in-miami",
+          "title_zh": "失败的弗拉维奥·博尔索纳罗抵达迈阿密，巴西政治戏剧上演"
         },
         {
-          "title": "How could Israel break election deadlock? Here are four scenarios",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm62y46d97wwo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "以色列如何打破选举僵局？这里有四种情况"
+          "title": "Civilians in Sudan’s El Obeid trapped between drones and incarceration",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168696",
+          "title_zh": "苏丹埃尔奥贝德的平民被困在无人机和监禁之间"
         }
       ],
       "space_items": [
@@ -67,10 +67,10 @@
           "title_zh": "APOD：2026 年 10 月 29 日 – 金星之角"
         },
         {
-          "title": "On this day in space! Oct. 28, 1971: Britain launches its 1st satellite Prospero into space on a Black Arrow rocket",
+          "title": "SpaceX's Starfall capsule delivers cargo for US Air Force in landmark 'point to point' space mission",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-october-28-2026",
-          "title_zh": "在太空的这一天！ 1971 年 10 月 28 日：英国利用黑箭火箭将第一颗卫星 Prospero 送入太空"
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacexs-starfall-capsule-delivers-cargo-for-us-air-force-in-landmark-point-to-point-space-mission",
+          "title_zh": "SpaceX 的 Starfall 太空舱在具有里程碑意义的“点对点”太空任务中为美国空军运送货物"
         },
         {
           "title": "United Launch Alliance announces mid-November return to flight for Vulcan rocket",
@@ -97,10 +97,10 @@
           "title_zh": "阿纳布袭击印度"
         },
         {
-          "title": "5 days beneath the waves: What it's like to live in an underwater 'space station'",
+          "title": "On this day in space! Oct. 28, 1971: Britain launches its 1st satellite Prospero into space on a Black Arrow rocket",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/human-spaceflight/5-days-beneath-the-waves-what-its-like-to-live-in-an-underwater-space-station",
-          "title_zh": "海浪下 5 天：生活在水下“空间站”的感觉"
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-october-28-2026",
+          "title_zh": "在太空的这一天！ 1971 年 10 月 28 日：英国利用黑箭火箭将第一颗卫星 Prospero 送入太空"
         },
         {
           "title": "NASA nears end of space station solar array upgrade with Oct. 29 and Nov. 5 spacewalks",
