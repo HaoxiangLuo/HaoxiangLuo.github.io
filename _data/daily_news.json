@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-10-29T19:24:40+08:00",
+  "updated_at": "2026-10-30T01:07:12+08:00",
   "days": [
+    {
+      "date": "2026-10-30",
+      "items": [
+        {
+          "title": "Audio reveals exchanges between control centre and drivers before deadly Spain train crash",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmqxnl312v34o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "音频显示西班牙致命火车事故前控制中心和司机之间的交流"
+        },
+        {
+          "title": "US and Japan agree to establish a Japanese facility for joint missile production",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/29/g-s1-150666/us-and-japan-agree-to-establish-a-japanese-facility-for-joint-missile-production",
+          "title_zh": "美国和日本同意在日本建立联合导弹生产设施"
+        },
+        {
+          "title": "Security Council LIVE: Can new technology keep the world’s sea lanes safe?",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168698",
+          "title_zh": "安理会直播：新技术能否保证世界海上通道的安全？"
+        },
+        {
+          "title": "Russian drone attack on Ukrainian train station kills at least 14, officials say",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss",
+          "title_zh": "官员称俄罗斯无人机袭击乌克兰火车站至少14人死亡"
+        },
+        {
+          "title": "China elevates a military general to the Politburo and seeks to strengthen party discipline",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/29/g-s1-150645/china-elevates-a-military-general-to-the-politburo-and-seeks-to-strengthen-party-discipline",
+          "title_zh": "中国任命一名军事将领进入政治局并寻求加强党纪"
+        },
+        {
+          "title": "Afghanistan opium production jumps fivefold as farmers find ways round Taliban ban",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168697",
+          "title_zh": "农民想方设法绕过塔利班禁令，阿富汗鸦片产量猛增五倍"
+        },
+        {
+          "title": "Flávio Bolsonaro calls himself 'leader of Brazil' after election loss",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3x2w4109pj8o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "弗拉维奥·博尔索纳罗在选举失败后称自己为“巴西领导人"
+        },
+        {
+          "title": "Greetings from Baghdad, where Agatha Christie's old home presents its own mystery",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/29/g-s1-150319/agatha-christie-baghdad-home",
+          "title_zh": "来自巴格达的问候，阿加莎·克里斯蒂的故居在那里呈现出自己的神秘色彩"
+        },
+        {
+          "title": "Higher Ground: How New York is raising a park to hold back the sea",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168679",
+          "title_zh": "高地：纽约如何建造一座公园来阻挡海水"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "Envía tu nombre a Titán a bordo de la misión Dragonfly de la NASA",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/news-release/envia-tu-nombre-a-titan-a-bordo-de-la-mision-dragonfly-de-la-nasa/",
+          "title_zh": "羡慕 NASA 的蜻蜓任务中的泰坦"
+        },
+        {
+          "title": "Big cats, unexplained lights and a floodlit eclipse — 7 skywatching 'horror stories' to keep you entertained this Halloween",
+          "source": "Space.com",
+          "url": "https://www.space.com/stargazing/big-cats-unexplained-lights-and-a-floodlit-eclipse-7-skywatching-horror-stories-to-keep-you-entertained-this-halloween",
+          "title_zh": "大型猫科动物、无法解释的灯光和泛光灯照射下的日食——7个让你在这个万圣节开心地观看天空的“恐怖故事"
+        },
+        {
+          "title": "United Launch Alliance announces mid-November return to flight for Vulcan rocket",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/28/united-launch-alliance-announces-mid-november-return-to-flight-for-vulcan-rocket/",
+          "title_zh": "联合发射联盟宣布火神火箭将于 11 月中旬恢复飞行"
+        },
+        {
+          "title": "Advice for optimizing the space industry with Laura Crabtree",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/advice-for-optimizing-the-space-industry-with-laura-crabtree/",
+          "title_zh": "劳拉·克拉布特里 (Laura Crabtree) 为优化航天工业提供建议"
+        },
+        {
+          "title": "Colliding Dwarf Planets Created a 'Cat's Tail' 1,000 Astronomical Units Long",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/colliding-dwarf-planets-created-a-cats-tail-1000-astronomical-units-long",
+          "title_zh": "矮行星碰撞形成了 1,000 天文单位长的“猫尾"
+        },
+        {
+          "title": "Send Your Name to Titan Aboard NASA’s Dragonfly Mission",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/news-release/send-your-name-to-titan-aboard-nasas-dragonfly-mission/",
+          "title_zh": "在美国宇航局蜻蜓任务上将你的名字发送给泰坦"
+        },
+        {
+          "title": "The universe in the eye of a telescope | Space photo of the day for Oct. 29, 2026",
+          "source": "Space.com",
+          "url": "https://www.space.com/stargazing/astrophotography/the-universe-in-the-eye-of-a-telescope-space-photo-of-the-day-for-oct-29-2026",
+          "title_zh": "望远镜眼中的宇宙 | 2026 年 10 月 29 日当天的太空照片"
+        },
+        {
+          "title": "NASA nears end of space station solar array upgrade with Oct. 29 and Nov. 5 spacewalks",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/28/nasa-nears-end-of-space-station-solar-array-upgrade-with-oct-29-and-nov-5-spacewalks/",
+          "title_zh": "NASA 于 10 月 29 日和 11 月 5 日进行太空行走，空间站太阳能电池阵列升级即将结束"
+        }
+      ]
+    },
     {
       "date": "2026-10-29",
       "items": [
