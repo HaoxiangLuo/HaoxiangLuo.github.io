@@ -1,6 +1,105 @@
 {
-  "updated_at": "2026-10-29T15:35:52+08:00",
+  "updated_at": "2026-10-30T15:42:52+08:00",
   "internships": [
+    {
+      "date": "2026-10-30",
+      "items": [
+        {
+          "title": "Communication Internship, UNICEF China (for Chinese Nationals only), 6 months (on-site)",
+          "url": "https://jobs.unicef.org/cw/en-us/job/596670",
+          "detail": "UNICEF · China · Onsite · Deadline not stated · 6 months · Stipend not stated",
+          "detail_zh": "联合国儿童基金会 · 中国 · 现场办公 · 截止日期未说明 · 6 个月 · 津贴未说明",
+          "source": "UNICEF",
+          "source_zh": "联合国儿童基金会",
+          "org": "unicef",
+          "group": "un",
+          "job_id": "596670",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "media"
+          ],
+          "areas_zh": "传播、传媒",
+          "location": "China",
+          "city": "China",
+          "country": "China",
+          "region": "Asia",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "",
+          "eligibility": [],
+          "eligibility_zh": "",
+          "phd_ok": false,
+          "duration": "6 months",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "",
+          "posted": "2026-10-29",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": false,
+          "score80": false,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-10-29",
+          "found": "2026-10-30",
+          "score": 75,
+          "tier": "good",
+          "tier_zh": "较高匹配",
+          "tier_en": "Good match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media.",
+            "UNICEF works on communication, research or digital policy here."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体。",
+            "UNICEF的本岗位方向与传播、研究或数字政策工作相关。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "联合国儿童基金会驻华办事处通讯实习（仅限中国公民），6个月（现场）"
+        },
+        {
+          "title": "Product Manager Intern (2027) - Austin, TX",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8274790?gh_jid=8274790",
+          "detail": "In-Office",
+          "source": "Cloudflare",
+          "source_zh": "Cloudflare",
+          "group": "company",
+          "title_zh": "产品经理实习生 (2027) - 德克萨斯州奥斯汀",
+          "detail_zh": "在办公室"
+        },
+        {
+          "title": "Product Manager Intern (2027) - Lisbon, PT",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8332008?gh_jid=8332008",
+          "detail": "In-Office",
+          "source": "Cloudflare",
+          "source_zh": "Cloudflare",
+          "group": "company",
+          "title_zh": "产品经理实习生 (2027) - 葡萄牙里斯本",
+          "detail_zh": "在办公室"
+        },
+        {
+          "title": "Product Manager Intern (2027) - London, UK",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8328914?gh_jid=8328914",
+          "detail": "In-Office",
+          "source": "Cloudflare",
+          "source_zh": "Cloudflare",
+          "group": "company",
+          "title_zh": "产品经理实习生 (2027) - 英国伦敦",
+          "detail_zh": "在办公室"
+        }
+      ]
+    },
     {
       "date": "2026-10-29",
       "items": [
@@ -44,7 +143,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-10",
-          "days_left": 12,
+          "days_left": 11,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -71,7 +170,8 @@
           ],
           "extended": true,
           "excluded": false,
-          "title_zh": "健康与保健顾问"
+          "title_zh": "健康与保健顾问",
+          "last_seen": "2026-10-30"
         }
       ]
     },
@@ -148,7 +248,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "新闻写作/报道 - 公共信息实习生 - 新闻和内容 - 法语 - 面对面",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "News Writing / Reporting - Public Information Intern - News and Content - Portuguese",
@@ -220,7 +320,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "新闻写作/报道 - 公共信息实习生 - 新闻和内容 - 葡萄牙语",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Communications Intern",
@@ -291,7 +391,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "通讯实习生",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Unpaid Internship - AI for Programme Management and Process Innovation Intern (Cairo, Egypt)",
@@ -335,7 +435,7 @@
           "language": "Arabic or French",
           "posted": "2026-10-28",
           "deadline": "2026-11-11",
-          "days_left": 13,
+          "days_left": 12,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -430,7 +530,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 信息管理（数据可视化和设计）",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Supporter Content – Knowledge Management Intern, Division of Private Fundraising and Partnerships (PFP)",
@@ -495,7 +595,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "支持者内容 – 知识管理实习生，私人筹款和伙伴关系部 (PFP​​)",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         }
       ]
     },
@@ -570,7 +670,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "通讯实习生",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "INTERN – COMMUNICATIONS (GRAPHIC DESIGN & WEB)",
@@ -641,7 +741,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 – 传播（平面设计和网页）",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Intern for Risk Management and Peacebuilding Section",
@@ -709,7 +809,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "风险管理与建设和平科实习生",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Multi-Media Production Intern",
@@ -776,7 +876,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "多媒体制作实习生",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Communication and Advocacy Intern , 12 months Algiers , Algeria",
@@ -838,7 +938,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "传播和宣传实习生 , 12 个月 阿尔及尔 , 阿尔及利亚",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         }
       ]
     },
@@ -884,7 +984,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-08",
-          "days_left": 10,
+          "days_left": 9,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1055,7 +1155,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "通讯实习生（人工智能与创新）",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Knowledge Management & Communications Support Intern",
@@ -1127,7 +1227,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "知识管理和沟通支持实习生",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         }
       ]
     },
@@ -1275,7 +1375,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生：人才吸引和外展",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Intern - Project and Knowledge Management Support",
@@ -1345,7 +1445,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 项目和知识管理支持",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Project Management Intern",
@@ -1416,7 +1516,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "项目管理实习生",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Capacity Development Intern",
@@ -1488,7 +1588,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "能力发展实习生",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         }
       ]
     },
@@ -1634,7 +1734,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 人权（社交媒体实习）",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Intern- Data Management and Administrative Support",
@@ -1704,7 +1804,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "内部数据管理和行政支持",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Unpaid internship - WSIS Forum 2027 - Junior Project Officer (WSIS Prizes) (Geneva, Switzerland)",
@@ -1748,7 +1848,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": 19,
+          "days_left": 18,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1816,7 +1916,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-04",
-          "days_left": 6,
+          "days_left": 5,
           "open": true,
           "closing": true,
           "urgent": false,
@@ -1887,7 +1987,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": 19,
+          "days_left": 18,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1958,7 +2058,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": 19,
+          "days_left": 18,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2029,7 +2129,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": 19,
+          "days_left": 18,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2115,7 +2215,7 @@
           "language": "",
           "posted": "2026-10-19",
           "deadline": "2026-11-16",
-          "days_left": 18,
+          "days_left": 17,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2187,7 +2287,7 @@
           "language": "",
           "posted": "2026-10-19",
           "deadline": "2026-11-16",
-          "days_left": 18,
+          "days_left": 17,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2342,7 +2442,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-30",
-          "days_left": 1,
+          "days_left": 0,
           "open": true,
           "closing": true,
           "urgent": true,
@@ -2417,10 +2517,10 @@
           "language": "English",
           "posted": "",
           "deadline": "2026-11-02",
-          "days_left": 4,
+          "days_left": 3,
           "open": true,
           "closing": true,
-          "urgent": false,
+          "urgent": true,
           "score90": true,
           "score80": true,
           "score70": true,
@@ -2629,10 +2729,10 @@
           "language": "English",
           "posted": "",
           "deadline": "2026-11-02",
-          "days_left": 4,
+          "days_left": 3,
           "open": true,
           "closing": true,
-          "urgent": false,
+          "urgent": true,
           "score90": true,
           "score80": true,
           "score70": true,
@@ -2813,7 +2913,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生，特别程序",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "DCO Tech Intern",
@@ -2915,7 +3015,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 联合国可持续发展集团全系统评价办公室",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Information Management for Evaluation Support Intern",
@@ -3343,7 +3443,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "社交媒体实习生",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Sustainable Fiscal Policy and Public Finance Intern",
@@ -3449,7 +3549,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-25",
-          "days_left": -4,
+          "days_left": -5,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -3521,7 +3621,7 @@
           "language": "",
           "posted": "2026-10-09",
           "deadline": "2026-10-30",
-          "days_left": 1,
+          "days_left": 0,
           "open": true,
           "closing": true,
           "urgent": true,
@@ -3584,7 +3684,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-25",
-          "days_left": -4,
+          "days_left": -5,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -3828,7 +3928,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "人权实习生",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Software Development Intern, Intech",
@@ -4123,7 +4223,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 63,
+          "days_left": 62,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -4195,7 +4295,7 @@
           "language": "English or French",
           "posted": "2026-09-21",
           "deadline": "2026-12-31",
-          "days_left": 63,
+          "days_left": 62,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -4265,7 +4365,7 @@
           "language": "",
           "posted": "2026-10-03",
           "deadline": "2026-10-08",
-          "days_left": -21,
+          "days_left": -22,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -4334,7 +4434,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 63,
+          "days_left": 62,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -4470,7 +4570,7 @@
           "language": "",
           "posted": "2026-09-11",
           "deadline": "2026-12-10",
-          "days_left": 42,
+          "days_left": 41,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -4541,7 +4641,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 63,
+          "days_left": 62,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -4612,7 +4712,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 63,
+          "days_left": 62,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -4679,7 +4779,7 @@
           "language": "",
           "posted": "2026-10-01",
           "deadline": "2026-10-08",
-          "days_left": -21,
+          "days_left": -22,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -4743,7 +4843,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": -15,
+          "days_left": -16,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -4807,7 +4907,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": -15,
+          "days_left": -16,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -5261,7 +5361,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "联检组研究与分析实习生",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Editorial and AI Communications Intern",
@@ -5614,7 +5714,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 创新与分析中心",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "INTERN - HUMAN RIGHTS, I",
@@ -5753,7 +5853,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 人权",
-          "last_seen": "2026-10-29"
+          "last_seen": "2026-10-30"
         },
         {
           "title": "Intern - Human Rights",
