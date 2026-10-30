@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-10-30T19:16:21+08:00",
+  "updated_at": "2026-10-31T00:50:30+08:00",
   "days": [
+    {
+      "date": "2026-10-31",
+      "items": [
+        {
+          "title": "US inmate Christa Pike says she woke up 'confused and in pain' after failed execution",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国囚犯克里斯塔·派克 (Christa Pike) 表示，在执行失败后，她醒来时感到“困惑和痛苦"
+        },
+        {
+          "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+          "title_zh": "区块链情报公司将朝鲜与币安 6.3B 美元黑客事件联系起来"
+        },
+        {
+          "title": "Ceasefire allows evacuation from devastated Russian-occupied Oleshky",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "停火允许从遭到破坏的俄罗斯占领的奥列什基撤离"
+        },
+        {
+          "title": "Alaska's Senate race faces claims of spoiler candidate. And, Hegseth ousts Army general",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/30/g-s1-150889/up-first-newsletter-midterm-elections-iran-war-veteran-affairs-loans",
+          "title_zh": "阿拉斯加州的参议员竞选面临着破坏候选人的指控。并且，赫格斯驱逐了陆军将军"
+        },
+        {
+          "title": "Prominent Russian newspaper shuts down under pressure from authorities",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmewepdr109do?at_medium=RSS&at_campaign=rss",
+          "title_zh": "俄罗斯著名报纸在当局压力下关闭"
+        },
+        {
+          "title": "Israel is in a political deadlock. What comes next?",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/30/g-s1-150761/israel-election-politics-deadlock-arabs",
+          "title_zh": "以色列陷入政治僵局。接下来会发生什么？"
+        },
+        {
+          "title": "Spain transport minister says he won't resign over high-speed rail disaster",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6zxj2e5qlxxo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "西班牙交通部长表示不会因高铁灾难而辞职"
+        },
+        {
+          "title": "What killed 500-plus penguins? How scientists solved the mystery",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/29/nx-s1-6020451/avian-flu-penguins-pathogen-antarctica-cholera",
+          "title_zh": "是什么杀死了 500 多只企鹅？科学家如何解开这个谜团"
+        },
+        {
+          "title": "Pope Leo XIV becomes first pontiff to vote in a US election",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckwyq2509p7xo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "教皇利奥十四世成为第一位在美国大选中投票的教皇"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "NASA Explores Potential Commercial Servicing for Hubble Telescope",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/",
+          "title_zh": "美国宇航局探索哈勃望远镜的潜在商业服务"
+        },
+        {
+          "title": "The Taurid meteor shower isn't much to look at. That's why I love it",
+          "source": "Space.com",
+          "url": "https://www.space.com/stargazing/meteor-showers/the-taurid-meteor-shower-isnt-much-to-look-at-thats-why-i-love-it",
+          "title_zh": "金牛座流星雨没什么好看的。这就是我喜欢它的原因"
+        },
+        {
+          "title": "Turkey aims for first Moon-orbiting mission in 2027",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/30/turkey-aims-for-first-moon-orbiting-mission-in-2027/",
+          "title_zh": "土耳其计划于 2027 年首次绕月飞行"
+        },
+        {
+          "title": "Advice for optimizing the space industry with Laura Crabtree",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/advice-for-optimizing-the-space-industry-with-laura-crabtree/",
+          "title_zh": "劳拉·克拉布特里 (Laura Crabtree) 为优化航天工业提供建议"
+        },
+        {
+          "title": "This Gamma-Ray Burst Wasn't Dim, It Was Just Misunderstood",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/this-gamma-ray-burst-wasnt-dim-it-was-just-misunderstood",
+          "title_zh": "这种伽马射线爆发并不暗淡，只是被误解了"
+        },
+        {
+          "title": "November’s Night Sky Notes: Light-Day Away",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/novembers-night-sky-notes-light-day-away/",
+          "title_zh": "十一月的夜空笔记：远离光日"
+        },
+        {
+          "title": "'Star Trek's' William Shatner and George Takei honor the death of Walter Koenig",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/star-treks-william-shatner-and-george-takei-honor-the-death-of-walter-koenig",
+          "title_zh": "《星际迷航》中的威廉·夏特纳和乔治·竹井纪念沃尔特·柯尼格的去世"
+        },
+        {
+          "title": "As it happened: spacewalkers install new solar array",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/29/as-it-happened-spacewalkers-install-new-solar-array/",
+          "title_zh": "事情发生了：太空行走者安装了新的太阳能电池阵列"
+        }
+      ]
+    },
     {
       "date": "2026-10-30",
       "items": [
