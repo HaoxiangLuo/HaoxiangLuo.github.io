@@ -1,32 +1,26 @@
 {
-  "updated_at": "2026-10-30T14:35:00+08:00",
+  "updated_at": "2026-10-30T19:16:21+08:00",
   "days": [
     {
       "date": "2026-10-30",
       "items": [
         {
-          "title": "Syrians struggle with soaring prices as crisis challenges post-Assad recovery",
+          "title": "Residents leave devastated Russian-occupied Oleshky as evacuation corridor opens",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmn4egvez1yzo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "由于危机挑战阿萨德后的复苏，叙利亚人在物价飞涨中挣扎"
+          "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "随着疏散走廊开放，居民离开被俄罗斯占领的奥列什基"
         },
         {
-          "title": "What killed 500-plus penguins? How scientists solved the mystery",
+          "title": "Israel is in a political deadlock. What comes next?",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/29/nx-s1-6020451/avian-flu-penguins-pathogen-antarctica-cholera",
-          "title_zh": "是什么杀死了 500 多只企鹅？科学家如何解开这个谜团"
+          "url": "https://www.npr.org/2026/10/30/g-s1-150761/israel-election-politics-deadlock-arabs",
+          "title_zh": "以色列陷入政治僵局。接下来会发生什么？"
         },
         {
-          "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "加密货币巨头币安遭受 63 亿美元的黑客攻击，疑似史上规模最大的黑客攻击"
-        },
-        {
-          "title": "US and Japan agree to establish a Japanese facility for joint missile production",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/29/g-s1-150666/us-and-japan-agree-to-establish-a-japanese-facility-for-joint-missile-production",
-          "title_zh": "美国和日本同意在日本建立联合导弹生产设施"
+          "title": "Myanmar’s illicit economy fuels escalating violence, with civilians bearing the brunt",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168705",
+          "title_zh": "缅甸非法经济助长暴力升级，平民首当其冲"
         },
         {
           "title": "Mushroom murderer fails to overturn convictions in Australian court challenge",
@@ -35,42 +29,48 @@
           "title_zh": "蘑菇凶手在澳大利亚法庭挑战中未能推翻定罪"
         },
         {
-          "title": "China elevates a military general to the Politburo and seeks to strengthen party discipline",
+          "title": "What killed 500-plus penguins? How scientists solved the mystery",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/29/g-s1-150645/china-elevates-a-military-general-to-the-politburo-and-seeks-to-strengthen-party-discipline",
-          "title_zh": "中国任命一名军事将领进入政治局并寻求加强党纪"
+          "url": "https://www.npr.org/2026/10/29/nx-s1-6020451/avian-flu-penguins-pathogen-antarctica-cholera",
+          "title_zh": "是什么杀死了 500 多只企鹅？科学家如何解开这个谜团"
         },
         {
-          "title": "Israeli opposition accuses Netanyahu of trying to 'delegitimise' election",
+          "title": "AI is changing the way we think. The question is whether we’ll notice in time",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168704",
+          "title_zh": "人工智能正在改变我们的思维方式。问题是我们是否会及时注意到"
+        },
+        {
+          "title": "Syrians struggle with soaring prices as crisis challenges post-Assad recovery",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ckdd8qdl9e0eo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "以色列反对派指责内塔尼亚胡试图“破坏”选举合法性"
+          "url": "https://www.bbc.co.uk/news/articles/cmn4egvez1yzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "由于危机挑战阿萨德后的复苏，叙利亚人在物价飞涨中挣扎"
         },
         {
-          "title": "Greetings from Baghdad, where Agatha Christie's old home presents its own mystery",
+          "title": "US and Japan agree to establish a Japanese facility for joint missile production",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/29/g-s1-150319/agatha-christie-baghdad-home",
-          "title_zh": "来自巴格达的问候，阿加莎·克里斯蒂的故居在那里呈现出自己的神秘色彩"
+          "url": "https://www.npr.org/2026/10/29/g-s1-150666/us-and-japan-agree-to-establish-a-japanese-facility-for-joint-missile-production",
+          "title_zh": "美国和日本同意在日本建立联合导弹生产设施"
         },
         {
-          "title": "Three dead after two helicopters collide midair near Oregon airport",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cked3p81303yo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "两架直升机在俄勒冈机场附近空中相撞，三人死亡"
+          "title": "World News in Brief: 5 children killed in Sudan, Haiti hunger emergency, Yemen war update",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168703",
+          "title_zh": "世界新闻简讯：苏丹 5 名儿童丧生、海地饥饿紧急情况、也门战争最新动态"
         }
       ],
       "space_items": [
         {
-          "title": "APOD: 2026 October 30 – Haunting the Cepheus Flare",
+          "title": "November’s Night Sky Notes: Light-Day Away",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-october-30-haunting-the-cepheus-flare/",
-          "title_zh": "APOD：2026 年 10 月 30 日——仙王座耀斑出没"
+          "url": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/novembers-night-sky-notes-light-day-away/",
+          "title_zh": "十一月的夜空笔记：远离光日"
         },
         {
-          "title": "Patrick Stewart, renowned actor and ‘Star Trek’s’ Captain Picard, dies at 86",
+          "title": "Think Halloween is scary? This scorched alien world is a real-life cosmic horror story",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/patrick-stewart-renowned-actor-and-star-treks-captain-picard-dies-at-86",
-          "title_zh": "著名演员、《星际迷航》中皮卡德船长帕特里克·斯图尔特去世，享年 86 岁"
+          "url": "https://www.space.com/astronomy/exoplanets/think-halloween-is-scary-this-scorched-alien-world-is-a-real-life-cosmic-horror-story",
+          "title_zh": "觉得万圣节很恐怖吗？这个焦黑的外星世界是一个真实的宇宙恐怖故事"
         },
         {
           "title": "As it happened: spacewalkers install new solar array",
@@ -91,16 +91,16 @@
           "title_zh": "你如何挤压行星矿物会改变一切"
         },
         {
-          "title": "Vega Island Frozen in Fright",
+          "title": "APOD: 2026 October 30 – Haunting the Cepheus Flare",
           "source": "NASA",
-          "url": "https://science.nasa.gov/earth/earth-observatory/vega-island-frozen-in-fright/",
-          "title_zh": "维加岛惊恐结冰"
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-30-haunting-the-cepheus-flare/",
+          "title_zh": "APOD：2026 年 10 月 30 日——仙王座耀斑出没"
         },
         {
-          "title": "On this day in space! Oct. 29, 1991: NASA's Galileo spacecraft flies by asteroid Gaspra and snaps amazing photos while flying at 18,000 mph",
+          "title": "Patrick Stewart, renowned actor and ‘Star Trek’s’ Captain Picard, dies at 86",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-october-29-2026",
-          "title_zh": "在太空的这一天！ 1991 年 10 月 29 日：美国宇航局的伽利略号宇宙飞船飞过小行星加斯普拉，并以 18,000 英里/小时的速度飞行时拍摄了令人惊叹的照片"
+          "url": "https://www.space.com/entertainment/patrick-stewart-renowned-actor-and-star-treks-captain-picard-dies-at-86",
+          "title_zh": "著名演员、《星际迷航》中皮卡德船长帕特里克·斯图尔特去世，享年 86 岁"
         },
         {
           "title": "Spacewalking astronauts unfurl upgraded solar array to boost space station power",
