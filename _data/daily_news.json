@@ -1,14 +1,32 @@
 {
-  "updated_at": "2026-10-31T18:49:02+08:00",
+  "updated_at": "2026-10-31T23:53:53+08:00",
   "days": [
     {
       "date": "2026-10-31",
       "items": [
         {
-          "title": "US approves sale of 500 Patriot missiles to Ukraine",
+          "title": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "美国批准向乌克兰出售500枚爱国者导弹"
+          "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "被困俄罗斯占领城市多年的乌克兰撤离人员与家人团聚"
+        },
+        {
+          "title": "Drone photo award winners: Far-out landscapes. Ship recycling. Rugs, rugs rugs!",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/31/g-s1-150698/drone-photo-award-winners",
+          "title_zh": "无人机摄影奖获奖者：遥远的风景。船舶回收。地毯，地毯，地毯！"
+        },
+        {
+          "title": "DPR Korea: Isolation deepens even as the country changes, says UN rights official",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168690",
+          "title_zh": "朝鲜民主主义人民共和国：联合国人权官员表示，尽管国家发生了变化，但孤立仍在加深"
+        },
+        {
+          "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "为什么朝鲜“精英”黑客是币安重大黑客攻击的首要嫌疑人"
         },
         {
           "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
@@ -23,10 +41,10 @@
           "title_zh": "随着联合国政治使命的结束，索马里展望未来"
         },
         {
-          "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+          "title": "More than 5,000 die from Ebola in DR Congo's deadliest outbreak",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "加密货币巨头币安试图追回在与朝鲜有关的黑客攻击中被盗的 63 亿美元"
+          "url": "https://www.bbc.co.uk/news/articles/cj5ynryyep2yo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "刚果民主共和国最致命的埃博拉疫情造成 5,000 多人死亡"
         },
         {
           "title": "Alaska's Senate race faces claims of spoiler candidate. And, Hegseth ousts Army general",
@@ -39,24 +57,6 @@
           "source": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/10/1168713",
           "title_zh": "世界新闻简讯：黎巴嫩 30 万流离失所者、土耳其“深切关注”《新报》关闭、5000 万美元难民呼吁、世界城市日"
-        },
-        {
-          "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "为什么朝鲜“精英”黑客是币安重大黑客攻击的首要嫌疑人"
-        },
-        {
-          "title": "Israel is in a political deadlock. What comes next?",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/30/g-s1-150761/israel-election-politics-deadlock-arabs",
-          "title_zh": "以色列陷入政治僵局。接下来会发生什么？"
-        },
-        {
-          "title": "Ukraine: Oleshky ceasefire offers ‘hope’ for civilians as attacks on aid vehicles continue",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/10/1168712",
-          "title_zh": "乌克兰：奥列什基停火为平民带来“希望”，救援车辆袭击仍在继续"
         }
       ],
       "space_items": [
@@ -67,13 +67,13 @@
           "title_zh": "APOD：2026 年 10 月 31 日——幽灵星球之夜"
         },
         {
-          "title": "Halloween night sky 2026 — Saturn, shooting stars and a space station await US stargazers",
+          "title": "9 nightmarish sci-fi spaceships to crawl aboard for Halloween if you dare",
           "source": "Space.com",
-          "url": "https://www.space.com/stargazing/halloween-night-sky-2026-saturn-shooting-stars-and-a-space-station-await-us-stargazers",
-          "title_zh": "2026 年万圣节夜空——土星、流星和空间站等待着美国观星者"
+          "url": "https://www.space.com/entertainment/9-nightmarish-sci-fi-spaceships-to-crawl-aboard-for-halloween-if-you-dare",
+          "title_zh": "如果你敢的话，万圣节可以爬上 9 艘噩梦般的科幻宇宙飞船"
         },
         {
-          "title": "SpaceX closes out October with Halloween eve Falcon 9 launch, 700th Falcon 9 launch to date",
+          "title": "SpaceX closes out October with 700th Falcon 9 launch to date",
           "source": "Spaceflight Now",
           "url": "https://spaceflightnow.com/2026/10/30/live-coverage-spacex-to-close-out-october-with-halloween-eve-falcon-9-launch/",
           "title_zh": "SpaceX 以万圣节前夕猎鹰 9 号发射结束 10 月份，这是迄今为止第 700 次猎鹰 9 号发射"
@@ -97,10 +97,10 @@
           "title_zh": "NASA 向媒体和参与者发布 MAX POWER 重要活动"
         },
         {
-          "title": "Happy Halloween! SpaceX launches 27 Starlink satellites to orbit from California",
+          "title": "This Week In Space podcast: Episode 234 — Living in Lunar Caves",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starlink-launch-falcon-9-group-15-18-landing-ocisly",
-          "title_zh": "万圣节快乐！ SpaceX 从加州发射 27 颗 Starlink 卫星进入轨道"
+          "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-234-living-in-lunar-caves",
+          "title_zh": "本周太空播客：第 234 集 — 住在月球洞穴里"
         },
         {
           "title": "Turkey aims for first Moon-orbiting mission in 2027",
