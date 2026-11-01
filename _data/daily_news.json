@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-01T19:45:46+08:00",
+  "updated_at": "2026-11-02T00:55:57+08:00",
   "days": [
+    {
+      "date": "2026-11-02",
+      "items": [
+        {
+          "title": "Shops looted as German cost-of-living protests turn violent",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "德国生活成本抗议演变成暴力，商店被洗劫"
+        },
+        {
+          "title": "They signed up for a lifetime at sea on an endless cruise. High gas prices intervened",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/01/nx-s1-6022214/they-signed-up-for-a-lifetime-at-sea-on-an-endless-cruise-high-gas-prices-intervened",
+          "title_zh": "他们报名参加了一生的海上无休止的航行。高油价介入"
+        },
+        {
+          "title": "COP17: Nations chart ‘Yerevan Pathway’ to speed up action for nature",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168718",
+          "title_zh": "COP17：各国制定“埃里温途径”以加快保护自然行动"
+        },
+        {
+          "title": "Israeli strikes in Gaza kill eight including child, hospitals say",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "医院称，以色列对加沙的袭击造成包括儿童在内的八人死亡"
+        },
+        {
+          "title": "Secretary Rubio has a tough time getting officials at G20 on the same page",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/31/nx-s1-6022223/secretary-rubio-has-a-tough-time-getting-officials-at-g20-on-the-same-page",
+          "title_zh": "卢比奥国务卿很难让 G20 官员达成共识"
+        },
+        {
+          "title": "Western Sahara: UN ‘stands ready’ to keep supporting peace efforts as MINURSO mission ends",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168717",
+          "title_zh": "西撒哈拉：联合国“随时准备”在西撒特派团任务结束后继续支持和平努力"
+        },
+        {
+          "title": "Judge dismisses Trump's lawsuit against Wall Street Journal over Epstein birthday book",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwr5yj2lj9myo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法官驳回特朗普就爱泼斯坦生日书对《华尔街日报》提起的诉讼"
+        },
+        {
+          "title": "A new political era in the Southern Philippines",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/31/nx-s1-6020639/a-new-political-era-in-the-southern-philippines",
+          "title_zh": "菲律宾南部的新政治时代"
+        },
+        {
+          "title": "‘They deserve to know the truth’: UN rights chief demands probe into staffer’s death in Houthi custody",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168716",
+          "title_zh": "他们应该知道真相”：联合国人权事务高级专员要求调查工作人员在胡塞武装拘留期间的死亡事件"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "APOD: 2026 November 1 – Colors of the Moon",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
+          "title_zh": "APOD：2026 年 11 月 1 日 – 月亮的颜色"
+        },
+        {
+          "title": "Planetary defense: How military and civil satellites are watching fireballs to help keep Earth safe from space rocks",
+          "source": "Space.com",
+          "url": "https://www.space.com/stargazing/meteor-showers/planetary-defense-how-military-and-civil-satellites-are-watching-fireballs-to-help-keep-earth-safe-from-space-rocks",
+          "title_zh": "行星防御：军用和民用卫星如何监视火球以帮助保护地球免受太空岩石的侵害"
+        },
+        {
+          "title": "SpaceX closes out October with 700th Falcon 9 launch to date",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/30/live-coverage-spacex-to-close-out-october-with-halloween-eve-falcon-9-launch/",
+          "title_zh": "SpaceX 以迄今为止第 700 次猎鹰 9 号发射结束 10 月份"
+        },
+        {
+          "title": "ESI supplying solar array components to missile defense programs",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/esi-supplying-solar-array-components-to-missile-defense-programs/",
+          "title_zh": "ESI 为导弹防御计划提供太阳能电池阵列组件"
+        },
+        {
+          "title": "Martian Polar Crater Ice Shifts with Seasonal Frost",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/martian-polar-crater-ice-shifts-with-seasonal-frost",
+          "title_zh": "火星极地陨石坑的冰随季节性霜冻而变化"
+        },
+        {
+          "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
+          "title_zh": "APOD：2026 年 10 月 31 日——幽灵星球之夜"
+        },
+        {
+          "title": "On this day in space! Nov. 1, 1962: The Soviet Union Launches Mars 1 spacecraft to Red Planet during the Space Race",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-1-2026",
+          "title_zh": "在太空的这一天！ 1962 年 11 月 1 日：苏联在太空竞赛期间向红色星球发射火星 1 号航天器"
+        },
+        {
+          "title": "Turkey aims for first Moon-orbiting mission in 2027",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/30/turkey-aims-for-first-moon-orbiting-mission-in-2027/",
+          "title_zh": "土耳其计划于 2027 年首次绕月飞行"
+        }
+      ]
+    },
     {
       "date": "2026-11-01",
       "items": [
