@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T14:57:45+08:00",
+  "updated_at": "2026-11-01T19:45:46+08:00",
   "days": [
     {
       "date": "2026-11-01",
@@ -17,6 +17,12 @@
           "title_zh": "卢比奥国务卿很难让 G20 官员达成共识"
         },
         {
+          "title": "‘They deserve to know the truth’: UN rights chief demands probe into staffer’s death in Houthi custody",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168716",
+          "title_zh": "他们应该知道真相”：联合国人权事务高级专员要求调查工作人员在胡塞武装拘留期间的死亡事件"
+        },
+        {
           "title": "'We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
@@ -27,6 +33,12 @@
           "source": "NPR World",
           "url": "https://www.npr.org/2026/10/31/nx-s1-6020639/a-new-political-era-in-the-southern-philippines",
           "title_zh": "菲律宾南部的新政治时代"
+        },
+        {
+          "title": "Samarkand: A ‘living museum’ on the Silk Road grapples with a tourism boom",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168711",
+          "title_zh": "撒马尔罕：丝绸之路上的“活博物馆”应对旅游业的繁荣"
         },
         {
           "title": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
@@ -41,22 +53,10 @@
           "title_zh": "年轻人领导的抗议活动席卷欧洲，法国再次沸腾"
         },
         {
-          "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "加密货币公司 Binance 承担 63 亿美元黑客攻击后 90% 的损失"
-        },
-        {
-          "title": "Key takeaways from this week's political meeting in Beijing",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/31/nx-s1-6024695/political-meeting-beijing-takeaways",
-          "title_zh": "本周北京政治会议的要点"
-        },
-        {
-          "title": "India's opposition set to hold mega rally seeking election chief's resignation",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "印度反对派将举行大型集会寻求选举主席辞职"
+          "title": "DPR Korea: Isolation deepens even as the country changes, says UN rights official",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/10/1168690",
+          "title_zh": "朝鲜民主主义人民共和国：联合国人权官员表示，尽管国家发生了变化，但孤立仍在加深"
         }
       ],
       "space_items": [
@@ -67,10 +67,10 @@
           "title_zh": "APOD：2026 年 11 月 1 日 – 月亮的颜色"
         },
         {
-          "title": "9 nightmarish sci-fi spaceships to crawl aboard for Halloween if you dare",
+          "title": "5 bright planets to spot in November — when and where to see them",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/9-nightmarish-sci-fi-spaceships-to-crawl-aboard-for-halloween-if-you-dare",
-          "title_zh": "如果你敢的话，万圣节可以爬上 9 艘噩梦般的科幻宇宙飞船"
+          "url": "https://www.space.com/stargazing/5-bright-planets-to-spot-in-november-when-and-where-to-see-them",
+          "title_zh": "11 月可观测到的 5 颗明亮行星——何时何地观测它们"
         },
         {
           "title": "SpaceX closes out October with 700th Falcon 9 launch to date",
@@ -97,10 +97,10 @@
           "title_zh": "APOD：2026 年 10 月 31 日——幽灵星球之夜"
         },
         {
-          "title": "This Week In Space podcast: Episode 234 — Living in Lunar Caves",
+          "title": "9 nightmarish sci-fi spaceships to crawl aboard for Halloween if you dare",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-234-living-in-lunar-caves",
-          "title_zh": "本周太空播客：第 234 集 — 住在月球洞穴里"
+          "url": "https://www.space.com/entertainment/9-nightmarish-sci-fi-spaceships-to-crawl-aboard-for-halloween-if-you-dare",
+          "title_zh": "如果你敢的话，万圣节可以爬上 9 艘噩梦般的科幻宇宙飞船"
         },
         {
           "title": "Turkey aims for first Moon-orbiting mission in 2027",
