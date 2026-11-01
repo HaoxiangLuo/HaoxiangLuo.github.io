@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-10-31T23:53:53+08:00",
+  "updated_at": "2026-11-01T14:57:45+08:00",
   "days": [
+    {
+      "date": "2026-11-01",
+      "items": [
+        {
+          "title": "Shops looted as German cost of living protests turn violent",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqj34gnd3n30o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "德国生活成本抗议演变成暴力，商店被洗劫"
+        },
+        {
+          "title": "Secretary Rubio has a tough time getting officials at G20 on the same page",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/31/nx-s1-6022223/secretary-rubio-has-a-tough-time-getting-officials-at-g20-on-the-same-page",
+          "title_zh": "卢比奥国务卿很难让 G20 官员达成共识"
+        },
+        {
+          "title": "'We came back from hell', say Ukrainians after years in Russia-occupied front-line city",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqglw3k7djp1o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "在俄罗斯占领的前线城市生活多年后，乌克兰人说：“我们从地狱回来了"
+        },
+        {
+          "title": "A new political era in the Southern Philippines",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/31/nx-s1-6020639/a-new-political-era-in-the-southern-philippines",
+          "title_zh": "菲律宾南部的新政治时代"
+        },
+        {
+          "title": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "被困俄罗斯占领城市多年的乌克兰撤离人员与家人团聚"
+        },
+        {
+          "title": "France seethes again as youth-led protests sweep Europe",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/31/g-s1-151121/france-seethes-again-as-youth-led-protests-sweep-europe",
+          "title_zh": "年轻人领导的抗议活动席卷欧洲，法国再次沸腾"
+        },
+        {
+          "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "加密货币公司 Binance 承担 63 亿美元黑客攻击后 90% 的损失"
+        },
+        {
+          "title": "Key takeaways from this week's political meeting in Beijing",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/10/31/nx-s1-6024695/political-meeting-beijing-takeaways",
+          "title_zh": "本周北京政治会议的要点"
+        },
+        {
+          "title": "India's opposition set to hold mega rally seeking election chief's resignation",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "印度反对派将举行大型集会寻求选举主席辞职"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "APOD: 2026 November 1 – Colors of the Moon",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
+          "title_zh": "APOD：2026 年 11 月 1 日 – 月亮的颜色"
+        },
+        {
+          "title": "9 nightmarish sci-fi spaceships to crawl aboard for Halloween if you dare",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/9-nightmarish-sci-fi-spaceships-to-crawl-aboard-for-halloween-if-you-dare",
+          "title_zh": "如果你敢的话，万圣节可以爬上 9 艘噩梦般的科幻宇宙飞船"
+        },
+        {
+          "title": "SpaceX closes out October with 700th Falcon 9 launch to date",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/30/live-coverage-spacex-to-close-out-october-with-halloween-eve-falcon-9-launch/",
+          "title_zh": "SpaceX 以迄今为止第 700 次猎鹰 9 号发射结束 10 月份"
+        },
+        {
+          "title": "ESI supplying solar array components to missile defense programs",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/esi-supplying-solar-array-components-to-missile-defense-programs/",
+          "title_zh": "ESI 为导弹防御计划提供太阳能电池阵列组件"
+        },
+        {
+          "title": "Martian Polar Crater Ice Shifts with Seasonal Frost",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/martian-polar-crater-ice-shifts-with-seasonal-frost",
+          "title_zh": "火星极地陨石坑的冰随季节性霜冻而变化"
+        },
+        {
+          "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
+          "title_zh": "APOD：2026 年 10 月 31 日——幽灵星球之夜"
+        },
+        {
+          "title": "This Week In Space podcast: Episode 234 — Living in Lunar Caves",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-234-living-in-lunar-caves",
+          "title_zh": "本周太空播客：第 234 集 — 住在月球洞穴里"
+        },
+        {
+          "title": "Turkey aims for first Moon-orbiting mission in 2027",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/30/turkey-aims-for-first-moon-orbiting-mission-in-2027/",
+          "title_zh": "土耳其计划于 2027 年首次绕月飞行"
+        }
+      ]
+    },
     {
       "date": "2026-10-31",
       "items": [
