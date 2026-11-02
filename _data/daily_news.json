@@ -1,32 +1,43 @@
 {
-  "updated_at": "2026-11-02T14:57:10+08:00",
+  "updated_at": "2026-11-02T21:19:23+08:00",
   "days": [
     {
       "date": "2026-11-02",
       "items": [
         {
-          "title": "How a Democrat in Michigan rocked the party days before the US midterms",
+          "title": "Iran killed her teenage daughter - now she is facing up to the regime",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/cqvgjljj74n8o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "美国中期选举前几天，密歇根州的一位民主党人如何震撼全党"
+          "url": "https://www.bbc.co.uk/news/articles/c3qjn8117kwjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "伊朗杀害了她十几岁的女儿——现在她正面临着政权"
         },
         {
-          "title": "This legendary board game could take decades to complete",
+          "title": "Haley Stevens backs Mike Rogers. And, Gulf states brace for potential attack on Iran",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/01/nx-s1-6025438/this-legendary-board-game-could-take-decades-to-complete",
-          "title_zh": "这款传奇棋盘游戏可能需要几十年才能完成"
+          "url": "https://www.npr.org/2026/11/02/g-s1-151215/up-first-newsletter-michigan-senate-iran-war-supreme-court-colorado-catholic-church",
+          "title_zh": "海莉·史蒂文斯支持迈克·罗杰斯。而且，海湾国家准备应对对伊朗的潜在袭击"
         },
         {
-          "title": "Trump makes fevered campaign push in final weekend before election",
+          "title": "Six in seven journalist murders go unpunished, UNESCO reports",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168719"
+        },
+        {
+          "title": "Shop freezers in six European countries hit by suspected cyber-attack",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c3j47gjx29vro?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普在大选前的最后一个周末大力推动竞选活动"
+          "url": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "欧洲六个国家的商店冰柜遭受疑似网络攻击"
         },
         {
-          "title": "Gulf region on edge as Qatar leads talks with Iran to stave off new U.S. attacks",
+          "title": "Hundreds evacuate city during temporary ceasefire between Russia and Ukraine",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/01/nx-s1-6023237/gulf-leaders-meet-in-qatar-in-effort-to-stave-off-new-escalation-in-u-s-and-iran-war",
-          "title_zh": "卡塔尔主导与伊朗谈判以避免美国新的袭击，海湾地区紧张不安"
+          "url": "https://www.npr.org/2026/11/02/nx-s1-6022261/hundreds-evacuate-city-during-temporary-ceasefire-between-russia-and-ukraine",
+          "title_zh": "俄罗斯和乌克兰临时停火期间数百人撤离城市"
+        },
+        {
+          "title": "Breaking the silence in Mexico’s barracks",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168715",
+          "title_zh": "打破墨西哥军营的沉默"
         },
         {
           "title": "Nine killed as small jet crashes on Florida street",
@@ -35,28 +46,16 @@
           "title_zh": "小型喷气式飞机在佛罗里达州街头坠毁，造成九人死亡"
         },
         {
-          "title": "They signed up for a lifetime at sea on an endless cruise. High gas prices intervened",
+          "title": "UN's peacekeeping mission in disputed Western Sahara ends after 35 years",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/01/nx-s1-6022214/they-signed-up-for-a-lifetime-at-sea-on-an-endless-cruise-high-gas-prices-intervened",
-          "title_zh": "他们报名参加了一生的海上无休止的航行。高油价介入"
+          "url": "https://www.npr.org/2026/11/02/nx-s1-6026050/uns-peacekeeping-western-sahara-ends",
+          "title_zh": "联合国在有争议的西撒哈拉的维和任务结束35年后"
         },
         {
-          "title": "Binance users withdraw $3.6bn after largest-ever crypto hack",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "史上最大规模加密货币黑客攻击后，币安用户撤回 36 亿美元"
-        },
-        {
-          "title": "Secretary Rubio has a tough time getting officials at G20 on the same page",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/10/31/nx-s1-6022223/secretary-rubio-has-a-tough-time-getting-officials-at-g20-on-the-same-page",
-          "title_zh": "卢比奥国务卿很难让 G20 官员达成共识"
-        },
-        {
-          "title": "France launches attempted murder investigation after petrol bomb thrown at police",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwvg05z184j0o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "法国向警察投掷汽油弹后启动谋杀未遂调查"
+          "title": "COP17: Nations chart ‘Yerevan Pathway’ to speed up action for nature",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168718",
+          "title_zh": "COP17：各国制定“埃里温途径”以加快保护自然行动"
         }
       ],
       "space_items": [
@@ -67,10 +66,10 @@
           "title_zh": "APOD：2026 年 11 月 2 日——火星上的长云"
         },
         {
-          "title": "'The Sea God Surveys': Watch Rocket Lab launch Japanese Earth-observing satellite today",
+          "title": "'VisionQuest' homework guide: Everything you need to watch to understand Marvel's WandaVision follow-up",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/rocket-lab-electron-launch-sea-god-surveys-iqps-radar-satellite",
-          "title_zh": "海神调查”：观看火箭实验室今天发射日本地球观测卫星"
+          "url": "https://www.space.com/entertainment/space-movies-shows/visionquest-homework-guide-everything-you-need-to-watch-to-understand-marvels-wandavision-follow-up",
+          "title_zh": "《VisionQuest》作业指南：了解漫威《旺达幻视》后续作品所需观看的一切"
         },
         {
           "title": "SpaceX closes out October with 700th Falcon 9 launch to date",
@@ -97,10 +96,10 @@
           "title_zh": "宾夕法尼亚州大峡谷"
         },
         {
-          "title": "'Metroid Prime' needs some 'Resident Evil'-style remakes to rediscover its sci-fi shooter mojo",
+          "title": "What is Starshield? A look at SpaceX's military satellite network",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-games/metroid-prime-needs-some-resident-evil-style-remakes-to-rediscover-its-sci-fi-shooter-mojo",
-          "title_zh": "《银河战士》需要一些《生化危机》风格的翻拍来重新发现它的科幻射击游戏魔力"
+          "url": "https://www.space.com/space-exploration/satellites/what-is-starshield-a-look-at-spacexs-military-satellite-network",
+          "title_zh": "星盾是什么？ SpaceX 的军事卫星网络一览"
         },
         {
           "title": "Turkey aims for first Moon-orbiting mission in 2027",
