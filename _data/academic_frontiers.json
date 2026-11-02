@@ -1,6 +1,241 @@
 {
-  "updated_at": "2026-10-26T14:25:52+08:00",
+  "updated_at": "2026-11-02T15:46:28+08:00",
   "items": [
+    {
+      "id": "doi:10.1080/1369118x.2026.2752107",
+      "title": "Cue production and evaluative uptake: prompt framing and user judgments in AI-Mediated health communication",
+      "abstract_excerpt": "Conversational AI systems are increasingly embedded in everyday information and support-seeking practices, including health-related interactions in which users seek advice, reassurance, or emotional acknowledgment. Yet less is known about how users’ own communicative framing shapes what AI systems produce, and whether such AI-generated emotional and supportive cues are subsequently taken up in users’ evaluations of the interaction. Drawing on…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-10-30",
+      "authors": [
+        "Zhan Xu",
+        "Hao Guo"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2752107",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2752107",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ]
+    },
+    {
+      "id": "doi:10.1093/joc/jqag023",
+      "title": "The integrative theory of supportive network (re)structuring: a case study in the context of LGBTQ+ hate speech",
+      "abstract_excerpt": "Abstract Social support is a fundamental human need and communication process. Yet, scholars theorizing about social support have been limited by several pervasive assumptions: (a) people are able to recruit support when needed, (b) others are willing and able to provide support, (c) what counts as “good” support is mutually understood and desirable, and (d) support seeking is binary and static. Researchers must productively move beyond these…",
+      "journal": "Journal of Communication",
+      "issn_l": "0021-9916",
+      "published_at": "2026-10-29",
+      "authors": [
+        "John Patrick Crowley",
+        "Elizabeth Ann Hintz",
+        "Amanda Denes"
+      ],
+      "doi_url": "https://doi.org/10.1093/joc/jqag023",
+      "landing_page_url": "https://doi.org/10.1093/joc/jqag023",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "综合传播",
+        "国际传播",
+        "政治传播"
+      ]
+    },
+    {
+      "id": "doi:10.65476/hgae6v49",
+      "title": "Between Storytelling and Sisterhood: A Feminist Human–Computer Interaction Transmedia Framework for Women-in-Technology Digital Communities",
+      "abstract_excerpt": "Feminist histories of computing establish that women’s exclusion from technical work was administratively produced, and inclusion initiatives rarely redistribute technical power. Neither strand theorizes the communicative infrastructure through which inclusion work is conducted. This article addresses that gap by proposing the feminist human-computer interaction transmedia storytelling framework for analyzing and designing transmedia…",
+      "journal": "International journal of communication",
+      "issn_l": "1932-8036",
+      "published_at": "2026-10-29",
+      "authors": [
+        "Renata Loureiro Frade"
+      ],
+      "doi_url": "https://doi.org/10.65476/hgae6v49",
+      "landing_page_url": "https://doi.org/10.65476/hgae6v49",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "全球传播"
+      ]
+    },
+    {
+      "id": "doi:10.65476/8fne4g56",
+      "title": "Navigating Hierarchies in Communication Journal Publishing: African Scholars, Symbolic Capital, and Epistemic Trade-Offs",
+      "abstract_excerpt": "African-based scholars are underrepresented in highly influential journals across disciplines, including communication studies. There remains a dearth of research investigating how they interpret and navigate this inequality and how their interpretations and navigation strategies might shape knowledge production. Anchored in Bourdieu’s field theory and drawing on in-depth interviews with communication scholars based in seven sub-Saharan African…",
+      "journal": "International journal of communication",
+      "issn_l": "1932-8036",
+      "published_at": "2026-10-29",
+      "authors": [
+        "Success N. Osayi"
+      ],
+      "doi_url": "https://doi.org/10.65476/8fne4g56",
+      "landing_page_url": "https://doi.org/10.65476/8fne4g56",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "全球传播"
+      ]
+    },
+    {
+      "id": "doi:10.65476/134zca76",
+      "title": "From Maximizing to Minimizing Responsibility: A Comparative Analysis of Facebook’s Election Integrity Framing in News Media and the Meta Newsroom",
+      "abstract_excerpt": "Over the past decade, Facebook has become known for its dangerously flawed approach to election integrity issues. Yet few studies have examined how Meta frames Facebook’s role in election integrity and how these frames are taken up in public discourse. We use qualitative textual analysis to compare framings of Facebook’s political influence between Meta’s Newsroom blog and major American newspapers during the 2020 and 2024 U.S. presidential…",
+      "journal": "International journal of communication",
+      "issn_l": "1932-8036",
+      "published_at": "2026-10-29",
+      "authors": [
+        "Chelsea Paige Butkowski",
+        "Kirubel Tadesse",
+        "Gabriel Ponniah",
+        "Ashia Aubrey",
+        "Tom Durham",
+        "Michelle Hutchins"
+      ],
+      "doi_url": "https://doi.org/10.65476/134zca76",
+      "landing_page_url": "https://doi.org/10.65476/134zca76",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "全球传播"
+      ]
+    },
+    {
+      "id": "doi:10.1080/1369118x.2026.2750569",
+      "title": "The making of cloud computing: an antecedent of scalability",
+      "abstract_excerpt": "This paper offers a historically situated analysis of cloud computing. Cloud computing is a paradigm for provisioning computing infrastructure that now has enormous reach. It is defined by its unique scalability. This unique scalability has proven to be enormously impactful in the digital economy and beyond, shaping the emergence of platform ecosystems, the development of AI, and the process of digitalization in the 21st century. As important…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-10-29",
+      "authors": [
+        "Devika Narayan"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2750569",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2750569",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ]
+    },
+    {
+      "id": "doi:10.1080/1369118x.2026.2750566",
+      "title": "Participation in the smart city: disability and autonomous public transport in Singapore",
+      "abstract_excerpt": "Amidst the increasing interdependency between bodies and technology in smart city space, this article examines the extent to which disabled people can participate in the development and discursive construction of smart city technology. While citizen participation in urban planning and decision-making processes is ostensibly a key pillar of the smart city concept, the actual and meaningful capacity for citizens – especially disabled citizens –…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-10-29",
+      "authors": [
+        "Wenqi Tan",
+        "Shirley S. Ho"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2750566",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2750566",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ]
+    },
+    {
+      "id": "doi:10.1080/10584609.2026.2751954",
+      "title": "The Effect of Broadcasting Parliamentary Proceedings on Legislative Disruption: Evidence from India",
+      "abstract_excerpt": "Can broadcasting parliamentary proceedings encourage more responsible legislative behavior? Existing theories remain divided on whether increasing transparency through visual media enhances parliamentary functioning or, conversely, promotes grandstanding and protests. This paper examines the effects of televising the proceedings of the Indian parliament on legislative disruption – behavior that violates chamber rules. Although broadcasting was…",
+      "journal": "Political Communication",
+      "issn_l": "1058-4609",
+      "published_at": "2026-10-27",
+      "authors": [
+        "Ajit Phadnis",
+        "S. Sivanandham"
+      ],
+      "doi_url": "https://doi.org/10.1080/10584609.2026.2751954",
+      "landing_page_url": "https://doi.org/10.1080/10584609.2026.2751954",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "政治传播",
+        "公共舆论"
+      ]
+    },
+    {
+      "id": "doi:10.1177/14614448261496596",
+      "title": "Practicing love with algorithms: How online communities narrate and make sense of human–AI intimacy",
+      "abstract_excerpt": "As artificial intelligence (AI) becomes embedded in everyday life, emotionally intimate interactions with AI companions are becoming increasingly visible. Yet prior research has focused mainly on individual experiences, leaving limited understanding of how human–AI intimacy is collectively interpreted and negotiated in online communities. This study examines community discourse on RedNote, a major Chinese social and lifestyle platform, using…",
+      "journal": "New Media & Society",
+      "issn_l": "1461-4448",
+      "published_at": "2026-10-27",
+      "authors": [
+        "Fanjue Liu",
+        "Haiyan Hao",
+        "Kun Xu"
+      ],
+      "doi_url": "https://doi.org/10.1177/14614448261496596",
+      "landing_page_url": "https://doi.org/10.1177/14614448261496596",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "平台",
+        "数字社会"
+      ]
+    },
+    {
+      "id": "doi:10.1177/00936502261498263",
+      "title": "Do Political Conversations Persuade or Polarize? Evidence From a Real-Time Randomized Experiment",
+      "abstract_excerpt": "Political conversations across lines of disagreement are central to democracy. While some individuals approach them as opportunities to learn, others treat them as battles to be won. Theory suggests these contrasting motivations may shape how individuals process information and respond to disagreement, yet their consequences for attitude dynamics during conversations remain unclear. We fill this gap through an experiment ( N = 466) that…",
+      "journal": "Communication Research",
+      "issn_l": "0093-6502",
+      "published_at": "2026-10-27",
+      "authors": [
+        "Omer Ben Simhon",
+        "Eran Amsalem"
+      ],
+      "doi_url": "https://doi.org/10.1177/00936502261498263",
+      "landing_page_url": "https://doi.org/10.1177/00936502261498263",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "综合传播",
+        "政治传播"
+      ]
+    },
+    {
+      "id": "doi:10.1177/01634437261497904",
+      "title": "Contesting the infrastructures of attention: Climate activism and asymmetric visibility in France",
+      "abstract_excerpt": "Drawing on two years of ethnographic fieldwork with Extinction Rebellion Paris and allied movements, semi-structured interviews with activists, and analysis of media coverage and investigative reporting on police surveillance technology, this article examines how French climate movements have reoriented their political practice from seeking visibility within an existing media system toward contesting the infrastructures of attention through…",
+      "journal": "Media Culture & Society",
+      "issn_l": "0163-4437",
+      "published_at": "2026-10-26",
+      "authors": [
+        "Laura Bullon-Cassis"
+      ],
+      "doi_url": "https://doi.org/10.1177/01634437261497904",
+      "landing_page_url": "https://doi.org/10.1177/01634437261497904",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "文化与权力"
+      ]
+    },
+    {
+      "id": "doi:10.1177/00936502261494874",
+      "title": "Testing Hypotheses From the Social Approval Theory of Online Hate: An Analysis of 110 Million Messages From Parler",
+      "abstract_excerpt": "We examined how social approval motivates online hate via the social approval theory, which argues social approval signals on hate messages predict (1) more hate speech, and (2) more toxicity. Using 110 million messages from Parler (2018–2021), we observed that upvotes on hate speech posts (messages broadcast on users’ profiles to followers’ feeds) predicted a lower probability of hate speech in the next immediate post but more in the following…",
+      "journal": "Communication Research",
+      "issn_l": "0093-6502",
+      "published_at": "2026-10-25",
+      "authors": [
+        "David M. Markowitz",
+        "Samuel Hardman Taylor"
+      ],
+      "doi_url": "https://doi.org/10.1177/00936502261494874",
+      "landing_page_url": "https://doi.org/10.1177/00936502261494874",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "综合传播",
+        "政治传播"
+      ]
+    },
     {
       "id": "doi:10.1093/joc/jqag021",
       "title": "When it’s your own child: effects of media narratives on U.S. parents’ support for their LGBTQ+ teen",
