@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-02T21:19:23+08:00",
+  "updated_at": "2026-11-03T04:32:26+08:00",
   "days": [
+    {
+      "date": "2026-11-03",
+      "items": [
+        {
+          "title": "Russian bombing kills 26 people at Ukraine aid centre, Kyiv says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "基辅称，俄罗斯轰炸导致乌克兰援助中心26人死亡"
+        },
+        {
+          "title": "Haley Stevens backs Mike Rogers. And, Gulf states brace for potential attack on Iran",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/02/g-s1-151215/up-first-newsletter-michigan-senate-iran-war-supreme-court-colorado-catholic-church",
+          "title_zh": "海莉·史蒂文斯支持迈克·罗杰斯。而且，海湾国家准备应对对伊朗的潜在袭击"
+        },
+        {
+          "title": "Ukraine: WFP provides hot meals to Oleshky evacuees as UN pushes to restore power before winter",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168722",
+          "title_zh": "乌克兰：联合国努力在冬季前恢复供电，粮食计划署为奥列什基撤离人员提供热餐"
+        },
+        {
+          "title": "Copilot in deadly Florida jet crash identified in reports as 20-year-old",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm369yy7lw73o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "佛罗里达州致命飞机失事事件中的副驾驶被确认为 20 岁"
+        },
+        {
+          "title": "Hundreds evacuate city during temporary ceasefire between Russia and Ukraine",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/02/nx-s1-6022261/hundreds-evacuate-city-during-temporary-ceasefire-between-russia-and-ukraine",
+          "title_zh": "俄罗斯和乌克兰临时停火期间数百人撤离城市"
+        },
+        {
+          "title": "Ethiopia: Violence in the north is pushing health system to the brink, WHO chief warns",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168720",
+          "title_zh": "埃塞俄比亚：世卫组织负责人警告称，北部的暴力事件正在将卫生系统推向崩溃边缘"
+        },
+        {
+          "title": "Shop freezers in seven European countries hit by cyber-attack",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq1kd1nee80eo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "七个欧洲国家的商店冰柜遭受网络攻击"
+        },
+        {
+          "title": "UN's peacekeeping mission in disputed Western Sahara ends after 35 years",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/02/nx-s1-6026050/uns-peacekeeping-western-sahara-ends",
+          "title_zh": "联合国在有争议的西撒哈拉的维和任务结束35年后"
+        },
+        {
+          "title": "Six in seven journalist murders go unpunished, UNESCO reports",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168719",
+          "title_zh": "联合国教科文组织报告称，七分之六的记者谋杀案未受到惩罚"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "NASA’s CHAPEA Crew “Returns” to Earth",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/nasas-chapea-crew-returns-to-earth/",
+          "title_zh": "NASA 的 CHAPEA 机组人员“返回”地球"
+        },
+        {
+          "title": "New 'Star Trek: The Original Voyages' book traces the stellar legacy of the bold sci-fi brand",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-books/new-star-trek-the-original-voyages-book-traces-the-stellar-legacy-of-the-bold-sci-fi-brand",
+          "title_zh": "新书《星际迷航：原始航程》追溯了大胆科幻品牌的辉煌遗产"
+        },
+        {
+          "title": "SpaceX closes out October with 700th Falcon 9 launch to date",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/30/live-coverage-spacex-to-close-out-october-with-halloween-eve-falcon-9-launch/",
+          "title_zh": "SpaceX 以迄今为止第 700 次猎鹰 9 号发射结束 10 月份"
+        },
+        {
+          "title": "How to Expand Reliable, Flexible Access to Space",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/how-to-expand-reliable-flexible-access-to-space/",
+          "title_zh": "如何扩大可靠、灵活的太空访问"
+        },
+        {
+          "title": "The JWST May Have Found Where Heavy Black Hole Seeds Formed",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/the-jwst-may-have-found-where-heavy-black-hole-seeds-formed",
+          "title_zh": "詹姆斯韦伯太空望远镜可能已经发现重黑洞种子形成的地方"
+        },
+        {
+          "title": "What’s Up: November 2026 Skywatching Tips from NASA",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/solar-system/skywatching/whats-up-november-2026-skywatching-tips-from-nasa/",
+          "title_zh": "最新动态：2026 年 11 月 NASA 的天空观测提示"
+        },
+        {
+          "title": "Viltrox AF 35mm f/1.8 II EVO FE (APO) lens review — how good is this budget lens for astrophotography?",
+          "source": "Space.com",
+          "url": "https://www.space.com/stargazing/skywatching-kit/viltrox-af-35mm-f-1-8-ii-evo-fe-apo-lens-review-how-good-is-this-budget-lens-for-astrophotography",
+          "title_zh": "Viltrox AF 35mm f/1.8 II EVO FE (APO) 镜头评测 — 这款经济型天文摄影镜头有多好？"
+        },
+        {
+          "title": "Turkey aims for first Moon-orbiting mission in 2027",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/30/turkey-aims-for-first-moon-orbiting-mission-in-2027/",
+          "title_zh": "土耳其计划于 2027 年首次绕月飞行"
+        }
+      ]
+    },
     {
       "date": "2026-11-02",
       "items": [
@@ -19,7 +128,8 @@
         {
           "title": "Six in seven journalist murders go unpunished, UNESCO reports",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168719"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168719",
+          "title_zh": "联合国教科文组织报告称，七分之六的记者谋杀案未受到惩罚"
         },
         {
           "title": "Shop freezers in six European countries hit by suspected cyber-attack",
