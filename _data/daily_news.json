@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-03T20:43:03+08:00",
+  "updated_at": "2026-11-04T02:06:58+08:00",
   "days": [
+    {
+      "date": "2026-11-04",
+      "items": [
+        {
+          "title": "Seven flights across Europe targeted by suspected bomb threats",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6x2wd4v04eeo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "欧洲七架航班受到疑似炸弹威胁"
+        },
+        {
+          "title": "For Ukraine's Kherson region, a short ceasefire meant a momentary return to normal life",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/03/g-s1-151238/ukraine-russia-ceasefire-oleshky-kherson",
+          "title_zh": "对于乌克兰赫尔松地区来说，短暂停火意味着暂时恢复正常生活"
+        },
+        {
+          "title": "Tenerife striker De Miguel dies after on-field collision",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/sport/football/articles/ck62yvz046pjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特内里费前锋德米格尔在场内相撞后身亡"
+        },
+        {
+          "title": "Indian navy rescues 20 crew from Iranian fishing boat hijacked off Somalia",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/03/g-s1-151468/indian-navy-rescues-20-crew-from-iranian-fishing-boat-hijacked-off-somalia",
+          "title_zh": "印度海军从索马里海域被劫持的伊朗渔船上救出20名船员"
+        },
+        {
+          "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "币安称，虚假工作面试被用作价值 63 亿美元的加密货币黑客攻击的一部分"
+        },
+        {
+          "title": "Control of Congress is at stake today. And, judge to consider motion in Clancy case",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/03/g-s1-151445/up-first-newsletter-midterms-election-day-iran-war-lindsay-clancy",
+          "title_zh": "今天，国会的控制权岌岌可危。并且，法官考虑克兰西案中的动议"
+        },
+        {
+          "title": "Death toll rises in Ukraine after Russia attacks aid centre, hospice and hospital",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c65ynez5y599o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "俄罗斯袭击援助中心、临终关怀中心和医院后乌克兰死亡人数上升"
+        },
+        {
+          "title": "Death toll hits 29 after Russian strike on Ukrainian aid site, with 48 still missing",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/03/g-s1-151439/russia-ukraine-war",
+          "title_zh": "俄罗斯袭击乌克兰援助地点已造成29人死亡，仍有48人失踪"
+        },
+        {
+          "title": "Libya's top religious authority rules against wearing Nike clothes",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c5djv0p0re2no?at_medium=RSS&at_campaign=rss",
+          "title_zh": "利比亚最高宗教当局禁止穿耐克衣服"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "Astronaut and Earth",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/astronaut-and-earth/",
+          "title_zh": "宇航员和地球"
+        },
+        {
+          "title": "Hubble Telescope sees cosmic 'cat's tail' that could wrap around Earth and the sun 500 times",
+          "source": "Space.com",
+          "url": "https://www.space.com/astronomy/hubble-space-telescope/hubble-telescope-sees-cosmic-cats-tail-that-could-wrap-around-the-sun-and-earth-500-times",
+          "title_zh": "哈勃望远镜看到宇宙“猫尾巴”，可以绕地球和太阳 500 圈"
+        },
+        {
+          "title": "NASA’s Neil Gehrels Swift Observatory to burn up this week after more than two decades in space",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/03/nasas-neil-gehrels-swift-observatory-to-burn-up-this-week-after-two-decades-in-space/",
+          "title_zh": "美国宇航局尼尔·盖尔斯·斯威夫特天文台在太空运行二十多年后将于本周燃烧"
+        },
+        {
+          "title": "Simera Sense and Spacemanic to Collaborate on a New Complete Dual-Use Mission Solution",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/simera-sense-and-spacemanic-to-collaborate-on-a-new-complete-dual-use-mission-solution/",
+          "title_zh": "Simera Sense 和 Spacemanic 合作开发全新完整的两用任务解决方案"
+        },
+        {
+          "title": "Stubborn Asteroids Around White Dwarfs Resist Becoming Dust",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/stubborn-asteroids-around-white-dwarfs-resist-becoming-dust",
+          "title_zh": "白矮星周围顽固的小行星拒绝成为尘埃"
+        },
+        {
+          "title": "TB 26-10 Printed Circuit Board Assembly Chip Resistor Body Cracking",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/centers-and-facilities/nesc/tb-26-10-printed-circuit-board-assembly-chip-resistor-body-cracking/",
+          "title_zh": "TB 26-10 印刷电路板组装片式电阻器本体开裂"
+        },
+        {
+          "title": "The Star Wars Eclipse — Want to see the 2027 total solar eclipse on Tatooine? Head to Tunisia",
+          "source": "Space.com",
+          "url": "https://www.space.com/stargazing/solar-eclipses/the-star-wars-eclipse-want-to-see-the-2027-total-solar-eclipse-on-tatooine-head-to-tunisia",
+          "title_zh": "星球大战日食 — 想观看 2027 年塔图因的日全食吗？前往突尼斯"
+        },
+        {
+          "title": "SpaceX closes out October with 700th Falcon 9 launch to date",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/30/live-coverage-spacex-to-close-out-october-with-halloween-eve-falcon-9-launch/",
+          "title_zh": "SpaceX 以迄今为止第 700 次猎鹰 9 号发射结束 10 月份"
+        }
+      ]
+    },
     {
       "date": "2026-11-03",
       "items": [
