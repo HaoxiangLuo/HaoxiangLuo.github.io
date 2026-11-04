@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-04T20:52:22+08:00",
+  "updated_at": "2026-11-05T02:16:08+08:00",
   "days": [
+    {
+      "date": "2026-11-05",
+      "items": [
+        {
+          "title": "'This is a disaster': Angry Republicans blame Trump for midterms defeat",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6x29rr8djy3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "这是一场灾难”：愤怒的共和党人将中期选举失败归咎于特朗普"
+        },
+        {
+          "title": "Abdul El-Sayed welcomes Trump's plan to cut Israel aid, calls for end to arms sales",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/04/nx-s1-6028702/abdul-el-sayed-michigan-senate-israel-aid",
+          "title_zh": "阿卜杜勒·赛义德欢迎特朗普削减以色列援助的计划，呼吁停止军售"
+        },
+        {
+          "title": "Afghan children face narrowing path to education, UN agencies report",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168732",
+          "title_zh": "联合国机构报告，阿富汗儿童的受教育道路日益狭窄"
+        },
+        {
+          "title": "US midterm results a 'victory' for Canadians hopeful of tariff relief",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国中期选举结果对希望减免关税的加拿大人来说是“胜利"
+        },
+        {
+          "title": "The world is reacting to the Democrats' sweeping midterm elections victory",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/04/nx-s1-6028664/world-reacts-midterm-elections",
+          "title_zh": "世界正在对民主党中期选举的压倒性胜利做出反应"
+        },
+        {
+          "title": "‘The world is not ready’: Climate adaptation cash falls far short as warming heads past 1.5°C",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168725",
+          "title_zh": "世界还没有准备好”：随着气温上升超过1.5°C，适应气候变化的资金远远不足"
+        },
+        {
+          "title": "Ukraine says bodycam video shows deadly Russian double-tap bombing",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c98rz6penv86o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "乌克兰称随身摄像机视频显示俄罗斯致命的双击爆炸事件"
+        },
+        {
+          "title": "Democrats seize full control of Congress. And, which candidates made history last night",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/04/g-s1-151745/up-first-newsletter-midterms-democrats-congress-control",
+          "title_zh": "民主党完全控制了国会。以及，昨晚哪些候选人创造了历史"
+        },
+        {
+          "title": "‘This is not about politics. This is about people’: UN warns of impact of deadly drone strikes in Sudan",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168731",
+          "title_zh": "‘这与政治无关。这是关于人的：联合国警告苏丹致命无人机袭击的影响"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "NASA Announces Ka-Band Satellite Relay Awards for Space Communications",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/",
+          "title_zh": "NASA 宣布 Ka 波段卫星中继太空通信奖"
+        },
+        {
+          "title": "NASA's Artemis II moon launch tore a hole in Earth's upper atmosphere so huge it disrupted GPS signals",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/nasas-artemis-ii-moon-launch-tore-a-hole-in-earths-upper-atmosphere-so-huge-it-disrupted-gps-signals",
+          "title_zh": "美国国家航空航天局 (NASA) 的阿耳忒弥斯二号 (Artemis II) 登月发射在地球高层大气中造成了一个巨大的洞，以至于扰乱了 GPS 信号"
+        },
+        {
+          "title": "NASA’s Neil Gehrels Swift Observatory to burn up this week after more than two decades in space",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/03/nasas-neil-gehrels-swift-observatory-to-burn-up-this-week-after-two-decades-in-space/",
+          "title_zh": "美国宇航局尼尔·盖尔斯·斯威夫特天文台在太空运行二十多年后将于本周燃烧"
+        },
+        {
+          "title": "Simera Sense and Spacemanic to Collaborate on a New Complete Dual-Use Mission Solution",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/simera-sense-and-spacemanic-to-collaborate-on-a-new-complete-dual-use-mission-solution/",
+          "title_zh": "Simera Sense 和 Spacemanic 合作开发全新完整的两用任务解决方案"
+        },
+        {
+          "title": "Giant Impacts Help Rocky Planets Retain Their Atmospheres",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/giant-impacts-help-rocky-planets-retain-their-atmospheres",
+          "title_zh": "巨大的撞击帮助岩石行星保持其大气层"
+        },
+        {
+          "title": "NASA Navigation Experiment Shows Promise for Planetary Landings",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings/",
+          "title_zh": "美国宇航局导航实验显示了行星着陆的希望"
+        },
+        {
+          "title": "Students gather to explore Hawaii's glorious night sky | Space photo of the day for Nov. 4, 2026",
+          "source": "Space.com",
+          "url": "https://www.space.com/stargazing/students-gather-to-explore-hawaiis-glorious-night-sky-space-photo-of-the-day-for-nov-4-2026",
+          "title_zh": "学生们齐聚一堂，探索夏威夷绚丽的夜空 | 2026 年 11 月 4 日当天的太空照片"
+        },
+        {
+          "title": "SpaceX closes out October with 700th Falcon 9 launch to date",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/10/30/live-coverage-spacex-to-close-out-october-with-halloween-eve-falcon-9-launch/",
+          "title_zh": "SpaceX 以迄今为止第 700 次猎鹰 9 号发射结束 10 月份"
+        }
+      ]
+    },
     {
       "date": "2026-11-04",
       "items": [
