@@ -1,14 +1,26 @@
 {
-  "updated_at": "2026-11-04T02:06:58+08:00",
+  "updated_at": "2026-11-04T15:02:27+08:00",
   "days": [
     {
       "date": "2026-11-04",
       "items": [
         {
-          "title": "Seven flights across Europe targeted by suspected bomb threats",
+          "title": "South Carolina elects Democratic senator for first time in almost three decades",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6x2wd4v04eeo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "欧洲七架航班受到疑似炸弹威胁"
+          "url": "https://www.bbc.co.uk/news/articles/cjy56z440nl9o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "南卡罗来纳州近三十年来首次选举民主党参议员"
+        },
+        {
+          "title": "Japan faces diplomatic dilemma amid joint pressure from nuclear neighbors",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/03/nx-s1-6012016/japan-faces-diplomatic-dilemma-amid-joint-pressure-from-nuclear-neighbors",
+          "title_zh": "日本面临核邻国共同压力的外交困境"
+        },
+        {
+          "title": "James Talarico becomes first Democrat to win Texas Senate seat since 1988",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6n8dnn09jg7o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "詹姆斯·塔拉里科 (James Talarico) 成为自 1988 年以来首位赢得德克萨斯州参议院席位的民主党人"
         },
         {
           "title": "For Ukraine's Kherson region, a short ceasefire meant a momentary return to normal life",
@@ -17,10 +29,10 @@
           "title_zh": "对于乌克兰赫尔松地区来说，短暂停火意味着暂时恢复正常生活"
         },
         {
-          "title": "Tenerife striker De Miguel dies after on-field collision",
+          "title": "Florida Republicans fend off Democrats as state elects first black governor",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/sport/football/articles/ck62yvz046pjo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特内里费前锋德米格尔在场内相撞后身亡"
+          "url": "https://www.bbc.co.uk/news/articles/c9146d88pl32o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "佛罗里达州选举第一位黑人州长，共和党人击退民主党人"
         },
         {
           "title": "Indian navy rescues 20 crew from Iranian fishing boat hijacked off Somalia",
@@ -29,10 +41,10 @@
           "title_zh": "印度海军从索马里海域被劫持的伊朗渔船上救出20名船员"
         },
         {
-          "title": "Binance says fake job interviews used as part of $6.3bn crypto hack",
+          "title": "Democratic rising star Ossoff projected to hold Georgia seat",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "币安称，虚假工作面试被用作价值 63 亿美元的加密货币黑客攻击的一部分"
+          "url": "https://www.bbc.co.uk/news/articles/cqwyrmm2k4mpo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "民主党新星奥索夫预计将占据佐治亚州席位"
         },
         {
           "title": "Control of Congress is at stake today. And, judge to consider motion in Clancy case",
@@ -41,36 +53,24 @@
           "title_zh": "今天，国会的控制权岌岌可危。并且，法官考虑克兰西案中的动议"
         },
         {
-          "title": "Death toll rises in Ukraine after Russia attacks aid centre, hospice and hospital",
+          "title": "Spanish transport minister resigns days after deadly train crash",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c65ynez5y599o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "俄罗斯袭击援助中心、临终关怀中心和医院后乌克兰死亡人数上升"
-        },
-        {
-          "title": "Death toll hits 29 after Russian strike on Ukrainian aid site, with 48 still missing",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/03/g-s1-151439/russia-ukraine-war",
-          "title_zh": "俄罗斯袭击乌克兰援助地点已造成29人死亡，仍有48人失踪"
-        },
-        {
-          "title": "Libya's top religious authority rules against wearing Nike clothes",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c5djv0p0re2no?at_medium=RSS&at_campaign=rss",
-          "title_zh": "利比亚最高宗教当局禁止穿耐克衣服"
+          "url": "https://www.bbc.co.uk/news/articles/c6wydqd4yxdyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "致命火车事故几天后西班牙交通部长辞职"
         }
       ],
       "space_items": [
         {
-          "title": "Astronaut and Earth",
+          "title": "APOD: 2026 November 4 – The Not-So-Hidden Galaxy, IC 342",
           "source": "NASA",
-          "url": "https://www.nasa.gov/image-article/astronaut-and-earth/",
-          "title_zh": "宇航员和地球"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-4-the-not-so-hidden-galaxy-ic-342/",
+          "title_zh": "APOD：2026 年 11 月 4 日——不那么隐藏的星系，IC 342"
         },
         {
-          "title": "Hubble Telescope sees cosmic 'cat's tail' that could wrap around Earth and the sun 500 times",
+          "title": "NASA asks industry for ideas about saving Hubble Space Telescope",
           "source": "Space.com",
-          "url": "https://www.space.com/astronomy/hubble-space-telescope/hubble-telescope-sees-cosmic-cats-tail-that-could-wrap-around-the-sun-and-earth-500-times",
-          "title_zh": "哈勃望远镜看到宇宙“猫尾巴”，可以绕地球和太阳 500 圈"
+          "url": "https://www.space.com/astronomy/hubble-space-telescope/nasa-asks-industry-for-ideas-about-saving-hubble-space-telescope",
+          "title_zh": "美国宇航局向业界征求有关拯救哈勃太空望远镜的想法"
         },
         {
           "title": "NASA’s Neil Gehrels Swift Observatory to burn up this week after more than two decades in space",
@@ -85,22 +85,22 @@
           "title_zh": "Simera Sense 和 Spacemanic 合作开发全新完整的两用任务解决方案"
         },
         {
-          "title": "Stubborn Asteroids Around White Dwarfs Resist Becoming Dust",
+          "title": "Students Test Prototype Landing Pad to Make Lunar Operations Safe",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/stubborn-asteroids-around-white-dwarfs-resist-becoming-dust",
-          "title_zh": "白矮星周围顽固的小行星拒绝成为尘埃"
+          "url": "https://www.universetoday.com/articles/students-test-prototype-landing-pad-to-make-lunar-operations-safe",
+          "title_zh": "学生测试原型着陆台以保证月球操作的安全"
         },
         {
-          "title": "TB 26-10 Printed Circuit Board Assembly Chip Resistor Body Cracking",
+          "title": "Before the Dawn in America’s Heartland",
           "source": "NASA",
-          "url": "https://www.nasa.gov/centers-and-facilities/nesc/tb-26-10-printed-circuit-board-assembly-chip-resistor-body-cracking/",
-          "title_zh": "TB 26-10 印刷电路板组装片式电阻器本体开裂"
+          "url": "https://science.nasa.gov/earth/earth-observatory/before-the-dawn-in-americas-heartland/",
+          "title_zh": "黎明前的美国中心地带"
         },
         {
-          "title": "The Star Wars Eclipse — Want to see the 2027 total solar eclipse on Tatooine? Head to Tunisia",
+          "title": "Ancient star collisions could explain mysterious Little Red Dots and 'impossible' black holes",
           "source": "Space.com",
-          "url": "https://www.space.com/stargazing/solar-eclipses/the-star-wars-eclipse-want-to-see-the-2027-total-solar-eclipse-on-tatooine-head-to-tunisia",
-          "title_zh": "星球大战日食 — 想观看 2027 年塔图因的日全食吗？前往突尼斯"
+          "url": "https://www.space.com/astronomy/stars/ancient-star-collisions-could-explain-mysterious-little-red-dots-and-impossible-black-holes",
+          "title_zh": "古代恒星碰撞可以解释神秘的小红点和“不可能的”黑洞"
         },
         {
           "title": "SpaceX closes out October with 700th Falcon 9 launch to date",
