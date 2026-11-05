@@ -1,0 +1,88 @@
+name: Update opportunities
+
+on:
+  schedule:
+    - cron: "33 1 * * *"
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      # The collector reads the archive, but the UN shortlist is produced by
+      # the source registry and the scoring rules beside it: a change to
+      # either changes what tomorrow's page says.
+      - "scripts/fetch_opportunities.py"
+      - "scripts/un_sources.py"
+      - "scripts/opps_match.py"
+      - ".github/workflows/opportunities.yml"
+
+permissions:
+  contents: write
+  models: read
+
+concurrency:
+  group: opportunities
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect internship and academia opportunities
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GitHub Models was retired on 2026-07-30, so the translator reads an
+          # OpenAI-compatible provider from configuration instead. Without
+          # TRANSLATE_BASE_URL / TRANSLATE_API_KEY nothing is sent and every
+          # field stays pending for the next run.
+          TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
+          TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
+        run: |
+          git pull --ff-only origin master
+          # A translation failure must not fail the job: the script leaves the
+          # field pending and the next run fills it in.
+          python scripts/fetch_opportunities.py || echo "collector reported a problem; keeping the archive as it is"
+
+      - name: Save the opportunities archive
+        env:
+          # Also needed here: a push race re-runs the collector below.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRANSLATE_BASE_URL: ${{ vars.TRANSLATE_BASE_URL }}
+          TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
+          TRANSLATE_MODEL: ${{ vars.TRANSLATE_MODEL }}
+        run: |
+          # Opportunities is not part of the three-layer JSONL archive yet, so
+          # `_data/opportunities.json` is the whole record. When it joins
+          # scripts/archive_data.py, add `assets/data/archive/opportunities`
+          # and `assets/data/archive/manifest.json` to the two `git add` lines.
+          if git diff --quiet -- _data/opportunities.json; then
+            echo "No new opportunities to save."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/opportunities.json
+          git commit -m "Update opportunities $(TZ=Asia/Shanghai date +%F)"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:master; then
+              exit 0
+            fi
+            echo "Push raced with another site update; refreshing archive (attempt $attempt)."
+            git pull --rebase -X theirs origin master
+            python scripts/fetch_opportunities.py
+            git add _data/opportunities.json
+            git commit --amend --no-edit
+          done
+          echo "Unable to save the opportunities archive after three attempts." >&2
+          exit 1

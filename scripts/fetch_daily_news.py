@@ -4,6 +4,11 @@
 Every headline is stored twice: `title` keeps the publisher's original wording
 and `title_zh` holds a Simplified Chinese rendering so the two language
 versions of the site can show the same story in their own language.
+
+The long-term archive is authoritative: each run files the day it collected into
+`assets/data/archive/daily-news/YYYY-MM.jsonl` and only then lets
+`scripts/archive_data.py` regenerate the short `_data/daily_news.json` index
+that Jekyll builds from. Nothing is trimmed out of history here.
 """
 
 from __future__ import annotations
@@ -23,21 +28,32 @@ from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import archive_data
+import model_client
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "_data" / "daily_news.json"
 SOURCES = (
     ("BBC World", "https://feeds.bbci.co.uk/news/world/rss.xml"),
     ("NPR World", "https://feeds.npr.org/1004/rss.xml"),
     ("UN News", "https://news.un.org/feed/subscribe/en/news/all/rss.xml"),
 )
 MAX_PER_DAY = 9
-MAX_DAYS = 90
+
+# Dedicated aerospace outlets. These feed the standalone "Space & Aerospace"
+# section on the daily news page, kept apart from the general world digest.
+SPACE_SOURCES = (
+    ("NASA", "https://www.nasa.gov/news-release/feed/"),
+    ("Space.com", "https://www.space.com/feeds/all"),
+    ("Spaceflight Now", "https://spaceflightnow.com/feed/"),
+    ("SpaceNews", "https://spacenews.com/feed/"),
+    ("Universe Today", "https://www.universetoday.com/feed/"),
+)
+MAX_SPACE_PER_DAY = 8
 
 TRANSLATE_TIMEOUT = 20
 GTX_ENDPOINT = "https://translate.googleapis.com/translate_a/single"
-MODELS_ENDPOINT = "https://models.github.ai/inference/chat/completions"
-MODELS_MODEL = "openai/gpt-4o-mini"
 MAX_TRANSLATIONS_PER_RUN = 60
 CJK_RE = re.compile(r"[\u3400-\u9fff]")
 
@@ -47,7 +63,23 @@ def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
-def read_feed(source: str, url: str) -> list[dict[str, str]]:
+def link_of(item: ET.Element) -> str:
+    """Best hyperlink for an RSS <item> or Atom <entry>."""
+    text = clean_text(item.findtext("link", ""))
+    if text:
+        return text
+    # Atom keeps the href on a <link> attribute and may carry several rel values.
+    for rel in (None, "alternate"):
+        for element in item.findall("link"):
+            if element.get("rel") == rel and element.get("href"):
+                return element.get("href")  # type: ignore[return-value]
+    for element in item.findall("link"):
+        if element.get("href"):
+            return element.get("href")  # type: ignore[return-value]
+    return ""
+
+
+def read_feed(source: str, url: str, limit: int = 8) -> list[dict[str, str]]:
     request = urllib.request.Request(
         url,
         headers={"User-Agent": "HaoxiangLuo.github.io daily-news collector/1.0"},
@@ -56,15 +88,18 @@ def read_feed(source: str, url: str) -> list[dict[str, str]]:
         root = ET.fromstring(response.read())
 
     results: list[dict[str, str]] = []
-    for item in root.findall(".//item")[:8]:
+    nodes = root.findall(".//item") or root.findall(".//{http://purl.org/rss/1.0/}item")
+    if not nodes:
+        nodes = root.findall(".//entry")  # Atom
+    for item in nodes[:limit]:
         title = clean_text(item.findtext("title", ""))
-        link = clean_text(item.findtext("link", ""))
+        link = link_of(item)
         if title and urlparse(link).scheme in {"http", "https"}:
             results.append({"title": title, "source": source, "url": link})
     return results
 
 
-def interleave(groups: list[list[dict[str, str]]]) -> list[dict[str, str]]:
+def interleave(groups: list[list[dict[str, str]]], max_per_day: int = MAX_PER_DAY) -> list[dict[str, str]]:
     merged: list[dict[str, str]] = []
     seen: set[str] = set()
     for index in range(max((len(group) for group in groups), default=0)):
@@ -77,7 +112,7 @@ def interleave(groups: list[list[dict[str, str]]]) -> list[dict[str, str]]:
                 continue
             seen.add(key)
             merged.append(item)
-            if len(merged) == MAX_PER_DAY:
+            if len(merged) == max_per_day:
                 return merged
     return merged
 
@@ -95,36 +130,21 @@ def tidy_translation(value: str) -> str:
 
 
 def translate_via_models(text: str, token: str) -> str:
-    payload = json.dumps(
-        {
-            "model": MODELS_MODEL,
-            "messages": [
-                {
-                    "role": "system",
-                    "content": (
-                        "You translate English news headlines into concise Simplified "
-                        "Chinese as used in mainland China. Keep proper nouns, place "
-                        "names and numbers accurate. Reply with the translation only: "
-                        "no quotes, no pinyin, no explanation."
-                    ),
-                },
-                {"role": "user", "content": text},
-            ],
-            "temperature": 0.2,
-        }
-    ).encode("utf-8")
-    request = urllib.request.Request(
-        MODELS_ENDPOINT,
-        data=payload,
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-        },
+    return model_client.chat(
+        [
+            {
+                "role": "system",
+                "content": (
+                    "You translate English news headlines into concise Simplified "
+                    "Chinese as used in mainland China. Keep proper nouns, place "
+                    "names and numbers accurate. Reply with the translation only: "
+                    "no quotes, no pinyin, no explanation."
+                ),
+            },
+            {"role": "user", "content": text},
+        ],
+        timeout=TRANSLATE_TIMEOUT,
     )
-    with urllib.request.urlopen(request, timeout=TRANSLATE_TIMEOUT) as response:
-        body = json.loads(response.read().decode("utf-8"))
-    return body["choices"][0]["message"]["content"]
 
 
 def translate_via_gtx(text: str) -> str:
@@ -143,10 +163,14 @@ def translate_via_gtx(text: str) -> str:
 
 def build_translator():
     """Return a callable that maps an English headline to Chinese (or "")."""
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GITHUB_MODELS_TOKEN")
+    token = model_client.api_key()
+    # The original provider (GitHub Models) was retired on 2026-07-30, so a bare
+    # GITHUB_TOKEN is not a provider any more; without one the unauthenticated
+    # endpoint below stays the only source, exactly as before.
+    enabled = model_client.configured()
 
     def translate(text: str) -> str:
-        if token:
+        if token and enabled:
             try:
                 result = tidy_translation(translate_via_models(text, token))
                 if result:
@@ -162,71 +186,69 @@ def build_translator():
     return translate
 
 
+def _fill_list(items: list[dict], translate, cache: dict[str, str], counter: list[int]) -> None:
+    for item in items:
+        title = item.get("title")
+        if not title or item.get("title_zh"):
+            continue
+        if counter[0] >= MAX_TRANSLATIONS_PER_RUN:
+            return
+        if title in cache:
+            chinese = cache[title]
+        else:
+            chinese = translate(title)
+            cache[title] = chinese
+            time.sleep(0.15)
+        if chinese:
+            item["title_zh"] = chinese
+            counter[0] += 1
+
+
 def backfill_translations(days: list[dict], translate) -> int:
-    """Fill in `title_zh` for every archived headline that still lacks one."""
+    """Fill in `title_zh` for every archived headline that still lacks one.
+
+    Both the general digest (`items`) and the aerospace section (`space_items`)
+    are translated, so the Chinese page reads naturally in every zone.
+    """
     cache: dict[str, str] = {}
-    filled = 0
+    counter = [0]
     for day in days:
-        for item in day.get("items", []):
-            title = item.get("title")
-            if not title or item.get("title_zh"):
-                continue
-            if filled >= MAX_TRANSLATIONS_PER_RUN:
-                return filled
-            if title in cache:
-                chinese = cache[title]
-            else:
-                chinese = translate(title)
-                cache[title] = chinese
-                time.sleep(0.15)
-            if chinese:
-                item["title_zh"] = chinese
-                filled += 1
-    return filled
+        _fill_list(day.get("items") or [], translate, cache, counter)
+        _fill_list(day.get("space_items") or [], translate, cache, counter)
+    return counter[0]
+
+
+def archived_days() -> list[dict]:
+    """Every day the long-term archive holds, newest first."""
+    records, invalid = archive_data.read_archive(ROOT, "daily_news")
+    if invalid:
+        print(f"warning: skipped {invalid} unreadable archive line(s)", file=sys.stderr)
+    return sorted(records, key=lambda record: record.get("date", ""), reverse=True)
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--migrate-only", action="store_true")
-    parser.add_argument("--migrate-from", type=Path)
     parser.add_argument(
         "--translate-only",
         action="store_true",
         help="Skip feed collection and only fill in missing Chinese titles.",
     )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="collect and report without writing the archive or the index",
+    )
     args = parser.parse_args()
 
-    source_file = args.migrate_from or OUTPUT
-    raw_archive = json.loads(source_file.read_text(encoding="utf-8")) if source_file.exists() else {}
-    if isinstance(raw_archive, dict) and isinstance(raw_archive.get("days"), list):
-        days = raw_archive["days"]
-    elif isinstance(raw_archive, dict):
-        # Migrate the original date-keyed object without losing its history.
-        days = [
-            {"date": date, "items": entries}
-            for date, entries in raw_archive.items()
-            if isinstance(entries, list)
-        ]
-    else:
-        days = []
-
-    if args.migrate_only:
-        archive = {
-            "updated_at": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(timespec="seconds"),
-            "days": sorted(days, key=lambda day: day.get("date", ""), reverse=True)[:MAX_DAYS],
-        }
-        OUTPUT.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(f"migrated {len(archive['days'])} archived days")
-        return 0
+    days = archived_days()
 
     if args.translate_only:
         filled = backfill_translations(days, build_translator())
-        archive = {
-            "updated_at": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(timespec="seconds"),
-            "days": days,
-        }
-        OUTPUT.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(f"translated {filled} headlines")
+        if args.dry_run:
+            print(f"dry run: {filled} headlines would be translated")
+            return 0
+        stats = archive_data.upsert(ROOT, "daily_news", days)
+        print(f"translated {filled} headlines; {stats.as_line()}")
         return 0
 
     groups: list[list[dict[str, str]]] = []
@@ -241,19 +263,34 @@ def main() -> int:
         print("error: no news items were collected", file=sys.stderr)
         return 1
 
+    # Aerospace news is collected from dedicated space feeds and kept separate so
+    # it can power its own section on the page.
+    space_groups: list[list[dict[str, str]]] = []
+    for source, url in SPACE_SOURCES:
+        try:
+            space_groups.append(read_feed(source, url))
+        except Exception as exc:
+            print(f"warning: {source}: {exc}", file=sys.stderr)
+    space_items = interleave(space_groups, MAX_SPACE_PER_DAY)
+
     today = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d")
-    days = [day for day in days if day.get("date") != today]
-    days.append({"date": today, "items": items})
-    days = sorted(days, key=lambda day: day.get("date", ""), reverse=True)[:MAX_DAYS]
+    record = archive_data.normalize_daily_news(
+        {"date": today, "items": items, "space_items": space_items}
+    )
 
-    filled = backfill_translations(days, build_translator())
+    if args.dry_run:
+        print(f"dry run: {len(items)} headlines and {len(space_items)} space items for {today}; archive holds {len(days)} days")
+        return 0
 
-    archive = {
-        "updated_at": datetime.now(ZoneInfo("Asia/Shanghai")).isoformat(timespec="seconds"),
-        "days": days,
-    }
-    OUTPUT.write_text(json.dumps(archive, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"saved {len(items)} headlines for {today}; translated {filled} headlines")
+    # Archive first: the recent index is only ever generated from it.
+    stats = archive_data.upsert(ROOT, "daily_news", [record])
+
+    translated = archived_days()
+    filled = backfill_translations(translated, build_translator())
+    if filled:
+        # Translations are part of the record, so they go straight back in.
+        stats = archive_data.upsert(ROOT, "daily_news", translated)
+    print(f"saved {len(items)} headlines and {len(space_items)} space items for {today}; translated {filled} headlines; {stats.as_line()}")
     return 0
 
 

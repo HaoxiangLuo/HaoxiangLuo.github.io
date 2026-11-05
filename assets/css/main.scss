@@ -436,13 +436,14 @@ body {
 
 /* Always-visible navigation and editorial publication cards. */
 .greedy-nav .visible-links {
-  max-width: 720px;
+  max-width: 100%;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .greedy-nav .visible-links > li {
   display: block !important;
-  flex: 1 1 0;
+  flex: 0 0 auto;
   text-align: center;
 }
 
@@ -874,34 +875,25 @@ body.home-page .sidebar .author__urls a:hover {
   }
 }
 
-.language-toggle a {
-  display: inline-grid !important;
-  grid-template-columns: 1fr 1fr;
+.language-toggle__option {
+  display: flex;
   align-items: center;
-  width: 6rem !important;
-  min-width: 6rem;
-  padding: 0.2rem !important;
-  border: 1px solid rgba(29, 29, 31, 0.1);
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 1.8rem;
+  padding: 0 0.3rem;
+  border: 0;
   border-radius: 999px;
   color: #86868b;
-  background: #e8e8ed;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.42);
-}
-
-.language-toggle a:hover {
-  color: #6e6e73;
-  border-color: rgba(29, 29, 31, 0.14);
-  background: #dedee3;
-}
-
-.language-toggle__option {
-  display: grid;
-  min-height: 1.8rem;
-  place-items: center;
-  border-radius: 999px;
+  background: transparent;
+  box-shadow: none;
   font-size: 0.72rem;
   font-weight: 600;
   line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
   transition: color 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
 
@@ -909,6 +901,7 @@ body.home-page .sidebar .author__urls a:hover {
   color: #f5f5f7;
   background: #2c2c2e;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  cursor: default;
 }
 
 .publication-badge--rank {
@@ -939,11 +932,6 @@ body.home-page .sidebar .author__urls a:hover {
 .publication-cover--nature-5 { background-position: 100% center; }
 
 @media (max-width: 560px) {
-  .language-toggle a {
-    width: 4.7rem !important;
-    min-width: 4.7rem;
-  }
-
   .language-toggle__option {
     min-height: 1.55rem;
     font-size: 0.62rem;
@@ -974,11 +962,12 @@ body.home-page .sidebar .author__urls a:hover {
 .greedy-nav .visible-links {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  justify-content: center;
+  gap: clamp(0.15rem, 1.1vw, 1.1rem);
 }
 
 .greedy-nav .visible-links .tail {
-  margin-left: auto;
+  margin-left: 0;
 }
 
 .greedy-nav a {
@@ -1305,8 +1294,44 @@ body {
   min-height: 48px;
 }
 
+/* ==========================================================================
+   PRIMARY NAVIGATION
+   ==========================================================================
+
+   One authority for the whole nav bar. The theme lays `.visible-links` out
+   as a table and gives every `.greedy-nav a` an unconditional `margin:
+   0 1rem`; both facts have to be overridden here, because the theme's margin
+   leaks into the language pill (its EN option is an `<a>`, the ZH option a
+   `<span>`, so the pill's two halves sat 18px apart and the EN half
+   overflowed the capsule).
+
+   The model
+   ---------
+   Labels are sized by their own text (flex: 0 0 auto, no clipping). The
+   items are distributed with `justify-content: space-between` across the row
+   minus a symmetric reserve, and the language pill is taken out of the flow
+   (position: absolute; right: 0).
+
+   The pill is the row's seventh in-flow item, so `justify-content:
+   space-between` treats it like any other label: every gap - including the
+   one between the last label and the pill - comes out equal, at every
+   width, in both languages. (Earlier versions centred the label group and
+   pinned the pill to the right edge; the gap between them was then whatever
+   was left over - 120px on the Chinese pages, 61px on the English ones -
+   which is the hole that made the bar read as unbalanced.)
+
+   `gap` is only a floor: space-between widens the spacing beyond it. The
+   first label sits level with the page content's left edge and the pill
+   with its right edge, because the row spans the same content box. */
+
+:root {
+  --nav-pill-w: 4.6rem;                        /* language pill outer width */
+  --nav-side: 0.62rem;                         /* link horizontal padding */
+  --nav-gap: 0.6rem;                           /* minimum gap between labels */
+}
+
 .masthead__inner-wrap {
-  max-width: 1024px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 1.25rem;
 }
@@ -1317,55 +1342,200 @@ body {
 }
 
 .greedy-nav .visible-links {
+  position: relative;
+  display: flex !important;
+  align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
   min-height: 48px;
-  gap: clamp(0.5rem, 3vw, 3rem);
+  gap: var(--nav-gap);
 }
 
-.masthead__menu-item,
-.masthead__menu-item--lg {
-  padding-right: 0;
-  background: transparent;
+/* Sized by its own label. Nothing here clips: no overflow, no ellipsis, and
+   no zero minimum that could squeeze a long label. */
+.greedy-nav .visible-links > li {
+  display: block !important;
+  flex: 0 0 auto;
+  text-align: center;
 }
 
-.greedy-nav a {
-  padding: 0.55rem 0.7rem;
+.greedy-nav .visible-links > li > a {
+  display: block;
+  margin: 0;                                   /* theme gives every nav a margin: 0 1rem */
+  padding: 0.55rem var(--nav-side);
   font-size: 0.82rem;
   font-weight: 450;
   letter-spacing: -0.01em;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 999px;
 }
 
-.masthead__menu-item.selected a {
-  border-bottom: 0;
+.masthead__menu-item.selected > a {
   font-weight: 600;
 }
 
-.language-toggle {
-  margin-left: 0;
+/* The pill is a normal flex item - the row's seventh - so it gets the same
+   inter-item spacing as every label and can never be crowded or overrun. */
+.greedy-nav .visible-links > li.language-toggle {
+  position: static;
+  flex: 0 0 auto;
+  width: var(--nav-pill-w);
+  margin: 0;
+  top: auto;                                   /* the old pinned rule's top/right/transform */
+  right: auto;                                 /* would still apply and shove the pill up */
+  transform: none;
 }
 
-.language-toggle a {
-  min-width: 2.75rem;
-  border: 1px solid rgba(29, 29, 31, 0.14);
+.language-toggle,
+.language-toggle__control {
+  display: flex;
+  align-items: center;
+}
+
+.language-toggle__control {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.2rem;
+  border: 1px solid rgba(29, 29, 31, 0.1);
   border-radius: 999px;
+  background: #e8e8ed;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.42);
+}
+
+.language-toggle__control > .language-toggle__option {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 0;                                   /* theme .greedy-nav a margin leaked in here */
+  min-height: 1.8rem;
+  padding: 0 0.3rem;
+  border: 0;
+  border-radius: 999px;
+  color: #86868b;
+  background: transparent;
+  box-shadow: none;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
   text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.language-toggle__control > .language-toggle__option:hover {
+  color: #1d1d1f;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.language-toggle__control > .language-toggle__option:focus-visible {
+  outline: 2px solid #0071e3;
+  outline-offset: 1px;
+}
+
+.language-toggle__control > .language-toggle__option.is-active,
+.language-toggle__control > .language-toggle__option.is-active:hover {
+  color: #f5f5f7;
+  background: #2c2c2e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  cursor: default;
+}
+
+/* The theme's sliding underline is not used with this layout. */
+.greedy-nav .visible-links a::before,
+.greedy-nav a::before {
+  display: none;
 }
 
 #theme-toggle.tail {
   margin-left: 0;
 }
 
-@media (max-width: 767px) {
+/* Narrower desktops: shrink the labels before giving up the single row. */
+@media (max-width: 1120px) {
+  :root {
+    --nav-side: 0.55rem;
+  }
+
+  .greedy-nav .visible-links > li > a {
+    font-size: 0.78rem;
+  }
+}
+
+/* Below the width where even the minimum gap fits, the items wrap into two
+   rows of three and the pill takes a row of its own. The distribution goes
+   back to centred for the wrapped rows - space-between only makes sense on
+   a single line. */
+@media (max-width: 980px) {
   .masthead__inner-wrap {
-    padding: 0 0.45rem;
+    padding: 0 0.6rem;
   }
 
   .greedy-nav .visible-links {
-    gap: 0.1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.25rem;
+    column-gap: 0.2rem;
+    padding: 0;
   }
 
-  .greedy-nav a {
-    padding: 0.5rem 0.45rem;
+  .greedy-nav .visible-links > li {
+    flex: 0 1 calc((100% - 0.4rem) / 3);
+  }
+
+  .greedy-nav .visible-links > li > a {
+    padding: 0.45rem 0.3rem;
     font-size: 0.76rem;
+    letter-spacing: 0;
+  }
+
+  .greedy-nav .visible-links > li.language-toggle {
+    position: static;
+    transform: none;
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0.3rem 0 0.15rem;
+  }
+
+  .language-toggle__control {
+    width: 4.6rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .greedy-nav .visible-links > li {
+    flex: 0 1 calc((100% - 0.2rem) / 3);
+  }
+
+  .greedy-nav .visible-links > li > a {
+    padding: 0.4rem 0.2rem;
+    font-size: 0.7rem;
+  }
+
+  .language-toggle__control {
+    width: 4.3rem;
+  }
+
+  /* Match the specificity of the twin rule in _content-refinements.scss
+     (inside its max-width: 767px block) or these smaller phone values would
+     silently lose to it. */
+  .greedy-nav .visible-links > li.language-toggle .language-toggle__control > .language-toggle__option {
+    min-height: 1.4rem;
+    padding: 0 0.15rem;
+    font-size: 0.56rem;
   }
 }

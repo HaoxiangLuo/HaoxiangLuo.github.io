@@ -11,7 +11,7 @@ translation_url: /site-log/
   <p class="site-log-intro">网站一边生长，一边留下几句清楚的记录。</p>
   <a class="site-log-write" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_data/site_updates.json" target="_blank" rel="noopener noreferrer">手动补充</a>
 </div>
-{% include archive-date-filter.html %}
+{% include archive-date-filter.html dataset="site_updates" %}
 <div class="site-timeline">
   {% assign updates_by_date = site.data.site_updates | group_by: "date" %}
   {% for day in updates_by_date %}

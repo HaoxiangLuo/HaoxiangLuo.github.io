@@ -1,0 +1,135 @@
+name: Data archive release
+
+on:
+  schedule:
+    # 00:20 UTC on 5 January = 08:20 Asia/Shanghai, once a year.
+    - cron: "20 0 5 1 *"
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "Calendar year to release (empty = last completed year)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-archive-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Work out which year to release
+        id: year
+        env:
+          INPUT_YEAR: ${{ github.event.inputs.year }}
+        run: |
+          if [ -n "$INPUT_YEAR" ]; then
+            echo "value=$INPUT_YEAR" >> "$GITHUB_OUTPUT"
+          else
+            # The schedule runs in January, so the year to freeze is the one
+            # that just finished.
+            echo "value=$(( $(TZ=Asia/Shanghai date +%Y) - 1 ))" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Stop if that year is already released
+        id: guard
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          YEAR: ${{ steps.year.outputs.value }}
+        run: |
+          if gh release view "data-archive-$YEAR" >/dev/null 2>&1; then
+            echo "Release data-archive-$YEAR already exists; leaving it untouched."
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build the snapshot
+        if: steps.guard.outputs.exists == 'false'
+        env:
+          YEAR: ${{ steps.year.outputs.value }}
+        run: |
+          python scripts/build_data_snapshot.py \
+            --year "$YEAR" \
+            --output-dir "$RUNNER_TEMP/archive" \
+            --summary-json "$RUNNER_TEMP/archive/summary.json"
+
+      - name: Write the release notes
+        if: steps.guard.outputs.exists == 'false'
+        env:
+          YEAR: ${{ steps.year.outputs.value }}
+        run: |
+          python - "$YEAR" "$RUNNER_TEMP/archive/summary.json" "$RUNNER_TEMP/archive/notes.md" <<'PY'
+          import json
+          import sys
+
+          year, summary_path, notes_path = sys.argv[1], sys.argv[2], sys.argv[3]
+          summary = json.loads(open(summary_path, encoding="utf-8").read())
+          counts = summary["counts"]
+
+          lines = [
+              f"# Website data archive {year}",
+              "",
+              f"**Period covered:** {year}-01-01 to {year}-12-31 (Asia/Shanghai dates).",
+              f"**Schema version:** {summary['schema_version']}",
+              "",
+              "## Records",
+              "",
+              "| Dataset | Records |",
+              "| --- | --- |",
+              f"| Daily news (monthly partitions) | {counts['daily_news']} |",
+              f"| Academic Frontiers (yearly partition) | {counts['academic_frontiers']} |",
+              f"| Site log (yearly partition) | {counts['site_updates']} |",
+              "",
+              "## Contents and checksums (SHA-256)",
+              "",
+              "```",
+          ]
+          for name in summary["files"]:
+              lines.append(f"{summary['checksums'][name]}  {name}")
+          lines += [
+              "```",
+              "",
+              f"`haoxiangluo-data-archive-{year}.zip` — {summary['zip_sha256']}",
+              "",
+              "## What this data is",
+              "",
+              "- Headlines and links belong to their publishers; the Chinese headline is a machine translation.",
+              "- Article metadata comes from OpenAlex; abstracts are excerpts of at most 450 characters, never full text.",
+              "- Site-log entries are generated from the repository's own commits.",
+              "",
+              "## What this data is not",
+              "",
+              "- No article full texts and no PDFs.",
+              "- No personal or private information: the archive holds public headlines, public article metadata and commit metadata only.",
+              "- No third-party storage: the files are produced from the repository's own JSONL archives and attached to this GitHub Release.",
+              "",
+              "Verify a download with `sha256sum -c SHA256SUMS.txt`.",
+          ]
+          open(notes_path, "w", encoding="utf-8").write("\n".join(lines) + "\n")
+          PY
+
+      - name: Create the release
+        if: steps.guard.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          YEAR: ${{ steps.year.outputs.value }}
+        run: |
+          gh release create "data-archive-$YEAR" \
+            --title "Website data archive $YEAR" \
+            --notes-file "$RUNNER_TEMP/archive/notes.md" \
+            "$RUNNER_TEMP/archive/haoxiangluo-data-archive-$YEAR.zip"

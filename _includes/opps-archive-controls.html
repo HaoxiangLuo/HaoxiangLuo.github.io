@@ -1,0 +1,56 @@
+<div class="opps-toolbar" data-opps-toolbar hidden>
+  <button type="button" class="opps-toggle" data-opps-toggle
+          data-expand-label="{% if page.lang == 'zh' %}展开全部日期{% else %}Expand every day{% endif %}"
+          data-collapse-label="{% if page.lang == 'zh' %}收起全部日期{% else %}Collapse every day{% endif %}"
+          aria-expanded="false">{% if page.lang == 'zh' %}展开全部日期{% else %}Expand every day{% endif %}</button>
+  <span class="opps-toolbar__hint">{% if page.lang == 'zh' %}仅作用于按日期归档的板块：最新一天默认展开，更早的记录收起保存。{% else %}Applies to the day-filed sections: the newest day starts open, earlier days stay folded away.{% endif %}</span>
+</div>
+<script>
+  (function () {
+    "use strict";
+    var toolbar = document.querySelector("[data-opps-toolbar]");
+    var button = toolbar && toolbar.querySelector("[data-opps-toggle]");
+    if (!button) return;
+    var expandLabel = button.getAttribute("data-expand-label");
+    var collapseLabel = button.getAttribute("data-collapse-label");
+
+    /* This include is rendered above the archive, so the <details> elements do
+       not exist yet when the script runs. Look them up on demand instead of
+       caching an empty list at start-up, and bind to them once the document
+       is parsed. */
+    /* Day panels only: the shortlist cards use <details> for their match
+       reasons, and "expand every day" must not open those. */
+    function panels() {
+      return Array.prototype.slice.call(document.querySelectorAll(".opps-archive details.opps-day"));
+    }
+    function allOpen(list) {
+      return list.every(function (panel) { return panel.open; });
+    }
+    function sync() {
+      var list = panels();
+      if (!list.length) return;
+      var open = allOpen(list);
+      button.textContent = open ? collapseLabel : expandLabel;
+      button.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+    button.addEventListener("click", function () {
+      var list = panels();
+      if (!list.length) return;
+      var open = !allOpen(list);
+      list.forEach(function (panel) { panel.open = open; });
+      sync();
+    });
+    function initialize() {
+      var list = panels();
+      toolbar.hidden = list.length === 0;
+      /* "toggle" does not bubble, so each day needs its own listener. */
+      list.forEach(function (panel) { panel.addEventListener("toggle", sync); });
+      sync();
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initialize, { once: true });
+    } else {
+      initialize();
+    }
+  }());
+</script>
