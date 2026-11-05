@@ -14,6 +14,20 @@
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/96ad27d0287b6206ff9505e7377f42bbc9e2089f"
   },
   {
+    "date": "2026-11-05",
+    "title_zh": "调整了论文发表、导航、页面结构、首页",
+    "title_en": "Refined Publications, navigation, page structure, Home",
+    "message": "Integrate publications into full-width home section",
+    "story_zh": "更新了论文发表、导航、页面结构、首页的归档数据，使页面读到的记录与最新一次改动保持一致。",
+    "story_en": "Updated the archived data behind Publications, navigation, page structure, Home so the page shows the records from the latest change.",
+    "purpose_zh": "统一论文发表与既有内容页的内容宽度、阅读节奏和视觉层级。",
+    "purpose_en": "Integrate publications into full-width home section",
+    "details_zh": "调整论文发表页面的主内容容器、archive 宽度或内边距、标题对齐与移动端布局。",
+    "details_en": "Adjusted the main content container, archive width or padding, title alignment and mobile layout of the Publications page.",
+    "sha": "7620247",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/762024725284c8f27e5f96c10ba6875777087eb0"
+  },
+  {
     "date": "2026-10-28",
     "title_zh": "调整了每日新闻、界面样式",
     "title_en": "Refined Daily News, interface styling",
