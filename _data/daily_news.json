@@ -1,14 +1,38 @@
 {
-  "updated_at": "2026-11-05T02:16:08+08:00",
+  "updated_at": "2026-11-05T15:28:59+08:00",
   "days": [
     {
       "date": "2026-11-05",
       "items": [
         {
-          "title": "'This is a disaster': Angry Republicans blame Trump for midterms defeat",
+          "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6x29rr8djy3o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "这是一场灾难”：愤怒的共和党人将中期选举失败归咎于特朗普"
+          "url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "万斯严厉批评伊朗战争，为特朗普走钢丝"
+        },
+        {
+          "title": "Bob Dylan comes knockin' on pope's door as Leo welcomes legend to Vatican",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/05/g-s1-152035/vatican-pope-bob-dylan",
+          "title_zh": "鲍勃·迪伦 (Bob Dylan) 来敲教皇的门，利奥 (Leo) 欢迎传奇人物来到梵蒂冈"
+        },
+        {
+          "title": "What Democrats can and can't do with their new power after taking Congress",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq1kdgnn2xdeo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "民主党入主国会后可以利用新权力做什么和不能做什么"
+        },
+        {
+          "title": "Hong Kong activist Joshua Wong sentenced to 10 years in prison",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/05/g-s1-152032/hong-kong-activist-wong-sentenced",
+          "title_zh": "香港活动人士黄之锋被判入狱10年"
+        },
+        {
+          "title": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "香港民主抗议活动代言人黄之锋被判入狱10年"
         },
         {
           "title": "Abdul El-Sayed welcomes Trump's plan to cut Israel aid, calls for end to arms sales",
@@ -17,16 +41,10 @@
           "title_zh": "阿卜杜勒·赛义德欢迎特朗普削减以色列援助的计划，呼吁停止军售"
         },
         {
-          "title": "Afghan children face narrowing path to education, UN agencies report",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168732",
-          "title_zh": "联合国机构报告，阿富汗儿童的受教育道路日益狭窄"
-        },
-        {
-          "title": "US midterm results a 'victory' for Canadians hopeful of tariff relief",
+          "title": "French blood storage impacted by freezer hacks as theories swirl about culprits",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqev3mw3e0kdo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "美国中期选举结果对希望减免关税的加拿大人来说是“胜利"
+          "url": "https://www.bbc.co.uk/news/articles/c8vgxyvz6y9ro?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法国血液储存受到冰箱黑客攻击影响，有关罪魁祸首的理论不断涌现"
         },
         {
           "title": "The world is reacting to the Democrats' sweeping midterm elections victory",
@@ -35,48 +53,30 @@
           "title_zh": "世界正在对民主党中期选举的压倒性胜利做出反应"
         },
         {
-          "title": "‘The world is not ready’: Climate adaptation cash falls far short as warming heads past 1.5°C",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168725",
-          "title_zh": "世界还没有准备好”：随着气温上升超过1.5°C，适应气候变化的资金远远不足"
-        },
-        {
-          "title": "Ukraine says bodycam video shows deadly Russian double-tap bombing",
+          "title": "Typhoons batter East Asia as El Niño makes Pacific 'burn with fever'",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c98rz6penv86o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "乌克兰称随身摄像机视频显示俄罗斯致命的双击爆炸事件"
-        },
-        {
-          "title": "Democrats seize full control of Congress. And, which candidates made history last night",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/04/g-s1-151745/up-first-newsletter-midterms-democrats-congress-control",
-          "title_zh": "民主党完全控制了国会。以及，昨晚哪些候选人创造了历史"
-        },
-        {
-          "title": "‘This is not about politics. This is about people’: UN warns of impact of deadly drone strikes in Sudan",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168731",
-          "title_zh": "‘这与政治无关。这是关于人的：联合国警告苏丹致命无人机袭击的影响"
+          "url": "https://www.bbc.co.uk/news/articles/cw33kgj7nkemo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "台风袭击东亚，厄尔尼诺现象让太平洋“发烧"
         }
       ],
       "space_items": [
         {
-          "title": "NASA Announces Ka-Band Satellite Relay Awards for Space Communications",
+          "title": "APOD: 2026 November 5 – Enceladus in Silhouette",
           "source": "NASA",
-          "url": "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/",
-          "title_zh": "NASA 宣布 Ka 波段卫星中继太空通信奖"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-5-enceladus-in-silhouette/",
+          "title_zh": "APOD：2026 年 11 月 5 日——土卫二的剪影"
         },
         {
-          "title": "NASA's Artemis II moon launch tore a hole in Earth's upper atmosphere so huge it disrupted GPS signals",
+          "title": "On this day in space! Nov. 4, 2015: A rail-launched Super Strypi rocket carrying 13 baby satellites failed during its debut launch for the US Air Force",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/nasas-artemis-ii-moon-launch-tore-a-hole-in-earths-upper-atmosphere-so-huge-it-disrupted-gps-signals",
-          "title_zh": "美国国家航空航天局 (NASA) 的阿耳忒弥斯二号 (Artemis II) 登月发射在地球高层大气中造成了一个巨大的洞，以至于扰乱了 GPS 信号"
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-4-2026",
+          "title_zh": "在太空的这一天！ 2015 年 11 月 4 日：美国空军搭载 13 颗小卫星的轨道发射 Super Strypi 火箭首次发射失败"
         },
         {
-          "title": "NASA’s Neil Gehrels Swift Observatory to burn up this week after more than two decades in space",
+          "title": "NASA’s Neil Gehrels Swift Observatory reenters over Western Indonesia",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/03/nasas-neil-gehrels-swift-observatory-to-burn-up-this-week-after-two-decades-in-space/",
-          "title_zh": "美国宇航局尼尔·盖尔斯·斯威夫特天文台在太空运行二十多年后将于本周燃烧"
+          "url": "https://spaceflightnow.com/2026/11/04/nasas-neil-gehrels-swift-observatory-reenters-over-western-indonesia/",
+          "title_zh": "美国宇航局尼尔·格尔尔斯·斯威夫特天文台重新进入印度尼西亚西部上空"
         },
         {
           "title": "Simera Sense and Spacemanic to Collaborate on a New Complete Dual-Use Mission Solution",
@@ -85,28 +85,28 @@
           "title_zh": "Simera Sense 和 Spacemanic 合作开发全新完整的两用任务解决方案"
         },
         {
-          "title": "Giant Impacts Help Rocky Planets Retain Their Atmospheres",
+          "title": "China Unveils Their Plan for a Crewed Moon Landing",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/giant-impacts-help-rocky-planets-retain-their-atmospheres",
-          "title_zh": "巨大的撞击帮助岩石行星保持其大气层"
+          "url": "https://www.universetoday.com/articles/china-unveils-their-plan-for-a-crewed-moon-landing",
+          "title_zh": "中国公布载人登月计划"
         },
         {
-          "title": "NASA Navigation Experiment Shows Promise for Planetary Landings",
+          "title": "Cyprus: Island of Snakes, Cats, and Ophiolites",
           "source": "NASA",
-          "url": "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings/",
-          "title_zh": "美国宇航局导航实验显示了行星着陆的希望"
+          "url": "https://science.nasa.gov/earth/earth-observatory/cyprus-island-of-snakes-cats-and-ophiolites/",
+          "title_zh": "塞浦路斯：蛇、猫和蛇绿岩之岛"
         },
         {
-          "title": "Students gather to explore Hawaii's glorious night sky | Space photo of the day for Nov. 4, 2026",
+          "title": "Trump declares 'American space superiority for all eternity' in election night proclamation",
           "source": "Space.com",
-          "url": "https://www.space.com/stargazing/students-gather-to-explore-hawaiis-glorious-night-sky-space-photo-of-the-day-for-nov-4-2026",
-          "title_zh": "学生们齐聚一堂，探索夏威夷绚丽的夜空 | 2026 年 11 月 4 日当天的太空照片"
+          "url": "https://www.space.com/space-exploration/trump-declares-american-space-superiority-for-all-eternity-in-new-white-house-proclamation",
+          "title_zh": "特朗普在选举之夜宣言中宣布“美国永远拥有太空优势"
         },
         {
-          "title": "SpaceX closes out October with 700th Falcon 9 launch to date",
+          "title": "NASA’s Neil Gehrels Swift Observatory to burn up this week after more than two decades in space",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/10/30/live-coverage-spacex-to-close-out-october-with-halloween-eve-falcon-9-launch/",
-          "title_zh": "SpaceX 以迄今为止第 700 次猎鹰 9 号发射结束 10 月份"
+          "url": "https://spaceflightnow.com/2026/11/03/nasas-neil-gehrels-swift-observatory-to-burn-up-this-week-after-two-decades-in-space/",
+          "title_zh": "美国宇航局尼尔·盖尔斯·斯威夫特天文台在太空运行二十多年后将于本周燃烧"
         }
       ]
     },
