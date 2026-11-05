@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-05T21:00:26+08:00",
+  "updated_at": "2026-11-06T02:21:18+08:00",
   "days": [
+    {
+      "date": "2026-11-06",
+      "items": [
+        {
+          "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "万斯严厉批评伊朗战争，为特朗普走钢丝"
+        },
+        {
+          "title": "Russell Brand is convicted of rape, and judge says he'll get a prison term",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/05/nx-s1-6030720/russell-brand-rape-sexual-assault-prison",
+          "title_zh": "拉塞尔·布兰德被判强奸罪，法官称他将被判入狱"
+        },
+        {
+          "title": "French protests see numbers surge as unions join strikes over high cost of living",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法国抗议人数激增，工会因生活成本高而参加罢工"
+        },
+        {
+          "title": "What's next for Democrats after the midterms. And, a look at the outstanding races",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/05/g-s1-152046/up-first-newsletter-democrats-congress-control-house-senate-trump-reaction",
+          "title_zh": "中期选举后，民主党接下来会做什么。并且，看看精彩的比赛"
+        },
+        {
+          "title": "Paraguay President Santiago Peña resigns after bank collapse",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "巴拉圭总统圣地亚哥·佩纳因银行倒闭而辞职"
+        },
+        {
+          "title": "Bob Dylan comes knockin' on pope's door as Leo welcomes legend to Vatican",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/05/g-s1-152035/vatican-pope-bob-dylan",
+          "title_zh": "鲍勃·迪伦 (Bob Dylan) 来敲教皇的门，利奥 (Leo) 欢迎传奇人物来到梵蒂冈"
+        },
+        {
+          "title": "Was an Italian chef really fired over refusal to put pineapple on pizza?",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cmvg9yy8wpweo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "一位意大利厨师真的因为拒绝在披萨上放菠萝而被解雇吗？"
+        },
+        {
+          "title": "Hong Kong activist Joshua Wong sentenced to 10 years in prison",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/05/g-s1-152032/hong-kong-activist-wong-sentenced",
+          "title_zh": "香港活动人士黄之锋被判入狱10年"
+        },
+        {
+          "title": "The Pitt and ER are similar enough for lawsuit to proceed, judge rules",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq4g1r42jx00o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法官裁定，皮特和急诊室足够相似，可以继续诉讼"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "Midwestern City Lights",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/midwestern-city-lights/",
+          "title_zh": "中西部城市之光"
+        },
+        {
+          "title": "You don't have to go to the moon to see Earth differently: Artemis II astronaut Victor Glover on what really matters",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/artemis/the-greatest-reason-to-go-to-space-artemis-ii-astronaut-victor-glover-reveals-what-he-discovered-on-his-journey-to-the-moon",
+          "title_zh": "你不必去月球就能以不同的方式看待地球：阿耳忒弥斯二号宇航员维克多·格洛弗谈什么才是真正重要的"
+        },
+        {
+          "title": "NASA’s Neil Gehrels Swift Observatory reenters over Western Indonesia",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/04/nasas-neil-gehrels-swift-observatory-reenters-over-western-indonesia/",
+          "title_zh": "美国宇航局尼尔·格尔尔斯·斯威夫特天文台重新进入印度尼西亚西部上空"
+        },
+        {
+          "title": "Cork Takes the Heat So DRACO’s Data Can Survive",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/cork-takes-the-heat-so-dracos-data-can-survive/",
+          "title_zh": "科克经受住了考验，因此 DRACO 的数据得以保存"
+        },
+        {
+          "title": "A Mighty Wind Blew Away Gas and Made Early Galaxies Brighter",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/a-mighty-wind-blew-away-gas-and-made-early-galaxies-brighter",
+          "title_zh": "强大的风吹走了气体并使早期星系变得更加明亮"
+        },
+        {
+          "title": "NASA Astronauts to Answer Questions from Florida Students",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/learning-resources/nasa-astronauts-to-answer-questions-from-florida-students-2/",
+          "title_zh": "美国宇航局宇航员回答佛罗里达州学生的问题"
+        },
+        {
+          "title": "NASA's Voyager 1 probe bounces back from communications glitch in interstellar space",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/voyager/nasas-voyager-1-probe-bounces-back-from-communications-glitch-in-interstellar-space",
+          "title_zh": "NASA 航海者 1 号探测器从星际空间的通信故障中恢复过来"
+        },
+        {
+          "title": "NASA’s Neil Gehrels Swift Observatory to burn up this week after more than two decades in space",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/03/nasas-neil-gehrels-swift-observatory-to-burn-up-this-week-after-two-decades-in-space/",
+          "title_zh": "美国宇航局尼尔·盖尔斯·斯威夫特天文台在太空运行二十多年后将于本周燃烧"
+        }
+      ]
+    },
     {
       "date": "2026-11-05",
       "items": [
