@@ -2088,3 +2088,26 @@ body.home-page .news-window {
     margin-bottom: 0;
   }
 }
+@media (min-width: 1024px) {
+  body.home-page .sidebar .author__avatar,
+  body.home-page .sidebar .author__avatar img { max-width: 138px; }
+}
+
+.home-publications {
+  margin-top: 1.25rem;
+  padding: clamp(1.4rem, 3vw, 2.5rem);
+  border: 1px solid rgba(29, 29, 31, 0.08);
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.055);
+}
+
+.home-publications__heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+body.home-page .home-publications__heading h2 { margin: 0 0 1rem; padding: 0; border: 0; }
+.home-publications__heading a { flex: none; font-size: 0.72rem; }
+.home-publications .publication-board { grid-template-columns: minmax(0, 1fr); }
+.home-publications .publication-column--articles .publication-card-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 767px) {
+  .home-publications { border-radius: 22px; }
+  .home-publications .publication-column--articles .publication-card-list { grid-template-columns: minmax(0, 1fr); }
+}

@@ -22,3 +22,13 @@ redirect_from:
 </section>
 
 {% include daily-news-widget.html %}
+
+{% assign publication_page = site.pages | where: "permalink", "/publications/" | first %}
+{% if publication_page %}
+<section class="home-publications" aria-labelledby="home-publications-title">
+  <div class="home-publications__heading"><h2 id="home-publications-title">Publications</h2><a href="{{ base_path }}/publications/">View full page ↗</a></div>
+  {% assign publication_content = publication_page.content | split: '<script src=' | first %}
+  {{ publication_content | markdownify }}
+</section>
+<script src="{{ base_path }}/assets/js/publications.js" defer></script>
+{% endif %}
