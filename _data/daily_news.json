@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T15:28:59+08:00",
+  "updated_at": "2026-11-05T21:00:26+08:00",
   "days": [
     {
       "date": "2026-11-05",
@@ -11,10 +11,10 @@
           "title_zh": "万斯严厉批评伊朗战争，为特朗普走钢丝"
         },
         {
-          "title": "Bob Dylan comes knockin' on pope's door as Leo welcomes legend to Vatican",
+          "title": "What's next for Democrats after the midterms. And, a look at the outstanding races",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/05/g-s1-152035/vatican-pope-bob-dylan",
-          "title_zh": "鲍勃·迪伦 (Bob Dylan) 来敲教皇的门，利奥 (Leo) 欢迎传奇人物来到梵蒂冈"
+          "url": "https://www.npr.org/2026/11/05/g-s1-152046/up-first-newsletter-democrats-congress-control-house-senate-trump-reaction",
+          "title_zh": "中期选举后，民主党接下来会做什么。并且，看看精彩的比赛"
         },
         {
           "title": "What Democrats can and can't do with their new power after taking Congress",
@@ -23,16 +23,28 @@
           "title_zh": "民主党入主国会后可以利用新权力做什么和不能做什么"
         },
         {
+          "title": "Bob Dylan comes knockin' on pope's door as Leo welcomes legend to Vatican",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/05/g-s1-152035/vatican-pope-bob-dylan",
+          "title_zh": "鲍勃·迪伦 (Bob Dylan) 来敲教皇的门，利奥 (Leo) 欢迎传奇人物来到梵蒂冈"
+        },
+        {
+          "title": "France gears up for strikes and protests as unions promise national mobilisation",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckx2qzv835pgo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "工会承诺全国动员，法国准备罢工和抗议"
+        },
+        {
           "title": "Hong Kong activist Joshua Wong sentenced to 10 years in prison",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/11/05/g-s1-152032/hong-kong-activist-wong-sentenced",
           "title_zh": "香港活动人士黄之锋被判入狱10年"
         },
         {
-          "title": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
+          "title": "Ronaldo retires from Portugal duty",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "香港民主抗议活动代言人黄之锋被判入狱10年"
+          "url": "https://www.bbc.co.uk/sport/football/articles/cme8rxx2e1w9o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "C罗从葡萄牙退役"
         },
         {
           "title": "Abdul El-Sayed welcomes Trump's plan to cut Israel aid, calls for end to arms sales",
@@ -41,22 +53,10 @@
           "title_zh": "阿卜杜勒·赛义德欢迎特朗普削减以色列援助的计划，呼吁停止军售"
         },
         {
-          "title": "French blood storage impacted by freezer hacks as theories swirl about culprits",
+          "title": "Joshua Wong, face of Hong Kong's pro-democracy protests, jailed for 10 years",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c8vgxyvz6y9ro?at_medium=RSS&at_campaign=rss",
-          "title_zh": "法国血液储存受到冰箱黑客攻击影响，有关罪魁祸首的理论不断涌现"
-        },
-        {
-          "title": "The world is reacting to the Democrats' sweeping midterm elections victory",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/04/nx-s1-6028664/world-reacts-midterm-elections",
-          "title_zh": "世界正在对民主党中期选举的压倒性胜利做出反应"
-        },
-        {
-          "title": "Typhoons batter East Asia as El Niño makes Pacific 'burn with fever'",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw33kgj7nkemo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "台风袭击东亚，厄尔尼诺现象让太平洋“发烧"
+          "url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "香港民主抗议活动代言人黄之锋被判入狱10年"
         }
       ],
       "space_items": [
@@ -67,10 +67,10 @@
           "title_zh": "APOD：2026 年 11 月 5 日——土卫二的剪影"
         },
         {
-          "title": "On this day in space! Nov. 4, 2015: A rail-launched Super Strypi rocket carrying 13 baby satellites failed during its debut launch for the US Air Force",
+          "title": "Early Black Friday beginner telescope deal — this portable Celestron is now 25% off at Amazon",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-4-2026",
-          "title_zh": "在太空的这一天！ 2015 年 11 月 4 日：美国空军搭载 13 颗小卫星的轨道发射 Super Strypi 火箭首次发射失败"
+          "url": "https://www.space.com/stargazing/skywatching-kit/early-black-friday-beginner-telescope-deal-this-portable-celestron-is-now-25-percent-off-at-amazon",
+          "title_zh": "早期黑色星期五初学者望远镜优惠——这款便携式星特朗现在在亚马逊有 25% 的折扣"
         },
         {
           "title": "NASA’s Neil Gehrels Swift Observatory reenters over Western Indonesia",
@@ -85,10 +85,10 @@
           "title_zh": "Simera Sense 和 Spacemanic 合作开发全新完整的两用任务解决方案"
         },
         {
-          "title": "China Unveils Their Plan for a Crewed Moon Landing",
+          "title": "Exoplanets Can't Hide From The JWST's 'Digital Twin'",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/china-unveils-their-plan-for-a-crewed-moon-landing",
-          "title_zh": "中国公布载人登月计划"
+          "url": "https://www.universetoday.com/articles/exoplanets-cant-hide-from-the-jwsts-digital-twin",
+          "title_zh": "系外行星无法躲避 JWST 的“数字双胞胎"
         },
         {
           "title": "Cyprus: Island of Snakes, Cats, and Ophiolites",
@@ -97,10 +97,10 @@
           "title_zh": "塞浦路斯：蛇、猫和蛇绿岩之岛"
         },
         {
-          "title": "Trump declares 'American space superiority for all eternity' in election night proclamation",
+          "title": "2 astronauts will finish upgrading ISS solar arrays during spacewalk today: Watch it live",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/trump-declares-american-space-superiority-for-all-eternity-in-new-white-house-proclamation",
-          "title_zh": "特朗普在选举之夜宣言中宣布“美国永远拥有太空优势"
+          "url": "https://www.space.com/space-exploration/international-space-station/2-astronauts-will-finish-upgrading-iss-solar-arrays-during-spacewalk-today-watch-it-live",
+          "title_zh": "两名宇航员今天将在太空行走期间完成国际空间站太阳能电池阵列的升级：观看直播"
         },
         {
           "title": "NASA’s Neil Gehrels Swift Observatory to burn up this week after more than two decades in space",
