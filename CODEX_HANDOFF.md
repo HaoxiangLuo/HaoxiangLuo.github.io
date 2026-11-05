@@ -53,7 +53,7 @@
 主要页面：
 
 - `_pages/about.md`、`_pages/about-zh.md`：首页。
-- `_pages/publications.html`、`_pages/publications-zh.html`：著作和期刊论文。
+- `_includes/publications-en.html`、`_includes/publications-zh.html`：首页中的著作和期刊论文；旧论文页网址会跳转到对应语言的首页。
 - `_pages/year-archive.html`、`_pages/study-notes-zh.html`：研究方法、智能传播、全球传播三类札记。
 - `_pages/site-log.html`、`_pages/site-log-zh.html`：网站修改记录。
 - `_pages/daily-news.html`、`_pages/daily-news-zh.html`：按日期归档的新闻简讯。

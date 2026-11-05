@@ -5,6 +5,8 @@ author_profile: true
 author: LuoZH
 lang: zh
 translation_url: /
+redirect_from:
+  - /zh/publications/
 ---
 
 <section class="home-intro-panel">
@@ -20,13 +22,3 @@ translation_url: /
 </section>
 
 {% include daily-news-widget.html %}
-
-{% assign publication_page = site.pages | where: "permalink", "/zh/publications/" | first %}
-{% if publication_page %}
-<section class="home-publications" aria-labelledby="home-publications-title">
-  <div class="home-publications__heading"><h2 id="home-publications-title">论文发表</h2><a href="{{ base_path }}/zh/publications/">查看完整页面 ↗</a></div>
-  {% assign publication_content = publication_page.content | split: '<script src=' | first %}
-  {{ publication_content | markdownify }}
-</section>
-<script src="{{ base_path }}/assets/js/publications.js" defer></script>
-{% endif %}

@@ -93,6 +93,14 @@ layout: default
     {% endif %}
   </article>
 
+  {% if page.url == '/' or page.url == '/zh/' %}
+    <section class="home-publications" aria-labelledby="home-publications-title">
+      <div class="home-publications__heading"><h2 id="home-publications-title">{% if page.lang == 'zh' %}论文发表{% else %}Publications{% endif %}</h2></div>
+      {% if page.lang == 'zh' %}{% include publications-zh.html %}{% else %}{% include publications-en.html %}{% endif %}
+    </section>
+    <script src="{{ base_path }}/assets/js/publications.js" defer></script>
+  {% endif %}
+
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
