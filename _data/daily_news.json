@@ -1,14 +1,38 @@
 {
-  "updated_at": "2026-11-06T15:28:50+08:00",
+  "updated_at": "2026-11-06T20:49:19+08:00",
   "days": [
     {
       "date": "2026-11-06",
       "items": [
         {
-          "title": "Global tech stocks plunge as US midterms add to AI slowdown fears",
+          "title": "White House denies Hegseth and Rubio to leave jobs after Republican election losses",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "美国中期选举加剧了对人工智能放缓的担忧，全球科技股暴跌"
+          "url": "https://www.bbc.co.uk/news/articles/cqg7xxg4jdv5o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "白宫否认赫格斯和卢比奥在共和党选举失败后离职"
+        },
+        {
+          "title": "Judge halts construction of Trump's arch. And, Labor Department to release jobs report",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/06/g-s1-152213/up-first-newsletter-job-market-trump-arch-school-enrollment-harmeet-dhillon",
+          "title_zh": "法官叫停特朗普拱门的建设。并且，劳工部将发布就业报告"
+        },
+        {
+          "title": "Trump signs order to preserve Oval Office as national monument",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmy0eeg101djo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普签署命令阻止未来总统更换椭圆形办公室"
+        },
+        {
+          "title": "After cancer surgery, Pope Leo embarks on Latin America trip",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/06/nx-s1-6032454/pope-leo-latin-america-trip",
+          "title_zh": "癌症手术后，教皇利奥开始拉丁美洲之行"
+        },
+        {
+          "title": "Two dead after bus crashes in France, officials say",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "官员称法国巴士相撞事故造成两人死亡"
         },
         {
           "title": "Paraguay's president is impeached minutes after resigning following a bank collapse",
@@ -17,10 +41,10 @@
           "title_zh": "巴拉圭总统因银行倒闭辞职几分钟后被弹劾"
         },
         {
-          "title": "White House denies Hegseth and Rubio to leave jobs after Republican election losses",
+          "title": "Kenyan doomsday cult leader given life sentence for murdering 191 people",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqg7xxg4jdv5o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "白宫否认赫格斯和卢比奥在共和党选举失败后离职"
+          "url": "https://www.bbc.co.uk/news/articles/cm5yne5984l0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "肯尼亚末日邪教头目因谋杀191人被判无期徒刑"
         },
         {
           "title": "Russell Brand is convicted of rape, and judge says he'll get a prison term",
@@ -33,30 +57,6 @@
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cqn06j0y61k6o?at_medium=RSS&at_campaign=rss",
           "title_zh": "肺癌手术几周后，教皇开始了漫长的拉丁美洲之行"
-        },
-        {
-          "title": "What's next for Democrats after the midterms. And, a look at the outstanding races",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/05/g-s1-152046/up-first-newsletter-democrats-congress-control-house-senate-trump-reaction",
-          "title_zh": "中期选举后，民主党接下来会做什么。并且，看看精彩的比赛"
-        },
-        {
-          "title": "Trump signs order preventing future presidents from changing Oval Office",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmy0eeg101djo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普签署命令阻止未来总统更换椭圆形办公室"
-        },
-        {
-          "title": "Three ways Democrats could reshape U.S. foreign policy after the midterms",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/05/nx-s1-6028977/democrats-foreign-policy-iran-war-ukraine",
-          "title_zh": "中期选举后民主党重塑美国外交政策的三种方式"
-        },
-        {
-          "title": "California governor commutes sentences for state's 548 death row inmates",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqrkyyd2j8mvo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "加州州长为该州 548 名死囚减刑"
         }
       ],
       "space_items": [
@@ -67,10 +67,10 @@
           "title_zh": "APOD：2026 年 11 月 6 日——告别 Swift"
         },
         {
-          "title": "'We got it done!' Spacewalking astronauts finish installing next-gen ISS solar arrays",
+          "title": "Realistic star projections at home — this early Black Friday deal takes our favorite star projector to one of its cheapest-ever prices",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/international-space-station/we-got-it-done-spacewalking-astronauts-finish-installing-next-gen-iss-solar-arrays",
-          "title_zh": "我们完成了！”太空行走宇航员完成下一代国际空间站太阳能电池阵列的安装"
+          "url": "https://www.space.com/stargazing/skywatching-kit/realistic-star-projections-at-home-this-early-black-friday-deal-takes-our-favorite-star-projector-to-one-of-its-cheapest-ever-prices",
+          "title_zh": "在家中实现逼真的星空投影——黑色星期五的早期优惠让我们最喜欢的星空投影仪达到了有史以来最便宜的价格之一"
         },
         {
           "title": "Blue Origin reveals new kick stage, engines for its New Glenn rockets",
@@ -85,10 +85,10 @@
           "title_zh": "CesiumAstro 在 Janus Henderson 领投的 D 轮融资中获得 7.3 亿美元融资，估值超过 45 亿美元； Element-1 任务取得圆满成功后推出同步卫星星座"
         },
         {
-          "title": "Asteroids' Oddball Shapes Make Deflecting Them Challenging",
+          "title": "'Big Bang' Fix Puts Voyager Across the 'One Light-Day' Mark",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/asteroids-oddball-shapes-make-deflecting-them-challenging",
-          "title_zh": "小行星的奇怪形状使得使其偏转具有挑战性"
+          "url": "https://www.universetoday.com/articles/big-bang-fix-puts-voyager-across-the-one-light-day-mark",
+          "title_zh": "大爆炸”修复使航行者号跨越“一光日”大关"
         },
         {
           "title": "Taking a Gander at Utah’s Goosenecks",
@@ -97,10 +97,10 @@
           "title_zh": "看看犹他州的鹅颈管"
         },
         {
-          "title": "Andy Weir says his new sci-fi audio drama 'Exoplanet' is a way to 'revive the old art of radio plays' (interview)",
+          "title": "4-billion-year-old 'Rosetta Stone' found in Sahara Desert could unlock the secret history of water on Mars",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/andy-weir-says-his-sci-fi-audio-drama-exoplanet-is-a-way-to-revive-the-old-art-of-radio-plays-interview",
-          "title_zh": "安迪·威尔表示，他的新科幻音频剧“系外行星”是“复兴广播剧古老艺术”的一种方式（采访）"
+          "url": "https://www.space.com/astronomy/mars/4-billion-year-old-rosetta-stone-found-in-sahara-desert-could-unlock-the-secret-history-of-water-on-mars",
+          "title_zh": "在撒哈拉沙漠发现的40亿年前的“罗塞塔石碑”可以解开火星上水的秘密历史"
         },
         {
           "title": "As it happened: spacewalkers install space station’s eighth and final upgraded solar array",
