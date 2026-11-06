@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-06T20:49:19+08:00",
+  "updated_at": "2026-11-07T01:43:28+08:00",
   "days": [
+    {
+      "date": "2026-11-07",
+      "items": [
+        {
+          "title": "AI stocks climb after trillions wiped from market values",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "市值蒸发数万亿美元后，人工智能股票攀升"
+        },
+        {
+          "title": "European air traffic is targeted by new threats after a week of hoaxes",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/06/nx-s1-6032612/europe-flights-hoaxes",
+          "title_zh": "经过一周的恶作剧后，欧洲空中交通受到新威胁"
+        },
+        {
+          "title": "From a ship frozen into Arctic ice, a warning to world leaders: Trust the science",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168751",
+          "title_zh": "一艘被冻结在北极冰层中的船只向世界领导人发出警告：相信科学"
+        },
+        {
+          "title": "Four midterms takeaways for 2028 White House race",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "2028 年白宫竞选的四个中期要点"
+        },
+        {
+          "title": "The leader of a Kenyan doomsday cult is sentenced to 200 years in prison",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/06/nx-s1-6032593/kenya-cult-leader-paul-mackenzie-sentenced-murder",
+          "title_zh": "肯尼亚末日邪教领袖被判200年监禁"
+        },
+        {
+          "title": "Sudan’s suffering is plain for all to see say aid teams, as brutal war continues",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168753",
+          "title_zh": "援助队表示，苏丹的苦难是有目共睹的，残酷的战争仍在继续"
+        },
+        {
+          "title": "Two dead after bus crashes in France, officials say",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmly00l4p3lwo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "官员称法国巴士相撞事故造成两人死亡"
+        },
+        {
+          "title": "Ex-lawmaker gets 12.5 years in Macao's first national security case",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/06/g-s1-152217/ex-lawmaker-gets-12-5-years-in-macaos-first-national-security-case",
+          "title_zh": "澳门首例涉国家安全案 前立法会议员获刑12.5年"
+        },
+        {
+          "title": "‘No Escape’ for refugees on the frontlines of the climate crisis",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168752",
+          "title_zh": "处于气候危机前线的难民“无处可逃"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "M30’s Sparkling Stars",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/m30s-sparkling-stars/",
+          "title_zh": "M30的闪亮之星"
+        },
+        {
+          "title": "Giant exoplanet emerges from the dark when the James Webb Space Telescope turns out the starlight",
+          "source": "Space.com",
+          "url": "https://www.space.com/astronomy/exoplanets/giant-exoplanet-emerges-from-the-dark-when-the-james-webb-space-telescope-turns-out-the-starlight",
+          "title_zh": "当詹姆斯·韦伯太空望远镜发出星光时，巨大的系外行星从黑暗中出现"
+        },
+        {
+          "title": "Blue Origin reveals new kick stage, engines for its New Glenn rockets",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/05/blue-origin-reveals-new-kick-stage-engines-for-its-new-glenn-rockets/",
+          "title_zh": "蓝色起源展示了新格伦火箭的新推进级和发动机"
+        },
+        {
+          "title": "CesiumAstro Secures $730 Million in Janus Henderson-Led Series D at a Valuation Above $4.5 Billion; Unveils Synchronicity Satellite Constellation Following Fully Successful Element-1 Mission",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/cesiumastro-secures-730-million-in-janus-henderson-led-series-d-at-a-valuation-above-4-5-billion-unveils-synchronicity-satellite-constellation-following-fully-successful-element-1-mission/",
+          "title_zh": "CesiumAstro 在 Janus Henderson 领投的 D 轮融资中获得 7.3 亿美元融资，估值超过 45 亿美元； Element-1 任务取得圆满成功后推出同步卫星星座"
+        },
+        {
+          "title": "NASA's Twin Spacecraft Will Execute Powered Slingshot Maneuvers on Their Way to Mars",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/nasas-twin-spacecraft-will-execute-powered-slingshot-maneuvers-on-their-way-to-mars",
+          "title_zh": "美国宇航局的双宇宙飞船将在前往火星的途中执行动力弹弓机动"
+        },
+        {
+          "title": "Supercomputing Tech Demo Schedule",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/earth/supercomputing-tech-demo-schedule/",
+          "title_zh": "超级计算技术演示时间表"
+        },
+        {
+          "title": "Hera probe gets 1st good look at asteroid system clobbered by NASA's DART mission | Space photo of the day for Nov. 6, 2026",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/asteroid-comet-missions/hera-probe-gets-1st-good-luck-at-asteroid-system-clobbered-by-nasas-dart-mission-space-photo-of-the-day-for-nov-6-2026",
+          "title_zh": "赫拉探测器第一次清楚地看到被美国宇航局 DART 任务破坏的小行星系统2026 年 11 月 6 日当天的太空照片"
+        },
+        {
+          "title": "As it happened: spacewalkers install space station’s eighth and final upgraded solar array",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/05/as-it-happened-spacewalkers-install-space-stations-eighth-and-final-upgraded-solar-array/",
+          "title_zh": "事情发生了：太空行走者安装了空间站的第八个也是最后一个升级的太阳能电池阵列"
+        }
+      ]
+    },
     {
       "date": "2026-11-06",
       "items": [
