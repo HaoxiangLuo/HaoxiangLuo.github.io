@@ -1,13 +1,14 @@
 {
-  "updated_at": "2026-11-07T19:37:09+08:00",
+  "updated_at": "2026-11-08T00:39:34+08:00",
   "days": [
     {
-      "date": "2026-11-07",
+      "date": "2026-11-08",
       "items": [
         {
-          "title": "With Stephen Miller pick, Trump readies for a battle",
+          "title": "No clear winner after tight New Zealand general election",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/crp3gg2z171go?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "激烈的新西兰大选后没有明显的赢家"
         },
         {
           "title": "Israel's Arab-led parties in spotlight after inconclusive election",
@@ -18,13 +19,14 @@
         {
           "title": "Afghanistan faces deepening humanitarian crisis amid sweeping rights restrictions",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168758"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168758",
+          "title_zh": "阿富汗因全面的权利限制而面临日益加深的人道主义危机"
         },
         {
-          "title": "Paraguay's president impeached and under house arrest after bank collapse",
+          "title": "With Stephen Miller pick, Trump readies for a battle",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "巴拉圭总统圣地亚哥·佩纳被弹劾并被捕"
+          "url": "https://www.bbc.co.uk/news/articles/crp3gg2z171go?at_medium=RSS&at_campaign=rss",
+          "title_zh": "斯蒂芬·米勒选择特朗普，准备战斗"
         },
         {
           "title": "Pope Leo begins a 12-day, 3-country South America tour after his cancer surgery",
@@ -35,12 +37,14 @@
         {
           "title": "World News in Brief: Civilians killed in DR Congo, Ukrainians wrestle with return, Guterres calls out ‘normalisation’ of force",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168757"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168757",
+          "title_zh": "世界新闻简讯：刚果民主共和国平民被杀，乌克兰人努力回返，古特雷斯呼吁武力“正常化"
         },
         {
-          "title": "Pope in 'pretty good health' as he starts Latin America tour",
+          "title": "Paraguay's president impeached and under house arrest after bank collapse",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c60e0001ve9wo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "巴拉圭总统在银行倒闭后被弹劾并软禁"
         },
         {
           "title": "Health intel-sharing group warns industry in wake of cyberattack on French blood bank",
@@ -51,7 +55,8 @@
         {
           "title": "From a ship frozen into Arctic ice, a warning to world leaders: Trust the science",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168751"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168751",
+          "title_zh": "一艘被冻结在北极冰层中的船只向世界领导人发出警告：相信科学"
         }
       ],
       "space_items": [
@@ -62,9 +67,10 @@
           "title_zh": "APOD：2026 年 11 月 7 日 – De Gerlache-Kocher 地块"
         },
         {
-          "title": "'I think we will prevail': NASA chief Jared Isaacman on Artemis, China and the new moon race (exclusive)",
+          "title": "On this day in space! Nov. 7, 1992: NASA launches Mars Global Surveyor, its 1st Mars mission in 20 years at the time, to map the Red Planet like never before",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/i-think-we-will-prevail-nasa-chief-jared-isaacman-on-artemis-china-and-the-new-moon-race-exclusive"
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-7-2026",
+          "title_zh": "在太空的这一天！ 1992 年 11 月 7 日：NASA 发射火星全球勘测者号，这是其 20 年来的第一个火星任务，以前所未有的方式绘制这颗红色星球的地图"
         },
         {
           "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
@@ -81,7 +87,117 @@
         {
           "title": "Our Sun’s Undiscovered Stellar Nemesis Is Still Out There, Says Physicist",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/our-suns-undiscovered-stellar-nemesis-is-still-out-there-says-physicist"
+          "url": "https://www.universetoday.com/articles/our-suns-undiscovered-stellar-nemesis-is-still-out-there-says-physicist",
+          "title_zh": "物理学家说，太阳未被发现的恒星宿敌仍然存在"
+        },
+        {
+          "title": "M30’s Sparkling Stars",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/m30s-sparkling-stars/",
+          "title_zh": "M30的闪亮之星"
+        },
+        {
+          "title": "Send your name to Saturn's moon Titan with NASA's upcoming Dragonfly mission",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/send-your-name-to-saturns-moon-titan-with-nasas-upcoming-dragonfly-mission",
+          "title_zh": "通过 NASA 即将到来的蜻蜓任务将你的名字发送到土星的卫星泰坦"
+        },
+        {
+          "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/06/falcon-9-to-launch-from-california-on-classified-mission-for-u-s-space-force/",
+          "title_zh": "猎鹰 9 号从加利福尼亚州发射，执行美国太空军的机密任务"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "items": [
+        {
+          "title": "With Stephen Miller pick, Trump readies for a battle",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/crp3gg2z171go?at_medium=RSS&at_campaign=rss",
+          "title_zh": "斯蒂芬·米勒选择特朗普，准备战斗"
+        },
+        {
+          "title": "Israel's Arab-led parties in spotlight after inconclusive election",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/06/g-s1-152138/israel-election-palestinian-arab-parties",
+          "title_zh": "以色列阿拉伯领导的政党在选举无果后成为焦点"
+        },
+        {
+          "title": "Afghanistan faces deepening humanitarian crisis amid sweeping rights restrictions",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168758",
+          "title_zh": "阿富汗因全面的权利限制而面临日益加深的人道主义危机"
+        },
+        {
+          "title": "Paraguay's president impeached and under house arrest after bank collapse",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "巴拉圭总统圣地亚哥·佩纳被弹劾并被捕"
+        },
+        {
+          "title": "Pope Leo begins a 12-day, 3-country South America tour after his cancer surgery",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/06/nx-s1-6026702/pope-leo-begins-12-day-3-country-tour-after-cancer-surgery",
+          "title_zh": "教皇利奥在接受癌症手术后开始了为期 12 天、南美洲 3 个国家的访问"
+        },
+        {
+          "title": "World News in Brief: Civilians killed in DR Congo, Ukrainians wrestle with return, Guterres calls out ‘normalisation’ of force",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168757",
+          "title_zh": "世界新闻简讯：刚果民主共和国平民被杀，乌克兰人努力回返，古特雷斯呼吁武力“正常化"
+        },
+        {
+          "title": "Pope in 'pretty good health' as he starts Latin America tour",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c60e0001ve9wo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "教皇开始拉丁美洲之行时“健康状况良好"
+        },
+        {
+          "title": "Health intel-sharing group warns industry in wake of cyberattack on French blood bank",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/06/nx-s1-6032602/cyberattack-blood-bank-healthcare",
+          "title_zh": "法国血库遭受网络攻击后，健康情报共享组织向业界发出警告"
+        },
+        {
+          "title": "From a ship frozen into Arctic ice, a warning to world leaders: Trust the science",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168751",
+          "title_zh": "一艘被冻结在北极冰层中的船只向世界领导人发出警告：相信科学"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "APOD: 2026 November 7 – De Gerlache-Kocher Massif",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
+          "title_zh": "APOD：2026 年 11 月 7 日 – De Gerlache-Kocher 地块"
+        },
+        {
+          "title": "'I think we will prevail': NASA chief Jared Isaacman on Artemis, China and the new moon race (exclusive)",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/i-think-we-will-prevail-nasa-chief-jared-isaacman-on-artemis-china-and-the-new-moon-race-exclusive",
+          "title_zh": "我认为我们会获胜”：美国宇航局局长贾里德·艾萨克曼谈阿耳忒弥斯、中国和新月竞赛（独家）"
+        },
+        {
+          "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/07/ast-spacemobile-unveils-1-3-billion-engine-deal-with-firefly-aerospace-to-power-new-heavy-lift-rocket/",
+          "title_zh": "AST SpaceMobile 与 Firefly Aerospace 签署价值 13 亿美元的发动机协议，为新型重型火箭提供动力"
+        },
+        {
+          "title": "CesiumAstro Secures $730 Million in Janus Henderson-Led Series D at a Valuation Above $4.5 Billion; Unveils Synchronicity Satellite Constellation Following Fully Successful Element-1 Mission",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/cesiumastro-secures-730-million-in-janus-henderson-led-series-d-at-a-valuation-above-4-5-billion-unveils-synchronicity-satellite-constellation-following-fully-successful-element-1-mission/",
+          "title_zh": "CesiumAstro 在 Janus Henderson 领投的 D 轮融资中获得 7.3 亿美元融资，估值超过 45 亿美元； Element-1 任务取得圆满成功后推出同步卫星星座"
+        },
+        {
+          "title": "Our Sun’s Undiscovered Stellar Nemesis Is Still Out There, Says Physicist",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/our-suns-undiscovered-stellar-nemesis-is-still-out-there-says-physicist",
+          "title_zh": "物理学家说，太阳未被发现的恒星宿敌仍然存在"
         },
         {
           "title": "M30’s Sparkling Stars",
