@@ -21,5 +21,3 @@ redirect_from:
   <li>The Spread and Instrumentalization of Misinformation</li>
 </ul>
 </section>
-
-{% include daily-news-widget.html %}

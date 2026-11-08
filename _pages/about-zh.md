@@ -20,5 +20,3 @@ redirect_from:
   <li>虚假信息的扩散与工具化应用</li>
 </ul>
 </section>
-
-{% include daily-news-widget.html %}

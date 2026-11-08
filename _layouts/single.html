@@ -94,6 +94,7 @@ layout: default
   </article>
 
   {% if page.url == '/' or page.url == '/zh/' %}
+    {% include daily-news-widget.html %}
     <section class="home-publications" aria-labelledby="home-publications-title">
       <div class="home-publications__heading"><h2 id="home-publications-title">{% if page.lang == 'zh' %}论文发表{% else %}Publications{% endif %}</h2></div>
       {% if page.lang == 'zh' %}{% include publications-zh.html %}{% else %}{% include publications-en.html %}{% endif %}
