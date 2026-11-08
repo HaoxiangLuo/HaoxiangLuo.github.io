@@ -1,20 +1,33 @@
 {
-  "updated_at": "2026-11-08T00:39:34+08:00",
+  "updated_at": "2026-11-08T14:47:22+08:00",
   "days": [
     {
       "date": "2026-11-08",
       "items": [
         {
-          "title": "No clear winner after tight New Zealand general election",
+          "title": "What we know so far after Krakow gun attack",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "激烈的新西兰大选后没有明显的赢家"
+          "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Israel's Arab-led parties in spotlight after inconclusive election",
+          "title": "Israeli president invites Netanyahu's opposition leader to broker new government",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/06/g-s1-152138/israel-election-palestinian-arab-parties",
-          "title_zh": "以色列阿拉伯领导的政党在选举无果后成为焦点"
+          "url": "https://www.npr.org/2026/11/07/nx-s1-6032606/israeli-president-invites-netanyahus-opposition-leader-to-broker-new-government"
+        },
+        {
+          "title": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168759"
+        },
+        {
+          "title": "Israel's president tasks opposition leader Eisenkot with forming government",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "A correspondent finds Cuba's people struggling",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/07/nx-s1-6029398/a-correspondent-finds-cubas-people-struggling"
         },
         {
           "title": "Afghanistan faces deepening humanitarian crisis amid sweeping rights restrictions",
@@ -23,54 +36,33 @@
           "title_zh": "阿富汗因全面的权利限制而面临日益加深的人道主义危机"
         },
         {
-          "title": "With Stephen Miller pick, Trump readies for a battle",
+          "title": "No clear winner after tight New Zealand general election",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/crp3gg2z171go?at_medium=RSS&at_campaign=rss",
-          "title_zh": "斯蒂芬·米勒选择特朗普，准备战斗"
+          "url": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "激烈的新西兰大选后没有明显的赢家"
         },
         {
-          "title": "Pope Leo begins a 12-day, 3-country South America tour after his cancer surgery",
+          "title": "Israel's president taps opposition candidate, not Netanyahu, to form a government",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/06/nx-s1-6026702/pope-leo-begins-12-day-3-country-tour-after-cancer-surgery",
-          "title_zh": "教皇利奥在接受癌症手术后开始了为期 12 天、南美洲 3 个国家的访问"
+          "url": "https://www.npr.org/2026/11/07/g-s1-152536/netanyahu-israel-government-eisenkot-herzog"
         },
         {
           "title": "World News in Brief: Civilians killed in DR Congo, Ukrainians wrestle with return, Guterres calls out ‘normalisation’ of force",
           "source": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/11/1168757",
           "title_zh": "世界新闻简讯：刚果民主共和国平民被杀，乌克兰人努力回返，古特雷斯呼吁武力“正常化"
-        },
-        {
-          "title": "Paraguay's president impeached and under house arrest after bank collapse",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "巴拉圭总统在银行倒闭后被弹劾并软禁"
-        },
-        {
-          "title": "Health intel-sharing group warns industry in wake of cyberattack on French blood bank",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/06/nx-s1-6032602/cyberattack-blood-bank-healthcare",
-          "title_zh": "法国血库遭受网络攻击后，健康情报共享组织向业界发出警告"
-        },
-        {
-          "title": "From a ship frozen into Arctic ice, a warning to world leaders: Trust the science",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168751",
-          "title_zh": "一艘被冻结在北极冰层中的船只向世界领导人发出警告：相信科学"
         }
       ],
       "space_items": [
         {
-          "title": "APOD: 2026 November 7 – De Gerlache-Kocher Massif",
+          "title": "APOD: 2026 November 8 – Major Fireball Meteor",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
-          "title_zh": "APOD：2026 年 11 月 7 日 – De Gerlache-Kocher 地块"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/"
         },
         {
-          "title": "On this day in space! Nov. 7, 1992: NASA launches Mars Global Surveyor, its 1st Mars mission in 20 years at the time, to map the Red Planet like never before",
+          "title": "This Week In Space podcast: Episode 235 — Robots in Dark and Scary Places",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-7-2026",
-          "title_zh": "在太空的这一天！ 1992 年 11 月 7 日：NASA 发射火星全球勘测者号，这是其 20 年来的第一个火星任务，以前所未有的方式绘制这颗红色星球的地图"
+          "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-235-robots-in-dark-and-scary-places"
         },
         {
           "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
@@ -91,16 +83,15 @@
           "title_zh": "物理学家说，太阳未被发现的恒星宿敌仍然存在"
         },
         {
-          "title": "M30’s Sparkling Stars",
+          "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
           "source": "NASA",
-          "url": "https://www.nasa.gov/image-article/m30s-sparkling-stars/",
-          "title_zh": "M30的闪亮之星"
+          "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/"
         },
         {
-          "title": "Send your name to Saturn's moon Titan with NASA's upcoming Dragonfly mission",
+          "title": "On this day in space! Nov. 7, 1992: NASA launches Mars Global Surveyor, its 1st Mars mission in 20 years at the time, to map the Red Planet like never before",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/send-your-name-to-saturns-moon-titan-with-nasas-upcoming-dragonfly-mission",
-          "title_zh": "通过 NASA 即将到来的蜻蜓任务将你的名字发送到土星的卫星泰坦"
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-7-2026",
+          "title_zh": "在太空的这一天！ 1992 年 11 月 7 日：NASA 发射火星全球勘测者号，这是其 20 年来的第一个火星任务，以前所未有的方式绘制这颗红色星球的地图"
         },
         {
           "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
