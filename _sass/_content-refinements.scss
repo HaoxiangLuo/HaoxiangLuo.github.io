@@ -2960,3 +2960,73 @@ body.home-page #main > .home-publications .publication-board { grid-template-col
     grid-column: 1 / -1;
   }
 }
+
+/* Reference composition: calm masthead, paired hero, one-line brief, open work grid. */
+.site-brand { display: none; }
+@media (min-width: 1024px) {
+  .masthead__inner-wrap { display: flex; align-items: center; gap: 1.4rem; max-width: 1500px; padding: 0.35rem 1.5rem; }
+  .site-brand { display: flex; align-items: center; flex: 0 0 auto; gap: 1rem; color: #111827; white-space: nowrap; text-decoration: none; }
+  .site-brand strong { font-size: 1.1rem; letter-spacing: -0.035em; }
+  .site-brand span { padding-left: 1rem; border-left: 1px solid #c9c9ce; color: #55565d; font-size: 0.74rem; }
+  .masthead__menu { flex: 1; min-width: 0; }
+  .greedy-nav .visible-links { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+  .greedy-nav .visible-links > li { flex: 0 0 auto; }
+  .greedy-nav .visible-links > li a { padding: 0.48rem 0.55rem; font-size: 0.76rem; }
+  .greedy-nav .visible-links > li.selected > a { border-radius: 9px; color: #0066cc; background: #e2effd; }
+
+  body.home-page #main { width: calc(100% - 3rem); max-width: 1500px; grid-template-columns: minmax(330px, 30%) minmax(0, 1fr); gap: 1rem; padding: 2rem 0 3rem; }
+  body.home-page #main > .sidebar.sticky,
+  body.home-page #main > .page { min-height: 260px; height: 260px; }
+  body.home-page #main > .sidebar.sticky { position: relative; top: auto; overflow: hidden; padding: 1.5rem; border-radius: 20px; background: linear-gradient(135deg, #353b43, #30353b 72%, #222831); }
+  body.home-page #main > .sidebar.sticky::after { position: absolute; right: 0; bottom: 0; left: 0; height: 65px; background: url('/images/publication-snow-mountains.jpg') 80% 60% / 600% auto no-repeat; opacity: .12; content: ''; pointer-events: none; }
+  body.home-page #main > .sidebar > div[itemscope] { grid-template-columns: 106px minmax(0, 1fr); gap: 0.8rem 1rem; }
+  body.home-page #main > .sidebar .author__avatar,
+  body.home-page #main > .sidebar .author__avatar img { width: 106px; max-width: 106px; }
+  body.home-page #main > .sidebar .author__avatar img { height: 123px; border-radius: 14px; }
+  body.home-page #main > .sidebar .author__name { color: #fff; font-size: 1.3rem; line-height: 1.1; }
+  body.home-page #main > .sidebar .author__bio { color: #d6d9dd; font-size: 0.82rem; }
+  body.home-page #main > .sidebar .author__urls-wrapper { margin-top: 0.65rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,.22); }
+  body.home-page #main > .sidebar .author__urls { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0.1rem 0.6rem; }
+  body.home-page #main > .sidebar .author__urls li { min-width: 0; font-size: 0.7rem; }
+  body.home-page #main > .page .home-intro-panel { position: relative; display: flex; flex-direction: column; justify-content: center; height: 260px; overflow: hidden; padding: 1.6rem 2rem; border-radius: 20px; background: linear-gradient(110deg,#fff 68%,#edf4f9 100%); }
+  body.home-page #main > .page .home-intro-panel::after { position: absolute; right: 0; bottom: 0; width: 42%; height: 120px; background: url('/images/publication-snow-mountains.jpg') 100% 60% / 600% auto no-repeat; opacity: .16; content: ''; pointer-events: none; }
+  body.home-page #main > .page .home-intro-panel > * { position: relative; z-index: 1; }
+  body.home-page #main > .page .home-intro-panel h1 { margin: 0 0 0.9rem; font-size: 1.8rem; letter-spacing: -0.04em; }
+  body.home-page #main > .page .home-intro-panel h1::after { display: block; width: 44px; height: 3px; margin-top: 0.45rem; border-radius: 3px; background: #0071e3; content: ''; }
+  body.home-page #main > .page .home-intro-panel p { margin: 0 0 1.3rem; font-size: 0.87rem; line-height: 1.45; }
+  body.home-page #main > .page .home-intro-panel h2 { display: inline; margin: 0 0 0.55rem; padding: 0; border: 0; font-size: 0.8rem; }
+  body.home-page #main > .page .home-intro-panel ul { gap: 0.3rem; }
+  body.home-page #main > .page .home-intro-panel li { font-size: 0.72rem; background: #e9f2fb; }
+
+  body.home-page #main > .news-window { display: grid; grid-template-columns: 260px minmax(0,1fr); align-items: center; gap: 0 1rem; min-height: 80px; padding: 0.7rem 1.25rem; border: 1px solid #d5d8dd; border-radius: 16px; background: rgba(255,255,255,.75); }
+  body.home-page #main > .news-window .news-window__header { grid-column: 1; grid-row: 1; margin: 0; }
+  body.home-page #main > .news-window .news-window__header h2 { font-size: 1rem; }
+  body.home-page #main > .news-window .news-window__header > a { display: none; }
+  body.home-page #main > .news-window .news-window__list { grid-column: 2; grid-row: 1; display: block; margin: 0; }
+  body.home-page #main > .news-window .news-window__list li { margin: 0.15rem 0; }
+  body.home-page #main > .news-window .news-window__list a,
+  body.home-page #main > .news-window .news-window__list li:first-child a { display: block; padding: 0; background: transparent; font-size: 0.73rem; }
+  body.home-page #main > .news-window .news-window__list a::before { color: #0071e3; content: '•  '; }
+  body.home-page #main > .news-window .news-window__list small { margin-left: 0.55rem; }
+  body.home-page #main > .news-window .news-window__footer { grid-column: 1; grid-row: 2; margin: 0; padding: 0; border: 0; font-size: 0.64rem; }
+
+  body.home-page #main > .home-publications { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 0.5rem 1rem; padding: 0.6rem 0 0; border: 0; background: transparent; box-shadow: none; }
+  body.home-page .home-publications__heading { grid-column: 1; grid-row: 1; }
+  body.home-page .home-publications__heading h2 { font-size: 1.9rem; }
+  body.home-page .publication-intro { display: none; }
+  body.home-page .publication-toolbar { grid-column: 2; grid-row: 1; align-self: center; margin: 0; }
+  body.home-page #main > .home-publications .publication-board { grid-column: 1 / -1; grid-template-columns: minmax(0,1fr) minmax(0,1.8fr); gap: 1rem; }
+  body.home-page .publication-section-heading { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+  body.home-page .publication-card { border-radius: 16px; }
+  body.home-page .publication-card--featured { display: grid; grid-template-columns: 42% minmax(0,1fr); gap: 0.8rem; height: 100%; min-height: 370px; padding: 0.9rem; }
+  body.home-page .publication-card--featured .publication-cover { width: 100%; height: 100%; min-height: 0; border-radius: 12px; }
+  body.home-page .publication-card--featured .publication-card__body { padding: 0.4rem 0; }
+  body.home-page .publication-card-list { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0.8rem; }
+  body.home-page .publication-column--articles .publication-card { min-height: 174px; }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .site-brand span { display: none; }
+  body.home-page #main { grid-template-columns: minmax(280px,30%) minmax(0,1fr); }
+  body.home-page #main > .home-publications .publication-board { grid-template-columns: minmax(0,1fr); }
+}
