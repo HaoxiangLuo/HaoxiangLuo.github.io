@@ -2925,3 +2925,33 @@ body.home-page #main > .home-publications .publication-board { grid-template-col
 @media (max-width: 1050px) {
   body.home-page #main > .home-publications .publication-board { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Keep the profile and introduction in one row; news begins below both. */
+@media (min-width: 1024px) {
+  body.home-page #main {
+    grid-template-rows: auto auto auto;
+    align-items: start;
+  }
+  body.home-page #main > .sidebar.sticky,
+  body.home-page #main > .page {
+    grid-row: 1;
+    height: auto;
+    min-height: 0;
+    align-self: start;
+    margin: 0;
+  }
+  body.home-page #main > .sidebar.sticky {
+    grid-column: 1;
+    position: static;
+  }
+  body.home-page #main > .page { grid-column: 2; }
+  body.home-page #main > .news-window {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    clear: both;
+  }
+  body.home-page #main > .home-publications {
+    grid-row: 3;
+    grid-column: 1 / -1;
+  }
+}
