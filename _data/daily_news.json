@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-08T19:49:18+08:00",
+  "updated_at": "2026-11-09T00:47:59+08:00",
   "days": [
+    {
+      "date": "2026-11-09",
+      "items": [
+        {
+          "title": "What we know so far after Krakow gun attack",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "克拉科夫枪击事件后我们目前所知道的"
+        },
+        {
+          "title": "After a successful trip to Uruguay, Pope Leo heads to Argentina",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/08/nx-s1-6033992/after-a-successful-trip-to-uruguay-pope-leo-heads-to-argentina",
+          "title_zh": "成功访问乌拉圭后，教皇利奥前往阿根廷"
+        },
+        {
+          "title": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168759",
+          "title_zh": "我第一次拥有自己的椅子”：加沙兄弟姐妹找到新的自由"
+        },
+        {
+          "title": "Houthis say at least 33 killed in Saudi air strike",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "胡塞武装称沙特空袭造成至少33人死亡"
+        },
+        {
+          "title": "Russell Brand to learn sentence after being found guilty of rape and sexual assault",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/08/nx-s1-6033957/russell-brand-learn-sentence-found-guilty-rape-sexual-assault",
+          "title_zh": "拉塞尔·布兰德 (Russell Brand) 因强奸和性侵犯罪名成立后将接受判刑"
+        },
+        {
+          "title": "Afghanistan faces deepening humanitarian crisis amid sweeping rights restrictions",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168758",
+          "title_zh": "阿富汗因全面的权利限制而面临日益加深的人道主义危机"
+        },
+        {
+          "title": "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cxr5yyg2nj9eo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "平淡”、“疲倦”、“愤世嫉俗”：异常悲观的新西兰人带来了新西兰多年来最紧张的选举"
+        },
+        {
+          "title": "A desert stirs to life: Chile's Atacama erupts in its biggest floral display in decades",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/08/nx-s1-6023812/chile-desert-el-nino",
+          "title_zh": "沙漠生机勃勃：智利阿塔卡马爆发数十年来最大规模的花卉展览"
+        },
+        {
+          "title": "World News in Brief: Civilians killed in DR Congo, Ukrainians wrestle with return, Guterres calls out ‘normalisation’ of force",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168757",
+          "title_zh": "世界新闻简讯：刚果民主共和国平民被杀，乌克兰人努力回返，古特雷斯呼吁武力“正常化"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
+          "title_zh": "NASA 宣布向学生提供 100 万美元用于月球基地挑战赛"
+        },
+        {
+          "title": "Legendary sci-fi magazine 'Starlog' returns as a yearly release, just in time for its 50th anniversary",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/legendary-sci-fi-magazine-starlog-returns-as-a-yearly-release-just-in-time-for-its-50th-anniversary",
+          "title_zh": "传奇科幻杂志《Starlog》每年一期回归，恰逢创刊 50 周年"
+        },
+        {
+          "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/07/ast-spacemobile-unveils-1-3-billion-engine-deal-with-firefly-aerospace-to-power-new-heavy-lift-rocket/",
+          "title_zh": "AST SpaceMobile 与 Firefly Aerospace 签署价值 13 亿美元的发动机协议，为新型重型火箭提供动力"
+        },
+        {
+          "title": "CesiumAstro Secures $730 Million in Janus Henderson-Led Series D at a Valuation Above $4.5 Billion; Unveils Synchronicity Satellite Constellation Following Fully Successful Element-1 Mission",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/cesiumastro-secures-730-million-in-janus-henderson-led-series-d-at-a-valuation-above-4-5-billion-unveils-synchronicity-satellite-constellation-following-fully-successful-element-1-mission/",
+          "title_zh": "CesiumAstro 在 Janus Henderson 领投的 D 轮融资中获得 7.3 亿美元融资，估值超过 45 亿美元； Element-1 任务取得圆满成功后推出同步卫星星座"
+        },
+        {
+          "title": "Our Sun’s Undiscovered Stellar Nemesis Is Still Out There, Says Physicist",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/our-suns-undiscovered-stellar-nemesis-is-still-out-there-says-physicist",
+          "title_zh": "物理学家说，太阳未被发现的恒星宿敌仍然存在"
+        },
+        {
+          "title": "APOD: 2026 November 8 – Major Fireball Meteor",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
+          "title_zh": "APOD：2026 年 11 月 8 日 – 大型火球流星"
+        },
+        {
+          "title": "On this day in space! Nov. 8, 2005: Europe launches Venus Express, its first mission to Venus",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-8-2026",
+          "title_zh": "在太空的这一天！ 2005 年 11 月 8 日：欧洲发射金星快车，这是其首次前往金星的任务"
+        },
+        {
+          "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/06/falcon-9-to-launch-from-california-on-classified-mission-for-u-s-space-force/",
+          "title_zh": "猎鹰 9 号从加利福尼亚州发射，执行美国太空军的机密任务"
+        }
+      ]
+    },
     {
       "date": "2026-11-08",
       "items": [
