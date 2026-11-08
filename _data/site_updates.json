@@ -15,6 +15,20 @@
   },
   {
     "date": "2026-11-08",
+    "title_zh": "调整了导航",
+    "title_en": "Refined navigation",
+    "message": "Refine homepage layout from approved preview",
+    "story_zh": "对导航的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
+    "story_en": "Changed the script and interaction logic of navigation so expanding and filtering the page works reliably.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "Refine homepage layout from approved preview",
+    "details_zh": "调整页面组件与内容结构。",
+    "details_en": "Adjusted page components and content structure.",
+    "sha": "4644d0b",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/4644d0b955bb6a664a8b70b825d098d34ab1e4e4"
+  },
+  {
+    "date": "2026-11-08",
     "title_zh": "调整了界面样式",
     "title_en": "Refined interface styling",
     "message": "Align homepage profile and intro above news",
