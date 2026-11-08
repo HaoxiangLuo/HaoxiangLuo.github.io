@@ -2929,6 +2929,7 @@ body.home-page #main > .home-publications .publication-board { grid-template-col
 /* Keep the profile and introduction in one row; news begins below both. */
 @media (min-width: 1024px) {
   body.home-page #main {
+    display: grid !important;
     grid-template-rows: auto auto auto;
     align-items: start;
   }
@@ -2939,6 +2940,10 @@ body.home-page #main > .home-publications .publication-board { grid-template-col
     min-height: 0;
     align-self: start;
     margin: 0;
+    float: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box;
   }
   body.home-page #main > .sidebar.sticky {
     grid-column: 1;
