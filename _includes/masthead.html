@@ -1,6 +1,7 @@
 {% include base_path %}
 <div class="masthead">
   <div class="masthead__inner-wrap">
+    <a class="site-brand" href="{{ base_path }}{% if page.lang == 'zh' %}/zh/{% else %}/{% endif %}" aria-label="{% if page.lang == 'zh' %}返回首页{% else %}Home{% endif %}"><strong>{% if page.lang == 'zh' %}罗昊翔{% else %}Haoxiang Luo{% endif %}</strong><span>{% if page.lang == 'zh' %}个人学术网站{% else %}Academic Website{% endif %}</span></a>
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><span class="navicon"></span></button>
