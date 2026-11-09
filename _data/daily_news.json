@@ -1,70 +1,60 @@
 {
-  "updated_at": "2026-11-09T00:47:59+08:00",
+  "updated_at": "2026-11-09T15:20:44+08:00",
   "days": [
     {
       "date": "2026-11-09",
       "items": [
         {
-          "title": "What we know so far after Krakow gun attack",
+          "title": "Krakow shooting suspect has died in hospital, police say",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "克拉科夫枪击事件后我们目前所知道的"
+          "url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "After a successful trip to Uruguay, Pope Leo heads to Argentina",
+          "title": "How a bank collapse left millions in limbo and toppled Paraguay's president",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/08/nx-s1-6033992/after-a-successful-trip-to-uruguay-pope-leo-heads-to-argentina",
-          "title_zh": "成功访问乌拉圭后，教皇利奥前往阿根廷"
+          "url": "https://www.npr.org/2026/11/09/nx-s1-6034066/paraguay-president-pena-ueno"
         },
         {
-          "title": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168759",
-          "title_zh": "我第一次拥有自己的椅子”：加沙兄弟姐妹找到新的自由"
-        },
-        {
-          "title": "Houthis say at least 33 killed in Saudi air strike",
+          "title": "Inside the French drug gangs recruiting children to kill",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "胡塞武装称沙特空袭造成至少33人死亡"
+          "url": "https://www.bbc.co.uk/news/articles/cq62y01r2313o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Russell Brand to learn sentence after being found guilty of rape and sexual assault",
+          "title": "The world's largest telecoms firm is on trial and the outcome has global implications",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/08/nx-s1-6033957/russell-brand-learn-sentence-found-guilty-rape-sexual-assault",
-          "title_zh": "拉塞尔·布兰德 (Russell Brand) 因强奸和性侵犯罪名成立后将接受判刑"
+          "url": "https://www.npr.org/2026/11/08/nx-s1-6030670/the-worlds-largest-telecoms-firm-is-on-trial-and-the-outcome-has-global-implications"
         },
         {
-          "title": "Afghanistan faces deepening humanitarian crisis amid sweeping rights restrictions",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168758",
-          "title_zh": "阿富汗因全面的权利限制而面临日益加深的人道主义危机"
-        },
-        {
-          "title": "'Flat', 'tired', 'cynical': Unusually gloomy Kiwis deliver New Zealand's tightest election in years",
+          "title": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cxr5yyg2nj9eo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "平淡”、“疲倦”、“愤世嫉俗”：异常悲观的新西兰人带来了新西兰多年来最紧张的选举"
+          "url": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "A desert stirs to life: Chile's Atacama erupts in its biggest floral display in decades",
+          "title": "Trying to find true owners, Paris' Musee D'Orsay exhibits art looted by Nazis",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/08/nx-s1-6023812/chile-desert-el-nino",
-          "title_zh": "沙漠生机勃勃：智利阿塔卡马爆发数十年来最大规模的花卉展览"
+          "url": "https://www.npr.org/2026/11/08/nx-s1-5928034/trying-to-find-true-owners-paris-musee-dorsay-exhibits-art-looted-by-nazis"
         },
         {
-          "title": "World News in Brief: Civilians killed in DR Congo, Ukrainians wrestle with return, Guterres calls out ‘normalisation’ of force",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168757",
-          "title_zh": "世界新闻简讯：刚果民主共和国平民被杀，乌克兰人努力回返，古特雷斯呼吁武力“正常化"
+          "title": "Seven dead and more than 100 injured after trains collide in Egypt",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Europe to join U.S.-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/08/nx-s1-6034014/europe-join-us-brokered-ukraine-talks-abu-dhabi-russia"
+        },
+        {
+          "title": "Pope delivers veiled rebuke of Milei's austerity measures",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckj0l082jqzvo?at_medium=RSS&at_campaign=rss"
         }
       ],
       "space_items": [
         {
-          "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+          "title": "APOD: 2026 November 9 – Rigel and the Witch Head Nebula",
           "source": "NASA",
-          "url": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
-          "title_zh": "NASA 宣布向学生提供 100 万美元用于月球基地挑战赛"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-9-rigel-and-the-witch-head-nebula/"
         },
         {
           "title": "Legendary sci-fi magazine 'Starlog' returns as a yearly release, just in time for its 50th anniversary",
@@ -91,10 +81,9 @@
           "title_zh": "物理学家说，太阳未被发现的恒星宿敌仍然存在"
         },
         {
-          "title": "APOD: 2026 November 8 – Major Fireball Meteor",
+          "title": "Ozone Hole Reaches Its 2026 Maximum",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
-          "title_zh": "APOD：2026 年 11 月 8 日 – 大型火球流星"
+          "url": "https://science.nasa.gov/earth/earth-observatory/ozone-hole-reaches-its-2026-maximum/"
         },
         {
           "title": "On this day in space! Nov. 8, 2005: Europe launches Venus Express, its first mission to Venus",
