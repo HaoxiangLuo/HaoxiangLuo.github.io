@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T15:20:44+08:00",
+  "updated_at": "2026-11-09T21:44:07+08:00",
   "days": [
     {
       "date": "2026-11-09",
@@ -7,60 +7,70 @@
         {
           "title": "Krakow shooting suspect has died in hospital, police say",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c6y434dw8319o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "警方称克拉科夫枪击案嫌疑人已在医院死亡"
         },
         {
-          "title": "How a bank collapse left millions in limbo and toppled Paraguay's president",
+          "title": "Congress is back after GOP's midterm defeat. And, Trump appoints new chief of staff",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/09/nx-s1-6034066/paraguay-president-pena-ueno"
+          "url": "https://www.npr.org/2026/11/09/g-s1-152627/up-first-newsletter-stephen-miller-trump-congress-nvidia-cop31",
+          "title_zh": "共和党中期失败后，国会又回来了。而且，特朗普任命了新的幕僚长"
+        },
+        {
+          "title": "‘Exceptional’ extreme temperatures to continue into next year, UN reports",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168760",
+          "title_zh": "联合国报告称，“异常”的极端气温将持续到明年"
         },
         {
           "title": "Inside the French drug gangs recruiting children to kill",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cq62y01r2313o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cq62y01r2313o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法国贩毒团伙招募儿童杀人"
         },
         {
-          "title": "The world's largest telecoms firm is on trial and the outcome has global implications",
+          "title": "Why a South Korean city is turning to a U.S. college to outsmart AI?",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/08/nx-s1-6030670/the-worlds-largest-telecoms-firm-is-on-trial-and-the-outcome-has-global-implications"
+          "url": "https://www.npr.org/2026/11/09/g-s1-151519/why-a-south-korean-city-is-turning-to-a-u-s-college-to-outsmart-ai",
+          "title_zh": "为什么韩国城市转向美国大学来智胜人工智能？"
         },
         {
-          "title": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
+          "title": "Beyond the broken glass: The human cost of the 1938 November Pogrom",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168756",
+          "title_zh": "碎玻璃之外：1938 年 11 月大屠杀造成的人员伤亡"
+        },
+        {
+          "title": "Trump says he was 'kidding' about Dana White press secretary offer",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/ck0j0j87959eo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普称他对达纳怀特新闻秘书的提议是“开玩笑"
         },
         {
-          "title": "Trying to find true owners, Paris' Musee D'Orsay exhibits art looted by Nazis",
+          "title": "How a bank collapse left millions in limbo and toppled Paraguay's president",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/08/nx-s1-5928034/trying-to-find-true-owners-paris-musee-dorsay-exhibits-art-looted-by-nazis"
+          "url": "https://www.npr.org/2026/11/09/nx-s1-6034066/paraguay-president-pena-ueno",
+          "title_zh": "银行倒闭如何让数百万人陷入困境并推翻巴拉圭总统"
         },
         {
-          "title": "Seven dead and more than 100 injured after trains collide in Egypt",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Europe to join U.S.-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/08/nx-s1-6034014/europe-join-us-brokered-ukraine-talks-abu-dhabi-russia"
-        },
-        {
-          "title": "Pope delivers veiled rebuke of Milei's austerity measures",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ckj0l082jqzvo?at_medium=RSS&at_campaign=rss"
+          "title": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168759",
+          "title_zh": "我第一次拥有自己的椅子”：加沙兄弟姐妹找到新的自由"
         }
       ],
       "space_items": [
         {
-          "title": "APOD: 2026 November 9 – Rigel and the Witch Head Nebula",
+          "title": "CHAPEA Mission 2 Crew Reflects After 378 Days on Simulated Mars",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-november-9-rigel-and-the-witch-head-nebula/"
+          "url": "https://www.nasa.gov/centers-and-facilities/johnson/chapea-mission-2-crew-reflects-after-378-days-on-simulated-mars/",
+          "title_zh": "CHAPEA Mission 2 船员在模拟火星上 378 天后的反思"
         },
         {
-          "title": "Legendary sci-fi magazine 'Starlog' returns as a yearly release, just in time for its 50th anniversary",
+          "title": "NASA chief Jared Isaacman skydives into space agency's MAX POWER air show — 'Going into this job, I I knew we had to do something like this.'",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/legendary-sci-fi-magazine-starlog-returns-as-a-yearly-release-just-in-time-for-its-50th-anniversary",
-          "title_zh": "传奇科幻杂志《Starlog》每年一期回归，恰逢创刊 50 周年"
+          "url": "https://www.space.com/space-exploration/nasa-chief-jared-isaacman-skydives-into-space-agencys-max-power-air-show-going-into-this-job-i-i-knew-we-had-to-do-something-like-this",
+          "title_zh": "美国宇航局局长贾里德·艾萨克曼 (Jared Isaacman) 跳伞参加航天局的 MAX POWER 飞行表演 - “在从事这项工作时，我知道我们必须做这样的事情。"
         },
         {
           "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
@@ -75,21 +85,22 @@
           "title_zh": "CesiumAstro 在 Janus Henderson 领投的 D 轮融资中获得 7.3 亿美元融资，估值超过 45 亿美元； Element-1 任务取得圆满成功后推出同步卫星星座"
         },
         {
-          "title": "Our Sun’s Undiscovered Stellar Nemesis Is Still Out There, Says Physicist",
+          "title": "Nearby Dwarf Galaxies Show Surprising Lack Of Oxygen, Says Paper",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/our-suns-undiscovered-stellar-nemesis-is-still-out-there-says-physicist",
-          "title_zh": "物理学家说，太阳未被发现的恒星宿敌仍然存在"
+          "url": "https://www.universetoday.com/articles/nearby-dwarf-galaxies-show-surprising-lack-of-oxygen-says-paper",
+          "title_zh": "论文称，附近的矮星系显示出令人惊讶的缺乏氧气"
         },
         {
-          "title": "Ozone Hole Reaches Its 2026 Maximum",
+          "title": "APOD: 2026 November 9 – Rigel and the Witch Head Nebula",
           "source": "NASA",
-          "url": "https://science.nasa.gov/earth/earth-observatory/ozone-hole-reaches-its-2026-maximum/"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-9-rigel-and-the-witch-head-nebula/",
+          "title_zh": "APOD：2026 年 11 月 9 日——参宿七和女巫头星云"
         },
         {
-          "title": "On this day in space! Nov. 8, 2005: Europe launches Venus Express, its first mission to Venus",
+          "title": "NASA unveils $10 billion in moon base contracts, new lunar missions and the 'PROMISE' of a nuclear-powered rover",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-8-2026",
-          "title_zh": "在太空的这一天！ 2005 年 11 月 8 日：欧洲发射金星快车，这是其首次前往金星的任务"
+          "url": "https://www.space.com/space-exploration/artemis/nasa-unveils-usd10-billion-in-moon-base-contracts-new-lunar-missions-and-the-promise-of-a-nuclear-powered-rover",
+          "title_zh": "NASA 公布价值 100 亿美元的月球基地合同、新的月球任务和核动力漫游车的“承诺"
         },
         {
           "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
