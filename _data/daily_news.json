@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-09T21:44:07+08:00",
+  "updated_at": "2026-11-10T05:08:48+08:00",
   "days": [
+    {
+      "date": "2026-11-10",
+      "items": [
+        {
+          "title": "France accuses Iran of supermarket fridge hacking",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法国指责伊朗超市冰箱遭黑客攻击"
+        },
+        {
+          "title": "Thick smog shrouds New Delhi after Diwali firecrackers add to seasonal pollution",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/09/g-s1-152634/thick-smog-shrouds-new-delhi-after-diwali-firecrackers-add-to-seasonal-pollution",
+          "title_zh": "排灯节鞭炮加剧季节性污染后，浓烟笼罩新德里"
+        },
+        {
+          "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168763",
+          "title_zh": "COP31在安塔利亚开幕：气候承诺最终能否兑现成果？"
+        },
+        {
+          "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "英伟达股价因黄与涉嫌中国间谍的恋情调查而暴跌"
+        },
+        {
+          "title": "British comedian Russell Brand sentenced to over 10 years for rape and sexual assault",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/09/nx-s1-6034335/british-comedian-russell-brand-sentenced",
+          "title_zh": "英国喜剧演员拉塞尔·布兰德因强奸和性侵犯被判十年以上徒刑"
+        },
+        {
+          "title": "Families who fled Ethiopia for Kenya’s Moyale need food, water and shelter",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168762",
+          "title_zh": "逃离埃塞俄比亚前往肯尼亚莫亚莱的家庭需要食物、水和住所"
+        },
+        {
+          "title": "Trump questions midterm elections integrity after previously accepting results",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普在接受结果后质疑中期选举的公正性"
+        },
+        {
+          "title": "Congress is back after GOP's midterm defeat. And, Trump appoints new chief of staff",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/09/g-s1-152627/up-first-newsletter-stephen-miller-trump-congress-nvidia-cop31",
+          "title_zh": "共和党中期失败后，国会又回来了。而且，特朗普任命了新的幕僚长"
+        },
+        {
+          "title": "Security Council LIVE: Strikes on Ukraine’s power grid, as peace talks loom",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168761",
+          "title_zh": "安理会直播：和平谈判迫在眉睫，乌克兰电网遭到袭击"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "La NASA busca a la próxima generación de astronautas",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/news-release/la-nasa-busca-a-la-proxima-generacion-de-astronautas/",
+          "title_zh": "美国宇航局 (NASA) 与宇航员一代的距离"
+        },
+        {
+          "title": "Are the James Webb Space Telescope's mysterious Little Red Dots actually tiny black holes left over from the Big Bang era?",
+          "source": "Space.com",
+          "url": "https://www.space.com/astronomy/black-holes/are-the-james-webb-space-telescopes-mysterious-little-red-dots-actually-tiny-black-holes-left-over-from-the-big-bang-era",
+          "title_zh": "詹姆斯韦伯太空望远镜神秘的小红点实际上是大爆炸时代留下的微小黑洞吗？"
+        },
+        {
+          "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/07/ast-spacemobile-unveils-1-3-billion-engine-deal-with-firefly-aerospace-to-power-new-heavy-lift-rocket/",
+          "title_zh": "AST SpaceMobile 与 Firefly Aerospace 签署价值 13 亿美元的发动机协议，为新型重型火箭提供动力"
+        },
+        {
+          "title": "CCIA Report Highlights Satellite Connectivity’s Potential to Expand Internet Access and Drive Economic Growth",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/ccia-report-highlights-satellite-connectivitys-potential-to-expand-internet-access-and-drive-economic-growth/",
+          "title_zh": "CCIA 报告强调了卫星连接扩大互联网接入和推动经济增长的潜力"
+        },
+        {
+          "title": "A Perseverance Experiment Could Help Astronauts Prepare for Dust Storms on Mars",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/a-perseverance-experiment-could-help-astronauts-prepare-for-dust-storms-on-mars",
+          "title_zh": "毅力实验可以帮助宇航员为火星上的沙尘暴做好准备"
+        },
+        {
+          "title": "NASA’s Chandra Finds Source of Star’s Mysterious Outbursts",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/missions/chandra/nasas-chandra-finds-source-of-stars-mysterious-outbursts/",
+          "title_zh": "美国宇航局钱德拉发现恒星神秘爆发的来源"
+        },
+        {
+          "title": "NYT bestseller ‘Robopocalypse’ is getting a TV series with Oscar winners Ron Howard and Akiva Goldsman at the helm",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-movies-shows/nyt-bestseller-robopocalypse-is-getting-a-tv-series-with-oscar-winners-ron-howard-and-akiva-goldsman-at-the-helm",
+          "title_zh": "《纽约时报》畅销书《机器人末日》将拍摄一部由奥斯卡奖得主朗·霍华德和阿齐瓦·高斯曼执导的电视剧"
+        },
+        {
+          "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/06/falcon-9-to-launch-from-california-on-classified-mission-for-u-s-space-force/",
+          "title_zh": "猎鹰 9 号从加利福尼亚州发射，执行美国太空军的机密任务"
+        }
+      ]
+    },
     {
       "date": "2026-11-09",
       "items": [
