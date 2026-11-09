@@ -1,6 +1,156 @@
 {
-  "updated_at": "2026-11-02T15:46:28+08:00",
+  "updated_at": "2026-11-09T16:08:14+08:00",
   "items": [
+    {
+      "id": "doi:10.1080/1369118x.2026.2752106",
+      "title": "‘Like going out at night without pepper spray’: responses to cyber-victimization among LGBTQIA+college students in the United States",
+      "abstract_excerpt": "The internet has reshaped the nature of social interactions, providing new environments for people to connect in both prosocial and, too often, antisocial ways. The lesbian, gay, bisexual, transgender, queer, questioning, intersex, asexual, and associated (LGBTQIA+) communities are among those who studies reveal are most at risk for cyber-victimization. For young people, already the most vulnerable to being targeted, being openly LGBTQIA +…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-11-03",
+      "authors": [
+        "Paul Bleakley",
+        "Megan Trafford",
+        "Maya Maayani"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2752106",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2752106",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ],
+      "title_zh": "“就像晚上出门时不带胡椒喷雾一样”：美国 LGBTQIA+ 大学生对网络受害的反应",
+      "abstract_excerpt_zh": "互联网重塑了社交互动的本质，为人们以亲社会和反社会的方式进行联系提供了新的环境。 研究显示，女同性恋、男同性恋、双性恋、跨性别者、酷儿、质疑者、双性者、无性恋和相关 (LGBTQIA+) 群体是最容易遭受网络伤害的群体。 对于年轻人来说，他们已经是最容易成为攻击目标、公开成为 LGBTQIA + 的人……"
+    },
+    {
+      "id": "doi:10.1080/10584609.2026.2751953",
+      "title": "Beyond Digital Access: Social Resilience to Political Misinformation in Rural Indonesia",
+      "abstract_excerpt": "This article interrogates the information deficit model in studies of political misinformation by examining how a rural Indonesian community with recent and shallow digital connectivity responded to electoral misinformation during the 2024 presidential campaign. Digital divide scholarship assumes that limited access and skills leave rural populations vulnerable to misinformation and reliant on external intervention. Drawing on a survey (n =…",
+      "journal": "Political Communication",
+      "issn_l": "1058-4609",
+      "published_at": "2026-11-02",
+      "authors": [
+        "Eko Bagus Sholihin",
+        "Yulion Zalpa",
+        "Wahyu Wulandari",
+        "Ainur Ropik",
+        "Ismail Alviano"
+      ],
+      "doi_url": "https://doi.org/10.1080/10584609.2026.2751953",
+      "landing_page_url": "https://doi.org/10.1080/10584609.2026.2751953",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "政治传播",
+        "公共舆论"
+      ],
+      "title_zh": "超越数字访问：印度尼西亚农村地区对政治错误信息的社会抵御力",
+      "abstract_excerpt_zh": "本文通过研究最近数字连接较浅的印度尼西亚农村社区如何应对 2024 年总统竞选期间的选举错误信息，质疑政治错误信息研究中的信息赤字模型。 数字鸿沟学术假设，有限的访问和技能使农村人口容易受到错误信息的影响并依赖外部干预。 根据一项调查（n =..."
+    },
+    {
+      "id": "doi:10.1093/ct/qtag023",
+      "title": "From exception to norm: Multilingual publics in North Africa and lessons for the theory of the public sphere",
+      "abstract_excerpt": "Abstract Most societies and polities worldwide are multilingual, yet most theories of public spheres overlook this fact, as they stem from Western contexts dominated by a single national language. Reviewing the scientific literature, I show that multilingualism is often treated as a problem or exception rather than the norm. Drawing on four observations from publics in North Africa, I highlight insights relevant to general theories of public…",
+      "journal": "Communication Theory",
+      "issn_l": "1050-3293",
+      "published_at": "2026-11-02",
+      "authors": [
+        "Valerian Thielicke"
+      ],
+      "doi_url": "https://doi.org/10.1093/ct/qtag023",
+      "landing_page_url": "https://doi.org/10.1093/ct/qtag023",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "传播理论",
+        "国际传播"
+      ],
+      "title_zh": "从例外到常态：北非的多语言公众以及公共领域理论的教训",
+      "abstract_excerpt_zh": "摘要 世界上大多数社会和政体都是多语言的，但大多数公共领域理论都忽视了这一事实，因为它们源于单一民族语言主导的西方背景。 回顾科学文献，我发现多语言经常被视为问题或例外，而不是常态。 根据北非公众的四项观察，我强调了与公众一般理论相关的见解……"
+    },
+    {
+      "id": "doi:10.1080/10584609.2026.2754162",
+      "title": "The Effects of Target Characteristics on Public Support for Hate Speech Laws",
+      "abstract_excerpt": "Does the target of speech shape public support for hate speech laws? Regulating hate speech is controversial, partly because partisans are assumed to disagree over which groups such laws should protect. This article conducts a comprehensive test of how support for hate speech laws varies across partisan lines when speech targets ethnic, religious, gender, or political groups. Based on conjoint experiments in Denmark and the United States, the…",
+      "journal": "Political Communication",
+      "issn_l": "1058-4609",
+      "published_at": "2026-11-01",
+      "authors": [
+        "Jesper Sommer Rasmussen"
+      ],
+      "doi_url": "https://doi.org/10.1080/10584609.2026.2754162",
+      "landing_page_url": "https://doi.org/10.1080/10584609.2026.2754162",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "政治传播",
+        "公共舆论"
+      ],
+      "title_zh": "目标特征对仇恨言论法公众支持的影响",
+      "abstract_excerpt_zh": "言论目标是否会影响公众对仇恨言论法的支持？ 规范仇恨言论是有争议的，部分原因是党派人士对于此类法律应保护哪些群体存在分歧。 本文对当言论针对种族、宗教、性别或政治群体时，对仇恨言论法的支持如何随党派界限进行了全面测试。 基于丹麦和美国的联合实验，……"
+    },
+    {
+      "id": "doi:10.1177/14614448261500889",
+      "title": "Ambivalence and antagonism: The intertwinement of gossiping and public shaming on social media",
+      "abstract_excerpt": "The vernacular practices of public shaming and gossiping on social media function both as entertainment and as disciplinary mechanisms. This article investigates two Finnish subreddits on Reddit, where gossiping and public shaming practices are closely intertwined. On these subreddits, screenshots of Finnish social media content creators’ posts are intensely circulated, scrutinised and dissected. This article examines how the gossiping…",
+      "journal": "New Media & Society",
+      "issn_l": "1461-4448",
+      "published_at": "2026-11-01",
+      "authors": [
+        "Hanna-Kaisa Lassila"
+      ],
+      "doi_url": "https://doi.org/10.1177/14614448261500889",
+      "landing_page_url": "https://doi.org/10.1177/14614448261500889",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "平台",
+        "数字社会"
+      ],
+      "title_zh": "矛盾与对抗：社交媒体上的八卦与公开羞辱交织在一起",
+      "abstract_excerpt_zh": "社交媒体上公开羞辱和八卦的民间做法既起到娱乐作用，也起到纪律机制的作用。 本文调查了 Reddit 上的两个芬兰 Reddit 子版块，其中八卦和公开羞辱行为密切相关。 在这些 Reddit 子版块上，芬兰社交媒体内容创作者帖子的屏幕截图被广泛传播、审查和剖析。这篇文章探讨了八卦是如何......"
+    },
+    {
+      "id": "doi:10.1177/14614448261498621",
+      "title": "Paid, but not a partner: Monetization without standing in Facebook’s Performance Bonus Program",
+      "abstract_excerpt": "Platform revenue-sharing programs both pay and govern creators. Drawing on interviews with 18 participants in Facebook’s Performance Bonus Program (PBP) and the author’s own participation, this study examines how monetization reshaped creators’ platform governance expectations. PBP’s onboarding, which addressed recipients as “valued creators” and promised earnings of “up to $30,000 a month,” combined with early recurring payouts to cultivate…",
+      "journal": "New Media & Society",
+      "issn_l": "1461-4448",
+      "published_at": "2026-11-01",
+      "authors": [
+        "Rebecca C. Hains"
+      ],
+      "doi_url": "https://doi.org/10.1177/14614448261498621",
+      "landing_page_url": "https://doi.org/10.1177/14614448261498621",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "平台",
+        "数字社会"
+      ],
+      "title_zh": "付费，但不是合作伙伴：无需参与 Facebook 绩效奖金计划即可获利",
+      "abstract_excerpt_zh": "平台收入共享计划既向创作者支付费用，又对创作者进行管理。 本研究基于对 Facebook 绩效奖金计划 (PBP) 18 名参与者的采访以及作者本人的参与，探讨了货币化如何重塑创作者的平台治理预期。 PBP 的入职培训将接受者称为“有价值的创造者”，并承诺“每月高达 30,000 美元”的收入，并结合早期经常性支出来培养……"
+    },
+    {
+      "id": "doi:10.1177/14614448261493408",
+      "title": "Fuck You, Pay Me: Payment apps, review platforms, and ambivalent resistance in the influencer industry",
+      "abstract_excerpt": "This article critically examines emerging intermediaries in the influencer industry that aggregate anonymous reviews of brands and allow influencers to report how much they were paid. Turning to four intermediaries (Fuck You Pay Me, Willa, Hashtag Pay Me, and Clara for Creators), I argue that although these emerging intermediaries represent an important step toward creating more equity, these efforts are a double-edged sword and represent a…",
+      "journal": "New Media & Society",
+      "issn_l": "1461-4448",
+      "published_at": "2026-11-01",
+      "authors": [
+        "Sarah Edwards"
+      ],
+      "doi_url": "https://doi.org/10.1177/14614448261493408",
+      "landing_page_url": "https://doi.org/10.1177/14614448261493408",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "平台",
+        "数字社会"
+      ],
+      "title_zh": "去你妈的，付钱给我：支付应用程序、评论平台和影响者行业中矛盾的阻力",
+      "abstract_excerpt_zh": "本文批判性地审视了影响者行业中新兴的中介机构，这些机构汇总了对品牌的匿名评论，并允许影响者报告他们的报酬。 谈到四个中介机构（Fuck You Pay Me、Willa、Hashtag Pay Me 和 Clara for Creators），我认为虽然这些新兴中介机构代表了创造更多公平的重要一步，但这些努力是一把双刃剑，代表了……"
+    },
     {
       "id": "doi:10.1080/1369118x.2026.2752107",
       "title": "Cue production and evaluative uptake: prompt framing and user judgments in AI-Mediated health communication",
@@ -19,7 +169,9 @@
         "智能传播",
         "数字传播",
         "国际传播"
-      ]
+      ],
+      "title_zh": "提示产生和评估性吸收：人工智能介导的健康传播中的提示框架和用户判断",
+      "abstract_excerpt_zh": "对话式人工智能系统越来越多地嵌入日常信息和寻求支持的实践中，包括用户寻求建议、安慰或情感认可的与健康相关的互动。 然而，人们对用户自己的交流框架如何塑造人工智能系统产生的内容，以及这些人工智能产生的情感和支持性线索是否随后被纳入用户对交互的评估中，人们知之甚少。 借鉴…"
     },
     {
       "id": "doi:10.1093/joc/jqag023",
@@ -30,7 +182,7 @@
       "published_at": "2026-10-29",
       "authors": [
         "John Patrick Crowley",
-        "Elizabeth Ann Hintz",
+        "Elizabeth A. Hintz",
         "Amanda Denes"
       ],
       "doi_url": "https://doi.org/10.1093/joc/jqag023",
@@ -40,7 +192,9 @@
         "综合传播",
         "国际传播",
         "政治传播"
-      ]
+      ],
+      "title_zh": "支持网络（重新）构建的整合理论：LGBTQ+仇恨言论背景下的案例研究",
+      "abstract_excerpt_zh": "摘要 社会支持是人类的基本需求和沟通过程。 然而，学者们关于社会支持的理论受到几个普遍假设的限制：（a）人们能够在需要时寻求支持，（b）其他人愿意并且能够提供支持，（c）什么才算是“良好”的支持，是相互理解和可取的，以及（d）寻求支持是二元的和静态的。 研究人员必须有效地超越这些……"
     },
     {
       "id": "doi:10.65476/hgae6v49",
@@ -58,7 +212,9 @@
       "focus": [
         "国际传播",
         "全球传播"
-      ]
+      ],
+      "title_zh": "在讲故事和姐妹情谊之间：女性科技数字社区的女权主义人机交互跨媒体框架",
+      "abstract_excerpt_zh": "计算机领域的女权主义历史表明，女性被排除在技术工作之外是行政造成的，包容性举措很少重新分配技术权力。 这两股都没有对开展包容性工作的交流基础设施进行理论化。 本文通过提出用于分析和设计跨媒体的女权主义人机交互跨媒体叙事框架来解决这一差距……"
     },
     {
       "id": "doi:10.65476/8fne4g56",
@@ -76,7 +232,9 @@
       "focus": [
         "国际传播",
         "全球传播"
-      ]
+      ],
+      "title_zh": "传播期刊出版的层次结构导航：非洲学者、象征资本和认知权衡",
+      "abstract_excerpt_zh": "非洲学者在跨学科（包括传播研究）极具影响力的期刊中代表性不足。 目前仍然缺乏调查他们如何解释和驾驭这种不平等以及他们的解释和驾驭策略如何塑造知识生产的研究。 以布迪厄的场域理论为基础，并借鉴了对撒哈拉以南非洲七个国家的传播学学者的深入访谈……"
     },
     {
       "id": "doi:10.65476/134zca76",
@@ -99,7 +257,9 @@
       "focus": [
         "国际传播",
         "全球传播"
-      ]
+      ],
+      "title_zh": "从责任最大化到责任最小化：Facebook 新闻媒体和元新闻室选举诚信框架的比较分析",
+      "abstract_excerpt_zh": "在过去的十年里，Facebook 以其在选举诚信问题上存在危险缺陷的方法而闻名。 然而，很少有研究探讨 Meta 如何构建 Facebook 在选举公正性方面的角色，以及这些框架如何在公共话语中得到体现。 我们使用定性文本分析来比较 2020 年和 2024 年美国 Meta 的 Newsroom 博客与美国主要报纸之间 Facebook 的政治影响力框架。 总统…"
     },
     {
       "id": "doi:10.1080/1369118x.2026.2750569",
@@ -118,7 +278,9 @@
         "智能传播",
         "数字传播",
         "国际传播"
-      ]
+      ],
+      "title_zh": "云计算的形成：可扩展性的前提",
+      "abstract_excerpt_zh": "本文对云计算进行了历史情境分析。云计算是一种配置计算基础设施的范例，现已具有巨大的影响力。 它由其独特的可扩展性定义。 事实证明，这种独特的可扩展性对数字经济及其他领域具有巨大影响，塑造了平台生态系统的出现、人工智能的发展以及 21 世纪数字化的进程。 同样重要的是……"
     },
     {
       "id": "doi:10.1080/1369118x.2026.2750566",
@@ -138,7 +300,9 @@
         "智能传播",
         "数字传播",
         "国际传播"
-      ]
+      ],
+      "title_zh": "参与智慧城市：新加坡的残疾人和自主公共交通",
+      "abstract_excerpt_zh": "在智慧城市空间中，身体与技术之间的相互依赖性日益增强，本文探讨了残疾人可以在多大程度上参与智慧城市技术的开发和话语建设。 虽然公民参与城市规划和决策过程表面上是智慧城市概念的关键支柱，但公民（尤其是残疾公民）的实际和有意义的能力......"
     },
     {
       "id": "doi:10.1080/10584609.2026.2751954",
@@ -157,7 +321,9 @@
       "focus": [
         "政治传播",
         "公共舆论"
-      ]
+      ],
+      "title_zh": "广播议会程序对立法干扰的影响：来自印度的证据",
+      "abstract_excerpt_zh": "广播议会程序能否鼓励更负责任的立法行为？ 关于通过视觉媒体提高透明度是否会增强议会职能，或者相反会促进哗众取宠和抗议，现有理论仍存在分歧。 本文探讨了电视直播印度议会会议对立法干扰（违反议会规则的行为）的影响。虽然广播是..."
     },
     {
       "id": "doi:10.1177/14614448261496596",
@@ -178,7 +344,9 @@
         "智能传播",
         "平台",
         "数字社会"
-      ]
+      ],
+      "title_zh": "用算法实践爱：在线社区如何叙述和理解人类与人工智能的亲密关系",
+      "abstract_excerpt_zh": "随着人工智能 (AI) 融入日常生活，与 AI 伴侣在情感上的亲密互动变得越来越明显。 然而，之前的研究主要集中在个人经历上，对人类与人工智能的亲密关系如何在在线社区中被集体解释和协商的理解有限。 这项研究考察了中国主要社交和生活方式平台 RedNote 上的社区话语，使用……"
     },
     {
       "id": "doi:10.1177/00936502261498263",
@@ -197,7 +365,9 @@
       "focus": [
         "综合传播",
         "政治传播"
-      ]
+      ],
+      "title_zh": "政治对话具有说服力还是两极分化？实时随机实验的证据",
+      "abstract_excerpt_zh": "跨越分歧的政治对话是民主的核心。 有些人将其视为学习的机会，而另一些人则将其视为需要赢得的战斗。 理论表明，这些截然不同的动机可能会影响个人处理信息和应对分歧的方式，但它们对对话期间态度动态的影响仍不清楚。 我们通过一项实验（N = 466）填补了这一空白……"
     },
     {
       "id": "doi:10.1177/01634437261497904",
@@ -215,7 +385,9 @@
       "focus": [
         "国际传播",
         "文化与权力"
-      ]
+      ],
+      "title_zh": "争夺关注的基础设施：法国的气候行动主义和不对称可见性",
+      "abstract_excerpt_zh": "本文借鉴巴黎“反抗灭绝”组织及其联盟运动两年来的民族志实地调查、对活动人士的半结构化访谈，以及对媒体报道和警察监控技术调查报告的分析，探讨了法国气候运动如何重新调整其政治实践，从在现有媒体系统中寻求可见性，转向通过……来争夺关注基础设施。"
     },
     {
       "id": "doi:10.1177/00936502261494874",
@@ -234,7 +406,9 @@
       "focus": [
         "综合传播",
         "政治传播"
-      ]
+      ],
+      "title_zh": "检验网络仇恨社会认可理论的假设：来自 Parler 的 1.1 亿条消息的分析",
+      "abstract_excerpt_zh": "我们通过社会认可理论研究了社会认可如何激发网络仇恨，该理论认为仇恨信息上的社会认可信号预示着（1）更多的仇恨言论，（2）更多的毒性。 使用 Parler（2018-2021）的 1.1 亿条消息，我们观察到，对仇恨言论帖子的点赞（在用户个人资料上广播到关注者提要的消息）预测下一个即时帖子中出现仇恨言论的可能性较低，但在接下来的帖子中会出现更多仇恨言论……"
     },
     {
       "id": "doi:10.1093/joc/jqag021",
@@ -695,7 +869,9 @@
       "focus": [
         "国际传播",
         "全球传播"
-      ]
+      ],
+      "title_zh": "拉胡尔·穆克吉 (Rahul Mukherjee)，《无限：理想政治与移动媒体分发》",
+      "abstract_excerpt_zh": "近年来，印度不断崛起的电信业、初创企业文化和官方国家叙事培育了一个独特的国家品牌，即一个创新且精通数字化的国家机器，它调动数字基础设施来实现无缝治理、服务交付和与公民的沟通（Athique，2019； Kaur，2020）。特别是 2014 年之后，印度人民党 (BJP) 政府的民族主义议程促进……"
     },
     {
       "id": "doi:10.65476/1x2r4g26",
