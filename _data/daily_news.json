@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T15:51:22+08:00",
+  "updated_at": "2026-11-10T21:23:22+08:00",
   "days": [
     {
       "date": "2026-11-10",
@@ -11,16 +11,10 @@
           "title_zh": "特朗普称联邦调查局正在调查英伟达老板与中国间谍的恋情"
         },
         {
-          "title": "France accuses Iran of cyber 'sabotage' in fridge attacks",
+          "title": "House set to vote to impeach Hegseth. And, SCOTUS allows border wall work to proceed",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/09/g-s1-152724/france-iran-cyber-sabotage-fridge-attacks",
-          "title_zh": "法国指责伊朗在冰箱袭击中进行网络“破坏"
-        },
-        {
-          "title": "At least 56 migrants die in weekend shipwrecks off Senegal and Greece",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168769",
-          "title_zh": "至少 56 名移民在周末塞内加尔和希腊附近的沉船事故中丧生"
+          "url": "https://www.npr.org/2026/11/10/g-s1-152777/up-first-newsletter-pete-hegseth-impeachment-trump-iran-nvidia-border-wall-texas",
+          "title_zh": "众议院将投票弹劾赫格塞斯。并且，最高法院允许边境墙工程继续进行"
         },
         {
           "title": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
@@ -29,34 +23,40 @@
           "title_zh": "美国官员表示，交战双方以“一定灵活性”恢复乌克兰和谈"
         },
         {
-          "title": "Thick smog shrouds New Delhi after Diwali firecrackers add to seasonal pollution",
+          "title": "U.S.-mediated talks on ending Russia-Ukraine war begin in Abu Dhabi",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/09/g-s1-152634/thick-smog-shrouds-new-delhi-after-diwali-firecrackers-add-to-seasonal-pollution",
-          "title_zh": "排灯节鞭炮加剧季节性污染后，浓烟笼罩新德里"
+          "url": "https://www.npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks",
+          "title_zh": "美国斡旋的结束俄罗斯-乌克兰战争的会谈在阿布扎比开始"
         },
         {
-          "title": "World News in Brief: El Niño’s $11 trillion price tag, Mozambique and Yemen updates",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168768",
-          "title_zh": "世界新闻简讯：厄尔尼诺现象的 11 万亿美元代价、莫桑比克和也门的最新情况"
-        },
-        {
-          "title": "Trump says more US attacks on Iran 'highly unlikely'",
+          "title": "'Cruise for life' ship seized in Singapore",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普称美国“极不可能”对伊朗发动更多袭击"
+          "url": "https://www.bbc.co.uk/news/articles/cqr7y7myer53o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "一生邮轮”在新加坡被扣押"
         },
         {
-          "title": "British comedian Russell Brand sentenced to over 10 years for rape and sexual assault",
+          "title": "Kushner and Witkoff renew peace talks to end war between Russia and Ukraine",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/09/nx-s1-6034335/british-comedian-russell-brand-sentenced",
-          "title_zh": "英国喜剧演员拉塞尔·布兰德因强奸和性侵犯被判十年以上徒刑"
+          "url": "https://www.npr.org/2026/11/10/nx-s1-6034616/kushner-and-witkoff-renew-peace-talks-to-end-war-between-russia-and-ukraine",
+          "title_zh": "库什纳和维特科夫重启和平谈判以结束俄罗斯和乌克兰之间的战争"
         },
         {
-          "title": "Children among the dead as heavy rains flood tents and shelters in Gaza",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168766",
-          "title_zh": "加沙大雨淹没帐篷和避难所，造成儿童死亡"
+          "title": "DR Congo sentences 66 soldiers to death for being 'cowards'",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmreye1q3dnjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "刚果民主共和国以“懦夫”罪名判处 66 名士兵死刑"
+        },
+        {
+          "title": "France accuses Iran of cyber 'sabotage' in fridge attacks",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/09/g-s1-152724/france-iran-cyber-sabotage-fridge-attacks",
+          "title_zh": "法国指责伊朗在冰箱袭击中进行网络“破坏"
+        },
+        {
+          "title": "Israel's new parliament to be sworn in as leaders compete to form government",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/crd939lpzjp9o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "以色列新议会将宣誓就职，领导人竞相组建政府"
         }
       ],
       "space_items": [
@@ -67,10 +67,10 @@
           "title_zh": "APOD：2026 年 11 月 10 日 – 土星在月球后面"
         },
         {
-          "title": "On this day in space! Nov. 9, 1967: NASA launches the Saturn V moon rocket for the first time on Apollo 4, but no astronauts were aboard",
+          "title": "Total solar eclipse 2027 vs 2028 — Which one should you choose, Egypt or Australia?",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-9-2026",
-          "title_zh": "在太空的这一天！ 1967 年 11 月 9 日：美国宇航局 (NASA) 在阿波罗 4 号上首次发射土星 5 号月球火箭，但船上没有宇航员"
+          "url": "https://www.space.com/stargazing/solar-eclipses/total-solar-eclipse-2027-vs-2028-which-one-should-you-choose-egypt-or-australia",
+          "title_zh": "2027 年与 2028 年日全食 — 您应该选择哪一个，埃及还是澳大利亚？"
         },
         {
           "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
@@ -79,10 +79,10 @@
           "title_zh": "AST SpaceMobile 与 Firefly Aerospace 签署价值 13 亿美元的发动机协议，为新型重型火箭提供动力"
         },
         {
-          "title": "CCIA Report Highlights Satellite Connectivity’s Potential to Expand Internet Access and Drive Economic Growth",
+          "title": "ESCAPADE on its way to Mars after Earth flybys",
           "source": "SpaceNews",
-          "url": "https://spacenews.com/ccia-report-highlights-satellite-connectivitys-potential-to-expand-internet-access-and-drive-economic-growth/",
-          "title_zh": "CCIA 报告强调了卫星连接扩大互联网接入和推动经济增长的潜力"
+          "url": "https://spacenews.com/escapade-on-its-way-to-mars-after-earth-flybys/",
+          "title_zh": "飞越地球后 ESCAPADE 正在前往火星"
         },
         {
           "title": "Using Vibrations and AI, Future Robotic Missions Could Handle Buried Rocks Autonomously",
@@ -97,10 +97,10 @@
           "title_zh": "秋天的早晨带来山谷的雾气"
         },
         {
-          "title": "Jupiter and Mars are set for a breathtaking close approach later this week: Here's how to see it",
+          "title": "NASA's twin ESCAPADE Mars probes slingshot around Earth in unprecedented double 'gravity assist'",
           "source": "Space.com",
-          "url": "https://www.space.com/stargazing/jupiter-and-mars-are-set-for-a-breathtaking-close-approach-later-this-week-heres-how-to-see-it",
-          "title_zh": "木星和火星将于本周晚些时候进行令人惊叹的近距离接近：以下是如何观看它"
+          "url": "https://www.space.com/astronomy/mars/nasas-escapade-twin-mars-probes-execute-a-1st-of-its-kind-gravity-slingshot-around-earth",
+          "title_zh": "美国宇航局的双逃亡火星探测器在前所未有的双重“重力辅助”下围绕地球弹弓"
         },
         {
           "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
