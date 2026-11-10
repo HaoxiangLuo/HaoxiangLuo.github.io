@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-10T21:23:22+08:00",
+  "updated_at": "2026-11-11T02:20:23+08:00",
   "days": [
+    {
+      "date": "2026-11-11",
+      "items": [
+        {
+          "title": "First day of Ukraine peace talks constructive, Zelensky says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽伦斯基表示乌克兰和谈第一天具有建设性"
+        },
+        {
+          "title": "'Like gods reigning over humans': Many defectors see daughter of North Korea's Kim as heir apparent",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/10/g-s1-152795/like-gods-reigning-over-humans-many-defectors-see-daughter-of-north-koreas-kim-as-heir-apparent",
+          "title_zh": "就像神统治人类一样”：许多脱北者将朝鲜金正恩的女儿视为法定继承人"
+        },
+        {
+          "title": "Arrests made in Mohamed Al Fayed probe in France, police say",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck1wvwyrd4ywo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "警方称，法国警方在穆罕默德·阿法耶德调查中逮捕了几人"
+        },
+        {
+          "title": "Indonesia's VP offers resignation as questions mount over his eligibility",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/10/g-s1-152788/indonesias-vp-offers-resignation-as-questions-mount-over-his-eligibility",
+          "title_zh": "印度尼西亚副总统因资格质疑而提出辞职"
+        },
+        {
+          "title": "Israel's new parliament sworn in as leaders compete to form government",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/crd939lpzjp9o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "以色列新议会宣誓就职，领导人竞相组建政府"
+        },
+        {
+          "title": "House set to vote to impeach Hegseth. And, SCOTUS allows border wall work to proceed",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/10/g-s1-152777/up-first-newsletter-pete-hegseth-impeachment-trump-iran-nvidia-border-wall-texas",
+          "title_zh": "众议院将投票弹劾赫格塞斯。并且，最高法院允许边境墙工程继续进行"
+        },
+        {
+          "title": "Police officer dies and another injured after backpack explosion in northern Spain",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwm262pzezy0o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "西班牙北部背包爆炸，一名警察死亡，另一人受伤"
+        },
+        {
+          "title": "Russia and Ukraine hold nearly 4 hours of U.S.-mediated talks in Abu Dhabi",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks",
+          "title_zh": "俄罗斯和乌克兰在美国斡旋下在阿布扎比举行近4个小时的会谈"
+        },
+        {
+          "title": "Anti-homosexuality laws in Trinidad and Tobago overturned",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm0e0evlpp87o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特立尼达和多巴哥的反同性恋法被推翻"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "NASA Scientists Show How Gravitational Waves Can Reveal New Worlds",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/missions/lisa/gravitational-waves-can-reveal-new-worlds/",
+          "title_zh": "美国宇航局科学家展示引力波如何揭示新世界"
+        },
+        {
+          "title": "Were there 'lost cosmonauts' in the early Soviet space program?",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/were-there-lost-cosmonauts-in-the-early-soviet-space-program",
+          "title_zh": "苏联早期太空计划中是否有“失踪的宇航员”？"
+        },
+        {
+          "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/07/ast-spacemobile-unveils-1-3-billion-engine-deal-with-firefly-aerospace-to-power-new-heavy-lift-rocket/",
+          "title_zh": "AST SpaceMobile 与 Firefly Aerospace 签署价值 13 亿美元的发动机协议，为新型重型火箭提供动力"
+        },
+        {
+          "title": "Kratos and Seagate Space Partner to Advance Mobile Offshore Launch Capabilities for National Security Missions",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/kratos-and-seagate-space-partner-to-advance-mobile-offshore-launch-capabilities-for-national-security-missions/",
+          "title_zh": "Kratos 和 Seagate Space 合作提升国家安全任务的移动海上发射能力"
+        },
+        {
+          "title": "Why Aging Stars Suffer A Sudden Luminosity Dip",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/why-aging-stars-suffer-a-sudden-luminosity-dip",
+          "title_zh": "为什么衰老的恒星的光度突然下降"
+        },
+        {
+          "title": "CHAPEA Crew Leaves a Mark",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/chapea-crew-leaves-a-mark/",
+          "title_zh": "CHAPEA 船员留下痕迹"
+        },
+        {
+          "title": "A robot just built a structure autonomously in space for the 1st time ever",
+          "source": "Space.com",
+          "url": "https://www.space.com/technology/a-robot-just-built-a-structure-autonomously-in-space-for-the-1st-time-ever",
+          "title_zh": "机器人有史以来第一次在太空中自主建造了一个结构"
+        },
+        {
+          "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/06/falcon-9-to-launch-from-california-on-classified-mission-for-u-s-space-force/",
+          "title_zh": "猎鹰 9 号从加利福尼亚州发射，执行美国太空军的机密任务"
+        }
+      ]
+    },
     {
       "date": "2026-11-10",
       "items": [
