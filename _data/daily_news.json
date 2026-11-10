@@ -1,14 +1,32 @@
 {
-  "updated_at": "2026-11-10T05:08:48+08:00",
+  "updated_at": "2026-11-10T15:51:22+08:00",
   "days": [
     {
       "date": "2026-11-10",
       "items": [
         {
-          "title": "France accuses Iran of supermarket fridge hacking",
+          "title": "Trump says FBI investigating Nvidia boss's affair with alleged Chinese spy",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmg474vk6dyqo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "法国指责伊朗超市冰箱遭黑客攻击"
+          "url": "https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普称联邦调查局正在调查英伟达老板与中国间谍的恋情"
+        },
+        {
+          "title": "France accuses Iran of cyber 'sabotage' in fridge attacks",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/09/g-s1-152724/france-iran-cyber-sabotage-fridge-attacks",
+          "title_zh": "法国指责伊朗在冰箱袭击中进行网络“破坏"
+        },
+        {
+          "title": "At least 56 migrants die in weekend shipwrecks off Senegal and Greece",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168769",
+          "title_zh": "至少 56 名移民在周末塞内加尔和希腊附近的沉船事故中丧生"
+        },
+        {
+          "title": "Ukraine peace talks resume with 'some flexibility' by warring sides, US officials say",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqpvgvrpjvv8o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国官员表示，交战双方以“一定灵活性”恢复乌克兰和谈"
         },
         {
           "title": "Thick smog shrouds New Delhi after Diwali firecrackers add to seasonal pollution",
@@ -17,16 +35,16 @@
           "title_zh": "排灯节鞭炮加剧季节性污染后，浓烟笼罩新德里"
         },
         {
-          "title": "COP31 opens in Antalya: Can climate promises finally deliver results?",
+          "title": "World News in Brief: El Niño’s $11 trillion price tag, Mozambique and Yemen updates",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168763",
-          "title_zh": "COP31在安塔利亚开幕：气候承诺最终能否兑现成果？"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168768",
+          "title_zh": "世界新闻简讯：厄尔尼诺现象的 11 万亿美元代价、莫桑比克和也门的最新情况"
         },
         {
-          "title": "Nvidia shares tumble over investigation into Huang's affair with alleged Chinese spy",
+          "title": "Trump says more US attacks on Iran 'highly unlikely'",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "英伟达股价因黄与涉嫌中国间谍的恋情调查而暴跌"
+          "url": "https://www.bbc.co.uk/news/articles/cq5yny4nl2d3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普称美国“极不可能”对伊朗发动更多袭击"
         },
         {
           "title": "British comedian Russell Brand sentenced to over 10 years for rape and sexual assault",
@@ -35,42 +53,24 @@
           "title_zh": "英国喜剧演员拉塞尔·布兰德因强奸和性侵犯被判十年以上徒刑"
         },
         {
-          "title": "Families who fled Ethiopia for Kenya’s Moyale need food, water and shelter",
+          "title": "Children among the dead as heavy rains flood tents and shelters in Gaza",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168762",
-          "title_zh": "逃离埃塞俄比亚前往肯尼亚莫亚莱的家庭需要食物、水和住所"
-        },
-        {
-          "title": "Trump questions midterm elections integrity after previously accepting results",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck79p9350zp9o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "特朗普在接受结果后质疑中期选举的公正性"
-        },
-        {
-          "title": "Congress is back after GOP's midterm defeat. And, Trump appoints new chief of staff",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/09/g-s1-152627/up-first-newsletter-stephen-miller-trump-congress-nvidia-cop31",
-          "title_zh": "共和党中期失败后，国会又回来了。而且，特朗普任命了新的幕僚长"
-        },
-        {
-          "title": "Security Council LIVE: Strikes on Ukraine’s power grid, as peace talks loom",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168761",
-          "title_zh": "安理会直播：和平谈判迫在眉睫，乌克兰电网遭到袭击"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168766",
+          "title_zh": "加沙大雨淹没帐篷和避难所，造成儿童死亡"
         }
       ],
       "space_items": [
         {
-          "title": "La NASA busca a la próxima generación de astronautas",
+          "title": "APOD: 2026 November 10 – Saturn Behind the Moon",
           "source": "NASA",
-          "url": "https://www.nasa.gov/news-release/la-nasa-busca-a-la-proxima-generacion-de-astronautas/",
-          "title_zh": "美国宇航局 (NASA) 与宇航员一代的距离"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/",
+          "title_zh": "APOD：2026 年 11 月 10 日 – 土星在月球后面"
         },
         {
-          "title": "Are the James Webb Space Telescope's mysterious Little Red Dots actually tiny black holes left over from the Big Bang era?",
+          "title": "On this day in space! Nov. 9, 1967: NASA launches the Saturn V moon rocket for the first time on Apollo 4, but no astronauts were aboard",
           "source": "Space.com",
-          "url": "https://www.space.com/astronomy/black-holes/are-the-james-webb-space-telescopes-mysterious-little-red-dots-actually-tiny-black-holes-left-over-from-the-big-bang-era",
-          "title_zh": "詹姆斯韦伯太空望远镜神秘的小红点实际上是大爆炸时代留下的微小黑洞吗？"
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-9-2026",
+          "title_zh": "在太空的这一天！ 1967 年 11 月 9 日：美国宇航局 (NASA) 在阿波罗 4 号上首次发射土星 5 号月球火箭，但船上没有宇航员"
         },
         {
           "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
@@ -85,22 +85,22 @@
           "title_zh": "CCIA 报告强调了卫星连接扩大互联网接入和推动经济增长的潜力"
         },
         {
-          "title": "A Perseverance Experiment Could Help Astronauts Prepare for Dust Storms on Mars",
+          "title": "Using Vibrations and AI, Future Robotic Missions Could Handle Buried Rocks Autonomously",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/a-perseverance-experiment-could-help-astronauts-prepare-for-dust-storms-on-mars",
-          "title_zh": "毅力实验可以帮助宇航员为火星上的沙尘暴做好准备"
+          "url": "https://www.universetoday.com/articles/virginia-tech-researchers-use-vibrations-and-ai-to-estimate-depth-of-buried-objects-for-future-lunar",
+          "title_zh": "利用振动和人工智能，未来的机器人任务可以自主处理埋藏的岩石"
         },
         {
-          "title": "NASA’s Chandra Finds Source of Star’s Mysterious Outbursts",
+          "title": "Autumn Mornings Bring Valley Fog",
           "source": "NASA",
-          "url": "https://science.nasa.gov/missions/chandra/nasas-chandra-finds-source-of-stars-mysterious-outbursts/",
-          "title_zh": "美国宇航局钱德拉发现恒星神秘爆发的来源"
+          "url": "https://science.nasa.gov/earth/earth-observatory/autumn-mornings-bring-valley-fog/",
+          "title_zh": "秋天的早晨带来山谷的雾气"
         },
         {
-          "title": "NYT bestseller ‘Robopocalypse’ is getting a TV series with Oscar winners Ron Howard and Akiva Goldsman at the helm",
+          "title": "Jupiter and Mars are set for a breathtaking close approach later this week: Here's how to see it",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-movies-shows/nyt-bestseller-robopocalypse-is-getting-a-tv-series-with-oscar-winners-ron-howard-and-akiva-goldsman-at-the-helm",
-          "title_zh": "《纽约时报》畅销书《机器人末日》将拍摄一部由奥斯卡奖得主朗·霍华德和阿齐瓦·高斯曼执导的电视剧"
+          "url": "https://www.space.com/stargazing/jupiter-and-mars-are-set-for-a-breathtaking-close-approach-later-this-week-heres-how-to-see-it",
+          "title_zh": "木星和火星将于本周晚些时候进行令人惊叹的近距离接近：以下是如何观看它"
         },
         {
           "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
