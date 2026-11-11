@@ -1,0 +1,11 @@
+.opps-centers { margin-top: 2.5rem; }
+.opps-centers__intro { color: #6e6e73; font-size: 0.85rem; }
+.opps-centers__list { display: grid; gap: 0.7rem; padding: 0; margin: 1rem 0 0; list-style: none; }
+.opps-centers__list li { margin: 0; }
+.opps-centers__list a { display: block; height: 100%; padding: 0.95rem 1.1rem; border: 1px solid #e5e5e7; border-radius: 14px; background: #fff; color: #1d1d1f; text-decoration: none; }
+.opps-centers__list a:hover, .opps-centers__list a:focus-visible { border-color: #0071e3; }
+.opps-centers__list span, .opps-centers__list small { display: block; }
+.opps-centers__list span { font-size: 0.85rem; font-weight: 600; }
+.opps-centers__list b { color: #0071e3; }
+.opps-centers__list small { margin-top: 0.3rem; color: #6e6e73; font-size: 0.72rem; }
+@media (min-width: 1024px) { .opps-centers__list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

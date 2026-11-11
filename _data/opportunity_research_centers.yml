@@ -1,0 +1,36 @@
+- name: Reuters Institute for the Study of Journalism
+  name_zh: 牛津大学路透新闻研究院
+  university: University of Oxford
+  focus: Digital news and global audiences
+  focus_zh: 数字新闻与全球受众
+  url: https://reutersinstitute.politics.ox.ac.uk/
+- name: Oxford Internet Institute
+  name_zh: 牛津大学互联网研究院
+  university: University of Oxford
+  focus: Digital politics and computational communication
+  focus_zh: 数字政治与计算传播
+  url: https://www.oii.ox.ac.uk/
+- name: Social Media Lab
+  name_zh: 斯坦福大学社交媒体实验室
+  university: Stanford University
+  focus: Social media, algorithms and trust
+  focus_zh: 社交媒体、算法与信任
+  url: https://sml.stanford.edu/
+- name: Shorenstein Center on Media, Politics and Public Policy
+  name_zh: 哈佛大学肖伦斯坦媒体、政治与公共政策中心
+  university: Harvard University
+  focus: Media, politics and public policy
+  focus_zh: 媒体、政治与公共政策
+  url: https://shorensteincenter.org/
+- name: Center on Public Diplomacy
+  name_zh: 南加州大学公共外交中心
+  university: University of Southern California
+  focus: International communication and public diplomacy
+  focus_zh: 国际传播与公共外交
+  url: https://uscpublicdiplomacy.org/
+- name: Media, Inequality & Change Center
+  name_zh: 宾夕法尼亚大学媒体、不平等与变革中心
+  university: University of Pennsylvania
+  focus: Media, inequality and democracy
+  focus_zh: 媒体、不平等与民主
+  url: https://www.asc.upenn.edu/research/centers/media-inequality-and-change-center/about

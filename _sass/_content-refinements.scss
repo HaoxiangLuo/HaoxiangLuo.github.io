@@ -3030,3 +3030,21 @@ body.home-page #main > .home-publications .publication-board { grid-template-col
   body.home-page #main { grid-template-columns: minmax(280px,30%) minmax(0,1fr); }
   body.home-page #main > .home-publications .publication-board { grid-template-columns: minmax(0,1fr); }
 }
+
+/* Fold long opportunity sections without changing their card design. */
+.opps-section__disclosure { min-width: 0; }
+.opps-section__summary, .opps-module__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+.opps-section__summary::-webkit-details-marker, .opps-module__summary::-webkit-details-marker { display: none; }
+.opps-section__summary:focus-visible, .opps-module__summary:focus-visible { outline: 2px solid #0071e3; outline-offset: 4px; border-radius: 4px; }
+.opps-section__chevron { flex: 0 0 auto; width: 0.55rem; height: 0.55rem; border-right: 2px solid #6e6e73; border-bottom: 2px solid #6e6e73; transform: rotate(45deg); margin-right: 0.3rem; }
+[open] > summary > .opps-section__chevron { transform: rotate(225deg); }
+.opps-section__disclosure[open] > :not(summary) { margin-top: 1rem; }
+.opps-module[open] > :not(summary) { margin-top: 0.75rem; }
+[data-opp-expired="true"] { display: none !important; }

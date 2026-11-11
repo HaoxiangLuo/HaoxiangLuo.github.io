@@ -1,0 +1,9 @@
+<section class="opps-centers" aria-labelledby="opps-centers-title">
+  <h2 id="opps-centers-title" class="opps-section__title">{% if page.lang == 'zh' %}研究机构{% else %}Research Centers{% endif %}</h2>
+  <p class="opps-centers__intro">{% if page.lang == 'zh' %}关注智能传播、国际传播与政治传播的研究机构。{% else %}Research centers in intelligent, international and political communication.{% endif %}</p>
+  <ul class="opps-centers__list">
+    {% for center in site.data.opportunity_research_centers %}
+      <li><a href="{{ center.url | escape }}" target="_blank" rel="noopener noreferrer"><span>{% if page.lang == 'zh' %}{{ center.name_zh | escape }}{% else %}{{ center.name | escape }}{% endif %} <b aria-hidden="true">↗</b></span><small>{% if page.lang == 'zh' %}{{ center.focus_zh | escape }}{% else %}{{ center.university | escape }} · {{ center.focus | escape }}{% endif %}</small></a></li>
+    {% endfor %}
+  </ul>
+</section>

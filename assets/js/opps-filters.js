@@ -17,6 +17,7 @@
   }
 
   function matches(card, filters) {
+    if (card.getAttribute("data-opp-expired") === "true") return false;
     var score = Number(card.getAttribute("data-score") || 0);
     var checks = [
       ["org", card.getAttribute("data-org")],

@@ -48,7 +48,7 @@
 {% endif %}
 
 <article class="opps-card{% if item.urgent %} opps-card--urgent{% endif %}{% if item.status == 'closed' %} opps-card--closed{% endif %}"
-  data-opp
+  data-opp data-opp-deadline="{{ item.deadline | escape }}"
   data-org="{{ item.org | default: 'other' | escape }}"
   data-areas="{{ item.areas | join: ' ' | escape }}"
   data-mode="{{ item.mode | default: 'unknown' | escape }}"

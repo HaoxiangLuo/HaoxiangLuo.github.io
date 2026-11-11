@@ -20,8 +20,7 @@ translation_url: /opportunities/
 {% assign closing = un_live | where: "closing", true | sort: "days_left" %}
 {% assign latest = un_live | sort: "sort_date" | reverse %}
 {% assign remote = un_live | where: "mode", "remote" %}
-{% assign expired = un_items | where: "status", "closed" %}
-{% assign extended = un_items | where: "extended", true %}
+{% assign extended = un_open | where: "extended", true %}
 
 {% include archive-date-filter.html %}
 {% include opps-archive-controls.html %}
@@ -29,78 +28,80 @@ translation_url: /opportunities/
 <div class="opps-archive">
   {% if un_live.size > 0 %}
   <section class="opps-section" aria-labelledby="opps-pick-title">
-    <h2 id="opps-pick-title" class="opps-section__title">优先推荐</h2>
+    <details class="opps-section__disclosure">
+      <summary class="opps-section__summary"><h2 id="opps-pick-title" class="opps-section__title">优先推荐</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <p class="opps-section__note">四个模块分别回答三个问题：最近有哪些适合我的联合国实习、哪些最值得申请、哪些马上截止。</p>
     <div class="opps-modules">
-      <div class="opps-module">
-        <h3 class="opps-module__title">极高匹配 <span class="opps-subtitle__count">{{ exceptional.size }}</span></h3>
+      <details class="opps-module">
+        <summary class="opps-module__summary"><h3 class="opps-module__title">极高匹配 <span class="opps-subtitle__count">{{ exceptional.size }}</span></h3><span class="opps-section__chevron" aria-hidden="true"></span></summary>
         <p class="opps-module__note">匹配度 90 分及以上。</p>
         {% if exceptional.size > 0 %}
           <div class="opps-cards">{% for item in exceptional limit: 6 %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
         {% else %}
           <p class="daily-news-empty">目前暂无 90 分以上的岗位，匹配度最高的岗位见下方完整清单。</p>
         {% endif %}
-      </div>
-      <div class="opps-module">
-        <h3 class="opps-module__title">即将截止 <span class="opps-subtitle__count">{{ closing.size }}</span></h3>
+      </details>
+      <details class="opps-module">
+        <summary class="opps-module__summary"><h3 class="opps-module__title">即将截止 <span class="opps-subtitle__count">{{ closing.size }}</span></h3><span class="opps-section__chevron" aria-hidden="true"></span></summary>
         <p class="opps-module__note">剩余申请时间不超过 7 天。</p>
         {% if closing.size > 0 %}
           <div class="opps-cards">{% for item in closing limit: 6 %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
         {% else %}
           <p class="daily-news-empty">未来 7 天内没有岗位截止。</p>
         {% endif %}
-      </div>
-      <div class="opps-module">
-        <h3 class="opps-module__title">最新发布 <span class="opps-subtitle__count">{{ latest.size }}</span></h3>
+      </details>
+      <details class="opps-module">
+        <summary class="opps-module__summary"><h3 class="opps-module__title">最新发布 <span class="opps-subtitle__count">{{ latest.size }}</span></h3><span class="opps-section__chevron" aria-hidden="true"></span></summary>
         <p class="opps-module__note">按发布时间由新到旧排列。</p>
         <div class="opps-cards">{% for item in latest limit: 6 %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
-      </div>
-      <div class="opps-module">
-        <h3 class="opps-module__title">远程机会 <span class="opps-subtitle__count">{{ remote.size }}</span></h3>
+      </details>
+      <details class="opps-module">
+        <summary class="opps-module__summary"><h3 class="opps-module__title">远程机会 <span class="opps-subtitle__count">{{ remote.size }}</span></h3><span class="opps-section__chevron" aria-hidden="true"></span></summary>
         <p class="opps-module__note">居家办公与全远程岗位。</p>
         {% if remote.size > 0 %}
           <div class="opps-cards">{% for item in remote limit: 6 %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
         {% else %}
           <p class="daily-news-empty">目前没有开放的远程岗位。</p>
         {% endif %}
-      </div>
+      </details>
     </div>
+    </details>
   </section>
 
   <section class="opps-section" aria-labelledby="opps-un-title">
-    <h2 id="opps-un-title" class="opps-section__title">联合国机构 <span class="opps-subtitle__count">{{ un_live.size }}</span></h2>
+    <details class="opps-section__disclosure">
+      <summary class="opps-section__summary"><h2 id="opps-un-title" class="opps-section__title">联合国机构 <span class="opps-subtitle__count">{{ un_live.size }}</span></h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <p class="opps-section__note">全部 60 分以上的岗位，按匹配度从高到低排列；可按机构、方向、地点、状态与匹配度筛选。</p>
     {% include opps-filters.html lang="zh" %}
     <div class="opps-cards">
       {% for item in by_score %}{% include opps-card.html item=item lang="zh" %}{% endfor %}
       <p class="daily-news-empty" data-opps-empty hidden>没有符合当前筛选条件的岗位。</p>
     </div>
+    </details>
   </section>
   {% else %}
   <section class="opps-section" aria-labelledby="opps-un-title">
-    <h2 id="opps-un-title" class="opps-section__title">联合国机构</h2>
+    <details class="opps-section__disclosure">
+      <summary class="opps-section__summary"><h2 id="opps-un-title" class="opps-section__title">联合国机构</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <p class="daily-news-empty">自动采集任务运行后，第一批联合国岗位将显示在这里。</p>
+    </details>
   </section>
   {% endif %}
 
   {% if extended.size > 0 %}
   <section class="opps-section" aria-labelledby="opps-ext-title">
-    <h2 id="opps-ext-title" class="opps-section__title">拓展机会 <span class="opps-subtitle__count">{{ extended.size }}</span></h2>
+    <details class="opps-section__disclosure">
+      <summary class="opps-section__summary"><h2 id="opps-ext-title" class="opps-section__title">拓展机会 <span class="opps-subtitle__count">{{ extended.size }}</span></h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <p class="opps-section__note">咨询顾问类岗位：仅当公告明确写明接受博士、研究生或早期职业研究者时保留，不属于实习，单独列出。</p>
     <div class="opps-cards">{% for item in extended %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
+    </details>
   </section>
   {% endif %}
 
-  {% if expired.size > 0 %}
-  <section class="opps-section" aria-labelledby="opps-gone-title">
-    <h2 id="opps-gone-title" class="opps-section__title">已截止 <span class="opps-subtitle__count">{{ expired.size }}</span></h2>
-    <p class="opps-section__note">申请期限已过，仅作留档，开放中的岗位列在上方。</p>
-    <div class="opps-cards">{% for item in expired %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
-  </section>
-  {% endif %}
 
   <section class="opps-section" aria-labelledby="opps-company-title">
-    <h2 id="opps-company-title" class="opps-section__title">企业实习</h2>
+    <details class="opps-section__disclosure">
+      <summary class="opps-section__summary"><h2 id="opps-company-title" class="opps-section__title">企业实习</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     {% assign company_total = 0 %}
     {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% assign company_total = company_total | plus: day_co.size %}{% endfor %}
     {% assign company_first = "" %}
@@ -118,7 +119,7 @@ translation_url: /opportunities/
               </summary>
               <ol>
                 {% for item in group_items %}
-                  <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_zh | default: item.title | escape }}{% assign detail_text = item.detail_zh | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                  <li data-opp-deadline="{{ item.deadline | escape }}"><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_zh | default: item.title | escape }}{% assign detail_text = item.detail_zh | default: item.detail %}{% if detail_text %} <em>· {{ detail_text | escape }}</em>{% endif %}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
                 {% endfor %}
               </ol>
             </details>
@@ -128,10 +129,12 @@ translation_url: /opportunities/
         <p class="daily-news-empty">知名企业的实习信息将显示在这里。</p>
       {% endif %}
     </div>
+    </details>
   </section>
 
   <section class="opps-section" aria-labelledby="opps-academia-title">
-    <h2 id="opps-academia-title" class="opps-section__title">院校资讯</h2>
+    <details class="opps-section__disclosure">
+      <summary class="opps-section__summary"><h2 id="opps-academia-title" class="opps-section__title">院校资讯</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <div class="daily-news-archive">
       {% if opps.academia.size > 0 %}
         {% for day in opps.academia %}
@@ -143,7 +146,7 @@ translation_url: /opportunities/
             </summary>
             <ol>
               {% for item in day.items %}
-                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_zh | default: item.title | escape }}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
+                <li data-opp-deadline="{{ item.deadline | escape }}"><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"><span>{{ item.title_zh | default: item.title | escape }}</span><small>{{ item.source_zh | default: item.source | escape }} <b aria-hidden="true">↗</b></small></a></li>
               {% endfor %}
             </ol>
           </details>
@@ -152,7 +155,12 @@ translation_url: /opportunities/
         <p class="daily-news-empty">自动任务运行后，第一批院校项目资讯将显示在这里。</p>
       {% endif %}
     </div>
+    </details>
   </section>
 </div>
 
-<p class="daily-news-note">条目由机器自动从各机构官方招聘页与院系官网收录，标题与链接归原发布机构所有；截止日期、津贴与申请资格均读取自官方公告并以公告为准，公告未说明的字段显示为「未说明」而非推测填写。收录不代表本站赞同其观点。匹配度是本网站依据公告文本给出的判断，不代表发布机构的意见。中文摘要、标签与匹配理由由固定模板生成；岗位标题在译文填充前保留来源原文。</p>
+{% include opportunity-research-centers.html %}
+
+<p class="daily-news-note">条目由机器自动从各机构官方招聘页与院系官网收录，标题与链接归原发布机构所有；截止日期、津贴与申请资格均读取自官方公告并以公告为准，公告未说明的字段显示为「未说明」而非推测填写。已知截止日期的过期机会不再显示；部分来源未提供截止日期，请打开官方公告核实。收录不代表本站赞同其观点。匹配度是本网站依据公告文本给出的判断，不代表发布机构的意见。中文摘要、标签与匹配理由由固定模板生成；岗位标题在译文填充前保留来源原文。</p>
+
+<script src="{{ base_path }}/assets/js/opps-expiry.js" defer></script>

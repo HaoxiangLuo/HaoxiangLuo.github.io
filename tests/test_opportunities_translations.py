@@ -234,9 +234,11 @@ class PageFallbackTests(unittest.TestCase):
             self.assertIn("{% include opps-filters.html", page)
             self.assertIn("{% include opps-card.html", page)
 
-    def test_both_pages_keep_a_closed_section(self):
-        self.assertIn('where: "status", "closed"', self.en)
-        self.assertIn('where: "status", "closed"', self.zh)
+    def test_both_pages_exclude_closed_opportunities(self):
+        for page in (self.en, self.zh):
+            self.assertIn("item.status != 'closed'", page)
+            self.assertIn('assign extended = un_open', page)
+            self.assertNotIn('opps-gone-title', page)
 
 
 class TranslateOnlyTests(unittest.TestCase):
