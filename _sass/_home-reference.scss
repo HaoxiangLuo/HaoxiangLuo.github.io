@@ -61,6 +61,11 @@ body.home-page .language-toggle__option.is-active { background: #0071e3; }
   body.home-page #main > .news-window { grid-template-columns: 180px minmax(0, 1fr) auto; }
 }
 
+@media (min-width: 1301px) {
+  body.home-page .publication-board.is-expanded .publication-column--book { align-self: start; }
+  body.home-page .publication-board.is-expanded .publication-card--featured { flex: none; height: var(--collapsed-book-height, auto); }
+}
+
 @media (max-width: 767px) {
   body.home-page .publication-cover--book-nature { background-size: 600% auto; background-position: left 45%; }
   body.home-page .publication-cover--book-nature::before,

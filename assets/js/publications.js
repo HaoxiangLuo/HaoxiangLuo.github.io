@@ -14,6 +14,8 @@
   var toggle;
   var zh = (document.documentElement.lang || "en").indexOf("zh") === 0;
   var activeYear = "all";
+  var board = document.querySelector(".publication-board");
+  var book = document.querySelector(".publication-card--featured");
   function rank(card) {
     var value = (card.getAttribute("data-rank") || "").replace(/（/g, "(").replace(/）/g, ")").replace(/\s/g, "");
     return {"SSCIQ1": 6, "EI(JA)": 5, "CSSCI": 4, "CSSCI扩展": 3, "CSSCI(Extended)": 3, "AMI": 2}[value] || 0;
@@ -31,7 +33,11 @@
     toggle.setAttribute("aria-controls", articleList.id);
     document.querySelector(".publication-board").insertAdjacentElement("afterend", toggle);
     toggle.addEventListener("click", function () {
+      if (!expanded && book && !book.hidden) {
+        board.style.setProperty("--collapsed-book-height", book.getBoundingClientRect().height + "px");
+      }
       expanded = !expanded;
+      board.classList.toggle("is-expanded", expanded);
       applyFilter(activeYear);
     });
   }
