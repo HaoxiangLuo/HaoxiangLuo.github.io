@@ -1,0 +1,7 @@
+{% if entry.show_details %}
+<details class="site-log-entry__details">
+  <summary>{% if page.lang == 'zh' %}改动与核验明细{% else %}Changes and verification{% endif %}</summary>
+  <p>{% if page.lang == 'zh' %}{{ entry.purpose_zh | escape }}{% else %}{{ entry.purpose_en | escape }}{% endif %}</p>
+  <p>{% if page.lang == 'zh' %}{{ entry.details_zh | escape }}{% else %}{{ entry.details_en | escape }}{% endif %}</p>
+</details>
+{% endif %}

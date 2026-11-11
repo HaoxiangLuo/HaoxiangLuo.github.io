@@ -424,6 +424,19 @@
     section.appendChild(head);
     section.appendChild(heading);
     section.appendChild(story);
+    if (record.show_details) {
+      var details = document.createElement("details");
+      details.className = "site-log-entry__details";
+      var summary = document.createElement("summary");
+      setText(summary, options.language === "zh" ? "改动与核验明细" : "Changes and verification");
+      details.appendChild(summary);
+      ["purpose_", "details_"].forEach(function (prefix) {
+        var paragraph = document.createElement("p");
+        setText(paragraph, record[prefix + (options.language === "zh" ? "zh" : "en")] || "");
+        details.appendChild(paragraph);
+      });
+      section.appendChild(details);
+    }
     return section;
   }
 

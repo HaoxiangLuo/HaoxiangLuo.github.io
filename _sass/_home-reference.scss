@@ -62,6 +62,9 @@ body.home-page .language-toggle__option.is-active { background: #0071e3; }
 }
 
 @media (max-width: 767px) {
+  body.home-page .publication-cover--book-nature { background-size: 600% auto; background-position: left 45%; }
+  body.home-page .publication-cover--book-nature::before,
+  body.home-page .publication-cover--book-nature::after { display: none; }
   body.home-page .home-interests h2 { margin-bottom: .5rem; }
   body.home-page .home-interests ul { display: flex; flex-wrap: wrap; gap: .4rem; padding: 0; list-style: none; }
   body.home-page .home-interests li { margin: 0; padding: .3rem .65rem; border-radius: 999px; background: #e9f2fb; }

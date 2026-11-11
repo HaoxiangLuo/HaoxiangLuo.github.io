@@ -85,17 +85,18 @@
   },
   {
     "date": "2026-11-11",
-    "title_zh": "调整了论文发表、界面样式",
-    "title_en": "Refined Publications, interface styling",
+    "title_zh": "首页背景融合与原题作品收纳",
+    "title_en": "Blended homepage scenery and publication disclosure",
     "message": "融合首页背景并收纳排序原题作品",
-    "story_zh": "对论文发表、界面样式的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
-    "story_en": "Changed the script and interaction logic of Publications, interface styling so expanding and filtering the page works reliably.",
-    "purpose_zh": "统一论文发表与既有内容页的内容宽度、阅读节奏和视觉层级。",
-    "purpose_en": "融合首页背景并收纳排序原题作品",
-    "details_zh": "调整论文发表页面的主内容容器、archive 宽度或内边距、标题对齐与移动端布局。",
-    "details_en": "Adjusted the main content container, archive width or padding, title alignment and mobile layout of the Publications page.",
+    "story_zh": "对首页背景和作品区进行了渐变融合、等高收纳与原题排序改动，使作品默认显示四篇并可展开。",
+    "story_en": "Changed homepage scenery and publications so backgrounds blend, columns align, and four original-title articles appear before expansion.",
+    "purpose_zh": "让简介风景融入卡片，消除作品区左右高差，保留作品原始题名并控制首页长度。",
+    "purpose_en": "Blend the introduction scenery into its card, align publication columns, preserve original titles, and keep the homepage compact.",
+    "details_zh": "简介背景只取风景拼图中的单幅画面，保留图片比例，以横向及纵向白色渐变淡化边界；桌面个人卡片与简介等高，著作与两行论文卡片底边对齐。作品按已有收录级别优先、同级按年份排序；首页默认四篇，其余可展开或收起，年份筛选同时更新数量和按钮。中文作品在英文页保留中文原题及原刊名。已在正式网站中英文首页、1586×1100桌面和390×844手机视口检查背景、等高、展开收起、2024/2025筛选及原题一致性，均通过；手机采用单列且无横向溢出。 手机著作封面改用等比例裁切，并移除叠加装饰线，避免横幅拉伸。",
+    "details_en": "The introduction uses one scene from the landscape sprite at its original aspect ratio, blended with horizontal and vertical white gradients. Desktop profile and introduction cards share a bottom edge, as do the book and two article rows. Articles follow existing index labels, then year within each tier. Four appear initially; remaining works expand and collapse, and year filters update counts and controls. Chinese works retain their original titles and journal names on the English page. Both live language versions were checked at desktop 1586×1100 and phone 390×844: background blending, aligned desktop columns, expansion, collapse, 2024/2025 filters and matching original titles passed. Phone layouts use one column without horizontal overflow. Phone book artwork uses proportional cropping without decorative overlay lines to avoid stretching.",
     "sha": "1ee3acc",
-    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/1ee3acc0f516e69b626bc9f482e60c104dca4a69"
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/1ee3acc0f516e69b626bc9f482e60c104dca4a69",
+    "show_details": true
   },
   {
     "date": "2026-11-08",

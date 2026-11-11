@@ -31,6 +31,7 @@ translation_url: /site-log/
               </div>
               <h3>{{ entry.title_zh }}</h3>
               <p class="site-log-entry__story">{{ entry.story_zh | default: entry.details_zh | default: entry.message }}</p>
+              {% include site-log-details.html %}
             </section>
           {% endfor %}
         </div>

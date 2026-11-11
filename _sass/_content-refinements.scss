@@ -1,4 +1,7 @@
 /* Publication grid and Study Notes components. Loaded last to avoid legacy overrides. */
+.site-log-entry__details { margin-top: .5rem; font-size: .78rem; line-height: 1.6; }
+.site-log-entry__details summary { color: #0066cc; cursor: pointer; }
+.site-log-entry__details p { margin: .6rem 0; }
 .greedy-nav .visible-links {
   max-width: 100%;
 }
