@@ -1550,7 +1550,9 @@ body {
     grid-template-columns: minmax(390px, 29%) minmax(0, 1fr);
     gap: 1rem;
   }
-  body.home-page #main > .sidebar.sticky { width: 100%; max-height: none; }
+  body.home-page #main > .sidebar.sticky { width: 100%; max-height: none; padding: 1.5rem !important; }
+  body.home-page #main > .page .page__inner-wrap > header { display: none; }
+  body.home-page #main > .page .page__content { padding-top: 0; }
   body.home-page #main > .sidebar .author__urls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   body.home-page #main > .news-window { grid-template-columns: 245px minmax(0, 1fr) 90px; }
   body.home-page #main > .news-window .news-window__header { display: contents; }
