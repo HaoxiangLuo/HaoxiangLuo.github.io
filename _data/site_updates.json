@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-11-11",
+    "title_zh": "调整了页面结构",
+    "title_en": "Refined page structure",
+    "message": "Refresh stylesheet after site builds",
+    "story_zh": "对页面结构的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
+    "story_en": "Changed the script and interaction logic of page structure so expanding and filtering the page works reliably.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "Refresh stylesheet after site builds",
+    "details_zh": "调整页面组件与内容结构。",
+    "details_en": "Adjusted page components and content structure.",
+    "sha": "90e4c0e",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/90e4c0e60be43fd65da3ff21eaa98baf208b5bec"
+  },
+  {
+    "date": "2026-11-11",
     "title_zh": "调整了界面样式",
     "title_en": "Refined interface styling",
     "message": "Match approved homepage proportions and show news link",
