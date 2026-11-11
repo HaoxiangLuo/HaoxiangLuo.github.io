@@ -1,5 +1,18 @@
 /* Home page composition: profile and introduction first, followed by a brief
    and the actual publication record. Kept last in the CSS cascade. */
+body.home-page #main > .page .home-intro-panel { position: relative; overflow: hidden; isolation: isolate; }
+body.home-page #main > .page .home-intro-panel > * { position: relative; z-index: 1; }
+body.home-page #main > .page .home-intro-panel::after {
+  position: absolute; inset: 0 0 0 auto; width: 60%; height: 100%; opacity: .35;
+  background-image: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0) 100%), linear-gradient(180deg, #fff 10%, rgba(255,255,255,0) 100%), url('/images/publication-snow-mountains.jpg');
+  background-position: center, center, right center;
+  background-size: cover, cover, 600% auto; background-repeat: no-repeat;
+  content: ''; pointer-events: none;
+}
+.publication-more { grid-column: 1 / -1; justify-self: end; margin-top: .6rem; padding: .5rem 1rem; border: 1px solid #d2d2d7; border-radius: 999px; background: #fff; color: #0066cc; cursor: pointer; font: inherit; font-size: .78rem; }
+.publication-more[hidden], .publication-card[hidden] { display: none !important; }
+body.home-page #main > .news-window .news-window__list a { border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+body.home-page .language-toggle__option.is-active { background: #0071e3; }
 @media (min-width: 1024px) {
   body.home-page #main {
     display: grid !important;
@@ -7,12 +20,17 @@
     grid-template-rows: auto auto auto;
     align-items: stretch;
     gap: 1rem;
+    padding-top: 2rem;
   }
   body.home-page #main > .sidebar.sticky,
   body.home-page #main > .page { height: auto; min-height: 260px; align-self: stretch; }
   body.home-page #main > .sidebar.sticky { grid-row: 1; grid-column: 1; }
   body.home-page #main > .page { grid-row: 1; grid-column: 2; }
-  body.home-page #main > .page .home-intro-panel { height: 100%; min-height: 260px; box-sizing: border-box; overflow: visible; }
+  body.home-page #main > .page { display: flex; }
+  body.home-page #main > .page .page__inner-wrap { flex: 1; min-width: 0; }
+  body.home-page #main > .page .page__content { height: 100%; }
+  body.home-page #main > .page .home-intro-panel p { font-size: 1rem; line-height: 1.55; }
+  body.home-page #main > .page .home-intro-panel { height: 100%; min-height: 260px; box-sizing: border-box; overflow: hidden; }
   body.home-page .home-interests { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem 1rem; }
   body.home-page #main > .page .home-interests h2 { flex: 0 0 auto; margin: 0; padding-right: 1rem; border-right: 1px solid #c9c9ce; }
   body.home-page #main > .page .home-interests ul { flex: 1 1 300px; margin: 0; }
@@ -28,6 +46,14 @@
   body.home-page .publication-card--featured { height: 100%; box-sizing: border-box; }
   body.home-page .publication-column--articles .publication-card { height: auto; min-width: 0; }
   body.home-page .publication-column--articles .publication-card h3 { overflow-wrap: anywhere; }
+  body.home-page #main > .home-publications .publication-board { align-items: stretch; }
+  body.home-page .publication-column { display: flex; flex-direction: column; min-width: 0; }
+  body.home-page .publication-card--featured { position: static; flex: 1; height: auto; min-height: 0; }
+  body.home-page .publication-column--articles .publication-card-list { grid-auto-rows: minmax(220px, auto); align-items: stretch; }
+  body.home-page .publication-column--articles .publication-card { height: 100%; box-sizing: border-box; min-height: 0; grid-template-columns: 28% minmax(0,1fr); }
+  body.home-page .publication-column--articles .publication-cover { width: 100%; height: 100%; min-height: 0; }
+  body.home-page .publication-card h3 { display: block; max-height: none; overflow: visible; -webkit-line-clamp: unset; }
+  body.home-page #main > .home-publications .publication-board:has(> .publication-column[hidden]) { grid-template-columns: minmax(0, 1fr); }
 }
 
 @media (min-width: 1024px) and (max-width: 1300px) {
