@@ -7,7 +7,7 @@ lang: zh
 translation_url: /opportunities/
 ---
 
-<p class="daily-news-intro">面向传播学、计算传播、国际传播与数字治理方向的联合国系统实习岗位每日更新清单。系统每天从二十个联合国机构的官方招聘页面采集岗位，再按「专业方向 30 分、岗位职能 25 分、研究主题 20 分、申请资格 15 分、工作形式与地点 5 分、机构相关度 5 分」打分，低于 60 分的一律不收录——宁可漏掉不相关的岗位，也不放进财务、人力资源或工程类职位。同时收录 QS 前 50 高校新闻传播院系发布的博士交换、访学与联合培养项目。收录的内容全部留档：每天的内容单独归档在各自日期下，后一次的采集不会覆盖前一次的结果。</p>
+<p class="daily-news-intro">发现与传播学、计算传播及数字治理相关的实习、访学与研究机会。按需展开各板块，前往官方公告了解申请要求。</p>
 
 {% assign opps = site.data.opportunities %}
 {% assign un_items = "" | split: "," %}
@@ -22,15 +22,16 @@ translation_url: /opportunities/
 {% assign remote = un_live | where: "mode", "remote" %}
 {% assign extended = un_open | where: "extended", true %}
 
+{% include opps-overview.html %}
 {% include archive-date-filter.html %}
 {% include opps-archive-controls.html %}
 
 <div class="opps-archive">
   {% if un_live.size > 0 %}
   <section class="opps-section" aria-labelledby="opps-pick-title">
-    <details class="opps-section__disclosure">
+    <details class="opps-section__disclosure" open>
       <summary class="opps-section__summary"><h2 id="opps-pick-title" class="opps-section__title">优先推荐</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
-    <p class="opps-section__note">四个模块分别回答三个问题：最近有哪些适合我的联合国实习、哪些最值得申请、哪些马上截止。</p>
+    <p class="opps-section__note">按匹配度、截止时间或工作形式选择入口，展开查看推荐岗位。</p>
     <div class="opps-modules">
       <details class="opps-module">
         <summary class="opps-module__summary"><h3 class="opps-module__title">极高匹配 <span class="opps-subtitle__count">{{ exceptional.size }}</span></h3><span class="opps-section__chevron" aria-hidden="true"></span></summary>
@@ -42,7 +43,7 @@ translation_url: /opportunities/
         {% endif %}
       </details>
       <details class="opps-module">
-        <summary class="opps-module__summary"><h3 class="opps-module__title">即将截止 <span class="opps-subtitle__count">{{ closing.size }}</span></h3><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+        <summary class="opps-module__summary"><h3 id="opps-closing" class="opps-module__title">即将截止 <span class="opps-subtitle__count">{{ closing.size }}</span></h3><span class="opps-section__chevron" aria-hidden="true"></span></summary>
         <p class="opps-module__note">剩余申请时间不超过 7 天。</p>
         {% if closing.size > 0 %}
           <div class="opps-cards">{% for item in closing limit: 6 %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
@@ -70,7 +71,7 @@ translation_url: /opportunities/
 
   <section class="opps-section" aria-labelledby="opps-un-title">
     <details class="opps-section__disclosure">
-      <summary class="opps-section__summary"><h2 id="opps-un-title" class="opps-section__title">联合国机构 <span class="opps-subtitle__count">{{ un_live.size }}</span></h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+      <summary class="opps-section__summary"><h2 id="opps-un-title" class="opps-section__title">联合国机构 <span class="opps-subtitle__count">{{ un_live.size }}</span></h2><span class="opps-section__preview">按匹配度浏览与筛选岗位</span><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <p class="opps-section__note">全部 60 分以上的岗位，按匹配度从高到低排列；可按机构、方向、地点、状态与匹配度筛选。</p>
     {% include opps-filters.html lang="zh" %}
     <div class="opps-cards">
@@ -82,7 +83,7 @@ translation_url: /opportunities/
   {% else %}
   <section class="opps-section" aria-labelledby="opps-un-title">
     <details class="opps-section__disclosure">
-      <summary class="opps-section__summary"><h2 id="opps-un-title" class="opps-section__title">联合国机构</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+      <summary class="opps-section__summary"><h2 id="opps-un-title" class="opps-section__title">联合国机构</h2><span class="opps-section__preview">按匹配度浏览与筛选岗位</span><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <p class="daily-news-empty">自动采集任务运行后，第一批联合国岗位将显示在这里。</p>
     </details>
   </section>
@@ -91,7 +92,7 @@ translation_url: /opportunities/
   {% if extended.size > 0 %}
   <section class="opps-section" aria-labelledby="opps-ext-title">
     <details class="opps-section__disclosure">
-      <summary class="opps-section__summary"><h2 id="opps-ext-title" class="opps-section__title">拓展机会 <span class="opps-subtitle__count">{{ extended.size }}</span></h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+      <summary class="opps-section__summary"><h2 id="opps-ext-title" class="opps-section__title">拓展机会 <span class="opps-subtitle__count">{{ extended.size }}</span></h2><span class="opps-section__preview">适合早期研究者的咨询机会</span><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <p class="opps-section__note">咨询顾问类岗位：仅当公告明确写明接受博士、研究生或早期职业研究者时保留，不属于实习，单独列出。</p>
     <div class="opps-cards">{% for item in extended %}{% include opps-card.html item=item lang="zh" %}{% endfor %}</div>
     </details>
@@ -101,7 +102,7 @@ translation_url: /opportunities/
 
   <section class="opps-section" aria-labelledby="opps-company-title">
     <details class="opps-section__disclosure">
-      <summary class="opps-section__summary"><h2 id="opps-company-title" class="opps-section__title">企业实习</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+      <summary class="opps-section__summary"><h2 id="opps-company-title" class="opps-section__title">企业实习</h2><span class="opps-section__preview">按日期查看企业实习</span><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     {% assign company_total = 0 %}
     {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% assign company_total = company_total | plus: day_co.size %}{% endfor %}
     {% assign company_first = "" %}
@@ -134,7 +135,7 @@ translation_url: /opportunities/
 
   <section class="opps-section" aria-labelledby="opps-academia-title">
     <details class="opps-section__disclosure">
-      <summary class="opps-section__summary"><h2 id="opps-academia-title" class="opps-section__title">院校资讯</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+      <summary class="opps-section__summary"><h2 id="opps-academia-title" class="opps-section__title">院校资讯</h2><span class="opps-section__preview">交换、访学与联合培养</span><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <div class="daily-news-archive">
       {% if opps.academia.size > 0 %}
         {% for day in opps.academia %}

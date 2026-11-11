@@ -55,7 +55,8 @@
       var key = chip.getAttribute("data-filter");
       filters[key] = (filters[key] || []).concat(chip.getAttribute("data-value"));
     });
-    var cards = document.querySelectorAll("[data-opp]");
+    var scope = root.closest('.opps-section');
+    var cards = scope.querySelectorAll("[data-opp]");
     var shown = 0;
     Array.prototype.forEach.call(cards, function (card) {
       var visible = matches(card, filters);
@@ -68,7 +69,7 @@
     if (counter) {
       counter.textContent = shown + " / " + cards.length;
     }
-    document.querySelectorAll("[data-opps-empty]").forEach(function (note) {
+    scope.querySelectorAll("[data-opps-empty]").forEach(function (note) {
       note.hidden = shown !== 0;
     });
   }

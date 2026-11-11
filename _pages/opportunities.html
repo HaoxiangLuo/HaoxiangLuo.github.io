@@ -7,7 +7,7 @@ lang: en
 translation_url: /zh/opportunities/
 ---
 
-<p class="daily-news-intro">A daily-updated shortlist of United Nations internships, traineeships and fellowships for a researcher in communication, computational communication and digital governance. Twenty UN organisations are read from their own career sites; every opening is then scored out of 100 on direction, function, topics, eligibility, working mode and organisation, and anything below 60 is never stored — the aim is to miss an irrelevant post rather than to admit finance, HR or engineering. Beside them sit PhD exchange, visiting and joint-training announcements from journalism and communication departments at QS top-50 universities. Nothing collected is ever thrown away: each day is filed under its own date and a later run never overwrites an earlier one.</p>
+<p class="daily-news-intro">Internships, visiting programmes and research opportunities in communication and digital governance. Explore a shortlist, then visit the official notice to apply.</p>
 
 {% assign opps = site.data.opportunities %}
 {% comment %}Flatten the archive: the day buckets are how items are stored, not how they
@@ -25,15 +25,16 @@ translation_url: /zh/opportunities/
 {% assign remote = un_live | where: "mode", "remote" %}
 {% assign extended = un_open | where: "extended", true %}
 
+{% include opps-overview.html %}
 {% include archive-date-filter.html %}
 {% include opps-archive-controls.html %}
 
 <div class="opps-archive">
   {% if un_live.size > 0 %}
   <section class="opps-section" aria-labelledby="opps-pick-title">
-    <details class="opps-section__disclosure">
+    <details class="opps-section__disclosure" open>
       <summary class="opps-section__summary"><h2 id="opps-pick-title" class="opps-section__title">Where to apply</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
-    <p class="opps-section__note">Four answers to the three questions the page exists for: what suits the profile, what is most worth applying to, and what is about to close.</p>
+    <p class="opps-section__note">Start with a match, a deadline or a working preference. Expand a group to explore its shortlist.</p>
     <div class="opps-modules">
       <details class="opps-module">
         <summary class="opps-module__summary"><h3 class="opps-module__title">Exceptional matches <span class="opps-subtitle__count">{{ exceptional.size }}</span></h3><span class="opps-section__chevron" aria-hidden="true"></span></summary>
@@ -45,7 +46,7 @@ translation_url: /zh/opportunities/
         {% endif %}
       </details>
       <details class="opps-module">
-        <summary class="opps-module__summary"><h3 class="opps-module__title">Closing soon <span class="opps-subtitle__count">{{ closing.size }}</span></h3><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+        <summary class="opps-module__summary"><h3 id="opps-closing" class="opps-module__title">Closing soon <span class="opps-subtitle__count">{{ closing.size }}</span></h3><span class="opps-section__chevron" aria-hidden="true"></span></summary>
         <p class="opps-module__note">Seven days or fewer left to apply.</p>
         {% if closing.size > 0 %}
           <div class="opps-cards">{% for item in closing limit: 6 %}{% include opps-card.html item=item lang="en" %}{% endfor %}</div>
@@ -73,7 +74,7 @@ translation_url: /zh/opportunities/
 
   <section class="opps-section" aria-labelledby="opps-un-title">
     <details class="opps-section__disclosure">
-      <summary class="opps-section__summary"><h2 id="opps-un-title" class="opps-section__title">United Nations <span class="opps-subtitle__count">{{ un_live.size }}</span></h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+      <summary class="opps-section__summary"><h2 id="opps-un-title" class="opps-section__title">United Nations <span class="opps-subtitle__count">{{ un_live.size }}</span></h2><span class="opps-section__preview">Browse and filter matched roles</span><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <p class="opps-section__note">Every opening that scored 60 or above, highest match first. Filter by organisation, direction, place, status or score.</p>
     {% include opps-filters.html lang="en" %}
     <div class="opps-cards">
@@ -85,7 +86,7 @@ translation_url: /zh/opportunities/
   {% else %}
   <section class="opps-section" aria-labelledby="opps-un-title">
     <details class="opps-section__disclosure">
-      <summary class="opps-section__summary"><h2 id="opps-un-title" class="opps-section__title">United Nations</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+      <summary class="opps-section__summary"><h2 id="opps-un-title" class="opps-section__title">United Nations</h2><span class="opps-section__preview">Browse and filter matched roles</span><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <p class="daily-news-empty">The first United Nations openings appear here after the automated collection task runs.</p>
     </details>
   </section>
@@ -94,7 +95,7 @@ translation_url: /zh/opportunities/
   {% if extended.size > 0 %}
   <section class="opps-section" aria-labelledby="opps-ext-title">
     <details class="opps-section__disclosure">
-      <summary class="opps-section__summary"><h2 id="opps-ext-title" class="opps-section__title">Extended opportunities <span class="opps-subtitle__count">{{ extended.size }}</span></h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+      <summary class="opps-section__summary"><h2 id="opps-ext-title" class="opps-section__title">Extended opportunities <span class="opps-subtitle__count">{{ extended.size }}</span></h2><span class="opps-section__preview">Consultancies for early-career researchers</span><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <p class="opps-section__note">Consultancies, kept only when the notice says in writing that doctoral, postgraduate or early-career researchers may apply. They are not internships and are listed apart from them.</p>
     <div class="opps-cards">{% for item in extended %}{% include opps-card.html item=item lang="en" %}{% endfor %}</div>
     </details>
@@ -104,7 +105,7 @@ translation_url: /zh/opportunities/
 
   <section class="opps-section" aria-labelledby="opps-company-title">
     <details class="opps-section__disclosure">
-      <summary class="opps-section__summary"><h2 id="opps-company-title" class="opps-section__title">Global Companies</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+      <summary class="opps-section__summary"><h2 id="opps-company-title" class="opps-section__title">Global Companies</h2><span class="opps-section__preview">Company internships, filed by date</span><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     {% assign company_total = 0 %}
     {% for day in opps.internships %}{% assign day_co = day.items | where: "group", "company" %}{% assign company_total = company_total | plus: day_co.size %}{% endfor %}
     {% assign company_first = "" %}
@@ -137,7 +138,7 @@ translation_url: /zh/opportunities/
 
   <section class="opps-section" aria-labelledby="opps-academia-title">
     <details class="opps-section__disclosure">
-      <summary class="opps-section__summary"><h2 id="opps-academia-title" class="opps-section__title">Academic Exchange &amp; Visiting Programmes</h2><span class="opps-section__chevron" aria-hidden="true"></span></summary>
+      <summary class="opps-section__summary"><h2 id="opps-academia-title" class="opps-section__title">Academic Exchange &amp; Visiting Programmes</h2><span class="opps-section__preview">Exchange, visiting and joint programmes</span><span class="opps-section__chevron" aria-hidden="true"></span></summary>
     <div class="daily-news-archive">
       {% if opps.academia.size > 0 %}
         {% for day in opps.academia %}

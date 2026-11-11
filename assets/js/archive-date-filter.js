@@ -1,0 +1,192 @@
+(function () {
+    "use strict";
+    function initializeDateFilter() {
+    var filter = document.querySelector("[data-date-filter]");
+    if (!filter) return;
+    var empty = document.querySelector(".archive-date-filter__empty");
+    var language = filter.getAttribute("data-language") === "zh" ? "zh-CN" : "en";
+    var shortLanguage = filter.getAttribute("data-language") === "zh" ? "zh" : "en";
+    var dataset = filter.getAttribute("data-archive-dataset");
+    var allLabel = filter.getAttribute("data-all-label");
+    var yearLabel = filter.getAttribute("data-year-label");
+    var monthLabel = filter.getAttribute("data-month-label");
+
+    function allItems() {
+      return Array.prototype.slice.call(document.querySelectorAll("[data-filter-date]"));
+    }
+    function dateOf(item) { return item.getAttribute("data-filter-date") || ""; }
+    function dates() { return allItems().map(dateOf); }
+
+    // Periods the page already renders from its recent index. Historical
+    // partitions covering these are never downloaded.
+    var covered = {};
+    allItems().forEach(function (item) {
+      var date = dateOf(item);
+      if (date.length >= 4) covered[date.slice(0, 4)] = true;
+      if (date.length >= 7) covered[date.slice(0, 7)] = true;
+    });
+
+    var status = document.createElement("p");
+    status.className = "archive-history-status";
+    status.hidden = true;
+    if (filter.parentNode) filter.parentNode.insertBefore(status, filter.nextSibling);
+
+    var historyToken = 0;
+    function historyEnabled() { return !!(dataset && window.SiteArchiveHistory); }
+
+    function showStatus(kind) {
+      var copy = window.SiteArchiveHistory
+        ? window.SiteArchiveHistory.labels(shortLanguage)
+        : { loading: "", error: "", empty: "", retry: "Retry" };
+      status.className = "archive-history-status is-" + kind;
+      status.textContent = "";
+      var text = document.createElement("span");
+      text.textContent = kind === "loading" ? copy.loading : (kind === "error" ? copy.error : copy.empty);
+      status.appendChild(text);
+      if (kind === "error") {
+        var retry = document.createElement("button");
+        retry.type = "button";
+        retry.className = "archive-history-retry";
+        retry.textContent = copy.retry;
+        retry.addEventListener("click", function () { refreshHistory(); });
+        status.appendChild(retry);
+      }
+      status.hidden = false;
+    }
+    function hideStatus() {
+      status.hidden = true;
+      status.textContent = "";
+    }
+
+    function makeSelect(label, className) {
+      var wrapper = document.createElement("label");
+      var text = document.createElement("span");
+      var select = document.createElement("select");
+      wrapper.className = "archive-date-filter__field";
+      text.textContent = label;
+      text.className = "screen-reader-text";
+      select.className = className;
+      wrapper.appendChild(text);
+      wrapper.appendChild(select);
+      filter.appendChild(wrapper);
+      return select;
+    }
+    var yearSelect = makeSelect(yearLabel, "archive-date-filter__select archive-date-filter__year");
+    var monthSelect = makeSelect(monthLabel, "archive-date-filter__select archive-date-filter__month");
+    function addOption(select, value, label) {
+      var option = document.createElement("option");
+      option.value = value;
+      option.textContent = label;
+      select.appendChild(option);
+    }
+    var years = Array.from(new Set(dates().map(function (date) { return date.slice(0, 4); }))).sort().reverse();
+    if (!years.length) return;
+
+    // Years and months the archive holds but the recent index dropped. They are
+    // added as soon as the (very small) manifest has been read.
+    var archiveMonths = {};
+    function rebuildYearOptions() {
+      var current = yearSelect.value;
+      yearSelect.textContent = "";
+      addOption(yearSelect, "all", allLabel + " " + yearLabel);
+      years.forEach(function (year) { addOption(yearSelect, year, year); });
+      yearSelect.value = years.indexOf(current) !== -1 ? current : "all";
+    }
+    addOption(yearSelect, "all", allLabel + " " + yearLabel);
+    years.forEach(function (year) { addOption(yearSelect, year, year); });
+
+    function extendFromManifest() {
+      if (!historyEnabled()) return;
+      window.SiteArchiveHistory.manifest().then(function (archives) {
+        var entry = archives[dataset] || {};
+        (entry.available || []).forEach(function (part) {
+          var key = String(part.key || "");
+          if (!key) return;
+          var year = key.slice(0, 4);
+          if (years.indexOf(year) === -1) years.push(year);
+          if (key.length >= 7) {
+            if (!archiveMonths[year]) archiveMonths[year] = [];
+            var month = key.slice(5, 7);
+            if (archiveMonths[year].indexOf(month) === -1) archiveMonths[year].push(month);
+          }
+        });
+        years.sort().reverse();
+        rebuildYearOptions();
+        populateMonths();
+      }).catch(function () {
+        // Without the manifest the page still filters what it already has.
+      });
+    }
+
+    function populateMonths() {
+      var current = monthSelect.value;
+      var year = yearSelect.value;
+      var months = Array.from(new Set(dates().filter(function (date) {
+        return year === "all" || date.slice(0, 4) === year;
+      }).map(function (date) { return date.slice(5, 7); }).concat(archiveMonths[year] || []))).sort().reverse();
+      monthSelect.textContent = "";
+      addOption(monthSelect, "all", allLabel + " " + monthLabel);
+      months.forEach(function (month) {
+        var label = new Intl.DateTimeFormat(language, { month: "long" }).format(new Date(2000, Number(month) - 1, 1));
+        addOption(monthSelect, month, label);
+      });
+      monthSelect.value = months.indexOf(current) !== -1 ? current : "all";
+    }
+    function applyFilter() {
+      var year = yearSelect.value;
+      var month = monthSelect.value;
+      var visibleCount = 0;
+      allItems().forEach(function (item) {
+        var date = dateOf(item);
+        var visible = (year === "all" || date.slice(0, 4) === year) && (month === "all" || date.slice(5, 7) === month);
+        item.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+      if (empty) empty.hidden = visibleCount !== 0;
+    }
+
+    /* Pull an earlier period out of the JSONL archive, but only when the
+       visitor asks for one the recent index no longer carries. */
+    function refreshHistory() {
+      if (!historyEnabled()) return;
+      var year = yearSelect.value;
+      if (year === "all") { hideStatus(); return; }
+      var token = historyToken + 1;
+      historyToken = token;
+      showStatus("loading");
+      window.SiteArchiveHistory.loadRange(dataset, year, monthSelect.value, covered)
+        .then(function (records) {
+          if (token !== historyToken) return;  // a newer selection won
+          var container = window.SiteArchiveHistory.containerFor(dataset);
+          if (!container) { hideStatus(); return; }
+          records.forEach(function (record) {
+            var date = record.date || record.published_at || "";
+            if (date.length >= 4) covered[date.slice(0, 4)] = true;
+            if (date.length >= 7) covered[date.slice(0, 7)] = true;
+          });
+          var rendered = window.SiteArchiveHistory.render(dataset, container, records, { language: shortLanguage });
+          populateMonths();
+          applyFilter();
+          if (rendered) hideStatus();
+          else if (!records.length) showStatus("empty");
+          else hideStatus();
+        })
+        .catch(function () {
+          // Keep whatever is already on screen; the retry button re-runs this.
+          if (token !== historyToken) return;
+          showStatus("error");
+        });
+    }
+
+    yearSelect.addEventListener("change", function () { populateMonths(); applyFilter(); refreshHistory(); });
+    monthSelect.addEventListener("change", function () { applyFilter(); refreshHistory(); });
+    populateMonths();
+    applyFilter();
+    extendFromManifest();
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initializeDateFilter, { once: true });
+    } else {
+      initializeDateFilter();
+    }
+  }());
