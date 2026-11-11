@@ -57,6 +57,21 @@
   },
   {
     "date": "2026-11-11",
+    "sha": "8785726",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/8785726a1f20c06ef865fa3bc487b11385060058",
+    "message": "重整资讯页概览与折叠清单设计",
+    "title_zh": "资讯页概览与分类清单",
+    "title_en": "Opportunities overview and grouped lists",
+    "story_zh": "增加了资讯概览与分类折叠卡片，该功能用于按岗位数量、截止时间和研究机构入口浏览机会。",
+    "story_en": "Added an Opportunities overview and grouped disclosure cards, which organise roles, deadlines and research-center links.",
+    "purpose_zh": "缩短资讯页的首屏说明，让分类入口与岗位清单形成清晰层级，并保持长清单按需展开。",
+    "purpose_en": "Shorten the introduction, establish clear navigation and list hierarchy, and reveal long lists on demand.",
+    "details_zh": "新增开放联合国岗位、七天内截止与研究机构三张概览卡片，点击可展开并定位相关板块；收录规则移入独立说明，四个推荐入口保留为紧凑折叠卡片。联合国、企业、院校和拓展机会使用统一圆角、细边框、预览文字和留白，岗位分数、标签和筛选按钮减少重复强调。岗位筛选限定于联合国完整清单，避免改变推荐区；年月筛选脚本移出内联代码以避免页面压缩破坏运行。中英文桌面与390像素手机预览均通过概览跳转、板块展开、年月筛选及无横向溢出检查。",
+    "details_en": "Three overview cards show open UN roles, notices closing within seven days, and research-center links; selecting one reveals and locates its section. Collection rules move into a disclosure, while four compact recommendation groups remain available. UN, company, university and consultancy lists share restrained borders, spacing and preview text. Scores, tags and filter chips use quieter styling. UN list filtering no longer changes recommendation cards. Date-filter code moves to an external file to avoid page compression breaking inline scripts. Both languages were checked at desktop and 390-pixel phone widths for navigation, disclosure, date filtering and horizontal overflow.",
+    "show_details": true
+  },
+  {
+    "date": "2026-11-11",
     "sha": "6e49f17",
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/6e49f174614c77d0f623f791f6d6dcba054b62ca",
     "message": "展开论文时保持著作卡片固定",
