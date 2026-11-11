@@ -1,0 +1,44 @@
+/* Home page composition: profile and introduction first, followed by a brief
+   and the actual publication record. Kept last in the CSS cascade. */
+@media (min-width: 1024px) {
+  body.home-page #main {
+    display: grid !important;
+    grid-template-columns: minmax(280px, 29%) minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  body.home-page #main > .sidebar.sticky,
+  body.home-page #main > .page { height: auto; min-height: 260px; align-self: stretch; }
+  body.home-page #main > .sidebar.sticky { grid-row: 1; grid-column: 1; }
+  body.home-page #main > .page { grid-row: 1; grid-column: 2; }
+  body.home-page #main > .page .home-intro-panel { height: 100%; min-height: 260px; box-sizing: border-box; overflow: visible; }
+  body.home-page .home-interests { display: flex; align-items: center; flex-wrap: wrap; gap: .65rem 1rem; }
+  body.home-page #main > .page .home-interests h2 { flex: 0 0 auto; margin: 0; padding-right: 1rem; border-right: 1px solid #c9c9ce; }
+  body.home-page #main > .page .home-interests ul { flex: 1 1 300px; margin: 0; }
+  body.home-page #main > .news-window { grid-row: 2; grid-column: 1 / -1; grid-template-columns: 220px minmax(0, 1fr) auto; gap: .35rem 1rem; }
+  body.home-page #main > .news-window .news-window__header { display: contents; }
+  body.home-page #main > .news-window .news-window__header > div { grid-column: 1; grid-row: 1; }
+  body.home-page #main > .news-window .news-window__header > a { display: block; grid-column: 3; grid-row: 1; white-space: nowrap; color: #0066cc; }
+  body.home-page #main > .news-window .news-window__list { grid-column: 2; grid-row: 1; min-width: 0; }
+  body.home-page #main > .news-window .news-window__list a span { white-space: normal; overflow-wrap: anywhere; }
+  body.home-page #main > .news-window .news-window__footer { grid-column: 1; grid-row: 2; }
+  body.home-page #main > .home-publications { grid-row: 3; grid-column: 1 / -1; }
+  body.home-page #main > .home-publications .publication-board { grid-template-columns: minmax(250px, 1fr) minmax(0, 1.8fr); }
+  body.home-page .publication-card--featured { height: 100%; box-sizing: border-box; }
+  body.home-page .publication-column--articles .publication-card { height: auto; min-width: 0; }
+  body.home-page .publication-column--articles .publication-card h3 { overflow-wrap: anywhere; }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  body.home-page #main > .home-publications .publication-board { grid-template-columns: minmax(0, 1fr); }
+  body.home-page #main > .news-window { grid-template-columns: 180px minmax(0, 1fr) auto; }
+}
+
+@media (max-width: 767px) {
+  body.home-page .home-interests h2 { margin-bottom: .5rem; }
+  body.home-page .home-interests ul { display: flex; flex-wrap: wrap; gap: .4rem; padding: 0; list-style: none; }
+  body.home-page .home-interests li { margin: 0; padding: .3rem .65rem; border-radius: 999px; background: #e9f2fb; }
+  body.home-page #main > .news-window .news-window__header > a { display: inline-flex; }
+  body.home-page .publication-card h3 { overflow-wrap: anywhere; }
+}
