@@ -1561,3 +1561,12 @@ body {
   body.home-page #main > .news-window .news-window__list { grid-column: 2; }
   body.home-page #main > .news-window .news-window__footer { grid-column: 1; }
 }
+
+@media (max-width: 767px) {
+  body.home-page .sidebar .author__avatar img.author__avatar {
+    width: 56px !important;
+    max-width: 56px !important;
+    height: 70px;
+    object-fit: cover;
+  }
+}
