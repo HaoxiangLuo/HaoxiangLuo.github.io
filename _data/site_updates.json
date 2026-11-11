@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-11-11",
+    "title_zh": "调整了每日新闻、资讯、页面结构、界面样式",
+    "title_en": "Refined Daily News, Opportunities, page structure, interface styling",
+    "message": "改进资讯页折叠与研究机构链接",
+    "story_zh": "更新了每日新闻、资讯、页面结构、界面样式的归档数据，使页面读到的记录与最新一次改动保持一致。",
+    "story_en": "Updated the archived data behind Daily News, Opportunities, page structure, interface styling so the page shows the records from the latest change.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "改进资讯页折叠与研究机构链接",
+    "details_zh": "调整每日新闻、资讯页面的主内容容器、archive 宽度或内边距、标题对齐与移动端布局。",
+    "details_en": "Adjusted the main content container, archive width or padding, title alignment and mobile layout of the Daily News, Opportunities page.",
+    "sha": "dafc1c0",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/dafc1c08a890c44d2ee2f3748979acdf4cf63a4f"
+  },
+  {
+    "date": "2026-11-11",
     "title_zh": "调整了界面样式",
     "title_en": "Refined interface styling",
     "message": "Keep mobile profile photo aligned with name",
