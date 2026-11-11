@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-11T20:33:54+08:00",
+  "updated_at": "2026-11-12T02:10:14+08:00",
   "days": [
+    {
+      "date": "2026-11-12",
+      "items": [
+        {
+          "title": "Spain sees widespread disruption in first general strike for 14 years",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "西班牙14年来首次大罢工造成广泛破坏"
+        },
+        {
+          "title": "Greetings from Senegal, where breakdancers are competing in the Youth Olympics",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/11/g-s1-150228/senegal-youth-olympic-games-breakdancing",
+          "title_zh": "来自塞内加尔的问候，霹雳舞者正在那里参加青年奥运会"
+        },
+        {
+          "title": "Lebanon: After 48 years patrolling the Blue Line, UN peacekeepers prepare exit",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168784",
+          "title_zh": "黎巴嫩：在蓝线巡逻 48 年后，联合国维和人员准备撤离"
+        },
+        {
+          "title": "Russia-Ukraine talks turn to post-war security but end without breakthrough",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "俄乌会谈转向战后安全但无突破"
+        },
+        {
+          "title": "Russia and Ukraine agree to a prisoner exchange as talks end with no big breakthrough",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/11/g-s1-152954/russia-ukraine-war-talks",
+          "title_zh": "俄罗斯和乌克兰同意交换囚犯 谈判结束但没有取得重大突破"
+        },
+        {
+          "title": "‘Make or bake time’: Guterres urges climate justice pact as leaders gather at COP31",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168783",
+          "title_zh": "制造或烘焙时间”：古特雷斯在各国领导人齐聚 COP31 时敦促达成气候正义协议"
+        },
+        {
+          "title": "US Treasury Secretary Scott Bessent relocated after alleged Iranian threats",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国财政部长斯科特·贝森特因涉嫌伊朗威胁而被调职"
+        },
+        {
+          "title": "House effectively ends Hegseth impeachment. And, 3 men accused of plotting U.K. attacks",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/11/g-s1-152949/up-first-newsletter-pete-hegseth-jim-jordan-iran-backed-trio-us-bases",
+          "title_zh": "众议院有效结束了对赫格斯的弹劾。并且，三名男子被指控策划英国袭击"
+        },
+        {
+          "title": "World News in Brief: Ending cholera by 2030 ‘within reach’, Haiti displacement and hunger, US human rights review rescheduled",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168782",
+          "title_zh": "世界新闻简讯：到 2030 年消除霍乱“触手可及”、海地流离失所和饥饿、美国人权审查重新安排"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "APOD: 2026 November 11 – NGC 4449: Small Galaxy, Big Impact",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-11-ngc-4449-small-galaxy-big-impact/",
+          "title_zh": "APOD：2026 年 11 月 11 日 – NGC 4449：小星系，大影响"
+        },
+        {
+          "title": "Did comets bring building blocks of life to Earth? Scientists aren't so sure anymore",
+          "source": "Space.com",
+          "url": "https://www.space.com/astronomy/comets/did-comets-bring-building-blocks-of-life-to-earth-scientists-arent-so-sure-anymore",
+          "title_zh": "彗星是否给地球带来了生命的基石？科学家们不再那么确定"
+        },
+        {
+          "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/07/ast-spacemobile-unveils-1-3-billion-engine-deal-with-firefly-aerospace-to-power-new-heavy-lift-rocket/",
+          "title_zh": "AST SpaceMobile 与 Firefly Aerospace 签署价值 13 亿美元的发动机协议，为新型重型火箭提供动力"
+        },
+        {
+          "title": "Moog Marks 25 Years Since ESPA Design Milestone: Innovating Space Rideshare",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/moog-marks-25-years-since-espa-design-milestone-innovating-space-rideshare/",
+          "title_zh": "穆格纪念 ESPA 设计里程碑 25 周年：创新太空出行"
+        },
+        {
+          "title": "Asteroid Mining Will Crash the Platinum Market, But That’s Good News for Earth",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/asteroid-mining-will-crash-the-platinum-market-but-thats-good-news-for-earth",
+          "title_zh": "小行星采矿将摧毁铂金市场，但这对地球来说是个好消息"
+        },
+        {
+          "title": "Water Surges Into Navajo Reservoir",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/earth/earth-observatory/water-surges-into-navajo-reservoir/",
+          "title_zh": "水涌入纳瓦霍水库"
+        },
+        {
+          "title": "'There's tremendous demand': Rocket Lab raises price of Neutron launch from $55 million to $70 million",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/theres-tremendous-demand-rocket-lab-raises-price-of-neutron-launch-from-usd55-million-to-usd70-million",
+          "title_zh": "需求巨大”：火箭实验室将中子发射价格从 5500 万美元提高到 7000 万美元"
+        },
+        {
+          "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/06/falcon-9-to-launch-from-california-on-classified-mission-for-u-s-space-force/",
+          "title_zh": "猎鹰 9 号从加利福尼亚州发射，执行美国太空军的机密任务"
+        }
+      ]
+    },
     {
       "date": "2026-11-11",
       "items": [
