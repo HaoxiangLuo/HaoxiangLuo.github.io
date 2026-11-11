@@ -84,6 +84,20 @@
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/41021ac6fc7750a5273516e92bb7f14009b6b466"
   },
   {
+    "date": "2026-11-11",
+    "title_zh": "调整了论文发表、界面样式",
+    "title_en": "Refined Publications, interface styling",
+    "message": "融合首页背景并收纳排序原题作品",
+    "story_zh": "对论文发表、界面样式的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
+    "story_en": "Changed the script and interaction logic of Publications, interface styling so expanding and filtering the page works reliably.",
+    "purpose_zh": "统一论文发表与既有内容页的内容宽度、阅读节奏和视觉层级。",
+    "purpose_en": "融合首页背景并收纳排序原题作品",
+    "details_zh": "调整论文发表页面的主内容容器、archive 宽度或内边距、标题对齐与移动端布局。",
+    "details_en": "Adjusted the main content container, archive width or padding, title alignment and mobile layout of the Publications page.",
+    "sha": "1ee3acc",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/1ee3acc0f516e69b626bc9f482e60c104dca4a69"
+  },
+  {
     "date": "2026-11-08",
     "title_zh": "调整了界面样式",
     "title_en": "Refined interface styling",
