@@ -57,6 +57,21 @@
   },
   {
     "date": "2026-11-11",
+    "sha": "6e49f17",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/6e49f174614c77d0f623f791f6d6dcba054b62ca",
+    "message": "展开论文时保持著作卡片固定",
+    "title_zh": "展开论文时固定著作卡片",
+    "title_en": "Keep the book fixed when expanding articles",
+    "story_zh": "对首页论文展开控件进行了独立伸展改动，使左侧著作卡片的位置与高度保持不变。",
+    "story_en": "Changed the homepage article disclosure so the book card keeps its position and height while articles expand.",
+    "purpose_zh": "保持著作卡片在论文展开与收起前后的尺寸和位置。",
+    "purpose_en": "Keep the book card stationary while the article list expands or collapses.",
+    "details_zh": "桌面双栏布局在展开前记录著作卡片的收起高度，展开后仅增加右侧论文列表；收起时恢复默认等高布局。已在中英文首页、1586像素桌面与390像素手机视口验证著作卡片的顶部位置、宽度和高度在操作前后不变，论文列表可正常展开。",
+    "details_en": "Before expansion, the two-column desktop layout records the collapsed book height. Only the article list grows; collapsing restores the default aligned layout. Both language versions were checked at 1586-pixel desktop and 390-pixel phone widths: book position, width and height remain unchanged while the articles expand.",
+    "show_details": true
+  },
+  {
+    "date": "2026-11-11",
     "title_zh": "调整了界面样式",
     "title_en": "Refined interface styling",
     "message": "Match approved homepage proportions and show news link",
