@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-12T21:38:19+08:00",
+  "updated_at": "2026-11-13T02:38:09+08:00",
   "days": [
+    {
+      "date": "2026-11-13",
+      "items": [
+        {
+          "title": "US envoys head to meet Zelensky after talks with Putin in Moscow",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国特使在莫斯科与普京会谈后前往会见泽连斯基"
+        },
+        {
+          "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
+          "title_zh": "乌克兰在阿布扎比举行会谈后，美国特使在克里姆林宫会见普京"
+        },
+        {
+          "title": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "我们必须逃跑”：在无人机持续威胁下，被毁的乌克兰发电厂内部"
+        },
+        {
+          "title": "Indonesia's VP resigns as his eligibility and academic credentials are questioned",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/12/g-s1-153190/indonesias-vp-resigns-as-his-eligibility-and-academic-credentials-are-questioned",
+          "title_zh": "印度尼西亚副总统因资格和学历受到质疑而辞职"
+        },
+        {
+          "title": "Suspected bomb hoax threats force fresh evacuations of Italian schools",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr894w453e90o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "疑似炸弹恶作剧威胁迫使意大利学校重新疏散"
+        },
+        {
+          "title": "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/12/g-s1-153171/up-first-newsletter-scott-colom-trump-democrats-ukraine-russia",
+          "title_zh": "科罗姆赢得密西西比州参议员竞选。并且，白宫警告民主党未来的调查"
+        },
+        {
+          "title": "Democrat Scott Colom makes history as Mississippi's first black senator since 19th Century",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "民主党人斯科特·科洛姆 (Scott Colom) 创造历史，成为 19 世纪以来密西西比州第一位黑人参议员"
+        },
+        {
+          "title": "Former Ukrainian foreign minister discusses how to bridge gaps between Ukraine, Russia",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/12/nx-s1-6037759/ukraine-ex-foreign-minister",
+          "title_zh": "乌克兰前外长讨论如何弥合乌克兰与俄罗斯之间的分歧"
+        },
+        {
+          "title": "Pentagon backs war memorial guard who reprimanded Hegseth's group",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno?at_medium=RSS&at_campaign=rss",
+          "title_zh": "五角大楼支持谴责赫格塞斯团体的战争纪念卫兵"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "NASA Ames Stars of the Month: November 2026",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/general/nasa-ames-stars-of-the-month-november-2026/",
+          "title_zh": "NASA 艾姆斯本月明星：2026 年 11 月"
+        },
+        {
+          "title": "Dark matter breakthrough coming? Euclid space telescope unveils its 1st look into the dark universe (video)",
+          "source": "Space.com",
+          "url": "https://www.space.com/astronomy/dark-matter-breakthrough-coming-euclid-space-telescope-unveils-its-1st-look-into-the-dark-universe-video",
+          "title_zh": "暗物质突破即将到来？欧几里得太空望远镜首次展示黑暗宇宙（视频）"
+        },
+        {
+          "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/07/ast-spacemobile-unveils-1-3-billion-engine-deal-with-firefly-aerospace-to-power-new-heavy-lift-rocket/",
+          "title_zh": "AST SpaceMobile 与 Firefly Aerospace 签署价值 13 亿美元的发动机协议，为新型重型火箭提供动力"
+        },
+        {
+          "title": "Senate committee takes up nominees for NASA chief financial officer and inspector general",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/senate-committee-takes-up-nominees-for-nasa-chief-financial-officer-and-inspector-general/",
+          "title_zh": "参议院委员会接受 NASA 首席财务官和监察长的提名"
+        },
+        {
+          "title": "Astrophysicists Want to Forecast When a Black Hole Launches Its Jets",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/astrophysicists-want-to-forecast-when-a-black-hole-launches-its-jets",
+          "title_zh": "天体物理学家希望预测黑洞何时发射喷流"
+        },
+        {
+          "title": "NASA’s Hubble Offers Cosmic Sampler of Targets for Roman",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-offers-cosmic-sampler-of-targets-for-roman/",
+          "title_zh": "美国宇航局哈勃为罗马人提供宇宙目标采样器"
+        },
+        {
+          "title": "Pakistani astronaut set to become 1st international visitor to China's Tiangong space station this month",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/human-spaceflight/pakistani-astronaut-set-to-become-1st-international-visitor-to-chinas-tiangong-space-station-this-month",
+          "title_zh": "巴基斯坦宇航员本月将成为中国天宫空间站的第一位国际游客"
+        },
+        {
+          "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/06/falcon-9-to-launch-from-california-on-classified-mission-for-u-s-space-force/",
+          "title_zh": "猎鹰 9 号从加利福尼亚州发射，执行美国太空军的机密任务"
+        }
+      ]
+    },
     {
       "date": "2026-11-12",
       "items": [
@@ -13,12 +122,14 @@
         {
           "title": "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/12/g-s1-153171/up-first-newsletter-scott-colom-trump-democrats-ukraine-russia"
+          "url": "https://www.npr.org/2026/11/12/g-s1-153171/up-first-newsletter-scott-colom-trump-democrats-ukraine-russia",
+          "title_zh": "科罗姆赢得密西西比州参议员竞选。并且，白宫警告民主党未来的调查"
         },
         {
           "title": "Gaza winter aid: ‘No more delay’, Fletcher tells governments stalling on support",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168788"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168788",
+          "title_zh": "加沙冬季援助：弗莱彻告诉政府停止提供支持“不再拖延"
         },
         {
           "title": "Democrat Scott Colom makes history as Mississippi's first black senator since 19th Century",
@@ -29,39 +140,46 @@
         {
           "title": "UKRAINE EX-FOREIGN MINISTER",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/12/nx-s1-6037759/ukraine-ex-foreign-minister"
+          "url": "https://www.npr.org/2026/11/12/nx-s1-6037759/ukraine-ex-foreign-minister",
+          "title_zh": "乌克兰前外交部长"
         },
         {
           "title": "‘Make or bake time’: Guterres urges climate justice pact as leaders gather at COP31",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168783"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168783",
+          "title_zh": "制造或烘焙时间”：古特雷斯在各国领导人齐聚 COP31 时敦促达成气候正义协议"
         },
         {
           "title": "Millions of Ebola dollars going missing as virus spreads, medical charity warns",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cx98757ymm6zo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cx98757ymm6zo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "医疗慈善机构警告称，随着病毒传播，数百万埃博拉资金消失"
         },
         {
           "title": "Former U.S. Ambassador William Taylor discusses the latest Russia-Ukraine talks",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/12/nx-s1-6037526/former-u-s-ambassador-william-taylor-discusses-the-latest-russia-ukraine-talks"
+          "url": "https://www.npr.org/2026/11/12/nx-s1-6037526/former-u-s-ambassador-william-taylor-discusses-the-latest-russia-ukraine-talks",
+          "title_zh": "美国前大使威廉·泰勒讨论最新的俄罗斯-乌克兰会谈"
         },
         {
           "title": "From Japan to Rwanda, early warnings are saving lives – but millions remain unprotected",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168787"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168787",
+          "title_zh": "从日本到卢旺达，早期预警正在拯救生命，但数百万人仍未受到保护"
         }
       ],
       "space_items": [
         {
           "title": "Through NASA’s Lens: Capturing Space Shuttle Endeavour’s Move to LA",
           "source": "NASA",
-          "url": "https://www.nasa.gov/centers-and-facilities/armstrong/through-nasas-lens-capturing-space-shuttle-endeavours-move-to-la/"
+          "url": "https://www.nasa.gov/centers-and-facilities/armstrong/through-nasas-lens-capturing-space-shuttle-endeavours-move-to-la/",
+          "title_zh": "通过 NASA 的镜头：捕捉奋进号航天飞机移师洛杉矶的过程"
         },
         {
           "title": "Astronomers stunned after James Webb Space Telescope discovers the earliest pair of black hole-powered quasars",
           "source": "Space.com",
-          "url": "https://www.space.com/astronomy/black-holes/astronomers-stunned-after-james-webb-space-telescope-discovers-the-earliest-pair-of-black-hole-powered-quasars"
+          "url": "https://www.space.com/astronomy/black-holes/astronomers-stunned-after-james-webb-space-telescope-discovers-the-earliest-pair-of-black-hole-powered-quasars",
+          "title_zh": "詹姆斯·韦伯太空望远镜发现最早的一对黑洞驱动类星体后，天文学家感到震惊"
         },
         {
           "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
