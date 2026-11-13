@@ -1,13 +1,32 @@
 {
-  "updated_at": "2026-11-13T15:26:36+08:00",
+  "updated_at": "2026-11-13T20:57:07+08:00",
   "days": [
     {
       "date": "2026-11-13",
       "items": [
         {
-          "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
+          "title": "What we know about the global Microsoft outage",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "我们对微软全球宕机的了解"
+        },
+        {
+          "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen",
+          "title_zh": "英伟达首席执行官辞职。参议员克里斯·范·霍伦 (Chris Van Hollen) 将竞选多数党领袖"
+        },
+        {
+          "title": "Six killed in Israeli airstrike on Gaza’s Nasser Hospital",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168796",
+          "title_zh": "以色列空袭加沙纳赛尔医院六人死亡"
+        },
+        {
+          "title": "Watch: How a server outage took down Microsoft Teams and Outlook",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&at_campaign=rss",
+          "title_zh": "观看：服务器中断如何导致 Microsoft Teams 和 Outlook 瘫痪"
         },
         {
           "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
@@ -16,14 +35,16 @@
           "title_zh": "乌克兰在阿布扎比举行会谈后，美国特使在克里姆林宫会见普京"
         },
         {
-          "title": "Six killed in Israeli airstrike on Gaza’s Nasser Hospital",
+          "title": "Aid is the ‘only hope’ for millions in Sudan, WFP chief warns, as funding cuts deepen hunger crisis",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168796"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168793",
+          "title_zh": "粮食署署长警告称，随着资金削减加剧饥饿危机，援助是苏丹数百万人的“唯一希望"
         },
         {
-          "title": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
+          "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "英伟达前首席执行官黄仁勋被传唤到国会就与涉嫌中国间谍的事件作证"
         },
         {
           "title": "Indonesia's VP resigns as his eligibility and academic credentials are questioned",
@@ -32,69 +53,60 @@
           "title_zh": "印度尼西亚副总统因资格和学历受到质疑而辞职"
         },
         {
-          "title": "Aid is the ‘only hope’ for millions in Sudan, WFP chief warns, as funding cuts deepen hunger crisis",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168793"
-        },
-        {
-          "title": "North Korean hackers used fake video calls in $400m crypto hack, says FBI",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqdj1ellpd70o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/12/g-s1-153171/up-first-newsletter-scott-colom-trump-democrats-ukraine-russia",
-          "title_zh": "科罗姆赢得密西西比州参议员竞选。并且，白宫警告民主党未来的调查"
-        },
-        {
           "title": "New platform aims to get money moving before disaster strikes",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168794"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168794",
+          "title_zh": "新平台旨在在灾难发生之前让资金流动"
         }
       ],
       "space_items": [
         {
           "title": "APOD: 2026 November 13 – NGC 206 and the Star Clouds of Andromeda",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-november-13-ngc-206-and-the-star-clouds-of-andromeda/"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-13-ngc-206-and-the-star-clouds-of-andromeda/",
+          "title_zh": "APOD：2026 年 11 月 13 日 – NGC 206 和仙女座星云"
         },
         {
-          "title": "Watch SpaceX attempt a historic Starship launch and double-catch landing today (Nov. 13)",
+          "title": "Powerful Vulcan Centaur rocket launching for 1st time in 9 months today: Watch it live",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launching-historic-double-catch-starship-test-flight-today-watch-it-live"
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
+          "title_zh": "今天，强大的火神半人马座火箭在 9 个月内首次发射：观看直播"
+        },
+        {
+          "title": "ULA’s Vulcan rocket plans return to flight with launch of 40 Leo satellites for Amazon",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/",
+          "title_zh": "ULA 的 Vulcan 火箭计划重返飞行，为亚马逊发射 40 颗 Leo 卫星"
+        },
+        {
+          "title": "AST SpaceMobile presses case for developing own launch vehicle",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/ast-spacemobile-presses-case-for-developing-own-launch-vehicle/",
+          "title_zh": "AST SpaceMobile 新闻报道开发自己的运载火箭"
+        },
+        {
+          "title": "Euclid's First Data Release: A Stepping Stone to its 3D Map of the Sky",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/euclids-first-data-release-a-stepping-stone-to-its-3d-map-of-the-sky",
+          "title_zh": "Euclid 的首个数据发布：3D 天空地图的垫脚石"
+        },
+        {
+          "title": "A Global Rebound for Mangroves",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/earth/earth-observatory/a-global-rebound-for-mangroves/",
+          "title_zh": "全球红树林的复苏"
+        },
+        {
+          "title": "'Don't panic': SpaceX pens familiar message on Starship ahead of historic double-catch test flight",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/dont-panic-spacex-pens-familiar-message-on-starship-ahead-of-historic-double-catch-test-flight",
+          "title_zh": "不要惊慌”：SpaceX 在历史性的双抓试飞之前在 Starship 上写下熟悉的信息"
         },
         {
           "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
           "source": "Spaceflight Now",
           "url": "https://spaceflightnow.com/2026/11/07/ast-spacemobile-unveils-1-3-billion-engine-deal-with-firefly-aerospace-to-power-new-heavy-lift-rocket/",
           "title_zh": "AST SpaceMobile 与 Firefly Aerospace 签署价值 13 亿美元的发动机协议，为新型重型火箭提供动力"
-        },
-        {
-          "title": "AST SpaceMobile presses case for developing own launch vehicle",
-          "source": "SpaceNews",
-          "url": "https://spacenews.com/ast-spacemobile-presses-case-for-developing-own-launch-vehicle/"
-        },
-        {
-          "title": "Euclid's First Data Release: A Stepping Stone to its 3D Map of the Sky",
-          "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/euclids-first-data-release-a-stepping-stone-to-its-3d-map-of-the-sky"
-        },
-        {
-          "title": "A Global Rebound for Mangroves",
-          "source": "NASA",
-          "url": "https://science.nasa.gov/earth/earth-observatory/a-global-rebound-for-mangroves/"
-        },
-        {
-          "title": "'Man of Tomorrow': Release date, plot, cast & everything we know about the 'Superman' sequel",
-          "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-movies-shows/man-of-tomorrow-release-date-plot-cast-and-everything-we-know-about-the-superman-sequel"
-        },
-        {
-          "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
-          "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/06/falcon-9-to-launch-from-california-on-classified-mission-for-u-s-space-force/",
-          "title_zh": "猎鹰 9 号从加利福尼亚州发射，执行美国太空军的机密任务"
         }
       ]
     },
