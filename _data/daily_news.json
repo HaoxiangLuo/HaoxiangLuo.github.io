@@ -1,14 +1,13 @@
 {
-  "updated_at": "2026-11-13T02:38:09+08:00",
+  "updated_at": "2026-11-13T15:26:36+08:00",
   "days": [
     {
       "date": "2026-11-13",
       "items": [
         {
-          "title": "US envoys head to meet Zelensky after talks with Putin in Moscow",
+          "title": "Ex-Nvidia CEO Jensen Huang summoned to testify before Congress about affair with alleged Chinese spy",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "美国特使在莫斯科与普京会谈后前往会见泽连斯基"
+          "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
@@ -17,10 +16,14 @@
           "title_zh": "乌克兰在阿布扎比举行会谈后，美国特使在克里姆林宫会见普京"
         },
         {
-          "title": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
+          "title": "Six killed in Israeli airstrike on Gaza’s Nasser Hospital",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168796"
+        },
+        {
+          "title": "Zelensky welcomes US bringing Europe into Russia-Ukraine peace talks",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "我们必须逃跑”：在无人机持续威胁下，被毁的乌克兰发电厂内部"
+          "url": "https://www.bbc.co.uk/news/articles/ckn80j9jv3jxo?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Indonesia's VP resigns as his eligibility and academic credentials are questioned",
@@ -29,10 +32,14 @@
           "title_zh": "印度尼西亚副总统因资格和学历受到质疑而辞职"
         },
         {
-          "title": "Suspected bomb hoax threats force fresh evacuations of Italian schools",
+          "title": "Aid is the ‘only hope’ for millions in Sudan, WFP chief warns, as funding cuts deepen hunger crisis",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168793"
+        },
+        {
+          "title": "North Korean hackers used fake video calls in $400m crypto hack, says FBI",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cr894w453e90o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "疑似炸弹恶作剧威胁迫使意大利学校重新疏散"
+          "url": "https://www.bbc.co.uk/news/articles/cqdj1ellpd70o?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
@@ -41,36 +48,21 @@
           "title_zh": "科罗姆赢得密西西比州参议员竞选。并且，白宫警告民主党未来的调查"
         },
         {
-          "title": "Democrat Scott Colom makes history as Mississippi's first black senator since 19th Century",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "民主党人斯科特·科洛姆 (Scott Colom) 创造历史，成为 19 世纪以来密西西比州第一位黑人参议员"
-        },
-        {
-          "title": "Former Ukrainian foreign minister discusses how to bridge gaps between Ukraine, Russia",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/12/nx-s1-6037759/ukraine-ex-foreign-minister",
-          "title_zh": "乌克兰前外长讨论如何弥合乌克兰与俄罗斯之间的分歧"
-        },
-        {
-          "title": "Pentagon backs war memorial guard who reprimanded Hegseth's group",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno?at_medium=RSS&at_campaign=rss",
-          "title_zh": "五角大楼支持谴责赫格塞斯团体的战争纪念卫兵"
+          "title": "New platform aims to get money moving before disaster strikes",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168794"
         }
       ],
       "space_items": [
         {
-          "title": "NASA Ames Stars of the Month: November 2026",
+          "title": "APOD: 2026 November 13 – NGC 206 and the Star Clouds of Andromeda",
           "source": "NASA",
-          "url": "https://www.nasa.gov/general/nasa-ames-stars-of-the-month-november-2026/",
-          "title_zh": "NASA 艾姆斯本月明星：2026 年 11 月"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-13-ngc-206-and-the-star-clouds-of-andromeda/"
         },
         {
-          "title": "Dark matter breakthrough coming? Euclid space telescope unveils its 1st look into the dark universe (video)",
+          "title": "Watch SpaceX attempt a historic Starship launch and double-catch landing today (Nov. 13)",
           "source": "Space.com",
-          "url": "https://www.space.com/astronomy/dark-matter-breakthrough-coming-euclid-space-telescope-unveils-its-1st-look-into-the-dark-universe-video",
-          "title_zh": "暗物质突破即将到来？欧几里得太空望远镜首次展示黑暗宇宙（视频）"
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launching-historic-double-catch-starship-test-flight-today-watch-it-live"
         },
         {
           "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
@@ -79,28 +71,24 @@
           "title_zh": "AST SpaceMobile 与 Firefly Aerospace 签署价值 13 亿美元的发动机协议，为新型重型火箭提供动力"
         },
         {
-          "title": "Senate committee takes up nominees for NASA chief financial officer and inspector general",
+          "title": "AST SpaceMobile presses case for developing own launch vehicle",
           "source": "SpaceNews",
-          "url": "https://spacenews.com/senate-committee-takes-up-nominees-for-nasa-chief-financial-officer-and-inspector-general/",
-          "title_zh": "参议院委员会接受 NASA 首席财务官和监察长的提名"
+          "url": "https://spacenews.com/ast-spacemobile-presses-case-for-developing-own-launch-vehicle/"
         },
         {
-          "title": "Astrophysicists Want to Forecast When a Black Hole Launches Its Jets",
+          "title": "Euclid's First Data Release: A Stepping Stone to its 3D Map of the Sky",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/astrophysicists-want-to-forecast-when-a-black-hole-launches-its-jets",
-          "title_zh": "天体物理学家希望预测黑洞何时发射喷流"
+          "url": "https://www.universetoday.com/articles/euclids-first-data-release-a-stepping-stone-to-its-3d-map-of-the-sky"
         },
         {
-          "title": "NASA’s Hubble Offers Cosmic Sampler of Targets for Roman",
+          "title": "A Global Rebound for Mangroves",
           "source": "NASA",
-          "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-offers-cosmic-sampler-of-targets-for-roman/",
-          "title_zh": "美国宇航局哈勃为罗马人提供宇宙目标采样器"
+          "url": "https://science.nasa.gov/earth/earth-observatory/a-global-rebound-for-mangroves/"
         },
         {
-          "title": "Pakistani astronaut set to become 1st international visitor to China's Tiangong space station this month",
+          "title": "'Man of Tomorrow': Release date, plot, cast & everything we know about the 'Superman' sequel",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/human-spaceflight/pakistani-astronaut-set-to-become-1st-international-visitor-to-chinas-tiangong-space-station-this-month",
-          "title_zh": "巴基斯坦宇航员本月将成为中国天宫空间站的第一位国际游客"
+          "url": "https://www.space.com/entertainment/space-movies-shows/man-of-tomorrow-release-date-plot-cast-and-everything-we-know-about-the-superman-sequel"
         },
         {
           "title": "Falcon 9 launches from California on classified mission for U.S. Space Force",
