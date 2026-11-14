@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-14",
+    "title_zh": "调整了论文发表、页面结构、学习札记、界面样式",
+    "title_en": "Refined Publications, page structure, Study Notes, interface styling",
+    "message": "Refine homepage layout and add skills library",
+    "story_zh": "更新了论文发表、页面结构、学习札记、界面样式的归档数据，使页面读到的记录与最新一次改动保持一致。",
+    "story_en": "Updated the archived data behind Publications, page structure, Study Notes, interface styling so the page shows the records from the latest change.",
+    "purpose_zh": "统一论文发表与既有内容页的内容宽度、阅读节奏和视觉层级。",
+    "purpose_en": "Refine homepage layout and add skills library",
+    "details_zh": "调整论文发表页面的主内容容器、archive 宽度或内边距、标题对齐与移动端布局。",
+    "details_en": "Adjusted the main content container, archive width or padding, title alignment and mobile layout of the Publications page.",
+    "sha": "424834e",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/424834efe40644f9e3be216314bfafdd248422ff"
+  },
+  {
     "date": "2026-11-11",
     "title_zh": "调整了每日新闻、资讯、页面结构、界面样式",
     "title_en": "Refined Daily News, Opportunities, page structure, interface styling",
