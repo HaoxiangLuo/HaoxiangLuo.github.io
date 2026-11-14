@@ -1,11 +1,12 @@
 <section class="skills-library" aria-labelledby="skills-library-title">
   {% if page.lang == 'zh' %}
-    <h2 class="skills-library__heading" id="skills-library-title">我的技能</h2>
+    <h2 class="skills-library__heading" id="skills-library-title">工具与技能</h2>
     <p class="skills-library__intro">分享我制作的技能与工具。</p>
   {% else %}
-    <h2 class="skills-library__heading" id="skills-library-title">My Skills</h2>
+    <h2 class="skills-library__heading" id="skills-library-title">Tools & Skills</h2>
     <p class="skills-library__intro">Skills and tools I have created.</p>
   {% endif %}
+  <a class="skills-library__manage" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_data/skills.yml">{% if page.lang == 'zh' %}管理技能{% else %}Manage skills{% endif %} ↗</a>
   {% if site.data.skills.size > 0 %}
     <div class="skills-library__grid">
     {% for skill in site.data.skills %}

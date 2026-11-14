@@ -162,3 +162,30 @@ body.home-page .language-toggle__option.is-active { background: #0071e3; }
   }
   body.home-page .publication-card--featured .publication-card__body { padding: 0; }
 }
+
+/* Notes and tools share a calm two-column layout. */
+.notes-tools-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
+.notes-tools-layout__notes { min-width: 0; }
+.notes-tools-layout__title { margin: 0 0 1rem; font-size: 1.45rem; letter-spacing: -.025em; }
+.notes-tools-layout .notes-grid { grid-template-columns: minmax(0, 1fr); }
+.notes-tools-layout .notes-actions { flex-wrap: wrap; }
+.notes-tools-layout .skills-library { min-width: 0; margin: 0; padding: 0 0 0 1.5rem; border: 0; border-left: 1px solid #d6d6db; }
+.notes-tools-layout .skills-library__grid { grid-template-columns: minmax(0,1fr); }
+.skills-library__manage { display: inline-block; color: #0066cc; font-size: .78rem; font-weight: 600; margin: .2rem 0 .5rem; }
+@media (max-width: 767px) {
+  .notes-tools-layout { grid-template-columns: minmax(0,1fr); gap: 1.75rem; }
+  .notes-tools-layout .skills-library { padding: 1.5rem 0 0; border-left: 0; border-top: 1px solid #d6d6db; }
+}
+
+/* Tie the homepage together with a restrained editorial rhythm. */
+@media (min-width: 1024px) {
+  body.home-page #main { row-gap: .6rem; }
+  body.home-page #main > .sidebar.sticky { box-shadow: 0 12px 34px rgba(28,30,34,.12); }
+  body.home-page #main > .page .home-intro-panel { padding-right: 2rem; }
+  body.home-page #main > .page .home-intro-panel h1 { color: #1d1d1f; letter-spacing: -.035em; }
+  body.home-page #main > .page .home-intro-panel p { max-width: 56rem; line-height: 1.6; }
+  body.home-page #main > .page .home-interests li { background: rgba(232,237,242,.8); color: #30343a; }
+  body.home-page #main > .news-window { border-color: rgba(29,29,31,.12); }
+  body.home-page .home-publications__heading h2 { font-size: 1.65rem; letter-spacing: -.035em; }
+  body.home-page .publication-card { background: rgba(255,255,255,.67); }
+}
