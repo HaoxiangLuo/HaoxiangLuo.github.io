@@ -224,3 +224,58 @@ body.inner-page:has(.notes-tools-layout) .page__title { margin-bottom: 1rem; fon
   .notes-tools-layout .notes-actions { grid-template-columns: 1fr 1fr; }
   .notes-tools-layout .notes-actions > div { grid-column: 1 / -1; }
 }
+
+/* A shared desktop canvas for all pages. */
+@media (min-width: 1024px) {
+  body.inner-page.inner-page #main {
+    width: calc(100% - 3rem);
+    max-width: 1500px;
+    box-sizing: border-box;
+  }
+  body.inner-page #main:not(:has(> .sidebar)) > .archive,
+  body.inner-page #main:not(:has(> .sidebar)) > .page {
+    width: 100%; max-width: none; margin-left: 0; margin-right: 0;
+    float: none; box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1301px) {
+  body.inner-page.inner-page #main { max-width: 1520px; }
+}
+
+/* Equal-height publication rows, with the complete title available on demand. */
+@media (min-width: 1024px) {
+  body.home-page .publication-column--articles .publication-card-list {
+    grid-auto-rows: 1fr; align-items: stretch;
+  }
+  body.home-page .publication-column--articles .publication-card {
+    min-height: 170px; height: 100%;
+  }
+  body.home-page .publication-card--featured { min-height: 170px; }
+}
+body.home-page.publications-clamped .publication-card h3,
+body.home-page.publications-clamped .publication-column--articles .publication-card h3 {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+  overflow: hidden; overflow-wrap: anywhere;
+}
+.publication-title-more {
+  display: inline-block; padding: .2rem 0; border: 0; background: transparent;
+  color: #0066cc; font: inherit; font-size: .68rem; font-weight: 600; cursor: pointer;
+}
+.publication-title-more[hidden] { display: none; }
+.publication-title-more:hover { text-decoration: underline; }
+.publication-title-more:focus-visible, .publication-title-dialog button:focus-visible {
+  outline: 2px solid #0071e3; outline-offset: 3px;
+}
+.publication-title-dialog {
+  width: calc(100% - 2rem); max-width: 560px; box-sizing: border-box;
+  padding: 1.5rem; border: 1px solid #d2d2d7; border-radius: 18px;
+  color: #1d1d1f; background: #fff; box-shadow: 0 20px 60px rgba(0,0,0,.2);
+}
+.publication-title-dialog::backdrop { background: rgba(20,20,23,.48); }
+.publication-title-dialog h2 { margin: 0 0 .7rem; font-size: 1rem; }
+.publication-title-dialog p { margin: 0 0 1.2rem; font-size: 1rem; line-height: 1.5; overflow-wrap: anywhere; }
+.publication-title-dialog button {
+  padding: .5rem .9rem; border: 0; border-radius: 999px; color: #fff;
+  background: #1d1d1f; font: inherit; cursor: pointer;
+}

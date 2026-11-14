@@ -368,3 +368,57 @@
 
   trigger.addEventListener("click", open);
 })();
+
+/* Show the full title without changing the height of the publication cards. */
+(function () {
+  "use strict";
+  if (!document.body.classList.contains("home-page") || !window.HTMLDialogElement) return;
+  var titles = Array.prototype.slice.call(document.querySelectorAll(".publication-card h3"));
+  if (!titles.length) return;
+  var zh = (document.documentElement.lang || "").toLowerCase().indexOf("zh") === 0;
+  var dialog = document.createElement("dialog");
+  dialog.className = "publication-title-dialog";
+  dialog.setAttribute("aria-labelledby", "publication-title-dialog-heading");
+  var heading = document.createElement("h2");
+  heading.id = "publication-title-dialog-heading";
+  heading.textContent = zh ? "完整标题" : "Full title";
+  var text = document.createElement("p");
+  var close = document.createElement("button");
+  close.type = "button";
+  close.textContent = zh ? "关闭" : "Close";
+  close.addEventListener("click", function () { dialog.close(); });
+  dialog.appendChild(heading); dialog.appendChild(text); dialog.appendChild(close);
+  document.body.appendChild(dialog);
+  var controls = titles.map(function (title) {
+    var control = document.createElement("button");
+    control.type = "button";
+    control.className = "publication-title-more";
+    control.hidden = true;
+    control.textContent = zh ? "查看完整标题" : "Full title";
+    control.setAttribute("aria-label", (zh ? "查看完整标题：" : "Full title: ") + title.textContent.trim());
+    title.insertAdjacentElement("afterend", control);
+    control.addEventListener("click", function () {
+      text.textContent = title.textContent.trim();
+      dialog.showModal();
+    });
+    return { title: title, control: control };
+  });
+  document.body.classList.add("publications-clamped");
+  function update() {
+    controls.forEach(function (item) {
+      if (!item.title.getClientRects().length) return;
+      var hide = item.title.scrollHeight <= item.title.clientHeight + 1;
+      if (item.control.hidden !== hide) item.control.hidden = hide;
+    });
+  }
+  var pending = false;
+  function schedule() {
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () { pending = false; update(); });
+  }
+  window.addEventListener("resize", schedule);
+  var board = document.querySelector(".publication-board");
+  if (board) new MutationObserver(schedule).observe(board, { attributes: true, subtree: true, attributeFilter: ["hidden"] });
+  schedule();
+}());
