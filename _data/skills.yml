@@ -1,0 +1,10 @@
+# Add one entry per skill. Upload icons to images/ and files to files/.
+# Example (uncomment and replace with your own details):
+# - name_zh: "技能名称"
+#   name_en: "Skill name"
+#   description_zh: "简短介绍。"
+#   description_en: "A short description."
+#   icon: "/images/skill-icon.png"
+#   download_url: "/files/skill.zip"
+# download_url may also be a full https:// link.
+[]

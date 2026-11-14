@@ -1,0 +1,28 @@
+<section class="skills-library" aria-labelledby="skills-library-title">
+  {% if page.lang == 'zh' %}
+    <h2 class="skills-library__heading" id="skills-library-title">我的技能</h2>
+    <p class="skills-library__intro">分享我制作的技能与工具。</p>
+  {% else %}
+    <h2 class="skills-library__heading" id="skills-library-title">My Skills</h2>
+    <p class="skills-library__intro">Skills and tools I have created.</p>
+  {% endif %}
+  {% if site.data.skills.size > 0 %}
+    <div class="skills-library__grid">
+    {% for skill in site.data.skills %}
+      <article class="skill-entry">
+        {% if skill.icon %}<img class="skill-entry__icon" src="{{ skill.icon | relative_url | escape }}" alt="" loading="lazy">
+        {% else %}<span class="skill-entry__placeholder" aria-hidden="true">✦</span>{% endif %}
+        <div>
+          {% if page.lang == 'zh' %}{% assign skill_name = skill.name_zh | default: skill.name_en %}{% assign skill_description = skill.description_zh | default: skill.description_en %}
+          {% else %}{% assign skill_name = skill.name_en | default: skill.name_zh %}{% assign skill_description = skill.description_en | default: skill.description_zh %}{% endif %}
+          <h3>{{ skill_name | escape }}</h3>
+          <p>{{ skill_description | escape }}</p>
+          {% if skill.download_url %}<a href="{{ skill.download_url | escape }}">{% if page.lang == 'zh' %}下载{% else %}Download{% endif %} ↗</a>{% endif %}
+        </div>
+      </article>
+    {% endfor %}
+    </div>
+  {% else %}
+    <p class="skills-library__empty">{% if page.lang == 'zh' %}技能即将添加。{% else %}Skills coming soon.{% endif %}</p>
+  {% endif %}
+</section>
