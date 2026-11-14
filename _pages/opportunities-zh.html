@@ -7,6 +7,9 @@ lang: zh
 translation_url: /opportunities/
 ---
 
+{% include opportunities-gate.html %}
+<div class="opps-protected" id="opps-protected" hidden>
+
 <p class="daily-news-intro">实习、访学与研究机会。</p>
 
 {% assign opps = site.data.opportunities %}
@@ -165,3 +168,6 @@ translation_url: /opportunities/
 <p class="daily-news-note">条目由机器自动从各机构官方招聘页与院系官网收录，标题与链接归原发布机构所有；截止日期、津贴与申请资格均读取自官方公告并以公告为准，公告未说明的字段显示为「未说明」而非推测填写。已知截止日期的过期机会不再显示；部分来源未提供截止日期，请打开官方公告核实。收录不代表本站赞同其观点。匹配度是本网站依据公告文本给出的判断，不代表发布机构的意见。中文摘要、标签与匹配理由由固定模板生成；岗位标题在译文填充前保留来源原文。</p>
 
 <script src="{{ base_path }}/assets/js/opps-expiry.js" defer></script>
+
+</div>
+<script src="{{ base_path }}/assets/js/opportunities-gate.js" defer></script>

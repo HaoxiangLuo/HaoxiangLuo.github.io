@@ -173,4 +173,10 @@
       {% endif %}      
     </ul>
   </div>
+  {% if page.research_interests %}
+  <div class="author__interests">
+    <h2>{% if page.lang == 'zh' %}研究兴趣{% else %}Research Interests{% endif %}</h2>
+    <ul>{% for interest in page.research_interests %}<li>{{ interest | escape }}</li>{% endfor %}</ul>
+  </div>
+  {% endif %}
 </div>

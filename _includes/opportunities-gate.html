@@ -1,0 +1,16 @@
+<section class="opps-gate" id="opps-gate" aria-labelledby="opps-gate-title"
+  data-salt="{{ site.data.opportunities_gate.salt | escape }}"
+  data-hash="{{ site.data.opportunities_gate.password_hash | escape }}"
+  data-language="{{ page.lang }}">
+  <div class="opps-gate__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></div>
+  <h2 id="opps-gate-title">{% if page.lang == 'zh' %}输入密码查看资讯{% else %}Enter password to view opportunities{% endif %}</h2>
+  <form id="opps-gate-form">
+    <label for="opps-gate-password">{% if page.lang == 'zh' %}密码{% else %}Password{% endif %}</label>
+    <div class="opps-gate__row">
+      <input id="opps-gate-password" type="password" autocomplete="current-password" required>
+      <button type="submit">{% if page.lang == 'zh' %}解锁{% else %}Unlock{% endif %}</button>
+    </div>
+    <p class="opps-gate__message" id="opps-gate-message" role="status" aria-live="polite"></p>
+  </form>
+  <noscript>{% if page.lang == 'zh' %}请启用 JavaScript 以解锁。{% else %}Enable JavaScript to unlock this page.{% endif %}</noscript>
+</section>

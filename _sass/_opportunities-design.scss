@@ -71,3 +71,21 @@ body.home-page #main > .page .home-intro-panel h1 { font-size: 2.35rem; line-hei
   body.inner-page.inner-page .page__title,
   body.home-page #main > .page .home-intro-panel h1 { font-size: 2rem; }
 }
+
+/* A simple visual gate for the opportunities page. */
+.opps-protected[hidden], .opps-gate[hidden] { display: none !important; }
+.opps-gate {
+  max-width: 440px; margin: 2rem auto 3rem; padding: 2rem;
+  border: 1px solid #dedee3; border-radius: 20px;
+  background: #fff; box-shadow: 0 12px 35px rgba(0,0,0,.05);
+}
+.opps-gate__icon { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 14px; background: #edeef1; color: #34383e; }
+.opps-gate h2 { margin: 1rem 0 1.2rem; padding: 0; border: 0; font-size: 1.15rem; line-height: 1.3; }
+.opps-gate label { display: block; margin-bottom: .45rem; color: #55565c; font-size: .78rem; font-weight: 600; }
+.opps-gate__row { display: flex; gap: .6rem; }
+.opps-gate input { min-width: 0; flex: 1; padding: .65rem .75rem; border: 1px solid #c9c9ce; border-radius: 10px; background: #fff; color: #1d1d1f; font: inherit; }
+.opps-gate button { padding: .6rem 1rem; border: 0; border-radius: 10px; color: #fff; background: #2c2c2e; font: inherit; font-weight: 600; cursor: pointer; }
+.opps-gate button:disabled { opacity: .6; cursor: wait; }
+.opps-gate input:focus-visible, .opps-gate button:focus-visible { outline: 2px solid #0071e3; outline-offset: 2px; }
+.opps-gate__message:not(:empty) { margin: .65rem 0 0; color: #a2342a; font-size: .78rem; }
+@media (max-width: 767px) { .opps-gate { margin: 1rem 0 2rem; padding: 1.25rem; } }

@@ -8,18 +8,7 @@ redirect_from:
   - /about/
   - /about.html
   - /publications/
+research_interests:
+  - "Inequality in Global Communication"
+  - "The Spread and Instrumentalization of Misinformation"
 ---
-
-<section class="home-intro-panel">
-<h1>About Me</h1>
-
-<p>Hello! I am <strong>Haoxiang Luo</strong>, a PhD student in Journalism and Communication at Nanjing University.</p>
-
-<div class="home-interests">
-<h2>Research Interests</h2>
-<ul>
-  <li>Inequality in Global Communication</li>
-  <li>The Spread and Instrumentalization of Misinformation</li>
-</ul>
-</div>
-</section>
