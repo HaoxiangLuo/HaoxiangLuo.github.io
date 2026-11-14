@@ -42,6 +42,20 @@
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/424834efe40644f9e3be216314bfafdd248422ff"
   },
   {
+    "date": "2026-11-14",
+    "title_zh": "调整了导航、学习札记",
+    "title_en": "Refined navigation, Study Notes",
+    "message": "Rename notes and tools page to tool development",
+    "story_zh": "更新了导航、学习札记的归档数据，使页面读到的记录与最新一次改动保持一致。",
+    "story_en": "Updated the archived data behind navigation, Study Notes so the page shows the records from the latest change.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "Rename notes and tools page to tool development",
+    "details_zh": "调整学习札记的内容或展开交互。",
+    "details_en": "Refined study-note content or its expandable interaction.",
+    "sha": "1c2857d",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/1c2857d4277ab0f165002f92b5354b3934092874"
+  },
+  {
     "date": "2026-11-11",
     "title_zh": "调整了每日新闻、资讯、页面结构、界面样式",
     "title_en": "Refined Daily News, Opportunities, page structure, interface styling",
