@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-14T20:00:04+08:00",
+  "updated_at": "2026-11-15T00:45:39+08:00",
   "days": [
+    {
+      "date": "2026-11-15",
+      "items": [
+        {
+          "title": "What we know about the ground stop and what to do if you're affected",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "我们对地面站的了解以及如果您受到影响该怎么办"
+        },
+        {
+          "title": "Fuel crisis and protests pressure Chile's far-right president",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students",
+          "title_zh": "燃料危机和抗议给智利极右翼总统带来压力"
+        },
+        {
+          "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽伦斯基表示，美国已提议乌克兰放弃顿巴斯以加入北约"
+        },
+        {
+          "title": "What's Trump's strategy now with Iran? To keep things as they are",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
+          "title_zh": "特朗普现在对伊朗的战略是什么？保持事物原样"
+        },
+        {
+          "title": "Italy fines Meta €805m over accessing users' photos",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "意大利因访问用户照片而对 Meta 罚款 8.05 亿欧元"
+        },
+        {
+          "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen",
+          "title_zh": "英伟达首席执行官辞职。参议员克里斯·范·霍伦 (Chris Van Hollen) 将竞选多数党领袖"
+        },
+        {
+          "title": "Nigeria cautions against travel via Ethiopia's main airport due to altitude",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmz6qjpdy2wqo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "由于海拔高度，尼日利亚警告不要通过埃塞俄比亚主要机场旅行"
+        },
+        {
+          "title": "Nvidia's interim CEO inherits risky AI bets and a legal mess",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/13/nx-s1-6038868/nvidia-interim-ceo-colette-kress-ai-bets-investigation-lutnick",
+          "title_zh": "英伟达临时首席执行官继承了高风险的人工智能赌注和法律混乱"
+        },
+        {
+          "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+          "title_zh": "白宫表示，特朗普、普京和习近平计划下周在中国举行历史性联席会议"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "Outbursts from a Massive Star",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/outbursts-from-a-massive-star/",
+          "title_zh": "大质量恒星的爆发"
+        },
+        {
+          "title": "This Week In Space podcast: Episode 236 — Alienspotting",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-236-alienspotting",
+          "title_zh": "本周太空播客：第 236 集 — Alienspotting"
+        },
+        {
+          "title": "Starship in orbit ahead of catch attempt, booster diverts to explosive splashdown",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
+          "title_zh": "星舰在捕捉尝试之前进入轨道，助推器转向爆炸溅落"
+        },
+        {
+          "title": "Commercial Space Federation Welcomes CesiumAstro as a New Associate Member",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/commercial-space-federation-welcomes-cesiumastro-as-a-new-associate-member/",
+          "title_zh": "商业航天联合会欢迎 CesiumAstro 成为新准会员"
+        },
+        {
+          "title": "When Einstein's Gravitational Waves Meet Newton's Tides",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/when-einsteins-gravitational-waves-meet-newtons-tides",
+          "title_zh": "当爱因斯坦的引力波遇上牛顿的潮汐"
+        },
+        {
+          "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/",
+          "title_zh": "双子座宇航员照片启发了早期地球观测计划"
+        },
+        {
+          "title": "'Alien: Fireteam Elite 2' is a good old-fashioned bug hunt, ironically plagued by bugs",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-games/alien-fireteam-elite-2-is-a-good-old-fashioned-bug-hunt-ironically-plagued-by-bugs",
+          "title_zh": "《异形：火力小队精英 2》是一款不错的老式 bug 搜寻游戏，讽刺的是却被 bug 所困扰"
+        },
+        {
+          "title": "ULA delays to Sunday Vulcan rocket launch of 40 Leo satellites for Amazon",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/",
+          "title_zh": "ULA 推迟周日火神火箭为亚马逊发射 40 颗 Leo 卫星"
+        }
+      ]
+    },
     {
       "date": "2026-11-14",
       "items": [
