@@ -29,6 +29,20 @@
   },
   {
     "date": "2026-11-14",
+    "title_zh": "调整了论文发表、界面样式",
+    "title_en": "Refined Publications, interface styling",
+    "message": "Align page widths and compact publication titles",
+    "story_zh": "对论文发表、界面样式的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
+    "story_en": "Changed the script and interaction logic of Publications, interface styling so expanding and filtering the page works reliably.",
+    "purpose_zh": "统一论文发表与既有内容页的内容宽度、阅读节奏和视觉层级。",
+    "purpose_en": "Align page widths and compact publication titles",
+    "details_zh": "调整论文发表页面的主内容容器、archive 宽度或内边距、标题对齐与移动端布局。",
+    "details_en": "Adjusted the main content container, archive width or padding, title alignment and mobile layout of the Publications page.",
+    "sha": "7f69cd2",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/7f69cd2f801c3520dc68a4b2f29c36ff8d67f2d9"
+  },
+  {
+    "date": "2026-11-14",
     "title_zh": "调整了论文发表、页面结构、学习札记、界面样式",
     "title_en": "Refined Publications, page structure, Study Notes, interface styling",
     "message": "Refine homepage layout and add skills library",
