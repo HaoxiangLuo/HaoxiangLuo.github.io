@@ -7,7 +7,7 @@ lang: en
 translation_url: /zh/daily-news/
 ---
 
-<p class="daily-news-intro">A concise record of major world headlines, collected three times a day from public news feeds. Follow each source link for the full report. Earlier days are kept in the long-term archive and load when you pick their month.</p>
+<p class="daily-news-intro">World headlines, updated three times daily.</p>
 
 {% assign news_days = site.data.daily_news.days %}
 {% include archive-date-filter.html dataset="daily_news" %}
@@ -15,7 +15,7 @@ translation_url: /zh/daily-news/
 <div class="daily-news-columns">
   <section class="daily-news-column daily-news-column--space">
     <h2 class="space-news-title">Space &amp; Aerospace</h2>
-    <p class="space-news-intro">Important space and aerospace news, gathered every day from dedicated feeds such as NASA, Space.com, Spaceflight Now, SpaceNews and Universe Today, grouped by date. Follow each source link for the full report.</p>
+    <p class="space-news-intro">Daily updates from NASA and other space news sources.</p>
     {% assign space_days = site.data.daily_news.days | where_exp: "d", "d.space_items.first" %}
     <div class="space-news-archive">
       {% if space_days.size > 0 %}

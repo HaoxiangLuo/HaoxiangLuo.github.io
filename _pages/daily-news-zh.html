@@ -7,7 +7,7 @@ lang: zh
 translation_url: /daily-news/
 ---
 
-<p class="daily-news-intro">每天三次从公开新闻源整理全球重要标题，并按日期留存。点击来源链接可阅读完整报道。更早的日期保存在长期归档中，选择对应月份即可读取。</p>
+<p class="daily-news-intro">全球新闻标题，每日更新三次。</p>
 
 {% assign news_days = site.data.daily_news.days %}
 {% include archive-date-filter.html dataset="daily_news" %}
@@ -15,7 +15,7 @@ translation_url: /daily-news/
 <div class="daily-news-columns">
   <section class="daily-news-column daily-news-column--space">
     <h2 class="space-news-title">航天动态</h2>
-    <p class="space-news-intro">每日从 NASA、Space.com、Spaceflight Now、SpaceNews、Universe Today 等航天信源自动整理的重要航天新闻，按日期归集于此。点击来源链接可阅读完整报道。</p>
+    <p class="space-news-intro">每日汇集 NASA 等航天新闻来源。</p>
     {% assign space_days = site.data.daily_news.days | where_exp: "d", "d.space_items.first" %}
     <div class="space-news-archive">
       {% if space_days.size > 0 %}
