@@ -1,95 +1,112 @@
 {
-  "updated_at": "2026-11-14T15:07:44+08:00",
+  "updated_at": "2026-11-14T20:00:04+08:00",
   "days": [
     {
       "date": "2026-11-14",
       "items": [
         {
-          "title": "What we know about the longest ground stop since 9/11",
+          "title": "What we know about the ground stop and what to do if you're affected",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "我们对地面站的了解以及如果您受到影响该怎么办"
         },
         {
           "title": "What's Trump's strategy now with Iran? To keep things as they are",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are"
+          "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
+          "title_zh": "特朗普现在对伊朗的战略是什么？保持事物原样"
         },
         {
-          "title": "‘Here, you can eat until you’re full’: Oleshky evacuees savour first proper meals in years",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168803"
-        },
-        {
-          "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+          "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽伦斯基表示，美国已提议乌克兰放弃顿巴斯以加入北约"
         },
         {
           "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen"
-        },
-        {
-          "title": "Security Council LIVE: Fragile Gulf calm tested as threats to Hormuz shipping mount",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168804"
+          "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen",
+          "title_zh": "英伟达首席执行官辞职。参议员克里斯·范·霍伦 (Chris Van Hollen) 将竞选多数党领袖"
         },
         {
           "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+          "title_zh": "白宫表示，特朗普、普京和习近平计划下周在中国举行历史性联席会议"
         },
         {
           "title": "Nvidia's interim CEO inherits risky AI bets and a legal mess",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/13/nx-s1-6038868/nvidia-interim-ceo-colette-kress-ai-bets-investigation-lutnick"
+          "url": "https://www.npr.org/2026/11/13/nx-s1-6038868/nvidia-interim-ceo-colette-kress-ai-bets-investigation-lutnick",
+          "title_zh": "英伟达临时首席执行官继承了高风险的人工智能赌注和法律混乱"
         },
         {
-          "title": "COP31: Climate finance falls short as calls grow for polluters to pay",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168802"
+          "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "密西西比奇迹”——新奥尔良游轮相撞后所有乘客均获救"
+        },
+        {
+          "title": "U.S. envoys meet with Putin in Moscow on Ukraine talks, then see Zelenskyy in Dublin",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
+          "title_zh": "美国特使在莫斯科会见普京讨论乌克兰问题，然后在都柏林会见泽连斯基"
+        },
+        {
+          "title": "Setback for SpaceX Starship rocket's double-catch test",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "SpaceX 星舰火箭双捕获测试受挫"
         }
       ],
       "space_items": [
         {
           "title": "Outbursts from a Massive Star",
           "source": "NASA",
-          "url": "https://www.nasa.gov/image-article/outbursts-from-a-massive-star/"
+          "url": "https://www.nasa.gov/image-article/outbursts-from-a-massive-star/",
+          "title_zh": "大质量恒星的爆发"
         },
         {
-          "title": "SpaceX launches Starship on ambitious 22-hour Flight 15 test, but aborts booster 'chopsticks' catch (video)",
+          "title": "See Jupiter and Mars make a spectacular close approach overnight Nov. 15-16",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"
+          "url": "https://www.space.com/stargazing/see-jupiter-and-mars-make-a-spectacular-close-approach-overnight-nov-15-16",
+          "title_zh": "11 月 15 日至 16 日夜间观看木星和火星壮观的近距离接近"
         },
         {
           "title": "Starship in orbit ahead of catch attempt, booster diverts to explosive splashdown",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/"
+          "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
+          "title_zh": "星舰在捕捉尝试之前进入轨道，助推器转向爆炸溅落"
         },
         {
           "title": "Commercial Space Federation Welcomes CesiumAstro as a New Associate Member",
           "source": "SpaceNews",
-          "url": "https://spacenews.com/commercial-space-federation-welcomes-cesiumastro-as-a-new-associate-member/"
+          "url": "https://spacenews.com/commercial-space-federation-welcomes-cesiumastro-as-a-new-associate-member/",
+          "title_zh": "商业航天联合会欢迎 CesiumAstro 成为新准会员"
         },
         {
           "title": "When Einstein's Gravitational Waves Meet Newton's Tides",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/when-einsteins-gravitational-waves-meet-newtons-tides"
+          "url": "https://www.universetoday.com/articles/when-einsteins-gravitational-waves-meet-newtons-tides",
+          "title_zh": "当爱因斯坦的引力波遇上牛顿的潮汐"
         },
         {
           "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
           "source": "NASA",
-          "url": "https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/"
+          "url": "https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/",
+          "title_zh": "双子座宇航员照片启发了早期地球观测计划"
         },
         {
-          "title": "On this day in space! Nov. 13, 1971: NASA's Mariner 9 becomes 1st spacecraft to orbit Mars, revealing close looks at the Martian surface",
+          "title": "SpaceX launches Starship on ambitious 22-hour Flight 15 test, but aborts booster 'chopsticks' catch (video)",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-13-2026"
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship",
+          "title_zh": "SpaceX 发射 Starship 进行雄心勃勃的 22 小时 Flight 15 测试，但中止助推器“筷子”捕获（视频）"
         },
         {
           "title": "ULA delays to Saturday Vulcan rocket launch of 40 Leo satellites for Amazon",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/"
+          "url": "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/",
+          "title_zh": "ULA 推迟周六为亚马逊发射 40 颗 Leo 卫星的火神火箭"
         }
       ]
     },
