@@ -189,3 +189,38 @@ body.home-page .language-toggle__option.is-active { background: #0071e3; }
   body.home-page .home-publications__heading h2 { font-size: 1.65rem; letter-spacing: -.035em; }
   body.home-page .publication-card { background: rgba(255,255,255,.67); }
 }
+
+/* Compact notes and tools, while allowing expanded content to grow naturally. */
+body.inner-page:has(.notes-tools-layout) #main { padding-top: 1rem; padding-bottom: 1.5rem; }
+body.inner-page:has(.notes-tools-layout) .archive { padding: 1.5rem 2rem; }
+body.inner-page:has(.notes-tools-layout) .page__title { margin-bottom: 1rem; font-size: 2.35rem; line-height: 1.1; }
+.notes-tools-layout { gap: 1.5rem; }
+.notes-tools-layout__title, .notes-tools-layout .skills-library__heading { margin: 0 0 .6rem; font-size: 1.2rem; }
+.notes-tools-layout .notes-actions { gap: .5rem; margin-bottom: .9rem; padding: .7rem .85rem; border-radius: 14px; }
+.notes-tools-layout .notes-actions strong { font-size: .86rem; }
+.notes-tools-layout .notes-action { min-height: 38px; padding: .4rem .7rem; }
+.notes-tools-layout .notes-grid { gap: .55rem; }
+.notes-tools-layout .notes-topic { min-height: 0; padding: .85rem 1rem; border-radius: 15px; box-shadow: none; }
+.notes-tools-layout .notes-topic h2 { margin: .35rem 0 .3rem; font-size: 1.05rem; line-height: 1.25; }
+.notes-tools-layout .notes-topic .notes-topic__desc { margin: 0 0 .4rem; font-size: .75rem; line-height: 1.45; }
+.notes-tools-layout .notes-topic__status { position: static; display: block; font-size: .65rem; }
+.notes-tools-layout .notes-topic.is-open, .notes-tools-layout .notes-grid.has-open-topic .notes-topic.is-open { min-height: 0; }
+.notes-tools-layout .notes-topic.is-open .notes-topic__panel { margin-top: .8rem; }
+.notes-tools-layout .notes-topic.is-open .notes-topic__panel-inner { padding: .8rem; border-radius: 12px; }
+.notes-tools-layout .notes-grid.has-open-topic .notes-topic:not(.is-open) { opacity: 1; transform: none; }
+.notes-tools-layout .skills-library { padding-left: 1.25rem; }
+.notes-tools-layout .skills-library__intro, .notes-tools-layout .skills-library__empty { margin: 0 0 .45rem; }
+.notes-tools-layout .skill-entry { padding: .75rem; }
+.notes-tools-layout .skill-entry[hidden], .notes-tools-layout .notes-topic__entries li[hidden] { display: none !important; }
+.notes-fold__button { border: 0; background: transparent; color: #0066cc; font: inherit; font-size: .72rem; font-weight: 600; padding: .35rem 0; cursor: pointer; }
+.notes-fold__button:hover { text-decoration: underline; }
+.notes-fold__button:focus-visible { outline: 2px solid #0071e3; outline-offset: 2px; }
+.notes-topic--intelligent .notes-fold__button { color: #a9d3ff; }
+@media (max-width: 767px) {
+  body.inner-page:has(.notes-tools-layout) .archive { padding: 1.15rem; }
+  body.inner-page:has(.notes-tools-layout) .page__title { font-size: 2rem; }
+  .notes-tools-layout { gap: 1.25rem; }
+  .notes-tools-layout .skills-library { padding: 1rem 0 0; }
+  .notes-tools-layout .notes-actions { grid-template-columns: 1fr 1fr; }
+  .notes-tools-layout .notes-actions > div { grid-column: 1 / -1; }
+}
