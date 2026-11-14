@@ -98,6 +98,20 @@
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/1c2857d4277ab0f165002f92b5354b3934092874"
   },
   {
+    "date": "2026-11-14",
+    "title_zh": "调整了资讯、页面结构、首页、界面样式",
+    "title_en": "Refined Opportunities, page structure, Home, interface styling",
+    "message": "Combine home profile and briefing; add opportunities screen lock",
+    "story_zh": "更新了资讯、页面结构、首页、界面样式的归档数据，使页面读到的记录与最新一次改动保持一致。",
+    "story_en": "Updated the archived data behind Opportunities, page structure, Home, interface styling so the page shows the records from the latest change.",
+    "purpose_zh": "统一资讯与既有内容页的内容宽度、阅读节奏和视觉层级。",
+    "purpose_en": "Combine home profile and briefing; add opportunities screen lock",
+    "details_zh": "调整资讯页面的主内容容器、archive 宽度或内边距、标题对齐与移动端布局。",
+    "details_en": "Adjusted the main content container, archive width or padding, title alignment and mobile layout of the Opportunities page.",
+    "sha": "09516e2",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/09516e2d36bacfd38f62064c72ad837100bbbdef"
+  },
+  {
     "date": "2026-11-11",
     "title_zh": "调整了每日新闻、资讯、页面结构、界面样式",
     "title_en": "Refined Daily News, Opportunities, page structure, interface styling",
