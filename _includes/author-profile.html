@@ -5,6 +5,7 @@
 {% endif %}
 
 <div itemscope itemtype="http://schema.org/Person">
+  {% if page.research_interests %}<h1 class="screen-reader-text">{{ author.name | escape }}</h1>{% endif %}
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
