@@ -410,6 +410,16 @@
       var hide = item.title.scrollHeight <= item.title.clientHeight + 1;
       if (item.control.hidden !== hide) item.control.hidden = hide;
     });
+    var board = document.querySelector(".publication-board");
+    if (board) {
+      board.style.removeProperty("--publication-card-height");
+      if (window.innerWidth >= 1024) {
+        var heights = Array.prototype.slice.call(board.querySelectorAll(".publication-card"))
+          .filter(function (card) { return card.getClientRects().length; })
+          .map(function (card) { return card.getBoundingClientRect().height; });
+        if (heights.length) board.style.setProperty("--publication-card-height", Math.ceil(Math.max.apply(null, heights)) + "px");
+      }
+    }
   }
   var pending = false;
   function schedule() {

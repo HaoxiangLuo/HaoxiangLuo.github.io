@@ -249,9 +249,9 @@ body.inner-page:has(.notes-tools-layout) .page__title { margin-bottom: 1rem; fon
     grid-auto-rows: 1fr; align-items: stretch;
   }
   body.home-page .publication-column--articles .publication-card {
-    min-height: 170px; height: 100%;
+    min-height: 170px; height: var(--publication-card-height, auto);
   }
-  body.home-page .publication-card--featured { min-height: 170px; }
+  body.home-page .publication-card--featured { min-height: 170px; height: var(--publication-card-height, auto); }
 }
 body.home-page.publications-clamped .publication-card h3,
 body.home-page.publications-clamped .publication-column--articles .publication-card h3 {
@@ -278,4 +278,10 @@ body.home-page.publications-clamped .publication-column--articles .publication-c
 .publication-title-dialog button {
   padding: .5rem .9rem; border: 0; border-radius: 999px; color: #fff;
   background: #1d1d1f; font: inherit; cursor: pointer;
+}
+
+@media (min-width: 1301px) {
+  body.home-page .publication-board.is-expanded .publication-card--featured {
+    height: var(--publication-card-height, auto);
+  }
 }
