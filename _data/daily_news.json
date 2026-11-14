@@ -1,13 +1,28 @@
 {
-  "updated_at": "2026-11-14T02:10:43+08:00",
+  "updated_at": "2026-11-14T15:07:44+08:00",
   "days": [
     {
       "date": "2026-11-14",
       "items": [
         {
-          "title": "Why is Microsoft's outage lasting so long and will emails be lost?",
+          "title": "What we know about the longest ground stop since 9/11",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "What's Trump's strategy now with Iran? To keep things as they are",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are"
+        },
+        {
+          "title": "‘Here, you can eat until you’re full’: Oleshky evacuees savour first proper meals in years",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168803"
+        },
+        {
+          "title": "'Miracle on Mississippi' - All passengers rescued after New Orleans cruise ship collision",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw20xmy0m5yyo?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
@@ -15,9 +30,14 @@
           "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen"
         },
         {
-          "title": "Watch: How a server outage took down Microsoft Teams and Outlook",
+          "title": "Security Council LIVE: Fragile Gulf calm tested as threats to Hormuz shipping mount",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168804"
+        },
+        {
+          "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/cqzjr903n01po?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Nvidia's interim CEO inherits risky AI bets and a legal mess",
@@ -25,29 +45,9 @@
           "url": "https://www.npr.org/2026/11/13/nx-s1-6038868/nvidia-interim-ceo-colette-kress-ai-bets-investigation-lutnick"
         },
         {
-          "title": "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cq39glwprknjo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks"
-        },
-        {
-          "title": "Nvidia scandal fallout widens as Trump's treasury secretary blames cabinet colleague",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Indonesia's VP resigns as his eligibility and academic credentials are questioned",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/12/g-s1-153190/indonesias-vp-resigns-as-his-eligibility-and-academic-credentials-are-questioned"
-        },
-        {
-          "title": "German spies handed new powers to tackle 'hybrid threats' from abroad",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6jre3z03w4go?at_medium=RSS&at_campaign=rss"
+          "title": "COP31: Climate finance falls short as calls grow for polluters to pay",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168802"
         }
       ],
       "space_items": [
@@ -57,14 +57,14 @@
           "url": "https://www.nasa.gov/image-article/outbursts-from-a-massive-star/"
         },
         {
-          "title": "'Martian Isolation' is an upcoming sci-fi survival horror game that looks like 'The Martian' and 'Event Horizon' had a horrific child",
+          "title": "SpaceX launches Starship on ambitious 22-hour Flight 15 test, but aborts booster 'chopsticks' catch (video)",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-games/martian-isolation-is-an-upcoming-sci-fi-survival-horror-game-that-looks-like-the-martian-and-event-horizon-had-a-horrific-child"
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-flight-15-chopsticks-double-catch-super-heavy-ship"
         },
         {
-          "title": "ULA delays Vulcan rocket launch of 40 Leo satellites for Amazon",
+          "title": "Starship in orbit ahead of catch attempt, booster diverts to explosive splashdown",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/"
+          "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/"
         },
         {
           "title": "Commercial Space Federation Welcomes CesiumAstro as a New Associate Member",
@@ -72,9 +72,9 @@
           "url": "https://spacenews.com/commercial-space-federation-welcomes-cesiumastro-as-a-new-associate-member/"
         },
         {
-          "title": "Dense Galaxy Clusters Foster Mechanisms That Throttle Star Formation",
+          "title": "When Einstein's Gravitational Waves Meet Newton's Tides",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/dense-galaxy-clusters-foster-mechanisms-that-throttle-star-formation"
+          "url": "https://www.universetoday.com/articles/when-einsteins-gravitational-waves-meet-newtons-tides"
         },
         {
           "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
@@ -82,14 +82,14 @@
           "url": "https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/"
         },
         {
-          "title": "Astronomers trace mystery radio signals back to cosmic odd couple of white dwarf and sun-like star",
+          "title": "On this day in space! Nov. 13, 1971: NASA's Mariner 9 becomes 1st spacecraft to orbit Mars, revealing close looks at the Martian surface",
           "source": "Space.com",
-          "url": "https://www.space.com/astronomy/stars/astronomers-trace-mystery-radio-signals-back-to-cosmic-odd-couple-of-white-dwarf-and-sun-like-star"
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-13-2026"
         },
         {
-          "title": "AST SpaceMobile unveils $1.3 billion engine deal with Firefly Aerospace to power new heavy-lift rocket",
+          "title": "ULA delays to Saturday Vulcan rocket launch of 40 Leo satellites for Amazon",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/07/ast-spacemobile-unveils-1-3-billion-engine-deal-with-firefly-aerospace-to-power-new-heavy-lift-rocket/"
+          "url": "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/"
         }
       ]
     },
