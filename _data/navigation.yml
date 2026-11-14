@@ -1,6 +1,6 @@
 # Primary navigation in both languages.
 main:
-  - title: "Notes & Tools"
+  - title: "Tool Development"
     url: /study-notes/
 
   - title: "Academic Frontiers"
@@ -16,7 +16,7 @@ main:
     url: /opportunities/
 
 main_zh:
-  - title: "札记与工具"
+  - title: "工具开发"
     url: /zh/study-notes/
 
   - title: "学界前沿"
