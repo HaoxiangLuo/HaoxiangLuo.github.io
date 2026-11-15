@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-15T00:45:39+08:00",
+  "updated_at": "2026-11-15T15:19:00+08:00",
   "days": [
     {
       "date": "2026-11-15",
       "items": [
         {
-          "title": "What we know about the ground stop and what to do if you're affected",
+          "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqx2wyvyr3zzo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "我们对地面站的了解以及如果您受到影响该怎么办"
+          "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽伦斯基表示，美国已提议乌克兰放弃顿巴斯以加入北约"
         },
         {
           "title": "Fuel crisis and protests pressure Chile's far-right president",
@@ -17,10 +17,14 @@
           "title_zh": "燃料危机和抗议给智利极右翼总统带来压力"
         },
         {
-          "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+          "title": "When the rains fail: Preparing for drought in Central America",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168776"
+        },
+        {
+          "title": "Copper wire upgrade behind US flight suspension, transport secretary says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "泽伦斯基表示，美国已提议乌克兰放弃顿巴斯以加入北约"
+          "url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "What's Trump's strategy now with Iran? To keep things as they are",
@@ -29,10 +33,14 @@
           "title_zh": "特朗普现在对伊朗的战略是什么？保持事物原样"
         },
         {
-          "title": "Italy fines Meta €805m over accessing users' photos",
+          "title": "‘Here, you can eat until you’re full’: Oleshky evacuees savour first proper meals in years",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168803"
+        },
+        {
+          "title": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "意大利因访问用户照片而对 Meta 罚款 8.05 亿欧元"
+          "url": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
@@ -41,22 +49,9 @@
           "title_zh": "英伟达首席执行官辞职。参议员克里斯·范·霍伦 (Chris Van Hollen) 将竞选多数党领袖"
         },
         {
-          "title": "Nigeria cautions against travel via Ethiopia's main airport due to altitude",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmz6qjpdy2wqo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "由于海拔高度，尼日利亚警告不要通过埃塞俄比亚主要机场旅行"
-        },
-        {
-          "title": "Nvidia's interim CEO inherits risky AI bets and a legal mess",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/13/nx-s1-6038868/nvidia-interim-ceo-colette-kress-ai-bets-investigation-lutnick",
-          "title_zh": "英伟达临时首席执行官继承了高风险的人工智能赌注和法律混乱"
-        },
-        {
-          "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
-          "title_zh": "白宫表示，特朗普、普京和习近平计划下周在中国举行历史性联席会议"
+          "title": "Security Council LIVE: Fragile Gulf calm tested as threats to Hormuz shipping mount",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168804"
         }
       ],
       "space_items": [
@@ -85,10 +80,9 @@
           "title_zh": "商业航天联合会欢迎 CesiumAstro 成为新准会员"
         },
         {
-          "title": "When Einstein's Gravitational Waves Meet Newton's Tides",
+          "title": "The First Foreign Astronaut Will Visit China's Tiangong Space Station in Two Weeks",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/when-einsteins-gravitational-waves-meet-newtons-tides",
-          "title_zh": "当爱因斯坦的引力波遇上牛顿的潮汐"
+          "url": "https://www.universetoday.com/articles/the-first-foreign-astronaut-will-visit-chinas-tiangong-space-station-in-two-weeks"
         },
         {
           "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
