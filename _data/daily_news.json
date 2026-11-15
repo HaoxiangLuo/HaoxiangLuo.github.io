@@ -1,6 +1,98 @@
 {
-  "updated_at": "2026-11-15T20:37:09+08:00",
+  "updated_at": "2026-11-16T01:28:04+08:00",
   "days": [
+    {
+      "date": "2026-11-16",
+      "items": [
+        {
+          "title": "Iran targets US military base in Bahrain with drone attack",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqn4e2py48kwo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Fuel crisis and protests pressure Chile's far-right president",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students"
+        },
+        {
+          "title": "Nadia Murad: ‘Day by day, I took my story back’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168801"
+        },
+        {
+          "title": "Three men sentenced to death in Jordan over fatal church mass shooting",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "What's Trump's strategy now with Iran? To keep things as they are",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are"
+        },
+        {
+          "title": "When the rains fail: Preparing for drought in Central America",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168776"
+        },
+        {
+          "title": "South Korea's top scorer in tax accountancy exam admits cheating",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckvg2ezvpe08o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen"
+        },
+        {
+          "title": "‘Here, you can eat until you’re full’: Oleshky evacuees savour first proper meals in years",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168803"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "Outbursts from a Massive Star",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/outbursts-from-a-massive-star/"
+        },
+        {
+          "title": "30 years ago, 'Space Jam' proposed the best way to resolve interplanetary disputes",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-movies-shows/30-years-ago-space-jam-proposed-the-best-way-to-resolve-interplanetary-disputes"
+        },
+        {
+          "title": "Starship returns to Starbase and a successful tower catch",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/"
+        },
+        {
+          "title": "Commercial Space Federation Welcomes CesiumAstro as a New Associate Member",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/commercial-space-federation-welcomes-cesiumastro-as-a-new-associate-member/"
+        },
+        {
+          "title": "Navigating Lunar Orbit Using Nothing But Shadows And A Power Meter",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/navigating-lunar-orbit-using-nothing-but-shadows-and-a-power-meter"
+        },
+        {
+          "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/"
+        },
+        {
+          "title": "On this day in space! Nov. 15, 1988: The 300-foot Green Bank Telescope collapses suddenly, leaving a huge pile of wreckage in West Virginia",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-15-2026"
+        },
+        {
+          "title": "ULA delays to Sunday Vulcan rocket launch of 40 Leo satellites for Amazon",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/"
+        }
+      ]
+    },
     {
       "date": "2026-11-15",
       "items": [
