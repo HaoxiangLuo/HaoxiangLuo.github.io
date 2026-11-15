@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T15:19:00+08:00",
+  "updated_at": "2026-11-15T20:37:09+08:00",
   "days": [
     {
       "date": "2026-11-15",
@@ -19,12 +19,14 @@
         {
           "title": "When the rains fail: Preparing for drought in Central America",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168776"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168776",
+          "title_zh": "当降雨停止时：为中美洲的干旱做好准备"
         },
         {
-          "title": "Copper wire upgrade behind US flight suspension, transport secretary says",
+          "title": "Three men sentenced to death in Jordan over fatal church mass shooting",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6wy9lynq4qno?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "三名男子因教堂大规模枪击事件在约旦被判处死刑"
         },
         {
           "title": "What's Trump's strategy now with Iran? To keep things as they are",
@@ -35,12 +37,14 @@
         {
           "title": "‘Here, you can eat until you’re full’: Oleshky evacuees savour first proper meals in years",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168803"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168803",
+          "title_zh": "在这里，你可以吃到饱”：奥列什基撤离者品尝多年来的第一顿正餐"
         },
         {
-          "title": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
+          "title": "Israel kills Hamas commander in strike on Gaza camp, officials say",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqrkg4r6mg7xo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "官员称，以色列在袭击加沙营地时杀死了哈马斯指挥官"
         },
         {
           "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
@@ -51,7 +55,8 @@
         {
           "title": "Security Council LIVE: Fragile Gulf calm tested as threats to Hormuz shipping mount",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168804"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168804",
+          "title_zh": "安理会直播：随着霍尔木兹航运面临的威胁加剧，脆弱的海湾平静受到考验"
         }
       ],
       "space_items": [
@@ -62,10 +67,10 @@
           "title_zh": "大质量恒星的爆发"
         },
         {
-          "title": "This Week In Space podcast: Episode 236 — Alienspotting",
+          "title": "What's next for SpaceX's Starship after epic Flight 15 chopsticks catch?",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-236-alienspotting",
-          "title_zh": "本周太空播客：第 236 集 — Alienspotting"
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/whats-next-for-spacexs-starship-after-epic-flight-15-chopsticks-catch",
+          "title_zh": "史诗般的 Flight 15 筷子卡住后，SpaceX 的星际飞船下一步将何去何从？"
         },
         {
           "title": "Starship in orbit ahead of catch attempt, booster diverts to explosive splashdown",
@@ -82,7 +87,8 @@
         {
           "title": "The First Foreign Astronaut Will Visit China's Tiangong Space Station in Two Weeks",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/the-first-foreign-astronaut-will-visit-chinas-tiangong-space-station-in-two-weeks"
+          "url": "https://www.universetoday.com/articles/the-first-foreign-astronaut-will-visit-chinas-tiangong-space-station-in-two-weeks",
+          "title_zh": "首位外国宇航员两周后将访问中国天宫空间站"
         },
         {
           "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
@@ -91,10 +97,10 @@
           "title_zh": "双子座宇航员照片启发了早期地球观测计划"
         },
         {
-          "title": "'Alien: Fireteam Elite 2' is a good old-fashioned bug hunt, ironically plagued by bugs",
+          "title": "This Week In Space podcast: Episode 236 — Alienspotting",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-games/alien-fireteam-elite-2-is-a-good-old-fashioned-bug-hunt-ironically-plagued-by-bugs",
-          "title_zh": "《异形：火力小队精英 2》是一款不错的老式 bug 搜寻游戏，讽刺的是却被 bug 所困扰"
+          "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-236-alienspotting",
+          "title_zh": "本周太空播客：第 236 集 — Alienspotting"
         },
         {
           "title": "ULA delays to Sunday Vulcan rocket launch of 40 Leo satellites for Amazon",
