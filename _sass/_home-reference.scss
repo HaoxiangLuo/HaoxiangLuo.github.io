@@ -386,3 +386,53 @@ body.home-page .author__interests li { margin: 0; padding: .3rem .55rem; border-
     background-repeat: no-repeat; opacity: .22; pointer-events: none;
   }
 }
+
+/* Profile card: aligned contact rows and plain research-interest text. */
+body.home-page #main > .sidebar .author__urls {
+  display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .2rem .7rem; margin: 0; padding: 0; list-style: none;
+}
+body.home-page #main > .sidebar .author__urls li {
+  display: flex; align-items: center; min-width: 0; min-height: 32px;
+  margin: 0; color: #f5f5f7; font-size: .7rem; line-height: 1.4;
+}
+body.home-page #main > .sidebar .author__urls li a {
+  display: inline-flex; align-items: center; min-height: 32px; padding: 0;
+  color: inherit; font-size: inherit; line-height: inherit;
+}
+body.home-page #main > .sidebar .author__interests {
+  grid-column: 1 / -1; margin-top: .45rem; min-width: 0;
+}
+body.home-page #main > .sidebar .author__interests h2 {
+  margin: 0 0 .4rem; padding: 0; border: 0; color: #f5f5f7;
+  font-size: .72rem; line-height: 1.4; font-weight: 650; text-shadow: none;
+}
+body.home-page #main > .sidebar .author__interests ul {
+  display: grid; gap: .3rem; margin: 0; padding: 0; list-style: none;
+}
+body.home-page #main > .sidebar .author__interests li {
+  margin: 0; padding: 0; border: 0; border-radius: 0; background: transparent;
+  box-shadow: none; color: #f5f5f7; font-family: inherit; font-size: .7rem;
+  font-weight: 400; line-height: 1.4; text-shadow: none; overflow-wrap: anywhere;
+}
+@media (max-width: 1023px) {
+  body.home-page #main > .sidebar > div[itemscope] {
+    display: grid; grid-template-columns: 56px minmax(0, 1fr);
+    align-items: center; gap: 0 .85rem;
+  }
+  body.home-page #main > .sidebar .author__avatar,
+  body.home-page #main > .sidebar .author__avatar img {
+    display: block; width: 56px; max-width: 56px; margin: 0;
+  }
+  body.home-page #main > .sidebar .author__avatar img { height: 70px; object-fit: cover; }
+  body.home-page #main > .sidebar .author__content { min-width: 0; padding: 0; }
+  body.home-page #main > .sidebar .author__urls-wrapper {
+    display: block; grid-column: 1 / -1; margin-top: .8rem; padding-top: .7rem;
+    border-top: 1px solid rgba(255,255,255,.22);
+  }
+  body.home-page #main > .sidebar .author__urls-wrapper > button { display: none !important; }
+  body.home-page #main > .sidebar .author__urls {
+    position: static; flex-wrap: unset; border: 0; background: transparent; box-shadow: none;
+  }
+  body.home-page #main > .sidebar .author__desktop { display: flex; }
+}
