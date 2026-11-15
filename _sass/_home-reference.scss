@@ -327,3 +327,62 @@ body.home-page .author__interests li { margin: 0; padding: .3rem .55rem; border-
   body.home-page .author__interests { margin-top: .75rem; }
   body.home-page #main > .news-window { margin: .4rem 0 1rem; }
 }
+
+/* Compact, balanced home composition. */
+@media (min-width: 1024px) {
+  body.home-page #main { padding-top: 1.25rem; gap: .85rem 1.1rem; }
+  body.home-page #main > .sidebar.sticky,
+  body.home-page #main > .news-window { min-height: 260px; }
+  body.home-page #main > .sidebar.sticky { padding: 1.2rem !important; }
+  body.home-page #main > .sidebar > div[itemscope] {
+    grid-template-rows: auto auto auto; align-content: start; gap: .55rem .85rem;
+  }
+  body.home-page #main > .sidebar .author__urls-wrapper { margin-top: .35rem; padding-top: .55rem; }
+  body.home-page .author__interests { margin-top: .25rem; }
+  body.home-page #main > .news-window {
+    display: flex; flex-direction: column; gap: .5rem; padding: 1.2rem 1.35rem;
+  }
+  body.home-page #main > .news-window .news-window__list {
+    display: flex; flex-direction: column; justify-content: center; flex: 1 1 auto;
+    gap: 0; min-width: 0;
+  }
+  body.home-page #main > .news-window .news-window__list li {
+    width: 100%; padding: .45rem 0;
+  }
+  body.home-page #main > .news-window .news-window__list li:last-child { border-bottom: 0; }
+  body.home-page #main > .news-window .news-window__footer { margin-top: .2rem; }
+  body.home-page #main > .home-publications .publication-board {
+    grid-template-columns: minmax(250px, 1fr) minmax(0, 2fr);
+  }
+  body.home-page .publication-column--articles .publication-card,
+  body.home-page .publication-card--featured { min-height: 0; }
+  body.home-page .publication-card--featured,
+  body.home-page .publication-column--articles .publication-card { padding: .65rem; gap: .65rem; }
+  body.home-page .publication-card--featured { grid-template-columns: 62px minmax(0,1fr); }
+  body.home-page .publication-card--featured .publication-cover { width: 62px; height: 86px; }
+  body.home-page .publication-column--articles .publication-card { grid-template-columns: 62px minmax(0,1fr); }
+  body.home-page .publication-column--articles .publication-cover { width: 62px; height: 82px; }
+  body.home-page .publication-card--featured .publication-card__body,
+  body.home-page .publication-column--articles .publication-card__body { align-self: start; }
+  body.home-page .publication-card--featured h3,
+  body.home-page .publication-column--articles .publication-card h3 { font-size: .85rem; line-height: 1.3; margin: .25rem 0; }
+  body.home-page .publication-card--featured p,
+  body.home-page .publication-column--articles .publication-meta { margin: .2rem 0 0; font-size: .72rem; line-height: 1.35; }
+  body.home-page .publication-badge { margin-bottom: .2rem; }
+}
+@media (min-width: 1024px) and (max-width: 1300px) {
+  body.home-page #main > .home-publications .publication-board { grid-template-columns: minmax(0,1fr); }
+}
+
+@media (min-width: 1024px) {
+  body.home-page #main > .news-window { position: relative; isolation: isolate; overflow: hidden; }
+  body.home-page #main > .news-window::after {
+    content: ""; position: absolute; inset: 0 0 0 auto; width: 58%; z-index: -1;
+    background-image: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0) 100%),
+      linear-gradient(180deg, #fff 5%, rgba(255,255,255,0) 100%),
+      url('/images/publication-snow-mountains.jpg');
+    background-position: center, center, right bottom;
+    background-size: cover, cover, 600% auto;
+    background-repeat: no-repeat; opacity: .22; pointer-events: none;
+  }
+}
