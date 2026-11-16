@@ -505,3 +505,16 @@ body.home-page #main > .sidebar .author__interests li {
   body.home-page #main > .news-window .news-window__list a span { white-space: normal; overflow: visible; }
   body.home-page #main > .news-window .news-window__list small { color: #666970; white-space: normal; }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body.home-page #main > .home-publications .publication-card {
+    display: grid; grid-template-columns: 62px minmax(0,1fr); gap: .65rem;
+    min-height: 0; padding: .7rem;
+  }
+  body.home-page #main > .home-publications .publication-card .publication-cover {
+    width: 62px; height: 84px; min-height: 0; padding: 0; border-radius: 8px;
+  }
+  body.home-page #main > .home-publications .publication-card__body {
+    min-width: 0; align-self: start; padding: 0;
+  }
+}
