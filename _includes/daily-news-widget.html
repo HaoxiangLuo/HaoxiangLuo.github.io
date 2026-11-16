@@ -7,6 +7,7 @@
     <div>
       <span class="news-window__live"><i aria-hidden="true"></i>{% if page.lang == 'zh' %}今日简讯{% else %}TODAY'S BRIEF{% endif %}</span>
       <h2 id="news-window-title">{% if page.lang == 'zh' %}全球要闻{% else %}Global News{% endif %}</h2>
+      {% if today_news_day.date %}<time class="news-window__date" datetime="{{ today_news_day.date }}">{{ today_news_day.date }}</time>{% endif %}
     </div>
     <a href="{{ base_path }}{% if page.lang == 'zh' %}/zh/daily-news/{% else %}/daily-news/{% endif %}">{% if page.lang == 'zh' %}查看全部{% else %}View all{% endif %}<span aria-hidden="true"> ↗</span></a>
   </div>
@@ -21,5 +22,4 @@
   {% else %}
     <p class="news-window__empty">{% if page.lang == 'zh' %}今日简讯正在整理中，请稍后再来。{% else %}Today's briefing is being prepared. Please check back shortly.{% endif %}</p>
   {% endif %}
-  <div class="news-window__footer"><time datetime="{{ today_news_day.date }}">{{ today_news_day.date }}</time></div>
 </aside>
