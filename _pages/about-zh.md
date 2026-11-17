@@ -5,6 +5,7 @@ author_profile: true
 author: LuoZH
 lang: zh
 translation_url: /
+personal_intro: "最近在尝试开发 3D 游戏，也喜欢滑雪。"
 redirect_from:
   - /zh/publications/
 research_interests:
