@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-17",
+    "sha": "e189af2",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/e189af269e6a1de7d6bd0f302cd44aec79aa698f",
+    "message": "在首页简介加入游戏开发近况与滑雪爱好",
+    "title_zh": "首页增加研究之外的近况",
+    "title_en": "Personal interests on the homepage",
+    "story_zh": "增加了首页“研究之外”简介，该栏目用于展示近期的 3D 游戏开发尝试与滑雪爱好。",
+    "story_en": "Added a Beyond research introduction, which shares recent experiments with 3D game development and an interest in skiing.",
+    "purpose_zh": "在学术身份与研究兴趣之外，介绍近期尝试和个人爱好。",
+    "purpose_en": "Introduce personal interests alongside the academic profile.",
+    "details_zh": "在中英文个人卡片中加入研究之外栏目；中文写明近期尝试开发 3D 游戏与喜欢滑雪，英文对应表述。沿用深色卡片与细分隔线，并检查桌面和390像素手机布局，无横向溢出。",
+    "details_en": "Added paired Chinese and English personal introductions in the profile card, mentioning recent 3D game development experiments and skiing. Preserved the dark card design and checked desktop and 390-pixel phone layouts without horizontal overflow."
+  },
+  {
     "date": "2026-11-16",
     "title_zh": "调整了论文发表、每日新闻、界面样式",
     "title_en": "Refined Publications, Daily News, interface styling",
