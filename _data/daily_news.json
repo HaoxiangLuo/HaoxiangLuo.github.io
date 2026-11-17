@@ -1,18 +1,23 @@
 {
-  "updated_at": "2026-11-17T16:38:08+08:00",
+  "updated_at": "2026-11-17T22:14:13+08:00",
   "days": [
     {
       "date": "2026-11-17",
       "items": [
         {
-          "title": "Crimea bridge shut after reported Ukrainian strike, as Russia hits Kyiv crossings",
+          "title": "Putin's Crimea bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Africa: Trading in yuan",
+          "title": "Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at Nvidia",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/16/nx-s1-6035000/africa-trading-in-yuan"
+          "url": "https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy"
+        },
+        {
+          "title": "‘Peace begins in our hearts’: Children close Muscat forum with a message to the world",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168820"
         },
         {
           "title": "Ukraine accuses Russia of targeting rescue operation after 'double-tap' strike kills 72",
@@ -20,38 +25,29 @@
           "url": "https://www.bbc.co.uk/news/articles/c30rk8x5g80qo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow",
+          "title": "Trump arrives in Philippines to kick off Asia trip",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/16/nx-s1-6042548/un-killer-robots-ai-weapons-drones",
-          "title_zh": "随着对人工智能武器的担忧加剧，联合国会谈寻求遏制“杀手机器人"
+          "url": "https://www.npr.org/2026/11/17/nx-s1-6043702/trump-arrives-philippines"
         },
         {
-          "title": "Imran Khan seeks urgent medical care fearing he 'may not return alive'",
+          "title": "‘An unfulfilled plan helps no one’: Superbug plans have doubled, but few countries are delivering",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168819"
+        },
+        {
+          "title": "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cr894xq5yeyko?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "FAA ground stop still affecting thousands of flights. And, Trump meets Xi, Putin in Asia",
+          "title": "Ukraine strikes major Russian bridge with drones and missiles as aerial attacks escalate",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/16/g-s1-153841/up-first-newsletter-faa-ground-stop-democratic-leaders-congress-trump-asia-trip",
-          "title_zh": "美国联邦航空局 (FAA) 地面停止仍然影响数千个航班。而且，特朗普在亚洲会见习近平和普京"
+          "url": "https://www.npr.org/2026/11/17/g-s1-153946/russia-ukraine-war"
         },
         {
-          "title": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
-          "title_zh": "让詹森回来”运动发起后，特朗普支持前英伟达老板回归"
-        },
-        {
-          "title": "Chris Van Hollen says he can beat Chuck Schumer. Here's his case",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/16/nx-s1-6041687/chris-van-hollen-chuck-schumer-senate-leader",
-          "title_zh": "克里斯·范·霍伦说他可以击败查克·舒默。这是他的案例"
-        },
-        {
-          "title": "OpenAI sued by California over Hugging Face attack",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6wy4xv2mxglo?at_medium=RSS&at_campaign=rss"
+          "title": "Lebanon leading the way in mental health support",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168818"
         }
       ],
       "space_items": [
@@ -61,9 +57,9 @@
           "url": "https://science.nasa.gov/image-article/apod-2026-november-17-milky-way-versus-aurora/"
         },
         {
-          "title": "On this day in space! Nov. 16, 1974: The giant Arecibo Observatory in Puerto Rico broadcasts humanity's 1st interstellar message",
+          "title": "'It looked like every star in the sky was falling': Eyewitnesses remember the great Leonid meteor storm of 1966",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-16-2026"
+          "url": "https://www.space.com/stargazing/meteor-showers/eyewitnesses-remember-the-great-leonid-meteor-storm-of-1966-it-looked-like-every-star-in-the-sky-was-falling"
         },
         {
           "title": "ULA suffers first outright failure with loss of Vulcan rocket carrying 40 Amazon Leo satellites",
@@ -77,9 +73,9 @@
           "url": "https://spacenews.com/cosmo-bee-to-flight-test-honeybee-hall-thruster-with-d-orbit-in-2027/"
         },
         {
-          "title": "Ringing Black Holes Offer Precision Tests of Relativity",
+          "title": "Galaxy Outflows Likely Regulate Star Formation At ‘Cosmic Noon’ NASA’s Webb Reveals",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/ringing-black-holes-offer-precision-tests-of-relativity"
+          "url": "https://www.universetoday.com/articles/galaxy-outflows-likely-regulate-star-formation-at-cosmic-noon-nasas-webb-reveals"
         },
         {
           "title": "Tossing Fireworks from Cloud to Cloud",
@@ -87,9 +83,9 @@
           "url": "https://science.nasa.gov/earth/earth-observatory/tossing-fireworks-from-cloud-to-cloud/"
         },
         {
-          "title": "Relive Starship’s historic Flight 15 with our best photos from launch and ‘Mechazilla’ tower catch",
+          "title": "Reflect Orbital wants to launch thousands of sunlight-beaming mirrors to space — and the 1st will go up next year",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/relive-starships-historic-flight-15-with-our-best-photos-from-launch-and-mechazilla-tower-catch"
+          "url": "https://www.space.com/space-exploration/satellites/reflect-orbital-wants-to-launch-thousands-of-sunlight-beaming-mirrors-to-space-and-the-1st-will-go-up-next-year"
         },
         {
           "title": "Starship returns to Starbase and a successful tower catch",
