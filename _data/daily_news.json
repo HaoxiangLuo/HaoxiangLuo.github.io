@@ -1,14 +1,23 @@
 {
-  "updated_at": "2026-11-17T04:42:36+08:00",
+  "updated_at": "2026-11-17T16:38:08+08:00",
   "days": [
     {
       "date": "2026-11-17",
       "items": [
         {
-          "title": "Five EU countries announce migrant deportation centre in Rwanda",
+          "title": "Crimea bridge shut after reported Ukrainian strike, as Russia hits Kyiv crossings",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss",
-          "title_zh": "五个欧盟国家宣布在卢旺达设立移民驱逐中心"
+          "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Africa: Trading in yuan",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/16/nx-s1-6035000/africa-trading-in-yuan"
+        },
+        {
+          "title": "Ukraine accuses Russia of targeting rescue operation after 'double-tap' strike kills 72",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c30rk8x5g80qo?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "U.N. talks seek to rein in 'killer robots' as fears over AI weapons grow",
@@ -17,16 +26,9 @@
           "title_zh": "随着对人工智能武器的担忧加剧，联合国会谈寻求遏制“杀手机器人"
         },
         {
-          "title": "AI gets climate science right – until users push back",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168817",
-          "title_zh": "人工智能让气候科学正确——直到用户反对"
-        },
-        {
-          "title": "Yemeni forces retreat to defend port city from Houthis",
+          "title": "Imran Khan seeks urgent medical care fearing he 'may not return alive'",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqvg2xgyvnjpo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "也门军队撤退以保卫港口城市免受胡塞武装袭击"
+          "url": "https://www.bbc.co.uk/news/articles/cr894xq5yeyko?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "FAA ground stop still affecting thousands of flights. And, Trump meets Xi, Putin in Asia",
@@ -35,13 +37,7 @@
           "title_zh": "美国联邦航空局 (FAA) 地面停止仍然影响数千个航班。而且，特朗普在亚洲会见习近平和普京"
         },
         {
-          "title": "Syria: Progress ‘real’ but fragile, as remnants of war wreck young lives",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168814",
-          "title_zh": "叙利亚：进展“真实”但脆弱，战争残余摧毁了年轻人的生命"
-        },
-        {
-          "title": "Trump backs return of ex-Nvidia boss after 'Bring Jensen Back' campaign launched",
+          "title": "Nvidia dismisses 'Bring Jensen Back' campaign as Trump backs effort to reinstate ex boss",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
           "title_zh": "让詹森回来”运动发起后，特朗普支持前英伟达老板回归"
@@ -53,24 +49,21 @@
           "title_zh": "克里斯·范·霍伦说他可以击败查克·舒默。这是他的案例"
         },
         {
-          "title": "COP31 enters decisive week as climate talks face political test and AI initiatives gather pace",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168812",
-          "title_zh": "随着气候谈判面临政治考验和人工智能举措加快步伐，COP31 进入决定性的一周"
+          "title": "OpenAI sued by California over Hugging Face attack",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6wy4xv2mxglo?at_medium=RSS&at_campaign=rss"
         }
       ],
       "space_items": [
         {
-          "title": "Sentinel-6B in Orbit Around Earth",
+          "title": "APOD: 2026 November 17 – Milky Way versus Aurora",
           "source": "NASA",
-          "url": "https://science.nasa.gov/photojournal/sentinel-6b-in-orbit-around-earth/",
-          "title_zh": "Sentinel-6B 绕地球轨道运行"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-17-milky-way-versus-aurora/"
         },
         {
-          "title": "Elon Musk says SpaceX’s Starship, already the largest rocket on Earth, will get even bigger with next-gen V4 model",
+          "title": "On this day in space! Nov. 16, 1974: The giant Arecibo Observatory in Puerto Rico broadcasts humanity's 1st interstellar message",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/elon-musk-says-spacexs-starship-already-the-largest-rocket-on-earth-will-get-even-bigger-with-next-gen-v4-model",
-          "title_zh": "埃隆·马斯克 (Elon Musk) 表示，SpaceX 的 Starship 已经是地球上最大的火箭，下一代 V4 型号将变得更大"
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-16-2026"
         },
         {
           "title": "ULA suffers first outright failure with loss of Vulcan rocket carrying 40 Amazon Leo satellites",
@@ -79,28 +72,24 @@
           "title_zh": "ULA 遭遇首次彻底失败，运载 40 颗亚马逊 Leo 卫星的火神火箭丢失"
         },
         {
-          "title": "SpaceNukes Opens Los Alamos Manufacture and Materials Facility to Build Its Next-Generation Space Reactor",
+          "title": "Cosmo Bee to flight-test Honeybee Hall thruster with D-Orbit in 2027",
           "source": "SpaceNews",
-          "url": "https://spacenews.com/spacenukes-opens-los-alamos-manufacture-and-materials-facility-to-build-its-next-generation-space-reactor/",
-          "title_zh": "SpaceNukes 开设洛斯阿拉莫斯制造和材料工厂以建造下一代太空反应堆"
+          "url": "https://spacenews.com/cosmo-bee-to-flight-test-honeybee-hall-thruster-with-d-orbit-in-2027/"
         },
         {
-          "title": "This Rare Binary Star Emits Radio Pulses Every Few Minutes. Will It Eventually Explode?",
+          "title": "Ringing Black Holes Offer Precision Tests of Relativity",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/this-rare-binary-star-emits-radio-pulses-every-few-minutes-will-it-eventually-explode",
-          "title_zh": "这颗罕见的双星每隔几分钟就会发出无线电脉冲。最终会爆炸吗？"
+          "url": "https://www.universetoday.com/articles/ringing-black-holes-offer-precision-tests-of-relativity"
         },
         {
-          "title": "Thunderbirds in Formation",
+          "title": "Tossing Fireworks from Cloud to Cloud",
           "source": "NASA",
-          "url": "https://www.nasa.gov/image-article/thunderbirds-in-formation/",
-          "title_zh": "雷鸟队正在编队"
+          "url": "https://science.nasa.gov/earth/earth-observatory/tossing-fireworks-from-cloud-to-cloud/"
         },
         {
-          "title": "What exactly is a light-day? Here's what Voyager 1's latest milestone means for the interstellar probe",
+          "title": "Relive Starship’s historic Flight 15 with our best photos from launch and ‘Mechazilla’ tower catch",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/voyager/what-exactly-is-a-light-day-heres-what-voyager-1s-latest-milestone-means-for-the-interstellar-probe",
-          "title_zh": "光日到底是什么？航海者一号的最新里程碑对于星际探测器意味着什么"
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/relive-starships-historic-flight-15-with-our-best-photos-from-launch-and-mechazilla-tower-catch"
         },
         {
           "title": "Starship returns to Starbase and a successful tower catch",
