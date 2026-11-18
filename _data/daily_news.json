@@ -1,23 +1,18 @@
 {
-  "updated_at": "2026-11-18T16:00:31+08:00",
+  "updated_at": "2026-11-18T21:45:08+08:00",
   "days": [
     {
       "date": "2026-11-18",
       "items": [
         {
-          "title": "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal",
+          "title": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Xi said China would welcome American students for exchanges. What's the reality?",
+          "title": "Mary Peltola flips Alaska's Senate seat. And, Nvidia won't reinstate Jensen Huang",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/17/nx-s1-6026589/xi-said-china-would-welcome-american-students-for-exchanges-whats-the-reality"
-        },
-        {
-          "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168828"
+          "url": "https://www.npr.org/2026/11/18/g-s1-154145/up-first-newsletter-mary-peltola-alaska-trump-asia-nvidia-tech-issues-ai"
         },
         {
           "title": "Nvidia says it won't reinstate Huang as it reports soaring sales",
@@ -25,29 +20,34 @@
           "url": "https://www.bbc.co.uk/news/articles/cm2kl50vkwkdo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Iran launches a third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet",
+          "title": "Trump to meet with Russia's Putin and China's Xi for historic joint meeting",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/17/nx-s1-6044255/us-iran-war-latest-bahrain"
+          "url": "https://www.npr.org/2026/11/18/nx-s1-6027645/trump-to-meet-with-russias-putin-and-chinas-xi-for-historic-joint-meeting"
         },
         {
-          "title": "World News in Brief: Ebola cases double in DR Congo, chemical exposure starts before birth, Türk concern over EU-Rwanda transfer plan",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168827"
-        },
-        {
-          "title": "Rubio says US not 'under systemic attack' after series of tech outages",
+          "title": "Bancroft sandpaper claims heap pressure on Cummins",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/crkgvxxwpwz2o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/sport/cricket/articles/cmqlqdevgl9ro?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at Nvidia",
+          "title": "Former U.S. ambassador on Trump's joint summit with leaders of China and Russia",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy"
+          "url": "https://www.npr.org/2026/11/18/nx-s1-6044067/former-u-s-ambassador-on-trumps-joint-summit-with-leaders-of-china-and-russia"
         },
         {
-          "title": "COP31: The push to protect warming oceans reaches the negotiating table",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168824"
+          "title": "Democrats win Alaska Senate race two weeks after midterms counting began",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqev3v2ygzlvo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Greetings from a Berlin square, where an artist's statue watches over children at play",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/18/nx-s1-6043021/berlin-kollwitzplatz-statue"
+        },
+        {
+          "title": "Can a US-backed mineral highway bring peace and prosperity to DR Congo?",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cx053jrv9rz9o?at_medium=RSS&at_campaign=rss"
         }
       ],
       "space_items": [
@@ -57,9 +57,9 @@
           "url": "https://science.nasa.gov/image-article/apod-2026-november-18-an-m-class-solar-flare/"
         },
         {
-          "title": "NASA's Voyager 1 launched second, so how did it beat Voyager 2 to a light-day by nearly a decade?",
+          "title": "India's SatLeo Labs wants to build a 'thermometer for Earth' in space",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/voyager/nasas-voyager-1-launched-second-so-how-did-it-beat-voyager-2-to-a-light-day-by-nearly-a-decade"
+          "url": "https://www.space.com/space-exploration/satellites/indias-satleo-labs-wants-to-build-a-thermometer-for-earth-in-space"
         },
         {
           "title": "ULA suffers first outright failure with loss of Vulcan rocket carrying 40 Amazon Leo satellites",
@@ -82,9 +82,9 @@
           "url": "https://science.nasa.gov/earth/earth-observatory/sierra-snow-season-spins-up/"
         },
         {
-          "title": "Space is filling up with junk. Could laser-reflecting mirrors help humanity clean things up?",
+          "title": "1 light-day from Earth! NASA's Voyager 1 probe hits huge milestone in interstellar space",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/satellites/space-is-filling-up-with-junk-could-laser-reflecting-mirrors-help-humanity-clean-things-up"
+          "url": "https://www.space.com/space-exploration/voyager/1-light-day-from-earth-nasas-voyager-1-probe-hits-huge-milestone-in-interstellar-space"
         },
         {
           "title": "Starship returns to Starbase and a successful tower catch",
