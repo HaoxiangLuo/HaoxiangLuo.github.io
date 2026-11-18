@@ -1,28 +1,43 @@
 {
-  "updated_at": "2026-11-18T03:26:54+08:00",
+  "updated_at": "2026-11-18T16:00:31+08:00",
   "days": [
     {
       "date": "2026-11-18",
       "items": [
         {
-          "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+          "title": "As Trump and Xi meet, China's AI dreams face an unexpected hurdle: the Nvidia spy scandal",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c5vg23g92rj4o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Iran launches third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet",
+          "title": "Xi said China would welcome American students for exchanges. What's the reality?",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/17/nx-s1-6026589/xi-said-china-would-welcome-american-students-for-exchanges-whats-the-reality"
+        },
+        {
+          "title": "Ukraine: Civilian casualties in 2026 already far exceed previous years’ tolls",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168828"
+        },
+        {
+          "title": "Nvidia says it won't reinstate Huang as it reports soaring sales",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm2kl50vkwkdo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Iran launches a third round of strikes on Bahrain, host of U.S. Navy's 5th Fleet",
           "source": "NPR World",
           "url": "https://www.npr.org/2026/11/17/nx-s1-6044255/us-iran-war-latest-bahrain"
         },
         {
-          "title": "COP31: The push to protect warming oceans reaches the negotiating table",
+          "title": "World News in Brief: Ebola cases double in DR Congo, chemical exposure starts before birth, Türk concern over EU-Rwanda transfer plan",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168824"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168827"
         },
         {
-          "title": "How the attack on Crimean Bridge unfolded",
+          "title": "Rubio says US not 'under systemic attack' after series of tech outages",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/crkgvxxwpwz2o?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Trump is in Asia ahead of Xi, Putin summit. And, tech leaders want Huang back at Nvidia",
@@ -30,36 +45,21 @@
           "url": "https://www.npr.org/2026/11/17/g-s1-153950/up-first-newsletter-faa-ground-stop-trump-asia-trip-nvidia-lindsay-clancy"
         },
         {
-          "title": "Haiti: ‘Atrocious abuses’ continue as UN warns anti-gang operations must priortise civilian protection",
+          "title": "COP31: The push to protect warming oceans reaches the negotiating table",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168823"
-        },
-        {
-          "title": "Jensen Huang says he would be 'honoured' to return as Nvidia CEO if board asked him",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwx2en2vrxmdo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Trump arrives in Philippines to kick off Asia trip",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/17/nx-s1-6043702/trump-arrives-philippines"
-        },
-        {
-          "title": "‘Hunger should not be a concern’: WFP steps in for families in Kenya who fled Ethiopia violence",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168822"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168824"
         }
       ],
       "space_items": [
         {
-          "title": "NASA to Cover 35th SpaceX Resupply Mission Space Station Departure",
+          "title": "APOD: 2026 November 18 – An M-class Solar Flare",
           "source": "NASA",
-          "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-18-an-m-class-solar-flare/"
         },
         {
-          "title": "Astronomers discover rare black holes that formed when stars failed to go supernova",
+          "title": "NASA's Voyager 1 launched second, so how did it beat Voyager 2 to a light-day by nearly a decade?",
           "source": "Space.com",
-          "url": "https://www.space.com/astronomy/black-holes/astronomers-discover-rare-black-holes-that-formed-when-stars-failed-to-go-supernova"
+          "url": "https://www.space.com/space-exploration/voyager/nasas-voyager-1-launched-second-so-how-did-it-beat-voyager-2-to-a-light-day-by-nearly-a-decade"
         },
         {
           "title": "ULA suffers first outright failure with loss of Vulcan rocket carrying 40 Amazon Leo satellites",
@@ -72,19 +72,19 @@
           "url": "https://spacenews.com/how-ai-is-pushing-satellites-to-evolve/"
         },
         {
-          "title": "Searching for Elusive Signals in the Cosmic Microwave Background from the South Pole",
+          "title": "Computer Simulations Provide the Best Explanation for Those \"Little Red Dots\" Yet!",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/searching-for-elusive-signals-in-the-cosmic-microwave-background-from-the-south-pole"
+          "url": "https://www.universetoday.com/articles/computer-simulations-provide-the-best-explanation-for-those-little-red-dots-yet"
         },
         {
-          "title": "NICER Status Updates",
+          "title": "Sierra Snow Season Spins Up",
           "source": "NASA",
-          "url": "https://www.nasa.gov/missions/station/nicer-status-updates/"
+          "url": "https://science.nasa.gov/earth/earth-observatory/sierra-snow-season-spins-up/"
         },
         {
-          "title": "ULA lost a Vulcan Centaur rocket carrying 40 Amazon satellites 10 minutes after launch — but the failure began just after liftoff",
+          "title": "Space is filling up with junk. Could laser-reflecting mirrors help humanity clean things up?",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-lost-a-vulcan-centaur-rocket-carrying-40-amazon-satellites-10-minutes-after-launch-but-the-failure-began-just-after-liftoff"
+          "url": "https://www.space.com/space-exploration/satellites/space-is-filling-up-with-junk-could-laser-reflecting-mirrors-help-humanity-clean-things-up"
         },
         {
           "title": "Starship returns to Starbase and a successful tower catch",
