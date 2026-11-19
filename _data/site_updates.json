@@ -1,6 +1,21 @@
 [
   {
     "date": "2026-11-19",
+    "sha": "dc63d20",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/dc63d20bca13b7b3d3c5ad4648c996b6e2e40e2b",
+    "message": "使用用户选定的贾维斯双语阅读截图",
+    "title_zh": "贾维斯卡片展示双语阅读实机截图",
+    "title_en": "Jarvis bilingual reader screenshot",
+    "story_zh": "增加了贾维斯双语阅读实机截图，该图片用于展示原文与译文对照，并支持点击查看原图。",
+    "story_en": "Added a Jarvis bilingual reader screenshot, which shows source and translated pages and opens at full size.",
+    "purpose_zh": "采用用户选定的单张实机截图展示贾维斯；游戏沿用已交付录像。",
+    "purpose_en": "Show Jarvis with the user-selected screenshot while retaining the supplied game recording.",
+    "details_zh": "取消四宫格方案，按原比例展示用户提供的贾维斯双语阅读截图，补充中英文图注与替代文字；点击可在新标签页打开完整图片。艾恩葛朗特保留18秒实机开场录像及原声。",
+    "details_en": "Replaced the planned four-image gallery with the user-selected bilingual-reader screenshot at its original aspect ratio. Added paired captions, alternative text and a full-size image link. Aincrad retains the 18-second in-game opening recording and original audio.",
+    "show_details": true
+  },
+  {
+    "date": "2026-11-19",
     "title_zh": "调整了每日新闻、资讯、网站日志、页面结构",
     "title_en": "Refined Daily News, Opportunities, Site Log, page structure",
     "message": "Merge remote-tracking branch 'origin/master'",
