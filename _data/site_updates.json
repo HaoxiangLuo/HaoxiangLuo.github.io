@@ -60,6 +60,21 @@
   },
   {
     "date": "2026-11-19",
+    "sha": "348ccd9",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/348ccd9a358b845e8ce903806c80a6df3cf2abca",
+    "message": "重设计开发作品展台与学界前沿期刊浏览",
+    "title_zh": "开发作品展台与学界前沿期刊浏览",
+    "title_en": "Project showcase and journal browsing",
+    "story_zh": "对开发作品和学界前沿进行了布局改动，使前者以实机画面为主，后者可以分期刊展开论文和摘要。",
+    "story_en": "Changed Projects and Academic Frontiers so that project media lead and papers can be browsed by journal.",
+    "purpose_zh": "让访客从播放、放大和展开控件直接判断下一步操作，减少首屏说明与长列表。",
+    "purpose_en": "Make actions visible on the media and reduce the amount of text needed to browse both pages.",
+    "details_zh": "将「我在做什么」改为「开发作品」，中英文导航同步更新。游戏与软件卡片采用等比例实机画面，增加居中播放与截图放大图标，功能折叠移至卡片底部。学界前沿移除页首期刊名单，按 ISSN-L 归入期刊卡片，桌面双列、窄屏单列。期刊卡片显示匹配论文数与最新标题，点开后再按篇展开摘要节选。年月筛选同步更新卡片，选定年份时按需合并完整归档并按论文 ID 去重。",
+    "details_en": "Renamed What I’m Building to Projects. Aligned the media frames, put play and enlargement controls on the previews, and moved expandable features below. Grouped Academic Frontiers by journal ISSN-L in two desktop columns. Journal cards show a count and latest title, with separate disclosures for articles and abstract excerpts. The date filters update the groups and load a selected yearly archive on demand, deduplicating articles by ID.",
+    "show_details": true
+  },
+  {
+    "date": "2026-11-19",
     "sha": "2c47ed2",
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/2c47ed2a11850db6104aec9a1763766cc8f756f2",
     "message": "区分游戏与软件栏目并对齐首页宽度",
