@@ -59,6 +59,21 @@
     "show_details": true
   },
   {
+    "date": "2026-11-19",
+    "sha": "2c47ed2",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/2c47ed2a11850db6104aec9a1763766cc8f756f2",
+    "message": "区分游戏与软件栏目并对齐首页宽度",
+    "title_zh": "项目页分栏与首页宽度对齐",
+    "title_en": "Project columns aligned with the homepage",
+    "story_zh": "对「我在做什么」页进行了分栏和宽度调整，使游戏开发与软件开发各有栏目，正文左右边缘与首页对齐。",
+    "story_en": "Changed the project page so that game and software development have separate headings and share the homepage width.",
+    "purpose_zh": "让访客从栏目和卡片标题直接识别项目，并让两页的正文使用相同的栏宽。",
+    "purpose_en": "Make the projects identifiable at a glance and align the content edges across the two pages.",
+    "details_zh": "删除页首引言和两张卡片的介绍段落，将项目分为游戏开发与软件开发，标题改为「3D可交互游戏：艾恩格朗特」和「知识库APP：贾维斯」。桌面并排，窄屏依次堆叠。复用站点桌面容器，并稳定滚动条占位，使项目页与首页的正文边缘对齐。中英文同步更新，功能概览、实机录像和贾维斯截图继续可用。",
+    "details_en": "Removed the page introduction and both project descriptions. Added Game Development and Software Development headings and updated the two project titles. The columns sit side by side on desktop and stack on narrow screens. The shared desktop container and stable scrollbar space align the content edges with the homepage. The feature disclosures, recording, and Jarvis screenshot remain available.",
+    "show_details": true
+  },
+  {
     "date": "2026-11-17",
     "sha": "e189af2",
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/e189af269e6a1de7d6bd0f302cd44aec79aa698f",
