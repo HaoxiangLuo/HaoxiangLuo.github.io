@@ -1,5 +1,14 @@
 /* Home page composition: profile and introduction first, followed by a brief
    and the actual publication record. Kept last in the CSS cascade. */
+.skill-entry__category { display: block; margin-bottom: .35rem; color: #6e6e73; font-size: .64rem; }
+.skill-entry__status { display: inline-block; margin-bottom: .7rem; padding: .18rem .5rem; border-radius: 20px; background: #edf3fa; color: #43607f; font-size: .62rem; }
+.skill-entry__features { color: #6e6e73; font-size: .74rem; line-height: 1.6; }
+.skill-entry__features summary { cursor: pointer; color: #0066cc; }
+.skill-entry__features ul { margin: .6rem 0 0; padding-left: 1rem; }
+.skill-entry__features li { margin: .35rem 0; }
+.skill-entry__media { grid-column: 1 / -1; min-width: 0; margin: .4rem 0 0; }
+.skill-entry__media video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; border-radius: 10px; background: #121820; }
+.skill-entry__media figcaption { margin-top: .5rem; color: #86868b; font-size: .66rem; line-height: 1.5; }
 body.home-page #main > .sidebar .author__personal {
   grid-column: 1 / -1; min-width: 0; padding: .8rem 0 .35rem;
   border-top: 1px solid rgba(255,255,255,.14);

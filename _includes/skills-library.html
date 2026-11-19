@@ -1,10 +1,10 @@
 <section class="skills-library" aria-labelledby="skills-library-title">
   {% if page.lang == 'zh' %}
     <h2 class="skills-library__heading" id="skills-library-title">工具与技能</h2>
-    <p class="skills-library__intro">分享我制作的技能与工具。</p>
+    <p class="skills-library__intro">我制作的游戏、研究软件与工具。</p>
   {% else %}
     <h2 class="skills-library__heading" id="skills-library-title">Tools & Skills</h2>
-    <p class="skills-library__intro">Skills and tools I have created.</p>
+    <p class="skills-library__intro">Games, research software and tools I am building.</p>
   {% endif %}
   <a class="skills-library__manage" href="https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/edit/master/_data/skills.yml">{% if page.lang == 'zh' %}管理技能{% else %}Manage skills{% endif %} ↗</a>
   {% if site.data.skills.size > 0 %}
@@ -16,10 +16,24 @@
         <div>
           {% if page.lang == 'zh' %}{% assign skill_name = skill.name_zh | default: skill.name_en %}{% assign skill_description = skill.description_zh | default: skill.description_en %}
           {% else %}{% assign skill_name = skill.name_en | default: skill.name_zh %}{% assign skill_description = skill.description_en | default: skill.description_zh %}{% endif %}
+          {% if skill.category_zh %}<span class="skill-entry__category">{% if page.lang == 'zh' %}{{ skill.category_zh | escape }}{% else %}{{ skill.category_en | escape }}{% endif %}</span>{% endif %}
           <h3>{{ skill_name | escape }}</h3>
+          {% if skill.status_zh %}<span class="skill-entry__status">{% if page.lang == 'zh' %}{{ skill.status_zh | escape }}{% else %}{{ skill.status_en | escape }}{% endif %}</span>{% endif %}
           <p>{{ skill_description | escape }}</p>
+          {% if skill.features_zh %}
+          <details class="skill-entry__features"><summary>{% if page.lang == 'zh' %}功能概览{% else %}Features{% endif %}</summary><ul>
+          {% if page.lang == 'zh' %}{% assign features = skill.features_zh %}{% else %}{% assign features = skill.features_en %}{% endif %}
+          {% for feature in features %}<li>{{ feature | escape }}</li>{% endfor %}
+          </ul></details>
+          {% endif %}
           {% if skill.download_url %}<a href="{{ skill.download_url | escape }}">{% if page.lang == 'zh' %}下载{% else %}Download{% endif %} ↗</a>{% endif %}
         </div>
+        {% if skill.video_url %}
+        <figure class="skill-entry__media">
+          <video controls playsinline preload="none" poster="{{ skill.video_poster | relative_url }}" aria-label="{% if page.lang == 'zh' %}{{ skill.name_zh | escape }}实机开场录像{% else %}{{ skill.name_en | escape }} in-game opening{% endif %}"><source src="{{ skill.video_url | relative_url }}" type="video/mp4"><a href="{{ skill.video_url | relative_url }}">{% if page.lang == 'zh' %}打开录像{% else %}Open video{% endif %}</a></video>
+          <figcaption>{% if page.lang == 'zh' %}{{ skill.video_caption_zh | escape }}{% else %}{{ skill.video_caption_en | escape }}{% endif %}</figcaption>
+        </figure>
+        {% endif %}
       </article>
     {% endfor %}
     </div>
