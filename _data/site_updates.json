@@ -31,6 +31,20 @@
   },
   {
     "date": "2026-11-19",
+    "title_zh": "调整了页面结构、界面样式",
+    "title_en": "Refined page structure, interface styling",
+    "message": "开发作品默认展开功能，桌面双栏卡片等高",
+    "story_zh": "对页面结构、界面样式的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
+    "story_en": "Changed the script and interaction logic of page structure, interface styling so expanding and filtering the page works reliably.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "开发作品默认展开功能，桌面双栏卡片等高",
+    "details_zh": "调整样式表中的排版、间距与响应式规则。调整页面组件与内容结构。",
+    "details_en": "Adjusted typography, spacing and responsive rules in the stylesheet. Adjusted page components and content structure.",
+    "sha": "71a68ba",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/71a68ba62cba0845f62cee985485a39550929bfc"
+  },
+  {
+    "date": "2026-11-19",
     "title_zh": "调整了每日新闻、资讯、网站日志、页面结构",
     "title_en": "Refined Daily News, Opportunities, Site Log, page structure",
     "message": "Merge remote-tracking branch 'origin/master'",
