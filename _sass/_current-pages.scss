@@ -130,7 +130,6 @@ body.inner-page:has(.projects-page) .page__title {
   display: grid;
   align-items: start;
   min-width: 0;
-  margin-top: auto;
   padding: .55rem .65rem 0;
 }
 .skill-entry__footer > * { grid-area: 1 / 1; }
@@ -188,7 +187,10 @@ summary:has(> .disclosure-mark)::marker { content: ''; }
   body.home-page #main > .home-about { grid-row: 1; grid-column: 2; align-self: stretch; }
   body.home-page #main > .home-publications { grid-row: 2; grid-column: 1 / -1; }
   body.home-page #main > .home-grants { grid-row: 3; grid-column: 1 / -1; }
-  .projects-page .skills-library__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  .projects-page .skills-library__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
 }
 @media (max-width: 767px) {
   body.inner-page:has(.projects-page) #main { padding-inline: 1rem; }

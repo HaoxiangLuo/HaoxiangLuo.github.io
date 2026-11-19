@@ -25,7 +25,7 @@
       <footer class="skill-entry__footer">
         <span class="skill-entry__status">{% if page.lang == 'zh' %}{{ skill.status_zh | escape }}{% else %}{{ skill.status_en | escape }}{% endif %}</span>
         {% if skill.features_zh %}
-          <details class="skill-entry__features">
+          <details class="skill-entry__features" open>
             <summary>{% if page.lang == 'zh' %}功能{% else %}Features{% endif %}<span class="disclosure-mark" aria-hidden="true"></span></summary>
             <ul>
               {% if page.lang == 'zh' %}{% assign features = skill.features_zh %}{% else %}{% assign features = skill.features_en %}{% endif %}
