@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-11-19",
+    "sha": "364096d",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/364096dd59fdb790a56caba1f4f5e4a630c5d05e",
+    "message": "展示艾恩葛朗特与贾维斯并接入实机录像",
+    "title_zh": "工具开发页新增游戏与研究工作台",
+    "title_en": "Game and research workspace on Tool Development",
+    "story_zh": "增加了艾恩葛朗特与贾维斯项目卡片，该栏目用于展示游戏实机录像、双语简介及已实现功能。",
+    "story_en": "Added Aincrad and Jarvis project cards, which present an in-game recording, bilingual descriptions and implemented features.",
+    "purpose_zh": "将个人开发的游戏与知识库软件集中展示，并以真实功能与录像介绍项目。",
+    "purpose_en": "Present personally developed game and research software using verified features and an in-game recording.",
+    "details_zh": "依据本机游戏 README 与贾维斯产品说明编写中英文介绍，并用可展开的功能概览说明自由飞行、入镇、PDF 双语阅读、知识摘录、引用转换和项目管理。接入项目组交付的18秒艾恩葛朗特实机开场录像，保留原文件及原声，手动播放且不自动下载视频正文。贾维斯四宫格仍待完成与用户确认，未发布未核验的界面图。",
+    "details_en": "Bilingual descriptions were checked against local project documentation. Expandable feature lists cover flight, town entry, bilingual PDF reading, knowledge notes, citation conversion and project management. The game team supplied an 18-second opening recording; its original file and audio are preserved, with manual playback and no video-body preloading. Jarvis screenshots remain pending completion and user review.",
+    "show_details": true
+  },
+  {
     "date": "2026-11-17",
     "sha": "e189af2",
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/e189af269e6a1de7d6bd0f302cd44aec79aa698f",
