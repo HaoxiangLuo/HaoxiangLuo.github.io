@@ -1,20 +1,12 @@
-# Add one entry per skill. Upload icons to images/ and files to files/.
-# Example (uncomment and replace with your own details):
-# - name_zh: "技能名称"
-#   name_en: "Skill name"
-#   description_zh: "简短介绍。"
-#   description_en: "A short description."
-#   icon: "/images/skill-icon.png"
-#   download_url: "/files/skill.zip"
-# download_url may also be a full https:// link.
-- name_zh: "艾恩葛朗特"
+# Projects are listed in display order.
+- name_zh: "艾恩格朗特"
   name_en: "Aincrad"
-  category_zh: "3D 可交互游戏"
-  category_en: "Interactive 3D game"
+  section_zh: "游戏开发"
+  section_en: "Game Development"
+  title_zh: "3D可交互游戏：艾恩格朗特"
+  title_en: "Interactive 3D Game: Aincrad"
   status_zh: "持续开发中"
   status_en: "In development"
-  description_zh: "以《刀剑神域》中的悬浮城市艾恩葛朗特为原型，探索将动画中的空间转化为可亲身游历的 3D 世界。玩家可以步行探索浮岛、自由飞行环绕浮城，并进入起始之镇，体验视角切换、传送与场景交互。"
-  description_en: "An interactive 3D project inspired by the floating city of Aincrad in Sword Art Online. Explore an island on foot, fly around the floating castle, and enter the Town of Beginnings, with switchable viewpoints, teleportation and environmental interactions."
   features_zh:
     - "浮岛与悬浮城：步行、奔跑、跳跃和自由飞行。"
     - "场景衔接：在城外飞行、起始之镇与浮岛之间往返。"
@@ -34,12 +26,12 @@
   image_alt_en: "Jarvis bilingual reader showing the original PDF on the left and its Chinese translation on the right, with scrolling, page and zoom controls."
   image_caption_zh: "双语阅读实机界面 · 原文在左、译文在右 · 点击查看原图"
   image_caption_en: "Bilingual reading in the app · original on the left, translation on the right · open full-size image"
-  category_zh: "知识库与研究工作台"
-  category_en: "Knowledge library & research workspace"
+  section_zh: "软件开发"
+  section_en: "Software Development"
+  title_zh: "知识库APP：贾维斯"
+  title_en: "Knowledge Base App: Jarvis"
   status_zh: "个人试用版"
   status_en: "Personal prototype"
-  description_zh: "围绕文献阅读、翻译与知识积累开发的本地研究工作台。可调用大语言模型翻译 PDF，尽量保留原文版式，提供原文与译文双栏对照；将阅读中的摘录、观点和页码存入知识子库，让资料整理、引用与项目写作衔接起来。"
-  description_en: "A local research workspace for reading, translation and knowledge building. Connect a language model to translate PDFs while preserving their layout where possible, read the source and translation side by side, and save excerpts, ideas and page references in knowledge collections."
   features_zh:
     - "文献管理与双语阅读：PDF 导入去重、连续阅读、同步滚动、独立缩放与标注。"
     - "译文导出：双语 PDF 侧重保留版式，Word 与 Markdown 便于继续编辑；复杂表格和公式需核对。"
