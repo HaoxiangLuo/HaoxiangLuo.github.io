@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T16:06:10+08:00",
+  "updated_at": "2026-11-19T22:14:39+08:00",
   "days": [
     {
       "date": "2026-11-19",
@@ -10,44 +10,44 @@
           "url": "https://www.bbc.co.uk/news/articles/cr9d75we51j1o?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Karl Kani dressed hip-hop royalty for decades. Now he's telling his own story",
+          "title": "Top U.N. court rules Myanmar committed genocide against the Rohingya",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/18/g-s1-154227/karl-kani-a-life-by-design"
+          "url": "https://www.npr.org/2026/11/19/g-s1-154340/un-court-myanmar-genocide-rohingya"
         },
         {
-          "title": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
+          "title": "COP31 deadlock persists as countries launch new ‘climate reality check’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168833"
+        },
+        {
+          "title": "Dozens missing after boat carrying 100 migrants sinks off Senegal's coast",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c58j484089ewo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Mary Peltola flips Alaska's Senate seat. And, Nvidia won't reinstate Jensen Huang",
+          "title": "Anthropic raises more than $100B in IPO. And, Dems nominate Jeffries for House speaker",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/18/g-s1-154145/up-first-newsletter-mary-peltola-alaska-trump-asia-nvidia-tech-issues-ai"
+          "url": "https://www.npr.org/2026/11/19/g-s1-154344/up-first-newsletter-house-democrats-trump-xi-putin-anthropic"
         },
         {
-          "title": "Myanmar faces historic genocide verdict at UN court over Rohingya massacres",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c5m2l90ez144o?at_medium=RSS&at_campaign=rss"
+          "title": "Patients running out of options as antibiotics stop working against common infections",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168832"
         },
         {
-          "title": "Trump to meet with Russia's Putin and China's Xi for historic joint meeting",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/18/nx-s1-6027645/trump-to-meet-with-russias-putin-and-chinas-xi-for-historic-joint-meeting"
-        },
-        {
-          "title": "AI giant Anthropic valued at $1.5 trillion ahead of stock market debut",
+          "title": "Anthropic raises $81bn in record-breaking stock market debut",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Former U.S. ambassador on Trump's joint summit with leaders of China and Russia",
+          "title": "Trump, Xi and Putin meet as global alliances hang in the balance",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/18/nx-s1-6044067/former-u-s-ambassador-on-trumps-joint-summit-with-leaders-of-china-and-russia"
+          "url": "https://www.npr.org/2026/11/18/nx-s1-6040432/trump-xi-and-putin-shenzhen-china-russia-usa"
         },
         {
-          "title": "Van Gogh painting sells for record $190.4m after row over its Nazi history",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c5dj1dkwzvzwo?at_medium=RSS&at_campaign=rss"
+          "title": "Dozens more children killed in Yemen amid escalating hostilities",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168830"
         }
       ],
       "space_items": [
@@ -57,9 +57,9 @@
           "url": "https://science.nasa.gov/image-article/apod-2026-november-19-the-horsehead-and-flame-nebulas/"
         },
         {
-          "title": "Whether you want Star Trek: Strange New Worlds or the pure nostalgia of The Original Series, this limited-time $2.99 Paramount+ streaming deal gets you both",
+          "title": "Leonid meteor shower thrills stargazers worldwide with colorful sky show (photos/video)",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-movies-shows/whether-you-want-star-trek-strange-new-worlds-or-the-pure-nostalgia-of-the-original-series-this-limited-time-usd2-99-paramount-streaming-deal-gets-you-both"
+          "url": "https://www.space.com/stargazing/meteor-showers/leonid-meteor-shower-thrills-stargazers-worldwide-with-colorful-sky-show-photos-video"
         },
         {
           "title": "Vulcan failure investigation focuses on ‘inadequate fuel supply’ to booster engines",
@@ -82,9 +82,9 @@
           "url": "https://science.nasa.gov/earth/earth-observatory/el-nino-rains-paint-the-atacama/"
         },
         {
-          "title": "Astronomers witness a star eating its companion in 1st-of-its-kind observation",
+          "title": "Nonprofit Common Space will launch 1st 'humanitarian satellite' in 2027",
           "source": "Space.com",
-          "url": "https://www.space.com/astronomy/stars/astronomers-witness-a-star-eating-its-companion-in-1st-of-its-kind-observation"
+          "url": "https://www.space.com/space-exploration/satellites/nonprofit-common-space-will-launch-1st-humanitarian-satellite-in-2027"
         },
         {
           "title": "NASA’s Voyager 1 is one light-day from Earth",
