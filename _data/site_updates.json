@@ -1,6 +1,21 @@
 [
   {
     "date": "2026-11-19",
+    "sha": "f78a9a6",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/f78a9a6bc248a07dbcabfad6661b20f6a9ca08ca",
+    "message": "恢复首页简介并重排项目与基金展示",
+    "title_zh": "首页简介、项目展示与基金项目",
+    "title_en": "Home introduction, project showcase and funded research",
+    "story_zh": "对首页和项目页进行了栏目重排，使研究近况、开发作品及主持与署名参与的基金项目分区展示。",
+    "story_en": "Changed the homepage and project page to separate research updates, development work, and led or named-participant funded projects.",
+    "purpose_zh": "恢复首页 About Me，清理人物面板附加栏目，并集中展示开发作品与符合公开范围的基金项目。",
+    "purpose_en": "Restore About Me, simplify the profile card, and present development work and authorised funded projects.",
+    "details_zh": "首页人物卡片移除研究之外和研究兴趣，右侧全球要闻改为双语 About Me，按研究与开发两项展示当前近况及合作邀请。论文发表下方新增基金项目，仅按本机简历核实后收录 YC2023-S340 主持、25CXW063 与 25XW09 署名第四参与，主持排在最前，排除仅写参与研究的其他条目，不公开原简历。我在做什么页面及导航完成中英改名，移除笔记区与上传管理入口，保留历史文章和现有路由，桌面双列、手机单列展示艾恩葛朗特录像和贾维斯截图。样式编译、双语路由和桌面及窄屏模板预览通过；额外390像素截图操作受工具审批限制，未作为通过项。",
+    "details_en": "Removed personal-interest sections from the profile and replaced homepage headlines with About Me, describing current research, AI-enabled social science, software development and collaboration. Added funded research below publications: YC2023-S340 as project lead, followed by named fourth-participant projects 25CXW063 and 25XW09, checked against the local CV; research-only participation and the private CV are excluded. Renamed the project page and navigation, removed notes and upload-management controls while preserving old articles and routes, and arranged the approved game recording and Jarvis screenshot in a responsive showcase. CSS compilation, bilingual routing and desktop/narrow template previews passed; an additional 390-pixel screenshot was blocked by tool approval and is not reported as passed.",
+    "show_details": true
+  },
+  {
+    "date": "2026-11-19",
     "sha": "dc63d20",
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/dc63d20bca13b7b3d3c5ad4648c996b6e2e40e2b",
     "message": "使用用户选定的贾维斯双语阅读截图",
