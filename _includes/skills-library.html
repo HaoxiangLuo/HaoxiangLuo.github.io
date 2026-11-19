@@ -34,6 +34,12 @@
           <figcaption>{% if page.lang == 'zh' %}{{ skill.video_caption_zh | escape }}{% else %}{{ skill.video_caption_en | escape }}{% endif %}</figcaption>
         </figure>
         {% endif %}
+        {% if skill.image_url %}
+        <figure class="skill-entry__media">
+          <a class="skill-entry__image-link" href="{{ skill.image_url | relative_url }}" target="_blank" rel="noopener noreferrer"><img src="{{ skill.image_url | relative_url }}" alt="{% if page.lang == 'zh' %}{{ skill.image_alt_zh | escape }}{% else %}{{ skill.image_alt_en | escape }}{% endif %}" loading="lazy" decoding="async"></a>
+          <figcaption>{% if page.lang == 'zh' %}{{ skill.image_caption_zh | escape }}{% else %}{{ skill.image_caption_en | escape }}{% endif %}</figcaption>
+        </figure>
+        {% endif %}
       </article>
     {% endfor %}
     </div>

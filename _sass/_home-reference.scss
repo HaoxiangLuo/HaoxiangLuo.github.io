@@ -9,6 +9,9 @@
 .skill-entry__media { grid-column: 1 / -1; min-width: 0; margin: .4rem 0 0; }
 .skill-entry__media video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; border-radius: 10px; background: #121820; }
 .skill-entry__media figcaption { margin-top: .5rem; color: #86868b; font-size: .66rem; line-height: 1.5; }
+.skill-entry__image-link { display: block; border-radius: 10px; overflow: hidden; }
+.skill-entry__image-link img { display: block; width: 100%; max-width: 100%; height: auto; }
+.skill-entry__image-link:focus-visible { outline: 2px solid #0071e3; outline-offset: 3px; }
 body.home-page #main > .sidebar .author__personal {
   grid-column: 1 / -1; min-width: 0; padding: .8rem 0 .35rem;
   border-top: 1px solid rgba(255,255,255,.14);
