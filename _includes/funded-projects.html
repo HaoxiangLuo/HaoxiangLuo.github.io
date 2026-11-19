@@ -1,0 +1,14 @@
+<section class="home-grants" aria-labelledby="home-grants-title">
+  <header class="home-grants__heading"><h2 id="home-grants-title">{% if page.lang == 'zh' %}基金项目{% else %}Funded Projects{% endif %}</h2><p>{% if page.lang == 'zh' %}主持与署名参与的研究项目。{% else %}Projects led or joined as a named participant.{% endif %}</p></header>
+  {% assign lead_projects = site.data.funded_projects | where: "role", "lead" %}
+  {% assign named_projects = site.data.funded_projects | where: "role", "participant" %}
+  {% assign funded_projects = lead_projects | concat: named_projects %}
+  <div class="home-grants__list">
+  {% for grant in funded_projects %}
+    <article class="grant-card{% if grant.role == 'lead' %} grant-card--lead{% endif %}">
+      <div class="grant-card__role">{% if grant.role == 'lead' %}{% if page.lang == 'zh' %}主持{% else %}Project lead{% endif %}{% else %}{% if page.lang == 'zh' %}署名参与（第四）{% else %}Named participant (4th){% endif %}{% endif %}</div>
+      <div class="grant-card__body"><h3 lang="zh">{{ grant.title | escape }}</h3><p>{% if page.lang == 'zh' %}{{ grant.program_zh | escape }}{% else %}{{ grant.program_en | escape }}{% endif %}</p><div class="grant-card__meta"><span>{{ grant.number | escape }}</span><span>{{ grant.period | escape }}</span>{% if grant.outcome_zh %}<span class="grant-card__outcome">{% if page.lang == 'zh' %}{{ grant.outcome_zh | escape }}{% else %}{{ grant.outcome_en | escape }}{% endif %}</span>{% endif %}</div></div>
+    </article>
+  {% endfor %}
+  </div>
+</section>
