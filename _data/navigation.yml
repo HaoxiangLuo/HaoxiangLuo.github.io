@@ -1,6 +1,6 @@
 # Primary navigation in both languages.
 main:
-  - title: "What I'm Building"
+  - title: "Projects"
     url: /study-notes/
 
   - title: "Academic Frontiers"
@@ -16,7 +16,7 @@ main:
     url: /opportunities/
 
 main_zh:
-  - title: "我在做什么"
+  - title: "开发作品"
     url: /zh/study-notes/
 
   - title: "学界前沿"

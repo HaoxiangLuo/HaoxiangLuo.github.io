@@ -1,0 +1,20 @@
+{% assign latest = include.articles | first %}
+{% assign latest_title = latest.title %}
+{% if page.lang == 'zh' and latest.title_zh != blank %}{% assign latest_title = latest.title_zh %}{% endif %}
+<details class="frontier-journal" data-frontier-journal="{{ include.issn | escape }}"{% if include.issn == 'other' and include.articles.size == 0 %} hidden{% endif %}>
+  <summary class="frontier-journal__summary">
+    <span class="frontier-journal__name">{{ include.name | escape }}</span>
+    <span class="disclosure-mark" aria-hidden="true"></span>
+    <span class="frontier-journal__meta">
+      {% if include.tier %}<span class="frontiers-card__tier">{{ include.tier | escape }}</span>{% endif %}
+      <span data-journal-count>{{ include.articles.size }} {% if page.lang == 'zh' %}篇{% elsif include.articles.size == 1 %}article{% else %}articles{% endif %}</span>
+    </span>
+    <span class="frontier-journal__preview" data-journal-preview{% unless latest %} hidden{% endunless %}>{{ latest_title | escape }}</span>
+  </summary>
+  <div class="frontier-journal__papers" data-journal-papers>
+    {% for item in include.articles %}
+      {% include frontier-paper.html item=item show_journal=include.issn %}
+    {% endfor %}
+    <p class="frontier-journal__empty" data-journal-empty{% if include.articles.size > 0 %} hidden{% endif %}>{% if page.lang == 'zh' %}暂无论文{% else %}No articles yet{% endif %}</p>
+  </div>
+</details>

@@ -2648,41 +2648,8 @@ body.home-page .home-publications__heading h2 { margin: 0 0 1rem; padding: 0; bo
   .home-publications .publication-column--articles .publication-card-list { grid-template-columns: minmax(0, 1fr); }
 }
 
-/* Academic Frontiers page: one article card per collected paper, sharing the
-   frame and palette of the Daily News cards. */
-.frontiers-archive {
-  display: grid;
-  gap: 1.1rem;
-}
-
-.frontiers-card {
-  padding: clamp(1.1rem, 2.2vw, 1.6rem);
-  border: 1px solid rgba(29, 29, 31, 0.08);
-  border-radius: 22px;
-  background: linear-gradient(145deg, #fff, #f8f8fa);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.045);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-}
-
-.frontiers-card:hover,
-.frontiers-card:focus-within {
-  border-color: rgba(0, 113, 227, 0.32);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.07);
-  transform: translateY(-1px);
-}
-
-.frontiers-card__meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.45rem 0.7rem;
-  margin-bottom: 0.7rem;
-}
-
-.frontiers-card__meta time {
-  color: #86868b;
-  font-size: 0.68rem;
-}
+/* Shared paper metadata in the Academic Frontiers disclosures. */
+.frontiers-archive { display: grid; }
 
 .frontiers-card__journal {
   color: #1d1d1f;
@@ -2698,15 +2665,6 @@ body.home-page .home-publications__heading h2 { margin: 0 0 1rem; padding: 0; bo
   color: #0071e3;
   font-size: 0.62rem;
   font-weight: 700;
-}
-
-.frontiers-card__title {
-  margin: 0 0 0.5rem;
-  color: #1d1d1f;
-  font-size: 1.02rem;
-  font-weight: 720;
-  letter-spacing: -0.022em;
-  line-height: 1.34;
 }
 
 .frontiers-card__authors {
@@ -2785,32 +2743,12 @@ body.home-page .home-publications__heading h2 { margin: 0 0 1rem; padding: 0; bo
   font-weight: 700;
 }
 
-/* The intro is the tracked journal shortlist: names carry the emphasis, the
-   middots only separate. */
-.frontiers-intro {
-  max-width: 780px;
-  font-size: 0.82rem;
-  line-height: 2;
-}
-
-.frontiers-intro__name {
-  color: #1d1d1f;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.frontiers-intro__sep {
-  margin: 0 0.45rem;
-  color: #c7c7cc;
-}
-
 .frontiers-updated {
   margin: 0 0 1.4rem;
   color: #86868b;
   font-size: 0.68rem;
 }
 
-.frontiers-empty,
 .frontiers-note {
   color: #86868b;
   font-size: 0.68rem;
@@ -2818,57 +2756,6 @@ body.home-page .home-publications__heading h2 { margin: 0 0 1rem; padding: 0; bo
 
 .frontiers-note {
   margin-top: 1.25rem;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .frontiers-card {
-    transition: none;
-  }
-
-  .frontiers-card:hover,
-  .frontiers-card:focus-within {
-    transform: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* Keep the reading column comfortable so abstracts never span the page. */
-  .frontiers-archive {
-    max-width: 780px;
-  }
-}
-
-@media (max-width: 767px) {
-  .frontiers-intro {
-    font-size: 0.74rem;
-    line-height: 1.9;
-  }
-
-  /* Below this width even the longest journal name is close to the column
-     width, so let names break rather than push the page sideways. */
-  .frontiers-intro__name {
-    white-space: normal;
-  }
-
-  .frontiers-intro__sep {
-    margin: 0 0.3rem;
-  }
-
-  .frontiers-card {
-    padding: 1rem;
-    border-radius: 18px;
-  }
-
-  .frontiers-card__title {
-    font-size: 0.95rem;
-  }
-
-  .frontiers-card__authors,
-  .frontiers-card__abstract,
-  .frontiers-card__link,
-  .frontiers-card__journal {
-    overflow-wrap: anywhere;
-  }
 }
 
 /* Archive-history status: desktop gets the roomier line, phones wrap instead. */

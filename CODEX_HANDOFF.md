@@ -40,7 +40,7 @@
 导航顺序：
 
 1. Home／首页
-2. What I'm Building／我在做什么（沿用 `/study-notes/` 与 `/zh/study-notes/` 路由）
+2. Projects／开发作品（沿用 `/study-notes/` 与 `/zh/study-notes/` 路由）
 3. Academic Frontiers／学界前沿
 4. Site Log／网站日志
 5. Daily News／每日新闻
@@ -53,7 +53,7 @@
 
 - `_pages/about.md`、`_pages/about-zh.md`：首页。
 - `_includes/publications-en.html`、`_includes/publications-zh.html`：首页中的著作和期刊论文；旧论文页网址会跳转到对应语言的首页。
-- `_pages/year-archive.html`、`_pages/study-notes-zh.html`：研究方法、智能传播、全球传播三类札记。
+- `_pages/year-archive.html`、`_pages/study-notes-zh.html`：开发作品。
 - `_pages/site-log.html`、`_pages/site-log-zh.html`：网站修改记录。
 - `_pages/daily-news.html`、`_pages/daily-news-zh.html`：按日期归档的新闻简讯。
 - `_pages/academic-frontiers.html`、`_pages/academic-frontiers-zh.html`：十本核心期刊的最新论文归档。
@@ -103,10 +103,10 @@
 - 年份筛选交互位于 `assets/js/publications.js`。
 - 中英文页面的结构和筛选行为应保持一致。
 
-## 8. 我在做什么页面
+## 8. 开发作品页面
 
-- 英文名称 What I'm Building，沿用原 Study Notes 的源文件与路由；页面不再显示笔记、上传或添加链接入口，历史文章保留。
-- 使用 `_data/skills.yml` 与 `_includes/skills-library.html` 展示艾恩葛朗特和贾维斯，桌面双列、手机单列；项目功能概览可展开。
+- 英文名称 Projects，沿用原 Study Notes 的源文件与路由；页面不再显示笔记、上传或添加链接入口，历史文章保留。
+- 使用 `_data/skills.yml` 与 `_includes/skills-library.html` 展示艾恩葛朗特和贾维斯，桌面双列、手机单列；实机媒体为卡片主体，功能概览在卡片底部展开。
 - 游戏使用已交付的 18 秒实机开场录像，保留原声，手动播放；贾维斯展示用户选定的单张双语阅读截图，点击可看原图。
 - 首页论文下方的基金项目依据用户明确授权，仅显示 1 项主持与 2 项署名第四参与项目；原简历不得随网站发布。
 
@@ -252,6 +252,7 @@
 
 硬性约定：
 
+- 页面按 ISSN-L 将论文放入可展开的期刊卡片，桌面双列、窄屏单列；标题行可展开摘要节选，年月筛选同步更新期刊卡片。
 - 期刊清单为人工维护，**每年由维护者依据拥有授权的 JCR 数据（Communication 类 + SSCI 收录状态）核对一次**。不得把 OpenAlex、Scopus、SJR 或任何推断结果当作 JCR 分区展示；页面只显示人工核定的 `SSCI Q1`。
 - 摘要由 `abstract_inverted_index` 重建后整词截取，最多 450 字符，字段名 `abstract_excerpt`，不保存完整摘要或全文。
 - 标题、作者、期刊名一律保持原文；**标题与摘要另存中文字段**（`title_zh`、`abstract_excerpt_zh`），中文页面优先显示译文并把英文原文一并保留（标题原文直接跟在译文下，摘要原文收在"英文原文"折叠块里），这样论文仍可按原题检索到。英文页面只显示原文。

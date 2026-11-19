@@ -1,0 +1,108 @@
+body.inner-page:has(.frontiers-archive) .archive {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+body.inner-page:has(.frontiers-archive) .page__title {
+  margin: 0 0 1.2rem;
+  font-size: clamp(2.15rem, 3.7vw, 3.6rem);
+  line-height: 1.1;
+}
+.frontiers-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .55rem 1.25rem;
+  margin-bottom: 1.15rem;
+}
+.frontiers-toolbar .archive-date-filter,
+.frontiers-toolbar .frontiers-updated { margin: 0; }
+.frontiers-toolbar .archive-date-filter__label { display: none; }
+.frontiers-toolbar :is(.archive-history-status, .archive-date-filter__empty) {
+  order: 2;
+  flex: 0 0 100%;
+  margin: 0;
+}
+.frontiers-toolbar [hidden], .frontiers-archive [hidden] { display: none !important; }
+.frontiers-archive {
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: .85rem;
+  max-width: none;
+}
+.frontier-journal {
+  min-width: 0;
+  border: 1px solid #e0e1e5;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 7px 20px rgba(29, 29, 31, .035);
+}
+.frontier-journal__summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-content: start;
+  align-items: center;
+  gap: .48rem .75rem;
+  min-height: 8.25rem;
+  padding: 1.1rem 1.25rem;
+  cursor: pointer;
+}
+.frontier-journal[open] > summary { min-height: 0; }
+.frontier-journal__name {
+  overflow-wrap: anywhere;
+  font-size: 1.14rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+}
+.frontier-journal__summary .disclosure-mark { width: 2.15rem; height: 2.15rem; }
+.frontier-journal__meta {
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: center;
+  gap: .55rem;
+  color: #636673;
+  font-size: .72rem;
+}
+.frontier-journal__preview {
+  grid-column: 1 / -1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: #505560;
+  font-size: .84rem;
+  line-height: 1.38;
+  overflow-wrap: anywhere;
+}
+.frontier-journal[open] > summary > .frontier-journal__preview { display: none; }
+.frontier-journal__summary:hover .disclosure-mark,
+.frontiers-paper__summary:hover .disclosure-mark { background: #dce9f9; color: #004e9c; }
+.frontier-journal__papers { padding: 0 1.25rem .55rem; }
+.frontier-journal__empty { color: #62666e; font-size: .78rem; }
+.frontiers-paper { border-top: 1px solid #e8e9ec; }
+.frontiers-paper__summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: .25rem .65rem;
+  padding: .65rem 0;
+  cursor: pointer;
+}
+.frontiers-paper__title { overflow-wrap: anywhere; font-size: .86rem; line-height: 1.42; font-weight: 600; }
+.frontiers-paper__summary time { color: #62666e; font-size: .68rem; }
+.frontiers-paper__body { padding: .2rem 0 .8rem; overflow-wrap: anywhere; }
+.frontiers-paper__body .frontiers-card__original { margin-top: 0; }
+.frontiers-card__original-block summary :is(.disclosure-mark) { width: 1.2rem; height: 1.2rem; font-size: .85rem; }
+@media (min-width: 1024px) {
+  body.inner-page:has(.frontiers-archive) #main { padding-inline: 0; }
+  .frontiers-archive { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+}
+@media (max-width: 767px) {
+  .frontier-journal { border-radius: 17px; }
+  .frontier-journal__summary { min-height: 0; }
+  .frontier-journal__name { font-size: 1rem; }
+  .frontier-journal__summary, .frontier-journal__papers { padding-inline: .95rem; }
+}

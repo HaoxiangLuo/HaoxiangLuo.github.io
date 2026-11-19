@@ -1,0 +1,25 @@
+{% assign paper = include.item %}
+{% assign source_link = paper.doi_url | default: paper.landing_page_url %}
+<details class="frontiers-paper" data-filter-date="{{ paper.published_at | escape }}" data-archive-id="{{ paper.id | escape }}">
+  <summary class="frontiers-paper__summary">
+    <span class="frontiers-paper__title"{% if page.lang != 'zh' or paper.title_zh == blank %} lang="en"{% endif %}>{% if page.lang == 'zh' %}{{ paper.title_zh | default: paper.title | escape }}{% else %}{{ paper.title | escape }}{% endif %}</span>
+    <span class="disclosure-mark" aria-hidden="true"></span>
+    <time datetime="{{ paper.published_at | escape }}">{{ paper.published_at | slice: 0, 10 }}</time>
+  </summary>
+  <div class="frontiers-paper__body">
+    {% if include.show_journal == 'other' %}<p class="frontiers-card__journal">{{ paper.journal | escape }}</p>{% endif %}
+    {% if page.lang == 'zh' and paper.title_zh != blank %}<p class="frontiers-card__original" lang="en">{{ paper.title | escape }}</p>{% endif %}
+    {% if paper.authors.size > 0 %}<p class="frontiers-card__authors">{{ paper.authors | join: ', ' | escape }}</p>{% endif %}
+    <p class="frontiers-card__abstract">
+      <span class="frontiers-card__label">{% if page.lang == 'zh' %}摘要节选{% else %}Abstract excerpt{% endif %}</span>
+      {% if page.lang == 'zh' and paper.abstract_excerpt_zh != blank %}{{ paper.abstract_excerpt_zh | escape }}{% elsif paper.abstract_excerpt != blank %}<span lang="en">{{ paper.abstract_excerpt | escape }}</span>{% elsif page.lang == 'zh' %}暂无摘要节选{% else %}No abstract excerpt available{% endif %}
+    </p>
+    {% if page.lang == 'zh' and paper.abstract_excerpt_zh != blank and paper.abstract_excerpt != blank %}
+      <details class="frontiers-card__original-block">
+        <summary>英文原文 <span class="disclosure-mark" aria-hidden="true"></span></summary>
+        <p class="frontiers-card__abstract frontiers-card__abstract--original" lang="en">{{ paper.abstract_excerpt | escape }}</p>
+      </details>
+    {% endif %}
+    {% if source_link != blank %}<a class="frontiers-card__link" href="{{ source_link | escape }}" target="_blank" rel="noopener noreferrer">{% if page.lang == 'zh' %}阅读原文{% else %}Read source{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}
+  </div>
+</details>

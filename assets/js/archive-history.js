@@ -266,106 +266,81 @@
 
   function renderFrontiers(container, records, options) {
     var words = labels(options.language);
+    var useChinese = options.language === "zh";
+    var journals = new Map();
+    var articleIds = new Set();
+    var updatedGroups = new Set();
     var rendered = 0;
+
+    container.querySelectorAll("[data-frontier-journal]").forEach(function (journal) {
+      journals.set(journal.dataset.frontierJournal, journal.querySelector("[data-journal-papers]"));
+    });
+    container.querySelectorAll("[data-archive-id]").forEach(function (article) {
+      if (article.dataset.archiveId) articleIds.add(article.dataset.archiveId);
+    });
+
     records.forEach(function (record) {
-      var date = record.published_at || "";
-      if (!date) return;
-      var title = record.title || "";
-      if (container.querySelector('[data-archive-id="' + String(record.id || "").replace(/"/g, "") + '"]')) return;
-      if (title && container.querySelector('[data-archive-title="' + title.replace(/"/g, "") + '"]')) return;
+      if (!record.published_at || !record.title || articleIds.has(record.id)) return;
+      var group = journals.get(record.issn_l) || journals.get("other");
+      if (!group) return;
+      var translatedTitle = useChinese && record.title_zh;
+      var translatedAbstract = useChinese && record.abstract_excerpt_zh;
+      var card = document.createElement("details");
+      card.className = "frontiers-paper";
+      card.dataset.filterDate = record.published_at;
+      card.dataset.archiveId = record.id || "";
 
-      var card = document.createElement("article");
-      card.className = "frontiers-card";
-      card.setAttribute("data-filter-date", date);
-      card.setAttribute("data-archive-record", "true");
-      card.setAttribute("data-archive-id", record.id || "");
-      card.setAttribute("data-archive-title", title);
-
-      var meta = document.createElement("header");
-      meta.className = "frontiers-card__meta";
-      var time = document.createElement("time");
-      time.dateTime = date;
-      setText(time, formatDate(date, options.language));
-      meta.appendChild(time);
-      if (record.journal) {
-        var journal = document.createElement("span");
-        journal.className = "frontiers-card__journal";
-        setText(journal, record.journal);
-        meta.appendChild(journal);
+      function append(parent, tag, className, text) {
+        var node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text) node.textContent = text;
+        parent.appendChild(node);
+        return node;
       }
-      if (record.source_tier) {
-        var tier = document.createElement("span");
-        tier.className = "frontiers-card__tier";
-        setText(tier, record.source_tier);
-        meta.appendChild(tier);
+      function disclosureMark(summary) {
+        append(summary, "span", "disclosure-mark").setAttribute("aria-hidden", "true");
       }
 
-      // The Chinese wording is what is read; the wording the paper was
-      // published under stays on the card so it can still be found.
-      var useChinese = options.language === "zh";
-      var zhTitle = useChinese ? record.title_zh : "";
-      var zhAbstract = useChinese ? record.abstract_excerpt_zh : "";
+      var summary = append(card, "summary", "frontiers-paper__summary");
+      var title = append(summary, "span", "frontiers-paper__title", translatedTitle || record.title);
+      if (!translatedTitle) title.lang = "en";
+      disclosureMark(summary);
+      var time = append(summary, "time", "", record.published_at.slice(0, 10));
+      time.dateTime = record.published_at;
 
-      var heading = document.createElement("h2");
-      heading.className = "frontiers-card__title";
-      setText(heading, zhTitle || title);
+      var body = append(card, "div", "frontiers-paper__body");
+      if (!journals.has(record.issn_l)) append(body, "p", "frontiers-card__journal", record.journal);
+      if (translatedTitle) append(body, "p", "frontiers-card__original", record.title).lang = "en";
+      if (record.authors && record.authors.length) append(body, "p", "frontiers-card__authors", record.authors.join(", "));
 
-      var authors = document.createElement("p");
-      authors.className = "frontiers-card__authors";
-      var names = record.authors || [];
-      setText(authors, names.length ? names.join(", ") : words.authorsMissing);
-
-      var abstract = document.createElement("p");
-      abstract.className = "frontiers-card__abstract" + ((zhAbstract || record.abstract_excerpt) ? "" : " is-empty");
-      var label = document.createElement("span");
-      label.className = "frontiers-card__label";
-      setText(label, words.abstractLabel);
-      abstract.appendChild(label);
-      abstract.appendChild(document.createTextNode(" "));
-      abstract.appendChild(document.createTextNode(zhAbstract || record.abstract_excerpt || words.abstractMissing));
-
-      card.appendChild(meta);
-      card.appendChild(heading);
-      if (zhTitle && title) {
-        var originalTitle = document.createElement("p");
-        originalTitle.className = "frontiers-card__original";
-        originalTitle.lang = "en";
-        setText(originalTitle, title);
-        card.appendChild(originalTitle);
-      }
-      card.appendChild(authors);
-      card.appendChild(abstract);
-      if (zhAbstract && record.abstract_excerpt) {
-        var originalBlock = document.createElement("details");
-        originalBlock.className = "frontiers-card__original-block";
-        var summary = document.createElement("summary");
-        setText(summary, words.originalAbstract);
-        originalBlock.appendChild(summary);
-        var originalAbstract = document.createElement("p");
-        originalAbstract.className = "frontiers-card__abstract frontiers-card__abstract--original";
-        originalAbstract.lang = "en";
-        setText(originalAbstract, record.abstract_excerpt);
-        originalBlock.appendChild(originalAbstract);
-        card.appendChild(originalBlock);
+      var abstract = append(body, "p", "frontiers-card__abstract");
+      append(abstract, "span", "frontiers-card__label", words.abstractLabel);
+      var excerpt = append(abstract, "span", "", translatedAbstract || record.abstract_excerpt || words.abstractMissing);
+      if (!translatedAbstract && record.abstract_excerpt) excerpt.lang = "en";
+      if (translatedAbstract && record.abstract_excerpt) {
+        var original = append(body, "details", "frontiers-card__original-block");
+        disclosureMark(append(original, "summary", "", words.originalAbstract));
+        append(original, "p", "frontiers-card__abstract frontiers-card__abstract--original", record.abstract_excerpt).lang = "en";
       }
 
       var link = record.doi_url || record.landing_page_url;
-      if (link) {
-        var anchor = document.createElement("a");
-        anchor.className = "frontiers-card__link";
+      if (link && /^https?:\/\//i.test(link)) {
+        var anchor = append(body, "a", "frontiers-card__link", words.readSource + " ");
         anchor.href = link;
         anchor.target = "_blank";
         anchor.rel = "noopener noreferrer";
-        setText(anchor, words.readSource + " ");
-        var arrow = document.createElement("b");
-        arrow.setAttribute("aria-hidden", "true");
-        setText(arrow, "↗");
-        anchor.appendChild(arrow);
-        card.appendChild(anchor);
+        append(anchor, "span", "", "↗").setAttribute("aria-hidden", "true");
       }
-
-      container.appendChild(card);
+      group.appendChild(card);
+      updatedGroups.add(group);
+      if (record.id) articleIds.add(record.id);
       rendered += 1;
+    });
+
+    updatedGroups.forEach(function (group) {
+      var articles = Array.from(group.querySelectorAll(".frontiers-paper"));
+      articles.sort(function (a, b) { return b.dataset.filterDate.localeCompare(a.dataset.filterDate); });
+      articles.forEach(function (article) { group.appendChild(article); });
     });
     return rendered;
   }

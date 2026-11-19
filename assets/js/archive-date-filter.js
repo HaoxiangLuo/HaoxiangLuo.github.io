@@ -7,6 +7,8 @@
     var language = filter.getAttribute("data-language") === "zh" ? "zh-CN" : "en";
     var shortLanguage = filter.getAttribute("data-language") === "zh" ? "zh" : "en";
     var dataset = filter.getAttribute("data-archive-dataset");
+    var isFrontiers = dataset === "academic_frontiers";
+    var loadedFrontierYears = {};
     var allLabel = filter.getAttribute("data-all-label");
     var yearLabel = filter.getAttribute("data-year-label");
     var monthLabel = filter.getAttribute("data-month-label");
@@ -80,7 +82,7 @@
       select.appendChild(option);
     }
     var years = Array.from(new Set(dates().map(function (date) { return date.slice(0, 4); }))).sort().reverse();
-    if (!years.length) return;
+    if (!years.length && !historyEnabled()) return;
 
     // Years and months the archive holds but the recent index dropped. They are
     // added as soon as the (very small) manifest has been read.
@@ -143,6 +145,12 @@
         if (visible) visibleCount += 1;
       });
       if (empty) empty.hidden = visibleCount !== 0;
+      if (isFrontiers) {
+        document.dispatchEvent(new CustomEvent("frontiers-period-change", {
+          detail: { active: year !== "all" || month !== "all" }
+        }));
+      }
+      return visibleCount;
     }
 
     /* Pull an earlier period out of the JSONL archive, but only when the
@@ -150,11 +158,12 @@
     function refreshHistory() {
       if (!historyEnabled()) return;
       var year = yearSelect.value;
-      if (year === "all") { hideStatus(); return; }
-      var token = historyToken + 1;
-      historyToken = token;
+      var token = ++historyToken;
+      if (year === "all" || (isFrontiers && loadedFrontierYears[year])) { hideStatus(); return; }
       showStatus("loading");
-      window.SiteArchiveHistory.loadRange(dataset, year, monthSelect.value, covered)
+      // A recent paper does not imply that the whole yearly partition is loaded.
+      var coveredPeriods = isFrontiers ? loadedFrontierYears : covered;
+      window.SiteArchiveHistory.loadRange(dataset, year, monthSelect.value, coveredPeriods)
         .then(function (records) {
           if (token !== historyToken) return;  // a newer selection won
           var container = window.SiteArchiveHistory.containerFor(dataset);
@@ -166,8 +175,9 @@
           });
           var rendered = window.SiteArchiveHistory.render(dataset, container, records, { language: shortLanguage });
           populateMonths();
-          applyFilter();
-          if (rendered) hideStatus();
+          if (isFrontiers) loadedFrontierYears[year] = true;
+          var visibleCount = applyFilter();
+          if (rendered || (isFrontiers && visibleCount)) hideStatus();
           else if (!records.length) showStatus("empty");
           else hideStatus();
         })
