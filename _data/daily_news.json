@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-20T21:55:23+08:00",
+  "updated_at": "2026-11-21T02:52:50+08:00",
   "days": [
+    {
+      "date": "2026-11-21",
+      "items": [
+        {
+          "title": "UK to explore even closer ties with EU after agreeing deal, says Burnham",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6jreyqgw4e9o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "伯纳姆表示，英国将在达成协议后探索与欧盟建立更密切的关系"
+        },
+        {
+          "title": "Trump holds press conference after meeting with Xi and Putin",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/20/nx-s1-6047594/trump-asia-trip-xi-putin-press-conference",
+          "title_zh": "特朗普在会见习近平和普京后举行新闻发布会"
+        },
+        {
+          "title": "Shattered playgrounds and freezing classrooms: Inside Ukraine’s deadliest year for children",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168847",
+          "title_zh": "破碎的操场和冰冷的教室：乌克兰儿童死亡最严重的一年"
+        },
+        {
+          "title": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
+          "title_zh": "图斯克表示，乌克兰盟友举行军事演习时，俄罗斯导弹袭击了波兰"
+        },
+        {
+          "title": "Dems aim to block Iran war funding. And, Army delays lead azide detonation in Iowa",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/20/g-s1-154582/up-first-newsletter-democrats-iran-war-trump-xi-jinping-iowa-army",
+          "title_zh": "民主党的目标是阻止伊朗战争资金。而且，陆军推迟了爱荷华州叠氮化物的爆炸"
+        },
+        {
+          "title": "WFP plans to assist 91 million in 2027 as hunger crisis deepens",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168846",
+          "title_zh": "随着饥饿危机加深，粮食计划署计划在 2027 年援助 9100 万人"
+        },
+        {
+          "title": "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "乌克兰袭击克里米亚大桥几天后，俄罗斯瞄准基辅过境点"
+        },
+        {
+          "title": "GOP Sen. Johnson rejects tying government funding to an end to the Iran war",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/20/nx-s1-6047473/iran-war-funding-congress",
+          "title_zh": "共和党参议员约翰逊拒绝将政府资金与结束伊朗战争挂钩"
+        },
+        {
+          "title": "COP31: Countries demand stronger climate deal as talks in Antalya reach final day",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168845",
+          "title_zh": "COP31：随着安塔利亚谈判进入最后一天，各国要求更强有力的气候协议"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "NASA Honor Awards Ceremony Recognizes Employees at Stennis Space Center",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/centers-and-facilities/stennis/honor-awards-ceremony-at-stennis/",
+          "title_zh": "美国宇航局荣誉颁奖典礼表彰斯坦尼斯航天中心的员工"
+        },
+        {
+          "title": "Could an ancient solar eclipse rewrite Egyptian history?",
+          "source": "Space.com",
+          "url": "https://www.space.com/stargazing/solar-eclipses/could-an-ancient-solar-eclipse-rewrite-egyptian-history",
+          "title_zh": "古代日食能否改写埃及历史？"
+        },
+        {
+          "title": "SpaceX scrubs launch of classified payload for the U.S. Space Force, targets Friday",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/19/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-2/",
+          "title_zh": "SpaceX 取消为美国太空军发射机密有效载荷，目标是周五"
+        },
+        {
+          "title": "The sweet spot for constellation size",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/the-sweet-spot-for-constellation-size/",
+          "title_zh": "星座大小的最佳点"
+        },
+        {
+          "title": "A Triple Star System 'That Shouldn't Exist,' Only 28 Light-Years from Earth",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/a-triple-star-system-that-shouldnt-exist-only-28-light-years-from-earth",
+          "title_zh": "距离地球仅 28 光年的“不应该存在”的三星系统"
+        },
+        {
+          "title": "NASA’s Curiosity Mars Rover Collects Samples",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/nasas-curiosity-mars-rover-collects-samples/",
+          "title_zh": "美国宇航局好奇号火星探测器收集样本"
+        },
+        {
+          "title": "Russia is developing a nuclear space weapon, US intelligence report finds",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/satellites/russia-is-developing-a-nuclear-space-weapon-us-intelligence-report-finds",
+          "title_zh": "美国情报报告发现俄罗斯正在研发太空核武器"
+        },
+        {
+          "title": "Vulcan failure investigation focuses on ‘inadequate fuel supply’ to booster engines",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/18/vulcan-failure-investigation-focuses-on-inadequate-fuel-supply-to-booster-engines/",
+          "title_zh": "Vulcan 故障调查的重点是增压发动机的“燃油供应不足"
+        }
+      ]
+    },
     {
       "date": "2026-11-20",
       "items": [
