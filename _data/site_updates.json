@@ -14,6 +14,20 @@
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/9c5ba3ad0aea48db43c951b57af874460f007514"
   },
   {
+    "date": "2026-11-20",
+    "title_zh": "调整了论文发表、页面结构、界面样式",
+    "title_en": "Refined Publications, page structure, interface styling",
+    "message": "Compact homepage and optimize gameplay preview",
+    "story_zh": "更新了论文发表、页面结构、界面样式的归档数据，使页面读到的记录与最新一次改动保持一致。",
+    "story_en": "Updated the archived data behind Publications, page structure, interface styling so the page shows the records from the latest change.",
+    "purpose_zh": "统一论文发表与既有内容页的内容宽度、阅读节奏和视觉层级。",
+    "purpose_en": "Compact homepage and optimize gameplay preview",
+    "details_zh": "调整论文发表页面的主内容容器、archive 宽度或内边距、标题对齐与移动端布局。",
+    "details_en": "Adjusted the main content container, archive width or padding, title alignment and mobile layout of the Publications page.",
+    "sha": "6d100e5",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/6d100e5f280d129c63e6c03351687615c7c027c8"
+  },
+  {
     "date": "2026-11-19",
     "sha": "f78a9a6",
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/f78a9a6bc248a07dbcabfad6661b20f6a9ca08ca",
