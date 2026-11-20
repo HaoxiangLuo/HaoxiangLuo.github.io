@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-20",
+    "title_zh": "调整了页面结构",
+    "title_en": "Refined page structure",
+    "message": "将艾恩格朗特录像换成装备单手剑的实机片段",
+    "story_zh": "更新了页面结构的归档数据，使页面读到的记录与最新一次改动保持一致。",
+    "story_en": "Updated the archived data behind page structure so the page shows the records from the latest change.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "将艾恩格朗特录像换成装备单手剑的实机片段",
+    "details_zh": "调整页面组件与内容结构。",
+    "details_en": "Adjusted page components and content structure.",
+    "sha": "9c5ba3a",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/9c5ba3ad0aea48db43c951b57af874460f007514"
+  },
+  {
     "date": "2026-11-19",
     "sha": "f78a9a6",
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/f78a9a6bc248a07dbcabfad6661b20f6a9ca08ca",
