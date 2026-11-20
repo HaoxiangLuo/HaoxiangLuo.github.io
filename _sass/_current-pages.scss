@@ -203,3 +203,54 @@ summary:has(> .disclosure-mark)::marker { content: ''; }
   .skill-entry__heading { padding: .65rem .6rem .85rem; }
   .skill-entry__stage { border-radius: 12px; }
 }
+
+/* Compact home layout with a neutral marker for books. */
+body.home-page #main > .home-publications .publication-card--featured {
+  background: linear-gradient(135deg, #f0f1f3, #fafafa);
+  border-color: rgba(55,60,68,.16);
+}
+body.home-page .publication-badge--book {
+  display: inline-flex; align-items: center; gap: .3rem;
+  padding: .27rem .55rem; border-radius: 999px; color: #343942; background: #e5e7eb;
+  font-size: .64rem; line-height: 1.25; font-weight: 650; letter-spacing: 0; text-transform: none;
+}
+.publication-badge__book-icon { width: .85rem; height: .85rem; flex: 0 0 auto; }
+@media (min-width: 1024px) {
+  body.home-page #main { padding-top: .7rem; row-gap: .5rem; }
+  body.home-page #main > .sidebar.sticky { min-height: 0; padding: .8rem 1rem !important; }
+  body.home-page #main > .sidebar > div[itemscope] {
+    grid-template-columns: 82px minmax(0,1fr); gap: .35rem .75rem;
+  }
+  body.home-page #main > .sidebar .author__avatar,
+  body.home-page #main > .sidebar .author__avatar img { width: 82px; max-width: 82px; }
+  body.home-page #main > .sidebar .author__avatar img { height: 98px; }
+  body.home-page #main > .sidebar .author__urls-wrapper { margin-top: .15rem; padding-top: .35rem; }
+  body.home-page #main > .sidebar .author__urls li,
+  body.home-page #main > .sidebar .author__urls li a { min-height: 28px; }
+  body.home-page #main > .home-about { padding: .85rem 1.2rem; }
+  body.home-page .home-about h1 { margin: 0 0 .45rem; font-size: 1.55rem; }
+  body.home-page .home-about h1::after { margin-top: .3rem; }
+  body.home-page .home-about__lead { margin-bottom: .3rem; }
+  body.home-page .home-about__activities { max-width: 100ch; line-height: 1.45; }
+  body.home-page .home-about__activities li { margin: .25rem 0; }
+  body.home-page #main > .home-publications { gap: .3rem .75rem; padding-top: .2rem; }
+  body.home-page .home-publications__heading h2 { margin-bottom: .35rem; font-size: 1.5rem; }
+  body.home-page #main > .home-publications .publication-board { gap: .55rem; }
+  body.home-page .publication-column--articles .publication-card__body {
+    display: grid; grid-template-columns: minmax(0,1fr) auto; align-content: start;
+  }
+  body.home-page .publication-column--articles .publication-card__body .publication-badge,
+  body.home-page .publication-column--articles .publication-card__body h3 { grid-column: 1 / -1; justify-self: start; }
+  body.home-page .publication-column--articles .publication-card__body h3 { min-width: 0; width: 100%; }
+  body.home-page .publication-column--articles .publication-card__body .publication-meta { grid-column: 1; grid-row: 3; min-width: 0; }
+  body.home-page .publication-column--articles .publication-card__body .publication-title-more { grid-column: 2; grid-row: 3; align-self: start; }
+  body.home-page .publication-more { margin-top: .15rem; padding: .35rem .8rem; }
+  body.home-page .home-grants { margin-top: .35rem; }
+  body.home-page .home-grants__heading { margin-bottom: .45rem; }
+  body.home-page .home-grants__heading h2 { margin: 0; font-size: 1.5rem; }
+  body.home-page .home-grants__heading p { display: none; }
+  body.home-page .home-grants__list { gap: .55rem; }
+  body.home-page .grant-card { padding: .8rem 1rem; gap: .9rem; }
+  body.home-page .grant-card h3 { margin-bottom: .25rem; line-height: 1.35; }
+  body.home-page .grant-card p { margin-bottom: .3rem; }
+}
