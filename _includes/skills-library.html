@@ -7,7 +7,7 @@
       </header>
       {% if skill.video_url %}
         <div class="skill-entry__stage skill-entry__stage--game" data-project-video>
-          <video controls playsinline preload="none" poster="{{ skill.video_poster | relative_url }}" aria-label="{% if page.lang == 'zh' %}{{ skill.name_zh | escape }}实机录像{% else %}{{ skill.name_en | escape }} game recording{% endif %}">
+          <video controls playsinline preload="none" poster="{{ skill.video_poster | relative_url }}" aria-label="{% if page.lang == 'zh' %}{{ skill.video_label_zh | escape }}{% else %}{{ skill.video_label_en | escape }}{% endif %}">
             <source src="{{ skill.video_url | relative_url }}" type="video/mp4">
             <a href="{{ skill.video_url | relative_url }}">{% if page.lang == 'zh' %}打开录像{% else %}Open video{% endif %}</a>
           </video>
