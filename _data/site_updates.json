@@ -15,6 +15,20 @@
   },
   {
     "date": "2026-11-21",
+    "title_zh": "调整了网站内容",
+    "title_en": "Refined site content",
+    "message": "Revise opening sentence of Aincrad project summary",
+    "story_zh": "更新了网站内容的归档数据，使页面读到的记录与最新一次改动保持一致。",
+    "story_en": "Updated the archived data behind site content so the page shows the records from the latest change.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "Revise opening sentence of Aincrad project summary",
+    "details_zh": "更新网站内容与信息呈现。",
+    "details_en": "Updated website content and information presentation.",
+    "sha": "c996efb",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/c996efb1b80d966d48d6f0113ddcce844d6f6523"
+  },
+  {
+    "date": "2026-11-21",
     "title_zh": "调整了首页",
     "title_en": "Refined Home",
     "message": "Update bilingual homepage activities",
