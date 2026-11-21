@@ -287,6 +287,13 @@ body.home-page .home-projects > .home-grants { margin-top: 0; }
 @media (min-width: 1024px) {
   .home-projects:has(> .home-development) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .home-projects .grant-card { grid-template-columns: minmax(0, 1fr); gap: .25rem; }
+  .home-projects > .home-development {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-self: stretch;
+  }
+  .home-development__list { grid-auto-rows: 1fr; }
+  .home-development__card--media { align-items: center; }
 }
 @media (max-width: 1023px) {
   .home-development > h2 { font-size: 1.65rem; }
