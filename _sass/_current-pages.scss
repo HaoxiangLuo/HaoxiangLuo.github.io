@@ -184,7 +184,7 @@ summary:has(> .disclosure-mark)::marker { content: ''; }
   html:has(body.home-page, .projects-page) { scrollbar-gutter: stable; }
   body.inner-page:has(.projects-page) #main { padding-inline: 0; }
   body.home-page #main { grid-template-rows: auto auto auto; }
-  body.home-page #main > .home-about { grid-row: 1; grid-column: 2; align-self: start; }
+  body.home-page #main > .home-about { grid-row: 1; grid-column: 2; align-self: stretch; }
   body.home-page #main > .home-publications { grid-row: 2; grid-column: 1 / -1; }
   body.home-page #main > .home-projects { grid-row: 3; grid-column: 1 / -1; }
   .projects-page .skills-library__grid {
@@ -217,7 +217,7 @@ body.home-page .publication-badge--book {
 .publication-badge__book-icon { width: .85rem; height: .85rem; flex: 0 0 auto; }
 @media (min-width: 1024px) {
   body.home-page #main { padding-top: .7rem; row-gap: .5rem; }
-  body.home-page #main > .sidebar.sticky { min-height: 0; align-self: start; padding: .8rem 1rem !important; }
+  body.home-page #main > .sidebar.sticky { min-height: 0; align-self: stretch; padding: .8rem 1rem !important; }
   body.home-page #main > .sidebar > div[itemscope] {
     grid-template-columns: 82px minmax(0,1fr); gap: .35rem .75rem;
   }
@@ -227,12 +227,24 @@ body.home-page .publication-badge--book {
   body.home-page #main > .sidebar .author__urls-wrapper { margin-top: .15rem; padding-top: .35rem; }
   body.home-page #main > .sidebar .author__urls li,
   body.home-page #main > .sidebar .author__urls li a { min-height: 28px; }
-  body.home-page #main > .home-about { padding: .85rem 1.2rem; }
-  body.home-page .home-about h1 { margin: 0 0 .45rem; font-size: 1.55rem; }
+  body.home-page #main > .home-about {
+    display: flex;
+    flex-direction: column;
+    gap: .65rem;
+    padding: 1rem 1.2rem;
+  }
+  body.home-page .home-about h1 { margin: 0; font-size: 1.55rem; }
   body.home-page .home-about h1::after { margin-top: .3rem; }
   body.home-page .home-about__lead { margin-bottom: .3rem; }
-  body.home-page .home-about__activities { max-width: 100ch; line-height: 1.45; }
-  body.home-page .home-about__activities li { margin: .25rem 0; }
+  body.home-page .home-about__activities {
+    display: grid;
+    flex: 1 1 auto;
+    align-content: space-between;
+    gap: .4rem;
+    max-width: 100ch;
+    line-height: 1.55;
+  }
+  body.home-page .home-about__activities li { margin: 0; }
   body.home-page #main > .home-publications { gap: .3rem .75rem; padding-top: .2rem; }
   body.home-page .home-publications__heading h2 { margin-bottom: .35rem; font-size: 1.5rem; }
   body.home-page #main > .home-publications .publication-board { gap: .55rem; }
