@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-21",
+    "title_zh": "调整了首页",
+    "title_en": "Refined Home",
+    "message": "Update bilingual homepage activities",
+    "story_zh": "对首页的内容与呈现方式进行了改动，使相关信息更完整、更容易查到。",
+    "story_en": "Changed the content and presentation of Home so the information is more complete and easier to find.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "Update bilingual homepage activities",
+    "details_zh": "调整首页介绍、研究兴趣或全球要闻卡片。",
+    "details_en": "Refined the home introduction, research interests, or global-news card.",
+    "sha": "9868005",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/986800578df065f0af2080a93aebb41f456e1456"
+  },
+  {
     "date": "2026-11-20",
     "title_zh": "调整了页面结构",
     "title_en": "Refined page structure",
