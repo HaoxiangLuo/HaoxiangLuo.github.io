@@ -15,6 +15,20 @@
   },
   {
     "date": "2026-11-21",
+    "title_zh": "调整了页面结构、界面样式、页面交互",
+    "title_en": "Refined page structure, interface styling, interactions",
+    "message": "Add compact homepage project media previews",
+    "story_zh": "对页面结构、界面样式、页面交互的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
+    "story_en": "Changed the script and interaction logic of page structure, interface styling, interactions so expanding and filtering the page works reliably.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "Add compact homepage project media previews",
+    "details_zh": "调整样式表中的排版、间距与响应式规则。调整页面的筛选、展开或其他交互脚本。调整页面组件与内容结构。",
+    "details_en": "Adjusted typography, spacing and responsive rules in the stylesheet. Adjusted the page's filtering, expand/collapse or other interaction scripts. Adjusted page components and content structure.",
+    "sha": "4d225b1",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/4d225b1e90b39d2a6b5b047d5e81ac53632aa118"
+  },
+  {
+    "date": "2026-11-21",
     "title_zh": "调整了页面结构、界面样式",
     "title_en": "Refined page structure, interface styling",
     "message": "Show development projects beside funded research on homepages",
