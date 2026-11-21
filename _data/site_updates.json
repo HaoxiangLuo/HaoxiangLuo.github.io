@@ -14,6 +14,20 @@
     "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/986800578df065f0af2080a93aebb41f456e1456"
   },
   {
+    "date": "2026-11-21",
+    "title_zh": "调整了页面结构、界面样式",
+    "title_en": "Refined page structure, interface styling",
+    "message": "Show development projects beside funded research on homepages",
+    "story_zh": "对页面结构、界面样式的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
+    "story_en": "Changed the script and interaction logic of page structure, interface styling so expanding and filtering the page works reliably.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "Show development projects beside funded research on homepages",
+    "details_zh": "调整样式表中的排版、间距与响应式规则。调整页面组件与内容结构。",
+    "details_en": "Adjusted typography, spacing and responsive rules in the stylesheet. Adjusted page components and content structure.",
+    "sha": "32ef6c4",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/32ef6c4c0a2064d2359e3475efc20dbbc94e6910"
+  },
+  {
     "date": "2026-11-20",
     "title_zh": "调整了页面结构",
     "title_en": "Refined page structure",
