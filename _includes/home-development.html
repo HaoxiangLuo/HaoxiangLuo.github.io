@@ -9,10 +9,12 @@
           {% assign project_title = project.title_zh %}
           {% assign project_status = project.status_zh %}
           {% assign project_summary = project.features_zh | first %}
+          {% assign project_summary = project.summary_zh | default: project_summary %}
         {% else %}
           {% assign project_title = project.title_en %}
           {% assign project_status = project.status_en %}
           {% assign project_summary = project.features_en | first %}
+          {% assign project_summary = project.summary_en | default: project_summary %}
         {% endif %}
         {% assign preview_image = project.video_poster | default: project.image_url %}
         <article class="home-development__card{% if preview_image %} home-development__card--media{% endif %}">

@@ -6,6 +6,8 @@
   title_zh: "3D可交互游戏：艾恩格朗特"
   title_en: "Interactive 3D Game: Aincrad"
   status_zh: "持续开发中"
+  summary_zh: "以日本动画《刀剑神域》为灵感，尝试在 3D 游戏中还原艾恩格朗特的悬浮城与外围世界。目前已完成外围世界建构、游戏界面和基础战斗玩法，玩家可以步行、奔跑、跳跃和自由飞行。"
+  summary_en: "Inspired by the Japanese anime Sword Art Online, this 3D game recreates Aincrad’s floating castle and surrounding world. The surrounding world, game interface and basic combat are in place. Players can walk, run, jump and fly freely."
   status_en: "In development"
   features_zh:
     - "浮岛与悬浮城：步行、奔跑、跳跃和自由飞行。"
@@ -29,6 +31,8 @@
   title_zh: "知识库APP：贾维斯"
   title_en: "Knowledge Base App: Jarvis"
   status_zh: "个人试用版"
+  summary_zh: "面向文献阅读与管理的个人知识库。支持 PDF 原文与译文对照阅读、同步滚动和标注，也能按原文和页码保存摘录、整理引用，并导出双语 PDF、Word 或 Markdown。"
+  summary_en: "A personal knowledge base for reading and organising research papers. Compare PDFs with their translations side by side, scroll both views together and add annotations. Save excerpts with page references, manage citations and export to bilingual PDF, Word or Markdown."
   status_en: "Personal prototype"
   features_zh:
     - "文献管理与双语阅读：PDF 导入去重、连续阅读、同步滚动、独立缩放与标注。"
