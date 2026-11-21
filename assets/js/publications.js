@@ -9,11 +9,6 @@
   var cards = Array.prototype.slice.call(document.querySelectorAll(".publication-card[data-year]"));
   var columns = Array.prototype.slice.call(document.querySelectorAll(".publication-column"));
   var articleList = document.querySelector(".publication-column--articles .publication-card-list");
-  var isHome = document.body.classList.contains("home-page");
-  var expanded = false;
-  var toggle;
-  var zh = (document.documentElement.lang || "en").indexOf("zh") === 0;
-  var activeYear = "all";
   function rank(card) {
     var value = (card.getAttribute("data-rank") || "").replace(/（/g, "(").replace(/）/g, ")").replace(/\s/g, "");
     return {"SSCIQ1": 6, "EI(JA)": 5, "CSSCI": 4, "CSSCI扩展": 3, "CSSCI(Extended)": 3, "AMI": 2}[value] || 0;
@@ -22,18 +17,6 @@
     Array.prototype.slice.call(articleList.children).sort(function (a, b) {
       return rank(b) - rank(a) || Number(b.getAttribute("data-year")) - Number(a.getAttribute("data-year"));
     }).forEach(function (card) { articleList.appendChild(card); });
-  }
-  if (isHome && articleList) {
-    toggle = document.createElement("button");
-    toggle.type = "button";
-    toggle.className = "publication-more";
-    articleList.id = "home-publication-articles";
-    toggle.setAttribute("aria-controls", articleList.id);
-    document.querySelector(".publication-board").insertAdjacentElement("afterend", toggle);
-    toggle.addEventListener("click", function () {
-      expanded = !expanded;
-      applyFilter(activeYear);
-    });
   }
 
   // Remember each column's count suffix ("work", "articles", "项成果", "篇论文")
@@ -44,7 +27,6 @@
   });
 
   function applyFilter(year) {
-    activeYear = year;
     cards.forEach(function (card) {
       card.hidden = year !== "all" && card.getAttribute("data-year") !== year;
     });
@@ -57,15 +39,6 @@
         count.textContent = visible + (suffix ? " " + suffix : "");
       }
     });
-    if (toggle) {
-      var matches = Array.prototype.slice.call(articleList.children).filter(function (card) {
-        return year === "all" || card.getAttribute("data-year") === year;
-      });
-      matches.forEach(function (card, index) { card.hidden = !expanded && index >= 4; });
-      toggle.hidden = matches.length <= 4;
-      toggle.setAttribute("aria-expanded", String(expanded));
-      toggle.textContent = expanded ? (zh ? "收起作品" : "Show fewer") : (zh ? "展开其余作品（" + (matches.length - 4) + "）" : "Show remaining works (" + (matches.length - 4) + ")");
-    }
   }
 
   buttons.forEach(function (button) {
