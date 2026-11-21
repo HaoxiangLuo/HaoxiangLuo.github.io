@@ -99,6 +99,20 @@
   },
   {
     "date": "2026-11-21",
+    "title_zh": "调整了论文发表",
+    "title_en": "Refined Publications",
+    "message": "Show all publications on the homepage",
+    "story_zh": "对论文发表的脚本与交互逻辑进行了改动，使页面上的展开、筛选等操作能够稳定完成。",
+    "story_en": "Changed the script and interaction logic of Publications so expanding and filtering the page works reliably.",
+    "purpose_zh": "更新站内页面、板块或脚本的内容组织与呈现方式。",
+    "purpose_en": "Show all publications on the homepage",
+    "details_zh": "调整论文发表页面的内容或筛选浏览方式。调整页面的筛选、展开或其他交互脚本。",
+    "details_en": "Refined publication content or its browsing controls. Adjusted the page's filtering, expand/collapse or other interaction scripts.",
+    "sha": "374c279",
+    "url": "https://github.com/HaoxiangLuo/HaoxiangLuo.github.io/commit/374c279b69010d54c6422840df91dc21bb6016a6"
+  },
+  {
+    "date": "2026-11-21",
     "title_zh": "调整了页面结构、界面样式",
     "title_en": "Refined page structure, interface styling",
     "message": "Show development projects beside funded research on homepages",
