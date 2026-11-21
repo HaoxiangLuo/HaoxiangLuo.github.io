@@ -72,7 +72,7 @@ body.home-page .language-toggle__option.is-active { background: #0071e3; }
   body.home-page #main > .home-publications .publication-board { align-items: stretch; }
   body.home-page .publication-column { display: flex; flex-direction: column; min-width: 0; }
   body.home-page .publication-card--featured { position: static; flex: 1; height: auto; min-height: 0; }
-  body.home-page .publication-column--articles .publication-card-list { grid-auto-rows: minmax(220px, auto); align-items: stretch; }
+  body.home-page .publication-column--articles .publication-card-list { grid-auto-rows: auto; align-items: stretch; }
   body.home-page .publication-column--articles .publication-card { height: 100%; box-sizing: border-box; min-height: 0; grid-template-columns: 28% minmax(0,1fr); }
   body.home-page .publication-column--articles .publication-cover { width: 100%; height: 100%; min-height: 0; }
   body.home-page .publication-card h3 { display: block; max-height: none; overflow: visible; -webkit-line-clamp: unset; }
@@ -84,10 +84,6 @@ body.home-page .language-toggle__option.is-active { background: #0071e3; }
   body.home-page #main > .news-window { grid-template-columns: 180px minmax(0, 1fr) auto; }
 }
 
-@media (min-width: 1301px) {
-  body.home-page .publication-board.is-expanded .publication-column--book { align-self: start; }
-  body.home-page .publication-board.is-expanded .publication-card--featured { flex: none; height: var(--collapsed-book-height, auto); }
-}
 
 @media (max-width: 767px) {
   body.home-page .publication-cover--book-nature { background-size: 600% auto; background-position: left 45%; }
@@ -173,9 +169,6 @@ body.home-page .language-toggle__option.is-active { background: #0071e3; }
 .skill-entry a { color: #0066cc; font-size: .78rem; font-weight: 600; }
 .skill-entry a:focus-visible { outline: 2px solid #0071e3; outline-offset: 3px; }
 
-@media (min-width: 1301px) {
-  body.home-page .publication-board.is-expanded .publication-card--featured { height: auto; }
-}
 @media (max-width: 767px) {
   body.home-page .publication-card--featured {
     display: grid; grid-template-columns: 68px minmax(0,1fr); gap: .7rem; padding: .75rem;
@@ -266,16 +259,6 @@ body.inner-page:has(.notes-tools-layout) .page__title { margin-bottom: 1rem; fon
   body.inner-page.inner-page #main { max-width: 1520px; }
 }
 
-/* Equal-height publication rows, with the complete title available on demand. */
-@media (min-width: 1024px) {
-  body.home-page .publication-column--articles .publication-card-list {
-    grid-auto-rows: 1fr; align-items: stretch;
-  }
-  body.home-page .publication-column--articles .publication-card {
-    min-height: 170px; height: var(--publication-card-height, auto);
-  }
-  body.home-page .publication-card--featured { min-height: 170px; height: var(--publication-card-height, auto); }
-}
 body.home-page.publications-clamped .publication-card h3,
 body.home-page.publications-clamped .publication-column--articles .publication-card h3 {
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
@@ -303,11 +286,6 @@ body.home-page.publications-clamped .publication-column--articles .publication-c
   background: #1d1d1f; font: inherit; cursor: pointer;
 }
 
-@media (min-width: 1301px) {
-  body.home-page .publication-board.is-expanded .publication-card--featured {
-    height: var(--publication-card-height, auto);
-  }
-}
 
 /* Home: one profile, one briefing, then publications. */
 body.home-page .author__interests { grid-column: 1 / -1; min-width: 0; margin-top: .65rem; }
@@ -496,7 +474,7 @@ body.home-page #main > .sidebar .author__interests li {
   body.home-page #main > .home-publications .publication-board,
   body.home-page #main > .home-publications .publication-board:has(> .publication-column[hidden]) {
     display: grid; grid-template-columns: repeat(2, minmax(0,1fr));
-    grid-auto-rows: 1fr; gap: .75rem; align-items: stretch;
+    grid-auto-rows: auto; gap: .75rem; align-items: stretch;
   }
   body.home-page #main > .home-publications .publication-column { display: contents; }
   body.home-page #main > .home-publications .publication-column[hidden] { display: none !important; }

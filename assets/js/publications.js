@@ -14,8 +14,6 @@
   var toggle;
   var zh = (document.documentElement.lang || "en").indexOf("zh") === 0;
   var activeYear = "all";
-  var board = document.querySelector(".publication-board");
-  var book = document.querySelector(".publication-card--featured");
   function rank(card) {
     var value = (card.getAttribute("data-rank") || "").replace(/（/g, "(").replace(/）/g, ")").replace(/\s/g, "");
     return {"SSCIQ1": 6, "EI(JA)": 5, "CSSCI": 4, "CSSCI扩展": 3, "CSSCI(Extended)": 3, "AMI": 2}[value] || 0;
@@ -33,11 +31,7 @@
     toggle.setAttribute("aria-controls", articleList.id);
     document.querySelector(".publication-board").insertAdjacentElement("afterend", toggle);
     toggle.addEventListener("click", function () {
-      if (!expanded && book && !book.hidden) {
-        board.style.setProperty("--collapsed-book-height", book.getBoundingClientRect().height + "px");
-      }
       expanded = !expanded;
-      board.classList.toggle("is-expanded", expanded);
       applyFilter(activeYear);
     });
   }
@@ -410,16 +404,6 @@
       var hide = item.title.scrollHeight <= item.title.clientHeight + 1;
       if (item.control.hidden !== hide) item.control.hidden = hide;
     });
-    var board = document.querySelector(".publication-board");
-    if (board) {
-      board.style.removeProperty("--publication-card-height");
-      if (window.innerWidth >= 1024) {
-        var heights = Array.prototype.slice.call(board.querySelectorAll(".publication-card"))
-          .filter(function (card) { return card.getClientRects().length; })
-          .map(function (card) { return card.getBoundingClientRect().height; });
-        if (heights.length) board.style.setProperty("--publication-card-height", Math.ceil(Math.max.apply(null, heights)) + "px");
-      }
-    }
   }
   var pending = false;
   function schedule() {

@@ -184,7 +184,7 @@ summary:has(> .disclosure-mark)::marker { content: ''; }
   html:has(body.home-page, .projects-page) { scrollbar-gutter: stable; }
   body.inner-page:has(.projects-page) #main { padding-inline: 0; }
   body.home-page #main { grid-template-rows: auto auto auto; }
-  body.home-page #main > .home-about { grid-row: 1; grid-column: 2; align-self: stretch; }
+  body.home-page #main > .home-about { grid-row: 1; grid-column: 2; align-self: start; }
   body.home-page #main > .home-publications { grid-row: 2; grid-column: 1 / -1; }
   body.home-page #main > .home-projects { grid-row: 3; grid-column: 1 / -1; }
   .projects-page .skills-library__grid {
@@ -217,7 +217,7 @@ body.home-page .publication-badge--book {
 .publication-badge__book-icon { width: .85rem; height: .85rem; flex: 0 0 auto; }
 @media (min-width: 1024px) {
   body.home-page #main { padding-top: .7rem; row-gap: .5rem; }
-  body.home-page #main > .sidebar.sticky { min-height: 0; padding: .8rem 1rem !important; }
+  body.home-page #main > .sidebar.sticky { min-height: 0; align-self: start; padding: .8rem 1rem !important; }
   body.home-page #main > .sidebar > div[itemscope] {
     grid-template-columns: 82px minmax(0,1fr); gap: .35rem .75rem;
   }
