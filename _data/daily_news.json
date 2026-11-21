@@ -1,6 +1,98 @@
 {
-  "updated_at": "2026-11-21T21:19:43+08:00",
+  "updated_at": "2026-11-22T01:48:17+08:00",
   "days": [
+    {
+      "date": "2026-11-22",
+      "items": [
+        {
+          "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones"
+        },
+        {
+          "title": "Bridgetown AI summit to tackle safety as risks outpace capacity to respond",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168854"
+        },
+        {
+          "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Military analyst Phillips O'Brien on Ukraine and Europe being left out of Trump's talks",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/21/nx-s1-6047379/military-analyst-phillips-obrien-on-ukraine-and-europe-being-left-out-of-trumps-talks"
+        },
+        {
+          "title": "‘You will not be alone’: General Assembly President tells Rohingya refugees after genocide ruling",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168853"
+        },
+        {
+          "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai"
+        },
+        {
+          "title": "West Bank: Record settler attacks mar olive harvest as UN urges Israel to protect farmers",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168849"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "APOD: 2026 November 21 – Voyager’s Neptune",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/"
+        },
+        {
+          "title": "On this day in space! Nov. 21, 1676: Danish astronomer discovers speed of light — by accident — while observing Jupiter's moon Io",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-21-2026"
+        },
+        {
+          "title": "Live coverage: SpaceX to launch intelligence-gathering satellites for the National Reconnaissance Office",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/21/live-coverage-spacex-to-launch-intelligence-gathering-satellites-for-the-national-reconnaissance-office-3/"
+        },
+        {
+          "title": "The sweet spot for constellation size",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/the-sweet-spot-for-constellation-size/"
+        },
+        {
+          "title": "Space Entrepreneurs Should Look To 16th Century Spice Trade For Inspiration",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/space-entrepreneurs-should-look-to-16th-century-spice-trade-for-inspiration"
+        },
+        {
+          "title": "Curiosity Spots Drifting Twilight Clouds",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/photojournal/curiosity-spots-drifting-twilight-clouds/"
+        },
+        {
+          "title": "This Week In Space podcast: Episode 237 — A Fond Farewell",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-237-a-fond-farewell"
+        },
+        {
+          "title": "SpaceX launches classified payload for the U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/19/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-2/"
+        }
+      ]
+    },
     {
       "date": "2026-11-21",
       "items": [
