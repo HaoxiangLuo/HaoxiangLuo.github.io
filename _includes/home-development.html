@@ -14,12 +14,32 @@
           {% assign project_status = project.status_en %}
           {% assign project_summary = project.features_en | first %}
         {% endif %}
-        <article class="home-development__card">
+        {% assign preview_image = project.video_poster | default: project.image_url %}
+        <article class="home-development__card{% if preview_image %} home-development__card--media{% endif %}">
+          {% if preview_image %}
+            {% if project.video_url %}
+              {% assign media_kind = 'video' %}
+              {% assign media_url = project.video_url %}
+              {% if page.lang == 'zh' %}{% assign media_label = project.video_label_zh %}{% else %}{% assign media_label = project.video_label_en %}{% endif %}
+            {% else %}
+              {% assign media_kind = 'image' %}
+              {% assign media_url = project.image_url %}
+              {% if page.lang == 'zh' %}{% assign media_label = project.image_alt_zh %}{% else %}{% assign media_label = project.image_alt_en %}{% endif %}
+            {% endif %}
+            <a class="home-development__preview" href="{{ media_url | relative_url }}" data-home-media="{{ media_kind }}" data-media-title="{{ project_title | escape }}" data-media-label="{{ media_label | escape }}"
+               aria-label="{% if project.video_url %}{% if page.lang == 'zh' %}播放视频：{% else %}Play video: {% endif %}{% else %}{% if page.lang == 'zh' %}放大截图：{% else %}Enlarge screenshot: {% endif %}{% endif %}{{ project_title | escape }}">
+              <img src="{{ preview_image | relative_url }}" alt="" loading="lazy" decoding="async">
+              <span class="home-development__media-icon" aria-hidden="true">{% if project.video_url %}▶{% else %}⤢{% endif %}</span>
+            </a>
+          {% endif %}
+          <div class="home-development__body">
           <h3><a href="{{ development_url | relative_url }}#project-title-{{ forloop.index }}">{{ project_title | escape }} <span aria-hidden="true">↗</span></a></h3>
           <p>{{ project_summary | escape }}</p>
           <small>{{ project_status | escape }}</small>
+          </div>
         </article>
       {% endfor %}
     </div>
   </section>
+  <script src="{{ '/assets/js/home-project-media.js' | relative_url }}" defer></script>
 {% endif %}
