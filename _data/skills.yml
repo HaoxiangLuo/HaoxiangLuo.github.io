@@ -6,8 +6,8 @@
   title_zh: "3D可交互游戏：艾恩格朗特"
   title_en: "Interactive 3D Game: Aincrad"
   status_zh: "持续开发中"
-  summary_zh: "以日本动画《刀剑神域》为灵感，尝试在 3D 游戏中还原艾恩格朗特的悬浮城与外围世界。目前已完成外围世界建构、游戏界面和基础战斗玩法，玩家可以步行、奔跑、跳跃和自由飞行。"
-  summary_en: "Inspired by the Japanese anime Sword Art Online, this 3D game recreates Aincrad’s floating castle and surrounding world. The surrounding world, game interface and basic combat are in place. Players can walk, run, jump and fly freely."
+  summary_zh: "该项目致力于将经典日漫作品《刀剑神域》的场景开发为可交互的3D游戏。目前已完成外围世界建构、游戏界面和基础战斗玩法，玩家可以步行、奔跑、跳跃和自由飞行。"
+  summary_en: "This project aims to bring settings from the classic Japanese anime Sword Art Online into an interactive 3D game. The surrounding world, game interface and basic combat are in place. Players can walk, run, jump and fly freely."
   status_en: "In development"
   features_zh:
     - "浮岛与悬浮城：步行、奔跑、跳跃和自由飞行。"
