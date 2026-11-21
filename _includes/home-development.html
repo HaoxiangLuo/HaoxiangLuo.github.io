@@ -1,0 +1,25 @@
+{% if site.data.skills.size > 0 %}
+  {% assign development_url = '/study-notes/' %}
+  {% if page.lang == 'zh' %}{% assign development_url = '/zh/study-notes/' %}{% endif %}
+  <section class="home-development" aria-labelledby="home-development-title">
+    <h2 id="home-development-title">{% if page.lang == 'zh' %}开发项目{% else %}Development Projects{% endif %}</h2>
+    <div class="home-development__list">
+      {% for project in site.data.skills %}
+        {% if page.lang == 'zh' %}
+          {% assign project_title = project.title_zh %}
+          {% assign project_status = project.status_zh %}
+          {% assign project_summary = project.features_zh | first %}
+        {% else %}
+          {% assign project_title = project.title_en %}
+          {% assign project_status = project.status_en %}
+          {% assign project_summary = project.features_en | first %}
+        {% endif %}
+        <article class="home-development__card">
+          <h3><a href="{{ development_url | relative_url }}#project-title-{{ forloop.index }}">{{ project_title | escape }} <span aria-hidden="true">↗</span></a></h3>
+          <p>{{ project_summary | escape }}</p>
+          <small>{{ project_status | escape }}</small>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

@@ -101,7 +101,10 @@ layout: default
       <div class="home-publications__heading"><h2 id="home-publications-title">{% if page.lang == 'zh' %}论文发表{% else %}Publications{% endif %}</h2></div>
       {% if page.lang == 'zh' %}{% include publications-zh.html %}{% else %}{% include publications-en.html %}{% endif %}
     </section>
-    {% include funded-projects.html %}
+    <div class="home-projects">
+      {% include funded-projects.html %}
+      {% include home-development.html %}
+    </div>
     <script src="{{ base_path }}/assets/js/publications.js" defer></script>
   {% endif %}
 
