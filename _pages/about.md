@@ -10,9 +10,9 @@ redirect_from:
   - /publications/
 ---
 
-<h1 id="home-about-title">About Me</h1>
-<p class="home-about__lead">Recently, I have been:</p>
+<h1 id="home-about-title">What I’m Doing</h1>
 <ol class="home-about__activities">
-  <li>Researching inequality in global communication, intelligent communication and bibliometrics, while exploring AI-enabled social science research. I welcome collaboration and conversation.</li>
-  <li>Trying my hand at building <a href="/study-notes/">interactive 3D games and knowledge-base software</a>.</li>
+  <li>Exploring how AI is changing knowledge production and examining inequality in global communication.</li>
+  <li>Exploring a wider range of empirical research methods, including qualitative, quantitative, and computational approaches. I welcome collaboration and conversation.</li>
+  <li>Building <a href="/study-notes/">3D games and knowledge base software</a> that I enjoy working on.</li>
 </ol>
