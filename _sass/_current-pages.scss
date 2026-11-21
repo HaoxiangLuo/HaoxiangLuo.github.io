@@ -293,7 +293,6 @@ body.home-page .home-projects > .home-grants { margin-top: 0; }
     align-self: stretch;
   }
   .home-development__list { grid-auto-rows: 1fr; }
-  .home-development__card--media { align-items: center; }
 }
 @media (max-width: 1023px) {
   .home-development > h2 { font-size: 1.65rem; }
@@ -304,6 +303,16 @@ body.home-page .home-projects > .home-grants { margin-top: 0; }
   grid-template-columns: clamp(76px, 14vw, 132px) minmax(0, 1fr);
   align-items: start;
   gap: .75rem;
+}
+@media (min-width: 1024px) {
+  .home-development__card--media {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    align-items: center;
+    gap: clamp(.85rem, 1.4vw, 1.3rem);
+  }
+  .home-development__card--media .home-development__body { min-width: 0; }
+  .home-development__card--media h3 { margin-bottom: .4rem; }
+  .home-development__card--media p { margin-bottom: .45rem; line-height: 1.5; }
 }
 .home-development__preview {
   position: relative;
