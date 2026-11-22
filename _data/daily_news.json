@@ -1,95 +1,112 @@
 {
-  "updated_at": "2026-11-22T15:35:50+08:00",
+  "updated_at": "2026-11-22T21:11:38+08:00",
   "days": [
     {
       "date": "2026-11-22",
       "items": [
         {
-          "title": "New draft deal aims to avert collapse of talks at COP31 climate summit",
+          "title": "South Korea education minister resigns over exam cheating scandal",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cq7827z2841zo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss",
+          "title_zh": "韩国教育部长因考试作弊丑闻辞职"
         },
         {
           "title": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit?",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/21/nx-s1-6048741/what-did-xi-jinping-get-from-the-bear-hug-with-trump-at-the-shenzhen-summit"
+          "url": "https://www.npr.org/2026/11/21/nx-s1-6048741/what-did-xi-jinping-get-from-the-bear-hug-with-trump-at-the-shenzhen-summit",
+          "title_zh": "习近平在深圳峰会上与特朗普的熊抱得到了什么？"
         },
         {
           "title": "‘We escaped with only our lives’: Fighting to give birth in war-torn Yemen",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168851"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168851",
+          "title_zh": "我们只带着生命逃了出来”：在饱受战争蹂躏的也门为分娩而战"
         },
         {
-          "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+          "title": "Russia-bound ship still on fire after attack in Gulf of Finland",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
+          "title_zh": "芬兰湾袭击后开往俄罗斯的船只仍在起火"
         },
         {
           "title": "Highlights and challenges from covering an historic month in South America",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/21/nx-s1-6044647/highlights-and-challenges-from-covering-an-historic-month-in-south-america"
+          "url": "https://www.npr.org/2026/11/21/nx-s1-6044647/highlights-and-challenges-from-covering-an-historic-month-in-south-america",
+          "title_zh": "报道南美历史性月份的亮点和挑战"
         },
         {
           "title": "Homes abandoned, harvests failing: Haiti’s farmers rebuild amid violence, hunger and El Niño",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168834"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168834",
+          "title_zh": "家园被遗弃，收成歉收：海地农民在暴力、饥饿和厄尔尼诺现象中重建"
         },
         {
-          "title": "Russia-bound ship attacked in Gulf of Finland",
+          "title": "Mexican drug lord on FBI's 10 most wanted list arrested in shoot-out",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/ckz749ey0r75o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "FBI十大通缉名单上的墨西哥毒枭在枪战中被捕"
         },
         {
           "title": "A grieving family in Lebanon returns to their village",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/21/nx-s1-6012085/a-grieving-family-in-lebanon-returns-to-their-village"
+          "url": "https://www.npr.org/2026/11/21/nx-s1-6012085/a-grieving-family-in-lebanon-returns-to-their-village",
+          "title_zh": "黎巴嫩一个悲痛的家庭返回村庄"
         },
         {
           "title": "Bridgetown AI summit to tackle safety as risks outpace capacity to respond",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168854"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168854",
+          "title_zh": "布里奇敦人工智能峰会将解决安全问题，因为风险超出了应对能力"
         }
       ],
       "space_items": [
         {
           "title": "APOD: 2026 November 22 – Swirls and Colors on Jupiter from Juno",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-november-22-swirls-and-colors-on-jupiter-from-juno/"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-22-swirls-and-colors-on-jupiter-from-juno/",
+          "title_zh": "APOD：2026 年 11 月 22 日 – 来自朱诺号的木星上的漩涡和颜色"
         },
         {
-          "title": "On this day in space! Nov. 21, 1676: Danish astronomer discovers speed of light — by accident — while observing Jupiter's moon Io",
+          "title": "10 things that worry me about chasing the 2027 total solar eclipse in Egypt",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-21-2026"
+          "url": "https://www.space.com/stargazing/solar-eclipses/10-things-that-worry-me-about-chasing-the-2027-total-solar-eclipse-in-egypt",
+          "title_zh": "追逐 2027 年埃及日全食时令我担心的 10 件事"
         },
         {
           "title": "Live coverage: SpaceX to launch intelligence-gathering satellites for the National Reconnaissance Office",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/21/live-coverage-spacex-to-launch-intelligence-gathering-satellites-for-the-national-reconnaissance-office-3/"
+          "url": "https://spaceflightnow.com/2026/11/21/live-coverage-spacex-to-launch-intelligence-gathering-satellites-for-the-national-reconnaissance-office-3/",
+          "title_zh": "现场报道：SpaceX 将为国家侦察办公室发射情报收集卫星"
         },
         {
           "title": "The sweet spot for constellation size",
           "source": "SpaceNews",
-          "url": "https://spacenews.com/the-sweet-spot-for-constellation-size/"
+          "url": "https://spacenews.com/the-sweet-spot-for-constellation-size/",
+          "title_zh": "星座大小的最佳点"
         },
         {
           "title": "Space Entrepreneurs Should Look To 16th Century Spice Trade For Inspiration",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/space-entrepreneurs-should-look-to-16th-century-spice-trade-for-inspiration"
+          "url": "https://www.universetoday.com/articles/space-entrepreneurs-should-look-to-16th-century-spice-trade-for-inspiration",
+          "title_zh": "太空企业家应该从 16 世纪的香料贸易中寻找灵感"
         },
         {
           "title": "APOD: 2026 November 21 – Voyager’s Neptune",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/",
+          "title_zh": "APOD：2026 年 11 月 21 日——航海者号海王星"
         },
         {
-          "title": "This Week In Space podcast: Episode 237 — A Fond Farewell",
+          "title": "On this day in space! Nov. 21, 1676: Danish astronomer discovers speed of light — by accident — while observing Jupiter's moon Io",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-237-a-fond-farewell"
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-21-2026",
+          "title_zh": "在太空的这一天！ 1676 年 11 月 21 日：丹麦天文学家在观察木星的卫星木卫一时偶然发现了光速"
         },
         {
           "title": "SpaceX launches classified payload for the U.S. Space Force",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/19/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-2/"
+          "url": "https://spaceflightnow.com/2026/11/19/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-2/",
+          "title_zh": "SpaceX 为美国太空部队发射机密有效载荷"
         }
       ]
     },
@@ -99,42 +116,50 @@
         {
           "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽伦斯基表示克里米亚大桥在会见英国议员斯特里廷时得到了“公平的回应"
         },
         {
           "title": "Military analyst Phillips O'Brien on Ukraine and Europe being left out of Trump's talks",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/21/nx-s1-6047379/military-analyst-phillips-obrien-on-ukraine-and-europe-being-left-out-of-trumps-talks"
+          "url": "https://www.npr.org/2026/11/21/nx-s1-6047379/military-analyst-phillips-obrien-on-ukraine-and-europe-being-left-out-of-trumps-talks",
+          "title_zh": "军事分析家菲利普斯·奥布莱恩认为乌克兰和欧洲被排除在特朗普的会谈之外"
         },
         {
           "title": "‘You will not be alone’: General Assembly President tells Rohingya refugees after genocide ruling",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168853"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168853",
+          "title_zh": "你不会孤单”：种族灭绝裁决后大会主席告诉罗兴亚难民"
         },
         {
           "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "Anthropic 股价下滑，科技股抛售拖累市场下跌"
         },
         {
           "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai"
+          "url": "https://www.npr.org/2026/11/21/g-s1-154922/anthropic-worker-claims-to-have-solved-a-holy-grail-of-math-problems-with-the-help-of-ai",
+          "title_zh": "人类工作者声称在人工智能的帮助下解决了数学问题的圣杯"
         },
         {
           "title": "West Bank: Record settler attacks mar olive harvest as UN urges Israel to protect farmers",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168849"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168849",
+          "title_zh": "约旦河西岸：创纪录的定居者袭击橄榄收成，联合国敦促以色列保护农民"
         },
         {
           "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "化石燃料之争使COP31气候谈判陷入僵局"
         },
         {
           "title": "Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in"
+          "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+          "title_zh": "参加联合国人工智能杀手机器人谈判的各国同意进行更多谈判，但没有坚定承诺遏制它们"
         },
         {
           "title": "Shattered playgrounds and freezing classrooms: Inside Ukraine’s deadliest year for children",
@@ -147,12 +172,14 @@
         {
           "title": "APOD: 2026 November 21 – Voyager’s Neptune",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/",
+          "title_zh": "APOD：2026 年 11 月 21 日——航海者号海王星"
         },
         {
           "title": "SpaceX will retire 1st Starship upper stage ever caught by 'chopsticks,' Elon Musk says",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-retire-1st-starship-upper-stage-ever-caught-by-chopsticks-elon-musk-says"
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-will-retire-1st-starship-upper-stage-ever-caught-by-chopsticks-elon-musk-says",
+          "title_zh": "埃隆·马斯克表示，SpaceX 将退役第一艘被“筷子”夹住的星际飞船上层"
         },
         {
           "title": "SpaceX launches classified payload for the U.S. Space Force",
@@ -169,17 +196,20 @@
         {
           "title": "Space Entrepreneurs Should Look To 16th Century Spice Trade For Inspiration",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/space-entrepreneurs-should-look-to-16th-century-spice-trade-for-inspiration"
+          "url": "https://www.universetoday.com/articles/space-entrepreneurs-should-look-to-16th-century-spice-trade-for-inspiration",
+          "title_zh": "太空企业家应该从 16 世纪的香料贸易中寻找灵感"
         },
         {
           "title": "Curiosity Spots Drifting Twilight Clouds",
           "source": "NASA",
-          "url": "https://science.nasa.gov/photojournal/curiosity-spots-drifting-twilight-clouds/"
+          "url": "https://science.nasa.gov/photojournal/curiosity-spots-drifting-twilight-clouds/",
+          "title_zh": "好奇号发现了漂浮的暮云"
         },
         {
           "title": "European-Japanese BepiColombo probe arrives in orbit around Mercury today",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/missions/esa-jaxa-bepicolomobo-mission-mercury-orbit-arrival"
+          "url": "https://www.space.com/space-exploration/missions/esa-jaxa-bepicolomobo-mission-mercury-orbit-arrival",
+          "title_zh": "欧洲-日本 BepiColombo 探测器今天抵达水星轨道"
         },
         {
           "title": "Vulcan failure investigation focuses on ‘inadequate fuel supply’ to booster engines",
