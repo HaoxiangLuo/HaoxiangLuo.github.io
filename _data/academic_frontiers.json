@@ -1,6 +1,169 @@
 {
-  "updated_at": "2026-11-16T16:04:00+08:00",
+  "updated_at": "2026-11-23T17:13:59+08:00",
   "items": [
+    {
+      "id": "doi:10.1177/19401612261494396",
+      "title": "The Hype Versus the Reality of Generative AI in Elections: The Case of the 2024 Indian Elections",
+      "abstract_excerpt": "The 2024 Indian General Election was defined by pervasive warnings that generative AI would unleash a tsunami of deepfakes and fundamentally destabilize democratic processes. To empirically test these predictions, we analyzed over 5.5 million messages from more than 6,000 WhatsApp groups, obtained through a large-scale data donation project in India. Our findings reveal a profound disconnect between pre-election hype and ground truth…",
+      "journal": "The International Journal of Press/Politics",
+      "issn_l": "1940-1612",
+      "published_at": "2026-11-20",
+      "authors": [
+        "Simon Chauchard",
+        "Kiran K. Garimella"
+      ],
+      "doi_url": "https://doi.org/10.1177/19401612261494396",
+      "landing_page_url": "https://doi.org/10.1177/19401612261494396",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "政治传播",
+        "比较政治传播"
+      ]
+    },
+    {
+      "id": "doi:10.1177/19401612261502925",
+      "title": "When Elections End, Does Incivility? Examining Online Incivility Perceptions Across Four National Elections",
+      "abstract_excerpt": "Political incivility violates democratic, deliberative, and politeness norms, with repercussions for societal health. These repercussions are amplified in today’s digital environment, where social media platforms facilitate the expression and spread of incivility at an unprecedented global scale. Because incivility is subjective and context-dependent, its perception can only be fully understood through a joint consideration of individual…",
+      "journal": "The International Journal of Press/Politics",
+      "issn_l": "1940-1612",
+      "published_at": "2026-11-19",
+      "authors": [
+        "Eliza Mitova",
+        "Laia Castro",
+        "Pamina Syed Ali",
+        "Michael Amsler",
+        "Yuan Zhang",
+        "Frank Esser"
+      ],
+      "doi_url": "https://doi.org/10.1177/19401612261502925",
+      "landing_page_url": "https://doi.org/10.1177/19401612261502925",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "政治传播",
+        "比较政治传播"
+      ]
+    },
+    {
+      "id": "doi:10.1177/01634437261508749",
+      "title": "Haunted by housing precarity: The managed absence of housing crisis discourse in Tiny House Movement media",
+      "abstract_excerpt": "Digital media representations of the Tiny House Movement often frame small-scale living as an ethical response to housing precarity, environmental crisis and overconsumption. Yet across dominant lifestyle-oriented platforms, explicit engagement with housing justice and structural inequality remains strikingly limited. This article argues that such absence is not merely a representational omission, but an active cultural process. Drawing on…",
+      "journal": "Media Culture & Society",
+      "issn_l": "0163-4437",
+      "published_at": "2026-11-19",
+      "authors": [
+        "Sohini Sarkar"
+      ],
+      "doi_url": "https://doi.org/10.1177/01634437261508749",
+      "landing_page_url": "https://doi.org/10.1177/01634437261508749",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "文化与权力"
+      ]
+    },
+    {
+      "id": "doi:10.1177/19401612261505242",
+      "title": "Disenchanting the Epistemic Authority and Inevitability of AI: An Analysis of Factcheckers’ Perspectives and Professional Guidelines",
+      "abstract_excerpt": "As a sociotechnical practice, fact-checking integrates artificial intelligence (AI) while resisting “enchanted determinism” to preserve professional agency and epistemic authority. This study examines how fact-checkers in Europe and Latin America perceive AI affordances within their professional practices and how organizations articulate and govern AI use. Methodologically, the study is based on 50 qualitative interviews with practitioners and…",
+      "journal": "The International Journal of Press/Politics",
+      "issn_l": "1940-1612",
+      "published_at": "2026-11-18",
+      "authors": [
+        "Regina Cazzamatta",
+        "Augusto Santos"
+      ],
+      "doi_url": "https://doi.org/10.1177/19401612261505242",
+      "landing_page_url": "https://doi.org/10.1177/19401612261505242",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "政治传播",
+        "比较政治传播"
+      ]
+    },
+    {
+      "id": "doi:10.1080/10584609.2026.2757595",
+      "title": "When Attitude and Partisanship Collide: The Role of Cognitive Dissonance and Psychological Reactance on Pro-Attitudinal News Selection",
+      "abstract_excerpt": "In high-choice media environments, people favor news sources that reinforce their issue attitudes or partisan identities, shaping polarized information diets. However, the interplay between issue attitudes and group-based partisan identities in driving selective news consumption remains underexplored. While research documents robust preferences for congenial content, few studies examine how initial news encounters – pro- versus…",
+      "journal": "Political Communication",
+      "issn_l": "1058-4609",
+      "published_at": "2026-11-18",
+      "authors": [
+        "Woojin Jung",
+        "Sunhae Sul",
+        "Hyo Jung Kim"
+      ],
+      "doi_url": "https://doi.org/10.1080/10584609.2026.2757595",
+      "landing_page_url": "https://doi.org/10.1080/10584609.2026.2757595",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "政治传播",
+        "公共舆论"
+      ]
+    },
+    {
+      "id": "doi:10.1080/1369118x.2026.2763553",
+      "title": "Into the Echoverse: the role of social media use in eschewing science and scientists",
+      "abstract_excerpt": "Recent events highlight conflicts between populist attitudes and the broader scientific community. In the United States, the alt-right is a small but vocal group with populist leanings who use social media to express their beliefs. Previous work has not established whether non-mainstream social media usage increases science skepticism or if instead institutional skepticism drives usage of online platforms. To explore this question, we apply the…",
+      "journal": "Information Communication & Society",
+      "issn_l": "1369-118X",
+      "published_at": "2026-11-17",
+      "authors": [
+        "Ian Hawkins",
+        "Cameron D. Mackey",
+        "Sedona Chinn",
+        "Scott W. Campbell"
+      ],
+      "doi_url": "https://doi.org/10.1080/1369118x.2026.2763553",
+      "landing_page_url": "https://doi.org/10.1080/1369118x.2026.2763553",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "智能传播",
+        "数字传播",
+        "国际传播"
+      ]
+    },
+    {
+      "id": "doi:10.1177/01634437261506734",
+      "title": "Broadcast time in the age of acceleration: Media archaeology, environmental authority and David Attenborough",
+      "abstract_excerpt": "David Attenborough’s authority as an environmental witness has proved unusually durable, repeatedly reaffirmed within a media culture structured by acceleration and attention scarcity. That persistence owes less to celebrity visibility, persuasive messaging or advocacy than to media temporality, specifically the broadcast natural-history documentary as a form organised by return, repetition, and institutional trust. Innis’s distinction between…",
+      "journal": "Media Culture & Society",
+      "issn_l": "0163-4437",
+      "published_at": "2026-11-16",
+      "authors": [
+        "Joel Conroy"
+      ],
+      "doi_url": "https://doi.org/10.1177/01634437261506734",
+      "landing_page_url": "https://doi.org/10.1177/01634437261506734",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "国际传播",
+        "文化与权力"
+      ]
+    },
+    {
+      "id": "doi:10.1093/joc/jqag024",
+      "title": "Softening the spring: Sensitization of transient media effects through repeated exposure over time",
+      "abstract_excerpt": "Existing longitudinal media effects research often emphasizes overall trends in behavioral or attitudinal changes, while overlooking fluctuations that occur before and after each exposure instance. This oversight can obscure the mechanisms underlying longitudinal media effects, particularly how they accumulate from successive short-term effects. We hypothesized a sensitization process where a single media exposure induces a transient change in…",
+      "journal": "Journal of Communication",
+      "issn_l": "0021-9916",
+      "published_at": "2026-11-15",
+      "authors": [
+        "Yuqian Ni",
+        "Joshua A. Baldwin",
+        "Allan D. Tate",
+        "Michael D. Schmidt",
+        "Kyle Johnsen",
+        "Sun Joo Ahn"
+      ],
+      "doi_url": "https://doi.org/10.1093/joc/jqag024",
+      "landing_page_url": "https://doi.org/10.1093/joc/jqag024",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "综合传播",
+        "国际传播",
+        "政治传播"
+      ]
+    },
     {
       "id": "doi:10.65476/jaj9q436",
       "title": "Fact-Checking After Platform Partnerships: The Challenge of Dis-Integration",
@@ -197,6 +360,24 @@
       ]
     },
     {
+      "id": "doi:10.1093/ct/qtag021",
+      "title": "The image of journalists: Toward a theoretical framework",
+      "abstract_excerpt": "The image of journalists, despite being a key component of the journalist–audience relationship, has received little scholarly attention. Beyond the limited empirical evidence, a comprehensive theoretical framework remains absent. Most existing conceptualizations focus on either the journalists’ or the audience’s perspective, are largely confined to journalistic roles, or address the image of news media rather than journalists specifically…",
+      "journal": "Communication Theory",
+      "issn_l": "1050-3293",
+      "published_at": "2026-11-06",
+      "authors": [
+        "Mia Grünewald"
+      ],
+      "doi_url": "https://doi.org/10.1093/ct/qtag021",
+      "landing_page_url": "https://doi.org/10.1093/ct/qtag021",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "传播理论",
+        "国际传播"
+      ]
+    },
+    {
       "id": "doi:10.1177/19401612261495103",
       "title": "Scripts of Escalation and Restraint: State Messaging and Public Opinion in International Crises",
       "abstract_excerpt": "Public opinion can both enable and constrain foreign policy, motivating governments to manipulate media during international crises. This study identifies four recurring communication strategies, one mobilizing and three moderating, each organized around a dominant cue: mobilization relies primarily on emotional arousal to stoke nationalist sentiment and foster assertiveness; censorship centers on the informational restriction of politically…",
@@ -212,6 +393,26 @@
       "focus": [
         "政治传播",
         "比较政治传播"
+      ]
+    },
+    {
+      "id": "doi:10.1093/ct/qtag024",
+      "title": "Doing journalist: Boundary markers for division, jurisdiction markers for belonging",
+      "abstract_excerpt": "Peripheral actors are often seen as a threat to journalists’ professional status and resources. Research so far has mainly focused on journalists’ discursive responses and the use of “boundary markers.” However, audiences often struggle to recognize such distinctions. To understand the strategic efforts and successes of peripheral actors, it is necessary to examine: (1) how these actors claim jurisdiction and authority through their…",
+      "journal": "Communication Theory",
+      "issn_l": "1050-3293",
+      "published_at": "2026-11-05",
+      "authors": [
+        "Lea von den Driesch",
+        "Nina Springer",
+        "Seth C. Lewis"
+      ],
+      "doi_url": "https://doi.org/10.1093/ct/qtag024",
+      "landing_page_url": "https://doi.org/10.1093/ct/qtag024",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "传播理论",
+        "国际传播"
       ]
     },
     {
@@ -236,6 +437,24 @@
       ],
       "title_zh": "“就像晚上出门时不带胡椒喷雾一样”：美国 LGBTQIA+ 大学生对网络受害的反应",
       "abstract_excerpt_zh": "互联网重塑了社交互动的本质，为人们以亲社会和反社会的方式进行联系提供了新的环境。 研究显示，女同性恋、男同性恋、双性恋、跨性别者、酷儿、质疑者、双性者、无性恋和相关 (LGBTQIA+) 群体是最容易遭受网络伤害的群体。 对于年轻人来说，他们已经是最容易成为攻击目标、公开成为 LGBTQIA + 的人……"
+    },
+    {
+      "id": "doi:10.1093/ct/qtag022",
+      "title": "Forwarding a Racial Identity Negotiations Theory of communication",
+      "abstract_excerpt": "This article builds upon existing theories to forward Racial Identity Negotiations Theory (RINT). RINT explains how individuals iteratively and communicatively fashion racial identity through continuous processes of negotiation embedded within structural-interpersonal contexts. The article proceeds by contextualizing RINT within critical intercultural and interpersonal communication, followed by a three-part explanation of the theory. First, it…",
+      "journal": "Communication Theory",
+      "issn_l": "1050-3293",
+      "published_at": "2026-11-03",
+      "authors": [
+        "Charnell Peters"
+      ],
+      "doi_url": "https://doi.org/10.1093/ct/qtag022",
+      "landing_page_url": "https://doi.org/10.1093/ct/qtag022",
+      "source_tier": "SSCI Q1",
+      "focus": [
+        "传播理论",
+        "国际传播"
+      ]
     },
     {
       "id": "doi:10.1080/10584609.2026.2751953",
