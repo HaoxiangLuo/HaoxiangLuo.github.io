@@ -1,69 +1,76 @@
 {
-  "updated_at": "2026-11-23T16:22:24+08:00",
+  "updated_at": "2026-11-23T23:49:06+08:00",
   "days": [
     {
       "date": "2026-11-23",
       "items": [
         {
+          "title": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽连斯基称俄罗斯军舰在利比亚被乌克兰无人机击中"
+        },
+        {
+          "title": "Democrats win House by largest margin in 50 years. And, COP31 ends with no deal",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/23/g-s1-155021/up-first-newsletter-midterms-house-ai-stocks-poland-nato-cop31",
+          "title_zh": "民主党以 50 年来最大优势赢得众议院。而且，COP31 没有达成协议"
+        },
+        {
+          "title": "Heavy fighting in Ituri traps DR Congo Ebola responders: WHO",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168858",
+          "title_zh": "世界卫生组织：伊图里的激烈战斗使刚果民主共和国埃博拉应对人员陷入困境"
+        },
+        {
           "title": "Longest-ever UN climate talks end with no deal as deep divisions exposed",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqwy06zrd26lo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "历时最长的联合国气候谈判因深刻分歧暴露而未达成协议"
+        },
+        {
+          "title": "Ukrainian drones hit a Russian warship at a naval base in Libya, Zelenskyy says",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
+          "title_zh": "泽伦斯基称，乌克兰无人机在利比亚海军基地击中了一艘俄罗斯军舰"
+        },
+        {
+          "title": "Libya: UN mission urges probe into Benghazi port attacks",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168857",
+          "title_zh": "利比亚：联合国代表团敦促调查班加西港口袭击事件"
+        },
+        {
+          "title": "Israeli attacks have turned Gaza into 'toxic wasteland', Oxfam says",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c8r4gzzxvxl3o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "乐施会称以色列的袭击已将加沙变成“有毒荒地"
         },
         {
           "title": "Ukraine war spilling into NATO territory",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/22/nx-s1-6050236/ukraine-war-spilling-into-nato-territory"
+          "url": "https://www.npr.org/2026/11/22/nx-s1-6050236/ukraine-war-spilling-into-nato-territory",
+          "title_zh": "乌克兰战争蔓延至北约领土"
         },
         {
-          "title": "‘I had a better life in Iran’: Afghan women forced home struggle to rebuild",
+          "title": "Guterres laments COP31 outcome, urges climate justice from Barbados",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168852",
-          "title_zh": "我在伊朗过着更好的生活”：阿富汗妇女被迫为重建家园而奋斗"
-        },
-        {
-          "title": "What's next after no deal at COP31 climate talks?",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/cr1ewge81q4qo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Luxury development planned on land some Albanians say is theirs, not Jared Kushner's",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/22/nx-s1-6012022/luxury-development-planned-on-land-some-albanians-say-is-theirs-not-jared-kushners"
-        },
-        {
-          "title": "COP31 ends without climate pact as UN chief warns there is ‘no ambiguity in the science’",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168855",
-          "title_zh": "COP31在没有达成气候协议的情况下结束，联合国秘书长警告称“科学上没有含糊之处"
-        },
-        {
-          "title": "Boy, 7, pulled alive from rubble hours after Russian strike on Ukraine, rescuers say",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqdr15l32d3go?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Lebanese villagers return to wrecked homes as the Israeli army pulls back",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/22/nx-s1-6048710/lebanon-israel-army-conflict-homes",
-          "title_zh": "随着以色列军队撤退，黎巴嫩村民返回被毁的家园"
-        },
-        {
-          "title": "‘We escaped with only our lives’: Fighting to give birth in war-torn Yemen",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168851",
-          "title_zh": "我们只带着生命逃了出来”：在饱受战争蹂躏的也门为分娩而战"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168856",
+          "title_zh": "古特雷斯对第三十一届缔约方会议的结果表示遗憾，敦促巴巴多斯实现气候正义"
         }
       ],
       "space_items": [
         {
           "title": "APOD: 2026 November 23 – The Emergence of Dark Nebula Lynds 1251",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-november-23-the-emergence-of-dark-nebula-lynds-1251/"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-23-the-emergence-of-dark-nebula-lynds-1251/",
+          "title_zh": "APOD：2026 年 11 月 23 日——暗星云 Lynds 1251 的出现"
         },
         {
-          "title": "Be ready to get a better view of the night sky in your backyard with 25% off the Celestron Cometron 7x50 binoculars in this Black Friday deal",
+          "title": "'Avengers: Doomsday' gets final trailer, explaining why Steve Rogers is back and showing an epic battle with the X-Men",
           "source": "Space.com",
-          "url": "https://www.space.com/stargazing/skywatching-kit/be-ready-to-get-a-better-view-of-the-night-sky-in-your-backyard-with-25-percent-off-the-celestron-cometron-7x50-binoculars-in-this-black-friday-deal"
+          "url": "https://www.space.com/entertainment/space-movies-shows/avengers-doomsday-gets-final-trailer-explaining-why-steve-rogers-is-back-and-showing-an-epic-battle-with-the-x-men",
+          "title_zh": "《复仇者联盟：世界末日》发布最终预告片，解释了史蒂夫·罗杰斯为何回归并展示了与 X 战警的史诗般的战斗"
         },
         {
           "title": "SpaceX launches intelligence-gathering satellites for the National Reconnaissance Office",
@@ -78,20 +85,22 @@
           "title_zh": "星座大小的最佳点"
         },
         {
-          "title": "Space Entrepreneurs Should Look To 16th Century Spice Trade For Inspiration",
+          "title": "Bacteria and Nuclear Power Could Grow Ready-Made Homes on Mars Before Astronauts Arrive",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/space-entrepreneurs-should-look-to-16th-century-spice-trade-for-inspiration",
-          "title_zh": "太空企业家应该从 16 世纪的香料贸易中寻找灵感"
+          "url": "https://www.universetoday.com/articles/bacteria-and-nuclear-power-could-grow-ready-made-homes-on-mars-before-astronauts-arrive",
+          "title_zh": "细菌和核能可以在宇航员抵达火星之前在火星上建造现成的房屋"
         },
         {
           "title": "Laser Focus at the Top of the World",
           "source": "NASA",
-          "url": "https://science.nasa.gov/earth/earth-observatory/laser-focus-at-the-top-of-the-world/"
+          "url": "https://science.nasa.gov/earth/earth-observatory/laser-focus-at-the-top-of-the-world/",
+          "title_zh": "激光聚焦世界之巅"
         },
         {
-          "title": "Watch live today: Amazon launching 1st batch of internet satellites since Vulcan Centaur failure",
+          "title": "The remains of a long-dead volcano on Mars | Space photo of the day for Nov. 23, 2026",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/arianespace-ariane-6-amazon-leo-internet-satellite-launch"
+          "url": "https://www.space.com/astronomy/mars/the-remains-of-a-long-dead-volcano-on-mars-space-photo-of-the-day-for-nov-23-2026",
+          "title_zh": "火星上一座死火山的遗迹| 2026 年 11 月 23 日当天的太空照片"
         },
         {
           "title": "SpaceX launches satellites for the U.S. Space Force’s data network constellation",
