@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-24T23:40:35+08:00",
+  "updated_at": "2026-11-25T04:54:47+08:00",
   "days": [
+    {
+      "date": "2026-11-25",
+      "items": [
+        {
+          "title": "US attorney general dodges questions about Nvidia investigation",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国司法部长回避有关英伟达调查的问题"
+        },
+        {
+          "title": "Who really owns the Albanian land Jared Kushner wants to turn into a 5-star resort?",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests",
+          "title_zh": "谁真正拥有阿尔巴尼亚土地，贾里德·库什纳想将其打造成五星级度假村？"
+        },
+        {
+          "title": "French ex-President Sarkozy and wife Carla Bruni to face trial",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "法国前总统萨科齐和妻子卡拉·布吕尼将面临审判"
+        },
+        {
+          "title": "Jensen Huang returns to Nvidia. And, Rep. Gomez resigns amid alleged sexual misconduct",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez",
+          "title_zh": "黄仁勋重返英伟达。而且，众议员戈麦斯因涉嫌不当性行为而辞职"
+        },
+        {
+          "title": "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "印度政府“失去了阴谋”，“蟑螂”领导人被禁止乘坐英国航班"
+        },
+        {
+          "title": "The human cost of the electric vehicle boom is at the center of a lawsuit in Congo",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
+          "title_zh": "电动汽车热潮造成的人力成本是刚果一场诉讼的核心"
+        },
+        {
+          "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "华为被判窃取商业机密罪，但敲诈勒索罪被判无罪"
+        },
+        {
+          "title": "Meet Colombia's fuzzy 'water guardians'",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/24/nx-s1-6038806/colombia-water-plants-frailejons",
+          "title_zh": "来认识一下哥伦比亚的模糊“水卫士"
+        },
+        {
+          "title": "Land mine casualties soar in Syria, two years after war",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c893rl37ywdgo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "战后两年，叙利亚地雷伤亡人数激增"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "Amateur Astronomer? Be a Kilonova Catcher!",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/get-involved/citizen-science/amateur-astronomer-be-a-kilonova-catcher/",
+          "title_zh": "业余天文学家？成为千新星捕手！"
+        },
+        {
+          "title": "1st-ever detection of a dying star's 'final nuclear heartbeat' challenges what we know about our sun's eventual death",
+          "source": "Space.com",
+          "url": "https://www.space.com/astronomy/stars/1st-ever-detection-of-a-dying-stars-final-nuclear-heartbeat-challenges-what-we-know-about-our-suns-eventual-death",
+          "title_zh": "有史以来第一次探测到垂死恒星的“最后核心跳”挑战了我们对太阳最终死亡的了解"
+        },
+        {
+          "title": "SpaceX launches classified payload for the U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/",
+          "title_zh": "SpaceX 为美国太空部队发射机密有效载荷"
+        },
+        {
+          "title": "Simera Sense, Spacemanic, Zaitra and World from Space Join Forces on an End-to-End Dual-Use Mission Solution",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/simera-sense-spacemanic-zaitra-and-world-from-space-join-forces-on-an-end-to-end-dual-use-mission-solution/",
+          "title_zh": "Simera Sense、Spacemanic、Zaitra 和 World from Space 联手打造端到端两用任务解决方案"
+        },
+        {
+          "title": "A Gigantic Stellar Eruption Spreads Planetary Material Into Space",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/a-gigantic-stellar-eruption-spreads-planetary-material-into-space",
+          "title_zh": "巨大的恒星喷发将行星物质扩散到太空中"
+        },
+        {
+          "title": "NASA’s Northrop Grumman CRS-25 Mission Overview",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/missions/station/nasas-northrop-grumman-crs-25-mission-overview/",
+          "title_zh": "NASA 诺斯罗普·格鲁曼公司 CRS-25 任务概述"
+        },
+        {
+          "title": "YunLone Galaxy star projector review — a sub-$30 customizable night light",
+          "source": "Space.com",
+          "url": "https://www.space.com/technology/yunlone-galaxy-star-projector-review",
+          "title_zh": "YunLone Galaxy 明星投影仪评测——一款不到 30 美元的可定制夜灯"
+        },
+        {
+          "title": "Arianespace launches 36 Amazon Leo sats amid rocket crunch",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-arianespaces-launches-amazon-leo-sats-amid-rocket-crunch/",
+          "title_zh": "阿丽亚娜航天公司发射 36 架亚马逊 Leo 卫星，正面临火箭危机"
+        }
+      ]
+    },
     {
       "date": "2026-11-24",
       "items": [
@@ -13,7 +122,8 @@
         {
           "title": "Who really owns the land in Albania that Jared Kushner wants to develop?",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests"
+          "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests",
+          "title_zh": "谁真正拥有贾里德·库什纳想要开发的阿尔巴尼亚土地？"
         },
         {
           "title": "What Jensen Huang's return teaches China's Xi about Trump",
@@ -24,7 +134,8 @@
         {
           "title": "Jensen Huang returns to Nvidia. And, Rep. Gomez resigns amid alleged sexual misconduct",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez"
+          "url": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez",
+          "title_zh": "黄仁勋重返英伟达。而且，众议员戈麦斯因涉嫌不当性行为而辞职"
         },
         {
           "title": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
@@ -41,7 +152,8 @@
         {
           "title": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm3eg502nxw2o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cm3eg502nxw2o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "吉赛尔·佩利科特在向媒体发送裸照宣传新书后“受到羞辱"
         },
         {
           "title": "Meet Colombia's fuzzy 'water guardians'",
@@ -52,14 +164,16 @@
         {
           "title": "India's 'cockroach' party leader says he was stopped from flying to UK",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "印度“蟑螂”党领袖称他被阻止飞往英国"
         }
       ],
       "space_items": [
         {
           "title": "NASA Hubble’s New View of NGC 4394 Raises the Bar",
           "source": "NASA",
-          "url": "https://science.nasa.gov/missions/hubble/nasa-hubbles-new-view-of-ngc-4394-raises-the-bar/"
+          "url": "https://science.nasa.gov/missions/hubble/nasa-hubbles-new-view-of-ngc-4394-raises-the-bar/",
+          "title_zh": "NASA 哈勃对 NGC 4394 的新视角提高了标准"
         },
         {
           "title": "Live coverage: SpaceX to launch classified payload for the U.S. Space Force",
@@ -70,12 +184,14 @@
         {
           "title": "Simera Sense, Spacemanic, Zaitra and World from Space Join Forces on an End-to-End Dual-Use Mission Solution",
           "source": "SpaceNews",
-          "url": "https://spacenews.com/simera-sense-spacemanic-zaitra-and-world-from-space-join-forces-on-an-end-to-end-dual-use-mission-solution/"
+          "url": "https://spacenews.com/simera-sense-spacemanic-zaitra-and-world-from-space-join-forces-on-an-end-to-end-dual-use-mission-solution/",
+          "title_zh": "Simera Sense、Spacemanic、Zaitra 和 World from Space 联手打造端到端两用任务解决方案"
         },
         {
           "title": "Space Lasers Are Fast, But Clouds Still Rule the Forecast",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/space-lasers-are-fast-but-clouds-still-rule-the-forecast"
+          "url": "https://www.universetoday.com/articles/space-lasers-are-fast-but-clouds-still-rule-the-forecast",
+          "title_zh": "太空激光器速度很快，但云仍然主导着预测"
         },
         {
           "title": "APOD: 2026 November 24 – Galaxies Battle in the NGC 7771 Group",
