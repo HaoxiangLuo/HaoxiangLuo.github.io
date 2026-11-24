@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T18:31:15+08:00",
+  "updated_at": "2026-11-24T23:40:35+08:00",
   "days": [
     {
       "date": "2026-11-24",
@@ -11,16 +11,9 @@
           "title_zh": "特朗普在表示“说服”英伟达恢复首席执行官黄仁勋后面临强烈反对"
         },
         {
-          "title": "Bleeding, birth defects: Congo residents sue over alleged mining pollution",
+          "title": "Who really owns the land in Albania that Jared Kushner wants to develop?",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
-          "title_zh": "出血、出生缺陷：刚果居民因涉嫌采矿污染提起诉讼"
-        },
-        {
-          "title": "Gaza war has undone 77 years of human development, UN warns",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168862",
-          "title_zh": "联合国警告称，加沙冲突毁掉了77年的人类发展"
+          "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests"
         },
         {
           "title": "What Jensen Huang's return teaches China's Xi about Trump",
@@ -29,16 +22,9 @@
           "title_zh": "黄仁勋的回归给中国习近平带来了关于特朗普的哪些教训"
         },
         {
-          "title": "Meet Colombia's fuzzy 'water guardians'",
+          "title": "Jensen Huang returns to Nvidia. And, Rep. Gomez resigns amid alleged sexual misconduct",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/24/nx-s1-6038806/colombia-water-plants-frailejons",
-          "title_zh": "来认识一下哥伦比亚的模糊“水卫士"
-        },
-        {
-          "title": "UN chief urges talks on global AI safety framework, warns of historic shift in power",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168861",
-          "title_zh": "联合国秘书长敦促就全球人工智能安全框架进行谈判，警告权力的历史性转变"
+          "url": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez"
         },
         {
           "title": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
@@ -47,19 +33,50 @@
           "title_zh": "俄罗斯核卫星报告后北约主席誓言防御太空威胁"
         },
         {
-          "title": "Fighting between Russia and Ukraine has expanded geographically, drawing concerns",
+          "title": "Bleeding, birth defects: Congo residents sue over alleged mining pollution",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/24/nx-s1-6051564/fighting-between-russia-and-ukraine-has-expanded-geographically-drawing-concerns",
-          "title_zh": "俄罗斯和乌克兰之间的战斗范围扩大，引发担忧"
+          "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
+          "title_zh": "出血、出生缺陷：刚果居民因涉嫌采矿污染提起诉讼"
         },
         {
-          "title": "Security Council LIVE: Winter attacks on Ukraine's power grid and Black Sea shipping threaten lives and global food supplies",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168859",
-          "title_zh": "安理会直播：乌克兰电网和黑海航运的冬季袭击威胁生命和全球粮食供应"
+          "title": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm3eg502nxw2o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Meet Colombia's fuzzy 'water guardians'",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/24/nx-s1-6038806/colombia-water-plants-frailejons",
+          "title_zh": "来认识一下哥伦比亚的模糊“水卫士"
+        },
+        {
+          "title": "India's 'cockroach' party leader says he was stopped from flying to UK",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss"
         }
       ],
       "space_items": [
+        {
+          "title": "NASA Hubble’s New View of NGC 4394 Raises the Bar",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/missions/hubble/nasa-hubbles-new-view-of-ngc-4394-raises-the-bar/"
+        },
+        {
+          "title": "Live coverage: SpaceX to launch classified payload for the U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/",
+          "title_zh": "现场报道：SpaceX 将为美国太空部队发射机密有效载荷"
+        },
+        {
+          "title": "Simera Sense, Spacemanic, Zaitra and World from Space Join Forces on an End-to-End Dual-Use Mission Solution",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/simera-sense-spacemanic-zaitra-and-world-from-space-join-forces-on-an-end-to-end-dual-use-mission-solution/"
+        },
+        {
+          "title": "Space Lasers Are Fast, But Clouds Still Rule the Forecast",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/space-lasers-are-fast-but-clouds-still-rule-the-forecast"
+        },
         {
           "title": "APOD: 2026 November 24 – Galaxies Battle in the NGC 7771 Group",
           "source": "NASA",
@@ -67,16 +84,10 @@
           "title_zh": "APOD：2026 年 11 月 24 日 – NGC 7771 群中的星系战斗"
         },
         {
-          "title": "The ten best time travel movies to buy and own on Blu-ray and 4K UHD Blu-ray this Black Friday",
-          "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-movies-shows/the-ten-best-time-travel-movies-to-buy-and-own-on-blu-ray-and-4k-uhd-blu-ray-this-black-friday",
-          "title_zh": "这个黑色星期五最值得购买和拥有的十部蓝光和 4K 超高清蓝光时光旅行电影"
-        },
-        {
-          "title": "Live coverage: SpaceX to launch classified payload for the U.S. Space Force",
+          "title": "Arianespace launches 36 Amazon Leo sats amid rocket crunch",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/",
-          "title_zh": "现场报道：SpaceX 将为美国太空部队发射机密有效载荷"
+          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-arianespaces-launches-amazon-leo-sats-amid-rocket-crunch/",
+          "title_zh": "现场报道：阿丽亚娜航天公司发射亚马逊 Leo 正面临火箭危机"
         },
         {
           "title": "The sweet spot for constellation size",
@@ -89,24 +100,6 @@
           "source": "Universe Today",
           "url": "https://www.universetoday.com/articles/a-stars-obliquity-likely-has-little-impact-on-a-given-planets-habitability",
           "title_zh": "恒星的“倾斜度”可能对特定行星的宜居性影响不大"
-        },
-        {
-          "title": "Eruption Extends Iwo Jima’s Beach",
-          "source": "NASA",
-          "url": "https://science.nasa.gov/earth/earth-observatory/eruption-extends-iwo-jimas-beach/",
-          "title_zh": "火山喷发扩大了硫磺岛的海滩"
-        },
-        {
-          "title": "Will astronauts farm on the moon? Scientists successfully grow potatoes in simulated lunar dust",
-          "source": "Space.com",
-          "url": "https://www.space.com/astronomy/moon/will-astronauts-farm-on-the-moon-scientists-successfully-grow-potatoes-in-simulated-lunar-dust",
-          "title_zh": "宇航员会在月球上务农吗？科学家在模拟月球尘埃中成功种植土豆"
-        },
-        {
-          "title": "Live coverage: Arianespace to launch Amazon Leo sats amid rocket crunch",
-          "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-arianespaces-launches-amazon-leo-sats-amid-rocket-crunch/",
-          "title_zh": "现场报道：阿丽亚娜航天公司发射亚马逊 Leo 正面临火箭危机"
         }
       ]
     },
