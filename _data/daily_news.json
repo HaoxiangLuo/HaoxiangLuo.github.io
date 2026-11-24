@@ -1,38 +1,38 @@
 {
-  "updated_at": "2026-11-24T06:16:22+08:00",
+  "updated_at": "2026-11-24T18:31:15+08:00",
   "days": [
     {
       "date": "2026-11-24",
       "items": [
         {
-          "title": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+          "title": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "泽连斯基称俄罗斯军舰在利比亚被乌克兰无人机击中"
+          "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "特朗普在表示“说服”英伟达恢复首席执行官黄仁勋后面临强烈反对"
         },
         {
-          "title": "Democrats win House by largest margin in 50 years. And, COP31 ends with no deal",
+          "title": "Bleeding, birth defects: Congo residents sue over alleged mining pollution",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/23/g-s1-155021/up-first-newsletter-midterms-house-ai-stocks-poland-nato-cop31",
-          "title_zh": "民主党以 50 年来最大优势赢得众议院。而且，COP31 没有达成协议"
+          "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
+          "title_zh": "出血、出生缺陷：刚果居民因涉嫌采矿污染提起诉讼"
         },
         {
-          "title": "Gaza conflict has undone 77 years of human development, UN warns",
+          "title": "Gaza war has undone 77 years of human development, UN warns",
           "source": "UN News",
           "url": "https://news.un.org/feed/view/en/story/2026/11/1168862",
           "title_zh": "联合国警告称，加沙冲突毁掉了77年的人类发展"
         },
         {
-          "title": "What strike on Russian ship in Libya says about spread of Ukraine war",
+          "title": "What Jensen Huang's return teaches China's Xi about Trump",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "俄罗斯船只在利比亚遭到袭击说明乌克兰战争蔓延"
+          "url": "https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "黄仁勋的回归给中国习近平带来了关于特朗普的哪些教训"
         },
         {
-          "title": "Zelenskyy hails Ukraine's attack on a Russian warship docked at a naval base in Libya",
+          "title": "Meet Colombia's fuzzy 'water guardians'",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya",
-          "title_zh": "泽连斯基赞扬乌克兰袭击一艘停靠在利比亚海军基地的俄罗斯军舰"
+          "url": "https://www.npr.org/2026/11/24/nx-s1-6038806/colombia-water-plants-frailejons",
+          "title_zh": "来认识一下哥伦比亚的模糊“水卫士"
         },
         {
           "title": "UN chief urges talks on global AI safety framework, warns of historic shift in power",
@@ -41,16 +41,16 @@
           "title_zh": "联合国秘书长敦促就全球人工智能安全框架进行谈判，警告权力的历史性转变"
         },
         {
-          "title": "Iranian authorities flog singer who performed without hijab, lawyers say",
+          "title": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "律师称伊朗当局鞭打未戴头巾表演的歌手"
+          "url": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "俄罗斯核卫星报告后北约主席誓言防御太空威胁"
         },
         {
-          "title": "Ukraine war spilling into NATO territory",
+          "title": "Fighting between Russia and Ukraine has expanded geographically, drawing concerns",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/22/nx-s1-6050236/ukraine-war-spilling-into-nato-territory",
-          "title_zh": "乌克兰战争蔓延至北约领土"
+          "url": "https://www.npr.org/2026/11/24/nx-s1-6051564/fighting-between-russia-and-ukraine-has-expanded-geographically-drawing-concerns",
+          "title_zh": "俄罗斯和乌克兰之间的战斗范围扩大，引发担忧"
         },
         {
           "title": "Security Council LIVE: Winter attacks on Ukraine's power grid and Black Sea shipping threaten lives and global food supplies",
@@ -61,10 +61,40 @@
       ],
       "space_items": [
         {
-          "title": "NASA Awards Contract for NOAA’s Near Earth Orbit Network Program",
+          "title": "APOD: 2026 November 24 – Galaxies Battle in the NGC 7771 Group",
           "source": "NASA",
-          "url": "https://www.nasa.gov/news-release/nasa-awards-contract-for-noaas-near-earth-orbit-network-program/",
-          "title_zh": "NASA 授予 NOAA 近地轨道网络计划合同"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-24-galaxies-battle-in-the-ngc-7771-group/",
+          "title_zh": "APOD：2026 年 11 月 24 日 – NGC 7771 群中的星系战斗"
+        },
+        {
+          "title": "The ten best time travel movies to buy and own on Blu-ray and 4K UHD Blu-ray this Black Friday",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-movies-shows/the-ten-best-time-travel-movies-to-buy-and-own-on-blu-ray-and-4k-uhd-blu-ray-this-black-friday",
+          "title_zh": "这个黑色星期五最值得购买和拥有的十部蓝光和 4K 超高清蓝光时光旅行电影"
+        },
+        {
+          "title": "Live coverage: SpaceX to launch classified payload for the U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/",
+          "title_zh": "现场报道：SpaceX 将为美国太空部队发射机密有效载荷"
+        },
+        {
+          "title": "The sweet spot for constellation size",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/the-sweet-spot-for-constellation-size/",
+          "title_zh": "星座大小的最佳点"
+        },
+        {
+          "title": "A Star’s ‘Obliquity’ Likely Has Little Impact On A Given Planet’s Habitability",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/a-stars-obliquity-likely-has-little-impact-on-a-given-planets-habitability",
+          "title_zh": "恒星的“倾斜度”可能对特定行星的宜居性影响不大"
+        },
+        {
+          "title": "Eruption Extends Iwo Jima’s Beach",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/earth/earth-observatory/eruption-extends-iwo-jimas-beach/",
+          "title_zh": "火山喷发扩大了硫磺岛的海滩"
         },
         {
           "title": "Will astronauts farm on the moon? Scientists successfully grow potatoes in simulated lunar dust",
@@ -77,36 +107,6 @@
           "source": "Spaceflight Now",
           "url": "https://spaceflightnow.com/2026/11/23/live-coverage-arianespaces-launches-amazon-leo-sats-amid-rocket-crunch/",
           "title_zh": "现场报道：阿丽亚娜航天公司发射亚马逊 Leo 正面临火箭危机"
-        },
-        {
-          "title": "The sweet spot for constellation size",
-          "source": "SpaceNews",
-          "url": "https://spacenews.com/the-sweet-spot-for-constellation-size/",
-          "title_zh": "星座大小的最佳点"
-        },
-        {
-          "title": "New Research Reveals Europa's Sodium Cloud Originated from its Interior Ocean",
-          "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/new-research-reveals-europas-sodium-cloud-originated-from-its-interior-ocean",
-          "title_zh": "新研究揭示木卫二的钠云源自其内海"
-        },
-        {
-          "title": "Studying Cancer Cells in Microgravity",
-          "source": "NASA",
-          "url": "https://www.nasa.gov/image-article/studying-cancer-cells-in-microgravity/",
-          "title_zh": "在微重力下研究癌细胞"
-        },
-        {
-          "title": "Join our free Space.com membership giveaway for a chance to win this Dwarflab mini smart telescope worth $419!",
-          "source": "Space.com",
-          "url": "https://www.space.com/stargazing/skywatching-kit/join-our-free-space-com-membership-giveaway-for-a-chance-to-win-this-dwarflab-mini-smart-telescope-worth-usd419",
-          "title_zh": "加入我们的免费 Space.com 会员赠品活动，就有机会赢得这款价值 419 美元的 Dwarflab 迷你智能望远镜！"
-        },
-        {
-          "title": "NASA seeks to begin ‘intergalactic freight network’ with $1.3 billion block purchase of rockets, orbital transfer vehicles",
-          "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/23/nasa-seeks-to-begin-intergalactic-freight-network-with-1-3-billion-block-purchase-of-rockets-orbital-transfer-vehicles/",
-          "title_zh": "NASA 计划斥资 13 亿美元批量购买火箭、轨道运输工具，打造“星际货运网络"
         }
       ]
     },
