@@ -1,9 +1,24 @@
 {
-  "updated_at": "2026-11-25T04:54:47+08:00",
+  "updated_at": "2026-11-25T17:20:22+08:00",
   "days": [
     {
       "date": "2026-11-25",
       "items": [
+        {
+          "title": "Russia's own figures show it has lost almost 500,000 people in Ukraine war",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Africa Cup title given back to Senegal after sports court rules against Morocco",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/25/nx-s1-6053783/africa-cup-senegal-morocco"
+        },
+        {
+          "title": "World News in Brief: Vaccine crisis in Yemen, aid for Ukraine, another UNRWA staffer killed",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168871"
+        },
         {
           "title": "US attorney general dodges questions about Nvidia investigation",
           "source": "BBC World",
@@ -17,10 +32,15 @@
           "title_zh": "谁真正拥有阿尔巴尼亚土地，贾里德·库什纳想将其打造成五星级度假村？"
         },
         {
-          "title": "French ex-President Sarkozy and wife Carla Bruni to face trial",
+          "title": "Decades of gains against AIDS could unravel as HIV funding dries up",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168869"
+        },
+        {
+          "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "法国前总统萨科齐和妻子卡拉·布吕尼将面临审判"
+          "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "华为被判窃取商业机密罪，但敲诈勒索罪被判无罪"
         },
         {
           "title": "Jensen Huang returns to Nvidia. And, Rep. Gomez resigns amid alleged sexual misconduct",
@@ -29,48 +49,21 @@
           "title_zh": "黄仁勋重返英伟达。而且，众议员戈麦斯因涉嫌不当性行为而辞职"
         },
         {
-          "title": "Indian government has 'lost the plot', says 'cockroach' leader barred from UK flight",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm5y1ezx2gqyo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "印度政府“失去了阴谋”，“蟑螂”领导人被禁止乘坐英国航班"
-        },
-        {
-          "title": "The human cost of the electric vehicle boom is at the center of a lawsuit in Congo",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals",
-          "title_zh": "电动汽车热潮造成的人力成本是刚果一场诉讼的核心"
-        },
-        {
-          "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "华为被判窃取商业机密罪，但敲诈勒索罪被判无罪"
-        },
-        {
-          "title": "Meet Colombia's fuzzy 'water guardians'",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/24/nx-s1-6038806/colombia-water-plants-frailejons",
-          "title_zh": "来认识一下哥伦比亚的模糊“水卫士"
-        },
-        {
-          "title": "Land mine casualties soar in Syria, two years after war",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c893rl37ywdgo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "战后两年，叙利亚地雷伤亡人数激增"
+          "title": "‘Far too much failure’: UN deputy chief’s final call to end violence against women",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168868"
         }
       ],
       "space_items": [
         {
-          "title": "Amateur Astronomer? Be a Kilonova Catcher!",
+          "title": "APOD: 2026 November 25 – SPHEREx Seeing Through Dust",
           "source": "NASA",
-          "url": "https://science.nasa.gov/get-involved/citizen-science/amateur-astronomer-be-a-kilonova-catcher/",
-          "title_zh": "业余天文学家？成为千新星捕手！"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-25-spherex-seeing-through-dust/"
         },
         {
-          "title": "1st-ever detection of a dying star's 'final nuclear heartbeat' challenges what we know about our sun's eventual death",
+          "title": "How to watch 'Blade Runner 2099' online — stream the sci-fi sequel series from anywhere",
           "source": "Space.com",
-          "url": "https://www.space.com/astronomy/stars/1st-ever-detection-of-a-dying-stars-final-nuclear-heartbeat-challenges-what-we-know-about-our-suns-eventual-death",
-          "title_zh": "有史以来第一次探测到垂死恒星的“最后核心跳”挑战了我们对太阳最终死亡的了解"
+          "url": "https://www.space.com/entertainment/space-movies-shows/how-to-watch-blade-runner-2099-online-stream-the-sci-fi-sequel-series-from-anywhere"
         },
         {
           "title": "SpaceX launches classified payload for the U.S. Space Force",
@@ -85,22 +78,19 @@
           "title_zh": "Simera Sense、Spacemanic、Zaitra 和 World from Space 联手打造端到端两用任务解决方案"
         },
         {
-          "title": "A Gigantic Stellar Eruption Spreads Planetary Material Into Space",
+          "title": "Maybe Dark Energy Isn't so Inexplicable After All",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/a-gigantic-stellar-eruption-spreads-planetary-material-into-space",
-          "title_zh": "巨大的恒星喷发将行星物质扩散到太空中"
+          "url": "https://www.universetoday.com/articles/maybe-dark-energy-isnt-so-inexplicable-after-all"
         },
         {
-          "title": "NASA’s Northrop Grumman CRS-25 Mission Overview",
+          "title": "Georgia’s Pecan Belt",
           "source": "NASA",
-          "url": "https://www.nasa.gov/missions/station/nasas-northrop-grumman-crs-25-mission-overview/",
-          "title_zh": "NASA 诺斯罗普·格鲁曼公司 CRS-25 任务概述"
+          "url": "https://science.nasa.gov/earth/earth-observatory/georgias-pecan-belt/"
         },
         {
-          "title": "YunLone Galaxy star projector review — a sub-$30 customizable night light",
+          "title": "SpaceX launches secretive spy satellites from California for US Space Force (video)",
           "source": "Space.com",
-          "url": "https://www.space.com/technology/yunlone-galaxy-star-projector-review",
-          "title_zh": "YunLone Galaxy 明星投影仪评测——一款不到 30 美元的可定制夜灯"
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-secretive-spy-satellites-from-california-for-us-space-force-video"
         },
         {
           "title": "Arianespace launches 36 Amazon Leo sats amid rocket crunch",
