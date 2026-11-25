@@ -1,48 +1,165 @@
 {
-  "updated_at": "2026-11-25T23:24:48+08:00",
+  "updated_at": "2026-11-26T04:15:03+08:00",
   "days": [
+    {
+      "date": "2026-11-26",
+      "items": [
+        {
+          "title": "US announces new tariffs on host of countries including China",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "美国宣布对中国等多国加征新关税"
+        },
+        {
+          "title": "How American Thanksgiving took root -- and evolved -- in Liberia",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/25/nx-s1-6048614/thanksgiving-liberia-gratitude-prayer",
+          "title_zh": "美国感恩节如何在利比里亚扎根并演变"
+        },
+        {
+          "title": "Governments and experts gather in Nairobi to tackle the global housing crisis",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168873",
+          "title_zh": "各国政府和专家齐聚内罗毕应对全球住房危机"
+        },
+        {
+          "title": "Images of asteroid targeted to test Earth's defences reveal stadium-sized crater",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "用于测试地球防御能力的小行星图像揭示了体育场大小的陨石坑"
+        },
+        {
+          "title": "Army to detonate tons of lead azide after delays. And, Abrego Garcia leaves U.S.",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang",
+          "title_zh": "军队在延误后引爆了数吨叠氮化铅。而且，阿布雷戈·加西亚离开了美国"
+        },
+        {
+          "title": "Gaza’s widows raise their families alone: ‘We do our duties twice over, but where are our rights?’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168875",
+          "title_zh": "加沙的寡妇独自养家糊口：“我们双重履行了我们的职责，但我们的权利在哪里？"
+        },
+        {
+          "title": "Israeli judges recommend dropping most serious charges against Netanyahu",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cxj05mv723r2o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "以色列法官建议撤销对内塔尼亚胡最严重的指控"
+        },
+        {
+          "title": "Republican wants FBI and CIA answers before questioning Nvidia chief",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/25/nx-s1-6052417/nvidia-jensen-huang-reaction-republicans-congress-investigation",
+          "title_zh": "共和党人希望联邦调查局和中央情报局在质询英伟达首席执行官之前得到答案"
+        },
+        {
+          "title": "Gisèle Pelicot’s son: ‘Not being violent is the bare minimum’",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168876",
+          "title_zh": "吉赛尔·佩利科特的儿子：“不暴力是最低限度"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "NASA Enhances Supplier Program, Announces Mentor-Protégé Agreement",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/organizations/osbp/nasa-enhances-supplier-program-announces-mentor-protege-agreement/",
+          "title_zh": "NASA 加强供应商计划，宣布导师-门生协议"
+        },
+        {
+          "title": "SpaceX Starship debris becomes art in Ashley Zelinskie's 'The Weight of Space' (video, photos)",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/spacex-starship-debris-becomes-art-in-ashley-zelinskies-the-weight-of-space-video-photos",
+          "title_zh": "SpaceX 星舰碎片在阿什利·泽林斯基 (Ashley Zelinskie) 的《太空的重量》中成为艺术品（视频、照片）"
+        },
+        {
+          "title": "SpaceX launches classified payload for the U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/",
+          "title_zh": "SpaceX 为美国太空部队发射机密有效载荷"
+        },
+        {
+          "title": "Simera Sense, Spacemanic, Zaitra and World from Space Join Forces on an End-to-End Dual-Use Mission Solution",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/simera-sense-spacemanic-zaitra-and-world-from-space-join-forces-on-an-end-to-end-dual-use-mission-solution/",
+          "title_zh": "Simera Sense、Spacemanic、Zaitra 和 World from Space 联手打造端到端两用任务解决方案"
+        },
+        {
+          "title": "The Physics Wall Facing Orbital AI Data Centers",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/the-physics-wall-facing-orbital-ai-data-centers",
+          "title_zh": "面向轨道人工智能数据中心的物理墙"
+        },
+        {
+          "title": "NASA Eyes Crop Candidates for Future Menus",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/directorates/smd/nasa-eyes-crop-candidates-for-future-menus/",
+          "title_zh": "美国宇航局着眼于未来菜单的候选作物"
+        },
+        {
+          "title": "Green light for Starmind: SpaceX gets approval to deploy 1 million AI satellites",
+          "source": "Space.com",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/green-light-for-starmind-spacex-gets-approval-to-deploy-1-million-ai-satellites",
+          "title_zh": "Starmind 获批部署 100 万颗 AI 卫星"
+        },
+        {
+          "title": "Arianespace launches 36 Amazon Leo sats amid rocket crunch",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-arianespaces-launches-amazon-leo-sats-amid-rocket-crunch/",
+          "title_zh": "阿丽亚娜航天公司发射 36 架亚马逊 Leo 卫星，正面临火箭危机"
+        }
+      ]
+    },
     {
       "date": "2026-11-25",
       "items": [
         {
           "title": "Russia's own figures show it has lost nearly 500,000 people in Ukraine war",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "俄罗斯自己的数据显示，俄罗斯在乌克兰战争中损失了近50万人"
         },
         {
           "title": "How American Thanksgiving took root -- and evolved -- in Liberia",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/25/nx-s1-6048614/thanksgiving-liberia-gratitude-prayer"
+          "url": "https://www.npr.org/2026/11/25/nx-s1-6048614/thanksgiving-liberia-gratitude-prayer",
+          "title_zh": "美国感恩节如何在利比里亚扎根并演变"
         },
         {
           "title": "My family were killed in Ukraine. My mum blamed Zelensky's troops - the truth is complicated",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw24e17v9e51o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cw24e17v9e51o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "我的家人在乌克兰被杀。我妈妈指责泽连斯基的军队——事实很复杂"
         },
         {
           "title": "Army to detonate tons of lead azide after delays. And, Abrego Garcia leaves U.S.",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang"
+          "url": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang",
+          "title_zh": "军队在延误后引爆了数吨叠氮化铅。而且，阿布雷戈·加西亚离开了美国"
         },
         {
           "title": "Close-up images to be revealed of asteroid deliberately hit to test ability to protect Earth",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "故意撞击小行星的特写图像将被揭露，以测试保护地球的能力"
         },
         {
           "title": "Greetings from Mount Kilimanjaro, Africa's highest point in all its splendor",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/25/nx-s1-6051429/mount-kilimanjaro-africa-tanzania"
+          "url": "https://www.npr.org/2026/11/25/nx-s1-6051429/mount-kilimanjaro-africa-tanzania",
+          "title_zh": "来自非洲最壮丽的最高点乞力马扎罗山的问候"
         },
         {
           "title": "Five Russian military jets hit in airfield strike, says Ukraine",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "乌克兰称五架俄罗斯军用飞机在机场袭击中被击中"
         },
         {
           "title": "China investigates Politburo member and Shanghai party chief Chen Jining",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/25/nx-s1-6053801/china-investigation-politburo-shanghai-party"
+          "url": "https://www.npr.org/2026/11/25/nx-s1-6053801/china-investigation-politburo-shanghai-party",
+          "title_zh": "中共中央政治局委员、上海市委书记陈吉宁立案调查"
         },
         {
           "title": "US attorney general dodges questions about Nvidia investigation",
@@ -55,12 +172,14 @@
         {
           "title": "APOD: 2026 November 25 – SPHEREx Seeing Through Dust",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-november-25-spherex-seeing-through-dust/"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-25-spherex-seeing-through-dust/",
+          "title_zh": "APOD：2026 年 11 月 25 日 – SPHEREx 透视尘埃"
         },
         {
           "title": "Satellites watch volcanic eruptions add new beaches on Iwo Jima | Space photo of the day for Nov. 25, 2026",
           "source": "Space.com",
-          "url": "https://www.space.com/astronomy/earth/satellites-watch-volcanic-eruptions-add-new-beaches-on-iwo-jima-space-photo-of-the-day-for-nov-25-2026"
+          "url": "https://www.space.com/astronomy/earth/satellites-watch-volcanic-eruptions-add-new-beaches-on-iwo-jima-space-photo-of-the-day-for-nov-25-2026",
+          "title_zh": "卫星监测火山喷发为硫磺岛增添了新的海滩2026 年 11 月 25 日当天的太空照片"
         },
         {
           "title": "SpaceX launches classified payload for the U.S. Space Force",
@@ -77,17 +196,20 @@
         {
           "title": "A New Discovery is Re-Drawing the Map of the Milky Way",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/a-new-discovery-is-re-drawing-the-map-of-the-milky-way"
+          "url": "https://www.universetoday.com/articles/a-new-discovery-is-re-drawing-the-map-of-the-milky-way",
+          "title_zh": "一项新发现正在重新绘制银河系地图"
         },
         {
           "title": "Georgia’s Pecan Belt",
           "source": "NASA",
-          "url": "https://science.nasa.gov/earth/earth-observatory/georgias-pecan-belt/"
+          "url": "https://science.nasa.gov/earth/earth-observatory/georgias-pecan-belt/",
+          "title_zh": "乔治亚州的山核桃带"
         },
         {
           "title": "Watch live: Europe unveils 1st close-up views of asteroid Dimorphos after NASA's DART impact",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/asteroid-comet-missions/watch-live-europe-unveils-1st-close-up-views-of-asteroid-dimorphos-after-nasas-dart-impact"
+          "url": "https://www.space.com/space-exploration/asteroid-comet-missions/watch-live-europe-unveils-1st-close-up-views-of-asteroid-dimorphos-after-nasas-dart-impact",
+          "title_zh": "观看直播：美国宇航局 DART 撞击后，欧洲首次展示小行星 Dimorphos 的特写镜头"
         },
         {
           "title": "Arianespace launches 36 Amazon Leo sats amid rocket crunch",
