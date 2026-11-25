@@ -1,57 +1,54 @@
 {
-  "updated_at": "2026-11-25T17:20:22+08:00",
+  "updated_at": "2026-11-25T23:24:48+08:00",
   "days": [
     {
       "date": "2026-11-25",
       "items": [
         {
-          "title": "Russia's own figures show it has lost almost 500,000 people in Ukraine war",
+          "title": "Russia's own figures show it has lost nearly 500,000 people in Ukraine war",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss"
         },
         {
-          "title": "Africa Cup title given back to Senegal after sports court rules against Morocco",
+          "title": "How American Thanksgiving took root -- and evolved -- in Liberia",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/25/nx-s1-6053783/africa-cup-senegal-morocco"
+          "url": "https://www.npr.org/2026/11/25/nx-s1-6048614/thanksgiving-liberia-gratitude-prayer"
         },
         {
-          "title": "World News in Brief: Vaccine crisis in Yemen, aid for Ukraine, another UNRWA staffer killed",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168871"
+          "title": "My family were killed in Ukraine. My mum blamed Zelensky's troops - the truth is complicated",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw24e17v9e51o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Army to detonate tons of lead azide after delays. And, Abrego Garcia leaves U.S.",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang"
+        },
+        {
+          "title": "Close-up images to be revealed of asteroid deliberately hit to test ability to protect Earth",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Greetings from Mount Kilimanjaro, Africa's highest point in all its splendor",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/25/nx-s1-6051429/mount-kilimanjaro-africa-tanzania"
+        },
+        {
+          "title": "Five Russian military jets hit in airfield strike, says Ukraine",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ck9q8xp5r5pgo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "China investigates Politburo member and Shanghai party chief Chen Jining",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/25/nx-s1-6053801/china-investigation-politburo-shanghai-party"
         },
         {
           "title": "US attorney general dodges questions about Nvidia investigation",
           "source": "BBC World",
           "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
           "title_zh": "美国司法部长回避有关英伟达调查的问题"
-        },
-        {
-          "title": "Who really owns the Albanian land Jared Kushner wants to turn into a 5-star resort?",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/24/g-s1-154623/albania-jared-kushner-land-deal-protests",
-          "title_zh": "谁真正拥有阿尔巴尼亚土地，贾里德·库什纳想将其打造成五星级度假村？"
-        },
-        {
-          "title": "Decades of gains against AIDS could unravel as HIV funding dries up",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168869"
-        },
-        {
-          "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "华为被判窃取商业机密罪，但敲诈勒索罪被判无罪"
-        },
-        {
-          "title": "Jensen Huang returns to Nvidia. And, Rep. Gomez resigns amid alleged sexual misconduct",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/24/g-s1-155227/up-first-newsletter-nvidia-jensen-huang-trump-ukraine-russia-jimmy-gomez",
-          "title_zh": "黄仁勋重返英伟达。而且，众议员戈麦斯因涉嫌不当性行为而辞职"
-        },
-        {
-          "title": "‘Far too much failure’: UN deputy chief’s final call to end violence against women",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168868"
         }
       ],
       "space_items": [
@@ -61,9 +58,9 @@
           "url": "https://science.nasa.gov/image-article/apod-2026-november-25-spherex-seeing-through-dust/"
         },
         {
-          "title": "How to watch 'Blade Runner 2099' online — stream the sci-fi sequel series from anywhere",
+          "title": "Satellites watch volcanic eruptions add new beaches on Iwo Jima | Space photo of the day for Nov. 25, 2026",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/space-movies-shows/how-to-watch-blade-runner-2099-online-stream-the-sci-fi-sequel-series-from-anywhere"
+          "url": "https://www.space.com/astronomy/earth/satellites-watch-volcanic-eruptions-add-new-beaches-on-iwo-jima-space-photo-of-the-day-for-nov-25-2026"
         },
         {
           "title": "SpaceX launches classified payload for the U.S. Space Force",
@@ -78,9 +75,9 @@
           "title_zh": "Simera Sense、Spacemanic、Zaitra 和 World from Space 联手打造端到端两用任务解决方案"
         },
         {
-          "title": "Maybe Dark Energy Isn't so Inexplicable After All",
+          "title": "A New Discovery is Re-Drawing the Map of the Milky Way",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/maybe-dark-energy-isnt-so-inexplicable-after-all"
+          "url": "https://www.universetoday.com/articles/a-new-discovery-is-re-drawing-the-map-of-the-milky-way"
         },
         {
           "title": "Georgia’s Pecan Belt",
@@ -88,9 +85,9 @@
           "url": "https://science.nasa.gov/earth/earth-observatory/georgias-pecan-belt/"
         },
         {
-          "title": "SpaceX launches secretive spy satellites from California for US Space Force (video)",
+          "title": "Watch live: Europe unveils 1st close-up views of asteroid Dimorphos after NASA's DART impact",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-launches-secretive-spy-satellites-from-california-for-us-space-force-video"
+          "url": "https://www.space.com/space-exploration/asteroid-comet-missions/watch-live-europe-unveils-1st-close-up-views-of-asteroid-dimorphos-after-nasas-dart-impact"
         },
         {
           "title": "Arianespace launches 36 Amazon Leo sats amid rocket crunch",
