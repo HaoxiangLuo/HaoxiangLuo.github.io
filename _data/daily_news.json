@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T16:59:02+08:00",
+  "updated_at": "2026-11-26T22:55:00+08:00",
   "days": [
     {
       "date": "2026-11-26",
@@ -7,7 +7,44 @@
         {
           "title": "German boat dealer suspected of supplying Channel smuggling gangs, BBC finds",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "BBC 发现德国船舶经销商涉嫌向海峡走私团伙供货"
+        },
+        {
+          "title": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders",
+          "title_zh": "刚果埃博拉疫情已达 12,000 例，部分急救人员撤离"
+        },
+        {
+          "title": "Watch: BBC confronts German man suspected of supplying migrant gangs with small boats",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cvglrz5yr79go?at_medium=RSS&at_campaign=rss",
+          "title_zh": "观看：BBC 与涉嫌向移民团伙提供小船的德国男子对峙"
+        },
+        {
+          "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump",
+          "title_zh": "朝鲜金正恩无视特朗普的提议后誓言要制造更多核武器"
+        },
+        {
+          "title": "Myanmar refuses to comply with parts of ICJ genocide ruling",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c61wr87wyg5wo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "缅甸拒绝遵守国际法院种族灭绝裁决的部分内容"
+        },
+        {
+          "title": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech",
+          "title_zh": "暴风雨扰乱了感恩节旅行。而且，法官称 FCC 侵犯了 ABC 的言论自由"
+        },
+        {
+          "title": "Desperate appeals from women on death row in Iran after protests",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cm8x0ve4yd7wo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "伊朗死囚抗议后绝望呼吁"
         },
         {
           "title": "How American Thanksgiving took root -- and evolved -- in Liberia",
@@ -16,58 +53,30 @@
           "title_zh": "美国感恩节如何在利比里亚扎根并演变"
         },
         {
-          "title": "Watch: BBC confronts German man suspected of supplying migrant gangs with small boats",
+          "title": "Diesel tanker carrying up to 7,000 tonnes sinks near Ibiza, killing one",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/cvglrz5yr79go?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Army to detonate tons of lead azide after delays. And, Abrego Garcia leaves U.S.",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang",
-          "title_zh": "军队在延误后引爆了数吨叠氮化铅。而且，阿布雷戈·加西亚离开了美国"
-        },
-        {
-          "title": "Desperate appeals from women on death row in Iran after protests",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cm8x0ve4yd7wo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Republican wants FBI and CIA answers before questioning Nvidia chief",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/25/nx-s1-6052417/nvidia-jensen-huang-reaction-republicans-congress-investigation",
-          "title_zh": "共和党人希望联邦调查局和中央情报局在质询英伟达首席执行官之前得到答案"
-        },
-        {
-          "title": "New UK-EU treaty has 10-year termination clause, BBC understands",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "Greetings from Mount Kilimanjaro, Africa's highest point in all its splendor",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/25/nx-s1-6051429/mount-kilimanjaro-africa-tanzania"
-        },
-        {
-          "title": "US approves SpaceX plan to send a million data satellites to space",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+          "title_zh": "载重 7,000 吨的柴油油轮在伊维萨岛附近沉没，造成一人死亡"
         }
       ],
       "space_items": [
         {
           "title": "APOD: 2026 November 26 – Eye in the Sky: The Milky Way over Lençóis",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-november-26-eye-in-the-sky-the-milky-way-over-lencois/"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-26-eye-in-the-sky-the-milky-way-over-lencois/",
+          "title_zh": "APOD：2026 年 11 月 26 日 – 天空之眼：伦索伊斯上空的银河系"
         },
         {
-          "title": "December full moon 2026: When, where and how to see the Cold Moon",
+          "title": "Prepare for Avengers: Doomsday and catch the entire MCU on Disney+ — now only $4.99/month",
           "source": "Space.com",
-          "url": "https://www.space.com/stargazing/december-full-moon-2026-when-where-and-how-to-see-the-cold-moon"
+          "url": "https://www.space.com/entertainment/space-movies-shows/prepare-for-avengers-doomsday-and-catch-the-entire-mcu-on-disney-now-only-4-99-month",
+          "title_zh": "为《复仇者联盟：世界末日》做好准备，在 Disney+ 上观看整个 MCU — 现仅需 4.99 美元/月"
         },
         {
           "title": "FCC green lights SpaceX’s plan to launch 1 million ‘Starmind’ data center satellites",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/26/fcc-green-lights-spacexs-plan-to-launch-1-million-starmind-data-center-satellites/"
+          "url": "https://spaceflightnow.com/2026/11/26/fcc-green-lights-spacexs-plan-to-launch-1-million-starmind-data-center-satellites/",
+          "title_zh": "FCC 批准 SpaceX 发射 100 万颗“Starmind”数据中心卫星的计划"
         },
         {
           "title": "Simera Sense, Spacemanic, Zaitra and World from Space Join Forces on an End-to-End Dual-Use Mission Solution",
@@ -76,19 +85,22 @@
           "title_zh": "Simera Sense、Spacemanic、Zaitra 和 World from Space 联手打造端到端两用任务解决方案"
         },
         {
-          "title": "Euclid's Record-Setting Quasar Probes Black Hole Formation",
+          "title": "Chang'e-6 Samples Reveal the Violent Chain Reaction That Built the Moon’s Largest Crater",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/euclids-record-setting-quasar-probes-black-hole-formation"
+          "url": "https://www.universetoday.com/articles/change-6-samples-reveal-the-violent-chain-reaction-that-built-the-moons-largest-crater",
+          "title_zh": "嫦娥六号样本揭示了形成月球最大陨石坑的剧烈连锁反应"
         },
         {
           "title": "Seeking Refuge on Resolution Island",
           "source": "NASA",
-          "url": "https://science.nasa.gov/earth/earth-observatory/seeking-refuge-on-resolution-island/"
+          "url": "https://science.nasa.gov/earth/earth-observatory/seeking-refuge-on-resolution-island/",
+          "title_zh": "在决议岛寻求庇护"
         },
         {
-          "title": "On this day in space! Nov. 25, 1970: NASA's 'wingless' M2-F3 'lifting body' aircraft makes its 1st powered flight ahead of supersonic tests",
+          "title": "Thanksgiving night sky 2026 — What to look for after dinner tonight",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-25-2026"
+          "url": "https://www.space.com/stargazing/thanksgiving-night-sky-2026-what-to-look-for-after-dinner-tonight",
+          "title_zh": "2026 年感恩节夜空 — 今晚晚餐后看什么"
         },
         {
           "title": "SpaceX launches classified payload for the U.S. Space Force",
