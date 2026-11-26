@@ -1,14 +1,13 @@
 {
-  "updated_at": "2026-11-26T04:15:03+08:00",
+  "updated_at": "2026-11-26T16:59:02+08:00",
   "days": [
     {
       "date": "2026-11-26",
       "items": [
         {
-          "title": "US announces new tariffs on host of countries including China",
+          "title": "German boat dealer suspected of supplying Channel smuggling gangs, BBC finds",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "美国宣布对中国等多国加征新关税"
+          "url": "https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "How American Thanksgiving took root -- and evolved -- in Liberia",
@@ -17,16 +16,9 @@
           "title_zh": "美国感恩节如何在利比里亚扎根并演变"
         },
         {
-          "title": "Governments and experts gather in Nairobi to tackle the global housing crisis",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168873",
-          "title_zh": "各国政府和专家齐聚内罗毕应对全球住房危机"
-        },
-        {
-          "title": "Images of asteroid targeted to test Earth's defences reveal stadium-sized crater",
+          "title": "Watch: BBC confronts German man suspected of supplying migrant gangs with small boats",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cw8dv112r5gmo?at_medium=RSS&at_campaign=rss",
-          "title_zh": "用于测试地球防御能力的小行星图像揭示了体育场大小的陨石坑"
+          "url": "https://www.bbc.co.uk/news/videos/cvglrz5yr79go?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Army to detonate tons of lead azide after delays. And, Abrego Garcia leaves U.S.",
@@ -35,16 +27,9 @@
           "title_zh": "军队在延误后引爆了数吨叠氮化铅。而且，阿布雷戈·加西亚离开了美国"
         },
         {
-          "title": "Gaza’s widows raise their families alone: ‘We do our duties twice over, but where are our rights?’",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168875",
-          "title_zh": "加沙的寡妇独自养家糊口：“我们双重履行了我们的职责，但我们的权利在哪里？"
-        },
-        {
-          "title": "Israeli judges recommend dropping most serious charges against Netanyahu",
+          "title": "Desperate appeals from women on death row in Iran after protests",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/cxj05mv723r2o?at_medium=RSS&at_campaign=rss",
-          "title_zh": "以色列法官建议撤销对内塔尼亚胡最严重的指控"
+          "url": "https://www.bbc.co.uk/news/articles/cm8x0ve4yd7wo?at_medium=RSS&at_campaign=rss"
         },
         {
           "title": "Republican wants FBI and CIA answers before questioning Nvidia chief",
@@ -53,30 +38,36 @@
           "title_zh": "共和党人希望联邦调查局和中央情报局在质询英伟达首席执行官之前得到答案"
         },
         {
-          "title": "Gisèle Pelicot’s son: ‘Not being violent is the bare minimum’",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168876",
-          "title_zh": "吉赛尔·佩利科特的儿子：“不暴力是最低限度"
+          "title": "New UK-EU treaty has 10-year termination clause, BBC understands",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c98r7p65edvgo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Greetings from Mount Kilimanjaro, Africa's highest point in all its splendor",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/25/nx-s1-6051429/mount-kilimanjaro-africa-tanzania"
+        },
+        {
+          "title": "US approves SpaceX plan to send a million data satellites to space",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss"
         }
       ],
       "space_items": [
         {
-          "title": "NASA Enhances Supplier Program, Announces Mentor-Protégé Agreement",
+          "title": "APOD: 2026 November 26 – Eye in the Sky: The Milky Way over Lençóis",
           "source": "NASA",
-          "url": "https://www.nasa.gov/organizations/osbp/nasa-enhances-supplier-program-announces-mentor-protege-agreement/",
-          "title_zh": "NASA 加强供应商计划，宣布导师-门生协议"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-26-eye-in-the-sky-the-milky-way-over-lencois/"
         },
         {
-          "title": "SpaceX Starship debris becomes art in Ashley Zelinskie's 'The Weight of Space' (video, photos)",
+          "title": "December full moon 2026: When, where and how to see the Cold Moon",
           "source": "Space.com",
-          "url": "https://www.space.com/entertainment/spacex-starship-debris-becomes-art-in-ashley-zelinskies-the-weight-of-space-video-photos",
-          "title_zh": "SpaceX 星舰碎片在阿什利·泽林斯基 (Ashley Zelinskie) 的《太空的重量》中成为艺术品（视频、照片）"
+          "url": "https://www.space.com/stargazing/december-full-moon-2026-when-where-and-how-to-see-the-cold-moon"
         },
         {
-          "title": "SpaceX launches classified payload for the U.S. Space Force",
+          "title": "FCC green lights SpaceX’s plan to launch 1 million ‘Starmind’ data center satellites",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/",
-          "title_zh": "SpaceX 为美国太空部队发射机密有效载荷"
+          "url": "https://spaceflightnow.com/2026/11/26/fcc-green-lights-spacexs-plan-to-launch-1-million-starmind-data-center-satellites/"
         },
         {
           "title": "Simera Sense, Spacemanic, Zaitra and World from Space Join Forces on an End-to-End Dual-Use Mission Solution",
@@ -85,28 +76,25 @@
           "title_zh": "Simera Sense、Spacemanic、Zaitra 和 World from Space 联手打造端到端两用任务解决方案"
         },
         {
-          "title": "The Physics Wall Facing Orbital AI Data Centers",
+          "title": "Euclid's Record-Setting Quasar Probes Black Hole Formation",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/the-physics-wall-facing-orbital-ai-data-centers",
-          "title_zh": "面向轨道人工智能数据中心的物理墙"
+          "url": "https://www.universetoday.com/articles/euclids-record-setting-quasar-probes-black-hole-formation"
         },
         {
-          "title": "NASA Eyes Crop Candidates for Future Menus",
+          "title": "Seeking Refuge on Resolution Island",
           "source": "NASA",
-          "url": "https://science.nasa.gov/directorates/smd/nasa-eyes-crop-candidates-for-future-menus/",
-          "title_zh": "美国宇航局着眼于未来菜单的候选作物"
+          "url": "https://science.nasa.gov/earth/earth-observatory/seeking-refuge-on-resolution-island/"
         },
         {
-          "title": "Green light for Starmind: SpaceX gets approval to deploy 1 million AI satellites",
+          "title": "On this day in space! Nov. 25, 1970: NASA's 'wingless' M2-F3 'lifting body' aircraft makes its 1st powered flight ahead of supersonic tests",
           "source": "Space.com",
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/green-light-for-starmind-spacex-gets-approval-to-deploy-1-million-ai-satellites",
-          "title_zh": "Starmind 获批部署 100 万颗 AI 卫星"
+          "url": "https://www.space.com/space-exploration/on-this-day-in-space-november-25-2026"
         },
         {
-          "title": "Arianespace launches 36 Amazon Leo sats amid rocket crunch",
+          "title": "SpaceX launches classified payload for the U.S. Space Force",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-arianespaces-launches-amazon-leo-sats-amid-rocket-crunch/",
-          "title_zh": "阿丽亚娜航天公司发射 36 架亚马逊 Leo 卫星，正面临火箭危机"
+          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/",
+          "title_zh": "SpaceX 为美国太空部队发射机密有效载荷"
         }
       ]
     },
