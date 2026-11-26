@@ -1,6 +1,98 @@
 {
-  "updated_at": "2026-11-26T22:55:00+08:00",
+  "updated_at": "2026-11-27T03:53:22+08:00",
   "days": [
+    {
+      "date": "2026-11-27",
+      "items": [
+        {
+          "title": "German boat dealer suspected of supplying Channel smuggling gangs, BBC finds",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cqlymky8kpzjo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders"
+        },
+        {
+          "title": "‘Come right now’: How a crisis centre in Samarkand helps women escape violence",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168878"
+        },
+        {
+          "title": "Watch: BBC confronts German man suspected of supplying migrant gangs with small boats",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/videos/cvglrz5yr79go?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump"
+        },
+        {
+          "title": "Maritime trade stagnates amid geopolitical uncertainty",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168884"
+        },
+        {
+          "title": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "title": "Storms disrupt Thanksgiving travel. And, FCC violated ABC's free speech, judge says",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/26/g-s1-155950/up-first-newsletter-thanksgiving-weather-travel-trump-tariffs-iowa-detonation-fcc-free-speech"
+        },
+        {
+          "title": "DR Congo: Peacekepers step up civilian protection amid fighting in Ituri",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168883"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "APOD: 2026 November 26 – Eye in the Sky: The Milky Way over Lençóis",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-26-eye-in-the-sky-the-milky-way-over-lencois/"
+        },
+        {
+          "title": "This pocket-sized smart telescope is small enough to take anywhere, now 19% cheaper for Black Friday — plus a chance to win one for free!",
+          "source": "Space.com",
+          "url": "https://www.space.com/stargazing/skywatching-kit/dwarflab-dwarf-mini-smart-telescope-80-dollars-off-black-friday-deal-2026"
+        },
+        {
+          "title": "FCC green lights SpaceX’s plan to launch 1 million ‘Starmind’ data center satellites",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/26/fcc-green-lights-spacexs-plan-to-launch-1-million-starmind-data-center-satellites/"
+        },
+        {
+          "title": "The ‘bare-knuckled’ future of life in space with Tim Marshall",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/the-bare-knuckled-future-of-life-in-space-with-tim-marshall/"
+        },
+        {
+          "title": "AI Helps Three Powerful Supercomputers Simulate The Milky Way In Extraordinary Detail",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/ai-helps-three-powerful-supercomputers-simulate-the-milky-way-in-extraordinary-detail"
+        },
+        {
+          "title": "Seeking Refuge on Resolution Island",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/earth/earth-observatory/seeking-refuge-on-resolution-island/"
+        },
+        {
+          "title": "'Star Trek IV: The Voyage Home' at 40: 'Trek' has never been as joyous or fun as in 'the one with the whales'",
+          "source": "Space.com",
+          "url": "https://www.space.com/entertainment/space-movies-shows/star-trek-iv-the-voyage-home-at-40-trek-has-never-been-as-joyous-or-fun-as-in-the-one-with-the-whales"
+        },
+        {
+          "title": "SpaceX launches classified payload for the U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/"
+        }
+      ]
+    },
     {
       "date": "2026-11-26",
       "items": [
