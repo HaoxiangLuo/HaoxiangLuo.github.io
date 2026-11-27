@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T17:12:06+08:00",
+  "updated_at": "2026-11-27T22:51:55+08:00",
   "days": [
     {
       "date": "2026-11-27",
@@ -7,89 +7,106 @@
         {
           "title": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽伦斯基在 BBC 采访中批评特朗普与普京的友谊“奇怪"
         },
         {
-          "title": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
+          "title": "French cinema star Gérard Depardieu ordered to stand trial for rape and sexual assault",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/27/g-s1-155990/strobe-talbott-obit"
+          "url": "https://www.npr.org/2026/11/27/nx-s1-6055559/gerard-depardieu-trial-rape-france",
+          "title_zh": "法国电影明星杰拉尔·德帕迪约因强奸和性侵犯被判受审"
+        },
+        {
+          "title": "16 Days of Activism: UNHCR warns over deep funding cuts to vital protection work",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168888",
+          "title_zh": "16 天的行动：联合国难民署警告重要保护工作的资金大幅削减"
+        },
+        {
+          "title": "Hundreds of thousands still without power after storms hit US on Thanksgiving",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/cre3dj5n7dpwo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "感恩节风暴袭击美国后数十万人仍然断电"
+        },
+        {
+          "title": "As UN Secretary General's last day approaches, search for his replacement continues",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/27/nx-s1-6050907/as-un-secretary-generals-last-day-approaches-search-for-his-replacement-continues",
+          "title_zh": "随着联合国秘书长最后一天的临近，寻找继任者的工作仍在继续"
         },
         {
           "title": "Putting survivors at the centre of gender-based violence services",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168885"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168885",
+          "title_zh": "将幸存者置于基于性别的暴力服务的中心"
         },
         {
-          "title": "Major Thanksgiving storm brings flooding, flight delays across US",
+          "title": "Leaders clash in final Spain election debate as housing dominates run-in",
           "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss"
+          "url": "https://www.bbc.co.uk/news/articles/ckr5gr4g8gn5o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "西班牙选举最后辩论中，领导人发生冲突，住房问题成为主导因素"
         },
         {
-          "title": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate",
+          "title": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
           "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/26/g-s1-155957/congo-ebola-responders"
+          "url": "https://www.npr.org/2026/11/27/g-s1-155990/strobe-talbott-obit",
+          "title_zh": "前《时代》杂志记者、副国务卿斯特罗布·塔尔博特去世"
         },
         {
           "title": "‘Come right now’: How a crisis centre in Samarkand helps women escape violence",
           "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168878"
-        },
-        {
-          "title": "Watch: Roofs torn off and streets under water as severe weather hits US",
-          "source": "BBC World",
-          "url": "https://www.bbc.co.uk/news/videos/cq808d704m22o?at_medium=RSS&at_campaign=rss"
-        },
-        {
-          "title": "North Korea's Kim vows to build more nuclear weapons after ignoring Trump's overture",
-          "source": "NPR World",
-          "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump"
-        },
-        {
-          "title": "Maritime trade stagnates amid geopolitical uncertainty",
-          "source": "UN News",
-          "url": "https://news.un.org/feed/view/en/story/2026/11/1168884"
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168878",
+          "title_zh": "现在就来”：撒马尔罕的危机中心如何帮助妇女摆脱暴力"
         }
       ],
       "space_items": [
         {
           "title": "APOD: 2026 November 27 – The Moon Watchers",
           "source": "NASA",
-          "url": "https://science.nasa.gov/image-article/apod-2026-november-27-the-moon-watchers/"
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-27-the-moon-watchers/",
+          "title_zh": "APOD：2026 年 11 月 27 日 – 月球观察者"
         },
         {
-          "title": "Every smart telescope we've reviewed and highly rate that is cheaper for Black Friday — full list",
+          "title": "Astronomers watch a red giant star greedily devour a stellar 'Bao bun' before erupting: 'We couldn't quite believe our luck'",
           "source": "Space.com",
-          "url": "https://www.space.com/stargazing/skywatching-kit/every-smart-telescope-weve-reviewed-and-highly-rate-that-is-cheaper-for-black-friday-full-list"
+          "url": "https://www.space.com/astronomy/stars/astronomers-watch-a-red-giant-star-greedily-devour-a-stellar-bao-bun-before-erupting-we-couldnt-quite-believe-our-luck",
+          "title_zh": "天文学家看到一颗红巨星在爆发前贪婪地吞噬了一颗恒星“包包”：“我们简直不敢相信我们的运气"
         },
         {
           "title": "FCC green lights SpaceX’s plan to launch 1 million ‘Starmind’ data center satellites",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/26/fcc-green-lights-spacexs-plan-to-launch-1-million-starmind-data-center-satellites/"
+          "url": "https://spaceflightnow.com/2026/11/26/fcc-green-lights-spacexs-plan-to-launch-1-million-starmind-data-center-satellites/",
+          "title_zh": "FCC 批准 SpaceX 发射 100 万颗“Starmind”数据中心卫星的计划"
         },
         {
           "title": "The ‘bare-knuckled’ future of life in space with Tim Marshall",
           "source": "SpaceNews",
-          "url": "https://spacenews.com/the-bare-knuckled-future-of-life-in-space-with-tim-marshall/"
+          "url": "https://spacenews.com/the-bare-knuckled-future-of-life-in-space-with-tim-marshall/",
+          "title_zh": "与蒂姆·马歇尔一起畅享太空生活的“赤手空拳”未来"
         },
         {
-          "title": "Astronomers Discover a Hidden Binary in a Star System Used to Calibrate the JWST",
+          "title": "Should Space Data Centers Run on Solar Panels, Nuclear Reactors, or Both?",
           "source": "Universe Today",
-          "url": "https://www.universetoday.com/articles/astronomers-discover-a-hidden-binary-in-a-star-system-used-to-calibrate-the-jwst"
+          "url": "https://www.universetoday.com/articles/should-space-data-centers-run-on-solar-panels-nuclear-reactors-or-both",
+          "title_zh": "太空数据中心应该使用太阳能电池板、核反应堆还是两者都运行？"
         },
         {
           "title": "Shivelyuch Socked In",
           "source": "NASA",
-          "url": "https://science.nasa.gov/earth/earth-observatory/shivelyuch-socked-in/"
+          "url": "https://science.nasa.gov/earth/earth-observatory/shivelyuch-socked-in/",
+          "title_zh": "Shivyuch 深陷其中"
         },
         {
-          "title": "This pocket-sized smart telescope is small enough to take anywhere, now 19% cheaper for Black Friday — plus a chance to win one for free!",
+          "title": "Every smart telescope we've reviewed and highly rate that is cheaper for Black Friday — full list",
           "source": "Space.com",
-          "url": "https://www.space.com/stargazing/skywatching-kit/dwarflab-dwarf-mini-smart-telescope-80-dollars-off-black-friday-deal-2026"
+          "url": "https://www.space.com/stargazing/skywatching-kit/every-smart-telescope-weve-reviewed-and-highly-rate-that-is-cheaper-for-black-friday-full-list",
+          "title_zh": "我们审查过并高度评价黑色星期五更便宜的每台智能望远镜 - 完整列表"
         },
         {
           "title": "SpaceX launches classified payload for the U.S. Space Force",
           "source": "Spaceflight Now",
-          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/"
+          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/",
+          "title_zh": "SpaceX 为美国太空部队发射机密有效载荷"
         }
       ]
     },
