@@ -1,6 +1,115 @@
 {
-  "updated_at": "2026-11-27T22:51:55+08:00",
+  "updated_at": "2026-11-28T03:42:18+08:00",
   "days": [
+    {
+      "date": "2026-11-28",
+      "items": [
+        {
+          "title": "Zelensky criticises 'strange' Trump-Putin friendship in BBC interview",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "泽伦斯基在 BBC 采访中批评特朗普与普京的友谊“奇怪"
+        },
+        {
+          "title": "French cinema star Gérard Depardieu ordered to stand trial for rape and sexual assault",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/27/nx-s1-6055559/gerard-depardieu-trial-rape-france",
+          "title_zh": "法国电影明星杰拉尔·德帕迪约因强奸和性侵犯被判受审"
+        },
+        {
+          "title": "16 Days of Activism: UNHCR warns over deep funding cuts to vital protection work",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168888",
+          "title_zh": "16 天的行动：联合国难民署警告重要保护工作的资金大幅削减"
+        },
+        {
+          "title": "Weary of war but with no sign of backing down, Kyiv faces another punishing winter",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/c3pw4yrr8kz9o?at_medium=RSS&at_campaign=rss",
+          "title_zh": "基辅厌倦了战争，但没有退缩的迹象，面临着另一个严酷的冬天"
+        },
+        {
+          "title": "As UN Secretary General's last day approaches, search for his replacement continues",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/27/nx-s1-6050907/as-un-secretary-generals-last-day-approaches-search-for-his-replacement-continues",
+          "title_zh": "随着联合国秘书长最后一天的临近，寻找继任者的工作仍在继续"
+        },
+        {
+          "title": "Putting survivors at the centre of gender-based violence services",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168885",
+          "title_zh": "将幸存者置于基于性别的暴力服务的中心"
+        },
+        {
+          "title": "'We couldn't give up that easily': Marching bands scramble to cover costs after Thanksgiving parade rearranged",
+          "source": "BBC World",
+          "url": "https://www.bbc.co.uk/news/articles/ckd71ypy9e8eo?at_medium=RSS&at_campaign=rss",
+          "title_zh": "我们不能轻易放弃”：感恩节游行重新安排后，游行乐队争先恐后地支付费用"
+        },
+        {
+          "title": "Strobe Talbott, former Time magazine reporter and deputy secretary of state, has died",
+          "source": "NPR World",
+          "url": "https://www.npr.org/2026/11/27/g-s1-155990/strobe-talbott-obit",
+          "title_zh": "前《时代》杂志记者、副国务卿斯特罗布·塔尔博特去世"
+        },
+        {
+          "title": "‘Come right now’: How a crisis centre in Samarkand helps women escape violence",
+          "source": "UN News",
+          "url": "https://news.un.org/feed/view/en/story/2026/11/1168878",
+          "title_zh": "现在就来”：撒马尔罕的危机中心如何帮助妇女摆脱暴力"
+        }
+      ],
+      "space_items": [
+        {
+          "title": "Artemis III Astronaut Andre Douglas Visits VAB",
+          "source": "NASA",
+          "url": "https://www.nasa.gov/image-article/artemis-iii-astronaut-andre-douglas-visits-vab/",
+          "title_zh": "阿耳忒弥斯三号宇航员安德烈·道格拉斯访问VAB"
+        },
+        {
+          "title": "The lowest price ever on the Canon EOS R6 II tops some of the best Black Friday camera deals we've seen today",
+          "source": "Space.com",
+          "url": "https://www.space.com/stargazing/astrophotography/the-lowest-price-ever-on-the-canon-eos-r6-ii-tops-some-of-the-best-black-friday-camera-deals-weve-seen-today",
+          "title_zh": "佳能 EOS R6 II 有史以来最低价格超过了我们今天看到的一些最好的黑色星期五相机优惠"
+        },
+        {
+          "title": "FCC green lights SpaceX’s plan to launch 1 million ‘Starmind’ data center satellites",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/26/fcc-green-lights-spacexs-plan-to-launch-1-million-starmind-data-center-satellites/",
+          "title_zh": "FCC 批准 SpaceX 发射 100 万颗“Starmind”数据中心卫星的计划"
+        },
+        {
+          "title": "Governments Invest $71.8B in Space Defense as Militarization of Space Accelerates",
+          "source": "SpaceNews",
+          "url": "https://spacenews.com/governments-invest-71-8b-in-space-defense-as-militarization-of-space-accelerates/",
+          "title_zh": "随着太空军事化的加速，各国政府投资 71.8B 美元用于太空防御"
+        },
+        {
+          "title": "Should Space Data Centers Run on Solar Panels, Nuclear Reactors, or Both?",
+          "source": "Universe Today",
+          "url": "https://www.universetoday.com/articles/should-space-data-centers-run-on-solar-panels-nuclear-reactors-or-both",
+          "title_zh": "太空数据中心应该使用太阳能电池板、核反应堆还是两者都运行？"
+        },
+        {
+          "title": "NASA’s NG-25 Mission to Launch Pioneering Space Crops Research",
+          "source": "NASA",
+          "url": "https://science.nasa.gov/science-research/biological-physical-sciences/nasas-ng-25-mission-to-launch-pioneering-space-crops-research/",
+          "title_zh": "NASA NG-25 任务启动开创性太空作物研究"
+        },
+        {
+          "title": "Dropping missiles from orbit? 2 European companies sign agreement to study the idea",
+          "source": "Space.com",
+          "url": "https://www.space.com/technology/dropping-missiles-from-orbit-2-european-companies-sign-agreement-to-study-the-idea",
+          "title_zh": "从轨道上扔导弹？两家欧洲公司签署协议研究这一想法"
+        },
+        {
+          "title": "SpaceX launches classified payload for the U.S. Space Force",
+          "source": "Spaceflight Now",
+          "url": "https://spaceflightnow.com/2026/11/23/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-3/",
+          "title_zh": "SpaceX 为美国太空部队发射机密有效载荷"
+        }
+      ]
+    },
     {
       "date": "2026-11-27",
       "items": [
