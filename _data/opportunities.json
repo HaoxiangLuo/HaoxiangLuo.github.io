@@ -1,6 +1,153 @@
 {
-  "updated_at": "2026-11-27T18:06:37+08:00",
+  "updated_at": "2026-11-28T17:21:45+08:00",
   "internships": [
+    {
+      "date": "2026-11-28",
+      "items": [
+        {
+          "title": "Unpaid Internship - AI and Smart Sustainable Cities Communications intern (Geneva, Switzerland)",
+          "url": "https://jobs.itu.int/job/Geneva-Unpaid-Internship-AI-and-Smart-Sustainable-Cities-Communications-intern/1362095155/?feedId=null&utm_source=J2WRSS&utm_medium=rss&utm_campaign=J2W_RSS",
+          "detail": "ITU · Geneva, Switzerland · Onsite · Apply by 2027-01-08 · 6 months · Unpaid",
+          "detail_zh": "国际电信联盟 · 瑞士日内瓦 · 现场办公 · 截止 2027-01-08 · 6 个月 · 无津贴",
+          "source": "ITU",
+          "source_zh": "国际电信联盟",
+          "org": "itu",
+          "group": "un",
+          "job_id": "",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "ai",
+            "communication",
+            "data",
+            "governance",
+            "media",
+            "policy",
+            "research"
+          ],
+          "areas_zh": "人工智能、传播、数据、数字治理、传媒、政策、研究",
+          "location": "Geneva, Switzerland",
+          "city": "Geneva",
+          "country": "Switzerland",
+          "region": "Europe",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "",
+          "eligibility": [
+            "phd",
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "博士在读、硕士在读、应届毕业生",
+          "phd_ok": true,
+          "duration": "6 months",
+          "stipend": "unpaid",
+          "stipend_zh": "无津贴",
+          "stipend_amount": "",
+          "language": "",
+          "posted": "2026-11-28",
+          "deadline": "2027-01-08",
+          "days_left": 41,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": true,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-11-28",
+          "found": "2026-11-28",
+          "score": 100,
+          "tier": "exceptional",
+          "tier_zh": "极高匹配",
+          "tier_en": "Exceptional match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media, digital transformation, data analysis.",
+            "Doctoral candidates are explicitly eligible."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体、数字化转型、数据分析。",
+            "明确接受博士候选人申请。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "无薪实习 - 人工智能和智能可持续城市通信实习生（瑞士日内瓦）"
+        },
+        {
+          "title": "Outreach and Communications Intern",
+          "url": "https://careers.un.org/job/288661",
+          "detail": "UNEP · BRUSSELS · Onsite · Deadline not stated · 6 months · Stipend not stated",
+          "detail_zh": "联合国环境规划署 · 布鲁塞尔 · 现场办公 · 截止日期未说明 · 6 个月 · 津贴未说明",
+          "source": "UNEP",
+          "source_zh": "联合国环境规划署",
+          "org": "unep",
+          "group": "un",
+          "job_id": "288661",
+          "type": "internship",
+          "type_label": "Internship",
+          "type_zh": "实习",
+          "areas": [
+            "communication",
+            "data",
+            "media",
+            "policy"
+          ],
+          "areas_zh": "传播、数据、传媒、政策",
+          "location": "BRUSSELS",
+          "city": "BRUSSELS",
+          "country": "BRUSSELS",
+          "region": "",
+          "mode": "onsite",
+          "mode_zh": "现场办公",
+          "department": "United Nations Environment Programme",
+          "eligibility": [
+            "master",
+            "graduate"
+          ],
+          "eligibility_zh": "硕士在读、应届毕业生",
+          "phd_ok": false,
+          "duration": "6 months",
+          "stipend": "unknown",
+          "stipend_zh": "津贴未说明",
+          "stipend_amount": "",
+          "language": "",
+          "posted": "",
+          "deadline": "",
+          "days_left": null,
+          "open": true,
+          "closing": false,
+          "urgent": false,
+          "score90": true,
+          "score80": true,
+          "score70": true,
+          "status": "open",
+          "status_zh": "开放申请",
+          "sort_date": "2026-11-28",
+          "found": "2026-11-28",
+          "score": 96,
+          "tier": "exceptional",
+          "tier_zh": "极高匹配",
+          "tier_en": "Exceptional match",
+          "reasons": [
+            "The post sits in communication, which matches the profile directly.",
+            "The description covers social media, journalism.",
+            "It accepts Master's / PhD students."
+          ],
+          "reasons_zh": [
+            "岗位属于传播方向，与申请者背景直接对口。",
+            "岗位职责涉及社交媒体、新闻业。",
+            "明确接受硕士或博士在读学生。"
+          ],
+          "extended": false,
+          "excluded": false,
+          "title_zh": "外展和传播实习生"
+        }
+      ]
+    },
     {
       "date": "2026-11-27",
       "items": [
@@ -39,7 +186,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-12-03",
-          "days_left": 6,
+          "days_left": 5,
           "open": true,
           "closing": true,
           "urgent": false,
@@ -64,7 +211,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "气候传播社交媒体实习生"
+          "title_zh": "气候传播社交媒体实习生",
+          "last_seen": "2026-11-28"
         },
         {
           "title": "Programme Support Intern - Seagrass Breakthrough",
@@ -134,7 +282,8 @@
           ],
           "extended": false,
           "excluded": false,
-          "title_zh": "项目支持实习生 - 海草突破"
+          "title_zh": "项目支持实习生 - 海草突破",
+          "last_seen": "2026-11-28"
         }
       ]
     },
@@ -184,7 +333,7 @@
           "language": "",
           "posted": "2026-11-24",
           "deadline": "2026-12-08",
-          "days_left": 11,
+          "days_left": 10,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -280,7 +429,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "公共信息"
         },
         {
@@ -352,7 +501,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "实习生 - 数据科学，信息完整性部门"
         },
         {
@@ -425,7 +574,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "实习生 - 政治事务，信息完整性部门"
         },
         {
@@ -497,7 +646,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "实习生 - 项目支持 - 索马里环境治理与和平建设"
         },
         {
@@ -567,7 +716,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "公共信息实习生"
         },
         {
@@ -625,7 +774,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-12-07",
-          "days_left": 10,
+          "days_left": 9,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -730,7 +879,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "新闻写作/报道 - 公共信息实习生 - 新闻和内容 - 斯瓦希里语",
-          "last_seen": "2026-11-27"
+          "last_seen": "2026-11-28"
         }
       ]
     },
@@ -806,7 +955,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "信息系统实习生",
-          "last_seen": "2026-11-27"
+          "last_seen": "2026-11-28"
         },
         {
           "title": "Partnerships Enablement Intern",
@@ -859,7 +1008,7 @@
           "language": "",
           "posted": "2026-11-19",
           "deadline": "2026-11-30",
-          "days_left": 3,
+          "days_left": 2,
           "open": true,
           "closing": true,
           "urgent": true,
@@ -922,7 +1071,7 @@
           "language": "",
           "posted": "2026-11-19",
           "deadline": "2026-12-20",
-          "days_left": 23,
+          "days_left": 22,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -1037,7 +1186,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "通讯实习生"
         },
         {
@@ -1075,7 +1224,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-30",
-          "days_left": 3,
+          "days_left": 2,
           "open": true,
           "closing": true,
           "urgent": true,
@@ -1102,7 +1251,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "通信和知识管理实习生（2 个职位），Finance for Planet、Planet Hub、BPPS"
         },
         {
@@ -1179,7 +1328,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-30",
-          "days_left": 3,
+          "days_left": 2,
           "open": true,
           "closing": true,
           "urgent": true,
@@ -1277,7 +1426,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "实习数据分析师/经济事务"
         },
         {
@@ -1348,7 +1497,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "人工智能实习生"
         },
         {
@@ -1419,7 +1568,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "实习生 - 数字和技术支持部分"
         }
       ]
@@ -1495,7 +1644,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "​实习生 - 公共信息​ - 布拉格"
         },
         {
@@ -1565,7 +1714,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "通讯实习生"
         },
         {
@@ -1707,7 +1856,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "实习生 - 人权"
         }
       ]
@@ -1835,7 +1984,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-22",
-          "days_left": -5,
+          "days_left": -6,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -1900,7 +2049,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-18",
-          "days_left": -9,
+          "days_left": -10,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -1964,7 +2113,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-26",
-          "days_left": -1,
+          "days_left": -2,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -2178,7 +2327,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-26",
-          "days_left": -1,
+          "days_left": -2,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -2367,7 +2516,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-12-09",
-          "days_left": 12,
+          "days_left": 11,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -2392,7 +2541,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "社交媒体视频制作实习生"
         }
       ]
@@ -2440,7 +2589,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-23",
-          "days_left": -4,
+          "days_left": -5,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -2616,7 +2765,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "视频/图形 - 实习生 - 公共信息 - 视频部分",
-          "last_seen": "2026-11-27"
+          "last_seen": "2026-11-28"
         }
       ]
     },
@@ -3200,7 +3349,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习计划",
-          "last_seen": "2026-11-27"
+          "last_seen": "2026-11-28"
         }
       ]
     },
@@ -3423,7 +3572,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "新闻写作/报道 - 公共信息实习生 - 新闻和内容 - 俄语"
         },
         {
@@ -3495,7 +3644,7 @@
           ],
           "extended": false,
           "excluded": false,
-          "last_seen": "2026-11-27",
+          "last_seen": "2026-11-28",
           "title_zh": "新闻写作/多媒体制作 - 公共信息实习生 - 新闻和内容 - 阿拉伯语"
         },
         {
@@ -3536,7 +3685,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-12",
-          "days_left": -15,
+          "days_left": -16,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -3860,7 +4009,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-10",
-          "days_left": -17,
+          "days_left": -18,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -4152,7 +4301,7 @@
           "language": "Arabic or French",
           "posted": "2026-10-28",
           "deadline": "2026-11-11",
-          "days_left": -16,
+          "days_left": -17,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -4701,7 +4850,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-08",
-          "days_left": -19,
+          "days_left": -20,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -5065,14 +5214,14 @@
           "posted": "",
           "deadline": "",
           "days_left": null,
-          "open": true,
+          "open": false,
           "closing": false,
           "urgent": false,
           "score90": true,
           "score80": true,
           "score70": true,
-          "status": "open",
-          "status_zh": "开放申请",
+          "status": "closed",
+          "status_zh": "已截止",
           "sort_date": "2026-10-22",
           "found": "2026-10-22",
           "score": 94,
@@ -5565,7 +5714,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": -10,
+          "days_left": -11,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -5633,7 +5782,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-11-04",
-          "days_left": -23,
+          "days_left": -24,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -5704,7 +5853,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": -10,
+          "days_left": -11,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -5775,7 +5924,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": -10,
+          "days_left": -11,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -5846,7 +5995,7 @@
           "language": "",
           "posted": "2026-10-20",
           "deadline": "2026-11-17",
-          "days_left": -10,
+          "days_left": -11,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -5932,7 +6081,7 @@
           "language": "",
           "posted": "2026-10-19",
           "deadline": "2026-11-16",
-          "days_left": -11,
+          "days_left": -12,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -6004,7 +6153,7 @@
           "language": "",
           "posted": "2026-10-19",
           "deadline": "2026-11-16",
-          "days_left": -11,
+          "days_left": -12,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -6159,7 +6308,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-30",
-          "days_left": -28,
+          "days_left": -29,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -6234,7 +6383,7 @@
           "language": "English",
           "posted": "",
           "deadline": "2026-11-02",
-          "days_left": -25,
+          "days_left": -26,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -6446,7 +6595,7 @@
           "language": "English",
           "posted": "",
           "deadline": "2026-11-02",
-          "days_left": -25,
+          "days_left": -26,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -6630,7 +6779,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生，特别程序",
-          "last_seen": "2026-11-27"
+          "last_seen": "2026-11-28"
         },
         {
           "title": "DCO Tech Intern",
@@ -7266,7 +7415,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-25",
-          "days_left": -33,
+          "days_left": -34,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -7338,7 +7487,7 @@
           "language": "",
           "posted": "2026-10-09",
           "deadline": "2026-10-30",
-          "days_left": -28,
+          "days_left": -29,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -7401,7 +7550,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-25",
-          "days_left": -33,
+          "days_left": -34,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -7645,7 +7794,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "人权实习生",
-          "last_seen": "2026-11-27"
+          "last_seen": "2026-11-28"
         },
         {
           "title": "Software Development Intern, Intech",
@@ -7940,7 +8089,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 34,
+          "days_left": 33,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -8012,7 +8161,7 @@
           "language": "English or French",
           "posted": "2026-09-21",
           "deadline": "2026-12-31",
-          "days_left": 34,
+          "days_left": 33,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -8082,7 +8231,7 @@
           "language": "",
           "posted": "2026-10-03",
           "deadline": "2026-10-08",
-          "days_left": -50,
+          "days_left": -51,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -8151,7 +8300,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 34,
+          "days_left": 33,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -8287,7 +8436,7 @@
           "language": "",
           "posted": "2026-09-11",
           "deadline": "2026-12-10",
-          "days_left": 13,
+          "days_left": 12,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -8358,7 +8507,7 @@
           "language": "English or French",
           "posted": "2026-10-03",
           "deadline": "2026-12-31",
-          "days_left": 34,
+          "days_left": 33,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -8429,7 +8578,7 @@
           "language": "English or French",
           "posted": "2026-09-25",
           "deadline": "2026-12-31",
-          "days_left": 34,
+          "days_left": 33,
           "open": true,
           "closing": false,
           "urgent": false,
@@ -8496,7 +8645,7 @@
           "language": "",
           "posted": "2026-10-01",
           "deadline": "2026-10-08",
-          "days_left": -50,
+          "days_left": -51,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -8560,7 +8709,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": -44,
+          "days_left": -45,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -8624,7 +8773,7 @@
           "language": "",
           "posted": "",
           "deadline": "2026-10-14",
-          "days_left": -44,
+          "days_left": -45,
           "open": false,
           "closing": false,
           "urgent": false,
@@ -9078,7 +9227,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "联检组研究与分析实习生",
-          "last_seen": "2026-11-27"
+          "last_seen": "2026-11-28"
         },
         {
           "title": "Editorial and AI Communications Intern",
@@ -9431,7 +9580,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 创新与分析中心",
-          "last_seen": "2026-11-27"
+          "last_seen": "2026-11-28"
         },
         {
           "title": "INTERN - HUMAN RIGHTS, I",
@@ -9570,7 +9719,7 @@
           "extended": false,
           "excluded": false,
           "title_zh": "实习生 - 人权",
-          "last_seen": "2026-11-27"
+          "last_seen": "2026-11-28"
         },
         {
           "title": "Intern - Human Rights",
